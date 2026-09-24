@@ -6,11 +6,11 @@ timeout_seconds = 10
 
 # Neutral sender identity. Providers map these fields to their own payload format.
 [sender]
-name = "Rhacco Webhooks"
-icon_url = "https://openclipart.org/image/800px/171125"
-# Default icon source: https://openclipart.org/detail/171125/hook-by-hat
+name = "Your Webhook"
+icon_url = "https://openclipart.org/image/800px/218712"
+# Default icon source: https://openclipart.org/detail/218712/paper-plane-minimal-flat-design
 # Openclipart publishes its artwork under CC0 / Public Domain terms.
 
 # Friendly default content for a manual smoke test.
 [message]
-text = "👋 Hello! Rhacco Webhooks is up and running and ready to send messages."
+text = "👋 Hello! Your webhook is working and ready to send messages."
