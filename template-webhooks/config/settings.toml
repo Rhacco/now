@@ -1,4 +1,16 @@
-# Public template settings. Keep secrets in GitHub Actions, not here.
+# Public settings only. Keep webhook URLs and other secrets outside this file.
+[webhook]
 provider = "discord"
-message = "👋 Hallo! Dein Webhook-Test aus GitHub Actions funktioniert."
+secret_env = "WEBHOOK_URL"
 timeout_seconds = 10
+
+# Neutral sender identity. Providers map these fields to their own payload format.
+[sender]
+name = "Rhacco Webhooks"
+icon_url = "https://openclipart.org/image/800px/171125"
+# Default icon source: https://openclipart.org/detail/171125/hook-by-hat
+# Openclipart publishes its artwork under CC0 / Public Domain terms.
+
+# Friendly default content for a manual smoke test.
+[message]
+text = "👋 Hello! Rhacco Webhooks is up and running and ready to send messages."
