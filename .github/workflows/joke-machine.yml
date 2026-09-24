@@ -1,0 +1,75 @@
+name: Joke Machine
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "19,49 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: joke-machine-state
+  cancel-in-progress: false
+
+jobs:
+  joke-machine:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Restore Joke Machine state
+        shell: bash
+        run: |
+          set -euo pipefail
+          state_ref="refs/remotes/origin/joke-machine-state"
+          files=(history.json reserve.json latest-results.json)
+
+          if ! git fetch --quiet origin "refs/heads/joke-machine-state:${state_ref}"; then
+            echo "No state branch yet; using packaged seed state."
+            exit 0
+          fi
+
+          for file in "${files[@]}"; do
+            if ! git cat-file -e "${state_ref}:worker-jm/data/${file}" 2>/dev/null; then
+              echo "State branch is incomplete; using packaged seed state."
+              exit 0
+            fi
+          done
+
+          for file in "${files[@]}"; do
+            git show "${state_ref}:worker-jm/data/${file}" > "worker-jm/data/${file}"
+          done
+          echo "State restored."
+
+      - name: Verify Node.js
+        run: node -e 'const major=Number(process.versions.node.split(".")[0]); if (major < 18) { console.error("Node.js 18+ required"); process.exit(1); }'
+
+      - name: Run Joke Machine
+        working-directory: worker-jm
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: node app/main.js
+
+      - name: Persist Joke Machine state
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          state_dir="$(mktemp -d)"
+          cp worker-jm/data/history.json worker-jm/data/reserve.json worker-jm/data/latest-results.json "${state_dir}/"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan joke-machine-state-next
+          git rm -rf . >/dev/null 2>&1 || true
+          mkdir -p worker-jm/data
+          cp "${state_dir}/history.json" "${state_dir}/reserve.json" "${state_dir}/latest-results.json" worker-jm/data/
+          git add worker-jm/data/history.json worker-jm/data/reserve.json worker-jm/data/latest-results.json
+          git commit -m "Joke Machine state"
+          git push --force origin "HEAD:refs/heads/joke-machine-state"

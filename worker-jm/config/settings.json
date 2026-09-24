@@ -1,0 +1,11 @@
+{
+  "version": "0.1.0",
+  "webhook": {
+    "secret_env": "WEBHOOK_URL",
+    "timeout_seconds": 15
+  },
+  "sender": {
+    "name": "Joke Machine",
+    "avatar_url": "https://openclipart.org/image/800px/214959"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-09-24T13:07:26.239Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "„Entschuldigung, ich habe Ihren Stift genommen.“  \n„Kein Problem, den habe ich ja nie benutzt.“  \n„Genau, ich wollte nur sicher gehen, dass er nicht doch noch Arbeit macht.“",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "openai/gpt-oss-120b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "qwen/qwen3.8-27b",
+          "returned_model": "qwen/qwen3.8-27b",
+          "http_status": 200,
+          "valid": false,
+          "validation": ">5 Zeilen",
+          "usage": {
+            "queue_time": 0.016924962,
+            "prompt_tokens": 2223,
+            "prompt_time": 0.17491792,
+            "completion_tokens": 57,
+            "completion_time": 0.108154,
+            "total_tokens": 2280,
+            "total_time": 0.28307192
+          }
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "returned_model": "openai/gpt-oss-20b",
+          "http_status": 200,
+          "valid": false,
+          "validation": ">5 Zeilen",
+          "usage": {
+            "queue_time": 0.016475842,
+            "prompt_tokens": 2077,
+            "prompt_time": 0.138103528,
+            "completion_tokens": 96,
+            "completion_time": 0.147823002,
+            "total_tokens": 2173,
+            "total_time": 0.28592653,
+            "completion_tokens_details": {
+              "reasoning_tokens": 12
+            }
+          }
+        },
+        {
+          "model": "openai/gpt-oss-120b",
+          "returned_model": "openai/gpt-oss-120b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "usage": {
+            "queue_time": 0.018673698,
+            "prompt_tokens": 2077,
+            "prompt_time": 0.108007645,
+            "completion_tokens": 63,
+            "completion_time": 0.133418885,
+            "total_tokens": 2140,
+            "total_time": 0.24142653,
+            "completion_tokens_details": {
+              "reasoning_tokens": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "context_jokes_sent": 29,
+  "reserve_count": 8
+}

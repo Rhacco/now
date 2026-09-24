@@ -1,0 +1,1203 @@
+[
+  {
+    "timestamp": "2026-09-24T12:19:46.847Z",
+    "provider": "OpenRouter",
+    "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Lehrer fragt: „Nenne mir drei berühmte Männer, die mit ‚B‘ beginnen.“\nFritzchen überlegt kurz: „Beckenbauer, Beethoven, Bach.“\n„Sehr gut. Und drei, die mit ‚M‘ beginnen?“\n„Müller, Meier, Schmidt.“\n„Aber Schmidt fängt doch mit ‚S‘ an!“\n„Egal, der heißt jetzt so. Der hat geheiratet.“",
+    "attempts": [
+      {
+        "model": "thinkingmachines/inkling:free",
+        "http_status": 403,
+        "error": "thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"
+      },
+      {
+        "model": "qwen/qwen3.8-27b:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 315,
+      "completion_tokens": 92,
+      "total_tokens": 407,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:19:47.598Z",
+    "provider": "Groq",
+    "requested_model": "openai/gpt-oss-20b",
+    "returned_model": "openai/gpt-oss-20b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Wie nennt man einen Bumerang, der nicht zurückkommt? Ein Stock.",
+    "usage": {
+      "queue_time": 0.139287916,
+      "prompt_tokens": 344,
+      "prompt_time": 0.021357742,
+      "completion_tokens": 234,
+      "completion_time": 0.312599263,
+      "total_tokens": 578,
+      "total_time": 0.333957005,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:20:26.069Z",
+    "provider": "OpenRouter",
+    "requested_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "returned_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Warum können Bäume nicht lügen? Weil sie immer die Wurzel sagen.",
+    "attempts": [
+      {
+        "model": "thinkingmachines/inkling:free",
+        "http_status": 403,
+        "error": "thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"
+      },
+      {
+        "model": "qwen/qwen3.8-27b:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "returned_model": null,
+        "error": "Leere Textantwort",
+        "finish_reason": null
+      },
+      {
+        "model": "google/gemma-4-31b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 423,
+      "completion_tokens": 19,
+      "total_tokens": 442,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:20:26.880Z",
+    "provider": "Groq",
+    "requested_model": "openai/gpt-oss-20b",
+    "returned_model": null,
+    "status": "error",
+    "http_status": null,
+    "error": "HTTP erfolgreich, aber keine Textantwort erhalten."
+  },
+  {
+    "timestamp": "2026-09-24T12:27:24.123Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:27:24.595Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Ein Polizist stoppt einen Autofahrer und fragt: „Haben Sie zu schnell gefahren?“\nDer Fahrer antwortet: „Nein, Herr Polizist, ich bin erst seit einer Minute da.“\nDer Polizist seufzt: „Das erklärt nicht, warum Sie gerade die Ampel überfahren haben.“",
+    "lines": 3,
+    "local_similarity": 0.10810810810810811,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017841964,
+          "prompt_tokens": 373,
+          "prompt_time": 0.033282068,
+          "completion_tokens": 68,
+          "completion_time": 0.134091477,
+          "total_tokens": 441,
+          "total_time": 0.167373545
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017841964,
+      "prompt_tokens": 373,
+      "prompt_time": 0.033282068,
+      "completion_tokens": 68,
+      "completion_time": 0.134091477,
+      "total_tokens": 441,
+      "total_time": 0.167373545
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:27:52.123Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:27:52.642Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Ich bin Zahnarzt und habe immer schlechte Laune.\nMeine Frau fragt: „Warum?“\nIch sage: „Weil ich täglich den Menschen in den Mund muss,\ndie mir nichts Gutes zu wünschen scheinen.“",
+    "lines": 4,
+    "local_similarity": 0.125,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.043554003,
+          "prompt_tokens": 445,
+          "prompt_time": 0.038273559,
+          "completion_tokens": 50,
+          "completion_time": 0.106188282,
+          "total_tokens": 495,
+          "total_time": 0.144461841
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.043554003,
+      "prompt_tokens": 445,
+      "prompt_time": 0.038273559,
+      "completion_tokens": 50,
+      "completion_time": 0.106188282,
+      "total_tokens": 495,
+      "total_time": 0.144461841
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:28:26.131Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:28:26.663Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Arzt fragt: „Haben Sie schon gefrühstückt?“\nDer Patient nickt: „Ja, aber ich habe noch nichts gegessen.“\nDer Arzt staunt: „Wie geht das?“\nDer Patient: „Ich habe nur das Brötchen und den Marmeladentopf verwechselt.“",
+    "lines": 4,
+    "local_similarity": 0.14285714285714285,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017808758,
+          "prompt_tokens": 499,
+          "prompt_time": 0.041374621,
+          "completion_tokens": 68,
+          "completion_time": 0.13408264,
+          "total_tokens": 567,
+          "total_time": 0.175457261
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017808758,
+      "prompt_tokens": 499,
+      "prompt_time": 0.041374621,
+      "completion_tokens": 68,
+      "completion_time": 0.13408264,
+      "total_tokens": 567,
+      "total_time": 0.175457261
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:28:37.187Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:28:37.664Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Warum streiten sich die Mathelehrer nie?\nWeil sie immer einvernehmlich sind.",
+    "lines": 2,
+    "local_similarity": 0.29411764705882354,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.088165277,
+          "prompt_tokens": 571,
+          "prompt_time": 0.045660127,
+          "completion_tokens": 24,
+          "completion_time": 0.045865964,
+          "total_tokens": 595,
+          "total_time": 0.091526091
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088165277,
+      "prompt_tokens": 571,
+      "prompt_time": 0.045660127,
+      "completion_tokens": 24,
+      "completion_time": 0.045865964,
+      "total_tokens": 595,
+      "total_time": 0.091526091
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:38:04.739Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Gärtner legt drei Tomaten in die Pfanne.\nSeine Frau schreit: „Was machst du da?“\nEr verteidigt sich: „Ich bin doch kein Tomate, ich bin ein Mensch.“\n„Dann nimm sie raus!“\n„Zu spät, die Soße ist schon zu dick.“",
+    "lines": 5,
+    "local_similarity": 0.10909090909090909,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.026389422,
+          "prompt_tokens": 577,
+          "prompt_time": 0.042500936,
+          "completion_tokens": 70,
+          "completion_time": 0.154123514,
+          "total_tokens": 647,
+          "total_time": 0.19662445
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.026389422,
+      "prompt_tokens": 577,
+      "prompt_time": 0.042500936,
+      "completion_tokens": 70,
+      "completion_time": 0.154123514,
+      "total_tokens": 647,
+      "total_time": 0.19662445
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:38:32.977Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 575,
+          "completion_tokens": 280,
+          "total_tokens": 855,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 311,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 574,
+          "completion_tokens": 280,
+          "total_tokens": 854,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 281,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:42:31.604Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Hausmeister klemmt sich 100,0000 in die Hosentasche.\nAm nächsten Tag fragt er die Direktion: „Warum haben Sie den Schalter umgestellt?“\n„Wegen der Energiekosten.“\n„Dann gut, aber ich habe jetzt 1,0000!“",
+    "lines": 4,
+    "local_similarity": 0.18604651162790697,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017127772,
+          "prompt_tokens": 744,
+          "prompt_time": 0.062811977,
+          "completion_tokens": 70,
+          "completion_time": 0.132889817,
+          "total_tokens": 814,
+          "total_time": 0.195701794
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017127772,
+      "prompt_tokens": 744,
+      "prompt_time": 0.062811977,
+      "completion_tokens": 70,
+      "completion_time": 0.132889817,
+      "total_tokens": 814,
+      "total_time": 0.195701794
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:43:05.914Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "returned_model": "z-ai/glm-5.2:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 778,
+          "completion_tokens": 280,
+          "total_tokens": 1058,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 280,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 739,
+          "completion_tokens": 280,
+          "total_tokens": 1019,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 258,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 741,
+          "completion_tokens": 280,
+          "total_tokens": 1021,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 305,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:45:23.526Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Taxifahrer fragt den Fahrgast: „Möchten Sie die Türe zu?“\nDer Fahrgast fragt zurück: „Ist die Türe denn offen?“\nDer Taxifahrer antwortet: „Nein, aber ich wollte michergefälliger sein.“",
+    "lines": 3,
+    "local_similarity": 0.20930232558139536,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.0172955,
+          "prompt_tokens": 881,
+          "prompt_time": 0.076501785,
+          "completion_tokens": 63,
+          "completion_time": 0.135055247,
+          "total_tokens": 944,
+          "total_time": 0.211557032
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0172955,
+      "prompt_tokens": 881,
+      "prompt_time": 0.076501785,
+      "completion_tokens": 63,
+      "completion_time": 0.135055247,
+      "total_tokens": 944,
+      "total_time": 0.211557032
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:46:13.003Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "returned_model": "z-ai/glm-5.2:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 913,
+          "completion_tokens": 280,
+          "total_tokens": 1193,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 280,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 873,
+          "completion_tokens": 280,
+          "total_tokens": 1153,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 267,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 878,
+          "completion_tokens": 280,
+          "total_tokens": 1158,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 512,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 293,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Bäcker fragt den Kunden: „Möchten Sie das Brot in Folie einpacken?“\nDer Kunde antwortet: „Nein, bitte nicht.“\nDer Bäcker wundert sich: „Ist es zu teuer?“\nDer Kunde sagt: „Nein, ich habe Angst, dass es mich erstickt.“\nDer Bäcker denkt: „Na ja, als Brot hat es wenig Lunge.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Hund fragt seinen Hundesitter: „Wo warst du heute?“\nDer Sitter antwortet ernst: „Ich war beim Tierarzt.“\n„Ach, und was hat er gesagt?“\n„Er meinte, du seist ein ganz normaler Hund.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Hausmeister fragt den Chef: „Können Sie mir ein paar Tage unbezahlten Urlaub geben?“\nDer Chef fragt erstaunt: „Warum denn unbezahlt?“\nDer Hausmeister antwortet: „Weil ich zwar reich bin, aber leider nur an Problemen.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T13:00:24.287Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Die Ehefrau klagt: „Du kümmerst dich gar nicht mehr um mich!“\nDer Ehemann antwortet beschwichtigend: „Doch, ich sehe dich jeden Tag.“\n„Aber ich meine nicht, dass du mich nur anschaust!“\n„Oh Gott, das hatte ich nicht gewusst.\nIch dachte, du wärst eine Wand.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.038915075,
+              "prompt_tokens": 1195,
+              "prompt_time": 0.09518308,
+              "completion_tokens": 81,
+              "completion_time": 0.170511954,
+              "total_tokens": 1276,
+              "total_time": 0.265695034
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 2
+  },
+  {
+    "timestamp": "2026-09-24T13:03:47.014Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Chef fragt: „Warum sind Sie heute so spät dran?“\nIch antworte: „Der Wecker hat nicht geklingelt.“\n„Dann haben Sie wohl nicht auf ihn aufgepasst.“\n„Im Gegenteil, ich habe sehr gut auf ihn aufgepasst.\nIch habe ihn nur aus Sicherheitsgründen abgeschaltet.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.253689995,
+              "prompt_tokens": 1382,
+              "prompt_time": 0.138282645,
+              "completion_tokens": 72,
+              "completion_time": 0.144051045,
+              "total_tokens": 1454,
+              "total_time": 0.28233369
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 4
+  },
+  {
+    "timestamp": "2026-09-24T13:04:41.849Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Ich wollte heute besonders brav sein\nund habe die Mülltonne vor die Tür gestellt.\nDer Nachbar kam vorbei und fragte:\n„Müssen Sie das wirklich?“\nIch sagte: „Nein, aber dann weht es nicht mehr in Ihr Fenster.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.033724843,
+              "prompt_tokens": 1593,
+              "prompt_time": 0.116962798,
+              "completion_tokens": 56,
+              "completion_time": 0.116624483,
+              "total_tokens": 1649,
+              "total_time": 0.233587281
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 6
+  },
+  {
+    "timestamp": "2026-09-24T13:05:12.511Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mutter: „Warum hast du den Schreibtisch umgeräumt?“  \nKind: „Der hat einen Keks im Kopf.“  \nMutter: „Was meinst du?“  \nKind: „Ich wollte ihn essen, aber er hat die Keksdose weggeworfen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.92",
+            "usage": {
+              "queue_time": 0.069474365,
+              "prompt_tokens": 1769,
+              "prompt_time": 0.160004005,
+              "completion_tokens": 55,
+              "completion_time": 0.126871237,
+              "total_tokens": 1824,
+              "total_time": 0.286875242
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.219025833,
+              "prompt_tokens": 1670,
+              "prompt_time": 0.098822788,
+              "completion_tokens": 92,
+              "completion_time": 0.107887205,
+              "total_tokens": 1762,
+              "total_time": 0.206709993,
+              "completion_tokens_details": {
+                "reasoning_tokens": 26
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:05:32.718Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Hund blickt seinen Herrchen an,\nals hätte er gerade die ganze Welt verloren.\nDer Mann seufzt: „Was ist denn los?“\nDer Hund legt den Kopf schief.\nEr wollte eigentlich nur das Schnitzel.",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.017200285,
+              "prompt_tokens": 1958,
+              "prompt_time": 0.176403168,
+              "completion_tokens": 53,
+              "completion_time": 0.104553822,
+              "total_tokens": 2011,
+              "total_time": 0.28095699
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:05:51.824Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Arzt sagt: „Sie müssen dringend weniger Salz essen.“\nDer Patient fragt: „Aber Doktor, ich esse doch gar kein Salz.“\nDer Arzt staunt: „Dann woher kommt die Schwellung?“\nDer Patient seufzt: „Von den Tränen. Sie sind so salzig.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.08428421,
+              "prompt_tokens": 2016,
+              "prompt_time": 0.180862708,
+              "completion_tokens": 66,
+              "completion_time": 0.129929849,
+              "total_tokens": 2082,
+              "total_time": 0.310792557
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:06:23.286Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Wie ist dein Tag?“\nIch sage: „Gut, ich habe heute zwei Stunden gespart.“\nSie staunt: „Oh, und wo?“\nIch antworte: „Ich bin im Stau nicht in den Streit eingestiegen.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.017243449,
+              "prompt_tokens": 2098,
+              "prompt_time": 0.181972153,
+              "completion_tokens": 59,
+              "completion_time": 0.132256319,
+              "total_tokens": 2157,
+              "total_time": 0.314228472
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:06:36.959Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mein Sohn fragt: „Papa, warum heißt der Fliegenpilz so?“\nIch sage: „Weil er fleißig herumfliegt.“\nEr staunt: „Aber der ist doch fest am Boden!“\nIch antworte: „Doch, nur wenn er auf den Kopf gestellt wird.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.043073175,
+              "prompt_tokens": 2150,
+              "prompt_time": 0.182267433,
+              "completion_tokens": 69,
+              "completion_time": 0.13556399,
+              "total_tokens": 2219,
+              "total_time": 0.317831423
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:07:26.239Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "„Entschuldigung, ich habe Ihren Stift genommen.“  \n„Kein Problem, den habe ich ja nie benutzt.“  \n„Genau, ich wollte nur sicher gehen, dass er nicht doch noch Arbeit macht.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-120b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.016924962,
+              "prompt_tokens": 2223,
+              "prompt_time": 0.17491792,
+              "completion_tokens": 57,
+              "completion_time": 0.108154,
+              "total_tokens": 2280,
+              "total_time": 0.28307192
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.016475842,
+              "prompt_tokens": 2077,
+              "prompt_time": 0.138103528,
+              "completion_tokens": 96,
+              "completion_time": 0.147823002,
+              "total_tokens": 2173,
+              "total_time": 0.28592653,
+              "completion_tokens_details": {
+                "reasoning_tokens": 12
+              }
+            }
+          },
+          {
+            "model": "openai/gpt-oss-120b",
+            "returned_model": "openai/gpt-oss-120b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.018673698,
+              "prompt_tokens": 2077,
+              "prompt_time": 0.108007645,
+              "completion_tokens": 63,
+              "completion_time": 0.133418885,
+              "total_tokens": 2140,
+              "total_time": 0.24142653,
+              "completion_tokens_details": {
+                "reasoning_tokens": 10
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  }
+]
