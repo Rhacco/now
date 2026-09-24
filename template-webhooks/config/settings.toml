@@ -1,0 +1,4 @@
+# Public template settings. Keep secrets in GitHub Actions, not here.
+provider = "discord"
+message = "👋 Hallo! Dein Webhook-Test aus GitHub Actions funktioniert."
+timeout_seconds = 10
