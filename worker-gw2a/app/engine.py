@@ -50,6 +50,52 @@ ANNOUNCEMENT_SOURCE_URLS = {
     "Choyareset": "https://choyaaa.com/meta",
 }
 
+
+CACHE_SCHEMA_VERSION = 2
+MAX_RESPONSE_BYTES = 8 * 1024 * 1024
+
+SOURCE_DATA_VERSIONS = {
+    "maps": 1,
+    "catalog": 1,
+    "ninja": 1,
+    "metasheet": 1,
+    "hardstuck": 1,
+    "ttwurm": 1,
+    "dcap": 1,
+    "gw2community": 1,
+    "vip": 1,
+    "choya": 1,
+    "fast": 1,
+    "news": 1,
+}
+
+EMPTY_RESULT_GUARDS = {
+    "metasheet",
+    "hardstuck",
+    "gw2community",
+    "vip",
+}
+
+DROP_GUARDS = {
+    "metasheet",
+    "hardstuck",
+    "gw2community",
+    "vip",
+}
+
+ANNOUNCEMENT_ALLOWED_HOSTS = {
+    "docs.google.com",
+    "hardstuck.gg",
+    "www.hardstuck.gg",
+    "gw2community.de",
+    "www.gw2community.de",
+    "gw2vip.net",
+    "www.gw2vip.net",
+    "sites.google.com",
+    "wiki.guildwars2.com",
+    "choyaaa.com",
+    "www.choyaaa.com",
+}
 WORLD_BOSS_LOCATIONS = {
     "Admiral Taidha Covington": "Bloodtide Coast",
     "Claw of Jormag": "Frostgorge Sound",
@@ -267,24 +313,194 @@ def atomic_write(path: Path, text: str) -> None:
             os.unlink(tmp)
 
 
-def fetch_text(url: str, timeout: int = 15) -> str:
+def safe_https_url(value: str, allowed_hosts: set[str] | None = None) -> str:
+    value = html.unescape((value or "").strip())
+    if not value:
+        return ""
+    try:
+        parsed = urllib.parse.urlsplit(value)
+    except ValueError:
+        return ""
+    host = (parsed.hostname or "").lower()
+    if parsed.scheme.lower() != "https" or not host:
+        return ""
+    if allowed_hosts and host not in allowed_hosts:
+        return ""
+    return urllib.parse.urlunsplit(parsed)
+
+
+def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.5.1 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.6.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
-            "Accept-Encoding": "identity"
-        }
+            "Accept-Encoding": "identity",
+        },
     )
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        raw = r.read()
-        charset = r.headers.get_content_charset() or "utf-8"
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        length = response.headers.get("Content-Length")
+        if length:
+            try:
+                content_length = int(length)
+            except ValueError:
+                content_length = 0
+            if content_length > max_bytes:
+                raise ValueError(f"response too large: {content_length} bytes")
+
+        raw = response.read(max_bytes + 1)
+        if len(raw) > max_bytes:
+            raise ValueError(f"response too large: >{max_bytes} bytes")
+
+        charset = response.headers.get_content_charset() or "utf-8"
         return raw.decode(charset, errors="replace")
 
 
+def normalize_state(raw: Any) -> tuple[dict[str, Any], bool]:
+    changed = False
+
+    if not isinstance(raw, dict):
+        raw = {}
+        changed = True
+
+    sources = raw.get("sources")
+    if not isinstance(sources, dict):
+        sources = {}
+        changed = True
+
+    state = dict(raw)
+    state["sources"] = sources
+
+    if state.get("version") != CACHE_SCHEMA_VERSION:
+        state["version"] = CACHE_SCHEMA_VERSION
+        changed = True
+
+    for name, entry in list(sources.items()):
+        if not isinstance(entry, dict):
+            sources[name] = {}
+            changed = True
+            continue
+
+        if entry.get("checked_at") and not entry.get("last_success"):
+            entry["last_success"] = entry["checked_at"]
+            changed = True
+
+        defaults = {
+            "failure_count": 0,
+            "last_failure": "",
+            "retry_after": "",
+            "last_error": "",
+            "pending_drop_count": None,
+            "pending_drop_seen": 0,
+            "data_version": SOURCE_DATA_VERSIONS.get(name, 1),
+        }
+        for key, value in defaults.items():
+            if key not in entry:
+                entry[key] = value
+                changed = True
+
+    return state, changed
+
+
+def source_item_count(name: str, data: Any) -> int | None:
+    if data is None:
+        return None
+    if isinstance(data, list):
+        return len(data)
+    if not isinstance(data, dict):
+        return None
+
+    key_map = {
+        "ninja": "occurrences",
+        "ttwurm": "gathers_cet",
+        "dcap": "events",
+        "choya": "route",
+        "news": "lines",
+    }
+    key = key_map.get(name)
+    if key and isinstance(data.get(key), list):
+        return len(data[key])
+
+    if name == "fast":
+        return len(data.get("normalized_text", ""))
+
+    return None
+
+
+def backoff_minutes(failure_count: int) -> int:
+    if failure_count <= 1:
+        return 1
+    if failure_count == 2:
+        return 5
+    if failure_count <= 4:
+        return 15
+    return 30
+
+
+def record_failure(entry: dict[str, Any], now: datetime, message: str) -> None:
+    count = int(entry.get("failure_count", 0) or 0) + 1
+    delay = backoff_minutes(count)
+    entry["failure_count"] = count
+    entry["last_failure"] = iso(now)
+    entry["retry_after"] = iso(now + timedelta(minutes=delay))
+    entry["last_error"] = message[:300]
+
+
+def clear_failure(entry: dict[str, Any]) -> None:
+    entry["failure_count"] = 0
+    entry["last_failure"] = ""
+    entry["retry_after"] = ""
+    entry["last_error"] = ""
+
+
 def cache_fresh(entry: dict[str, Any], ttl_minutes: int, now: datetime) -> bool:
-    checked = parse_iso(entry.get("checked_at"))
+    checked = parse_iso(entry.get("last_success") or entry.get("checked_at"))
     return bool(checked and (now - checked) < timedelta(minutes=ttl_minutes))
+
+
+def retry_paused(entry: dict[str, Any], now: datetime) -> bool:
+    retry_at = parse_iso(entry.get("retry_after"))
+    return bool(retry_at and now < retry_at)
+
+
+def suspicious_result(
+    name: str,
+    data: Any,
+    previous: Any,
+    entry: dict[str, Any],
+) -> tuple[bool, str]:
+    new_count = source_item_count(name, data)
+    old_count = source_item_count(name, previous)
+
+    if new_count is None or old_count is None or old_count <= 0:
+        entry["pending_drop_count"] = None
+        entry["pending_drop_seen"] = 0
+        return False, ""
+
+    if name in EMPTY_RESULT_GUARDS and new_count == 0:
+        entry["pending_drop_count"] = 0
+        entry["pending_drop_seen"] = int(entry.get("pending_drop_seen", 0) or 0) + 1
+        return True, f"suspicious empty result; keeping {old_count} cached items"
+
+    if (
+        name in DROP_GUARDS
+        and old_count >= 10
+        and 0 < new_count <= max(1, int(old_count * 0.2))
+    ):
+        pending_count = entry.get("pending_drop_count")
+        pending_seen = int(entry.get("pending_drop_seen", 0) or 0)
+        if pending_count == new_count and pending_seen >= 1:
+            entry["pending_drop_count"] = None
+            entry["pending_drop_seen"] = 0
+            return False, ""
+
+        entry["pending_drop_count"] = new_count
+        entry["pending_drop_seen"] = pending_seen + 1
+        return True, f"suspicious item drop {old_count}->{new_count}; awaiting confirmation"
+
+    entry["pending_drop_count"] = None
+    entry["pending_drop_seen"] = 0
+    return False, ""
 
 
 def refresh_cached(
@@ -293,24 +509,96 @@ def refresh_cached(
     ttl_minutes: int,
     parser: Callable[[str], Any],
     now: datetime,
-    fetcher: Callable[[str], str] = fetch_text
+    fetcher: Callable[[str], str] = fetch_text,
 ) -> tuple[Any, bool, str | None]:
-    entry = state.setdefault("sources", {}).get(name, {})
-    if cache_fresh(entry, ttl_minutes, now) and "data" in entry:
-        return entry["data"], False, None
+    sources = state.setdefault("sources", {})
+    entry = sources.setdefault(name, {})
+    previous = entry.get("data")
+
+    expected_version = SOURCE_DATA_VERSIONS.get(name, 1)
+    cached_version = int(entry.get("data_version", expected_version) or expected_version)
+
+    if cached_version != expected_version:
+        previous = None
+
+    if cache_fresh(entry, ttl_minutes, now) and previous is not None:
+        return previous, False, None
+
+    if retry_paused(entry, now):
+        return previous, False, f"retry paused until {entry.get('retry_after', '')}"
 
     try:
         raw = fetcher(URLS[name])
         data = parser(raw)
-        state["sources"][name] = {
-            "checked_at": iso(now),
-            "data": data
-        }
+
+        suspicious, reason = suspicious_result(name, data, previous, entry)
+        if suspicious and previous is not None:
+            record_failure(entry, now, reason)
+            return previous, True, reason
+
+        entry["data"] = data
+        entry["data_version"] = expected_version
+        entry["checked_at"] = iso(now)
+        entry["last_success"] = iso(now)
+        clear_failure(entry)
+        entry["pending_drop_count"] = None
+        entry["pending_drop_seen"] = 0
         return data, True, None
+
     except Exception as exc:
-        if "data" in entry:
-            return entry["data"], False, f"{type(exc).__name__}: {exc}"
-        return None, False, f"{type(exc).__name__}: {exc}"
+        message = f"{type(exc).__name__}: {exc}"
+        record_failure(entry, now, message)
+        return previous, True, message
+
+
+def source_age_minutes(state: dict[str, Any], name: str, now: datetime) -> float | None:
+    entry = state.get("sources", {}).get(name, {})
+    last_success = parse_iso(entry.get("last_success") or entry.get("checked_at"))
+    if not last_success:
+        return None
+    return max(0.0, (now - last_success).total_seconds() / 60.0)
+
+
+def user_status_notice(
+    state: dict[str, Any],
+    ttl: dict[str, Any],
+    now: datetime,
+) -> str:
+    notices: list[str] = []
+
+    catalog_age = source_age_minutes(state, "catalog", now)
+    catalog_entry = state.get("sources", {}).get("catalog", {})
+    catalog_failed = int(catalog_entry.get("failure_count", 0) or 0) > 0
+
+    if catalog_age is not None and (
+        catalog_age > 24 * 60
+        or (catalog_failed and catalog_age > max(120, int(ttl.get("catalog", 720)) * 2))
+    ):
+        notices.append("Event data may be delayed.")
+
+    community_names = [
+        "metasheet",
+        "hardstuck",
+        "ttwurm",
+        "gw2community",
+        "vip",
+        "choya",
+    ]
+    degraded = 0
+    for name in community_names:
+        entry = state.get("sources", {}).get(name, {})
+        age = source_age_minutes(state, name, now)
+        source_ttl = int(ttl.get(name, 15) or 15)
+        failed = int(entry.get("failure_count", 0) or 0) > 0
+        missing = entry.get("data") is None
+        stale = age is not None and age > max(60, source_ttl * 3)
+        if missing or (failed and stale):
+            degraded += 1
+
+    if degraded >= 3:
+        notices.append("Community signals may be limited.")
+
+    return " ".join(notices)
 
 
 def parse_maps(raw: str) -> list[dict[str, Any]]:
@@ -893,7 +1181,10 @@ def apply_community(
                 continue
             target = resolve_alias(row.get("title", ""), cands)
             if target:
-                announcement_url = row.get("url", "") or ANNOUNCEMENT_SOURCE_URLS.get(source_name, "")
+                announcement_url = safe_https_url(
+                    row.get("url", ""),
+                    ANNOUNCEMENT_ALLOWED_HOSTS,
+                ) or ANNOUNCEMENT_SOURCE_URLS.get(source_name, "")
                 add_community_signal(
                     cands, target, start, source_name, 150,
                     announcement_url=announcement_url
@@ -1141,8 +1432,9 @@ def signal_flash(c: Candidate) -> str:
 
 
 def info_link(c: Candidate) -> str:
-    if c.wiki:
-        url = c.wiki
+    direct = safe_https_url(c.wiki, {"wiki.guildwars2.com"})
+    if direct:
+        url = direct
         title = "Event info"
     else:
         url = "https://wiki.guildwars2.com/index.php?search=" + urllib.parse.quote(c.event)
@@ -1154,10 +1446,11 @@ def info_link(c: Candidate) -> str:
 
 
 def announcement_link(c: Candidate) -> str:
-    if not c.announcement_url:
+    url = safe_https_url(c.announcement_url, ANNOUNCEMENT_ALLOWED_HOSTS)
+    if not url:
         return ""
     return (
-        f'<a class="announcement" href="{html.escape(c.announcement_url)}" '
+        f'<a class="announcement" href="{html.escape(url)}" '
         f'target="_blank" rel="noopener" title="Event announcement">Announcement</a>'
     )
 
@@ -1208,9 +1501,10 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
 def page_version(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
-    active_more: list[Candidate], upcoming_more: list[Candidate]
+    active_more: list[Candidate], upcoming_more: list[Candidate],
+    notice: str = ""
 ) -> str:
-    rows = []
+    rows = [["notice", notice]]
     for group, items in (
         ("now", active), ("next", upcoming),
         ("now-extra", active_extra), ("next-extra", upcoming_extra),
@@ -1230,12 +1524,13 @@ def render_html(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
     active_more: list[Candidate], upcoming_more: list[Candidate],
-    cfg: dict[str, Any], now: datetime
+    cfg: dict[str, Any], now: datetime,
+    notice: str = ""
 ) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
     version = page_version(
         active, upcoming, active_extra, upcoming_extra,
-        active_more, upcoming_more
+        active_more, upcoming_more, notice
     )
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
@@ -1279,6 +1574,7 @@ body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI
 .app{{max-width:920px;margin:auto;padding:18px}}
 header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}}
+.status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 .event-card:hover{{background:var(--panel2)}}
@@ -1342,7 +1638,10 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 </head>
 <body>
 <div class="app">
-<header><div id="clock"></div></header>
+<header>
+  <div id="clock"></div>
+  {f'<div class="status-note">{html.escape(notice)}</div>' if notice else ''}
+</header>
 
 <h2>Now · Highest Activity</h2>
 {section(active, False)}
@@ -1404,16 +1703,15 @@ def main() -> int:
     args = ap.parse_args()
 
     cfg = load_json(CONFIG_PATH, {})
-    state = load_json(STATE_PATH, {"version": 1, "sources": {}})
-    state.setdefault("version", 1)
-    state.setdefault("sources", {})
+    raw_state = load_json(STATE_PATH, {"version": CACHE_SCHEMA_VERSION, "sources": {}})
+    state, cache_state_updated = normalize_state(raw_state)
+
     now = parse_iso(args.now) if args.now else now_utc()
     if not now:
         raise SystemExit("Invalid --now value")
 
     ttl = cfg.get("source_ttls_minutes", {})
     errors: dict[str, str] = {}
-    refreshed = False
 
     parsers = {
         "maps": parse_maps,
@@ -1427,7 +1725,7 @@ def main() -> int:
         "vip": parse_vip,
         "choya": parse_choya,
         "fast": parse_fast,
-        "news": parse_news
+        "news": parse_news,
     }
 
     values: dict[str, Any] = {}
@@ -1437,14 +1735,26 @@ def main() -> int:
             if values[name] is None:
                 errors[name] = "cache missing"
             continue
-        data, changed, err = refresh_cached(state, name, int(ttl.get(name, 60)), parser, now)
+
+        data, changed, err = refresh_cached(
+            state,
+            name,
+            int(ttl.get(name, 60)),
+            parser,
+            now,
+        )
         values[name] = data
-        refreshed = refreshed or changed
+        cache_state_updated = cache_state_updated or changed
         if err:
             errors[name] = err
 
     catalog = values.get("catalog") or []
     if not catalog:
+        if cache_state_updated or not STATE_PATH.exists():
+            atomic_write(
+                STATE_PATH,
+                json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            )
         print("FATAL: no event catalog available", file=sys.stderr)
         return 2
 
@@ -1453,43 +1763,78 @@ def main() -> int:
     apply_map_levels(cands, values.get("maps"))
     apply_ninja_waypoints(cands, values.get("ninja"))
     apply_community(
-        cands, now, cfg.get("region", "EU"),
-        values.get("metasheet"), values.get("hardstuck"), values.get("ttwurm"), values.get("dcap"),
-        values.get("gw2community"), values.get("vip"), values.get("choya")
+        cands,
+        now,
+        cfg.get("region", "EU"),
+        values.get("metasheet"),
+        values.get("hardstuck"),
+        values.get("ttwurm"),
+        values.get("dcap"),
+        values.get("gw2community"),
+        values.get("vip"),
+        values.get("choya"),
     )
     apply_fast_context(cands, values.get("fast"))
-    active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(cands, cfg, now)
+
+    active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(
+        cands, cfg, now
+    )
+
+    notice = user_status_notice(state, ttl, now)
 
     page = render_html(
-        active, upcoming,
-        active_extra, upcoming_extra,
-        active_more, upcoming_more,
-        cfg, now
+        active,
+        upcoming,
+        active_extra,
+        upcoming_extra,
+        active_more,
+        upcoming_more,
+        cfg,
+        now,
+        notice,
     )
 
     old_page = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else ""
     page_changed = page != old_page
     if page_changed:
         atomic_write(INDEX_PATH, page)
-    if refreshed or not STATE_PATH.exists():
-        atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+
+    if cache_state_updated or not STATE_PATH.exists():
+        atomic_write(
+            STATE_PATH,
+            json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        )
 
     print(
         f"candidates={len(cands)} active={len(active)} upcoming={len(upcoming)} "
         f"active_extra={len(active_extra)} upcoming_extra={len(upcoming_extra)} "
         f"active_more={len(active_more)} upcoming_more={len(upcoming_more)} "
-        f"page_changed={page_changed} sources_refreshed={refreshed}"
+        f"page_changed={page_changed} cache_state_updated={cache_state_updated}"
     )
+
+    if notice:
+        print(f"User status: {notice}")
+
     if errors:
         print("Source warnings:")
-        for k, v in errors.items():
-            print(f"  {k}: {v}")
+        for name, message in errors.items():
+            print(f"  {name}: {message}")
+
     for label, items in [
-        ("NOW", active), ("NOW+", active_extra), ("NOW-ALL", active_more),
-        ("NEXT", upcoming), ("NEXT+", upcoming_extra), ("NEXT-ALL", upcoming_more)
+        ("NOW", active),
+        ("NOW+", active_extra),
+        ("NOW-ALL", active_more),
+        ("NEXT", upcoming),
+        ("NEXT+", upcoming_extra),
+        ("NEXT-ALL", upcoming_more),
     ]:
         for c in items:
-            print(f"{label} {c.start.isoformat()} {c.event} {c.location} {c.waypoint} score={c.score:.1f} level={c.level} lightning={c.lightning} special={c.special}")
+            print(
+                f"{label} {c.start.isoformat()} {c.event} {c.location} "
+                f"{c.waypoint} score={c.score:.1f} level={c.level} "
+                f"lightning={c.lightning} special={c.special}"
+            )
+
     return 0
 
 
