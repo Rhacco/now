@@ -5314,7 +5314,7 @@
       }
     },
     "dcap": {
-      "checked_at": "2026-09-25T17:45:59.363003+00:00",
+      "checked_at": "2026-09-25T18:02:57.239827+00:00",
       "data": {
         "events": [
           {
@@ -5579,6 +5579,6521 @@
           "start": "2026-09-30T15:09:00+00:00",
           "title": "NA [NA] After meta train Fashion contest Wednesday!",
           "url": "https://hardstuck.gg/events/after-meta-train-fashion-contest-wednesday/"
+        }
+      ]
+    },
+    "maps": {
+      "checked_at": "2026-09-25T18:02:57.239827+00:00",
+      "data": [
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Queensdale",
+          "type": "Public"
+        },
+        {
+          "max_level": 45,
+          "min_level": 35,
+          "name": "Harathi Hinterlands",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Divinity's Reach",
+          "type": "Public"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Plains of Ashford",
+          "type": "Public"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blazeridge Steppes",
+          "type": "Public"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Fields of Ruin",
+          "type": "Public"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Fireheart Rise",
+          "type": "Public"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Kessex Hills",
+          "type": "Public"
+        },
+        {
+          "max_level": 35,
+          "min_level": 25,
+          "name": "Gendarran Fields",
+          "type": "Public"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Iron Marches",
+          "type": "Public"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Dredgehaunt Cliffs",
+          "type": "Public"
+        },
+        {
+          "max_level": 40,
+          "min_level": 25,
+          "name": "Lornar's Pass",
+          "type": "Public"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Wayfarer Foothills",
+          "type": "Public"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Timberline Falls",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 70,
+          "name": "Frostgorge Sound",
+          "type": "Public"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Snowden Drifts",
+          "type": "Public"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Diessa Plateau",
+          "type": "Public"
+        },
+        {
+          "max_level": 32,
+          "min_level": 30,
+          "name": "Ascalonian Catacombs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Caledon Forest",
+          "type": "Public"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Metrica Province",
+          "type": "Public"
+        },
+        {
+          "max_level": 35,
+          "min_level": 35,
+          "name": "Ascalonian Catacombs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Arson at the Orphanage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eternal Battlegrounds",
+          "type": "Center"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Mount Maelstrom",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Lion's Arch",
+          "type": "Public"
+        },
+        {
+          "max_level": 75,
+          "min_level": 70,
+          "name": "Straits of Devastation",
+          "type": "Public"
+        },
+        {
+          "max_level": 65,
+          "min_level": 55,
+          "name": "Sparkfly Fen",
+          "type": "Public"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Brisban Wildlands",
+          "type": "Public"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Hospital in Jeopardy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Infiltration",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cursed Shore",
+          "type": "Public"
+        },
+        {
+          "max_level": 62,
+          "min_level": 60,
+          "name": "Sorrow's Embrace",
+          "type": "Instance"
+        },
+        {
+          "max_level": 65,
+          "min_level": 65,
+          "name": "Sorrow's Embrace",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 75,
+          "name": "Malchor's Leap",
+          "type": "Public"
+        },
+        {
+          "max_level": 72,
+          "min_level": 70,
+          "name": "Citadel of Flame",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 55,
+          "name": "Twilight Arbor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 52,
+          "min_level": 50,
+          "name": "Twilight Arbor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 75,
+          "min_level": 75,
+          "name": "Citadel of Flame",
+          "type": "Instance"
+        },
+        {
+          "max_level": 78,
+          "min_level": 76,
+          "name": "Honor of the Waves",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Honor of the Waves",
+          "type": "Instance"
+        },
+        {
+          "max_level": 55,
+          "min_level": 45,
+          "name": "Bloodtide Coast",
+          "type": "Public"
+        },
+        {
+          "max_level": 42,
+          "min_level": 40,
+          "name": "Caudecus's Manor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 45,
+          "min_level": 45,
+          "name": "Caudecus's Manor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Search the Premises",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Informant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Society Function",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 78,
+          "name": "Crucible of Eternity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Crucible of Eternity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Chasing the Culprits",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "The Grove",
+          "type": "Public"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Trial of Julius Zamon",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": " Alpine Borderlands",
+          "type": "GreenHome"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": " Alpine Borderlands",
+          "type": "BlueHome"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Infiltration",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Perils of Friendship",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Victory or Death",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Ruined City of Arah",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Desperate Medicine",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Commander",
+          "type": "Instance"
+        },
+        {
+          "max_level": 1,
+          "min_level": 1,
+          "name": "Defense of Shaemoor",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Rata Sum",
+          "type": "Public"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Apothecary",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Going Undercover",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Going Undercover",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Greater Good",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Rescue",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Breaking the Blade",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Fall of Falcon Company",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Fall of Falcon Company",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Confronting Captain Tervelan",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Seek Logan's Aid",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Seek Logan's Aid",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Accusation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Accusation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Liberation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Voices From the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Voices From the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Rending the Mantle",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Rending the Mantle",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Floating Grizwhirl",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Floating Grizwhirl",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Floating Grizwhirl",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Clown College",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Artist's Workshop",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Into the Woods",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Ringmaster",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Orders of Tyria",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Orders of Tyria",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Brute Force",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Mortus Virge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Triskell Quay",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Track the Seraph",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Speaker of the Dead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Sad Tale of the \"Ravenous\"",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Kellach's Attack",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Queen's Justice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Trap",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Best Laid Plans",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Welcome Home",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Tribune's Call",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Tribune's Call",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Tribune's Call",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Black Citadel",
+          "type": "Public"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Spy for a Spy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Scrapyard Dogs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Spy for a Spy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "On the Mend",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Spilled Blood",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Ghostbore Musket",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Iron Grip of the Legion",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Flame Advances",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Flame Advances",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Test Your Metal",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Quick and Quiet",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Salma District (Home)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "An Unusual Inheritance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Windrock Maze",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Mired Deep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Mired Deep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Deadly Force",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Ghostbore Artillery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "No Negotiations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Salvaging Scrap",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Salvaging Scrap",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "In the Ruins",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "In the Ruins",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Busted Flagon Public House",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Chain of Command",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Chain of Command",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Time for a Promotion",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The End of the Line",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Magic Users",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Rage Suppression",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Rage Suppression",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Operation: Bulwark",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "AWOL",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Human's Lament",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Misplaced Faith",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Thicker Than Water",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Dishonorable Discharge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Searching for the Truth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Lighting the Beacons",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Stoking the Flame",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A Fork in the Road",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Sins of the Father",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Graveyard Ornaments",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Hoelbrak",
+          "type": "Public"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Desperate Medicine",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 0,
+          "name": "Seraph Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Keg Brawl",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Claw Island",
+          "type": "Public"
+        },
+        {
+          "max_level": 55,
+          "min_level": 45,
+          "name": "Chantry of Secrets",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Heart of the Mists",
+          "type": "Public"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Sting",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Drawing Out the Cult",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Ashes of the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Hero's Canton (Home)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Blood Tribune Quarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "The Command Core",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Knut Whitebear's Loft",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Hunter's Hearth (Home)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Stonewright's Steading",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 0,
+          "name": "Queen's Throne Room",
+          "type": "Instance"
+        },
+        {
+          "max_level": 1,
+          "min_level": 1,
+          "name": "The Great Hunt",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Weapon of Legend",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Last of the Giant-Kings",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Disciples of the Dragon",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Weapon of Legend",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Echoes of Ages Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Wild Spirits",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Out of the Skies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Echoes of Ages Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Twilight of the Wolf",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Rage of the Minotaurs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Pup's Illness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Through the Veil",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Trap Foiled",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Raven's Revered",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "One Good Drink Deserves Another",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Shape of the Spirit",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Into the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Through the Veil",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Blessed of Bear",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Wolf Havroun",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Minotaur Rampant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Minotaur Rampant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Unexpected Visitors",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Rumors of Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A New Challenger",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Unexpected Visitors",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Roadblock",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Assault on Moledavia",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Don't Leave Your Toys Out",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A New Challenger",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "First Attack",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Finishing Blow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Semifinals",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Championship Fight",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Championship Fight",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Machine in Action",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Among the Kodan",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Rumors of Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Rage of the Minotaurs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Darkness at Drakentelt",
+          "type": "Instance"
+        },
+        {
+          "max_level": 1,
+          "min_level": 1,
+          "name": "Fighting the Nightmare",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Preserving the Balance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Means to an End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Dredge Technology",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Underground Scholar",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Dredge Assault",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Dredge Hideout",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Sabotage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Codebreaker",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Armaments",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Assault the Hill",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Silent Warfare",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Sever the Head",
+          "type": "Instance"
+        },
+        {
+          "max_level": 1,
+          "min_level": 1,
+          "name": "Fury of the Dead",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A Fork in the Road",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Citadel Stockade",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Tribunes in Effigy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Sins of the Father",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Misplaced Faith",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Gladiator",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Graveyard Ornaments",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Undead Infestation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Whispers in the Dark",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Dangerous Research",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Digging Up Answers",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Defending the Keep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Undead Detection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Ever Vigilant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Research and Destroy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Whispers of Vengeance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Killer Instinct",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Meeting my Mentor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "A Fragile Peace",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Don't Shoot the Messenger",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Meeting my Mentor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Dredging Up the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Dredging Up the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Scrapyard Dogs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Quaestor's Siege",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Minister's Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Called to Service",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Called to Service",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Mockery of Death",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Discovering Darkness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Hounds and the Hunted",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Hounds and the Hunted",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Loved and Lost",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Saving the Stag",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Hidden in Darkness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Good Work Spoiled",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Black Night, White Stag",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Omphalos Chamber",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Weakness of the Heart",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Awakening",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Holding Back the Darkness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Sly Trick",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Deep Tangled Roots",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Heart of Nightmare",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Beneath a Cold Moon",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Knight's Duel",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Hammer and Steel",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Where Life Goes",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "After the Storm",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "After the Storm",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Beneath the Waves",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Mirror, Mirror",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A Vision of Darkness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Shattered Light",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "An Unknown Soul",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "An Unknown Soul",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Where Life Goes",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Source of the Issue",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Wild Growth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Wild Growth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Seeking the Zalisco",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "The Direct Approach",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Trading Trickery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Eye of the Sun",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Battle of Kyhlo",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Seeking the Zalisco",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Forest of Niflhel",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A Different Dream",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "A Splinter in the Flesh",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Shadow of the Tree",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Eye of the Sun",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Sharpened Thorns",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Bramble Walls",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Secrets in the Earth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Blossom of Youth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "The Bad Apple",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Trouble at the Roots",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Flower of Death",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Dead of Winter",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "A Tangle of Weeds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 1,
+          "min_level": 1,
+          "name": "Explosive Intellect",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "In Snaff's Footsteps",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Golem Positioning System",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Monkey Wrench",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Defusing the Problem",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Things We Do For Love",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Snaff Prize",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Sparkling Rescue",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "High Maintenance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Snaff Would Be Proud",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Taking Credit Back",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Political Homicide",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Here, There, Everywhere",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Piece Negotiations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Readings On the Rise",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Snaff Would Be Proud",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Readings On the Rise",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Unscheduled Delay",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Stand By Your Krewe",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Unwelcome Visitors",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Where Credit Is Due",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Where Credit Is Due",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Short Fuse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Short Fuse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Salt in the Wound",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Free Rein",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Serving Up Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Serving Up Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Flash Flood",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "I Smell a Rat",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Magnum Opus",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Magnum Opus",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Bad Business",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Beta Test",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Beta Test",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Any Sufficiently Advanced Science",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Any Sufficiently Advanced Science",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Bad Forecast",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Industrial Espionage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Split Second",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 20,
+          "name": "Carry a Big Stick",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Meeting my Mentor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Stealing Secrets",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "A Bold New Theory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Forging Permission",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Forging Permission",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Setting the Stage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Containment",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Containment",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Hazardous Environment",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Down the Hatch",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Down the Hatch",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "The Stone Sheath",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Bad Blood",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Test Subject",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Field Test",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "The House of Caithe",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Dreamer's Terrace (Home)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "The Omphalos Chamber",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Snaff Memorial Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Applied Development Lab (Home)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Council Level",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "A Meeting of the Minds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Mightier than the Sword",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "They Went Thataway",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Lines of Communication",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Untamed Wilds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "An Apple a Day",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Base of Operations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "The Lost Chieftain's Return",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Thrown Off Guard",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Pets and Walls Make Stronger Kraals",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Doubt",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "The False God's Lair",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Bad Ice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Bad Ice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Pets and Walls Make Stronger Kraals",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Attempted Deicide",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Doubt",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Rat-Tastrophe",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Salvation Through Heresy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Enraged and Unashamed",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Pastkeeper",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Protest Too Much",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Prying the Eye Open",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "The Hatchery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Convincing the Faithful",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Evacuation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Untamed Wilds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Champion's Sacrifice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Thieving from Thieves",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Crusader's Return",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Unholy Grounds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Chosen of the Sun",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 50,
+          "name": "Set to Blow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Gadd's Last Gizmo",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 40,
+          "name": "Library Science",
+          "type": "Instance"
+        },
+        {
+          "max_level": 35,
+          "min_level": 30,
+          "name": "Rakt and Ruin",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Suspicious Activity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Reconnaissance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Critical Blowback",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Battle of Claw Island",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Suspicious Activity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Priory Library",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "On Red Alert",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Forearmed Is Forewarned",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Oratory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Killing Fields",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Ghost Rite",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Good Fight",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Defense Contract",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Shards of Orr",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Sound of Psi-Lance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Early Parole",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Magic Sucks",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "A Light in the Darkness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Priory Assailed",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Under Siege",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Retribution",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "Retribution",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 60,
+          "name": "The Sound of Psi-Lance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Wet Work",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Shell Shock",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Volcanic Extraction",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Munition Acquisition",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "To the Core",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "The Battle of Fort Trinity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Tower Down",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Forging the Pact",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Willing Captives",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Marshaling the Truth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Breaking the Bone Ship",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Liberating Apatia",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Liberating Apatia",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Fixing the Blame",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "A Sad Duty",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Striking off the Chains",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Delivering Justice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Intercepting the Orb",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Close the Eye",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Through the Looking Glass",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "The Cathedral of Silence",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Starving the Beast",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Stealing Light",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hunters and Prey",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Romke's Final Voyage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Marching Orders",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Air Drop",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Estate of Decay",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "What the Eye Beholds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Conscript the Dead Ships",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ossuary of Unquiet Dead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Temple of the Forgotten God",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Temple of the Forgotten God",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Temple of the Forgotten God",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Through the Looking Glass",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Starving the Beast",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Against the Corruption",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "The Source of Orr",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Armor Guard",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Blast from the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Steel Tide",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Further Into Orr",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ships of the Line",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Source of Orr",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Victory or Death",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Grisly Shipment",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Blast from the Past",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "A Pup's Illness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hunters and Prey",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Legacy of the Foefire",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Informant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "A Traitor's Testimony",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Follow the Trail",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "Awakening",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Eye of the North",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Omphalos Chamber",
+          "type": "Instance"
+        },
+        {
+          "max_level": 10,
+          "min_level": 10,
+          "name": "The Omphalos Chamber",
+          "type": "Instance"
+        },
+        {
+          "max_level": 30,
+          "min_level": 30,
+          "name": "Codebreaker",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 70,
+          "name": "Caer Aval",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "The Durmand Priory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Vigil Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Ash Tribune Quarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 20,
+          "min_level": 20,
+          "name": "Shattered Light",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Reaper's Rumble",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 2,
+          "name": "Ascent to Madness",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Lunatic Inquisition",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Mad King's Clock Tower",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mad King's Labyrinth",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Cove",
+          "type": "Public"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Temple of the Silent Storm",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Snowball Mayhem",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 2,
+          "name": "Tixx's Infinirarium",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Toypocalypse",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Bell Choir Ensemble",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Winter Wonderland",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Spirit Watch",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Super Adventure Box",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "North Nolan Hatchery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Cragstead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Obsidian Sanctum",
+          "type": "JumpPuzzle"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Skyhammer",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Molten Furnace",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Crab Toss",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Dragon Ball Arena",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Ceremony and Acrimony—Memorials on the Pyre",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Hard Boiled—The Scene of the Crime",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "The Dead End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Aetherblade Retreat",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "No More Secrets—The Scene of the Crime",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Aspect Arena",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Sanctum Sprint",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Southsun Survival",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Labyrinthine Cliffs",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Grandmaster of Om",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Crown Pavilion",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Opening Ceremony",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scarlet's Playhouse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Closing Ceremony",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Super Adventure Box",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Super Adventure Box",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scarlet's End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Tower of Nightmares (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "The Nightmare Ends",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scarlet's Secret Lair",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Origins of Madness: A Moment's Peace",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Edge of the Mists",
+          "type": "EdgeOfTheMists"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Dead End: A Study in Scarlet",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Evacuation of Lion's Arch",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Dead End: Celebration",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Courtyard",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lion's Arch: Honored Guests",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dry Top",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Prosperity's Mystery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cornered",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Disturbance in Brisban Wildlands",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fallen Hopes",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scarlet's Secret Room",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Concordia Incident",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Discovering Scarlet's Breakthrough",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Machine",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Trouble at Fort Salma",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Waypoint Conundrum",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Summit Invitations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mission Accomplished",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Rallying Call",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Plan of Attack",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Party Politics",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Foefire Cleansing",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Recalibrating the Waypoints",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Ghosts of Fort Salma",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Taimi's Device",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The World Summit",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Battle of Champion's Dusk",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Silverwastes",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hidden Arcana",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Reunion with the Pact",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Caithe's Reconnaissance Squad",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fort Trinity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Into the Labyrinth",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Return to Camp Resolve",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Tracking the Aspect Masters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "No Refuge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Newly Awakened",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Meeting the Asura",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Pact Assaulted",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Mystery Cave",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Arcana Obscura",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Prized Possessions",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Buried Insight",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Jungle Provides",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hearts and Minds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon's Stand",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Verdant Brink",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Auric Basin",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Tangled Depths",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Roots of Terror",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "City of Hope",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Torn from the Sky",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Prisoners of the Dragon",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Verdant Brink",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bitter Harvest",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Strange Observations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Prologue: Rally to Maguuma",
+          "type": "Tutorial"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Spirit Vale",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Crab Toss",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Angvar's Trove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Angvar's Trove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Crab Toss",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Guild Initiative Office",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blightwater Shatterstrike",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Proxemics Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Deep Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Branded for Termination",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Langmar Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Langmar Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Deep Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Crab Toss",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Save Our Supplies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Proxemics Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Angvar's Trove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Langmar Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Save Our Supplies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Scratch Sentry Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Angvar's Trove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Save Our Supplies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon's Stand (Heart of Thorns)",
+          "type": "Public"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Proxemics Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": " Desert Borderlands",
+          "type": "RedHome"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Scratch Sentry Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Langmar Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Deep Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Angvar's Trove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scrap Rifle Field Test",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Scratch Sentry Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Branded for Termination",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Scratch Sentry Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Haywire Punch-o-Matic Battle",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Deep Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Save Our Supplies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Gilded Hollow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blightwater Shatterstrike",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Crab Toss",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Scratch Sentry Defense",
+          "type": "Instance"
+        },
+        {
+          "max_level": 15,
+          "min_level": 1,
+          "name": "Langmar Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 70,
+          "min_level": 60,
+          "name": "Deep Trouble",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blightwater Shatterstrike",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Branded for Termination",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blightwater Shatterstrike",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Branded for Termination",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Proxemics Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 25,
+          "min_level": 15,
+          "name": "Proxemics Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 60,
+          "min_level": 50,
+          "name": "Save Our Supplies",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Southsun Crab Toss",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Lost Precipice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 50,
+          "min_level": 40,
+          "name": "Blightwater Shatterstrike",
+          "type": "Instance"
+        },
+        {
+          "max_level": 40,
+          "min_level": 30,
+          "name": "Branded for Termination",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Spirit Vale",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Salvation Pass",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Tiger Den",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Special Forces Training Area",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lion's Arch Aerodrome",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Stronghold of the Faithful",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Noble's Folly",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Research in Rata Novus",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eir's Homestead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Revenge of the Capricorn",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bloodstone Fen",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Confessor's Stronghold",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Shadow's Deeds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Rata Novus",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Taimi's Game",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Eternal Coliseum",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon Vigil",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Taimi's Game",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ember Bay",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Taimi's Game",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bitterfrost Frontier",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Bitter Cold",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Frozen Out",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Precocious Aurene",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lake Doric",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bastion of the Penitent",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Regrouping with the Queen",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Meeting of Ministers",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Confessor's End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Second Vision",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The First Vision",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Sword Regrown",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Draconis Mons",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Heart of the Volcano",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Taimi's Pet Project",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hall of the Mists",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Asura Arena",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "White Mantle Hideout",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Siren's Landing",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Palace Temple",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mistlock Sanctuary",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Last Chance",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Shining Blade Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Sacrifice",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Crystal Oasis",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Desert Highlands",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Office of the Chief Councilor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sparking the Flame",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Enemy of My Enemy: The Beastmarshal",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sparking the Flame (Prologue)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Way Forward",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Small Victory (Epilogue)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Desolation",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hallowed Ground: Tomb of Primeval Kings",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Elon Riverlands",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Facing the Truth: The Sanctum",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "To Kill a God",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Blazing a Trail",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Night of Fires",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Zalambur's Office",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Departing",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Captain Kiel's Office",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Enemy of My Enemy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Domain of Vabbi",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Windswept Haven",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Crystalline Memories",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Beast of War",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Enemy of My Enemy: The Troopmarshal",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Dark Library",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Spearmarshal's Lament",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eye of the Brandstorm",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Domain of Istan",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hall of Chains",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Hero of Istan",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cave of the Sunspear Champion",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fahranur, the First City",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Toypocalypse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sandswept Isles",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Charge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Courtyard",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Test Subject",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Charge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "ERROR: SIGNAL LOST",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Kindness Repaid",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Tracking the Scientist",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Domain of Kourna",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Seized",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forearmed Is Forewarned",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Be My Guest",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sun's Refuge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Legacy",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Storm Tracking",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Shattered Nation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Storm Tracking",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "From the Ashes—The Deadeye",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Jahai Bluffs",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Storm Tracking",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mythwright Gambit",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mad King's Raceway",
+          "type": "Public"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Djinn's Dominion",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Secret Lair of the Snowmen (Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Scion & Champion",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Thunderhead Peaks",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Crystal Dragon",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Crystal Blooms",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Armistice Bastion",
+          "type": "Unknown"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mists Rift",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonfall",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonfall",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Descent",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonflight",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Epilogue",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Key of Ahdashim",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon Arena (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon Arena (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Auric Span",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Coming Home",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Grothmar Valley",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Shiverpeaks Pass (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Shiverpeaks Pass",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deeper and Deeper",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Race to Arms",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bad Blood",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Boneskinner",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Voice of the Fallen and Claw of the Fallen (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fraenir of Jormag",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Invitation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bjora Marches",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fraenir of Jormag (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "What's Left Behind",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Voice of the Fallen and Claw of the Fallen",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Silence",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Boneskinner (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Secret Lair of the Snowmen (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Celestial Challenge",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Voice in the Deep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Chasing Ghosts",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Whisper of Jormag (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Eye of the North",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Whisper of Jormag",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Nightmare Incarnate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forging Steel (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "New Friends, New Enemies—North Nolan Hatchery",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "The Battle for Cragstead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Darkrime Delves",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forging Steel (Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Canach's Lair",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Eye of the North",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Drizzlewood Coast",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Turnabout",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Pointed Parley",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cold War",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Snapping Steel",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cold War (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Behind Enemy Lines",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "One Charr, One Dragon, One Champion",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "Epilogue",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Arena of the Wolverine",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Simple Negotiation",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Caledon Forest (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Thunderhead Peaks (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bloodtide Coast (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Snowden Drifts (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Snowden Drifts (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fireheart Rise (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Brisban Wildlands (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Primordus Rising",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lake Doric (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bloodtide Coast (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Thunderhead Peaks (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gendarran Fields (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Metrica Province (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fields of Ruin (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Brisban Wildlands (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fields of Ruin (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Metrica Province (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lake Doric (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Caledon Forest (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fireheart Rise (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gendarran Fields (Private)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Council Level",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Wildfire",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonstorm (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Champion's End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonstorm (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragonstorm",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Twisted Marionette (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Twisted Marionette (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Future in Jade: Power Plant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deepest Secrets: Yong Reactor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fallout: Nika's Blade",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Dragon's End",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Weight of the World: Lady Joon's Estate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Arborstone",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Cycle, Reborn: Arborstone",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Aetherblade Hideout",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Old Friends",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Empty",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Extraction Point: Command Quarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Harvest Temple",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "New Kaineng City",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Only One",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Laying to Rest",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Seitung Province",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Future in Jade: Nahpui Lab",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Aetherblade Armada",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Cycle, Reborn: The Dead End Bar",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Aurene's Sanctuary",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Xunlai Jade Junkyard",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Kaineng Overlook",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Echovald Wilds",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ministry of Security: Main Office",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Scenic Route: Kaineng Docks",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Detention Facility",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Aurene's Sanctuary",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Empress Ihn's Court",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Zen Daijun Hideaway",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Claiming the Isle of Reflection",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fallout: Arborstone",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Thousand Seas Pavilion",
+          "type": "Public"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "A Quiet Celebration—Knut Whitebear's Loft",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "New Friends, New Enemies—The Command Core",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "The Battle for Cragstead—Knut Whitebear's Loft",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "New Friends, New Enemies—Blood Tribune Quarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 0,
+          "min_level": 0,
+          "name": "A Quiet Celebration—Citadel Stockade",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Case Closed—The Dead End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Hard Boiled—The Dead End",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Picking Up the Pieces",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Tower of Nightmares (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Battle for Lion's Arch (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Twisted Marionette",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Battle on the Breachmaker",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Battle For Lion's Arch (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Memory of Old Lion's Arch",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "North Evacuation Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Old Lion's Court",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Aether Escape",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "On the Case: Excavation Yard",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Raw Deal: Red Duck Teahouse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Gyala Delve",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deep Trouble: Excavation Yard",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deep Trouble: The Deep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 1,
+          "name": "Super Adventure Box",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Entrapment: The Deep",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Plan Emerges: Power Plant",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Emotional Release: Jade Pools",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Emotional Release: Command Quarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Full Circle: Red Duck Teahouse",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forward",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hell Breaks Loose: ???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Missing Facet: Southern Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mother of Stars: Stargaze Ridge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Into the Obscure: Bastion of the Obscure",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Tower of Secrets: Southern Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mabon's Fate: Bastion of Strength",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Astral Ward Infirmary",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Wizard's Tower",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Skywatch Archipelago",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Commander without a Cause: Gendarran Fields",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The World Spire: Bastion of the Celestial",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mother of Stars: Cosmic Observatory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Epilogue: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Cosmic Observatory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Into the Obscure: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Amnytas",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Treachery: Nayos",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Hell Breaks Loose: ???",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Temple of Febe",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Missing Facet: Droknar's Light",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Stopped Clock Tower",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Outer Nayos (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Duress: Heitor's Territory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Heitor's Gate: Heitor's Territory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Inner Nayos",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Outer Nayos (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Survivors: Heitor's Gate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Survivors: Astral Ward Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Duress: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Duress: Nayos",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forced Hand: Nyedra",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eventide's March: Coliseum of the Midnight King",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The War Council: Astral Ward Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eventide's March: Nyedra Surrounds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Desperate Measures: Forward Bivouac",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sovereign of Nayos: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Eleventh Hour: Citadel of Zakiros",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Desperate Measures: Forward Bivouac",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Twice Stricken: Landfall",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Finding Balance: Hearth's Glow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Titan Research",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Twice Stricken: Hearth's Glow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Finding Balance: Sanguine Crater",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Home Sweet Home: Hearth's Glow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sorrow in These Halls: Harvest Den",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Missing in Action: Haar Mire",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Lowland Shore",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Tyrian Alliance: Guild Initiative Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Against the Wall: Sulfurous Springs",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sorrow in These Halls: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Janthir Syntri",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Strangers among Lands: Festering Basin",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Unknown Territory: Moon Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Home Sweet Home: Abandoned Homestead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Hearth's Glow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Against the Wall: Hearth's Glow",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Strangers among Lands: Guild Initiative Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Sunjiang Backstreets",
+          "type": "Pvp"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Mount Balrior (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Trial and Error: The Wizard's Tower",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mount Balrior",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Battle's Eve: Harvest Den",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Balrior Peak: Harvest Den",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Trial and Error: Janthir Syntri",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Trial and Error: Durmand Priory",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mists Vault",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Mount Balrior (Public)",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Balrior Peak: Mount Balrior",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mabon's Grief: Bava Nisos Outskirts",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Bava Nisos",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Mistburned Barrens",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Legacy Damned: The Golden Lake",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Legacy Damned: Alliance Staging Ground",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Into the Valley of Shadow: Valley of Agony",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Into the Valley of Shadow: Alliance Staging Ground",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Titanic Undertaking: Saevus's Heart",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Salvation's Cost: Foundry of Failed Creations",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Salvation's Cost: Saevus's Heart",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forced Entry: Bava Nisos Outskirts",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Forced Entry: Bava Nisos",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Salvation's Cost: Guild Initiative Headquarters",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Titanic Undertaking: Bava Nisos",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Fractal Incursion Conference",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Beneath the Canopy: Foothold Bivouac",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Path of Divinity: Soaring Sands",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Starlit Weald",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Path of Divinity: Cloister of Stars",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Shipwreck Strand",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Comosus Isle",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Cats-tora",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Unscheduled Departures: Rata Sum Port Authority",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Unscheduled Departures: The Unending Ocean",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fumbling in the Dark: Lost Basilica",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "On the Sly: Sanctum Harbor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eyes, Ears, and Arms: Riddled Cove",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Path of Divinity: Overgrown Thicket",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Truths Unearthed: Guarded Glades",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Beneath the Canopy: Command Complex",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ruins of the Old World: Untamed Crags",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Unscheduled Departures: Shipwreck Strand",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Guardian's Glade",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 78,
+          "name": "Laboratory CAS-U-5",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "On the Threshold: Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "On the Threshold: Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Bold Strategy: Alliance Camp",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Within Your Grasp: Ritual Grounds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "A Bold Strategy: Supra Fortis",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Divitium Nava: Ritual Grounds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "So It Is Written: Seneschal's Shrine",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Divitium Nava: Ritual Grounds",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Eternity's Garden",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Divitium Nava: Empyreal Threshold",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Divitium Nava: Seer Forge",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 0,
+          "name": "Paw-Nthir",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Village of Shaemoor",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Nexus of Eternity",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "So Be It: Nexus of Eternity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Convergence: Nexus of Eternity (Private Squad)",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Burden of Seeing: Doyen's Adytum",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Under Pressure: Ordnance Depot",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Grand Library of Amnytas",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Leyspring Hollows",
+          "type": "Public"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "The Burden of Seeing: Solitary Throne",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Fractals of the Mists",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Soren Draa",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Nexus of Eternity",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deeper Revelations: The Arcane Council",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deeper Revelations: Leyspring Hollows",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Village of Astorea",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Pub Canach",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Snowlord's Gate",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ripples in the Pond: Rooted Sanctuary",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Rata Sum",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Ripples in the Pond: Hall of Assemblage",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Everything That We Are: Village of Smokestead",
+          "type": "Instance"
+        },
+        {
+          "max_level": 80,
+          "min_level": 80,
+          "name": "Deeper Revelations: Temple of the Blessed Mantle",
+          "type": "Instance"
         }
       ]
     },
