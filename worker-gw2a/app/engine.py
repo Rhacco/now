@@ -40,6 +40,16 @@ URLS = {
     "news": "https://www.guildwars2.com/en/feed/"
 }
 
+ANNOUNCEMENT_SOURCE_URLS = {
+    "Meta-Train": "https://docs.google.com/spreadsheets/d/1I2501rbqKjAD6HXQOtHAPQjLdqeS2tQIc9kEwyXuDKo/edit",
+    "Hardstuck": "https://hardstuck.gg/events/",
+    "GW2Community": "https://gw2community.de/calendar/",
+    "ViP": "https://gw2vip.net/",
+    "TT Wurm EU": "https://sites.google.com/view/ttwurm/calendar",
+    "DCAP": "https://wiki.guildwars2.com/wiki/User:DCAP",
+    "Choyareset": "https://choyaaa.com/meta",
+}
+
 WORLD_BOSS_LOCATIONS = {
     "Admiral Taidha Covington": "Bloodtide Coast",
     "Claw of Jormag": "Frostgorge Sound",
@@ -186,6 +196,7 @@ class Candidate:
     score: float = 0.0
     lightning: bool = False
     community_sources: list[str] = field(default_factory=list)
+    announcement_url: str = ""
     direct_waypoint: bool = False
     fast_seen: bool = False
     level: int | None = None
@@ -260,7 +271,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.5.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.5.1 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -692,8 +703,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 source="verified rotating schedule",
                 wiki=ROTATING_EVENT_WIKI["Fractal Incursion"],
                 base_priority=80,
-                lightning=True,
-                community_sources=["Verified rotating special-event schedule"],
+                lightning=False,
                 direct_waypoint=True,
                 special=True,
             ))
@@ -711,8 +721,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                     source="verified rotating schedule",
                     wiki=ROTATING_EVENT_WIKI["Scarlet's Invasion"],
                     base_priority=84,
-                    lightning=True,
-                    community_sources=["Verified rotating special-event schedule"],
+                    lightning=False,
                     direct_waypoint=True,
                     special=True,
                 ))
@@ -732,8 +741,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 source="verified rotating schedule",
                 wiki=ROTATING_EVENT_WIKI["Awakened Invasion"],
                 base_priority=82,
-                lightning=True,
-                community_sources=["Verified rotating special-event schedule"],
+                lightning=False,
                 direct_waypoint=True,
                 special=True,
             ))
@@ -822,13 +830,28 @@ def resolve_alias(title: str, cands: list[Candidate]) -> str | None:
     return None
 
 
-def add_community_signal(cands: list[Candidate], target: str, when: datetime, source: str, window: int = 120, direct_wp: str = "") -> None:
+def add_community_signal(
+    cands: list[Candidate],
+    target: str,
+    when: datetime,
+    source: str,
+    window: int = 120,
+    direct_wp: str = "",
+    announcement_url: str = ""
+) -> None:
     cand = nearest_target(cands, target, when, window)
     if not cand:
         return
+
+    # Strict rule: the bolt means an actual external community/event signal.
     cand.lightning = True
+
     if source not in cand.community_sources:
         cand.community_sources.append(source)
+
+    if announcement_url and not cand.announcement_url:
+        cand.announcement_url = announcement_url
+
     if direct_wp:
         cand.waypoint = direct_wp
         cand.direct_waypoint = True
@@ -870,7 +893,11 @@ def apply_community(
                 continue
             target = resolve_alias(row.get("title", ""), cands)
             if target:
-                add_community_signal(cands, target, start, source_name, 150)
+                announcement_url = row.get("url", "") or ANNOUNCEMENT_SOURCE_URLS.get(source_name, "")
+                add_community_signal(
+                    cands, target, start, source_name, 150,
+                    announcement_url=announcement_url
+                )
 
     # Triple Trouble EU community: page publishes gather times in CET (fixed UTC+1).
     if ttwurm and region == "EU":
@@ -886,7 +913,14 @@ def apply_community(
                 continue
             gather = datetime(d.year, d.month, d.day, item["hour"], item["minute"], tzinfo=fixed_cet).astimezone(timezone.utc)
             # Organized map normally gathers 45 minutes before the relevant TT slot.
-            add_community_signal(cands, "Evolved Jungle Wurm", gather + timedelta(minutes=45), "TT Wurm EU", 20)
+            add_community_signal(
+                cands,
+                "Evolved Jungle Wurm",
+                gather + timedelta(minutes=45),
+                "TT Wurm EU",
+                20,
+                announcement_url=ANNOUNCEMENT_SOURCE_URLS["TT Wurm EU"]
+            )
 
     # DCAP runs are explicitly NA; do not promote them on an EU dashboard.
     if dcap and region == "NA":
@@ -896,7 +930,10 @@ def apply_community(
                 d = (now + timedelta(days=delta)).date()
                 dt = datetime(d.year, d.month, d.day, hh, mm, tzinfo=timezone.utc)
                 if weekday_match(item["rule"], dt):
-                    add_community_signal(cands, item["target"], dt, "DCAP", 30)
+                    add_community_signal(
+                        cands, item["target"], dt, "DCAP", 30,
+                        announcement_url=ANNOUNCEMENT_SOURCE_URLS["DCAP"]
+                    )
 
     # Choyareset: daily route starts around daily reset. Use its direct waypoints only
     # when the corresponding timed event itself is present in the catalog window.
@@ -913,6 +950,8 @@ def apply_community(
                     c.lightning = True
                     if "Choyareset" not in c.community_sources:
                         c.community_sources.append("Choyareset")
+                    if not c.announcement_url:
+                        c.announcement_url = ANNOUNCEMENT_SOURCE_URLS["Choyareset"]
                     if item.get("waypoint"):
                         c.waypoint = item["waypoint"]
                         c.direct_waypoint = True
@@ -1076,17 +1115,17 @@ def heat_hue(value: float, low: float, high: float) -> int:
 def priority_badge(c: Candidate) -> str:
     score = int(round(c.score))
     hue = heat_hue(score, 65, 125)
-    return f'<span class="badge heat" style="--h:{hue}" title="Composite activity priority score">Priority {score}</span>'
+    return f'<span class="badge heat" style="--h:{hue}" title="Higher = more likely to be active">Priority {score}</span>'
 
 
 def level_badge(c: Candidate) -> str:
     if not c.level:
-        return '<span class="badge level-na" title="Official map level unavailable">Level n/a</span>'
+        return '<span class="badge level-na" title="Map level unavailable">Level n/a</span>'
     hue = heat_hue(c.level, 20, 80)
     if c.level_min and c.level_min != c.level:
-        title = f'Official map level {c.level_min}–{c.level}; displaying the upper level'
+        title = f'Map level {c.level_min}–{c.level}'
     else:
-        title = f'Official map level {c.level}'
+        title = f'Map level {c.level}'
     return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Level {c.level}</span>'
 
 
@@ -1095,23 +1134,36 @@ def signal_flash(c: Candidate) -> str:
     if not c.lightning:
         return ""
     sources = ", ".join(c.community_sources)
-    title = "Verified community/special-event signal"
+    title = "Community event"
     if sources:
-        title += ": " + sources
+        title += f" · {sources}"
     return f'<span class="flash" title="{html.escape(title)}">⚡️</span>'
 
 
 def info_link(c: Candidate) -> str:
     if c.wiki:
         url = c.wiki
-        title = "Direct event page on the Guild Wars 2 Wiki"
+        title = "Event info"
     else:
         url = "https://wiki.guildwars2.com/index.php?search=" + urllib.parse.quote(c.event)
-        title = "Search for this event on the Guild Wars 2 Wiki"
+        title = "Find event info"
     return (
         f'<a class="wiki" href="{html.escape(url)}" target="_blank" '
         f'rel="noopener" title="{html.escape(title)}">Wiki</a>'
     )
+
+
+def announcement_link(c: Candidate) -> str:
+    if not c.announcement_url:
+        return ""
+    return (
+        f'<a class="announcement" href="{html.escape(c.announcement_url)}" '
+        f'target="_blank" rel="noopener" title="Event announcement">Announcement</a>'
+    )
+
+
+def event_links(c: Candidate) -> str:
+    return info_link(c) + announcement_link(c)
 
 
 def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
@@ -1122,9 +1174,9 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
       <div class="info">
         <div class="name">{signal_flash(c)}{html.escape(c.event)}</div>
         <div class="location">{html.escape(c.location)}</div>
-        <div class="badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
+        <div class="badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       </div>
-      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </article>'''
 
 
@@ -1135,8 +1187,8 @@ def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str
       <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
       <div class="mini-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
-      <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
-      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
+      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1148,8 +1200,8 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
         <b><span class="title-row">{signal_flash(c)}<span class="event-title">{html.escape(c.event)}</span></span></b>
         <span>{html.escape(c.location)}</span>
       </div>
-      <div class="all-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
-      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <div class="all-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
+      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1167,7 +1219,8 @@ def page_version(
         for c in items:
             rows.append([
                 group, c.event, iso(c.start), iso(c.end), c.location,
-                c.waypoint, int(round(c.score)), c.level, c.lightning, c.special
+                c.waypoint, int(round(c.score)), c.level,
+                c.lightning, c.special, c.announcement_url
             ])
     raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
@@ -1237,8 +1290,9 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
 .badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}}
 .level-na{{color:#a7adb6;background:#171a1f}}
-.wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
-.wiki:hover{{text-decoration:underline;color:#fff}}
+.wiki,.announcement{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
+.wiki:hover,.announcement:hover{{text-decoration:underline;color:#fff}}
+.announcement{{color:#d5b76f}}
 .wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}}
 .wp:hover{{border-color:#69717e;background:#151820}}
 .extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}}
