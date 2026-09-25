@@ -3,103 +3,800 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="gw2-page-version" content="812e278c0db34b88">
+<meta name="gw2-page-version" content="858f52004f9f3f65">
 <title>GW2 Action Now</title>
 <style>
 :root{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#d7aa42;}
-*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
-.app{max-width:920px;margin:auto;padding:18px} header{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}
-#clock{font-size:23px;font-weight:800} h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+.app{max-width:920px;margin:auto;padding:18px}
+header{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}
+#clock{font-size:23px;font-weight:800}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}
 .event-card{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}
-.event-card:hover{background:var(--panel2)} .time{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace} .name{font-size:16px;font-weight:800} .flash{display:inline-block;margin-right:5px;line-height:1;vertical-align:baseline;font-family:"Segoe UI Symbol",Arial,sans-serif} .location{margin-top:4px;font-size:13px;color:#d6d8dc}
-.badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px} .badge{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}
-.badge.heat{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)} .level-na{color:#a7adb6;background:#171a1f} .wiki{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px} .wiki:hover{text-decoration:underline;color:#fff}
-.wp{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace} .wp:hover{border-color:#69717e;background:#151820}
-.extra-block{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px} .extra-title{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}
-.mini-card{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px} .mini-card:first-of-type{border-top:0} .rank{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center} .mini-time{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace} .mini-info{min-width:0} .mini-info b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2} .mini-info span{display:block;font-size:10px;color:#aab0b8;margin-top:2px} .mini-badges{display:flex;gap:4px} .mini-badges .badge{font-size:9px;padding:3px 5px} .mini-wp{padding:8px 6px;font-size:10px}
+.event-card:hover{background:var(--panel2)}
+.time{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}
+.name{font-size:16px;font-weight:800}
+.flash{display:inline-block;margin-right:5px;line-height:1;vertical-align:-.08em;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.location{margin-top:4px;font-size:13px;color:#d6d8dc}
+.badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}
+.badge{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}
+.badge.heat{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}
+.level-na{color:#a7adb6;background:#171a1f}
+.wiki{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}
+.wiki:hover{text-decoration:underline;color:#fff}
+.wp{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}
+.wp:hover{border-color:#69717e;background:#151820}
+.extra-block{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}
+.extra-title{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}
+.mini-card{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}
+.mini-card:first-of-type{border-top:0}
+.rank{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}
+.mini-time{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}
+.mini-info{min-width:0}
+.mini-info b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+.mini-info span{display:block;font-size:10px;color:#aab0b8;margin-top:2px}
+.mini-badges{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.mini-badges .badge{font-size:9px;padding:3px 5px}
+.mini-wp{padding:8px 6px;font-size:10px}
+.all-block{margin:8px 0 4px;background:#111317;border:1px solid #242931;border-radius:10px;overflow:hidden}
+.all-block summary{cursor:pointer;padding:10px 12px;color:#aeb5bf;font-size:11px;font-weight:800;letter-spacing:.02em;user-select:none}
+.all-block summary:hover{color:#fff;background:#16191e}
+.all-block summary span{color:#737b86}
+.all-list{padding:0 9px 8px}
+.all-card{display:grid;grid-template-columns:62px minmax(180px,1fr) auto 128px;gap:8px;align-items:center;min-height:44px;padding:6px 4px;border-top:1px solid #252a31}
+.all-card:first-child{border-top:0}
+.all-time{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}
+.all-info{min-width:0}
+.all-info b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.all-info span{display:block;margin-top:2px;font-size:10px;color:#aab0b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.all-badges{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.all-badges .badge{font-size:9px;padding:3px 5px}
+.all-wp{padding:8px 6px;font-size:10px}
 .empty{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}
-@media(max-width:760px){.app{padding:10px}.event-card{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}.time{grid-area:time}.info{grid-area:info}.wp{grid-area:wp;width:100%}.mini-card{grid-template-columns:22px 62px 1fr}.mini-badges{grid-column:3}.mini-wp{grid-column:1/4;width:100%}}
+@media(max-width:760px){
+  .app{padding:10px}
+  .event-card{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}
+  .time{grid-area:time}
+  .info{grid-area:info}
+  .wp{grid-area:wp;width:100%}
+  .mini-card{grid-template-columns:22px 62px 1fr}
+  .mini-badges{grid-column:3}
+  .mini-wp{grid-column:1/4;width:100%}
+  .all-card{grid-template-columns:54px 1fr}
+  .all-badges{grid-column:2}
+  .all-wp{grid-column:1/3;width:100%}
+}
 </style>
 </head>
 <body>
 <div class="app">
 <header><div id="clock"></div></header>
+
 <h2>Jetzt · höchste Action</h2>
 <article class="event-card">
       <div class="time">21:05</div>
       <div class="info">
         <div class="name">Drakkar and Spirits of the Wild</div>
         <div class="location">Bjora Marches</div>
-        <div class="badges"><span class="badge heat" style="--h:46">Prio 102</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Champion_of_the_Ice_Dragon" target="_blank" rel="noopener">Wiki</a></div>
+        <div class="badges"><span class="badge heat" style="--h:58">Prio 96</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Champion_of_the_Ice_Dragon" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
       </div>
       <button class="wp" data-copy="[&amp;BDkMAAA=]" title="Waypoint kopieren">[&amp;BDkMAAA=]</button>
     </article>
-<article class="event-card">
-      <div class="time">21:05</div>
-      <div class="info">
-        <div class="name">Ooze Pits</div>
-        <div class="location">Grothmar Valley</div>
-        <div class="badges"><span class="badge heat" style="--h:92">Prio 79</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Ooze_Pit_Trials" target="_blank" rel="noopener">Wiki</a></div>
-      </div>
-      <button class="wp" data-copy="[&amp;BPgLAAA=]" title="Waypoint kopieren">[&amp;BPgLAAA=]</button>
-    </article>
-
-<h2>Als Nächstes · höchste Priorität</h2>
 <article class="event-card">
       <div class="time">21:15</div>
       <div class="info">
         <div class="name">Shackles of the Ancients</div>
         <div class="location">Eternity&#x27;s Garden</div>
-        <div class="badges"><span class="badge heat" style="--h:0">Prio 130</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Shackles_of_the_Ancients" target="_blank" rel="noopener">Wiki</a></div>
+        <div class="badges"><span class="badge heat" style="--h:0">Prio 130</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Shackles_of_the_Ancients" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
       </div>
       <button class="wp" data-copy="[&amp;BPwPAAA=]" title="Waypoint kopieren">[&amp;BPwPAAA=]</button>
     </article>
 <article class="event-card">
-      <div class="time">21:30</div>
+      <div class="time">21:15</div>
       <div class="info">
-        <div class="name">Convergences (Public)</div>
-        <div class="location">Convergences</div>
-        <div class="badges"><span class="badge heat" style="--h:0">Prio 127</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Convergences" target="_blank" rel="noopener">Wiki</a></div>
+        <div class="name">Death-Branded Shatterer</div>
+        <div class="location">Jahai Bluffs</div>
+        <div class="badges"><span class="badge heat" style="--h:26">Prio 112</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Destroy_the_Death-Branded_Shatterer" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
       </div>
-      <button class="wp" data-copy="[&amp;BB8OAAA=]" title="Waypoint kopieren">[&amp;BB8OAAA=]</button>
-    </article>
-<article class="event-card">
-      <div class="time">22:00</div>
-      <div class="info">
-        <div class="name"><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: TT Wurm EU">⚡︎</span>Evolved Jungle Wurm</div>
-        <div class="location">Bloodtide Coast</div>
-        <div class="badges"><span class="badge heat" style="--h:0">Prio 147</span><span class="badge heat" style="--h:50" title="Offizielle Kartenstufe 45–55; Anzeige = obere Kartenstufe">Lvl 55</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Triple_Trouble" target="_blank" rel="noopener">Wiki</a></div>
-      </div>
-      <button class="wp" data-copy="[&amp;BKoBAAA=]" title="Waypoint kopieren">[&amp;BKoBAAA=]</button>
+      <button class="wp" data-copy="[&amp;BJMLAAA=]" title="Waypoint kopieren">[&amp;BJMLAAA=]</button>
     </article>
 <div class="extra-block"><div class="extra-title">Weitere Action · Plätze 4–5</div><div class="mini-card">
       <span class="rank">4</span>
       <span class="mini-time">21:15</span>
-      <div class="mini-info"><b>Death-Branded Shatterer</b><span>Jahai Bluffs</span></div>
-      <div class="mini-badges"><span class="badge heat" style="--h:26">Prio 112</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span></div>
-      <button class="wp mini-wp" data-copy="[&amp;BJMLAAA=]" title="Waypoint kopieren">[&amp;BJMLAAA=]</button>
+      <div class="mini-info"><b>Great Jungle Wurm</b><span>Caledon Forest</span></div>
+      <div class="mini-badges"><span class="badge heat" style="--h:90">Prio 80</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_great_jungle_wurm" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp mini-wp" data-copy="[&amp;BEEFAAA=]" title="Waypoint kopieren">[&amp;BEEFAAA=]</button>
+    </div></div>
+
+
+<h2>Als Nächstes · höchste Priorität</h2>
+<article class="event-card">
+      <div class="time">21:30</div>
+      <div class="info">
+        <div class="name"><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Awakened Invasion</div>
+        <div class="location">Queensdale · Swamplost Haven</div>
+        <div class="badges"><span class="badge heat" style="--h:0">Prio 141</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BPcAAAA=]" title="Waypoint kopieren">[&amp;BPcAAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">22:00</div>
+      <div class="info">
+        <div class="name"><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: TT Wurm EU">⚡️</span>Evolved Jungle Wurm</div>
+        <div class="location">Bloodtide Coast</div>
+        <div class="badges"><span class="badge heat" style="--h:0">Prio 147</span><span class="badge heat" style="--h:50" title="Offizielle Kartenstufe 45–55; Anzeige = obere Kartenstufe">Lvl 55</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Triple_Trouble" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BKoBAAA=]" title="Waypoint kopieren">[&amp;BKoBAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">22:00</div>
+      <div class="info">
+        <div class="name"><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Fractal Incursion</div>
+        <div class="location">Kessex Hills · Cereboth Canyon</div>
+        <div class="badges"><span class="badge heat" style="--h:0">Prio 131</span><span class="badge heat" style="--h:110" title="Offizielle Kartenstufe 15–25; Anzeige = obere Kartenstufe">Lvl 25</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_enemy_spawned_by_the_fractal_incursion" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BBIAAAA=]" title="Waypoint kopieren">[&amp;BBIAAAA=]</button>
+    </article>
+<div class="extra-block"><div class="extra-title">Weitere Action · Plätze 4–5</div><div class="mini-card">
+      <span class="rank">4</span>
+      <span class="mini-time">21:30</span>
+      <div class="mini-info"><b>Convergences (Public)</b><span>Convergences</span></div>
+      <div class="mini-badges"><span class="badge heat" style="--h:0">Prio 128</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Convergences" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp mini-wp" data-copy="[&amp;BB8OAAA=]" title="Waypoint kopieren">[&amp;BB8OAAA=]</button>
     </div>
 <div class="mini-card">
       <span class="rank">5</span>
-      <span class="mini-time">21:15</span>
-      <div class="mini-info"><b>Great Jungle Wurm</b><span>Caledon Forest</span></div>
-      <div class="mini-badges"><span class="badge heat" style="--h:90">Prio 80</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span></div>
-      <button class="wp mini-wp" data-copy="[&amp;BEEFAAA=]" title="Waypoint kopieren">[&amp;BEEFAAA=]</button>
+      <span class="mini-time">21:30</span>
+      <div class="mini-info"><b>Dragon&#x27;s Stand</b><span>Dragon&#x27;s Stand</span></div>
+      <div class="mini-badges"><span class="badge heat" style="--h:6">Prio 122</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Advancing_on_the_Blighting_Towers" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp mini-wp" data-copy="[&amp;BBAIAAA=]" title="Waypoint kopieren">[&amp;BBAIAAA=]</button>
     </div></div>
+<details class="all-block"><summary>Weitere anstehende Action <span>(101)</span></summary><div class="all-list"><div class="all-card">
+      <span class="all-time">21:20</span>
+      <div class="all-info"><b>A Titanic Voyage</b><span>Bava Nisos</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:0">Prio 127</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/A_Titanic_Voyage" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BGEPAAA=]" title="Waypoint kopieren">[&amp;BGEPAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>Aetherblade Assault</b><span>Seitung Province</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:18">Prio 116</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Aetherblade_Assault" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BGUNAAA=]" title="Waypoint kopieren">[&amp;BGUNAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>Pylons</b><span>Auric Basin</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:70">Prio 90</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defending_Tarir" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BN0HAAA=]" title="Waypoint kopieren">[&amp;BN0HAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>The Path to Ascension: Augury Rock</b><span>Elon Riverlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:76">Prio 87</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Path_to_Ascension" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BFMKAAA=]" title="Waypoint kopieren">[&amp;BFMKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>Tower of Nightmares (Public)</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:76">Prio 87</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Tower_of_Nightmares_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>Junundu Rising</b><span>The Desolation</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:78">Prio 86</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Junundu%20Rising" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMEKAAA=]" title="Waypoint kopieren">[&amp;BMEKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:30</span>
+      <div class="all-info"><b>Modniir Ulgoth</b><span>Harathi Hinterlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:98">Prio 76</span><span class="badge heat" style="--h:70" title="Offizielle Kartenstufe 35–45; Anzeige = obere Kartenstufe">Lvl 45</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_Ulgoth_the_Modniir_and_his_minions" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLAAAAA=]" title="Waypoint kopieren">[&amp;BLAAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:40</span>
+      <div class="all-info"><b>Secrets of the Weald</b><span>Starlit Weald</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:2">Prio 124</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Secrets_of_the_Weald" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BJ4PAAA=]" title="Waypoint kopieren">[&amp;BJ4PAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:40</span>
+      <div class="all-info"><b>Aspenwood</b><span>The Echovald Wilds</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:36">Prio 107</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Use_the_siege_turtles_to_destroy_the_shield_generators_as_you_fight_through_the_fort" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPkMAAA=]" title="Waypoint kopieren">[&amp;BPkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:40</span>
+      <div class="all-info"><b>Metal Concert</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:54">Prio 98</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/A_Concert_for_the_Ages" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPgLAAA=]" title="Waypoint kopieren">[&amp;BPgLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:40</span>
+      <div class="all-info"><b>Sandstorm</b><span>Dry Top</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:108">Prio 71</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Sandstorm!" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BIAHAAA=]" title="Waypoint kopieren">[&amp;BIAHAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:45</span>
+      <div class="all-info"><b>Palawadan</b><span>Domain of Istan</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:46">Prio 102</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Palawadan%2C_Jewel_of_Istan_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkLAAA=]" title="Waypoint kopieren">[&amp;BAkLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:45</span>
+      <div class="all-info"><b>Raven Shrines</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:60">Prio 95</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:45</span>
+      <div class="all-info"><b>Thunderhead Keep</b><span>Thunderhead Peaks</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:66">Prio 92</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Thunderhead_Keep_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLsLAAA=]" title="Waypoint kopieren">[&amp;BLsLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:45</span>
+      <div class="all-info"><b>New Loamhurst</b><span>Lake Doric</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:96">Prio 77</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/White_Mantle_Control:_New_Loamhurst" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLQJAAA=]" title="Waypoint kopieren">[&amp;BLQJAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:45</span>
+      <div class="all-info"><b>Shadow Behemoth</b><span>Queensdale</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:104">Prio 73</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_shadow_behemoth" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPcAAAA=]" title="Waypoint kopieren">[&amp;BPcAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">21:55</span>
+      <div class="all-info"><b>Doppelganger</b><span>Elon Riverlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:92">Prio 79</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Path_to_Ascension" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCgKAAA=]" title="Waypoint kopieren">[&amp;BCgKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Depths of Cruelty</b><span>Leyspring Hollows</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:6">Prio 122</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Depths_of_Cruelty" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BDYQAAA=]" title="Waypoint kopieren">[&amp;BDYQAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Defense of Amnytas</b><span>Amnytas</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:18">Prio 116</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Defense_of_Amnytas" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BDQOAAA=]" title="Waypoint kopieren">[&amp;BDQOAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Kaineng Blackout</b><span>New Kaineng City</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:32">Prio 109</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Kaineng_Blackout" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BBkNAAA=]" title="Waypoint kopieren">[&amp;BBkNAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Shards and Construct</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:62">Prio 94</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Preparations</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:78">Prio 86</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Preparations" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Twisted Marionette (Public)</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:92">Prio 79</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Twisted_Marionette" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Forged with Fire</b><span>Domain of Vabbi</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:94">Prio 78</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Forged%20with%20Fire" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BO0KAAA=]" title="Waypoint kopieren">[&amp;BO0KAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:00</span>
+      <div class="all-info"><b>Golem Mark II</b><span>Mount Maelstrom</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 65</span><span class="badge heat" style="--h:20" title="Offizielle Kartenstufe 60–70; Anzeige = obere Kartenstufe">Lvl 70</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Inquest&#x27;s_golem_Mark_II" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BNQCAAA=]" title="Waypoint kopieren">[&amp;BNQCAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:05</span>
+      <div class="all-info"><b>Jade Maw</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:52">Prio 99</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Void-corrupted_Jade_Maw" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:05</span>
+      <div class="all-info"><b>Icebrood Champions</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:66">Prio 92</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:05</span>
+      <div class="all-info"><b>Rounds 1 to 3</b><span>Crystal Oasis</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 63</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Casino_Blitz" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLsKAAA=]" title="Waypoint kopieren">[&amp;BLsKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:10</span>
+      <div class="all-info"><b>Night Bosses</b><span>Verdant Brink</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:28">Prio 111</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Night_and_the_Enemy" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAgIAAA=]" title="Waypoint kopieren">[&amp;BAgIAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:10</span>
+      <div class="all-info"><b>Effigy</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:68">Prio 91</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Ceremony_of_the_Sacred_Flame" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BA4MAAA=]" title="Waypoint kopieren">[&amp;BA4MAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:13</span>
+      <div class="all-info"><b>Preparations</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:84">Prio 83</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Preparations" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:15</span>
+      <div class="all-info"><b>Svanir Shaman Chief</b><span>Wayfarer Foothills</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 62</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Kill_the_Svanir_shaman_chief_to_break_his_control_over_the_ice_elemental" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMIDAAA=]" title="Waypoint kopieren">[&amp;BMIDAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:20</span>
+      <div class="all-info"><b>Iron Marches</b><span>Iron Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:64">Prio 93</span><span class="badge heat" style="--h:40" title="Offizielle Kartenstufe 50–60; Anzeige = obere Kartenstufe">Lvl 60</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Ley-Line_Anomaly_to_disperse_its_destructive_energy_before_it_overloads" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BOYBAAA=]" title="Waypoint kopieren">[&amp;BOYBAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:21</span>
+      <div class="all-info"><b>Choya Pinata</b><span>Crystal Oasis</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:32">Prio 109</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Casino_Blitz" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLsKAAA=]" title="Waypoint kopieren">[&amp;BLsKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Awakened Invasion</b><span>Wayfarer Foothills · Krennak&#x27;s Homestead</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:0">Prio 126</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMIDAAA=]" title="Waypoint kopieren">[&amp;BMIDAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Chak Gerent</b><span>Tangled Depths</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:20">Prio 115</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Against_the_Chak_Gerent" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPUHAAA=]" title="Waypoint kopieren">[&amp;BPUHAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Gang War</b><span>The Echovald Wilds</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:44">Prio 103</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Gang_War_of_Echovald" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMwMAAA=]" title="Waypoint kopieren">[&amp;BMwMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Battle For Lion&#x27;s Arch (Public)</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:106">Prio 72</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Battle_For_Lion&#x27;s_Arch" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Junundu Rising</b><span>The Desolation</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:108">Prio 71</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Junundu%20Rising" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMEKAAA=]" title="Waypoint kopieren">[&amp;BMEKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Serpents&#x27; Ire</b><span>Domain of Vabbi</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:112">Prio 69</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Serpents%27%20Ire" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BHQKAAA=]" title="Waypoint kopieren">[&amp;BHQKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Noran&#x27;s Homestead</b><span>Lake Doric</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:118">Prio 66</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Noran&#x27;s_Homestead" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BK8JAAA=]" title="Waypoint kopieren">[&amp;BK8JAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:30</span>
+      <div class="all-info"><b>Claw of Jormag</b><span>Frostgorge Sound</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 62</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 70–80; Anzeige = obere Kartenstufe">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Claw_of_Jormag" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BHoCAAA=]" title="Waypoint kopieren">[&amp;BHoCAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:38</span>
+      <div class="all-info"><b>Doomlore Shrine</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:82">Prio 84</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Haunting_of_Doomlore_Shrine" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BA4MAAA=]" title="Waypoint kopieren">[&amp;BA4MAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:40</span>
+      <div class="all-info"><b>Hammerhart Rumble!</b><span>Shipwreck Strand</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:36">Prio 107</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Hammerhart_Rumble!" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BJEPAAA=]" title="Waypoint kopieren">[&amp;BJEPAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:40</span>
+      <div class="all-info"><b>Of Mists and Monsters</b><span>Janthir Syntri</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:38">Prio 106</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Of_Mists_and_Monsters" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCoPAAA=]" title="Waypoint kopieren">[&amp;BCoPAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:40</span>
+      <div class="all-info"><b>Sandstorm</b><span>Dry Top</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 56</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Sandstorm!" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BIAHAAA=]" title="Waypoint kopieren">[&amp;BIAHAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:45</span>
+      <div class="all-info"><b>Jade Maw</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:72">Prio 89</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Void-corrupted_Jade_Maw" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:45</span>
+      <div class="all-info"><b>The Oil Floes</b><span>Thunderhead Peaks</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:94">Prio 78</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=The%20Oil%20Floes" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKYLAAA=]" title="Waypoint kopieren">[&amp;BKYLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:45</span>
+      <div class="all-info"><b>Fire Elemental</b><span>Metrica Province</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 53</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Destroy_the_fire_elemental_created_from_chaotic_energy_fusing_with_the_C.L.E.A.N._5000&#x27;s_energy_core" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BEcAAAA=]" title="Waypoint kopieren">[&amp;BEcAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">22:53</span>
+      <div class="all-info"><b>Preparations</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:104">Prio 73</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Preparations" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Scarlet&#x27;s Invasion</b><span>Gendarran Fields · map-wide invasion</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:10">Prio 120</span><span class="badge heat" style="--h:90" title="Offizielle Kartenstufe 25–35; Anzeige = obere Kartenstufe">Lvl 35</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_invading_minions_of_Scarlet_Briar" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BOQAAAA=]" title="Waypoint kopieren">[&amp;BOQAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Fractal Incursion</b><span>Diessa Plateau · Rancher&#x27;s Wash</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:18">Prio 116</span><span class="badge heat" style="--h:110" title="Offizielle Kartenstufe 15–25; Anzeige = obere Kartenstufe">Lvl 25</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_enemy_spawned_by_the_fractal_incursion" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BN0AAAA=]" title="Waypoint kopieren">[&amp;BN0AAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>The Battle for the Jade Sea</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:24">Prio 113</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Battle_for_the_Jade_Sea" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Octovine</b><span>Auric Basin</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:28">Prio 111</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Battle_in_Tarir_(map_meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAIIAAA=]" title="Waypoint kopieren">[&amp;BAIIAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Convergence: Mount Balrior</b><span>Mount Balrior</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:40">Prio 105</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Convergence:_Mount_Balrior" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BK4OAAA=]" title="Waypoint kopieren">[&amp;BK4OAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Dragonstorm</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:40">Prio 105</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Dragonstorm" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Unlocking the Wizard&#x27;s Tower</b><span>Skywatch Archipelago</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:56">Prio 97</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Unlocking_the_Wizard&#x27;s_Tower" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BL4NAAA=]" title="Waypoint kopieren">[&amp;BL4NAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Escorts</b><span>Jahai Bluffs</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 63</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Dangerous_Prey" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BIMLAAA=]" title="Waypoint kopieren">[&amp;BIMLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Forged with Fire</b><span>Domain of Vabbi</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 63</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Forged%20with%20Fire" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BO0KAAA=]" title="Waypoint kopieren">[&amp;BO0KAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Maws of Torment</b><span>The Desolation</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 63</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Maws%20of%20Torment" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKMKAAA=]" title="Waypoint kopieren">[&amp;BKMKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Buried Treasure</b><span>Desert Highlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 61</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Search_for_Buried_Treasure" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BGsKAAA=]" title="Waypoint kopieren">[&amp;BGsKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Saidra&#x27;s Haven</b><span>Lake Doric</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 58</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/White_Mantle_Control:_Saidra&#x27;s_Haven" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BK0JAAA=]" title="Waypoint kopieren">[&amp;BK0JAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:00</span>
+      <div class="all-info"><b>Admiral Taidha Covington</b><span>Bloodtide Coast</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 54</span><span class="badge heat" style="--h:50" title="Offizielle Kartenstufe 45–55; Anzeige = obere Kartenstufe">Lvl 55</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Kill_Admiral_Taidha_Covington" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKgBAAA=]" title="Waypoint kopieren">[&amp;BKgBAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:05</span>
+      <div class="all-info"><b>Drakkar and Spirits of the Wild</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:60">Prio 95</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Champion_of_the_Ice_Dragon" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BDkMAAA=]" title="Waypoint kopieren">[&amp;BDkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:05</span>
+      <div class="all-info"><b>Ooze Pits</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:96">Prio 77</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Ooze_Pit_Trials" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPgLAAA=]" title="Waypoint kopieren">[&amp;BPgLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:15</span>
+      <div class="all-info"><b>Shackles of the Ancients</b><span>Eternity&#x27;s Garden</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:48">Prio 101</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Shackles_of_the_Ancients" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPwPAAA=]" title="Waypoint kopieren">[&amp;BPwPAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:15</span>
+      <div class="all-info"><b>Death-Branded Shatterer</b><span>Jahai Bluffs</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:84">Prio 83</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Destroy_the_Death-Branded_Shatterer" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BJMLAAA=]" title="Waypoint kopieren">[&amp;BJMLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:15</span>
+      <div class="all-info"><b>Great Jungle Wurm</b><span>Caledon Forest</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 51</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_great_jungle_wurm" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BEEFAAA=]" title="Waypoint kopieren">[&amp;BEEFAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:20</span>
+      <div class="all-info"><b>A Titanic Voyage</b><span>Bava Nisos</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:52">Prio 99</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/A_Titanic_Voyage" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BGEPAAA=]" title="Waypoint kopieren">[&amp;BGEPAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Awakened Invasion</b><span>Plains of Ashford · Loreclaw</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:20">Prio 115</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMcDAAA=]" title="Waypoint kopieren">[&amp;BMcDAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Dragon&#x27;s Stand</b><span>Dragon&#x27;s Stand</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:58">Prio 96</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Advancing_on_the_Blighting_Towers" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BBAIAAA=]" title="Waypoint kopieren">[&amp;BBAIAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Aetherblade Assault</b><span>Seitung Province</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:70">Prio 90</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Aetherblade_Assault" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BGUNAAA=]" title="Waypoint kopieren">[&amp;BGUNAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Pylons</b><span>Auric Basin</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 64</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defending_Tarir" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BN0HAAA=]" title="Waypoint kopieren">[&amp;BN0HAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>The Path to Ascension: Augury Rock</b><span>Elon Riverlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 61</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Path_to_Ascension" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BFMKAAA=]" title="Waypoint kopieren">[&amp;BFMKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Tower of Nightmares (Public)</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 61</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Tower_of_Nightmares_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Junundu Rising</b><span>The Desolation</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 60</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Junundu%20Rising" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BMEKAAA=]" title="Waypoint kopieren">[&amp;BMEKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:30</span>
+      <div class="all-info"><b>Megadestroyer</b><span>Mount Maelstrom</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 47</span><span class="badge heat" style="--h:20" title="Offizielle Kartenstufe 60–70; Anzeige = obere Kartenstufe">Lvl 70</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Kill_the_megadestroyer_before_it_blows_everyone_up" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BM0CAAA=]" title="Waypoint kopieren">[&amp;BM0CAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:40</span>
+      <div class="all-info"><b>Secrets of the Weald</b><span>Starlit Weald</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:48">Prio 101</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Secrets_of_the_Weald" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BJ4PAAA=]" title="Waypoint kopieren">[&amp;BJ4PAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:40</span>
+      <div class="all-info"><b>Aspenwood</b><span>The Echovald Wilds</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:82">Prio 84</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Use_the_siege_turtles_to_destroy_the_shield_generators_as_you_fight_through_the_fort" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPkMAAA=]" title="Waypoint kopieren">[&amp;BPkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:40</span>
+      <div class="all-info"><b>Metal Concert</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:100">Prio 75</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/A_Concert_for_the_Ages" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPgLAAA=]" title="Waypoint kopieren">[&amp;BPgLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:40</span>
+      <div class="all-info"><b>Sandstorm</b><span>Dry Top</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 48</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Sandstorm!" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BIAHAAA=]" title="Waypoint kopieren">[&amp;BIAHAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:45</span>
+      <div class="all-info"><b>Palawadan</b><span>Domain of Istan</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:90">Prio 80</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Palawadan%2C_Jewel_of_Istan_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkLAAA=]" title="Waypoint kopieren">[&amp;BAkLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:45</span>
+      <div class="all-info"><b>Raven Shrines</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:104">Prio 73</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:45</span>
+      <div class="all-info"><b>Thunderhead Keep</b><span>Thunderhead Peaks</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:110">Prio 70</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Thunderhead_Keep_(meta_event)" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLsLAAA=]" title="Waypoint kopieren">[&amp;BLsLAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:45</span>
+      <div class="all-info"><b>New Loamhurst</b><span>Lake Doric</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 55</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/White_Mantle_Control:_New_Loamhurst" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLQJAAA=]" title="Waypoint kopieren">[&amp;BLQJAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:45</span>
+      <div class="all-info"><b>Shadow Behemoth</b><span>Queensdale</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 51</span><span class="badge heat" style="--h:120" title="Offizielle Kartenstufe 1–15; Anzeige = obere Kartenstufe">Lvl 15</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_shadow_behemoth" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BPcAAAA=]" title="Waypoint kopieren">[&amp;BPcAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">23:55</span>
+      <div class="all-info"><b>Doppelganger</b><span>Elon Riverlands</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 60</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Path_to_Ascension" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCgKAAA=]" title="Waypoint kopieren">[&amp;BCgKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b><span class="flash" title="Bestätigtes Community-/Sonderevent-Signal: Rotierender Sonderevent-Schedule">⚡️</span>Fractal Incursion</b><span>Brisban Wildlands · Venlin Vale</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:24">Prio 113</span><span class="badge heat" style="--h:110" title="Offizielle Kartenstufe 15–25; Anzeige = obere Kartenstufe">Lvl 25</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_enemy_spawned_by_the_fractal_incursion" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BHUAAAA=]" title="Waypoint kopieren">[&amp;BHUAAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Convergence: Nexus of Eternity</b><span>The Mists</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:40">Prio 105</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Convergence:_Nexus_of_Eternity" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BDYQAAA=]" title="Waypoint kopieren">[&amp;BDYQAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Defense of Amnytas</b><span>Amnytas</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:54">Prio 98</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Defense_of_Amnytas" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BDQOAAA=]" title="Waypoint kopieren">[&amp;BDQOAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Kaineng Blackout</b><span>New Kaineng City</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:68">Prio 91</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Kaineng_Blackout" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BBkNAAA=]" title="Waypoint kopieren">[&amp;BBkNAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Shards and Construct</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:98">Prio 76</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Preparations</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:114">Prio 68</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Preparations" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Twisted Marionette (Public)</b><span>Eye of the North</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 61</span><span class="badge level-na">Lvl n/a</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Twisted_Marionette" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAkMAAA=]" title="Waypoint kopieren">[&amp;BAkMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>Forged with Fire</b><span>Domain of Vabbi</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 60</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/index.php?search=Forged%20with%20Fire" target="_blank" rel="noopener" title="Event im GW2 Wiki suchen">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BO0KAAA=]" title="Waypoint kopieren">[&amp;BO0KAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:00</span>
+      <div class="all-info"><b>The Shatterer</b><span>Blazeridge Steppes</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 51</span><span class="badge heat" style="--h:60" title="Offizielle Kartenstufe 40–50; Anzeige = obere Kartenstufe">Lvl 50</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Slay_the_Shatterer" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BE4DAAA=]" title="Waypoint kopieren">[&amp;BE4DAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:05</span>
+      <div class="all-info"><b>Jade Maw</b><span>Dragon&#x27;s End</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:86">Prio 82</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Defeat_the_Void-corrupted_Jade_Maw" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:05</span>
+      <div class="all-info"><b>Icebrood Champions</b><span>Bjora Marches</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:100">Prio 75</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Storms_of_Winter" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BCcMAAA=]" title="Waypoint kopieren">[&amp;BCcMAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:05</span>
+      <div class="all-info"><b>Rounds 1 to 3</b><span>Crystal Oasis</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:120">Prio 46</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Casino_Blitz" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BLsKAAA=]" title="Waypoint kopieren">[&amp;BLsKAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:10</span>
+      <div class="all-info"><b>Night Bosses</b><span>Verdant Brink</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:60">Prio 95</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Night_and_the_Enemy" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BAgIAAA=]" title="Waypoint kopieren">[&amp;BAgIAAA=]</button>
+    </div>
+<div class="all-card">
+      <span class="all-time">00:10</span>
+      <div class="all-info"><b>Effigy</b><span>Grothmar Valley</span></div>
+      <div class="all-badges"><span class="badge heat" style="--h:100">Prio 75</span><span class="badge heat" style="--h:0" title="Offizielle Kartenstufe 80">Lvl 80</span><a class="wiki" href="https://wiki.guildwars2.com/wiki/Ceremony_of_the_Sacred_Flame" target="_blank" rel="noopener" title="Direkte Event-Seite im GW2 Wiki">Wiki</a></div>
+      <button class="wp all-wp" data-copy="[&amp;BA4MAAA=]" title="Waypoint kopieren">[&amp;BA4MAAA=]</button>
+    </div></div></details>
 </div>
+
 <script>
 const fmt=new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
-function tick(){document.getElementById('clock').textContent=fmt.format(new Date());} tick(); setInterval(tick,1000);
-document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{const v=btn.dataset.copy;try{await navigator.clipboard.writeText(v);const old=btn.textContent;btn.textContent='✓ '+v;setTimeout(()=>btn.textContent=old,900);}catch(e){}}));
+function tick(){document.getElementById('clock').textContent=fmt.format(new Date());}
+tick();
+setInterval(tick,1000);
+
+document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{
+  const v=btn.dataset.copy;
+  try{
+    await navigator.clipboard.writeText(v);
+    const old=btn.textContent;
+    btn.textContent='✓ '+v;
+    setTimeout(()=>btn.textContent=old,900);
+  }catch(e){}
+}));
+
+if(window.location.search){
+  history.replaceState(null,'',window.location.pathname+window.location.hash);
+}
+
 const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;
 async function checkForUpdate(){
   try{
-    const u=new URL('index.html',window.location.href);u.searchParams.set('_',Date.now().toString());
-    const r=await fetch(u.toString(),{cache:'no-store'});if(!r.ok)return;
-    const t=await r.text();const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
-    if(m && m[1]!==currentVersion){const next=new URL(window.location.href);next.searchParams.set('_',Date.now().toString());window.location.replace(next.toString());}
+    const u=new URL(window.location.pathname,window.location.origin);
+    u.searchParams.set('_',Date.now().toString());
+    const r=await fetch(u.toString(),{cache:'no-store'});
+    if(!r.ok)return;
+    const t=await r.text();
+    const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
+    if(m && m[1]!==currentVersion){
+      const next=new URL(window.location.pathname,window.location.origin);
+      next.searchParams.set('_',Date.now().toString());
+      window.location.replace(next.toString());
+    }
   }catch(e){}
 }
 setInterval(checkForUpdate,20000);
 </script>
-</body></html>
+</body>
+</html>
