@@ -13,7 +13,7 @@ import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Callable
@@ -260,7 +260,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.4.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.5.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -693,7 +693,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 wiki=ROTATING_EVENT_WIKI["Fractal Incursion"],
                 base_priority=80,
                 lightning=True,
-                community_sources=["Rotierender Sonderevent-Schedule"],
+                community_sources=["Verified rotating special-event schedule"],
                 direct_waypoint=True,
                 special=True,
             ))
@@ -712,7 +712,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                     wiki=ROTATING_EVENT_WIKI["Scarlet's Invasion"],
                     base_priority=84,
                     lightning=True,
-                    community_sources=["Rotierender Sonderevent-Schedule"],
+                    community_sources=["Verified rotating special-event schedule"],
                     direct_waypoint=True,
                     special=True,
                 ))
@@ -733,7 +733,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 wiki=ROTATING_EVENT_WIKI["Awakened Invasion"],
                 base_priority=82,
                 lightning=True,
-                community_sources=["Rotierender Sonderevent-Schedule"],
+                community_sources=["Verified rotating special-event schedule"],
                 direct_waypoint=True,
                 special=True,
             ))
@@ -1035,10 +1035,14 @@ def choose(
             picked.extend(fallback[:extra_limit - len(picked)])
         return picked
 
-    active_extra = pick_extras(active_rest)
+    # NOW stays simpler: Top 3 are visible, every other currently valid
+    # event goes directly into the expandable list.
+    active_extra: list[Candidate] = []
+
+    # NEXT keeps the compact places 4-5 spotlight.
     upcoming_extra = pick_extras(upcoming_rest)
 
-    active_shown = active_top_keys | {c.key() for c in active_extra}
+    active_shown = active_top_keys
     upcoming_shown = upcoming_top_keys | {c.key() for c in upcoming_extra}
 
     active_more = sorted(
@@ -1072,18 +1076,18 @@ def heat_hue(value: float, low: float, high: float) -> int:
 def priority_badge(c: Candidate) -> str:
     score = int(round(c.score))
     hue = heat_hue(score, 65, 125)
-    return f'<span class="badge heat" style="--h:{hue}">Prio {score}</span>'
+    return f'<span class="badge heat" style="--h:{hue}" title="Composite activity priority score">Priority {score}</span>'
 
 
 def level_badge(c: Candidate) -> str:
     if not c.level:
-        return '<span class="badge level-na">Lvl n/a</span>'
+        return '<span class="badge level-na" title="Official map level unavailable">Level n/a</span>'
     hue = heat_hue(c.level, 20, 80)
     if c.level_min and c.level_min != c.level:
-        title = f'Offizielle Kartenstufe {c.level_min}–{c.level}; Anzeige = obere Kartenstufe'
+        title = f'Official map level {c.level_min}–{c.level}; displaying the upper level'
     else:
-        title = f'Offizielle Kartenstufe {c.level}'
-    return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Lvl {c.level}</span>'
+        title = f'Official map level {c.level}'
+    return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Level {c.level}</span>'
 
 
 
@@ -1091,7 +1095,7 @@ def signal_flash(c: Candidate) -> str:
     if not c.lightning:
         return ""
     sources = ", ".join(c.community_sources)
-    title = "Bestätigtes Community-/Sonderevent-Signal"
+    title = "Verified community/special-event signal"
     if sources:
         title += ": " + sources
     return f'<span class="flash" title="{html.escape(title)}">⚡️</span>'
@@ -1100,10 +1104,10 @@ def signal_flash(c: Candidate) -> str:
 def info_link(c: Candidate) -> str:
     if c.wiki:
         url = c.wiki
-        title = "Direkte Event-Seite im GW2 Wiki"
+        title = "Direct event page on the Guild Wars 2 Wiki"
     else:
         url = "https://wiki.guildwars2.com/index.php?search=" + urllib.parse.quote(c.event)
-        title = "Event im GW2 Wiki suchen"
+        title = "Search for this event on the Guild Wars 2 Wiki"
     return (
         f'<a class="wiki" href="{html.escape(url)}" target="_blank" '
         f'rel="noopener" title="{html.escape(title)}">Wiki</a>'
@@ -1120,7 +1124,7 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
         <div class="location">{html.escape(c.location)}</div>
         <div class="badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
       </div>
-      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
+      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </article>'''
 
 
@@ -1132,7 +1136,7 @@ def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str
       <span class="mini-time">{time_label}</span>
       <div class="mini-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
       <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
-      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
+      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1140,9 +1144,12 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
     st = c.start.astimezone(tz)
     return f'''<div class="all-card">
       <span class="all-time">{st.strftime("%H:%M")}</span>
-      <div class="all-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
+      <div class="all-info">
+        <b><span class="title-row">{signal_flash(c)}<span class="event-title">{html.escape(c.event)}</span></span></b>
+        <span>{html.escape(c.location)}</span>
+      </div>
       <div class="all-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
-      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
+      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint code" aria-label="Copy waypoint code for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1170,7 +1177,7 @@ def render_html(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
     active_more: list[Candidate], upcoming_more: list[Candidate],
-    cfg: dict[str, Any], now: datetime, health: dict[str, str]
+    cfg: dict[str, Any], now: datetime
 ) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
     version = page_version(
@@ -1180,19 +1187,23 @@ def render_html(
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
-            return '<div class="empty">Keine ausreichend sicher auflösbaren Events gefunden.</div>'
+            return '<div class="empty">No events with a reliably resolved waypoint are currently available.</div>'
         return "\n".join(card_html(c, tz, is_upcoming) for c in items)
 
     def extras(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return ""
         rows = "\n".join(mini_card_html(c, tz, is_upcoming, 4 + i) for i, c in enumerate(items))
-        return f'<div class="extra-block"><div class="extra-title">Weitere Action · Plätze 4–5</div>{rows}</div>'
+        return f'<div class="extra-block"><div class="extra-title">More Activity · Ranks 4–5</div>{rows}</div>'
 
     def expandable(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return ""
-        label = "Weitere aktuelle Action" if not is_upcoming else "Weitere anstehende Action"
+        label = (
+            "All Other Current Events"
+            if not is_upcoming
+            else "More Upcoming Activity · Next 2 Hours"
+        )
         rows = "\n".join(compact_action_html(c, tz) for c in items)
         return (
             f'<details class="all-block">'
@@ -1202,12 +1213,12 @@ def render_html(
         )
 
     return f'''<!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="gw2-page-version" content="{version}">
-<title>GW2 Action Now</title>
+<title>GW2 Action</title>
 <style>
 :root{{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#d7aa42;}}
 *{{box-sizing:border-box}}
@@ -1251,8 +1262,11 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .all-card:first-child{{border-top:0}}
 .all-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .all-info{{min-width:0}}
-.all-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
-.all-info span{{display:block;margin-top:2px;font-size:10px;color:#aab0b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.all-info b{{display:block;font-size:12px;min-width:0}}
+.all-info .title-row{{display:flex;align-items:center;min-width:0;white-space:nowrap}}
+.all-info .event-title{{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+.all-info>span{{display:block;margin-top:2px;font-size:10px;color:#aab0b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.flash{{flex:0 0 auto}}
 .all-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .all-badges .badge{{font-size:9px;padding:3px 5px}}
 .all-wp{{padding:8px 6px;font-size:10px}}
@@ -1276,19 +1290,19 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div class="app">
 <header><div id="clock"></div></header>
 
-<h2>Jetzt · höchste Action</h2>
+<h2>Now · Highest Activity</h2>
 {section(active, False)}
 {extras(active_extra, False)}
 {expandable(active_more, False)}
 
-<h2>Als Nächstes · höchste Priorität</h2>
+<h2>Up Next · Highest Priority</h2>
 {section(upcoming, True)}
 {extras(upcoming_extra, True)}
 {expandable(upcoming_more, True)}
 </div>
 
 <script>
-const fmt=new Intl.DateTimeFormat('de-DE',{{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}});
+const fmt=new Intl.DateTimeFormat('en-GB',{{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}});
 function tick(){{document.getElementById('clock').textContent=fmt.format(new Date());}}
 tick();
 setInterval(tick,1000);
@@ -1331,8 +1345,8 @@ setInterval(checkForUpdate,20000);
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--now", help="test time as ISO-8601 UTC/local")
-    ap.add_argument("--no-network", action="store_true", help="use committed cache only")
+    ap.add_argument("--now", help="Test time as ISO-8601 UTC/local")
+    ap.add_argument("--no-network", action="store_true", help="Use committed cache only")
     args = ap.parse_args()
 
     cfg = load_json(CONFIG_PATH, {})
@@ -1341,7 +1355,7 @@ def main() -> int:
     state.setdefault("sources", {})
     now = parse_iso(args.now) if args.now else now_utc()
     if not now:
-        raise SystemExit("invalid --now")
+        raise SystemExit("Invalid --now value")
 
     ttl = cfg.get("source_ttls_minutes", {})
     errors: dict[str, str] = {}
@@ -1392,12 +1406,11 @@ def main() -> int:
     apply_fast_context(cands, values.get("fast"))
     active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(cands, cfg, now)
 
-    health = {name: ("stale" if name in errors and values.get(name) is not None else "error" if name in errors else "ok") for name in parsers}
     page = render_html(
         active, upcoming,
         active_extra, upcoming_extra,
         active_more, upcoming_more,
-        cfg, now, health
+        cfg, now
     )
 
     old_page = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else ""
@@ -1414,7 +1427,7 @@ def main() -> int:
         f"page_changed={page_changed} sources_refreshed={refreshed}"
     )
     if errors:
-        print("source warnings:")
+        print("Source warnings:")
         for k, v in errors.items():
             print(f"  {k}: {v}")
     for label, items in [

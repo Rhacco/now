@@ -37,16 +37,16 @@ jobs:
               git show "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json"                 > worker-gw2a/data/cache.json
               echo "Persistent cache restored from ${STATE_BRANCH}."
             else
-              echo "State branch exists, but no cache yet; using seed cache."
+              echo "State branch exists, but no cache is available yet; using the seed cache."
             fi
           else
-            echo "State branch does not exist yet; first run will create it."
+            echo "State branch does not exist yet; the first successful run will create it."
           fi
 
       - name: Generate current GW2 page
         run: python3 worker-gw2a/app/engine.py
 
-      - name: Publish page and persistent cache to state branch
+      - name: Publish page and persistent cache
         shell: bash
         run: |
           set -euo pipefail
@@ -60,10 +60,12 @@ jobs:
           if git show-ref --verify --quiet "refs/remotes/origin/${STATE_BRANCH}"; then
             git worktree add --detach "${STATE_DIR}" "origin/${STATE_BRANCH}"
             git -C "${STATE_DIR}" checkout -B "${STATE_BRANCH}" "origin/${STATE_BRANCH}"
+            STATE_EXISTS=1
           else
             git worktree add --detach "${STATE_DIR}" HEAD
             git -C "${STATE_DIR}" checkout --orphan "${STATE_BRANCH}"
             git -C "${STATE_DIR}" rm -rf . >/dev/null 2>&1 || true
+            STATE_EXISTS=0
           fi
 
           rm -rf "${STATE_DIR}/gw2a" "${STATE_DIR}/worker-gw2a"
@@ -75,9 +77,14 @@ jobs:
           git -C "${STATE_DIR}" add -A
 
           if git -C "${STATE_DIR}" diff --cached --quiet; then
-            echo "No state/page update needed."
+            echo "No state/page update required."
             exit 0
           fi
 
-          git -C "${STATE_DIR}" commit -m "update gw2 action state"
-          git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
+          if [ "${STATE_EXISTS}" -eq 1 ]; then
+            git -C "${STATE_DIR}" commit --amend --no-edit
+            git -C "${STATE_DIR}" push --force-with-lease origin "HEAD:${STATE_BRANCH}"
+          else
+            git -C "${STATE_DIR}" commit -m "Initialize GW2 action state"
+            git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
+          fi

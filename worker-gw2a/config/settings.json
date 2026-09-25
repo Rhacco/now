@@ -3,7 +3,7 @@
   "region": "EU",
   "now_limit": 3,
   "next_limit": 3,
-  "upcoming_horizon_minutes": 180,
+  "upcoming_horizon_minutes": 120,
   "source_ttls_minutes": {
     "catalog": 720,
     "ninja": 360,
@@ -61,6 +61,6 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.4.0",
+  "engine_version": "1.5.0",
   "extra_limit": 2
 }
