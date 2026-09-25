@@ -68,7 +68,12 @@ TRACK_DISPLAY_OVERRIDES = {
     "Dragon's Stand": "Dragon's Stand"
 }
 
-EXCLUDED_TRACKS = {"Day and night", "Cantha: Day and night", "PvP Tournaments", "Scarlet\'s Invasion"}
+CATALOG_TRACKS_IGNORED = {
+    "Day and night", "Cantha: Day and night", "PvP Tournaments"
+}
+CATALOG_TRACKS_REPLACED_BY_VERIFIED_SCHEDULE = {
+    "Scarlet's Invasion"
+}
 EXCLUDED_EVENTS = {"Reset", "Target Practice", "Fly by Night", "Target Practice & Fly by Night"}
 PHASE_PENALTIES = {
     "Pylons": -16,
@@ -100,9 +105,9 @@ SPECIAL_RECURRING_TERMS = (
     "aetherblade assault", "kaineng blackout", "gang war"
 )
 
-# Verified rotating schedules that are either absent from the main catalog or
-# not directly usable there with a reliable location/waypoint.
-ROTATING_SPECIAL_MAPS = {
+# Confirmed destination/waypoint table for the verified rotating-event layer.
+# This is not a priority list; it maps a known rotating map to a useful destination.
+ROTATING_EVENT_DESTINATIONS = {
     "Kessex Hills": {"place": "Cereboth Canyon", "waypoint": "[&BBIAAAA=]"},
     "Diessa Plateau": {"place": "Rancher's Wash", "waypoint": "[&BN0AAAA=]"},
     "Brisban Wildlands": {"place": "Venlin Vale", "waypoint": "[&BHUAAAA=]"},
@@ -116,7 +121,7 @@ ROTATING_SPECIAL_MAPS = {
     "Plains of Ashford": {"place": "Loreclaw", "waypoint": "[&BMcDAAA=]"},
 }
 
-ROTATING_SPECIAL_WIKI = {
+ROTATING_EVENT_WIKI = {
     "Fractal Incursion": "https://wiki.guildwars2.com/wiki/Defeat_the_enemy_spawned_by_the_fractal_incursion",
     "Awakened Invasion": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
     "Scarlet's Invasion": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_minions_of_Scarlet_Briar",
@@ -255,7 +260,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.3.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.4.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -598,7 +603,7 @@ def base_priority(cfg: dict[str, Any], category: str, track: str, event: str, re
 
 def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> list[Candidate]:
     name = track.get("name", "")
-    if name in EXCLUDED_TRACKS:
+    if name in CATALOG_TRACKS_IGNORED or name in CATALOG_TRACKS_REPLACED_BY_VERIFIED_SCHEDULE:
         return []
     seg_by_id = {s.get("id"): s for s in track.get("segments", [])}
     seqs = track.get("sequences", {}) or {}
@@ -657,7 +662,7 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
     return out
 
 
-def rotating_special_candidates(now: datetime) -> list[Candidate]:
+def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
     """Small verified schedule layer for recurring Core Tyria special events."""
     out: list[Candidate] = []
     midnight = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
@@ -675,7 +680,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
             start = day + timedelta(hours=hour)
 
             fmap = fractal_maps[hour % 4]
-            f = ROTATING_SPECIAL_MAPS[fmap]
+            f = ROTATING_EVENT_DESTINATIONS[fmap]
             out.append(Candidate(
                 event="Fractal Incursion",
                 track="Fractal Incursions",
@@ -685,7 +690,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
                 location=f"{fmap} · {f['place']}",
                 waypoint=f["waypoint"],
                 source="verified rotating schedule",
-                wiki=ROTATING_SPECIAL_WIKI["Fractal Incursion"],
+                wiki=ROTATING_EVENT_WIKI["Fractal Incursion"],
                 base_priority=80,
                 lightning=True,
                 community_sources=["Rotierender Sonderevent-Schedule"],
@@ -694,7 +699,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
             ))
 
             if hour % 2 == 1:
-                s = ROTATING_SPECIAL_MAPS["Gendarran Fields"]
+                s = ROTATING_EVENT_DESTINATIONS["Gendarran Fields"]
                 out.append(Candidate(
                     event="Scarlet's Invasion",
                     track="Scarlet's Invasion",
@@ -704,7 +709,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
                     location="Gendarran Fields · map-wide invasion",
                     waypoint=s["waypoint"],
                     source="verified rotating schedule",
-                    wiki=ROTATING_SPECIAL_WIKI["Scarlet's Invasion"],
+                    wiki=ROTATING_EVENT_WIKI["Scarlet's Invasion"],
                     base_priority=84,
                     lightning=True,
                     community_sources=["Rotierender Sonderevent-Schedule"],
@@ -715,7 +720,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
             astart = start + timedelta(minutes=30)
             day_offset = (astart.weekday() * 3) % 7
             amap = awakened_maps[(day_offset + hour) % 7]
-            a = ROTATING_SPECIAL_MAPS[amap]
+            a = ROTATING_EVENT_DESTINATIONS[amap]
             out.append(Candidate(
                 event="Awakened Invasion",
                 track="Awakened Invasion",
@@ -725,7 +730,7 @@ def rotating_special_candidates(now: datetime) -> list[Candidate]:
                 location=f"{amap} · {a['place']}",
                 waypoint=a["waypoint"],
                 source="verified rotating schedule",
-                wiki=ROTATING_SPECIAL_WIKI["Awakened Invasion"],
+                wiki=ROTATING_EVENT_WIKI["Awakened Invasion"],
                 base_priority=82,
                 lightning=True,
                 community_sources=["Rotierender Sonderevent-Schedule"],
@@ -974,16 +979,33 @@ def dedupe(cands: list[Candidate]) -> list[Candidate]:
     return list(best.values())
 
 
-def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[list[Candidate], list[Candidate], list[Candidate], list[Candidate]]:
+
+def choose(
+    cands: list[Candidate],
+    cfg: dict[str, Any],
+    now: datetime
+) -> tuple[
+    list[Candidate], list[Candidate],
+    list[Candidate], list[Candidate],
+    list[Candidate], list[Candidate]
+]:
     cands = [c for c in cands if c.waypoint]
     score_candidates(cands, now)
     cands = dedupe(cands)
+
+    prestart = timedelta(minutes=5)
+
     active = [
         c for c in cands
-        if c.start <= now < min(c.end, c.start + timedelta(minutes=action_window_minutes(c)))
+        if (c.start - prestart) <= now
+        < min(c.end, c.start + timedelta(minutes=action_window_minutes(c)))
     ]
+
     upcoming_end = now + timedelta(minutes=int(cfg.get("upcoming_horizon_minutes", 180)))
-    upcoming = [c for c in cands if now < c.start <= upcoming_end]
+    upcoming = [
+        c for c in cands
+        if (now + prestart) < c.start <= upcoming_end
+    ]
 
     now_limit = int(cfg.get("now_limit", 3))
     next_limit = int(cfg.get("next_limit", 3))
@@ -992,21 +1014,18 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     active_top = sorted(active, key=lambda c: (-c.score, c.start))[:now_limit]
     upcoming_top = sorted(upcoming, key=lambda c: (-c.score, c.start))[:next_limit]
 
-    active_keys = {c.key() for c in active_top}
-    upcoming_keys = {c.key() for c in upcoming_top}
+    active_top_keys = {c.key() for c in active_top}
+    upcoming_top_keys = {c.key() for c in upcoming_top}
 
-    # Places 4/5 are deliberately a "spotlight" strip:
-    # prefer the best recognisable recurring/invasion/incursion/world-boss
-    # candidates, then fill any remaining slot by normal action score.
-    active_rest = [c for c in active if c.key() not in active_keys]
-    upcoming_rest = [c for c in upcoming if c.key() not in upcoming_keys]
+    active_rest = [c for c in active if c.key() not in active_top_keys]
+    upcoming_rest = [c for c in upcoming if c.key() not in upcoming_top_keys]
 
     def pick_extras(rest: list[Candidate]) -> list[Candidate]:
-        special = sorted(
+        spotlight = sorted(
             [c for c in rest if c.special],
             key=lambda c: (c.start, -c.score)
         )
-        picked = special[:extra_limit]
+        picked = spotlight[:extra_limit]
         picked_keys = {c.key() for c in picked}
         if len(picked) < extra_limit:
             fallback = sorted(
@@ -1019,11 +1038,28 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     active_extra = pick_extras(active_rest)
     upcoming_extra = pick_extras(upcoming_rest)
 
+    active_shown = active_top_keys | {c.key() for c in active_extra}
+    upcoming_shown = upcoming_top_keys | {c.key() for c in upcoming_extra}
+
+    active_more = sorted(
+        [c for c in active if c.key() not in active_shown],
+        key=lambda c: (c.start, -c.score, c.event)
+    )
+    upcoming_more = sorted(
+        [c for c in upcoming if c.key() not in upcoming_shown],
+        key=lambda c: (c.start, -c.score, c.event)
+    )
+
     active_top.sort(key=lambda c: c.start)
     upcoming_top.sort(key=lambda c: c.start)
     active_extra.sort(key=lambda c: c.start)
     upcoming_extra.sort(key=lambda c: c.start)
-    return active_top, upcoming_top, active_extra, upcoming_extra
+
+    return (
+        active_top, upcoming_top,
+        active_extra, upcoming_extra,
+        active_more, upcoming_more
+    )
 
 
 def heat_hue(value: float, low: float, high: float) -> int:
@@ -1050,30 +1086,39 @@ def level_badge(c: Candidate) -> str:
     return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Lvl {c.level}</span>'
 
 
+
 def signal_flash(c: Candidate) -> str:
-    # The bolt is intentionally strict: a normal recurring/meta/world-boss event
-    # is NOT enough. It appears only when a direct community/special signal
-    # was actually matched by apply_community().
     if not c.lightning:
         return ""
     sources = ", ".join(c.community_sources)
     title = "Bestätigtes Community-/Sonderevent-Signal"
     if sources:
         title += ": " + sources
-    return f'<span class="flash" title="{html.escape(title)}">⚡</span>'
+    return f'<span class="flash" title="{html.escape(title)}">⚡️</span>'
+
+
+def info_link(c: Candidate) -> str:
+    if c.wiki:
+        url = c.wiki
+        title = "Direkte Event-Seite im GW2 Wiki"
+    else:
+        url = "https://wiki.guildwars2.com/index.php?search=" + urllib.parse.quote(c.event)
+        title = "Event im GW2 Wiki suchen"
+    return (
+        f'<a class="wiki" href="{html.escape(url)}" target="_blank" '
+        f'rel="noopener" title="{html.escape(title)}">Wiki</a>'
+    )
 
 
 def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     st = c.start.astimezone(tz)
-    en = c.end.astimezone(tz)
     time_label = st.strftime("%H:%M")
-    wiki = f'<a class="wiki" href="{html.escape(c.wiki)}" target="_blank" rel="noopener">Wiki</a>' if c.wiki else ""
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
       <div class="info">
         <div class="name">{signal_flash(c)}{html.escape(c.event)}</div>
         <div class="location">{html.escape(c.location)}</div>
-        <div class="badges">{priority_badge(c)}{level_badge(c)}{wiki}</div>
+        <div class="badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
       </div>
       <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
     </article>'''
@@ -1081,29 +1126,57 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
 
 def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str:
     st = c.start.astimezone(tz)
-    en = c.end.astimezone(tz)
     time_label = st.strftime("%H:%M")
     return f'''<div class="mini-card">
       <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
       <div class="mini-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
-      <div class="mini-badges">{priority_badge(c)}{level_badge(c)}</div>
+      <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
       <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
-def page_version(active: list[Candidate], upcoming: list[Candidate], active_extra: list[Candidate], upcoming_extra: list[Candidate]) -> str:
+def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
+    st = c.start.astimezone(tz)
+    return f'''<div class="all-card">
+      <span class="all-time">{st.strftime("%H:%M")}</span>
+      <div class="all-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
+      <div class="all-badges">{priority_badge(c)}{level_badge(c)}{info_link(c)}</div>
+      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
+    </div>'''
+
+
+def page_version(
+    active: list[Candidate], upcoming: list[Candidate],
+    active_extra: list[Candidate], upcoming_extra: list[Candidate],
+    active_more: list[Candidate], upcoming_more: list[Candidate]
+) -> str:
     rows = []
-    for group, items in (("now", active), ("next", upcoming), ("now-extra", active_extra), ("next-extra", upcoming_extra)):
+    for group, items in (
+        ("now", active), ("next", upcoming),
+        ("now-extra", active_extra), ("next-extra", upcoming_extra),
+        ("now-more", active_more), ("next-more", upcoming_more)
+    ):
         for c in items:
-            rows.append([group, c.event, iso(c.start), iso(c.end), c.location, c.waypoint, int(round(c.score)), c.level, c.lightning, c.special])
+            rows.append([
+                group, c.event, iso(c.start), iso(c.end), c.location,
+                c.waypoint, int(round(c.score)), c.level, c.lightning, c.special
+            ])
     raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 
-def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra: list[Candidate], upcoming_extra: list[Candidate], cfg: dict[str, Any], now: datetime, health: dict[str, str]) -> str:
+def render_html(
+    active: list[Candidate], upcoming: list[Candidate],
+    active_extra: list[Candidate], upcoming_extra: list[Candidate],
+    active_more: list[Candidate], upcoming_more: list[Candidate],
+    cfg: dict[str, Any], now: datetime, health: dict[str, str]
+) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
-    version = page_version(active, upcoming, active_extra, upcoming_extra)
+    version = page_version(
+        active, upcoming, active_extra, upcoming_extra,
+        active_more, upcoming_more
+    )
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
@@ -1116,6 +1189,18 @@ def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra
         rows = "\n".join(mini_card_html(c, tz, is_upcoming, 4 + i) for i, c in enumerate(items))
         return f'<div class="extra-block"><div class="extra-title">Weitere Action · Plätze 4–5</div>{rows}</div>'
 
+    def expandable(items: list[Candidate], is_upcoming: bool) -> str:
+        if not items:
+            return ""
+        label = "Weitere aktuelle Action" if not is_upcoming else "Weitere anstehende Action"
+        rows = "\n".join(compact_action_html(c, tz) for c in items)
+        return (
+            f'<details class="all-block">'
+            f'<summary>{html.escape(label)} <span>({len(items)})</span></summary>'
+            f'<div class="all-list">{rows}</div>'
+            f'</details>'
+        )
+
     return f'''<!doctype html>
 <html lang="de">
 <head>
@@ -1125,46 +1210,124 @@ def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra
 <title>GW2 Action Now</title>
 <style>
 :root{{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#d7aa42;}}
-*{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}}
-.app{{max-width:920px;margin:auto;padding:18px}} header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
-#clock{{font-size:23px;font-weight:800}} h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
+*{{box-sizing:border-box}}
+body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}}
+.app{{max-width:920px;margin:auto;padding:18px}}
+header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
+#clock{{font-size:23px;font-weight:800}}
+h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
-.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-1px;font-family:"Segoe UI Symbol","Segoe UI Emoji",Arial,sans-serif}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
-.badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}} .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
-.badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}} .level-na{{color:#a7adb6;background:#171a1f}} .wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}} .wiki:hover{{text-decoration:underline;color:#fff}}
-.wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}} .wp:hover{{border-color:#69717e;background:#151820}}
-.extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}} .extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
-.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}} .mini-card:first-of-type{{border-top:0}} .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}} .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}} .mini-info{{min-width:0}} .mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}} .mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}} .mini-badges{{display:flex;gap:4px}} .mini-badges .badge{{font-size:9px;padding:3px 5px}} .mini-wp{{padding:8px 6px;font-size:10px}}
+.event-card:hover{{background:var(--panel2)}}
+.time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}}
+.name{{font-size:16px;font-weight:800}}
+.flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-.08em;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}}
+.location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
+.badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}}
+.badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
+.badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}}
+.level-na{{color:#a7adb6;background:#171a1f}}
+.wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
+.wiki:hover{{text-decoration:underline;color:#fff}}
+.wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}}
+.wp:hover{{border-color:#69717e;background:#151820}}
+.extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}}
+.extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
+.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}}
+.mini-card:first-of-type{{border-top:0}}
+.rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}}
+.mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
+.mini-info{{min-width:0}}
+.mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}}
+.mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}}
+.mini-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
+.mini-badges .badge{{font-size:9px;padding:3px 5px}}
+.mini-wp{{padding:8px 6px;font-size:10px}}
+.all-block{{margin:8px 0 4px;background:#111317;border:1px solid #242931;border-radius:10px;overflow:hidden}}
+.all-block summary{{cursor:pointer;padding:10px 12px;color:#aeb5bf;font-size:11px;font-weight:800;letter-spacing:.02em;user-select:none}}
+.all-block summary:hover{{color:#fff;background:#16191e}}
+.all-block summary span{{color:#737b86}}
+.all-list{{padding:0 9px 8px}}
+.all-card{{display:grid;grid-template-columns:62px minmax(180px,1fr) auto 128px;gap:8px;align-items:center;min-height:44px;padding:6px 4px;border-top:1px solid #252a31}}
+.all-card:first-child{{border-top:0}}
+.all-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
+.all-info{{min-width:0}}
+.all-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.all-info span{{display:block;margin-top:2px;font-size:10px;color:#aab0b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.all-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
+.all-badges .badge{{font-size:9px;padding:3px 5px}}
+.all-wp{{padding:8px 6px;font-size:10px}}
 .empty{{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
-@media(max-width:760px){{.app{{padding:10px}}.event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}.time{{grid-area:time}}.info{{grid-area:info}}.wp{{grid-area:wp;width:100%}}.mini-card{{grid-template-columns:22px 62px 1fr}}.mini-badges{{grid-column:3}}.mini-wp{{grid-column:1/4;width:100%}}}}
+@media(max-width:760px){{
+  .app{{padding:10px}}
+  .event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}
+  .time{{grid-area:time}}
+  .info{{grid-area:info}}
+  .wp{{grid-area:wp;width:100%}}
+  .mini-card{{grid-template-columns:22px 62px 1fr}}
+  .mini-badges{{grid-column:3}}
+  .mini-wp{{grid-column:1/4;width:100%}}
+  .all-card{{grid-template-columns:54px 1fr}}
+  .all-badges{{grid-column:2}}
+  .all-wp{{grid-column:1/3;width:100%}}
+}}
 </style>
 </head>
 <body>
 <div class="app">
 <header><div id="clock"></div></header>
+
 <h2>Jetzt · höchste Action</h2>
 {section(active, False)}
 {extras(active_extra, False)}
+{expandable(active_more, False)}
+
 <h2>Als Nächstes · höchste Priorität</h2>
 {section(upcoming, True)}
 {extras(upcoming_extra, True)}
+{expandable(upcoming_more, True)}
 </div>
+
 <script>
 const fmt=new Intl.DateTimeFormat('de-DE',{{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}});
-function tick(){{document.getElementById('clock').textContent=fmt.format(new Date());}} tick(); setInterval(tick,1000);
-document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{{const v=btn.dataset.copy;try{{await navigator.clipboard.writeText(v);const old=btn.textContent;btn.textContent='✓ '+v;setTimeout(()=>btn.textContent=old,900);}}catch(e){{}}}}));
+function tick(){{document.getElementById('clock').textContent=fmt.format(new Date());}}
+tick();
+setInterval(tick,1000);
+
+document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{{
+  const v=btn.dataset.copy;
+  try{{
+    await navigator.clipboard.writeText(v);
+    const old=btn.textContent;
+    btn.textContent='✓ '+v;
+    setTimeout(()=>btn.textContent=old,900);
+  }}catch(e){{}}
+}}));
+
+if(window.location.search){{
+  history.replaceState(null,'',window.location.pathname+window.location.hash);
+}}
+
 const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;
 async function checkForUpdate(){{
   try{{
-    const u=new URL('index.html',window.location.href);u.searchParams.set('_',Date.now().toString());
-    const r=await fetch(u.toString(),{{cache:'no-store'}});if(!r.ok)return;
-    const t=await r.text();const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
-    if(m && m[1]!==currentVersion){{const next=new URL(window.location.href);next.searchParams.set('_',Date.now().toString());window.location.replace(next.toString());}}
+    const u=new URL(window.location.pathname,window.location.origin);
+    u.searchParams.set('_',Date.now().toString());
+    const r=await fetch(u.toString(),{{cache:'no-store'}});
+    if(!r.ok)return;
+    const t=await r.text();
+    const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
+    if(m && m[1]!==currentVersion){{
+      const next=new URL(window.location.pathname,window.location.origin);
+      next.searchParams.set('_',Date.now().toString());
+      window.location.replace(next.toString());
+    }}
   }}catch(e){{}}
 }}
 setInterval(checkForUpdate,20000);
 </script>
-</body></html>'''
+</body>
+</html>'''
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -1218,7 +1381,7 @@ def main() -> int:
         return 2
 
     cands = catalog_candidates(catalog, cfg, now)
-    cands.extend(rotating_special_candidates(now))
+    cands.extend(verified_rotating_event_candidates(now))
     apply_map_levels(cands, values.get("maps"))
     apply_ninja_waypoints(cands, values.get("ninja"))
     apply_community(
@@ -1227,10 +1390,15 @@ def main() -> int:
         values.get("gw2community"), values.get("vip"), values.get("choya")
     )
     apply_fast_context(cands, values.get("fast"))
-    active, upcoming, active_extra, upcoming_extra = choose(cands, cfg, now)
+    active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(cands, cfg, now)
 
     health = {name: ("stale" if name in errors and values.get(name) is not None else "error" if name in errors else "ok") for name in parsers}
-    page = render_html(active, upcoming, active_extra, upcoming_extra, cfg, now, health)
+    page = render_html(
+        active, upcoming,
+        active_extra, upcoming_extra,
+        active_more, upcoming_more,
+        cfg, now, health
+    )
 
     old_page = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else ""
     page_changed = page != old_page
@@ -1239,12 +1407,20 @@ def main() -> int:
     if refreshed or not STATE_PATH.exists():
         atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
 
-    print(f"candidates={len(cands)} active={len(active)} upcoming={len(upcoming)} active_extra={len(active_extra)} upcoming_extra={len(upcoming_extra)} page_changed={page_changed} sources_refreshed={refreshed}")
+    print(
+        f"candidates={len(cands)} active={len(active)} upcoming={len(upcoming)} "
+        f"active_extra={len(active_extra)} upcoming_extra={len(upcoming_extra)} "
+        f"active_more={len(active_more)} upcoming_more={len(upcoming_more)} "
+        f"page_changed={page_changed} sources_refreshed={refreshed}"
+    )
     if errors:
         print("source warnings:")
         for k, v in errors.items():
             print(f"  {k}: {v}")
-    for label, items in [("NOW", active), ("NOW+", active_extra), ("NEXT", upcoming), ("NEXT+", upcoming_extra)]:
+    for label, items in [
+        ("NOW", active), ("NOW+", active_extra), ("NOW-ALL", active_more),
+        ("NEXT", upcoming), ("NEXT+", upcoming_extra), ("NEXT-ALL", upcoming_more)
+    ]:
         for c in items:
             print(f"{label} {c.start.isoformat()} {c.event} {c.location} {c.waypoint} score={c.score:.1f} level={c.level} lightning={c.lightning} special={c.special}")
     return 0
