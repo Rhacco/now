@@ -61,6 +61,7 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.2.0",
-  "extra_limit": 2
+  "engine_version": "1.2.1",
+  "extra_limit": 2,
+  "active_display_minutes": 10
 }

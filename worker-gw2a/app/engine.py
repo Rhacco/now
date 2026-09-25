@@ -84,12 +84,20 @@ PHASE_PENALTIES = {
 }
 
 SPECIAL_RECURRING_TERMS = (
+    # Rotating / invasion / incursion / anomaly style events.
     "fractal incursion", "scarlet invasion", "awakened invasion",
     "ley line anomaly", "dragonstorm", "convergence",
     "twisted marionette", "battle for lion s arch", "tower of nightmares",
+
+    # Recognisable recurring world bosses from the old loop.
+    "admiral taidha covington", "taidha covington",
+    "the shatterer", "shatterer", "shadow behemoth",
+    "evolved jungle wurm", "great jungle wurm", "tequatl",
+
+    # Strong repeating metas.
     "octovine", "chak gerent", "dragon s stand", "battle for the jade sea",
-    "evolved jungle wurm", "tequatl", "choya pinata", "palawadan",
-    "death branded shatterer", "aetherblade assault", "kaineng blackout", "gang war"
+    "choya pinata", "palawadan", "death branded shatterer",
+    "aetherblade assault", "kaineng blackout", "gang war"
 )
 
 ALIASES = {
@@ -209,7 +217,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.2.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.2.1 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -833,7 +841,11 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     cands = [c for c in cands if c.waypoint]
     score_candidates(cands, now)
     cands = dedupe(cands)
-    active = [c for c in cands if c.start <= now < c.end]
+    active_display_minutes = int(cfg.get("active_display_minutes", 10))
+    active = [
+        c for c in cands
+        if c.start <= now < min(c.end, c.start + timedelta(minutes=active_display_minutes))
+    ]
     upcoming_end = now + timedelta(minutes=int(cfg.get("upcoming_horizon_minutes", 180)))
     upcoming = [c for c in cands if now < c.start <= upcoming_end]
 
@@ -847,13 +859,29 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     active_keys = {c.key() for c in active_top}
     upcoming_keys = {c.key() for c in upcoming_top}
 
-    # Places 4/5 remain relevance-driven, with a modest bonus for recurring
-    # invasion/incursion/anomaly/meta types that deserve extra visibility.
+    # Places 4/5 are deliberately a "spotlight" strip:
+    # prefer the best recognisable recurring/invasion/incursion/world-boss
+    # candidates, then fill any remaining slot by normal action score.
     active_rest = [c for c in active if c.key() not in active_keys]
     upcoming_rest = [c for c in upcoming if c.key() not in upcoming_keys]
-    extra_key = lambda c: (-(c.score + (22 if c.special else 0)), c.start)
-    active_extra = sorted(active_rest, key=extra_key)[:extra_limit]
-    upcoming_extra = sorted(upcoming_rest, key=extra_key)[:extra_limit]
+
+    def pick_extras(rest: list[Candidate]) -> list[Candidate]:
+        special = sorted(
+            [c for c in rest if c.special],
+            key=lambda c: (c.start, -c.score)
+        )
+        picked = special[:extra_limit]
+        picked_keys = {c.key() for c in picked}
+        if len(picked) < extra_limit:
+            fallback = sorted(
+                [c for c in rest if c.key() not in picked_keys],
+                key=lambda c: (-c.score, c.start)
+            )
+            picked.extend(fallback[:extra_limit - len(picked)])
+        return picked
+
+    active_extra = pick_extras(active_rest)
+    upcoming_extra = pick_extras(upcoming_rest)
 
     active_top.sort(key=lambda c: c.start)
     upcoming_top.sort(key=lambda c: c.start)
@@ -887,23 +915,22 @@ def level_badge(c: Candidate) -> str:
 
 
 def signal_flash(c: Candidate) -> str:
-    if not (c.lightning or c.special):
+    # The bolt is intentionally strict: a normal recurring/meta/world-boss event
+    # is NOT enough. It appears only when a direct community/special signal
+    # was actually matched by apply_community().
+    if not c.lightning:
         return ""
-    if c.lightning and c.special:
-        title = "Community-Signal + besonderes wiederkehrendes Event"
-    elif c.lightning:
-        title = "Direktes Community-/Sonderevent-Signal"
-    else:
-        title = "Besonderes wiederkehrendes Meta-/Invasion-/Incursion-Event"
-    return f'<span class="flash" title="{html.escape(title)}">⚡</span>'
+    sources = ", ".join(c.community_sources)
+    title = "Bestätigtes Community-/Sonderevent-Signal"
+    if sources:
+        title += ": " + sources
+    return f'<span class="flash" title="{html.escape(title)}">⚡︎</span>'
 
 
 def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     st = c.start.astimezone(tz)
     en = c.end.astimezone(tz)
     time_label = st.strftime("%H:%M")
-    if not upcoming:
-        time_label += "–" + en.strftime("%H:%M")
     wiki = f'<a class="wiki" href="{html.escape(c.wiki)}" target="_blank" rel="noopener">Wiki</a>' if c.wiki else ""
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
@@ -919,7 +946,7 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
 def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str:
     st = c.start.astimezone(tz)
     en = c.end.astimezone(tz)
-    time_label = st.strftime("%H:%M") if upcoming else st.strftime("%H:%M") + "–" + en.strftime("%H:%M")
+    time_label = st.strftime("%H:%M")
     return f'''<div class="mini-card">
       <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
@@ -966,12 +993,12 @@ def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra
 .app{{max-width:920px;margin:auto;padding:18px}} header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}} h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
-.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{margin-right:5px}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
+.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:baseline;font-family:"Segoe UI Symbol",Arial,sans-serif}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
 .badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}} .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
 .badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}} .level-na{{color:#a7adb6;background:#171a1f}} .wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}} .wiki:hover{{text-decoration:underline;color:#fff}}
 .wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}} .wp:hover{{border-color:#69717e;background:#151820}}
 .extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}} .extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
-.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}} .mini-card:first-of-type{{border-top:0}} .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}} .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}} .mini-info{{min-width:0}} .mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}} .mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}} .mini-badges{{display:flex;gap:4px}} .mini-badges .badge{{font-size:9px;padding:3px 5px}} .mini-wp{{padding:8px 6px;font-size:10px}}
+.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}} .mini-card:first-of-type{{border-top:0}} .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}} .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}} .mini-info{{min-width:0}} .mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}} .mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}} .mini-badges{{display:flex;gap:4px}} .mini-badges .badge{{font-size:9px;padding:3px 5px}} .mini-wp{{padding:8px 6px;font-size:10px}}
 .empty{{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 @media(max-width:760px){{.app{{padding:10px}}.event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}.time{{grid-area:time}}.info{{grid-area:info}}.wp{{grid-area:wp;width:100%}}.mini-card{{grid-template-columns:22px 62px 1fr}}.mini-badges{{grid-column:3}}.mini-wp{{grid-column:1/4;width:100%}}}}
 </style>
