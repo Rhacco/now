@@ -1,0 +1,6374 @@
+{
+  "sources": {
+    "catalog": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": [
+        {
+          "category": "Core Tyria",
+          "name": "Day and night",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Day",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Dusk",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 3,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Night",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 4,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Dawn",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 25,
+                "r": 3
+              },
+              {
+                "d": 5,
+                "r": 4
+              }
+            ],
+            "pattern": [
+              {
+                "d": 70,
+                "r": 1
+              },
+              {
+                "d": 5,
+                "r": 2
+              },
+              {
+                "d": 40,
+                "r": 3
+              },
+              {
+                "d": 5,
+                "r": 4
+              }
+            ]
+          }
+        },
+        {
+          "category": "Core Tyria",
+          "name": "World bosses",
+          "segments": [
+            {
+              "chatlink": "[&BKgBAAA=]",
+              "id": 1,
+              "lfg": 2,
+              "link": "Kill Admiral Taidha Covington",
+              "name": "Admiral Taidha Covington",
+              "rewards": {
+                "achievements": [
+                  343
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2389,
+                    "i": 72824
+                  },
+                  {
+                    "a": 2409,
+                    "i": 75149
+                  },
+                  {
+                    "a": 2479,
+                    "i": 72207
+                  },
+                  {
+                    "a": 2420,
+                    "i": 77094
+                  },
+                  {
+                    "a": 2433,
+                    "i": 72519
+                  },
+                  {
+                    "a": 2242,
+                    "i": 75357
+                  },
+                  {
+                    "a": 2374,
+                    "i": 73351
+                  },
+                  {
+                    "a": 2280,
+                    "i": 75485
+                  },
+                  {
+                    "a": 2943,
+                    "i": 78157
+                  }
+                ],
+                "random_items": [
+                  19357,
+                  19361
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BHoCAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Defeat the Claw of Jormag",
+              "name": "Claw of Jormag",
+              "rewards": {
+                "achievements": [
+                  220,
+                  2777
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 1744,
+                    "i": 67276
+                  },
+                  {
+                    "a": 1744,
+                    "i": 31065
+                  },
+                  {
+                    "a": 4233,
+                    "i": 87827
+                  },
+                  {
+                    "a": 2524,
+                    "i": 73135
+                  },
+                  {
+                    "a": 2468,
+                    "i": 74587
+                  },
+                  {
+                    "a": 2478,
+                    "i": 74176
+                  },
+                  {
+                    "a": 2180,
+                    "i": 74766
+                  },
+                  {
+                    "a": 2502,
+                    "i": 71072
+                  },
+                  {
+                    "a": 2536,
+                    "i": 76714
+                  },
+                  {
+                    "a": 2268,
+                    "i": 72122
+                  }
+                ],
+                "random_items": [
+                  45191,
+                  31075,
+                  31072
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BEcAAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "Destroy the fire elemental created from chaotic energy fusing with the C.L.E.A.N. 5000's energy core",
+              "name": "Fire Elemental",
+              "rewards": {
+                "items_for_achievements": [
+                  {
+                    "a": 4233,
+                    "i": 88046
+                  },
+                  {
+                    "a": 2336,
+                    "i": 76779
+                  },
+                  {
+                    "a": 2528,
+                    "i": 75398
+                  },
+                  {
+                    "a": 2180,
+                    "i": 75082
+                  },
+                  {
+                    "a": 2556,
+                    "i": 71121
+                  },
+                  {
+                    "a": 2502,
+                    "i": 74151
+                  },
+                  {
+                    "a": 2536,
+                    "i": 76086
+                  },
+                  {
+                    "a": 2374,
+                    "i": 75154
+                  },
+                  {
+                    "a": 2433,
+                    "i": 73627
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BNQCAAA=]",
+              "id": 4,
+              "lfg": 5,
+              "link": "Defeat the Inquest's golem Mark II",
+              "name": "Golem Mark II",
+              "rewards": {
+                "items_for_achievements": [
+                  {
+                    "a": 4205,
+                    "i": 87733
+                  },
+                  {
+                    "a": 4233,
+                    "i": 87646
+                  },
+                  {
+                    "a": 4692,
+                    "i": 90266
+                  },
+                  {
+                    "a": 1711,
+                    "i": 39472
+                  },
+                  {
+                    "a": 2258,
+                    "i": 70944
+                  },
+                  {
+                    "a": 5229,
+                    "i": 92982
+                  },
+                  {
+                    "a": 2480,
+                    "i": 75970
+                  },
+                  {
+                    "a": 2409,
+                    "i": 74511
+                  },
+                  {
+                    "a": 2468,
+                    "i": 75432
+                  },
+                  {
+                    "a": 2556,
+                    "i": 75483
+                  },
+                  {
+                    "a": 2502,
+                    "i": 74282
+                  },
+                  {
+                    "a": 2268,
+                    "i": 70965
+                  },
+                  {
+                    "a": 2943,
+                    "i": 78570
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BEEFAAA=]",
+              "id": 5,
+              "lfg": 0,
+              "link": "Defeat the great jungle wurm",
+              "name": "Great Jungle Wurm",
+              "rewards": {
+                "achievements": [
+                  338
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4233,
+                    "i": 87861
+                  },
+                  {
+                    "a": 2450,
+                    "i": 70861
+                  },
+                  {
+                    "a": 2528,
+                    "i": 73703
+                  },
+                  {
+                    "a": 2374,
+                    "i": 71299
+                  }
+                ],
+                "random_items": [
+                  19359,
+                  19355
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BM0CAAA=]",
+              "id": 6,
+              "lfg": 5,
+              "link": "Kill the megadestroyer before it blows everyone up",
+              "name": "Megadestroyer",
+              "rewards": {
+                "items_for_achievements": [
+                  {
+                    "a": 2478,
+                    "i": 71517
+                  },
+                  {
+                    "a": 2180,
+                    "i": 74706
+                  },
+                  {
+                    "a": 2433,
+                    "i": 71653
+                  },
+                  {
+                    "a": 2556,
+                    "i": 71106
+                  },
+                  {
+                    "a": 2536,
+                    "i": 76593
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BLAAAAA=]",
+              "id": 7,
+              "lfg": 5,
+              "link": "Defeat Ulgoth the Modniir and his minions",
+              "name": "Modniir Ulgoth",
+              "rewards": {
+                "items_for_achievements": [
+                  {
+                    "a": 2389,
+                    "i": 75716
+                  },
+                  {
+                    "a": 2420,
+                    "i": 72104
+                  },
+                  {
+                    "a": 2374,
+                    "i": 74239
+                  },
+                  {
+                    "a": 2280,
+                    "i": 73659
+                  },
+                  {
+                    "a": 2943,
+                    "i": 78684
+                  },
+                  {
+                    "a": 1711,
+                    "i": 39473
+                  },
+                  {
+                    "a": 2584,
+                    "i": 76023
+                  },
+                  {
+                    "a": 2375,
+                    "i": 71279
+                  },
+                  {
+                    "a": 5196,
+                    "i": 93270
+                  }
+                ],
+                "random_items": [
+                  19366
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BPcAAAA=]",
+              "id": 8,
+              "lfg": 0,
+              "link": "Defeat the shadow behemoth",
+              "name": "Shadow Behemoth",
+              "rewards": {
+                "achievements": [
+                  337
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4233,
+                    "i": 87776
+                  },
+                  {
+                    "a": 4692,
+                    "i": 90577
+                  },
+                  {
+                    "a": 5003,
+                    "i": 92173
+                  },
+                  {
+                    "a": 2336,
+                    "i": 74723
+                  },
+                  {
+                    "a": 2183,
+                    "i": 74259
+                  },
+                  {
+                    "a": 2550,
+                    "i": 72479
+                  },
+                  {
+                    "a": 2253,
+                    "i": 72128
+                  },
+                  {
+                    "a": 2260,
+                    "i": 74779
+                  },
+                  {
+                    "a": 2536,
+                    "i": 77215
+                  },
+                  {
+                    "a": 2250,
+                    "i": 72286
+                  },
+                  {
+                    "a": 2550,
+                    "i": 73182
+                  }
+                ],
+                "random_items": [
+                  19360,
+                  31051
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BMIDAAA=]",
+              "id": 9,
+              "lfg": 0,
+              "link": "Kill the Svanir shaman chief to break his control over the ice elemental",
+              "name": "Svanir Shaman Chief",
+              "rewards": {
+                "achievements": [
+                  341
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2479,
+                    "i": 76538
+                  },
+                  {
+                    "a": 2502,
+                    "i": 71942
+                  },
+                  {
+                    "a": 2280,
+                    "i": 71950
+                  },
+                  {
+                    "a": 2441,
+                    "i": 74404
+                  },
+                  {
+                    "a": 2441,
+                    "i": 73232
+                  },
+                  {
+                    "a": 2393,
+                    "i": 77047
+                  },
+                  {
+                    "a": 1711,
+                    "i": 39469
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BE4DAAA=]",
+              "id": 10,
+              "lfg": 10,
+              "link": "Slay the Shatterer",
+              "name": "The Shatterer",
+              "rewards": {
+                "achievements": [
+                  340,
+                  2812,
+                  2796,
+                  2801,
+                  2813,
+                  2799,
+                  2810,
+                  2797,
+                  2803,
+                  2807,
+                  2798,
+                  2808
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4233,
+                    "i": 87901
+                  },
+                  {
+                    "a": 2480,
+                    "i": 73647
+                  },
+                  {
+                    "a": 2187,
+                    "i": 73598
+                  },
+                  {
+                    "a": 2478,
+                    "i": 76429
+                  },
+                  {
+                    "a": 2180,
+                    "i": 75146
+                  },
+                  {
+                    "a": 2556,
+                    "i": 71872
+                  },
+                  {
+                    "a": 2536,
+                    "i": 71404
+                  },
+                  {
+                    "a": 2468,
+                    "i": 72322
+                  },
+                  {
+                    "a": 2268,
+                    "i": 74429
+                  },
+                  {
+                    "a": 2943,
+                    "i": 78683
+                  },
+                  {
+                    "a": 1711,
+                    "i": 39467
+                  },
+                  {
+                    "a": 2585,
+                    "i": 73674
+                  }
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 9
+              },
+              {
+                "d": 15,
+                "r": 6
+              },
+              {
+                "d": 15,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 10
+              },
+              {
+                "d": 15,
+                "r": 5
+              },
+              {
+                "d": 15,
+                "r": 7
+              },
+              {
+                "d": 15,
+                "r": 8
+              },
+              {
+                "d": 15,
+                "r": 4
+              },
+              {
+                "d": 15,
+                "r": 9
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 15,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 5
+              },
+              {
+                "d": 15,
+                "r": 6
+              },
+              {
+                "d": 15,
+                "r": 8
+              },
+              {
+                "d": 15,
+                "r": 10
+              },
+              {
+                "d": 15,
+                "r": 9
+              },
+              {
+                "d": 15,
+                "r": 7
+              },
+              {
+                "d": 15,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 4
+              },
+              {
+                "d": 15,
+                "r": 5
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 15,
+                "r": 8
+              }
+            ]
+          }
+        },
+        {
+          "category": "Core Tyria",
+          "name": "Hard world bosses",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "World boss",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BKoBAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Triple Trouble",
+              "name": "Evolved Jungle Wurm",
+              "rewards": {
+                "achievements": [
+                  2474,
+                  2620,
+                  2169,
+                  1333,
+                  1338,
+                  1335,
+                  1341,
+                  1339,
+                  1340,
+                  1336,
+                  1337,
+                  1332,
+                  1459,
+                  1334
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2524,
+                    "i": 75371
+                  },
+                  {
+                    "a": 2524,
+                    "i": 73857
+                  },
+                  {
+                    "a": 2524,
+                    "i": 76571
+                  },
+                  {
+                    "a": 2468,
+                    "i": 71124
+                  }
+                ],
+                "random_items": [
+                  49670,
+                  67213,
+                  71413,
+                  49836,
+                  49828,
+                  49831,
+                  49724
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BNUGAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Defeat the Karka Queen threatening the settlements",
+              "name": "Karka Queen",
+              "rewards": {
+                "achievements": [
+                  2202
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2313,
+                    "i": 73047
+                  },
+                  {
+                    "a": 2524,
+                    "i": 75767
+                  },
+                  {
+                    "a": 2253,
+                    "i": 72434
+                  },
+                  {
+                    "a": 2177,
+                    "i": 75859
+                  },
+                  {
+                    "a": 2428,
+                    "i": 73965
+                  },
+                  {
+                    "a": 2536,
+                    "i": 73362
+                  },
+                  {
+                    "a": 2374,
+                    "i": 70496
+                  },
+                  {
+                    "a": 2268,
+                    "i": 76589
+                  },
+                  {
+                    "a": 2250,
+                    "i": 70803
+                  },
+                  {
+                    "a": 2302,
+                    "i": 75404
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BNABAAA=]",
+              "id": 3,
+              "lfg": 15,
+              "link": "Defeat Tequatl the Sunless",
+              "name": "Tequatl the Sunless",
+              "rewards": {
+                "achievements": [
+                  342,
+                  904,
+                  905,
+                  906,
+                  908,
+                  903,
+                  901,
+                  902,
+                  900,
+                  909,
+                  907
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4233,
+                    "i": 87633
+                  },
+                  {
+                    "a": 4998,
+                    "i": 92148
+                  },
+                  {
+                    "a": 2409,
+                    "i": 71231
+                  },
+                  {
+                    "a": 2524,
+                    "i": 74828
+                  },
+                  {
+                    "a": 2468,
+                    "i": 75651
+                  },
+                  {
+                    "a": 2183,
+                    "i": 72402
+                  },
+                  {
+                    "a": 2478,
+                    "i": 76734
+                  },
+                  {
+                    "a": 2528,
+                    "i": 76448
+                  },
+                  {
+                    "a": 2180,
+                    "i": 73101
+                  },
+                  {
+                    "a": 2253,
+                    "i": 75968
+                  },
+                  {
+                    "a": 2556,
+                    "i": 73715
+                  },
+                  {
+                    "a": 2502,
+                    "i": 73039
+                  },
+                  {
+                    "a": 2383,
+                    "i": 76496
+                  },
+                  {
+                    "a": 2536,
+                    "i": 73840
+                  },
+                  {
+                    "a": 2268,
+                    "i": 76677
+                  },
+                  {
+                    "a": 1754,
+                    "i": 67194
+                  }
+                ],
+                "random_items": [
+                  47846,
+                  47870,
+                  71413,
+                  47872,
+                  47845,
+                  19363,
+                  19358,
+                  47874,
+                  47875,
+                  47873,
+                  47871
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 90,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 120,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 120,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 150,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              }
+            ],
+            "pattern": []
+          }
+        },
+        {
+          "category": "Core Tyria",
+          "name": "PvP Tournaments",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "Automated Tournaments",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Automated Tournaments#Daily_tournaments",
+              "name": "Automated Tournament: Balthazar's Brawl",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Automated Tournaments#Daily_tournaments",
+              "name": "Automated Tournament: Grenth's Game",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 3,
+              "lfg": 0,
+              "link": "Automated Tournaments#Daily_tournaments",
+              "name": "Automated Tournament: Melandru's Matchup",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 4,
+              "lfg": 0,
+              "link": "Automated Tournaments#Daily_tournaments",
+              "name": "Automated Tournament: Lyssa's Legions",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 60,
+                "r": 1
+              },
+              {
+                "d": 120,
+                "r": 0
+              },
+              {
+                "d": 60,
+                "r": 2
+              },
+              {
+                "d": 120,
+                "r": 0
+              },
+              {
+                "d": 60,
+                "r": 3
+              },
+              {
+                "d": 120,
+                "r": 0
+              },
+              {
+                "d": 60,
+                "r": 4
+              },
+              {
+                "d": 120,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 1",
+          "name": "Eye of the North",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "Eye of the North",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BAkMAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "The Twisted Marionette",
+              "name": "Twisted Marionette (Public)",
+              "rewards": {
+                "achievements": [
+                  1307,
+                  1305,
+                  1304,
+                  1310,
+                  1311,
+                  1308,
+                  1312,
+                  1313,
+                  1314,
+                  1306,
+                  5852,
+                  5858,
+                  720,
+                  5854,
+                  5857
+                ],
+                "coins": 20000,
+                "items": [
+                  49658
+                ],
+                "random_items": [
+                  49678,
+                  49652,
+                  49651,
+                  49827
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BAkMAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "The Tower of Nightmares (meta event)",
+              "name": "Tower of Nightmares (Public)",
+              "rewards": {
+                "achievements": [
+                  6760,
+                  6759,
+                  6753,
+                  6806,
+                  6762,
+                  1101,
+                  1133,
+                  1136,
+                  1141,
+                  1140,
+                  1139,
+                  1134,
+                  1199
+                ],
+                "random_items": [
+                  48877,
+                  82637,
+                  48897,
+                  48896,
+                  48898,
+                  48905,
+                  49134
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BAkMAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "The Battle For Lion's Arch",
+              "name": "Battle For Lion's Arch (Public)",
+              "rewards": {
+                "achievements": [
+                  1390,
+                  1397,
+                  1391,
+                  1399,
+                  1401,
+                  1386,
+                  1384,
+                  1421,
+                  1387,
+                  1388,
+                  1389,
+                  1396,
+                  1394,
+                  1398,
+                  1393,
+                  1400,
+                  1402,
+                  6795,
+                  1520,
+                  1506,
+                  1521,
+                  1509,
+                  1513,
+                  1512,
+                  6800,
+                  6801,
+                  1511,
+                  1516,
+                  1515,
+                  1514,
+                  1519,
+                  6777,
+                  6791
+                ],
+                "random_items": [
+                  99185,
+                  99119,
+                  99158,
+                  99126,
+                  99123,
+                  99172,
+                  99127,
+                  99187,
+                  99181,
+                  99129,
+                  99146,
+                  99166,
+                  99188,
+                  99137,
+                  99161,
+                  99120,
+                  42406
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 10,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 3
+              },
+              {
+                "d": 45,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 15,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 1",
+          "name": "Scarlet's Invasion",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "Defeat the invading minions of Scarlet Briar",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BOQAAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Defeat the invading minions of Scarlet Briar",
+              "name": "Defeat Scarlet's minions",
+              "rewards": {
+                "achievements": [
+                  833,
+                  834,
+                  832,
+                  836,
+                  830,
+                  827,
+                  828,
+                  837,
+                  829,
+                  835
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 1
+              }
+            ],
+            "pattern": [
+              {
+                "d": 105,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 1
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 2",
+          "name": "Dry Top",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Crash Site (meta event)",
+              "name": "Crash Site",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BIAHAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Sandstorm!",
+              "name": "Sandstorm",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 40,
+                "r": 1
+              },
+              {
+                "d": 20,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Heart of Thorns",
+          "name": "Verdant Brink",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Securing Verdant Brink",
+              "name": "Day: Securing Verdant Brink",
+              "rewards": {
+                "achievements": [
+                  2281
+                ]
+              }
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Night and the Enemy",
+              "name": "Night: Night and the Enemy",
+              "rewards": {
+                "achievements": [
+                  2165
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BAgIAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "Night and the Enemy",
+              "name": "Night Bosses",
+              "rewards": {
+                "achievements": [
+                  2566,
+                  2369,
+                  2333,
+                  2423,
+                  2211,
+                  2294
+                ],
+                "items": [
+                  78171
+                ],
+                "random_items": [
+                  75055
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 10,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ],
+            "pattern": [
+              {
+                "d": 75,
+                "r": 1
+              },
+              {
+                "d": 25,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ]
+          }
+        },
+        {
+          "category": "Heart of Thorns",
+          "name": "Auric Basin",
+          "segments": [
+            {
+              "chatlink": "[&BN0HAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Defending Tarir",
+              "name": "Pylons",
+              "rewards": {
+                "achievements": [
+                  2427
+                ]
+              }
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Battle in Tarir (map meta event)",
+              "name": "Challenges",
+              "rewards": {
+                "achievements": [
+                  2555,
+                  2634
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BAIIAAA=]",
+              "id": 3,
+              "lfg": 11,
+              "link": "Battle in Tarir (map meta event)",
+              "name": "Octovine",
+              "rewards": {
+                "achievements": [
+                  2594,
+                  2417,
+                  2342,
+                  2618,
+                  2622
+                ],
+                "items": [
+                  78650
+                ],
+                "random_items": [
+                  46746,
+                  74715,
+                  76063,
+                  72191,
+                  72119,
+                  73843
+                ]
+              }
+            },
+            {
+              "chatlink": "",
+              "id": 4,
+              "lfg": 0,
+              "link": "A Moment's Rest",
+              "name": "Reset",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 45,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              },
+              {
+                "d": 10,
+                "r": 4
+              }
+            ],
+            "pattern": [
+              {
+                "d": 75,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              },
+              {
+                "d": 10,
+                "r": 4
+              }
+            ]
+          }
+        },
+        {
+          "category": "Heart of Thorns",
+          "name": "Tangled Depths",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Advancing Across Tangled Roots",
+              "name": "Help the Outposts",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Against the Chak Gerent",
+              "name": "Prep",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BPUHAAA=]",
+              "id": 3,
+              "lfg": 5,
+              "link": "Against the Chak Gerent",
+              "name": "Chak Gerent",
+              "rewards": {
+                "items": [
+                  78332
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2643,
+                    "i": 76500
+                  },
+                  {
+                    "a": 2433,
+                    "i": 70810
+                  }
+                ],
+                "random_items": [
+                  73663,
+                  75615,
+                  72203,
+                  72021
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 5,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ],
+            "pattern": [
+              {
+                "d": 95,
+                "r": 1
+              },
+              {
+                "d": 5,
+                "r": 2
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ]
+          }
+        },
+        {
+          "category": "Heart of Thorns",
+          "name": "Dragon's Stand",
+          "segments": [
+            {
+              "chatlink": "[&BBAIAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Advancing on the Blighting Towers",
+              "name": "Start advancing on the Blighting Towers",
+              "rewards": {
+                "items": [
+                  78617
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 2951,
+                    "i": 78132
+                  },
+                  {
+                    "a": 2268,
+                    "i": 74692
+                  },
+                  {
+                    "a": 2643,
+                    "i": 76884
+                  },
+                  {
+                    "a": 2628,
+                    "i": 70818
+                  },
+                  {
+                    "a": 2572,
+                    "i": 72916
+                  },
+                  {
+                    "a": 2569,
+                    "i": 75027
+                  },
+                  {
+                    "a": 2404,
+                    "i": 74138
+                  },
+                  {
+                    "a": 2545,
+                    "i": 71442
+                  },
+                  {
+                    "a": 2300,
+                    "i": 75673
+                  },
+                  {
+                    "a": 2629,
+                    "i": 74663
+                  },
+                  {
+                    "a": 2332,
+                    "i": 71967
+                  },
+                  {
+                    "a": 2359,
+                    "i": 70653
+                  },
+                  {
+                    "a": 2641,
+                    "i": 71976
+                  },
+                  {
+                    "a": 2454,
+                    "i": 71761
+                  },
+                  {
+                    "a": 2290,
+                    "i": 74165
+                  },
+                  {
+                    "a": 2192,
+                    "i": 71907
+                  },
+                  {
+                    "a": 2325,
+                    "i": 72399
+                  },
+                  {
+                    "a": 2282,
+                    "i": 74208
+                  },
+                  {
+                    "a": 2609,
+                    "i": 73760
+                  },
+                  {
+                    "a": 2235,
+                    "i": 72855
+                  },
+                  {
+                    "a": 2508,
+                    "i": 76605
+                  }
+                ],
+                "random_items": [
+                  76926,
+                  75983,
+                  71630,
+                  70477,
+                  75495,
+                  76528,
+                  73679
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 90,
+                "r": 1
+              }
+            ],
+            "pattern": [
+              {
+                "d": 120,
+                "r": 1
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 3",
+          "name": "Lake Doric",
+          "segments": [
+            {
+              "chatlink": "[&BK0JAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "White Mantle Control: Saidra's Haven",
+              "name": "Saidra's Haven",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BLQJAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "White Mantle Control: New Loamhurst",
+              "name": "New Loamhurst",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BK8JAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "White Mantle Control: Noran's Homestead",
+              "name": "Noran's Homestead",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 30,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 3
+              },
+              {
+                "d": 45,
+                "r": 1
+              },
+              {
+                "d": 45,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Core Tyria",
+          "name": "Ley-Line Anomaly",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "Legendary Ley-Line Anomaly",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BEwCAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+              "name": "Timberline Falls",
+              "rewards": {
+                "achievements": [
+                  3029,
+                  3036,
+                  3037,
+                  3026
+                ],
+                "items": [
+                  19976,
+                  79047
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4205,
+                    "i": 87678
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BOYBAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+              "name": "Iron Marches",
+              "rewards": {
+                "achievements": [
+                  3029,
+                  3036,
+                  3037,
+                  3026
+                ],
+                "items": [
+                  19976,
+                  79047
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4205,
+                    "i": 87678
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BO0AAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "Defeat the Ley-Line Anomaly to disperse its destructive energy before it overloads",
+              "name": "Gendarran Fields",
+              "rewards": {
+                "achievements": [
+                  3029,
+                  3036,
+                  3037,
+                  3026
+                ],
+                "items": [
+                  19976,
+                  79047
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4205,
+                    "i": 87678
+                  }
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 20,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ],
+            "pattern": [
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 3
+              }
+            ]
+          }
+        },
+        {
+          "category": "Path of Fire",
+          "name": "Crystal Oasis",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BLsKAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Casino Blitz",
+              "name": "Rounds 1 to 3",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BLsKAAA=]",
+              "id": 2,
+              "lfg": 16,
+              "link": "Casino Blitz",
+              "name": "Choya Pinata",
+              "rewards": {
+                "items": [
+                  90958
+                ],
+                "random_items": [
+                  84730,
+                  85996,
+                  86987,
+                  85137
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 5,
+                "r": 0
+              },
+              {
+                "d": 16,
+                "r": 1
+              },
+              {
+                "d": 9,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 95,
+                "r": 0
+              },
+              {
+                "d": 16,
+                "r": 1
+              },
+              {
+                "d": 9,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Path of Fire",
+          "name": "Desert Highlands",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BGsKAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "The Search for Buried Treasure",
+              "name": "Buried Treasure",
+              "rewards": {
+                "items": [
+                  83439
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 1
+              }
+            ],
+            "pattern": [
+              {
+                "d": 100,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 1
+              }
+            ]
+          }
+        },
+        {
+          "category": "Path of Fire",
+          "name": "Elon Riverlands",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BFMKAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "The Path to Ascension",
+              "name": "The Path to Ascension: Augury Rock",
+              "rewards": {
+                "random_items": [
+                  84730
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BCgKAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "The Path to Ascension",
+              "name": "Doppelganger",
+              "rewards": {
+                "achievements": [
+                  3571,
+                  3819
+                ],
+                "items": [
+                  91039
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 15,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 75,
+                "r": 0
+              },
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 20,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Path of Fire",
+          "name": "The Desolation",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BKMKAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "",
+              "name": "Maws of Torment",
+              "rewards": {
+                "achievements": [
+                  3782
+                ],
+                "items": [
+                  84360
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 3798,
+                    "i": 83561
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BMEKAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "",
+              "name": "Junundu Rising",
+              "rewards": {
+                "achievements": [
+                  3774
+                ],
+                "items": [
+                  84360
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 3881,
+                    "i": 83268
+                  }
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 10,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 10,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 40,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 10,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Path of Fire",
+          "name": "Domain of Vabbi",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BHQKAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "",
+              "name": "Serpents' Ire",
+              "rewards": {
+                "items": [
+                  83035
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 3798,
+                    "i": 84710
+                  },
+                  {
+                    "a": 4108,
+                    "i": 87205
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BO0KAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "",
+              "name": "Forged with Fire",
+              "rewards": {
+                "achievements": [
+                  3809
+                ],
+                "items": [
+                  83035
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 30,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 30,
+                "r": 2
+              },
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 4",
+          "name": "Domain of Istan",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BAkLAAA=]",
+              "id": 1,
+              "lfg": 2,
+              "link": "Palawadan, Jewel of Istan (meta event)",
+              "name": "Palawadan",
+              "rewards": {
+                "achievements": [
+                  3969,
+                  3985,
+                  4042,
+                  3989,
+                  3992
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 15,
+                "r": 1
+              }
+            ],
+            "pattern": [
+              {
+                "d": 90,
+                "r": 0
+              },
+              {
+                "d": 30,
+                "r": 1
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 4",
+          "name": "Jahai Bluffs",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BIMLAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Dangerous Prey",
+              "name": "Escorts",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BJMLAAA=]",
+              "id": 2,
+              "lfg": 5,
+              "link": "Destroy the Death-Branded Shatterer",
+              "name": "Death-Branded Shatterer",
+              "rewards": {
+                "achievements": [
+                  4413
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 1711,
+                    "i": 39467
+                  }
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 90,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "Living World Season 4",
+          "name": "Thunderhead Peaks",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BLsLAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Thunderhead Keep (meta event)",
+              "name": "Thunderhead Keep",
+              "rewards": {
+                "achievements": [
+                  4507,
+                  4595
+                ],
+                "items": [
+                  89828
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 4764,
+                    "i": 91132
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BKYLAAA=]",
+              "id": 2,
+              "lfg": 5,
+              "link": "",
+              "name": "The Oil Floes",
+              "rewards": {
+                "achievements": [
+                  4516,
+                  4532,
+                  4522
+                ],
+                "items": [
+                  89692
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 5,
+                "r": 1
+              },
+              {
+                "d": 40,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 2
+              }
+            ],
+            "pattern": [
+              {
+                "d": 45,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 40,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "The Icebrood Saga",
+          "name": "Grothmar Valley",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BA4MAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Ceremony of the Sacred Flame",
+              "name": "Effigy",
+              "rewards": {
+                "achievements": [
+                  4941,
+                  4978
+                ],
+                "items": [
+                  92082
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BA4MAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "The Haunting of Doomlore Shrine",
+              "name": "Doomlore Shrine",
+              "rewards": {
+                "achievements": [
+                  4987,
+                  4935,
+                  4950
+                ],
+                "items": [
+                  92037
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BPgLAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "The Ooze Pit Trials",
+              "name": "Ooze Pits",
+              "rewards": {
+                "achievements": [
+                  4971,
+                  4985,
+                  4956
+                ],
+                "items": [
+                  92052
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BPgLAAA=]",
+              "id": 4,
+              "lfg": 0,
+              "link": "A Concert for the Ages",
+              "name": "Metal Concert",
+              "rewards": {
+                "achievements": [
+                  4926,
+                  4921,
+                  4967,
+                  4995,
+                  4927,
+                  4960
+                ],
+                "items": [
+                  92077
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 10,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 13,
+                "r": 0
+              },
+              {
+                "d": 22,
+                "r": 2
+              },
+              {
+                "d": 5,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 4
+              },
+              {
+                "d": 15,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "The Icebrood Saga",
+          "name": "Bjora Marches",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BDkMAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Champion of the Ice Dragon",
+              "name": "Drakkar and Spirits of the Wild",
+              "rewards": {
+                "achievements": [
+                  5141,
+                  5122,
+                  5103,
+                  5121,
+                  5104,
+                  5127,
+                  5087,
+                  5147,
+                  5098,
+                  5142,
+                  5106,
+                  5148,
+                  5139
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BCcMAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Storms of Winter",
+              "name": "Raven Shrines",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BCcMAAA=]",
+              "id": 3,
+              "lfg": 5,
+              "link": "Storms of Winter",
+              "name": "Shards and Construct",
+              "rewards": {
+                "achievements": [
+                  5017
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BCcMAAA=]",
+              "id": 4,
+              "lfg": 0,
+              "link": "Storms of Winter",
+              "name": "Icebrood Champions",
+              "rewards": {
+                "achievements": [
+                  5044
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 3499,
+                    "i": 81694
+                  },
+                  {
+                    "a": 2951,
+                    "i": 78286
+                  }
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 5,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 4
+              }
+            ],
+            "pattern": [
+              {
+                "d": 45,
+                "r": 0
+              },
+              {
+                "d": 35,
+                "r": 1
+              },
+              {
+                "d": 5,
+                "r": 0
+              },
+              {
+                "d": 15,
+                "r": 2
+              },
+              {
+                "d": 5,
+                "r": 3
+              },
+              {
+                "d": 15,
+                "r": 4
+              }
+            ]
+          }
+        },
+        {
+          "category": "The Icebrood Saga",
+          "name": "Dragonstorm",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BAkMAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Dragonstorm",
+              "name": "Dragonstorm",
+              "rewards": {
+                "achievements": [
+                  5696,
+                  5707,
+                  5701,
+                  5694,
+                  5699,
+                  5690,
+                  5695,
+                  5702,
+                  5710,
+                  5689
+                ],
+                "coins": 20000,
+                "items": [
+                  0
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 5545,
+                    "i": 94317
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94312
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94274
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94329
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94321
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94170
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94225
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94234
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94328
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94266
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94242
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94255
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94326
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94290
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94345
+                  },
+                  {
+                    "a": 5545,
+                    "i": 94237
+                  }
+                ],
+                "random_items": [
+                  94945,
+                  94982,
+                  94298,
+                  90519,
+                  94933
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 100,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "End of Dragons",
+          "name": "Cantha: Day and night",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 1,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Day",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 2,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Dusk",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 3,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Night",
+              "rewards": {}
+            },
+            {
+              "chatlink": "",
+              "id": 4,
+              "lfg": 0,
+              "link": "Day and night",
+              "name": "Dawn",
+              "rewards": {}
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 35,
+                "r": 3
+              },
+              {
+                "d": 5,
+                "r": 4
+              }
+            ],
+            "pattern": [
+              {
+                "d": 55,
+                "r": 1
+              },
+              {
+                "d": 5,
+                "r": 2
+              },
+              {
+                "d": 55,
+                "r": 3
+              },
+              {
+                "d": 5,
+                "r": 4
+              }
+            ]
+          }
+        },
+        {
+          "category": "End of Dragons",
+          "name": "Seitung Province",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BGUNAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Aetherblade Assault",
+              "name": "Aetherblade Assault",
+              "rewards": {
+                "achievements": [
+                  6366,
+                  6468,
+                  6321,
+                  6409,
+                  6088,
+                  6185
+                ],
+                "items": [
+                  97895
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 6099,
+                    "i": 96640
+                  }
+                ],
+                "random_items": [
+                  97424
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 90,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 90,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "End of Dragons",
+          "name": "New Kaineng City",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BBkNAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Kaineng Blackout",
+              "name": "Kaineng Blackout",
+              "rewards": {
+                "achievements": [
+                  6188,
+                  6132,
+                  6385
+                ],
+                "items": [
+                  97901
+                ],
+                "random_items": [
+                  97424
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 90,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "End of Dragons",
+          "name": "The Echovald Wilds",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BMwMAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "The Gang War of Echovald",
+              "name": "Gang War",
+              "rewards": {
+                "achievements": [
+                  6305,
+                  6298,
+                  6380
+                ],
+                "items": [
+                  97894
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 6167,
+                    "i": 96791
+                  }
+                ],
+                "random_items": [
+                  97424
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BPkMAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Use the siege turtles to destroy the shield generators as you fight through the fort",
+              "name": "Aspenwood",
+              "rewards": {
+                "achievements": [
+                  6137
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 0
+              },
+              {
+                "d": 35,
+                "r": 1
+              },
+              {
+                "d": 35,
+                "r": 0
+              },
+              {
+                "d": 20,
+                "r": 2
+              }
+            ]
+          }
+        },
+        {
+          "category": "End of Dragons",
+          "name": "Dragon's End",
+          "segments": [
+            {
+              "chatlink": "[&BKIMAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "",
+              "name": "Preparations",
+              "rewards": {
+                "achievements": [
+                  6148,
+                  6131,
+                  6082,
+                  6217
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BKIMAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Defeat the Void-corrupted Jade Maw",
+              "name": "Jade Maw",
+              "rewards": {
+                "items_for_achievements": [
+                  {
+                    "a": 6099,
+                    "i": 96353
+                  },
+                  {
+                    "a": 6093,
+                    "i": 96767
+                  },
+                  {
+                    "a": 6467,
+                    "i": 96622
+                  }
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BKIMAAA=]",
+              "id": 3,
+              "lfg": 65,
+              "link": "The Battle for the Jade Sea",
+              "name": "The Battle for the Jade Sea",
+              "rewards": {
+                "achievements": [
+                  6127,
+                  6470,
+                  6456,
+                  6496,
+                  6300,
+                  6217,
+                  6160,
+                  6511,
+                  6171,
+                  6144,
+                  6320
+                ],
+                "items": [
+                  97896
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 6176,
+                    "i": 97492
+                  }
+                ],
+                "random_items": [
+                  97424
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 5,
+                "r": 1
+              },
+              {
+                "d": 8,
+                "r": 2
+              },
+              {
+                "d": 32,
+                "r": 1
+              },
+              {
+                "d": 8,
+                "r": 2
+              },
+              {
+                "d": 7,
+                "r": 1
+              },
+              {
+                "d": 60,
+                "r": 3
+              }
+            ]
+          }
+        },
+        {
+          "category": "Secrets of the Obscure",
+          "name": "Skywatch Archipelago",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BL4NAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Unlocking the Wizard's Tower",
+              "name": "Unlocking the Wizard's Tower",
+              "rewards": {
+                "achievements": [
+                  7218,
+                  7038
+                ],
+                "items": [
+                  100547,
+                  100502
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 95,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Secrets of the Obscure",
+          "name": "Wizard's Tower",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BB8OAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Skyscale Target Practice in the Wizard's Tower",
+              "name": "Target Practice",
+              "rewards": {
+                "achievements": [
+                  7097,
+                  7019,
+                  6982
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BB8OAAA=]",
+              "id": 2,
+              "lfg": 0,
+              "link": "Wizard's Tower: Fly by Night",
+              "name": "Fly by Night",
+              "rewards": {
+                "achievements": [
+                  7009,
+                  7066
+                ]
+              }
+            },
+            {
+              "chatlink": "[&BB8OAAA=]",
+              "id": 3,
+              "lfg": 0,
+              "link": "Skyscale Target Practice in the Wizard's Tower",
+              "name": "Target Practice & Fly by Night",
+              "rewards": {
+                "achievements": [
+                  7097,
+                  7019,
+                  6982,
+                  7009,
+                  7066
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 20,
+                "r": 2
+              },
+              {
+                "d": 40,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 40,
+                "r": 1
+              },
+              {
+                "d": 15,
+                "r": 3
+              },
+              {
+                "d": 25,
+                "r": 2
+              },
+              {
+                "d": 40,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Secrets of the Obscure",
+          "name": "Amnytas",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BDQOAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "The Defense of Amnytas",
+              "name": "Defense of Amnytas",
+              "rewards": {
+                "achievements": [
+                  7102,
+                  7165,
+                  7106,
+                  6988,
+                  7224
+                ],
+                "items": [
+                  100193,
+                  100109
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 95,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Secrets of the Obscure",
+          "name": "Convergences",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BB8OAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Convergences",
+              "name": "Convergences (Public)",
+              "rewards": {
+                "achievements": [
+                  7652,
+                  7668,
+                  7672,
+                  7690,
+                  7699,
+                  7706,
+                  7712,
+                  7720
+                ],
+                "items": [
+                  101185
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 7180,
+                    "i": 100483
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100383
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100721
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100070
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100589
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100413
+                  },
+                  {
+                    "a": 7180,
+                    "i": 100297
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100494
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100476
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100868
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100121
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100584
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100967
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100474
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100173
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100428
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100770
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100281
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100092
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100866
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100551
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100054
+                  },
+                  {
+                    "a": 7675,
+                    "i": 100572
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100603
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100303
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100877
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100089
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100007
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100416
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100553
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100312
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100412
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100847
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100777
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100120
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100231
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100420
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100842
+                  },
+                  {
+                    "a": 7005,
+                    "i": 100736
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100652
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100963
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100762
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100363
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100649
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100289
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100251
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100424
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100539
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100006
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100124
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100630
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100229
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100084
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100929
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100218
+                  }
+                ],
+                "random_items": [
+                  83410,
+                  68063
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 90,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 10,
+                "r": 1
+              },
+              {
+                "d": 170,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Janthir Wilds",
+          "name": "Janthir Syntri",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BCoPAAA=]",
+              "id": 1,
+              "lfg": 5,
+              "link": "Of Mists and Monsters",
+              "name": "Of Mists and Monsters",
+              "rewards": {
+                "achievements": [
+                  8337
+                ],
+                "items": [
+                  102265,
+                  102468,
+                  102283
+                ],
+                "random_items": [
+                  103876
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 40,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 15,
+                "r": 1
+              },
+              {
+                "d": 105,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Janthir Wilds",
+          "name": "Mount Balrior",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BK4OAAA=]",
+              "id": 1,
+              "lfg": 2,
+              "link": "Convergence: Mount Balrior",
+              "name": "Convergence: Mount Balrior",
+              "rewards": {
+                "achievements": [
+                  8445,
+                  8456,
+                  8458,
+                  8463,
+                  8473,
+                  8489
+                ],
+                "coins": 20000,
+                "items": [
+                  103842
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8507,
+                    "i": 103870
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103909
+                  },
+                  {
+                    "a": 8507,
+                    "i": 104050
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103806
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103797
+                  },
+                  {
+                    "a": 8507,
+                    "i": 104014
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103777
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103798
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103905
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103936
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103761
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103837
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103987
+                  },
+                  {
+                    "a": 8507,
+                    "i": 104021
+                  },
+                  {
+                    "a": 8507,
+                    "i": 104010
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103965
+                  },
+                  {
+                    "a": 8507,
+                    "i": 103816
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100652
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100963
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100762
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100363
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100649
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100289
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100251
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100424
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100539
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100006
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100124
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100630
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100229
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100084
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100929
+                  },
+                  {
+                    "a": 7234,
+                    "i": 100218
+                  }
+                ],
+                "random_items": [
+                  83410,
+                  103782,
+                  103813,
+                  103964,
+                  103968,
+                  103892,
+                  104003
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [],
+            "pattern": [
+              {
+                "d": 10,
+                "r": 1
+              },
+              {
+                "d": 170,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Janthir Wilds",
+          "name": "Bava Nisos",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BGEPAAA=]",
+              "id": 1,
+              "lfg": 2,
+              "link": "A Titanic Voyage",
+              "name": "A Titanic Voyage",
+              "rewards": {
+                "achievements": [
+                  8713,
+                  8809,
+                  8705,
+                  8781,
+                  8747,
+                  8735,
+                  8751
+                ],
+                "items": [
+                  104714
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8745,
+                    "i": 104820
+                  },
+                  {
+                    "a": 8745,
+                    "i": 104835
+                  },
+                  {
+                    "a": 8745,
+                    "i": 104958
+                  },
+                  {
+                    "a": 8745,
+                    "i": 104711
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104718
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104867
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104933
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104843
+                  },
+                  {
+                    "a": 8741,
+                    "i": 105013
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104775
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104776
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104810
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104707
+                  },
+                  {
+                    "a": 8741,
+                    "i": 105007
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104979
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104725
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104851
+                  },
+                  {
+                    "a": 8741,
+                    "i": 10476
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104998
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104750
+                  },
+                  {
+                    "a": 8741,
+                    "i": 104939
+                  }
+                ],
+                "random_items": [
+                  104448
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 80,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 95,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Visions of Eternity",
+          "name": "Shipwreck Strand",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BJEPAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Hammerhart Rumble!",
+              "name": "Hammerhart Rumble!",
+              "rewards": {
+                "achievements": [
+                  9071,
+                  8861,
+                  8898,
+                  8914,
+                  9030
+                ],
+                "items": [
+                  105700,
+                  105822
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8966,
+                    "i": 105118
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105133
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105097
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105056
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105088
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105061
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105059
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105116
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105041
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105099
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105082
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105140
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105103
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105062
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105053
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105114
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105100
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106358
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106183
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106156
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106075
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106207
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105991
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105960
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105821
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105787
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105629
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106611
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106047
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106462
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106016
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105890
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105715
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106643
+                  }
+                ],
+                "random_items": [
+                  106199,
+                  106357,
+                  77307
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 40,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 20,
+                "r": 1
+              },
+              {
+                "d": 100,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Visions of Eternity",
+          "name": "Starlit Weald",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BJ4PAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Secrets of the Weald",
+              "name": "Secrets of the Weald",
+              "rewards": {
+                "achievements": [
+                  9003,
+                  8941,
+                  9086,
+                  8942,
+                  9042
+                ],
+                "items": [
+                  105822
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 9022,
+                    "i": 105937
+                  },
+                  {
+                    "a": 9022,
+                    "i": 105988
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105118
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105133
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105097
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105056
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105088
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105061
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105059
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105116
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105041
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105099
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105082
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105140
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105103
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105062
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105053
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105114
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105100
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106358
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106183
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106156
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106075
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106207
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105991
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105960
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105821
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105787
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105629
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106611
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106047
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106462
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106016
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105890
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105715
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106643
+                  }
+                ],
+                "random_items": [
+                  106554,
+                  106285,
+                  77307,
+                  109103
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 100,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 35,
+                "r": 1
+              },
+              {
+                "d": 85,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Visions of Eternity",
+          "name": "Eternity's Garden",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BPwPAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Shackles of the Ancients",
+              "name": "Shackles of the Ancients",
+              "rewards": {
+                "achievements": [
+                  9253,
+                  9296,
+                  9252,
+                  9289,
+                  9270
+                ],
+                "items": [
+                  105822
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8966,
+                    "i": 105118
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105133
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105097
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105056
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105088
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105061
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105059
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105116
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105041
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105099
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105082
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105140
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105103
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105062
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105053
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105114
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105100
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106358
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106183
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106156
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106075
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106207
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105991
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105960
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105821
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105787
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105629
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106611
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106047
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106462
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106016
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105890
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105715
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106643
+                  }
+                ],
+                "random_items": [
+                  109246,
+                  109239,
+                  109115,
+                  109251
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 75,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 25,
+                "r": 1
+              },
+              {
+                "d": 95,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Visions of Eternity",
+          "name": "Leyspring Hollows",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BDYQAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Depths of Cruelty",
+              "name": "Depths of Cruelty",
+              "rewards": {
+                "achievements": [
+                  9356,
+                  9457,
+                  9408,
+                  9474,
+                  9473,
+                  9424
+                ],
+                "coins": 10000,
+                "items": [
+                  110205
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8966,
+                    "i": 105118
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105133
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105097
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105056
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105088
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105061
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105059
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105116
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105041
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105099
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105082
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105140
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105103
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105062
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105053
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105114
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105100
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106358
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106183
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106156
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106075
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106207
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105991
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105960
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105821
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105787
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105629
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106611
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106047
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106462
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106016
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105890
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105715
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106643
+                  }
+                ],
+                "random_items": [
+                  109929,
+                  110218,
+                  110224,
+                  110041
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 120,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 30,
+                "r": 1
+              },
+              {
+                "d": 150,
+                "r": 0
+              }
+            ]
+          }
+        },
+        {
+          "category": "Visions of Eternity",
+          "name": "The Mists",
+          "segments": [
+            {
+              "chatlink": "",
+              "id": 0,
+              "lfg": 0,
+              "link": "",
+              "name": "",
+              "rewards": {}
+            },
+            {
+              "chatlink": "[&BDYQAAA=]",
+              "id": 1,
+              "lfg": 0,
+              "link": "Convergence: Nexus of Eternity",
+              "name": "Convergence: Nexus of Eternity",
+              "rewards": {
+                "achievements": [
+                  9447,
+                  9409,
+                  9405,
+                  9384,
+                  9349
+                ],
+                "coins": 20000,
+                "items": [
+                  110137
+                ],
+                "items_for_achievements": [
+                  {
+                    "a": 8966,
+                    "i": 105118
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105133
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105097
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105056
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105088
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105061
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105059
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105116
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105041
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105099
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105082
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105140
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105103
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105062
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105053
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105114
+                  },
+                  {
+                    "a": 8966,
+                    "i": 105100
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106358
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106183
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106156
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106075
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106207
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105991
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105960
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105821
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105787
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105629
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106611
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106047
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106462
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106016
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105890
+                  },
+                  {
+                    "a": 8858,
+                    "i": 105715
+                  },
+                  {
+                    "a": 8858,
+                    "i": 106643
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106084
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105870
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106716
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106363
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105944
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105823
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106368
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105739
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106754
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105698
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106487
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106706
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106714
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105791
+                  },
+                  {
+                    "a": 8987,
+                    "i": 105650
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106248
+                  },
+                  {
+                    "a": 8987,
+                    "i": 106585
+                  },
+                  {
+                    "a": 8965,
+                    "i": 105989
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106752
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106570
+                  },
+                  {
+                    "a": 8965,
+                    "i": 105535
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106681
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106745
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106406
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106531
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106642
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106077
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106579
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106391
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106671
+                  },
+                  {
+                    "a": 8965,
+                    "i": 105640
+                  },
+                  {
+                    "a": 8965,
+                    "i": 105519
+                  },
+                  {
+                    "a": 8965,
+                    "i": 105851
+                  },
+                  {
+                    "a": 8965,
+                    "i": 106472
+                  },
+                  {
+                    "a": 8905,
+                    "i": 105427
+                  }
+                ],
+                "random_items": [
+                  83410,
+                  110179
+                ]
+              }
+            }
+          ],
+          "sequences": {
+            "partial": [
+              {
+                "d": 60,
+                "r": 0
+              }
+            ],
+            "pattern": [
+              {
+                "d": 10,
+                "r": 1
+              },
+              {
+                "d": 170,
+                "r": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "choya": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "route": [
+          {
+            "title": "Tequatl the Sunless",
+            "waypoint": "[&BNABAAA=]"
+          },
+          {
+            "title": "Ley-Line Anomaly",
+            "waypoint": "[&BEwCAAA=]"
+          },
+          {
+            "title": "Treasure Mushroom",
+            "waypoint": "[&BAwIAAA=]"
+          },
+          {
+            "title": "Chak Gerent",
+            "waypoint": "[&BPUHAAA=]"
+          },
+          {
+            "title": "Octovine",
+            "waypoint": "[&BAYIAAA=]"
+          },
+          {
+            "title": "Ooze Pits",
+            "waypoint": "[&BPgLAAA=]"
+          },
+          {
+            "title": "Shackles of the Ancients",
+            "waypoint": "[&BPwPAAA=]"
+          }
+        ],
+        "sqjoin": "/sqjoin a choya"
+      }
+    },
+    "dcap": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "events": [
+          {
+            "region": "NA",
+            "rule": "weekdays",
+            "target": "Evolved Jungle Wurm",
+            "time_utc": "12:30",
+            "title": "Triple Trouble"
+          },
+          {
+            "region": "NA",
+            "rule": "monday",
+            "target": "Battle For Lion's Arch (Public)",
+            "time_utc": "14:00",
+            "title": "The Battle For Lion's Arch"
+          },
+          {
+            "region": "NA",
+            "rule": "tuesday",
+            "target": "Dragonstorm",
+            "time_utc": "14:00",
+            "title": "Dragonstorm"
+          },
+          {
+            "region": "NA",
+            "rule": "tuesday",
+            "target": "Dragon's Stand",
+            "time_utc": "14:30",
+            "title": "Dragon's Stand"
+          },
+          {
+            "region": "NA",
+            "rule": "wednesday",
+            "target": "Secrets of the Weald",
+            "time_utc": "15:00",
+            "title": "Secrets of the Weald"
+          },
+          {
+            "region": "NA",
+            "rule": "thursday",
+            "target": "Twisted Marionette (Public)",
+            "time_utc": "14:00",
+            "title": "The Twisted Marionette"
+          },
+          {
+            "region": "NA",
+            "rule": "weekend",
+            "target": "The Battle for the Jade Sea",
+            "time_utc": "12:30",
+            "title": "The Battle for the Jade Sea"
+          }
+        ]
+      }
+    },
+    "fast": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "normalized_text": "how to make gold in gw2 best farming methods fast farming community fast farming community your gw2 account farming builds farming guides farming tracker farming calculator daily farming checklist monthly raffle open world farming alt parking chest drizzlewood material donation farmtrain fishing gizmos jade bot meta pve reward track solo farming storage and slot bags vendor instance farming dragon response missions dungeons fractals home instance raids salvaging salvageables salvaging costs per 1000 luck unidentified gear gathering karmic tools glyphs nodes unlimited gathering tools bags bag opener bags conversions airship part ancient coin astral acclaim badge of honor bandit crest bandit skeleton key cache key calcified gasp canach coin elegy mosaic exalted key festival token fine rift essence fractal relic geode guild commendation imperial favor jade miner s keycard jade sliver karma laurel ley line crystal lump of aurillium machete magnetite shard masterwork rift essence mistborn key pact crowbar pinch of stardust pristine fractal relic proof of heroics provisioner token pvp league ticket racing medallion rare rift essence research note spirit shard static charge tale of dungeon delving testimony of castoran heroics testimony of desert heroics testimony of jade heroics trade contract trader s key tyrian defense seal unbound magic unusual coin ursus oblige vial of chak acid volatile magic war supplies wvw skirmish claim ticket zephyrite lockpick festivals lunar new year super adventure box dragon bash festival of the four winds halloween wintersday competitive pvp reward track wvw reward track checking loading appearance appearance theme system light dark menu style data farming pagination 10 25 50 100 background image none api status fast api v1 pending gw2 api v2 items pending v2 currencies pending v2 commerce listings pending v2 commerce prices pending v2 commerce exchange gems pending suggestions or data inaccuracies please share them in our discord channel website feedback about us fast farming community a european pve hardcore guild wars 2 farming community focused on efficient gold farming suggestions or data inaccuracies please share them in our discord channel website feedback support the project the fast farming community website is curated by cornix it s a lot of work to keep a site like this going so please support the project with a small donation thank you for your extra support to keep the project alive home website content updates website todos changelog legal notice cookie settings 2026 fast farming community curated by cornix 8214"
+      }
+    },
+    "gw2community": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": [
+        {
+          "description": "Gildenmissionen von Internos immer Sonntags ab 19Uhr Ihr könnt gerne Freundemitbringen.",
+          "end": "2015-12-13T19:45:00+00:00",
+          "region": "EU",
+          "start": "2015-12-13T18:00:00+00:00",
+          "title": "[IN] Gildenmission Intern",
+          "url": "https://gw2community.de/calendar/event/24-in-gildenmission-intern/"
+        },
+        {
+          "description": "Interne Gildenmissionen von [ZdF] Zirkel der Finsternis",
+          "end": "2015-12-13T19:00:00+00:00",
+          "region": "EU",
+          "start": "2015-12-13T17:00:00+00:00",
+          "title": "[ZdF] Gildenmissionen Intern",
+          "url": "https://gw2community.de/calendar/event/1086-zdf-gildenmissionen-intern/"
+        },
+        {
+          "description": "Gildenmissionen Alliance Of The Eternal Flame",
+          "end": "2016-01-03T19:15:00+00:00",
+          "region": "EU",
+          "start": "2016-01-03T18:00:00+00:00",
+          "title": "[Burn] Gildenmissionen Intern",
+          "url": "https://gw2community.de/calendar/event/1301-burn-gildenmissionen-intern/"
+        },
+        {
+          "description": "Am Montag\\, dem 04.01.2016\\, veranstaltet die Gilde „Forsaken Tears“ [tear] ein öffentliches Rollenspiel in Hoelbrak (Wegmarke Prahlhalle) unter dem Motto „Das Feuer“. Jeder ist dazu eingeladen\\, einen festen Verlauf des RP gibt es nicht. Das RP soll sich frei entwickeln!  Bei weiteren Fragen könnt Ihr euch gerne vorab an mich (@Kleen Rahni [URL:https://gw2community.de/user/958-Kleen-Rahni/]) wenden.",
+          "end": "2016-01-04T21:00:00+00:00",
+          "region": "EU",
+          "start": "2016-01-04T19:00:00+00:00",
+          "title": "Öffentliches Rollenspiel \\\"Das Feuer\\\"",
+          "url": "https://gw2community.de/calendar/event/3144-%C3%B6ffentliches-rollenspiel-das-feuer/"
+        },
+        {
+          "description": "Liebe Community\\, liebe Besucher\\,   unsere hardwareaffinen Asura haben sich dazu entschlossen\\, Wartungsarbeiten an unseren Servern durchzuführen. Die Arbeiten werden am Freitag\\, dem 19. Februar 2016\\, ab 20:00 Uhr stattfinden. Ab diesem Zeitpunkt kann es zu mehreren kurzfristigen Nicht-Erreichbarkeiten unserer Dienste kommen.  Wir bitten für die entstehenden Unannehmlichkeiten um Entschuldigung.   Euer GW2Community-Team",
+          "end": "2016-02-20T05:00:00+00:00",
+          "region": "EU",
+          "start": "2016-02-19T19:00:00+00:00",
+          "title": "Planmäßige Server-Wartungsarbeiten am 19.02.2016",
+          "url": "https://gw2community.de/calendar/event/4850-planm%C3%A4%C3%9Fige-server-wartungsarbeiten-am-19-02-2016/"
+        },
+        {
+          "description": "Wir bin der [EEE] haben vor eine Modenschau in Gw2 zu veranstalten. Dabei werden wir und alle in einem Gebiet treffen\\, die Teilnehmer werden einzeln einmal hin und her laufen und danach wird abgestimmt. Es wird mehrere Kategorien geben\\, z.B. Schönster Charakter\\, ausgefallenster oder Thematisch am besten passender.  Zum Mitmachen müssen keine Bedingungen erfüllt werden\\, allerdings wir es für den Gewinner keine Belohnung in Form von Gold oder Gegenständen geben (Es gibt natürlich eine Siegerehrung  ^^  )  Stattfinden wir das Event am Samstag.  Wir haben auch extra dafür einen TS-Channel erhalten\\, dort hin könnt ihr auch kommen  ^^   Alle Teilnehmer (Models) tragen sich bitte hier [URL:https://docs.google.com/document/d/1lOPQ5bsDdw-Tpsh_LGyUcEKuZtU4qCwQ2Ft-B6v9z78/edit] ein !  Wo das ganze Stattfinden wird wird im TS-Channel bekannt gegeben  :)   Wie lange es dauert hängt von der Anzahl der Teilnehmer ab  Euer Opossum LP",
+          "end": "2016-06-25T18:00:00+00:00",
+          "region": "EU",
+          "start": "2016-06-25T17:30:00+00:00",
+          "title": "Tyrias NEXT Topmodel (Modenschau)",
+          "url": "https://gw2community.de/calendar/event/12277-tyrias-next-topmodel-modenschau/"
+        },
+        {
+          "description": "Hey Tyrianer !  Ihr seit schön\\, oder ? Zeigt es uns bei Tyrias NEXT Topmodel II ! Aufgrund eures sehr positiven Feedback beim letzten mal\\, geht Tyrias NEXT Topmodel nun in die nächste Runde !  Wir beim letzten mal stellt ihr euch wieder mit euren Charakteren zur Schau\\, danach wird abgestimmt ! Zum mitmachen müssen keine Bedingung erfüllt werden\\, allerdings wir es für den Gewinner keine Belohnung in Form von Gold oder Gegenständen geben (Es gibt natürlich eine Siegerehrung  )  Stattfinden wir das Event am Samstag den 10.10.2016 in unserem Channel in dem Eventbereich von Gw2ts.de   (Genaue Zeit : Wird nachgereicht)  Ihr beurteilt wie gut die \\\"Austeller\\\" zu unseren Themen passen. Über diese wird Hier [URL:https://docs.google.com/forms/d/e/1FAIpQLScnWo1iFtl6mPoEDLzi5c1AWmGVpnW1Hqm4Zc5fObjSKJ1OGQ/viewform] abgestimmt.  Für einen Überblick sollten sich bitte alle bis Freitag Abend hier ein : Klick mich [URL:https://docs.google.com/document/d/1lOPQ5bsDdw-Tpsh_LGyUcEKuZtU4qCwQ2Ft-B6v9z78/edit#]  Bringt gerne alle mit die ihr habt\\, Teams sind möglich (werden als 1. Person behandelt)   Auch eure Meinung zu unserem Projekt würde ich gerne wissen\\, also haut in die Tasten   Euer Opossum LP  TNT II - explosiv und exklusiv   Der Rechtsweg ist ausgeschlossen !",
+          "end": "2016-09-10T18:30:00+00:00",
+          "region": "EU",
+          "start": "2016-09-10T17:30:00+00:00",
+          "title": "Tyrias NEXT Topmodel II",
+          "url": "https://gw2community.de/calendar/event/12743-tyrias-next-topmodel-ii/"
+        },
+        {
+          "description": "Auf dem Twitchkanal [URL:https://www.twitch.tv/gw2community_de]der gw2community.",
+          "end": "2017-02-08T20:30:00+00:00",
+          "region": "EU",
+          "start": "2017-02-08T18:00:00+00:00",
+          "title": "ArtStream von Serenity",
+          "url": "https://gw2community.de/calendar/event/18689-artstream-von-serenity/"
+        },
+        {
+          "description": "Auf dem Twitchkanal [URL:https://www.twitch.tv/gw2community_de] der gw2community.",
+          "end": "2017-02-08T22:15:00+00:00",
+          "region": "EU",
+          "start": "2017-02-08T20:45:00+00:00",
+          "title": "Stream: Faniel & Co. auf Expedition in Tyria - Arah P4",
+          "url": "https://gw2community.de/calendar/event/18690-stream-faniel-co-auf-expedition-in-tyria-arah-p4/"
+        },
+        {
+          "description": "Wöchentlicher Zeichenstream mit Shadowmaker Serenity auf  https://www.twitch.tv/gw2community_de",
+          "end": "2017-04-19T18:30:00+00:00",
+          "region": "EU",
+          "start": "2017-04-19T17:30:00+00:00",
+          "title": "ArtStream mit Shadowmaker Serenity",
+          "url": "https://gw2community.de/calendar/event/20091-artstream-mit-shadowmaker-serenity/"
+        },
+        {
+          "description": "Wöchentlicher Zeichenstream mit Shadowmaker Serenity auf twitch.tv/gw2community_de [URL:https://www.twitch.tv/gw2community_de]",
+          "end": "2017-04-26T18:30:00+00:00",
+          "region": "EU",
+          "start": "2017-04-26T17:30:00+00:00",
+          "title": "ArtStream mit Shadowmaker Serenity",
+          "url": "https://gw2community.de/calendar/event/20092-artstream-mit-shadowmaker-serenity/"
+        },
+        {
+          "description": "Wöchentlicher Zeichenstream mit Shadowmaker Serenity auf twitch.tv/gw2community_de [URL:https://www.twitch.tv/gw2community_de]  Diese Woche mit einem Stream der besonderen Art - Alle Zuschauer können mir während des Streams einen Screenshot ihres Charakters per Discord senden\\, den ich dann live für euch zeichne!",
+          "end": "2017-05-03T18:30:00+00:00",
+          "region": "EU",
+          "start": "2017-05-03T17:30:00+00:00",
+          "title": "ArtStream mit Shadowmaker Serenity",
+          "url": "https://gw2community.de/calendar/event/20093-artstream-mit-shadowmaker-serenity/"
+        },
+        {
+          "description": "Auch in diesem Jahr findet wieder die MS Toga Party in Tyria statt und unsere Streamerin Shaowmaker Serenity wird das Event ab 21 Uhr für einige Zeit begleiten und Fragen rund um Multiple Sklerose beantworten und von eigenen Erlebnissen berichten.  Nähere Informationen zum Ablauf findet ihr im offiziellen Thread: https://forum-en.guildwars2.com/forum/community/events/Toga-Party-for-MS-Official-Thread",
+          "end": "2017-05-13T20:00:00+00:00",
+          "region": "EU",
+          "start": "2017-05-13T19:00:00+00:00",
+          "title": "[Livestream] GamerGivingBack MS Toga Party",
+          "url": "https://gw2community.de/calendar/event/20413-livestream-gamergivingback-ms-toga-party/"
+        },
+        {
+          "description": "Ankündigung der zweiten Erweiterung auf guildwars2.com und Twitch",
+          "end": "2017-08-01T17:00:00+00:00",
+          "region": "EU",
+          "start": "2017-08-01T16:00:00+00:00",
+          "title": "Ankündigung der Erweiterung von ArenaNet",
+          "url": "https://gw2community.de/calendar/event/21001-ank%C3%BCndigung-der-erweiterung-von-arenanet/"
+        },
+        {
+          "description": "Das Beta-Wochenende für die neue Erweiterung \\\"Path of Fire\\\"",
+          "end": "2017-08-13T21:59:00+00:00",
+          "region": "EU",
+          "start": "2017-08-11T16:00:00+00:00",
+          "title": "Path of Fire - Betawochenende",
+          "url": "https://gw2community.de/calendar/event/21010-path-of-fire-betawochenende/"
+        },
+        {
+          "description": "Release der neuen Erweiterung \\\"Path of Fire\\\"",
+          "end": "2017-09-22T21:59:00+00:00",
+          "region": "EU",
+          "start": "2017-09-22T16:00:00+00:00",
+          "title": "Release Path of Fire",
+          "url": "https://gw2community.de/calendar/event/21520-release-path-of-fire/"
+        },
+        {
+          "description": "Planmäßige Serverwartung",
+          "end": "2017-11-04T03:00:00+00:00",
+          "region": "EU",
+          "start": "2017-11-03T19:00:00+00:00",
+          "title": "Planmäßige Serverwartung",
+          "url": "https://gw2community.de/calendar/event/22285-planm%C3%A4%C3%9Fige-serverwartung/"
+        },
+        {
+          "description": "Heute Abend wird Fashionfuchs (fashionfuchs.3405) mit uns durch Guild Wars 2 und Guild Wars ziehen. Gemeinsam werden wir verschiedene Orte besuchen und Bilder der bunten Spielerschaft machen. Los geht's gegen 18:30 Uhr in Löwenstein (in Guild Wars 2). Das Event wird von Fashionfuchs auf Twitch gestreamt werden und wir werden den Stream natürlich auch auf unserem Kanal hosten.  #Love4ArenaNet [URL:https://gw2community.de/forum/thread/14169-love4arenanet/]",
+          "end": "2019-02-26T18:30:00+00:00",
+          "region": "EU",
+          "start": "2019-02-26T17:30:00+00:00",
+          "title": "#Love4ArenaNet",
+          "url": "https://gw2community.de/calendar/event/24988-love4arenanet/"
+        },
+        {
+          "description": "Infos und Diskussion über das Event: Nehmt am 30. August an einem besonderen Live-Event teil [URL:https://gw2community.de/forum/thread/14539-nehmt-am-30-august-an-einem-besonderen-live-event-teil/?postID=80315#post80315] https://gw2community.de/video-portal/ \tInfos zum Ankündigungsevent Datum und Uhrzeit: 30. August um 18:00 Uhr MESZ (9:00 Uhr PDT) \tOrt: Moore Theatre in Seattle (Washington\\, USA) \tLive ansehen: Twitch [URL:http://www.twitch.tv/guildwars2/]\\, YouTube [URL:https://www.youtube.com/user/arenanetofficial/live] und Facebook [URL:https://www.facebook.com/GuildWars2/live]",
+          "end": "2019-08-30T17:30:00+00:00",
+          "region": "EU",
+          "start": "2019-08-30T15:30:00+00:00",
+          "title": "Ankündigung Lebendige Welt Staffel 5 (LiveStream von ArenaNet)",
+          "url": "https://gw2community.de/calendar/event/25564-ank%C3%BCndigung-lebendige-welt-staffel-5-livestream-von-arenanet/"
+        },
+        {
+          "description": "Zeitumstellung – Neue Eventzeiten!",
+          "end": "2019-10-27T02:00:00+00:00",
+          "region": "EU",
+          "start": "2019-10-27T01:00:00+00:00",
+          "title": "Zeitumstellung – Neue Eventzeiten!",
+          "url": "https://gw2community.de/calendar/event/26772-zeitumstellung-neue-eventzeiten/"
+        },
+        {
+          "description": "ArenaNet veranstaltet parallel zur gamescom 2022 eine Feier zum 10. Jahrestag von Guild Wars 2. Zur Teilnahme am Event ist ein Ticket notwendig! Weitere Infos unter",
+          "end": "2022-08-25T20:00:00+00:00",
+          "region": "EU",
+          "start": "2022-08-25T17:00:00+00:00",
+          "title": "Feier zum 10. Jahrestag von Guild Wars 2",
+          "url": "https://gw2community.de/calendar/event/29698-feier-zum-10-jahrestag-von-guild-wars-2/"
+        },
+        {
+          "description": "",
+          "end": "2025-02-16T19:00:00+00:00",
+          "region": "EU",
+          "start": "2025-02-16T18:00:00+00:00",
+          "title": "Silberwüsten Meta zum Maximieren des Magic Find und anschliessend gemeinsames Neujahr-Kuvert öffnen - mit ZdF",
+          "url": "https://gw2community.de/calendar/event/30830-silberw%C3%BCsten-meta-zum-maximieren-des-magic-find-und-anschliessend-gemeinsames-ne/"
+        }
+      ]
+    },
+    "hardstuck": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": [
+        {
+          "end": "2026-09-28T20:30:00+00:00",
+          "region": "",
+          "start": "2026-09-28T18:30:00+00:00",
+          "title": "EU/NA – Beginner Friendly Griffon Training On Both Servers At Once",
+          "url": "https://hardstuck.gg/events/eu-na-beginner-friendly-griffon-training-on-both-servers-at-once/"
+        },
+        {
+          "end": "2026-09-29T19:00:00+00:00",
+          "region": "EU",
+          "start": "2026-09-29T17:00:00+00:00",
+          "title": "EU The Rifting Train (Overcharged!)",
+          "url": "https://hardstuck.gg/events/rifting-train/"
+        },
+        {
+          "end": "2026-09-30T17:09:00+00:00",
+          "region": "NA",
+          "start": "2026-09-30T15:09:00+00:00",
+          "title": "NA [NA] After meta train Fashion contest Wednesday!",
+          "url": "https://hardstuck.gg/events/after-meta-train-fashion-contest-wednesday/"
+        }
+      ]
+    },
+    "metasheet": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": [
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "/sqjoin Platanium.4532",
+          "start": "2026-09-25T13:40:00+00:00",
+          "title": "Mega Meta Train (10 hours)"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-09-27T17:30:00+00:00",
+          "title": "End of Dragons Train"
+        },
+        {
+          "note": "Start moved 30m earlier! The last Train took us over 4 hours",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-09-29T17:00:00+00:00",
+          "title": "The Rifting Train (Overcharged!)"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-10-02T17:00:00+00:00",
+          "title": "Full CM Convergences (all 8!)"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-10-04T17:30:00+00:00",
+          "title": "End of Dragons Train"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-10-06T17:00:00+00:00",
+          "title": "The Rifting Train (Overcharged!)"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
+          "start": "2026-05-24T07:00:00+00:00",
+          "title": "Giga Meta Train - Extended Cut (16 hours)"
+        }
+      ]
+    },
+    "news": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "lines": [
+          "Convergence: Nexus of Eternity",
+          "Unlike the other meta-events in",
+          ", as well as the Convergence, to run with a reduced chance of potential competition with the other’s start times. That way, you’ll be able to go from event to event, across each map, with minimal disruption.",
+          "Changing Up Convergences",
+          "For this release, you’ll participate in a new Convergence where you’ll find yourself coming head-to-head against in the Nexus of Eternity. You’ll face challenges that call back to experiences and mechanics throughout other parts of Tyria.",
+          "“Code of Creation” kicks off a season that is jam-packed with bonus events, festivals, and game updates. The complete roadmap is detailed below, but let’s discuss some of the highlights.",
+          "Dismount Rush Event",
+          "Convergence Challenge Mode: Nexus of Eternity",
+          "Fractal Incursion",
+          "Extra Life Bonus Event"
+        ]
+      }
+    },
+    "ninja": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "occurrences": [
+          {
+            "end_minute": 1060,
+            "event": "Day",
+            "start_minute": 990,
+            "waypoint": "[&BLAAAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Fire Elemental",
+            "start_minute": 1005,
+            "waypoint": "[&BEcAAAA=]"
+          },
+          {
+            "end_minute": 1035,
+            "event": "Golem Mark II",
+            "start_minute": 1020,
+            "waypoint": "[&BNQCAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Great Jungle Wurm",
+            "start_minute": 1035,
+            "waypoint": "[&BEEFAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Claw of Jormag",
+            "start_minute": 1050,
+            "waypoint": "[&BHoCAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Shadow Behemoth",
+            "start_minute": 1065,
+            "waypoint": "[&BPcAAAA=]"
+          },
+          {
+            "end_minute": 1095,
+            "event": "Admiral Taidha Covington",
+            "start_minute": 1080,
+            "waypoint": "[&BKgBAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Svanir Shaman Chief",
+            "start_minute": 1095,
+            "waypoint": "[&BMIDAAA=]"
+          },
+          {
+            "end_minute": 1125,
+            "event": "Megadestroyer",
+            "start_minute": 1110,
+            "waypoint": "[&BM0CAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Triple Trouble",
+            "start_minute": 990,
+            "waypoint": "[&BKoBAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Karka Queen",
+            "start_minute": 1050,
+            "waypoint": "[&BNUGAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Timberline Falls",
+            "start_minute": 1110,
+            "waypoint": "[&BEwCAAA=]"
+          },
+          {
+            "end_minute": 1220,
+            "event": "Awakened Invasion",
+            "start_minute": 1120,
+            "waypoint": "[&BOQAAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Awakened Invasion",
+            "start_minute": 1035,
+            "waypoint": "[&BN0AAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Brisban Wildlands",
+            "start_minute": 1035,
+            "waypoint": "[&BHUAAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Automated Tournament: Melandru's Matchup",
+            "start_minute": 1095,
+            "waypoint": "[&BIAHAAA=]"
+          },
+          {
+            "end_minute": 1060,
+            "event": "Crash Site",
+            "start_minute": 1020,
+            "waypoint": "[&BIAHAAA=]"
+          },
+          {
+            "end_minute": 1120,
+            "event": "Crash Site",
+            "start_minute": 1080,
+            "waypoint": "[&BIAHAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Day: Securing Verdant Brink",
+            "start_minute": 990,
+            "waypoint": "[&BAgIAAA=]"
+          },
+          {
+            "end_minute": 1185,
+            "event": "Day: Securing Verdant Brink",
+            "start_minute": 1110,
+            "waypoint": "[&BN0HAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Challenges",
+            "start_minute": 1005,
+            "waypoint": "[&BGwIAAA=]"
+          },
+          {
+            "end_minute": 1040,
+            "event": "Octovine",
+            "start_minute": 1020,
+            "waypoint": "[&BAIIAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Reset",
+            "start_minute": 1040,
+            "waypoint": "[&BN0HAAA=]"
+          },
+          {
+            "end_minute": 1010,
+            "event": "Chak Gerent",
+            "start_minute": 990,
+            "waypoint": "[&BPUHAAA=]"
+          },
+          {
+            "end_minute": 1105,
+            "event": "Help the Outposts",
+            "start_minute": 1010,
+            "waypoint": "[&BPUHAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Start advancing on the Blighting Towers",
+            "start_minute": 930,
+            "waypoint": "[&BBAIAAA=]"
+          },
+          {
+            "end_minute": 1170,
+            "event": "Start advancing on the Blighting Towers",
+            "start_minute": 1050,
+            "waypoint": "[&BBAIAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Noran's Homestead",
+            "start_minute": 990,
+            "waypoint": "[&BK8JAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Saidra's Haven",
+            "start_minute": 1020,
+            "waypoint": "[&BK0JAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "New Loamhurst",
+            "start_minute": 1065,
+            "waypoint": "[&BLQJAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Noran's Homestead",
+            "start_minute": 1110,
+            "waypoint": "[&BK8JAAA=]"
+          },
+          {
+            "end_minute": 1085,
+            "event": "Rounds 1 to 3",
+            "start_minute": 990,
+            "waypoint": "[&BLsKAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Pinata\\/Reset",
+            "start_minute": 1101,
+            "waypoint": "[&BLsKAAA=]"
+          },
+          {
+            "end_minute": 1205,
+            "event": "Buried Treasure",
+            "start_minute": 1110,
+            "waypoint": "[&BGsKAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "The Path to Ascension: Augury Rock",
+            "start_minute": 1040,
+            "waypoint": "[&BFMKAAA=]"
+          },
+          {
+            "end_minute": 1095,
+            "event": "Doppelganger",
+            "start_minute": 1075,
+            "waypoint": "[&BFMKAAA=]"
+          },
+          {
+            "end_minute": 1170,
+            "event": "Junundu Rising",
+            "start_minute": 1095,
+            "waypoint": "[&BMEKAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Maws of Torment",
+            "start_minute": 1010,
+            "waypoint": "[&BKMKAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Junundu Rising",
+            "start_minute": 1040,
+            "waypoint": "[&BMEKAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Junundu Rising",
+            "start_minute": 1070,
+            "waypoint": "[&BMEKAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Serpents' Ire",
+            "start_minute": 990,
+            "waypoint": "[&BHQKAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Forged with Fire",
+            "start_minute": 1020,
+            "waypoint": "[&BO0KAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Forged with Fire",
+            "start_minute": 1050,
+            "waypoint": "[&BO0KAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Serpents' Ire",
+            "start_minute": 1110,
+            "waypoint": "[&BHQKAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Palawadan",
+            "start_minute": 975,
+            "waypoint": "[&BAkLAAA=]"
+          },
+          {
+            "end_minute": 1185,
+            "event": "Escorts",
+            "start_minute": 1095,
+            "waypoint": "[&BIMLAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Death-Branded Shatterer",
+            "start_minute": 1035,
+            "waypoint": "[&BJMLAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "The Oil Floes",
+            "start_minute": 1050,
+            "waypoint": "[&BKYLAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Thunderhead Keep",
+            "start_minute": 1020,
+            "waypoint": "[&BLsLAAA=]"
+          },
+          {
+            "end_minute": 1125,
+            "event": "Doomlore Shrine",
+            "start_minute": 1085,
+            "waypoint": "[&BA4MAAA=]"
+          },
+          {
+            "end_minute": 1025,
+            "event": "Ooze Pits",
+            "start_minute": 1020,
+            "waypoint": "[&BPgLAAA=]"
+          },
+          {
+            "end_minute": 1060,
+            "event": "Metal Concert",
+            "start_minute": 1045,
+            "waypoint": "[&BPgLAAA=]"
+          },
+          {
+            "end_minute": 1090,
+            "event": "Effigy",
+            "start_minute": 1075,
+            "waypoint": "[&BA4MAAA=]"
+          },
+          {
+            "end_minute": 1118,
+            "event": "Doomlore Shrine",
+            "start_minute": 1105,
+            "waypoint": "[&BA4MAAA=]"
+          },
+          {
+            "end_minute": 1025,
+            "event": "Drakkar and Spirits of the Wild",
+            "start_minute": 980,
+            "waypoint": "[&BDkMAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Defend Jora's Keep",
+            "start_minute": 1060,
+            "waypoint": "[&BCcMAAA=]"
+          },
+          {
+            "end_minute": 1085,
+            "event": "Shards and Construct",
+            "start_minute": 1080,
+            "waypoint": "[&BCcMAAA=]"
+          },
+          {
+            "end_minute": 1100,
+            "event": "Icebrood Champions",
+            "start_minute": 1085,
+            "waypoint": "[&BCcMAAA=]"
+          },
+          {
+            "end_minute": 1145,
+            "event": "Day",
+            "start_minute": 1100,
+            "waypoint": "[&BGUNAAA=]"
+          },
+          {
+            "end_minute": 1170,
+            "event": "Kaineng Blackout",
+            "start_minute": 1080,
+            "waypoint": "[&BBkNAAA=]"
+          },
+          {
+            "end_minute": 1200,
+            "event": "Gang War",
+            "start_minute": 1120,
+            "waypoint": "[&BMwMAAA=]"
+          },
+          {
+            "end_minute": 1060,
+            "event": "Aspenwood",
+            "start_minute": 1025,
+            "waypoint": "[&BPkMAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Gang War",
+            "start_minute": 1080,
+            "waypoint": "[&BMwMAAA=]"
+          },
+          {
+            "end_minute": 1005,
+            "event": "Preparations",
+            "start_minute": 973,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1013,
+            "event": "Jade Maw",
+            "start_minute": 1005,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Preparations",
+            "start_minute": 1013,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "The Battle for the Jade Sea",
+            "start_minute": 1020,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1085,
+            "event": "Preparations",
+            "start_minute": 1080,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1093,
+            "event": "Jade Maw",
+            "start_minute": 1085,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1125,
+            "event": "Preparations",
+            "start_minute": 1093,
+            "waypoint": "[&BKIMAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Unlocking the Wizard's Tower",
+            "start_minute": 925,
+            "waypoint": "[&BL4NAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Target Practice",
+            "start_minute": 1045,
+            "waypoint": "[&BB8OAAA=]"
+          },
+          {
+            "end_minute": 1075,
+            "event": "Target Practice & Fly by Night",
+            "start_minute": 1060,
+            "waypoint": "[&BB8OAAA=]"
+          },
+          {
+            "end_minute": 1100,
+            "event": "Fly by Night",
+            "start_minute": 1075,
+            "waypoint": "[&BB8OAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Defense of Amnytas",
+            "start_minute": 1100,
+            "waypoint": "[&BDQOAAA=]"
+          },
+          {
+            "end_minute": 1200,
+            "event": "Of Mists and Monsters",
+            "start_minute": 1105,
+            "waypoint": "[&BCoPAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Of Mists and Monsters",
+            "start_minute": 1015,
+            "waypoint": "[&BCoPAAA=]"
+          },
+          {
+            "end_minute": 1040,
+            "event": "A Titanic Voyage",
+            "start_minute": 945,
+            "waypoint": "[&BGEPAAA=]"
+          },
+          {
+            "end_minute": 1160,
+            "event": "Day",
+            "start_minute": 1065,
+            "waypoint": "[&BJEPAAA=]"
+          },
+          {
+            "end_minute": 1120,
+            "event": "Hammerhart Rumble!",
+            "start_minute": 1020,
+            "waypoint": "[&BJEPAAA=]"
+          },
+          {
+            "end_minute": 1060,
+            "event": "Secrets of the Weald",
+            "start_minute": 975,
+            "waypoint": "[&BJ4PAAA=]"
+          },
+          {
+            "end_minute": 1180,
+            "event": "Shackles of the Ancients",
+            "start_minute": 1095,
+            "waypoint": "[&BPwPAAA=]"
+          },
+          {
+            "end_minute": 1155,
+            "event": "Depths of Cruelty",
+            "start_minute": 1060,
+            "waypoint": "[&BDYQAAA=]"
+          },
+          {
+            "end_minute": 1200,
+            "event": "Battle For Lion's Arch",
+            "start_minute": 1050,
+            "waypoint": "[&BAkMAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Dragonstorm",
+            "start_minute": 1005,
+            "waypoint": "[&BAkMAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Tower of Nightmares",
+            "start_minute": 1040,
+            "waypoint": "[&BAkMAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Twisted Marionette",
+            "start_minute": 1065,
+            "waypoint": "[&BAkMAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Battle For Lion's Arch",
+            "start_minute": 1100,
+            "waypoint": "[&BAkMAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Mount Balrior",
+            "start_minute": 1000,
+            "waypoint": "[&BK4OAAA=]"
+          },
+          {
+            "end_minute": 1140,
+            "event": "Treasure Hunt",
+            "start_minute": 1090,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1035,
+            "event": "Skimmer Race",
+            "start_minute": 1020,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Fishing",
+            "start_minute": 1045,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Dolyak Race",
+            "start_minute": 1060,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Skiff Race",
+            "start_minute": 1075,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1095,
+            "event": "Water Balloons",
+            "start_minute": 1090,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Treasure Hunt",
+            "start_minute": 1105,
+            "waypoint": "[&BBwHAAA=]"
+          },
+          {
+            "end_minute": 1005,
+            "event": "Snowden Drifts",
+            "start_minute": 995,
+            "waypoint": "[&BL4AAAA=]"
+          },
+          {
+            "end_minute": 1020,
+            "event": "Wayfarer Foothills",
+            "start_minute": 1010,
+            "waypoint": "[&BH0BAAA=]"
+          },
+          {
+            "end_minute": 1035,
+            "event": "Dredgehaunt Cliffs",
+            "start_minute": 1025,
+            "waypoint": "[&BGMCAAA=]"
+          },
+          {
+            "end_minute": 1050,
+            "event": "Lornar's Pass",
+            "start_minute": 1040,
+            "waypoint": "[&BJkBAAA=]"
+          },
+          {
+            "end_minute": 1065,
+            "event": "Snowden Drifts",
+            "start_minute": 1055,
+            "waypoint": "[&BL4AAAA=]"
+          },
+          {
+            "end_minute": 1080,
+            "event": "Wayfarer Foothills",
+            "start_minute": 1070,
+            "waypoint": "[&BH0BAAA=]"
+          },
+          {
+            "end_minute": 1095,
+            "event": "Dredgehaunt Cliffs",
+            "start_minute": 1085,
+            "waypoint": "[&BGMCAAA=]"
+          },
+          {
+            "end_minute": 1110,
+            "event": "Lornar's Pass",
+            "start_minute": 1100,
+            "waypoint": "[&BJkBAAA=]"
+          },
+          {
+            "end_minute": 1125,
+            "event": "Mad King Says",
+            "start_minute": 1115,
+            "waypoint": "[&BBAEAAA=]"
+          }
+        ]
+      }
+    },
+    "ttwurm": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": {
+        "gathers_cet": [
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Tuesday"
+          },
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Wednesday"
+          },
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Thursday"
+          },
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Friday"
+          },
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Saturday"
+          },
+          {
+            "hour": 20,
+            "minute": 15,
+            "weekday": "Sunday"
+          }
+        ],
+        "region": "EU"
+      }
+    },
+    "vip": {
+      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "data": [
+        {
+          "end": "2026-09-26T02:30:00+00:00",
+          "region": "NA",
+          "start": "2026-09-26T00:30:00+00:00",
+          "title": "Bounty Train - Janus"
+        },
+        {
+          "end": "2026-09-26T20:00:00+00:00",
+          "region": "NA",
+          "start": "2026-09-26T18:00:00+00:00",
+          "title": "Catch of the Day Fishing Event"
+        },
+        {
+          "end": "2026-09-27T02:00:00+00:00",
+          "region": "NA",
+          "start": "2026-09-27T00:00:00+00:00",
+          "title": "PvE Meta (if no meeting)"
+        },
+        {
+          "end": "2026-09-27T18:00:00+00:00",
+          "region": "NA",
+          "start": "2026-09-27T16:00:00+00:00",
+          "title": "Raid Training - Advanced Signup Required"
+        },
+        {
+          "end": "2026-09-27T20:00:00+00:00",
+          "region": "NA",
+          "start": "2026-09-27T18:00:00+00:00",
+          "title": "Map Completion/Diessa Plateau - Ceana"
+        },
+        {
+          "end": "2026-09-28T02:00:00+00:00",
+          "region": "NA",
+          "start": "2026-09-28T01:00:00+00:00",
+          "title": "Guild Missions"
+        }
+      ]
+    }
+  },
+  "version": 1
+}

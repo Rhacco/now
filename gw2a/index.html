@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GW2 Action Now</title>
+<style>
+:root{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#c8a85b;--green:#65a98a;--accent:#d96b70;}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+.app{max-width:920px;margin:auto;padding:18px} header{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}
+#clock{font-size:23px;font-weight:800} .sub{font-size:12px;color:var(--muted);margin-top:5px} h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}
+.event-card{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:72px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.event-card:hover{background:var(--panel2)} .time{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace} .name{font-size:16px;font-weight:800} .flash{margin-right:5px} .location{margin-top:4px;font-size:13px;color:#d6d8dc} .meta{margin-top:5px;font-size:10px;color:var(--muted)}
+.wp{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace} .wp:hover{border-color:#69717e;background:#151820} .wiki{color:var(--muted)}
+.empty{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px} footer{font-size:10px;color:#737a84;text-align:center;padding:16px 2px}
+@media(max-width:680px){.app{padding:10px}.event-card{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}.time{grid-area:time}.info{grid-area:info}.wp{grid-area:wp;width:100%}}
+</style>
+</head>
+<body>
+<div class="app">
+<header><div id="clock"></div><div class="sub">Europe/Berlin · automatisch aktualisiert · Quellenstatus 11/11</div></header>
+<h2>Jetzt · höchste Action</h2>
+<article class="event-card">
+      <div class="time">19:00–20:00</div>
+      <div class="info">
+        <div class="name">The Battle for the Jade Sea</div>
+        <div class="location">Dragon&#x27;s End</div>
+        <div class="meta">Priorität 122 · gw2-api-event-timers <a class="wiki" href="https://wiki.guildwars2.com/wiki/The_Battle_for_the_Jade_Sea" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BKIMAAA=]" title="Waypoint kopieren">[&amp;BKIMAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">19:00–19:20</div>
+      <div class="info">
+        <div class="name">Octovine</div>
+        <div class="location">Auric Basin</div>
+        <div class="meta">Priorität 110 · gw2-api-event-timers <a class="wiki" href="https://wiki.guildwars2.com/wiki/Battle_in_Tarir_(map_meta_event)" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BAIIAAA=]" title="Waypoint kopieren">[&amp;BAIIAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">19:00–19:30</div>
+      <div class="info">
+        <div class="name">Depths of Cruelty</div>
+        <div class="location">Leyspring Hollows</div>
+        <div class="meta">Priorität 110 · gw2-api-event-timers <a class="wiki" href="https://wiki.guildwars2.com/wiki/Depths_of_Cruelty" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BDYQAAA=]" title="Waypoint kopieren">[&amp;BDYQAAA=]</button>
+    </article>
+<h2>Als Nächstes · höchste Priorität</h2>
+<article class="event-card">
+      <div class="time">19:15</div>
+      <div class="info">
+        <div class="name">Shackles of the Ancients</div>
+        <div class="location">Eternity&#x27;s Garden</div>
+        <div class="meta">Priorität 130 · gw2-api-event-timers <a class="wiki" href="https://wiki.guildwars2.com/wiki/Shackles_of_the_Ancients" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BPwPAAA=]" title="Waypoint kopieren">[&amp;BPwPAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">19:20</div>
+      <div class="info">
+        <div class="name">A Titanic Voyage</div>
+        <div class="location">Bava Nisos</div>
+        <div class="meta">Priorität 127 · gw2-api-event-timers <a class="wiki" href="https://wiki.guildwars2.com/wiki/A_Titanic_Voyage" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BGEPAAA=]" title="Waypoint kopieren">[&amp;BGEPAAA=]</button>
+    </article>
+<article class="event-card">
+      <div class="time">22:00</div>
+      <div class="info">
+        <div class="name"><span class="flash" title="Community-/Sonderevent bestätigt">⚡</span>Evolved Jungle Wurm</div>
+        <div class="location">Bloodtide Coast</div>
+        <div class="meta">Priorität 129 · TT Wurm EU <a class="wiki" href="https://wiki.guildwars2.com/wiki/Triple_Trouble" target="_blank" rel="noopener">Wiki</a></div>
+      </div>
+      <button class="wp" data-copy="[&amp;BKoBAAA=]" title="Waypoint kopieren">[&amp;BKoBAAA=]</button>
+    </article>
+<footer>⚡ = direktes Community-/Sonderevent-Signal · Waypoints werden nur bestätigt übernommen, nie geraten.</footer>
+</div>
+<script>
+const fmt=new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+function tick(){document.getElementById('clock').textContent=fmt.format(new Date());} tick(); setInterval(tick,1000);
+document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{const v=btn.dataset.copy;try{await navigator.clipboard.writeText(v);const old=btn.textContent;btn.textContent='✓ '+v;setTimeout(()=>btn.textContent=old,900);}catch(e){}}));
+</script>
+</body></html>
