@@ -333,7 +333,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.7.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.7.1 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1511,7 +1511,7 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
       <div class="info">
-        <div class="event-line"><span class="name">{signal_flash(c)}{html.escape(c.event)}</span><span class="inline-location"> · {html.escape(c.location)}</span></div>
+        <div class="event-line"><span class="name">{signal_flash(c)}{html.escape(c.event)}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></div>
         <div class="badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       </div>
       <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
@@ -1524,7 +1524,7 @@ def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str
     return f'''<div class="mini-card">
       <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
-      <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b>{html.escape(c.event)}</b><span class="inline-location"> · {html.escape(c.location)}</span></span></div>
+      <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b>{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
       <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
@@ -1534,7 +1534,7 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
     st = c.start.astimezone(tz)
     return f'''<div class="all-card">
       <span class="all-time">{st.strftime("%H:%M")}</span>
-      <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title">{html.escape(c.event)}</b><span class="inline-location"> · {html.escape(c.location)}</span></span></div>
+      <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title">{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
       <div class="all-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
@@ -1635,7 +1635,8 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .event-card:hover{{background:var(--panel2)}}
 .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}}
 .event-line,.mini-line,.title-row{{display:flex;align-items:baseline;min-width:0;white-space:nowrap;overflow:hidden}}
-.name{{font-size:16px;font-weight:800;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:0 1 auto}}
+.name{{font-size:16px;font-weight:800;max-width:62%;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:0 1 auto}}
+.event-sep{{flex:0 0 auto;margin:0 .34em;color:#69717c;font-weight:400}}
 .inline-location{{color:#aeb5bf;font-size:12px;font-weight:500;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto}}
 .flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-.08em;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;flex:0 0 auto}}
 .badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px}}
@@ -1654,7 +1655,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}}
 .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .mini-info{{min-width:0}}
-.mini-info b{{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%;flex:0 1 auto}}
+.mini-info b{{font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;flex:0 1 auto}}
 .mini-info .inline-location{{font-size:10px}}
 .mini-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .mini-badges .badge{{font-size:9px;padding:3px 5px}}
@@ -1668,7 +1669,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .all-card:first-child{{border-top:0}}
 .all-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .all-info{{min-width:0}}
-.all-info .event-title{{font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%;flex:0 1 auto}}
+.all-info .event-title{{font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;flex:0 1 auto}}
 .all-info .inline-location{{font-size:10px}}
 .all-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .all-badges .badge{{font-size:9px;padding:3px 5px}}
@@ -1763,13 +1764,13 @@ function esc(value) {{
   return String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('\"',"&quot;").replaceAll("'","&#39;");
 }}
 function topCard(e) {{
-  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="inline-location"> · ${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></article>`;
+  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></article>`;
 }}
 function miniCard(e,rank) {{
-  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="inline-location"> · ${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
 }}
 function compactCard(e) {{
-  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="inline-location"> · ${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
 }}
 
 function byScore(a,b) {{ return (b.score-a.score)||(Date.parse(a.start)-Date.parse(b.start))||a.event.localeCompare(b.event); }}
