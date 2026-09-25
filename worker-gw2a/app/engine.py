@@ -68,7 +68,7 @@ TRACK_DISPLAY_OVERRIDES = {
     "Dragon's Stand": "Dragon's Stand"
 }
 
-EXCLUDED_TRACKS = {"Day and night", "Cantha: Day and night", "PvP Tournaments"}
+EXCLUDED_TRACKS = {"Day and night", "Cantha: Day and night", "PvP Tournaments", "Scarlet\'s Invasion"}
 EXCLUDED_EVENTS = {"Reset", "Target Practice", "Fly by Night", "Target Practice & Fly by Night"}
 PHASE_PENALTIES = {
     "Pylons": -16,
@@ -98,6 +98,44 @@ SPECIAL_RECURRING_TERMS = (
     "octovine", "chak gerent", "dragon s stand", "battle for the jade sea",
     "choya pinata", "palawadan", "death branded shatterer",
     "aetherblade assault", "kaineng blackout", "gang war"
+)
+
+# Verified rotating schedules that are either absent from the main catalog or
+# not directly usable there with a reliable location/waypoint.
+ROTATING_SPECIAL_MAPS = {
+    "Kessex Hills": {"place": "Cereboth Canyon", "waypoint": "[&BBIAAAA=]"},
+    "Diessa Plateau": {"place": "Rancher's Wash", "waypoint": "[&BN0AAAA=]"},
+    "Brisban Wildlands": {"place": "Venlin Vale", "waypoint": "[&BHUAAAA=]"},
+    "Snowden Drifts": {"place": "The Frozen Sweeps", "waypoint": "[&BLQAAAA=]"},
+    "Gendarran Fields": {"place": "Provern Shore", "waypoint": "[&BOQAAAA=]"},
+    "Southsun Cove": {"place": "Kiel's Outpost", "waypoint": "[&BNwGAAA=]"},
+    "Metrica Province": {"place": "Muridian", "waypoint": "[&BEcAAAA=]"},
+    "Caledon Forest": {"place": "Twilight Arbor", "waypoint": "[&BEEFAAA=]"},
+    "Queensdale": {"place": "Swamplost Haven", "waypoint": "[&BPcAAAA=]"},
+    "Wayfarer Foothills": {"place": "Krennak's Homestead", "waypoint": "[&BMIDAAA=]"},
+    "Plains of Ashford": {"place": "Loreclaw", "waypoint": "[&BMcDAAA=]"},
+}
+
+ROTATING_SPECIAL_WIKI = {
+    "Fractal Incursion": "https://wiki.guildwars2.com/wiki/Defeat_the_enemy_spawned_by_the_fractal_incursion",
+    "Awakened Invasion": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_Awakened",
+    "Scarlet's Invasion": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_minions_of_Scarlet_Briar",
+}
+
+# Recommendation lifetime after START, based on event scope/structure rather
+# than character level or the priority score. All values stay within 5–10 min.
+ACTION_WINDOW_OVERRIDES = (
+    (("dragon s stand", "battle for the jade sea", "defense of amnytas",
+      "unlocking the wizard s tower", "palawadan", "convergence",
+      "scarlet s invasion", "awakened invasion", "evolved jungle wurm",
+      "triple trouble"), 10),
+    (("octovine", "chak gerent", "dragonstorm", "tequatl",
+      "aetherblade assault", "kaineng blackout", "gang war"), 9),
+    (("fractal incursion", "admiral taidha covington", "shatterer",
+      "karka queen", "modniir ulgoth", "death branded shatterer"), 7),
+    (("ley line anomaly", "choya pinata", "shadow behemoth",
+      "great jungle wurm", "fire elemental", "svanir shaman",
+      "megadestroyer"), 5),
 )
 
 ALIASES = {
@@ -217,7 +255,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.2.1 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.3.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -619,6 +657,87 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
     return out
 
 
+def rotating_special_candidates(now: datetime) -> list[Candidate]:
+    """Small verified schedule layer for recurring Core Tyria special events."""
+    out: list[Candidate] = []
+    midnight = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
+
+    fractal_maps = ["Kessex Hills", "Diessa Plateau", "Brisban Wildlands", "Snowden Drifts"]
+    awakened_maps = [
+        "Southsun Cove", "Metrica Province", "Caledon Forest",
+        "Queensdale", "Wayfarer Foothills", "Plains of Ashford",
+        "Gendarran Fields"
+    ]
+
+    for day_delta in (-1, 0, 1, 2):
+        day = midnight + timedelta(days=day_delta)
+        for hour in range(24):
+            start = day + timedelta(hours=hour)
+
+            fmap = fractal_maps[hour % 4]
+            f = ROTATING_SPECIAL_MAPS[fmap]
+            out.append(Candidate(
+                event="Fractal Incursion",
+                track="Fractal Incursions",
+                category="Core Tyria",
+                start=start,
+                end=start + timedelta(minutes=15),
+                location=f"{fmap} · {f['place']}",
+                waypoint=f["waypoint"],
+                source="verified rotating schedule",
+                wiki=ROTATING_SPECIAL_WIKI["Fractal Incursion"],
+                base_priority=80,
+                lightning=True,
+                community_sources=["Rotierender Sonderevent-Schedule"],
+                direct_waypoint=True,
+                special=True,
+            ))
+
+            if hour % 2 == 1:
+                s = ROTATING_SPECIAL_MAPS["Gendarran Fields"]
+                out.append(Candidate(
+                    event="Scarlet's Invasion",
+                    track="Scarlet's Invasion",
+                    category="Living World Season 1",
+                    start=start,
+                    end=start + timedelta(minutes=15),
+                    location="Gendarran Fields · map-wide invasion",
+                    waypoint=s["waypoint"],
+                    source="verified rotating schedule",
+                    wiki=ROTATING_SPECIAL_WIKI["Scarlet's Invasion"],
+                    base_priority=84,
+                    lightning=True,
+                    community_sources=["Rotierender Sonderevent-Schedule"],
+                    direct_waypoint=True,
+                    special=True,
+                ))
+
+            astart = start + timedelta(minutes=30)
+            day_offset = (astart.weekday() * 3) % 7
+            amap = awakened_maps[(day_offset + hour) % 7]
+            a = ROTATING_SPECIAL_MAPS[amap]
+            out.append(Candidate(
+                event="Awakened Invasion",
+                track="Awakened Invasion",
+                category="Core Tyria",
+                start=astart,
+                end=astart + timedelta(minutes=15),
+                location=f"{amap} · {a['place']}",
+                waypoint=a["waypoint"],
+                source="verified rotating schedule",
+                wiki=ROTATING_SPECIAL_WIKI["Awakened Invasion"],
+                base_priority=82,
+                lightning=True,
+                community_sources=["Rotierender Sonderevent-Schedule"],
+                direct_waypoint=True,
+                special=True,
+            ))
+
+    low = now - timedelta(minutes=30)
+    high = now + timedelta(hours=4)
+    return [c for c in out if c.end >= low and c.start <= high]
+
+
 def catalog_candidates(catalog: list[dict[str, Any]], cfg: dict[str, Any], now: datetime) -> list[Candidate]:
     midnight = datetime(now.year, now.month, now.day, tzinfo=timezone.utc)
     out: list[Candidate] = []
@@ -645,7 +764,8 @@ def apply_map_levels(cands: list[Candidate], maps: list[dict[str, Any]] | None) 
 
     for c in cands:
         match = None
-        for label in (c.location, c.track, c.event):
+        location_map = c.location.split("·", 1)[0].strip() if c.location else ""
+        for label in (location_map, c.location, c.track, c.event):
             hit = lookup.get(norm(label))
             if hit:
                 match = hit
@@ -803,6 +923,22 @@ def apply_fast_context(cands: list[Candidate], fast: dict[str, Any] | None) -> N
             c.fast_seen = True
 
 
+def action_window_minutes(c: Candidate) -> int:
+    """Useful 'go there now' lifetime after start, based on event scope."""
+    text = norm(c.event + " " + c.track)
+
+    for terms, minutes in ACTION_WINDOW_OVERRIDES:
+        if any(term in text for term in terms):
+            return minutes
+
+    scheduled = max(1.0, (c.end - c.start).total_seconds() / 60.0)
+    if scheduled <= 15:
+        return 5
+    if scheduled <= 30:
+        return 7
+    return 10
+
+
 def score_candidates(cands: list[Candidate], now: datetime) -> None:
     # Agreement count by event/start.
     counts: dict[str, int] = {}
@@ -821,9 +957,10 @@ def score_candidates(cands: list[Candidate], now: datetime) -> None:
             mins = max(0.0, (c.start - now).total_seconds() / 60)
             score += max(0.0, 30.0 - mins / 4.0)
         else:
-            # Prefer events that still have meaningful time left.
-            remain = max(0.0, (c.end - now).total_seconds() / 60)
-            score += min(12.0, remain / 3.0)
+            window = float(action_window_minutes(c))
+            age = max(0.0, (now - c.start).total_seconds() / 60.0)
+            freshness = max(0.0, 1.0 - age / max(1.0, window))
+            score += 14.0 * freshness
         c.score = score
 
 
@@ -841,10 +978,9 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     cands = [c for c in cands if c.waypoint]
     score_candidates(cands, now)
     cands = dedupe(cands)
-    active_display_minutes = int(cfg.get("active_display_minutes", 10))
     active = [
         c for c in cands
-        if c.start <= now < min(c.end, c.start + timedelta(minutes=active_display_minutes))
+        if c.start <= now < min(c.end, c.start + timedelta(minutes=action_window_minutes(c)))
     ]
     upcoming_end = now + timedelta(minutes=int(cfg.get("upcoming_horizon_minutes", 180)))
     upcoming = [c for c in cands if now < c.start <= upcoming_end]
@@ -924,7 +1060,7 @@ def signal_flash(c: Candidate) -> str:
     title = "Bestätigtes Community-/Sonderevent-Signal"
     if sources:
         title += ": " + sources
-    return f'<span class="flash" title="{html.escape(title)}">⚡︎</span>'
+    return f'<span class="flash" title="{html.escape(title)}">⚡</span>'
 
 
 def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
@@ -993,7 +1129,7 @@ def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra
 .app{{max-width:920px;margin:auto;padding:18px}} header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}} h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
-.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:baseline;font-family:"Segoe UI Symbol",Arial,sans-serif}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
+.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-1px;font-family:"Segoe UI Symbol","Segoe UI Emoji",Arial,sans-serif}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
 .badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}} .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
 .badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}} .level-na{{color:#a7adb6;background:#171a1f}} .wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}} .wiki:hover{{text-decoration:underline;color:#fff}}
 .wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}} .wp:hover{{border-color:#69717e;background:#151820}}
@@ -1082,6 +1218,7 @@ def main() -> int:
         return 2
 
     cands = catalog_candidates(catalog, cfg, now)
+    cands.extend(rotating_special_candidates(now))
     apply_map_levels(cands, values.get("maps"))
     apply_ninja_waypoints(cands, values.get("ninja"))
     apply_community(
