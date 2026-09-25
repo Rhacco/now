@@ -1,7 +1,7 @@
 {
   "sources": {
     "catalog": {
-      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "checked_at": "2026-09-26T17:13:05.097293+00:00",
       "data": [
         {
           "category": "Core Tyria",
@@ -5275,35 +5275,23 @@
             ]
           }
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T17:13:05.097293+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "choya": {
-      "checked_at": "2026-09-25T19:33:57.669965+00:00",
+      "checked_at": "2026-09-26T20:53:03.120484+00:00",
       "data": {
         "route": [
           {
-            "title": "Tequatl the Sunless",
-            "waypoint": "[&BNABAAA=]"
-          },
-          {
-            "title": "Ley-Line Anomaly",
-            "waypoint": "[&BEwCAAA=]"
-          },
-          {
-            "title": "Treasure Mushroom",
-            "waypoint": "[&BAwIAAA=]"
-          },
-          {
             "title": "Chak Gerent",
             "waypoint": "[&BPUHAAA=]"
-          },
-          {
-            "title": "Octovine",
-            "waypoint": "[&BAYIAAA=]"
-          },
-          {
-            "title": "Ooze Pits",
-            "waypoint": "[&BPgLAAA=]"
           },
           {
             "title": "Shackles of the Ancients",
@@ -5311,10 +5299,18 @@
           }
         ],
         "sqjoin": "/sqjoin a choya"
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T20:53:03.120484+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "dcap": {
-      "checked_at": "2026-09-25T19:22:56.219326+00:00",
+      "checked_at": "2026-09-26T21:03:05.540339+00:00",
       "data": {
         "events": [
           {
@@ -5367,16 +5363,32 @@
             "title": "The Battle for the Jade Sea"
           }
         ]
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T21:03:05.540339+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "fast": {
-      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "checked_at": "2026-09-26T17:13:05.097293+00:00",
       "data": {
         "normalized_text": "how to make gold in gw2 best farming methods fast farming community fast farming community your gw2 account farming builds farming guides farming tracker farming calculator daily farming checklist monthly raffle open world farming alt parking chest drizzlewood material donation farmtrain fishing gizmos jade bot meta pve reward track solo farming storage and slot bags vendor instance farming dragon response missions dungeons fractals home instance raids salvaging salvageables salvaging costs per 1000 luck unidentified gear gathering karmic tools glyphs nodes unlimited gathering tools bags bag opener bags conversions airship part ancient coin astral acclaim badge of honor bandit crest bandit skeleton key cache key calcified gasp canach coin elegy mosaic exalted key festival token fine rift essence fractal relic geode guild commendation imperial favor jade miner s keycard jade sliver karma laurel ley line crystal lump of aurillium machete magnetite shard masterwork rift essence mistborn key pact crowbar pinch of stardust pristine fractal relic proof of heroics provisioner token pvp league ticket racing medallion rare rift essence research note spirit shard static charge tale of dungeon delving testimony of castoran heroics testimony of desert heroics testimony of jade heroics trade contract trader s key tyrian defense seal unbound magic unusual coin ursus oblige vial of chak acid volatile magic war supplies wvw skirmish claim ticket zephyrite lockpick festivals lunar new year super adventure box dragon bash festival of the four winds halloween wintersday competitive pvp reward track wvw reward track checking loading appearance appearance theme system light dark menu style data farming pagination 10 25 50 100 background image none api status fast api v1 pending gw2 api v2 items pending v2 currencies pending v2 commerce listings pending v2 commerce prices pending v2 commerce exchange gems pending suggestions or data inaccuracies please share them in our discord channel website feedback about us fast farming community a european pve hardcore guild wars 2 farming community focused on efficient gold farming suggestions or data inaccuracies please share them in our discord channel website feedback support the project the fast farming community website is curated by cornix it s a lot of work to keep a site like this going so please support the project with a small donation thank you for your extra support to keep the project alive home website content updates website todos changelog legal notice cookie settings 2026 fast farming community curated by cornix 8214"
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T17:13:05.097293+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "gw2community": {
-      "checked_at": "2026-09-25T19:33:57.669965+00:00",
+      "checked_at": "2026-09-26T20:53:03.120484+00:00",
       "data": [
         {
           "description": "Gildenmissionen von Internos immer Sonntags ab 19Uhr Ihr könnt gerne Freundemitbringen.",
@@ -5554,10 +5566,18 @@
           "title": "Silberwüsten Meta zum Maximieren des Magic Find und anschliessend gemeinsames Neujahr-Kuvert öffnen - mit ZdF",
           "url": "https://gw2community.de/calendar/event/30830-silberw%C3%BCsten-meta-zum-maximieren-des-magic-find-und-anschliessend-gemeinsames-ne/"
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T20:53:03.120484+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "hardstuck": {
-      "checked_at": "2026-09-25T19:28:59.917753+00:00",
+      "checked_at": "2026-09-26T21:07:03.655856+00:00",
       "data": [
         {
           "end": "2026-09-28T20:30:00+00:00",
@@ -5580,10 +5600,18 @@
           "title": "NA [NA] After meta train Fashion contest Wednesday!",
           "url": "https://hardstuck.gg/events/after-meta-train-fashion-contest-wednesday/"
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T21:07:03.655856+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "maps": {
-      "checked_at": "2026-09-25T18:02:57.239827+00:00",
+      "checked_at": "2026-09-26T18:03:02.684396+00:00",
       "data": [
         {
           "max_level": 15,
@@ -12095,22 +12123,23 @@
           "name": "Deeper Revelations: Temple of the Blessed Mantle",
           "type": "Instance"
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T18:03:02.684396+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "metasheet": {
-      "checked_at": "2026-09-25T19:28:59.917753+00:00",
+      "checked_at": "2026-09-26T21:03:05.540339+00:00",
       "data": [
         {
           "note": "",
           "region": "EU",
           "sqjoin": "/sqjoin Platanium.4532",
-          "start": "2026-09-25T13:40:00+00:00",
-          "title": "Mega Meta Train (10 hours)"
-        },
-        {
-          "note": "",
-          "region": "EU",
-          "sqjoin": "",
           "start": "2026-09-27T17:30:00+00:00",
           "title": "End of Dragons Train"
         },
@@ -12146,13 +12175,28 @@
           "note": "",
           "region": "EU",
           "sqjoin": "",
+          "start": "2026-10-09T13:40:00+00:00",
+          "title": "Mega Meta Train (10 hours)"
+        },
+        {
+          "note": "",
+          "region": "EU",
+          "sqjoin": "",
           "start": "2026-05-24T07:00:00+00:00",
           "title": "Giga Meta Train - Extended Cut (16 hours)"
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T21:03:05.540339+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "news": {
-      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "checked_at": "2026-09-26T17:15:04.442866+00:00",
       "data": {
         "lines": [
           "Convergence: Nexus of Eternity",
@@ -12166,22 +12210,24 @@
           "Fractal Incursion",
           "Extra Life Bonus Event"
         ]
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T17:15:04.442866+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "ninja": {
-      "checked_at": "2026-09-25T17:12:57.110331+00:00",
+      "checked_at": "2026-09-26T17:15:04.442866+00:00",
       "data": {
         "occurrences": [
           {
             "end_minute": 1060,
             "event": "Day",
             "start_minute": 990,
-            "waypoint": "[&BLAAAAA=]"
-          },
-          {
-            "end_minute": 1020,
-            "event": "Fire Elemental",
-            "start_minute": 1005,
             "waypoint": "[&BEcAAAA=]"
           },
           {
@@ -12246,7 +12292,7 @@
           },
           {
             "end_minute": 1220,
-            "event": "Awakened Invasion",
+            "event": "Defeat Scarlet's minions",
             "start_minute": 1120,
             "waypoint": "[&BOQAAAA=]"
           },
@@ -12290,12 +12336,6 @@
             "end_minute": 1185,
             "event": "Day: Securing Verdant Brink",
             "start_minute": 1110,
-            "waypoint": "[&BN0HAAA=]"
-          },
-          {
-            "end_minute": 1020,
-            "event": "Challenges",
-            "start_minute": 1005,
             "waypoint": "[&BGwIAAA=]"
           },
           {
@@ -12551,12 +12591,6 @@
             "waypoint": "[&BMwMAAA=]"
           },
           {
-            "end_minute": 1005,
-            "event": "Preparations",
-            "start_minute": 973,
-            "waypoint": "[&BKIMAAA=]"
-          },
-          {
             "end_minute": 1013,
             "event": "Jade Maw",
             "start_minute": 1005,
@@ -12672,14 +12706,8 @@
           },
           {
             "end_minute": 1200,
-            "event": "Battle For Lion's Arch",
-            "start_minute": 1050,
-            "waypoint": "[&BAkMAAA=]"
-          },
-          {
-            "end_minute": 1020,
             "event": "Dragonstorm",
-            "start_minute": 1005,
+            "start_minute": 1050,
             "waypoint": "[&BAkMAAA=]"
           },
           {
@@ -12749,9 +12777,9 @@
             "waypoint": "[&BBwHAAA=]"
           },
           {
-            "end_minute": 1005,
+            "end_minute": 1010,
             "event": "Snowden Drifts",
-            "start_minute": 995,
+            "start_minute": 1005,
             "waypoint": "[&BL4AAAA=]"
           },
           {
@@ -12803,10 +12831,18 @@
             "waypoint": "[&BBAEAAA=]"
           }
         ]
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T17:15:04.442866+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "ttwurm": {
-      "checked_at": "2026-09-25T19:33:57.669965+00:00",
+      "checked_at": "2026-09-26T20:50:01.380693+00:00",
       "data": {
         "gathers_cet": [
           {
@@ -12841,28 +12877,30 @@
           }
         ],
         "region": "EU"
-      }
+      },
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T20:50:01.380693+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     },
     "vip": {
-      "checked_at": "2026-09-25T19:33:57.669965+00:00",
+      "checked_at": "2026-09-26T20:53:03.120484+00:00",
       "data": [
         {
-          "end": "2026-09-26T02:30:00+00:00",
+          "end": "2026-09-27T00:30:00+00:00",
           "region": "NA",
-          "start": "2026-09-26T00:30:00+00:00",
-          "title": "Bounty Train - Janus"
-        },
-        {
-          "end": "2026-09-26T20:00:00+00:00",
-          "region": "NA",
-          "start": "2026-09-26T18:00:00+00:00",
+          "start": "2026-09-26T23:00:00+00:00",
           "title": "Catch of the Day Fishing Event"
         },
         {
-          "end": "2026-09-27T02:00:00+00:00",
+          "end": "2026-09-27T03:00:00+00:00",
           "region": "NA",
-          "start": "2026-09-27T00:00:00+00:00",
-          "title": "PvE Meta (if no meeting)"
+          "start": "2026-09-27T01:00:00+00:00",
+          "title": "SotO Meta Train -Lyend"
         },
         {
           "end": "2026-09-27T18:00:00+00:00",
@@ -12881,9 +12919,29 @@
           "region": "NA",
           "start": "2026-09-28T01:00:00+00:00",
           "title": "Guild Missions"
+        },
+        {
+          "end": "2026-09-29T02:30:00+00:00",
+          "region": "NA",
+          "start": "2026-09-29T00:30:00+00:00",
+          "title": "No Mount Event! 60% Magic Find and XP"
+        },
+        {
+          "end": "2026-09-29T18:45:00+00:00",
+          "region": "NA",
+          "start": "2026-09-29T17:45:00+00:00",
+          "title": "Beginner's PvP Training"
         }
-      ]
+      ],
+      "data_version": 1,
+      "failure_count": 0,
+      "last_error": "",
+      "last_failure": "",
+      "last_success": "2026-09-26T20:53:03.120484+00:00",
+      "pending_drop_count": null,
+      "pending_drop_seen": 0,
+      "retry_after": ""
     }
   },
-  "version": 1
+  "version": 2
 }
