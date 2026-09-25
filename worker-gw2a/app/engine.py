@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import html
 import json
 import os
@@ -25,6 +26,7 @@ STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "gw2a" / "index.html"
 
 URLS = {
+    "maps": "https://api.guildwars2.com/v2/maps?ids=all&lang=en",
     "catalog": "https://raw.githubusercontent.com/giovazz89/gw2-api-event-timers/main/events.json",
     "ninja": "https://gw2.ninja/timer",
     "metasheet": "https://docs.google.com/spreadsheets/d/1I2501rbqKjAD6HXQOtHAPQjLdqeS2tQIc9kEwyXuDKo/export?format=csv&gid=1233590379",
@@ -81,6 +83,15 @@ PHASE_PENALTIES = {
     "Escorts": -8
 }
 
+SPECIAL_RECURRING_TERMS = (
+    "fractal incursion", "scarlet invasion", "awakened invasion",
+    "ley line anomaly", "dragonstorm", "convergence",
+    "twisted marionette", "battle for lion s arch", "tower of nightmares",
+    "octovine", "chak gerent", "dragon s stand", "battle for the jade sea",
+    "evolved jungle wurm", "tequatl", "choya pinata", "palawadan",
+    "death branded shatterer", "aetherblade assault", "kaineng blackout", "gang war"
+)
+
 ALIASES = {
     "triple trouble": "Evolved Jungle Wurm",
     "triple trouble wurm": "Evolved Jungle Wurm",
@@ -126,6 +137,9 @@ class Candidate:
     community_sources: list[str] = field(default_factory=list)
     direct_waypoint: bool = False
     fast_seen: bool = False
+    level: int | None = None
+    level_min: int | None = None
+    special: bool = False
 
     def key(self) -> str:
         minute = self.start.astimezone(timezone.utc).replace(second=0, microsecond=0).isoformat()
@@ -195,7 +209,7 @@ def fetch_text(url: str, timeout: int = 15) -> str:
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.1.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.2.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity"
         }
@@ -235,6 +249,30 @@ def refresh_cached(
         if "data" in entry:
             return entry["data"], False, f"{type(exc).__name__}: {exc}"
         return None, False, f"{type(exc).__name__}: {exc}"
+
+
+def parse_maps(raw: str) -> list[dict[str, Any]]:
+    data = json.loads(raw)
+    if not isinstance(data, list):
+        raise ValueError("maps root is not a list")
+    out = []
+    for item in data:
+        if not isinstance(item, dict) or not item.get("name"):
+            continue
+        out.append({
+            "name": item.get("name", ""),
+            "min_level": int(item.get("min_level", 0) or 0),
+            "max_level": int(item.get("max_level", 0) or 0),
+            "type": item.get("type", "")
+        })
+    if len(out) < 50:
+        raise ValueError(f"maps unexpectedly small: {len(out)}")
+    return out
+
+
+def is_special_recurring(event: str, track: str) -> bool:
+    text = norm(event + " " + track)
+    return any(term in text for term in SPECIAL_RECURRING_TERMS)
 
 
 def parse_catalog(raw: str) -> list[dict[str, Any]]:
@@ -552,7 +590,8 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
                 waypoint=wp,
                 source="gw2-api-event-timers",
                 wiki=wiki_url(seg.get("link", "")),
-                base_priority=base_priority(cfg, track.get("category", ""), name, ev, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0))
+                base_priority=base_priority(cfg, track.get("category", ""), name, ev, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0)),
+                special=is_special_recurring(disp, name)
             ))
 
     partial_is_tail = bool(
@@ -582,6 +621,34 @@ def catalog_candidates(catalog: list[dict[str, Any]], cfg: dict[str, Any], now: 
     low = now - timedelta(hours=3)
     high = now + timedelta(hours=8)
     return [c for c in out if c.end >= low and c.start <= high]
+
+
+def apply_map_levels(cands: list[Candidate], maps: list[dict[str, Any]] | None) -> None:
+    if not maps:
+        return
+    lookup: dict[str, dict[str, Any]] = {}
+    for item in maps:
+        name = norm(str(item.get("name", "")))
+        if not name:
+            continue
+        old = lookup.get(name)
+        if old is None or int(item.get("max_level", 0) or 0) > int(old.get("max_level", 0) or 0):
+            lookup[name] = item
+
+    for c in cands:
+        match = None
+        for label in (c.location, c.track, c.event):
+            hit = lookup.get(norm(label))
+            if hit:
+                match = hit
+                break
+        if not match:
+            continue
+        max_level = int(match.get("max_level", 0) or 0)
+        min_level = int(match.get("min_level", 0) or 0)
+        if max_level > 0:
+            c.level = max_level
+            c.level_min = min_level if min_level > 0 else max_level
 
 
 def apply_ninja_waypoints(cands: list[Candidate], ninja: dict[str, Any] | None) -> None:
@@ -762,7 +829,7 @@ def dedupe(cands: list[Candidate]) -> list[Candidate]:
     return list(best.values())
 
 
-def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[list[Candidate], list[Candidate]]:
+def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[list[Candidate], list[Candidate], list[Candidate], list[Candidate]]:
     cands = [c for c in cands if c.waypoint]
     score_candidates(cands, now)
     cands = dedupe(cands)
@@ -770,77 +837,171 @@ def choose(cands: list[Candidate], cfg: dict[str, Any], now: datetime) -> tuple[
     upcoming_end = now + timedelta(minutes=int(cfg.get("upcoming_horizon_minutes", 180)))
     upcoming = [c for c in cands if now < c.start <= upcoming_end]
 
-    active_top = sorted(active, key=lambda c: (-c.score, c.start))[: int(cfg.get("now_limit", 3))]
-    upcoming_top = sorted(upcoming, key=lambda c: (-c.score, c.start))[: int(cfg.get("next_limit", 3))]
-    # User-facing order is chronological after relevance selection.
+    now_limit = int(cfg.get("now_limit", 3))
+    next_limit = int(cfg.get("next_limit", 3))
+    extra_limit = int(cfg.get("extra_limit", 2))
+
+    active_top = sorted(active, key=lambda c: (-c.score, c.start))[:now_limit]
+    upcoming_top = sorted(upcoming, key=lambda c: (-c.score, c.start))[:next_limit]
+
+    active_keys = {c.key() for c in active_top}
+    upcoming_keys = {c.key() for c in upcoming_top}
+
+    # Places 4/5 remain relevance-driven, with a modest bonus for recurring
+    # invasion/incursion/anomaly/meta types that deserve extra visibility.
+    active_rest = [c for c in active if c.key() not in active_keys]
+    upcoming_rest = [c for c in upcoming if c.key() not in upcoming_keys]
+    extra_key = lambda c: (-(c.score + (22 if c.special else 0)), c.start)
+    active_extra = sorted(active_rest, key=extra_key)[:extra_limit]
+    upcoming_extra = sorted(upcoming_rest, key=extra_key)[:extra_limit]
+
     active_top.sort(key=lambda c: c.start)
     upcoming_top.sort(key=lambda c: c.start)
-    return active_top, upcoming_top
+    active_extra.sort(key=lambda c: c.start)
+    upcoming_extra.sort(key=lambda c: c.start)
+    return active_top, upcoming_top, active_extra, upcoming_extra
 
 
-def card_html(c: Candidate, tz: ZoneInfo, now: datetime, upcoming: bool) -> str:
+def heat_hue(value: float, low: float, high: float) -> int:
+    if high <= low:
+        return 60
+    ratio = max(0.0, min(1.0, (value - low) / (high - low)))
+    return int(round(120 - 120 * ratio))
+
+
+def priority_badge(c: Candidate) -> str:
+    score = int(round(c.score))
+    hue = heat_hue(score, 65, 125)
+    return f'<span class="badge heat" style="--h:{hue}">Prio {score}</span>'
+
+
+def level_badge(c: Candidate) -> str:
+    if not c.level:
+        return '<span class="badge level-na">Lvl n/a</span>'
+    hue = heat_hue(c.level, 20, 80)
+    if c.level_min and c.level_min != c.level:
+        title = f'Offizielle Kartenstufe {c.level_min}–{c.level}; Anzeige = obere Kartenstufe'
+    else:
+        title = f'Offizielle Kartenstufe {c.level}'
+    return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Lvl {c.level}</span>'
+
+
+def signal_flash(c: Candidate) -> str:
+    if not (c.lightning or c.special):
+        return ""
+    if c.lightning and c.special:
+        title = "Community-Signal + besonderes wiederkehrendes Event"
+    elif c.lightning:
+        title = "Direktes Community-/Sonderevent-Signal"
+    else:
+        title = "Besonderes wiederkehrendes Meta-/Invasion-/Incursion-Event"
+    return f'<span class="flash" title="{html.escape(title)}">⚡</span>'
+
+
+def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     st = c.start.astimezone(tz)
     en = c.end.astimezone(tz)
     time_label = st.strftime("%H:%M")
     if not upcoming:
         time_label += "–" + en.strftime("%H:%M")
-    flash = '<span class="flash" title="Community-/Sonderevent bestätigt">⚡</span>' if c.lightning else ""
-    sources = " · ".join(c.community_sources) if c.community_sources else c.source
     wiki = f'<a class="wiki" href="{html.escape(c.wiki)}" target="_blank" rel="noopener">Wiki</a>' if c.wiki else ""
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
       <div class="info">
-        <div class="name">{flash}{html.escape(c.event)}</div>
+        <div class="name">{signal_flash(c)}{html.escape(c.event)}</div>
         <div class="location">{html.escape(c.location)}</div>
-        <div class="meta">Priorität {int(round(c.score))} · {html.escape(sources)} {wiki}</div>
+        <div class="badges">{priority_badge(c)}{level_badge(c)}{wiki}</div>
       </div>
       <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
     </article>'''
 
 
-def render_html(active: list[Candidate], upcoming: list[Candidate], cfg: dict[str, Any], now: datetime, health: dict[str, str]) -> str:
+def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str:
+    st = c.start.astimezone(tz)
+    en = c.end.astimezone(tz)
+    time_label = st.strftime("%H:%M") if upcoming else st.strftime("%H:%M") + "–" + en.strftime("%H:%M")
+    return f'''<div class="mini-card">
+      <span class="rank">{rank}</span>
+      <span class="mini-time">{time_label}</span>
+      <div class="mini-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
+      <div class="mini-badges">{priority_badge(c)}{level_badge(c)}</div>
+      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Waypoint kopieren">{html.escape(c.waypoint)}</button>
+    </div>'''
+
+
+def page_version(active: list[Candidate], upcoming: list[Candidate], active_extra: list[Candidate], upcoming_extra: list[Candidate]) -> str:
+    rows = []
+    for group, items in (("now", active), ("next", upcoming), ("now-extra", active_extra), ("next-extra", upcoming_extra)):
+        for c in items:
+            rows.append([group, c.event, iso(c.start), iso(c.end), c.location, c.waypoint, int(round(c.score)), c.level, c.lightning, c.special])
+    raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def render_html(active: list[Candidate], upcoming: list[Candidate], active_extra: list[Candidate], upcoming_extra: list[Candidate], cfg: dict[str, Any], now: datetime, health: dict[str, str]) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
+    version = page_version(active, upcoming, active_extra, upcoming_extra)
+
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return '<div class="empty">Keine ausreichend sicher auflösbaren Events gefunden.</div>'
-        return "\n".join(card_html(c, tz, now, is_upcoming) for c in items)
+        return "\n".join(card_html(c, tz, is_upcoming) for c in items)
 
-    health_ok = sum(1 for v in health.values() if v == "ok")
-    health_total = len(health)
+    def extras(items: list[Candidate], is_upcoming: bool) -> str:
+        if not items:
+            return ""
+        rows = "\n".join(mini_card_html(c, tz, is_upcoming, 4 + i) for i, c in enumerate(items))
+        return f'<div class="extra-block"><div class="extra-title">Weitere Action · Plätze 4–5</div>{rows}</div>'
+
     return f'''<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="gw2-page-version" content="{version}">
 <title>GW2 Action Now</title>
 <style>
-:root{{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#c8a85b;--green:#65a98a;--accent:#d96b70;}}
+:root{{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#d7aa42;}}
 *{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}}
 .app{{max-width:920px;margin:auto;padding:18px}} header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
-#clock{{font-size:23px;font-weight:800}} .sub{{font-size:12px;color:var(--muted);margin-top:5px}} h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
-.event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:72px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
-.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{margin-right:5px}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}} .meta{{margin-top:5px;font-size:10px;color:var(--muted)}}
-.wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}} .wp:hover{{border-color:#69717e;background:#151820}} .wiki{{color:var(--muted)}}
-.empty{{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}} footer{{font-size:10px;color:#737a84;text-align:center;padding:16px 2px}}
-@media(max-width:680px){{.app{{padding:10px}}.event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}.time{{grid-area:time}}.info{{grid-area:info}}.wp{{grid-area:wp;width:100%}}}}
+#clock{{font-size:23px;font-weight:800}} h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
+.event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
+.event-card:hover{{background:var(--panel2)}} .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}} .name{{font-size:16px;font-weight:800}} .flash{{margin-right:5px}} .location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
+.badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}} .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
+.badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}} .level-na{{color:#a7adb6;background:#171a1f}} .wiki{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}} .wiki:hover{{text-decoration:underline;color:#fff}}
+.wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}} .wp:hover{{border-color:#69717e;background:#151820}}
+.extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}} .extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
+.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}} .mini-card:first-of-type{{border-top:0}} .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}} .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}} .mini-info{{min-width:0}} .mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}} .mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}} .mini-badges{{display:flex;gap:4px}} .mini-badges .badge{{font-size:9px;padding:3px 5px}} .mini-wp{{padding:8px 6px;font-size:10px}}
+.empty{{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
+@media(max-width:760px){{.app{{padding:10px}}.event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}.time{{grid-area:time}}.info{{grid-area:info}}.wp{{grid-area:wp;width:100%}}.mini-card{{grid-template-columns:22px 62px 1fr}}.mini-badges{{grid-column:3}}.mini-wp{{grid-column:1/4;width:100%}}}}
 </style>
 </head>
 <body>
 <div class="app">
-<header><div id="clock"></div><div class="sub">Europe/Berlin · automatisch aktualisiert · Quellenstatus {health_ok}/{health_total}</div></header>
+<header><div id="clock"></div></header>
 <h2>Jetzt · höchste Action</h2>
 {section(active, False)}
+{extras(active_extra, False)}
 <h2>Als Nächstes · höchste Priorität</h2>
 {section(upcoming, True)}
-<footer>⚡ = direktes Community-/Sonderevent-Signal · Waypoints werden nur bestätigt übernommen, nie geraten.</footer>
+{extras(upcoming_extra, True)}
 </div>
 <script>
 const fmt=new Intl.DateTimeFormat('de-DE',{{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}});
 function tick(){{document.getElementById('clock').textContent=fmt.format(new Date());}} tick(); setInterval(tick,1000);
 document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{{const v=btn.dataset.copy;try{{await navigator.clipboard.writeText(v);const old=btn.textContent;btn.textContent='✓ '+v;setTimeout(()=>btn.textContent=old,900);}}catch(e){{}}}}));
+const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;
+async function checkForUpdate(){{
+  try{{
+    const u=new URL('index.html',window.location.href);u.searchParams.set('_',Date.now().toString());
+    const r=await fetch(u.toString(),{{cache:'no-store'}});if(!r.ok)return;
+    const t=await r.text();const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
+    if(m && m[1]!==currentVersion){{const next=new URL(window.location.href);next.searchParams.set('_',Date.now().toString());window.location.replace(next.toString());}}
+  }}catch(e){{}}
+}}
+setInterval(checkForUpdate,20000);
 </script>
 </body></html>'''
-
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -861,6 +1022,7 @@ def main() -> int:
     refreshed = False
 
     parsers = {
+        "maps": parse_maps,
         "catalog": parse_catalog,
         "ninja": parse_ninja,
         "metasheet": parse_metasheet,
@@ -893,6 +1055,7 @@ def main() -> int:
         return 2
 
     cands = catalog_candidates(catalog, cfg, now)
+    apply_map_levels(cands, values.get("maps"))
     apply_ninja_waypoints(cands, values.get("ninja"))
     apply_community(
         cands, now, cfg.get("region", "EU"),
@@ -900,10 +1063,10 @@ def main() -> int:
         values.get("gw2community"), values.get("vip"), values.get("choya")
     )
     apply_fast_context(cands, values.get("fast"))
-    active, upcoming = choose(cands, cfg, now)
+    active, upcoming, active_extra, upcoming_extra = choose(cands, cfg, now)
 
     health = {name: ("stale" if name in errors and values.get(name) is not None else "error" if name in errors else "ok") for name in parsers}
-    page = render_html(active, upcoming, cfg, now, health)
+    page = render_html(active, upcoming, active_extra, upcoming_extra, cfg, now, health)
 
     old_page = INDEX_PATH.read_text(encoding="utf-8") if INDEX_PATH.exists() else ""
     page_changed = page != old_page
@@ -912,14 +1075,14 @@ def main() -> int:
     if refreshed or not STATE_PATH.exists():
         atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
 
-    print(f"candidates={len(cands)} active={len(active)} upcoming={len(upcoming)} page_changed={page_changed} sources_refreshed={refreshed}")
+    print(f"candidates={len(cands)} active={len(active)} upcoming={len(upcoming)} active_extra={len(active_extra)} upcoming_extra={len(upcoming_extra)} page_changed={page_changed} sources_refreshed={refreshed}")
     if errors:
         print("source warnings:")
         for k, v in errors.items():
             print(f"  {k}: {v}")
-    for label, items in [("NOW", active), ("NEXT", upcoming)]:
+    for label, items in [("NOW", active), ("NOW+", active_extra), ("NEXT", upcoming), ("NEXT+", upcoming_extra)]:
         for c in items:
-            print(f"{label} {c.start.isoformat()} {c.event} {c.location} {c.waypoint} score={c.score:.1f} lightning={c.lightning}")
+            print(f"{label} {c.start.isoformat()} {c.event} {c.location} {c.waypoint} score={c.score:.1f} level={c.level} lightning={c.lightning} special={c.special}")
     return 0
 
 

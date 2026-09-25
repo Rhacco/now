@@ -15,7 +15,8 @@
     "vip": 15,
     "choya": 15,
     "fast": 720,
-    "news": 240
+    "news": 240,
+    "maps": 1440
   },
   "category_priority": {
     "Core Tyria": 46,
@@ -60,5 +61,6 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.1.0"
+  "engine_version": "1.2.0",
+  "extra_limit": 2
 }
