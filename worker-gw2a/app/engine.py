@@ -333,7 +333,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.6.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.7.0 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1421,6 +1421,52 @@ def level_badge(c: Candidate) -> str:
 
 
 
+def client_event_pool(
+    cands: list[Candidate],
+    cfg: dict[str, Any],
+    now: datetime,
+) -> list[Candidate]:
+    # Keep enough absolute-time data in the page for exact client-side boundary updates.
+    horizon = int(cfg.get("upcoming_horizon_minutes", 120))
+    deduped = dedupe([c for c in cands if c.waypoint])
+    low = now - timedelta(minutes=20)
+    high = now + timedelta(minutes=horizon + 15)
+
+    out: list[Candidate] = []
+    for c in deduped:
+        active_until = min(c.end, c.start + timedelta(minutes=action_window_minutes(c)))
+        if active_until < low:
+            continue
+        if c.start > high:
+            continue
+        out.append(c)
+
+    return sorted(out, key=lambda c: (c.start, -c.score, c.event))
+
+
+def client_event_payload(cands: list[Candidate]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for c in cands:
+        active_from = c.start - timedelta(minutes=5)
+        active_until = min(c.end, c.start + timedelta(minutes=action_window_minutes(c)))
+        rows.append({
+            "key": hashlib.sha256((c.key() + "|" + c.waypoint).encode("utf-8")).hexdigest()[:16],
+            "event": c.event,
+            "location": c.location,
+            "start": iso(c.start),
+            "active_from": iso(active_from),
+            "active_until": iso(active_until),
+            "score": round(float(c.score), 3),
+            "special": bool(c.special),
+            "waypoint": c.waypoint,
+            "priority_html": priority_badge(c),
+            "level_html": level_badge(c),
+            "links_html": event_links(c),
+            "flash_html": signal_flash(c),
+        })
+    return rows
+
+
 def signal_flash(c: Candidate) -> str:
     if not c.lightning:
         return ""
@@ -1465,8 +1511,7 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
       <div class="info">
-        <div class="name">{signal_flash(c)}{html.escape(c.event)}</div>
-        <div class="location">{html.escape(c.location)}</div>
+        <div class="event-line"><span class="name">{signal_flash(c)}{html.escape(c.event)}</span><span class="inline-location"> · {html.escape(c.location)}</span></div>
         <div class="badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       </div>
       <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
@@ -1479,7 +1524,7 @@ def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str
     return f'''<div class="mini-card">
       <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
-      <div class="mini-info"><b>{signal_flash(c)}{html.escape(c.event)}</b><span>{html.escape(c.location)}</span></div>
+      <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b>{html.escape(c.event)}</b><span class="inline-location"> · {html.escape(c.location)}</span></span></div>
       <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
@@ -1489,10 +1534,7 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
     st = c.start.astimezone(tz)
     return f'''<div class="all-card">
       <span class="all-time">{st.strftime("%H:%M")}</span>
-      <div class="all-info">
-        <b><span class="title-row">{signal_flash(c)}<span class="event-title">{html.escape(c.event)}</span></span></b>
-        <span>{html.escape(c.location)}</span>
-      </div>
+      <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title">{html.escape(c.event)}</b><span class="inline-location"> · {html.escape(c.location)}</span></span></div>
       <div class="all-badges">{priority_badge(c)}{level_badge(c)}{event_links(c)}</div>
       <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
     </div>'''
@@ -1502,6 +1544,7 @@ def page_version(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
     active_more: list[Candidate], upcoming_more: list[Candidate],
+    client_events: list[Candidate],
     notice: str = ""
 ) -> str:
     rows = [["notice", notice]]
@@ -1516,6 +1559,12 @@ def page_version(
                 c.waypoint, int(round(c.score)), c.level,
                 c.lightning, c.special, c.announcement_url
             ])
+    for c in client_events:
+        rows.append([
+            "client", c.event, iso(c.start), iso(c.end), c.location,
+            c.waypoint, int(round(c.score)), c.level, c.lightning, c.special,
+            c.announcement_url, action_window_minutes(c)
+        ])
     raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -1524,14 +1573,20 @@ def render_html(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
     active_more: list[Candidate], upcoming_more: list[Candidate],
+    client_events: list[Candidate],
     cfg: dict[str, Any], now: datetime,
     notice: str = ""
 ) -> str:
-    tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
+    tz = ZoneInfo(cfg.get("timezone", "UTC"))
     version = page_version(
         active, upcoming, active_extra, upcoming_extra,
-        active_more, upcoming_more, notice
+        active_more, upcoming_more, client_events, notice
     )
+    client_json = json.dumps(
+        client_event_payload(client_events),
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).replace("</", "<\\/")
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
@@ -1547,11 +1602,7 @@ def render_html(
     def expandable(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return ""
-        label = (
-            "All Other Current Events"
-            if not is_upcoming
-            else "More Upcoming Activity · Next 2 Hours"
-        )
+        label = "All Other Current Events" if not is_upcoming else "More Upcoming Activity · Next 2 Hours"
         rows = "\n".join(compact_action_html(c, tz) for c in items)
         return (
             f'<details class="all-block">'
@@ -1572,17 +1623,22 @@ def render_html(
 *{{box-sizing:border-box}}
 body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}}
 .app{{max-width:920px;margin:auto;padding:18px}}
-header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 18px;text-align:center}}
+header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 12px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}}
 .status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
-h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:18px 2px 8px}}
-.event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:78px;padding:10px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
+.tz-tools{{display:flex;justify-content:center;gap:4px;margin-top:6px}}
+.tz-btn{{border:1px solid #30353d;background:#121419;color:#8f97a2;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer}}
+.tz-btn:hover{{color:#fff;border-color:#555e6b}}
+.tz-btn.active{{color:#fff;background:#242932;border-color:#5d6673}}
+h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
+.event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:62px;padding:8px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 .event-card:hover{{background:var(--panel2)}}
 .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}}
-.name{{font-size:16px;font-weight:800}}
-.flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-.08em;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}}
-.location{{margin-top:4px;font-size:13px;color:#d6d8dc}}
-.badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}}
+.event-line,.mini-line,.title-row{{display:flex;align-items:baseline;min-width:0;white-space:nowrap;overflow:hidden}}
+.name{{font-size:16px;font-weight:800;max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:0 1 auto}}
+.inline-location{{color:#aeb5bf;font-size:12px;font-weight:500;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto}}
+.flash{{display:inline-block;margin-right:5px;line-height:1;vertical-align:-.08em;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;flex:0 0 auto}}
+.badges{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:5px}}
 .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
 .badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}}
 .level-na{{color:#a7adb6;background:#171a1f}}
@@ -1593,44 +1649,42 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .wp:hover{{border-color:#69717e;background:#151820}}
 .extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}}
 .extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
-.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:6px 4px;border-top:1px solid #252a31;min-height:48px}}
+.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:5px 4px;border-top:1px solid #252a31;min-height:42px}}
 .mini-card:first-of-type{{border-top:0}}
 .rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}}
 .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .mini-info{{min-width:0}}
-.mini-info b{{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}}
-.mini-info span{{display:block;font-size:10px;color:#aab0b8;margin-top:2px}}
+.mini-info b{{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%;flex:0 1 auto}}
+.mini-info .inline-location{{font-size:10px}}
 .mini-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .mini-badges .badge{{font-size:9px;padding:3px 5px}}
 .mini-wp{{padding:8px 6px;font-size:10px}}
 .all-block{{margin:8px 0 4px;background:#111317;border:1px solid #242931;border-radius:10px;overflow:hidden}}
-.all-block summary{{cursor:pointer;padding:10px 12px;color:#aeb5bf;font-size:11px;font-weight:800;letter-spacing:.02em;user-select:none}}
+.all-block summary{{cursor:pointer;padding:9px 12px;color:#aeb5bf;font-size:11px;font-weight:800;letter-spacing:.02em;user-select:none}}
 .all-block summary:hover{{color:#fff;background:#16191e}}
 .all-block summary span{{color:#737b86}}
 .all-list{{padding:0 9px 8px}}
-.all-card{{display:grid;grid-template-columns:62px minmax(180px,1fr) auto 128px;gap:8px;align-items:center;min-height:44px;padding:6px 4px;border-top:1px solid #252a31}}
+.all-card{{display:grid;grid-template-columns:62px minmax(180px,1fr) auto 128px;gap:8px;align-items:center;min-height:38px;padding:5px 4px;border-top:1px solid #252a31}}
 .all-card:first-child{{border-top:0}}
 .all-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .all-info{{min-width:0}}
-.all-info b{{display:block;font-size:12px;min-width:0}}
-.all-info .title-row{{display:flex;align-items:center;min-width:0;white-space:nowrap}}
-.all-info .event-title{{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
-.all-info>span{{display:block;margin-top:2px;font-size:10px;color:#aab0b8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
-.flash{{flex:0 0 auto}}
+.all-info .event-title{{font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:55%;flex:0 1 auto}}
+.all-info .inline-location{{font-size:10px}}
 .all-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .all-badges .badge{{font-size:9px;padding:3px 5px}}
 .all-wp{{padding:8px 6px;font-size:10px}}
-.empty{{padding:24px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
+.empty{{padding:20px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 @media(max-width:760px){{
   .app{{padding:10px}}
-  .event-card{{grid-template-columns:70px 1fr;grid-template-areas:'time info' 'wp wp'}}
+  .event-card{{grid-template-columns:64px 1fr;grid-template-areas:'time info' 'wp wp';min-height:56px}}
   .time{{grid-area:time}}
-  .info{{grid-area:info}}
+  .info{{grid-area:info;min-width:0}}
   .wp{{grid-area:wp;width:100%}}
-  .mini-card{{grid-template-columns:22px 62px 1fr}}
+  .name{{max-width:52%}}
+  .mini-card{{grid-template-columns:22px 58px 1fr}}
   .mini-badges{{grid-column:3}}
   .mini-wp{{grid-column:1/4;width:100%}}
-  .all-card{{grid-template-columns:54px 1fr}}
+  .all-card{{grid-template-columns:50px 1fr}}
   .all-badges{{grid-column:2}}
   .all-wp{{grid-column:1/3;width:100%}}
 }}
@@ -1640,54 +1694,158 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div class="app">
 <header>
   <div id="clock"></div>
+  <div id="time-zone-tools" class="tz-tools" hidden>
+    <button type="button" class="tz-btn" data-tz-mode="local">Local</button>
+    <button type="button" class="tz-btn" data-tz-mode="server">Server · UTC</button>
+  </div>
   {f'<div class="status-note">{html.escape(notice)}</div>' if notice else ''}
 </header>
 
 <h2>Now · Highest Activity</h2>
-{section(active, False)}
-{extras(active_extra, False)}
-{expandable(active_more, False)}
+<div id="now-top">{section(active, False)}</div>
+<div id="now-more">{expandable(active_more, False)}</div>
 
 <h2>Up Next · Highest Priority</h2>
-{section(upcoming, True)}
-{extras(upcoming_extra, True)}
-{expandable(upcoming_more, True)}
+<div id="next-top">{section(upcoming, True)}</div>
+<div id="next-extra">{extras(upcoming_extra, True)}</div>
+<div id="next-more">{expandable(upcoming_more, True)}</div>
 </div>
 
 <script>
-const fmt=new Intl.DateTimeFormat('en-GB',{{timeZone:'Europe/Berlin',weekday:'long',day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'}});
-function tick(){{document.getElementById('clock').textContent=fmt.format(new Date());}}
-tick();
-setInterval(tick,1000);
+const EVENT_DATA={client_json};
+const UPCOMING_HORIZON_MS=120*60*1000;
+const PRESTART_MS=5*60*1000;
 
-document.querySelectorAll('.wp').forEach(btn=>btn.addEventListener('click',async()=>{{
-  const v=btn.dataset.copy;
-  try{{
-    await navigator.clipboard.writeText(v);
-    const old=btn.textContent;
-    btn.textContent='✓ '+v;
-    setTimeout(()=>btn.textContent=old,900);
-  }}catch(e){{}}
-}}));
+let localZone="";
+try {{ localZone=Intl.DateTimeFormat().resolvedOptions().timeZone || ""; }} catch(e) {{}}
+const utcLikeZones=new Set(["UTC","Etc/UTC","GMT","Etc/GMT"]);
+const localDistinct=Boolean(localZone && !utcLikeZones.has(localZone));
+let timeMode="server";
+try {{
+  const saved=localStorage.getItem("gw2action-time-mode");
+  if(saved==="local" && localDistinct) timeMode="local";
+  else if(saved==="server") timeMode="server";
+  else if(localDistinct) timeMode="local";
+}} catch(e) {{ if(localDistinct) timeMode="local"; }}
 
-if(window.location.search){{
-  history.replaceState(null,'',window.location.pathname+window.location.hash);
+function selectedZone() {{ return timeMode==="local" && localDistinct ? localZone : "UTC"; }}
+function saveTimeMode() {{ try {{ localStorage.setItem("gw2action-time-mode",timeMode); }} catch(e) {{}} }}
+
+function updateTimeZoneControls() {{
+  const tools=document.getElementById("time-zone-tools");
+  if(!tools) return;
+  if(localDistinct) {{
+    tools.hidden=false;
+    const localButton=tools.querySelector('[data-tz-mode="local"]');
+    if(localButton) localButton.title=`Local time · ${{localZone}}`;
+  }} else {{
+    tools.hidden=true;
+  }}
+  tools.querySelectorAll(".tz-btn").forEach(btn=>{{
+    const active=btn.dataset.tzMode===timeMode;
+    btn.classList.toggle("active",active);
+    btn.setAttribute("aria-pressed",active?"true":"false");
+  }});
 }}
 
+function clockFormatter() {{
+  return new Intl.DateTimeFormat("en-GB",{{timeZone:selectedZone(),weekday:"long",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}});
+}}
+function eventTimeFormatter() {{
+  return new Intl.DateTimeFormat("en-GB",{{timeZone:selectedZone(),hour:"2-digit",minute:"2-digit",hourCycle:"h23"}});
+}}
+let clockFmt=clockFormatter();
+let eventTimeFmt=eventTimeFormatter();
+function formatEventTime(iso) {{ return eventTimeFmt.format(new Date(iso)); }}
+function tickClock() {{ const el=document.getElementById("clock"); if(el) el.textContent=clockFmt.format(new Date()); }}
+
+function esc(value) {{
+  return String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('\"',"&quot;").replaceAll("'","&#39;");
+}}
+function topCard(e) {{
+  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="inline-location"> · ${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></article>`;
+}}
+function miniCard(e,rank) {{
+  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="inline-location"> · ${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+}}
+function compactCard(e) {{
+  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="inline-location"> · ${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+}}
+
+function byScore(a,b) {{ return (b.score-a.score)||(Date.parse(a.start)-Date.parse(b.start))||a.event.localeCompare(b.event); }}
+function byTime(a,b) {{ return (Date.parse(a.start)-Date.parse(b.start))||(b.score-a.score)||a.event.localeCompare(b.event); }}
+function pickUpcomingExtras(rest) {{
+  const spotlight=rest.filter(e=>e.special).sort(byTime);
+  const picked=spotlight.slice(0,2);
+  const keys=new Set(picked.map(e=>e.key));
+  if(picked.length<2) {{
+    const fallback=rest.filter(e=>!keys.has(e.key)).sort(byScore);
+    picked.push(...fallback.slice(0,2-picked.length));
+  }}
+  return picked;
+}}
+function layoutAt(nowMs) {{
+  const active=EVENT_DATA.filter(e=>Date.parse(e.active_from)<=nowMs && nowMs<Date.parse(e.active_until));
+  const upcoming=EVENT_DATA.filter(e=>{{const start=Date.parse(e.start);return (nowMs+PRESTART_MS)<start && start<=(nowMs+UPCOMING_HORIZON_MS);}});
+  const activeTop=[...active].sort(byScore).slice(0,3).sort(byTime);
+  const activeTopKeys=new Set(activeTop.map(e=>e.key));
+  const activeMore=active.filter(e=>!activeTopKeys.has(e.key)).sort(byTime);
+  const upcomingTop=[...upcoming].sort(byScore).slice(0,3).sort(byTime);
+  const upcomingTopKeys=new Set(upcomingTop.map(e=>e.key));
+  const upcomingRest=upcoming.filter(e=>!upcomingTopKeys.has(e.key));
+  const upcomingExtra=pickUpcomingExtras(upcomingRest).sort(byTime);
+  const extraKeys=new Set(upcomingExtra.map(e=>e.key));
+  const upcomingMore=upcomingRest.filter(e=>!extraKeys.has(e.key)).sort(byTime);
+  return {{activeTop,activeMore,upcomingTop,upcomingExtra,upcomingMore}};
+}}
+function emptyBlock() {{ return '<div class="empty">No events with a reliably resolved waypoint are currently available.</div>'; }}
+function detailsBlock(label,items,wasOpen) {{
+  if(!items.length) return "";
+  return `<details class="all-block" ${{wasOpen?"open":""}}><summary>${{label}} <span>(${{items.length}})</span></summary><div class="all-list">${{items.map(compactCard).join("")}}</div></details>`;
+}}
+let lastLayoutSignature="";
+function renderLive(force=false) {{
+  const nowMoreOpen=document.querySelector("#now-more details")?.open || false;
+  const nextMoreOpen=document.querySelector("#next-more details")?.open || false;
+  const groups=layoutAt(Date.now());
+  const signature=JSON.stringify([groups.activeTop.map(e=>e.key),groups.activeMore.map(e=>e.key),groups.upcomingTop.map(e=>e.key),groups.upcomingExtra.map(e=>e.key),groups.upcomingMore.map(e=>e.key),timeMode]);
+  if(!force && signature===lastLayoutSignature) return;
+  lastLayoutSignature=signature;
+  document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
+  document.getElementById("now-more").innerHTML=detailsBlock("All Other Current Events",groups.activeMore,nowMoreOpen);
+  document.getElementById("next-top").innerHTML=groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock();
+  document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block"><div class="extra-title">More Activity · Ranks 4–5</div>${{groups.upcomingExtra.map((e,i)=>miniCard(e,4+i)).join("")}}</div>`:"";
+  document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen);
+}}
+
+document.getElementById("time-zone-tools")?.addEventListener("click",ev=>{{
+  const btn=ev.target.closest(".tz-btn");
+  if(!btn) return;
+  const mode=btn.dataset.tzMode;
+  if(mode==="local" && !localDistinct) return;
+  if(mode!=="local" && mode!=="server") return;
+  timeMode=mode;saveTimeMode();clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();updateTimeZoneControls();tickClock();renderLive(true);
+}});
+
+document.querySelector(".app")?.addEventListener("click",async ev=>{{
+  const btn=ev.target.closest(".wp");
+  if(!btn) return;
+  const value=btn.dataset.copy;
+  try {{await navigator.clipboard.writeText(value);const old=btn.textContent;btn.textContent=`✓ ${{value}}`;setTimeout(()=>{{btn.textContent=old;}},900);}} catch(e) {{}}
+}});
+
+updateTimeZoneControls();tickClock();renderLive(true);setInterval(tickClock,1000);
+// Exact local category transition, independent of Pages publication latency.
+setInterval(()=>renderLive(false),2000);
+
+if(window.location.search){{history.replaceState(null,"",window.location.pathname+window.location.hash);}}
 const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;
 async function checkForUpdate(){{
   try{{
-    const u=new URL(window.location.pathname,window.location.origin);
-    u.searchParams.set('_',Date.now().toString());
-    const r=await fetch(u.toString(),{{cache:'no-store'}});
-    if(!r.ok)return;
-    const t=await r.text();
-    const m=t.match(/<meta name="gw2-page-version" content="([^"]+)">/);
-    if(m && m[1]!==currentVersion){{
-      const next=new URL(window.location.pathname,window.location.origin);
-      next.searchParams.set('_',Date.now().toString());
-      window.location.replace(next.toString());
-    }}
+    const u=new URL(window.location.pathname,window.location.origin);u.searchParams.set("_",Date.now().toString());
+    const r=await fetch(u.toString(),{{cache:"no-store"}});if(!r.ok)return;
+    const text=await r.text();const match=text.match(/<meta name="gw2-page-version" content="([^"]+)">/);
+    if(match && match[1]!==currentVersion){{const next=new URL(window.location.pathname,window.location.origin);next.searchParams.set("_",Date.now().toString());window.location.replace(next.toString());}}
   }}catch(e){{}}
 }}
 setInterval(checkForUpdate,20000);
@@ -1779,6 +1937,7 @@ def main() -> int:
     active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(
         cands, cfg, now
     )
+    client_events = client_event_pool(cands, cfg, now)
 
     notice = user_status_notice(state, ttl, now)
 
@@ -1789,6 +1948,7 @@ def main() -> int:
         upcoming_extra,
         active_more,
         upcoming_more,
+        client_events,
         cfg,
         now,
         notice,

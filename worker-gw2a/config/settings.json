@@ -1,5 +1,5 @@
 {
-  "timezone": "Europe/Berlin",
+  "timezone": "UTC",
   "region": "EU",
   "now_limit": 3,
   "next_limit": 3,
@@ -61,6 +61,6 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.6.0",
+  "engine_version": "1.7.0",
   "extra_limit": 2
 }
