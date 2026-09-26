@@ -20,7 +20,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.4"
+ENGINE_VERSION = "1.8.5"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -142,9 +142,15 @@ CONTENT_GROUPS = (
     {"id": "voe", "short": "VoE", "label": "Visions of Eternity", "category": "Visions of Eternity", "hue": 14},
     {"id": "special", "short": "Special", "label": "Special Events", "category": "Special Events", "hue": 55},
 )
-CONTENT_OTHER = {"id": "other", "short": "Other", "label": "Other / Unknown", "category": "", "hue": 0}
+CONTENT_UNKNOWN = {
+    "id": "unknown",
+    "short": "Unknown",
+    "label": "Unknown event, please contact the developer",
+    "category": "",
+    "hue": 215,
+}
 CONTENT_BY_CATEGORY = {item["category"]: item for item in CONTENT_GROUPS}
-CONTENT_OPTIONS = CONTENT_GROUPS + (CONTENT_OTHER,)
+CONTENT_OPTIONS = CONTENT_GROUPS
 
 CATALOG_TRACKS_IGNORED = {
     "Day and night", "Cantha: Day and night", "PvP Tournaments"
@@ -261,6 +267,7 @@ class Candidate:
     location: str
     waypoint: str
     source: str
+    waypoint_name: str = ""
     wiki: str = ""
     base_priority: int = 40
     score: float = 0.0
@@ -357,7 +364,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.4 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.8.5 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1016,6 +1023,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 location=f"{fmap} · {f['place']}",
                 waypoint=f["waypoint"],
                 source="verified rotating schedule",
+                waypoint_name=f["place"],
                 wiki=ROTATING_EVENT_WIKI["Fractal Incursion"],
                 base_priority=80,
                 lightning=False,
@@ -1034,6 +1042,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                     location="Gendarran Fields · map-wide invasion",
                     waypoint=s["waypoint"],
                     source="verified rotating schedule",
+                    waypoint_name=s["place"],
                     wiki=ROTATING_EVENT_WIKI["Scarlet's Invasion"],
                     base_priority=84,
                     lightning=False,
@@ -1054,6 +1063,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 location=f"{amap} · {a['place']}",
                 waypoint=a["waypoint"],
                 source="verified rotating schedule",
+                waypoint_name=a["place"],
                 wiki=ROTATING_EVENT_WIKI["Awakened Invasion"],
                 base_priority=82,
                 lightning=False,
@@ -1431,15 +1441,32 @@ def heat_hue(value: float, low: float, high: float) -> int:
 
 
 def content_meta(category: str) -> dict[str, Any]:
-    return CONTENT_BY_CATEGORY.get(category, CONTENT_OTHER)
+    return CONTENT_BY_CATEGORY.get(category, CONTENT_UNKNOWN)
 
 
 def content_badge(c: Candidate) -> str:
     meta = content_meta(c.category)
+    if meta["id"] == "unknown":
+        return (
+            '<span class="badge content-badge content-unknown" '
+            'title="Unknown event, please contact the developer">Unknown</span>'
+        )
     return (
         f'<span class="badge content-badge" style="--content-h:{meta["hue"]}" '
         f'title="{html.escape(meta["label"])}">{html.escape(meta["short"])}</span>'
     )
+
+
+def waypoint_label(c: Candidate) -> str:
+    """Best confirmed human-readable destination for the waypoint button."""
+    if c.waypoint_name.strip():
+        return c.waypoint_name.strip()
+    parts = [part.strip() for part in c.location.split("·") if part.strip()]
+    if len(parts) > 1 and "map-wide" not in parts[-1].lower():
+        return parts[-1]
+    if c.location.strip():
+        return c.location.strip()
+    return c.event.strip() or "Waypoint"
 
 
 def content_options_payload() -> list[dict[str, str]]:
@@ -1505,6 +1532,8 @@ def client_event_payload(cands: list[Candidate]) -> list[dict[str, Any]]:
             "score": round(float(c.score), 3),
             "special": bool(c.special),
             "waypoint": c.waypoint,
+            "waypoint_label": waypoint_label(c),
+            "level": c.level,
             "content_id": content_meta(c.category)["id"],
             "content_html": content_badge(c),
             "priority_html": priority_badge(c),
@@ -1562,7 +1591,7 @@ def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
         <div class="event-line"><span class="name">{signal_flash(c)}{html.escape(c.event)}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></div>
         <div class="badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
       </div>
-      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
     </article>'''
 
 
@@ -1574,7 +1603,7 @@ def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str
       <span class="mini-time">{time_label}</span>
       <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b>{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
       <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
-      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1584,7 +1613,7 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
       <span class="all-time">{st.strftime("%H:%M")}</span>
       <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title">{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
       <div class="all-badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
-      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy waypoint" aria-label="Copy waypoint for {html.escape(c.event)}">{html.escape(c.waypoint)}</button>
+      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
     </div>'''
 
 
@@ -1719,6 +1748,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .badge{{display:inline-flex;align-items:center;border-radius:999px;padding:3px 7px;font-size:10px;font-weight:800;line-height:1;border:1px solid #3a4048}}
 .badge.heat{{color:hsl(var(--h) 86% 76%);border-color:hsl(var(--h) 55% 38%);background:hsl(var(--h) 45% 16% / .8)}}
 .content-badge{{color:hsl(var(--content-h) 78% 78%);border-color:hsl(var(--content-h) 42% 38%);background:hsl(var(--content-h) 34% 16% / .72)}}
+.content-unknown{{color:#aeb5bf;border-color:#4b515a;background:#1a1d21}}
 .level-na{{color:#a7adb6;background:#171a1f}}
 .wiki,.announcement{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
 .wiki:hover,.announcement:hover{{text-decoration:underline;color:#fff}}
@@ -1787,7 +1817,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
     <div class="control-group">
       <span class="control-label">Content:</span>
       <details id="content-filter" class="content-filter" data-ui-state-key="content-filter">
-        <summary id="content-filter-summary" title="Filter content">All</summary>
+        <summary id="content-filter-summary" title="Filter content and level">All</summary>
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
@@ -1842,7 +1872,7 @@ function readPreferenceCookie() {{
   if(!raw) return null;
   try {{
     const parsed=JSON.parse(decodeURIComponent(raw));
-    return parsed && parsed.v===1 ? parsed : null;
+    return parsed && (parsed.v===1 || parsed.v===2) ? parsed : null;
   }} catch(e) {{ return null; }}
 }}
 function legacyPreferences() {{
@@ -1870,6 +1900,7 @@ function selectedZone() {{ return timeMode==="local" && localDistinct ? localZon
 let disabledContent=new Set();
 const storedDisabled=cookiePrefs?.disabled ?? oldPrefs.disabled;
 if(Array.isArray(storedDisabled)) disabledContent=new Set(storedDisabled.filter(id=>knownContentIds.has(id)));
+let showLevel80=typeof cookiePrefs?.level80==="boolean" ? cookiePrefs.level80 : true;
 
 function updatePreferenceNote() {{
   const note=document.getElementById("preference-note");
@@ -1886,7 +1917,7 @@ function updatePreferenceNote() {{
   }}
 }}
 function savePreferences() {{
-  const payload={{v:1,time:timeMode,disabled:[...disabledContent].sort()}};
+  const payload={{v:2,time:timeMode,disabled:[...disabledContent].sort(),level80:showLevel80}};
   const encoded=encodeURIComponent(JSON.stringify(payload));
   const secure=window.location.protocol==="https:" ? "; Secure" : "";
   document.cookie=`${{PREF_COOKIE_KEY}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;
@@ -1901,7 +1932,11 @@ function savePreferences() {{
   updatePreferenceNote();
   return saved;
 }}
-function contentEnabled(event) {{ return !disabledContent.has(event.content_id); }}
+function contentEnabled(event) {{
+  const contentAllowed=event.content_id==="unknown" || !disabledContent.has(event.content_id);
+  const levelAllowed=showLevel80 || event.level!==80;
+  return contentAllowed && levelAllowed;
+}}
 
 function updateTimeZoneControls() {{
   const tools=document.getElementById("time-zone-tools");
@@ -1926,15 +1961,17 @@ function updateContentSummary() {{
   if(!summary) return;
   const total=CONTENT_OPTIONS.length;
   const enabled=total-disabledContent.size;
-  summary.textContent=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
-  summary.title=disabledContent.size===0 ? "Filter content" : `${{enabled}} of ${{total}} shown`;
+  const base=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
+  summary.textContent=showLevel80 ? base : `${{base}} · L80 off`;
+  summary.title="Filter content and level";
 }}
 
 function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
   const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Select all content">Show all</button></div><div class="content-grid">${{rows}}</div>`;
+  const level80=`<label class="content-option level-filter-option" title="Turn off to hide level 80 events"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events · disable while leveling alts</span></label>`;
+  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
 }}
 
@@ -2059,13 +2096,13 @@ function esc(value) {{
   return String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('\"',"&quot;").replaceAll("'","&#39;");
 }}
 function topCard(e) {{
-  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></article>`;
+  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></article>`;
 }}
 function miniCard(e,rank) {{
-  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></div>`;
 }}
 function compactCard(e) {{
-  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy waypoint" aria-label="Copy waypoint for ${{esc(e.event)}}">${{esc(e.waypoint)}}</button></div>`;
+  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></div>`;
 }}
 
 function byScore(a,b) {{ return (b.score-a.score)||(Date.parse(a.start)-Date.parse(b.start))||a.event.localeCompare(b.event); }}
@@ -2096,7 +2133,8 @@ function layoutAt(nowMs) {{
   return {{activeTop,activeMore,upcomingTop,upcomingExtra,upcomingMore}};
 }}
 function emptyBlock() {{
-  const message=disabledContent.size ? "No events match the selected content." : "No events with a reliably resolved waypoint are currently available.";
+  const filtersActive=disabledContent.size>0 || !showLevel80;
+  const message=filtersActive ? "No events match the selected filters." : "No events with a reliably resolved waypoint are currently available.";
   return `<div class="empty">${{message}}</div>`;
 }}
 function detailsBlock(label,items,wasOpen,stateKey) {{
@@ -2108,7 +2146,7 @@ function renderLive(force=false) {{
   const nowMoreOpen=document.querySelector("#now-more details")?.open || false;
   const nextMoreOpen=document.querySelector("#next-more details")?.open || false;
   const groups=layoutAt(Date.now());
-  const signature=JSON.stringify([groups.activeTop.map(e=>e.key),groups.activeMore.map(e=>e.key),groups.upcomingTop.map(e=>e.key),groups.upcomingExtra.map(e=>e.key),groups.upcomingMore.map(e=>e.key),timeMode,[...disabledContent].sort()]);
+  const signature=JSON.stringify([groups.activeTop.map(e=>e.key),groups.activeMore.map(e=>e.key),groups.upcomingTop.map(e=>e.key),groups.upcomingExtra.map(e=>e.key),groups.upcomingMore.map(e=>e.key),timeMode,[...disabledContent].sort(),showLevel80]);
   if(!force && signature===lastLayoutSignature) return;
   lastLayoutSignature=signature;
   document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
@@ -2128,6 +2166,12 @@ document.getElementById("time-zone-tools")?.addEventListener("click",ev=>{{
 }});
 
 document.getElementById("content-filter-menu")?.addEventListener("change",ev=>{{
+  const levelInput=ev.target.closest('input[data-level80]');
+  if(levelInput) {{
+    showLevel80=Boolean(levelInput.checked);
+    savePreferences();updateContentSummary();renderLive(true);
+    return;
+  }}
   const input=ev.target.closest('input[data-content-id]');
   if(!input) return;
   const id=input.dataset.contentId;
@@ -2140,7 +2184,7 @@ document.getElementById("content-filter-menu")?.addEventListener("change",ev=>{{
 document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   const all=ev.target.closest("[data-content-all]");
   if(!all) return;
-  disabledContent.clear();savePreferences();buildContentFilter();renderLive(true);
+  disabledContent.clear();showLevel80=true;savePreferences();buildContentFilter();renderLive(true);
 }});
 
 const contentFilter=document.getElementById("content-filter");
