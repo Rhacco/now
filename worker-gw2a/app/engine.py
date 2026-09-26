@@ -20,7 +20,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.3"
+ENGINE_VERSION = "1.8.4"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -357,7 +357,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.3 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.8.4 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1693,7 +1693,7 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .content-filter[open]>summary::after{{content:" ▴"}}
 .content-filter>summary::-webkit-details-marker{{display:none}}
 .content-filter[open]>summary{{color:#fff;background:#242932;border-color:#5d6673}}
-.content-menu{{position:fixed;top:auto;right:auto;bottom:auto;left:auto;width:min(640px,calc(100vw - 20px));max-height:min(440px,calc(100vh - 20px));overflow:auto;padding:10px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:40;overscroll-behavior:contain}}
+.content-menu{{position:fixed;top:auto;right:auto;bottom:auto;left:auto;width:min(640px,calc(100vw - 20px));max-height:min(440px,calc(100vh - 20px));overflow:auto;padding:10px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:40;overscroll-behavior:contain;visibility:hidden;opacity:0;pointer-events:none}}\n.content-menu.positioned{{visibility:visible;opacity:1;pointer-events:auto}}
 .content-menu-head{{position:sticky;top:-10px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 4px 8px;background:#15171b;border-bottom:1px solid #292e35;margin:-10px 0 6px}}
 .content-menu-title{{font-size:10px;font-weight:800;color:#c6cbd2;text-transform:uppercase;letter-spacing:.05em}}
 .content-all-btn{{border:0;background:transparent;color:#9fb7d7;font-size:10px;font-weight:800;cursor:pointer;padding:3px 4px}}
@@ -1786,7 +1786,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
     </div>
     <div class="control-group">
       <span class="control-label">Content:</span>
-      <details id="content-filter" class="content-filter">
+      <details id="content-filter" class="content-filter" data-ui-state-key="content-filter">
         <summary id="content-filter-summary" title="Filter content">All</summary>
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
@@ -1972,26 +1972,41 @@ function positionContentMenu() {{
     const top=Math.max(margin,rect.top-gap-available);
     menu.style.top=`${{top}}px`;
   }}
+
+  // Reveal only after the final viewport-centered position is known.
+  menu.classList.add("positioned");
 }}
 
 function closeContentMenu() {{
   const filter=document.getElementById("content-filter");
+  const menu=document.getElementById("content-filter-menu");
+  if(menu) menu.classList.remove("positioned");
   if(filter?.open) filter.open=false;
 }}
 
-const TRANSIENT_UI_KEY="gw2action_ui_state_v1";
+const TRANSIENT_UI_KEY="gw2action_ui_state_v2";
+
+function collectDetailsState() {{
+  const open={{}};
+  document.querySelectorAll("details[data-ui-state-key]").forEach(item=>{{
+    const key=item.dataset.uiStateKey;
+    if(key) open[key]=Boolean(item.open);
+  }});
+  return open;
+}}
+
 function stashTransientUiState() {{
-  const filter=document.getElementById("content-filter");
   const menu=document.getElementById("content-filter-menu");
   const state={{
-    v:1,
+    v:2,
     at:Date.now(),
-    contentOpen:Boolean(filter?.open),
+    detailsOpen:collectDetailsState(),
     contentScrollTop:Number(menu?.scrollTop || 0),
     pageScrollY:Number(window.scrollY || 0)
   }};
   try {{ sessionStorage.setItem(TRANSIENT_UI_KEY,JSON.stringify(state)); }} catch(e) {{}}
 }}
+
 function restoreTransientUiState() {{
   let state=null;
   try {{
@@ -1999,21 +2014,33 @@ function restoreTransientUiState() {{
     sessionStorage.removeItem(TRANSIENT_UI_KEY);
     if(raw) state=JSON.parse(raw);
   }} catch(e) {{ state=null; }}
-  if(!state || state.v!==1 || !Number.isFinite(state.at) || Date.now()-state.at>90000) return;
 
-  if(Number.isFinite(state.pageScrollY)) {{
-    requestAnimationFrame(()=>window.scrollTo({{top:Math.max(0,state.pageScrollY),left:0,behavior:"auto"}}));
+  if(!state || state.v!==2 || !Number.isFinite(state.at) || Date.now()-state.at>90000) return;
+
+  if(state.detailsOpen && typeof state.detailsOpen==="object") {{
+    document.querySelectorAll("details[data-ui-state-key]").forEach(item=>{{
+      const key=item.dataset.uiStateKey;
+      if(key && Object.prototype.hasOwnProperty.call(state.detailsOpen,key)) {{
+        item.open=Boolean(state.detailsOpen[key]);
+      }}
+    }});
   }}
-  if(state.contentOpen) {{
-    const filter=document.getElementById("content-filter");
-    const menu=document.getElementById("content-filter-menu");
-    if(filter) {{
-      filter.open=true;
-      requestAnimationFrame(()=>{{
-        positionContentMenu();
-        if(menu && Number.isFinite(state.contentScrollTop)) menu.scrollTop=Math.max(0,state.contentScrollTop);
-      }});
+
+  const filter=document.getElementById("content-filter");
+  const menu=document.getElementById("content-filter-menu");
+
+  if(filter?.open) {{
+    positionContentMenu();
+    if(menu && Number.isFinite(state.contentScrollTop)) {{
+      menu.scrollTop=Math.max(0,state.contentScrollTop);
     }}
+  }}
+
+  // Restore page position after expanded/collapsed sections have settled.
+  if(Number.isFinite(state.pageScrollY)) {{
+    requestAnimationFrame(()=>requestAnimationFrame(()=>
+      window.scrollTo({{top:Math.max(0,state.pageScrollY),left:0,behavior:"auto"}})
+    ));
   }}
 }}
 
@@ -2072,9 +2099,9 @@ function emptyBlock() {{
   const message=disabledContent.size ? "No events match the selected content." : "No events with a reliably resolved waypoint are currently available.";
   return `<div class="empty">${{message}}</div>`;
 }}
-function detailsBlock(label,items,wasOpen) {{
+function detailsBlock(label,items,wasOpen,stateKey) {{
   if(!items.length) return "";
-  return `<details class="all-block" ${{wasOpen?"open":""}}><summary>${{label}} <span>(${{items.length}})</span></summary><div class="all-list">${{items.map(compactCard).join("")}}</div></details>`;
+  return `<details class="all-block" data-ui-state-key="${{esc(stateKey)}}" ${{wasOpen?"open":""}}><summary>${{label}} <span>(${{items.length}})</span></summary><div class="all-list">${{items.map(compactCard).join("")}}</div></details>`;
 }}
 let lastLayoutSignature="";
 function renderLive(force=false) {{
@@ -2085,10 +2112,10 @@ function renderLive(force=false) {{
   if(!force && signature===lastLayoutSignature) return;
   lastLayoutSignature=signature;
   document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
-  document.getElementById("now-more").innerHTML=detailsBlock("All Other Current Events",groups.activeMore,nowMoreOpen);
+  document.getElementById("now-more").innerHTML=detailsBlock("All Other Current Events",groups.activeMore,nowMoreOpen,"now-more");
   document.getElementById("next-top").innerHTML=groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock();
   document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block"><div class="extra-title">More Activity · Ranks 4–5</div>${{groups.upcomingExtra.map((e,i)=>miniCard(e,4+i)).join("")}}</div>`:"";
-  document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen);
+  document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen,"next-more");
 }}
 
 document.getElementById("time-zone-tools")?.addEventListener("click",ev=>{{
@@ -2118,7 +2145,13 @@ document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
 
 const contentFilter=document.getElementById("content-filter");
 contentFilter?.addEventListener("toggle",()=>{{
-  if(contentFilter.open) requestAnimationFrame(positionContentMenu);
+  const menu=document.getElementById("content-filter-menu");
+  if(contentFilter.open) {{
+    if(menu) menu.classList.remove("positioned");
+    positionContentMenu();
+  }} else if(menu) {{
+    menu.classList.remove("positioned");
+  }}
 }});
 document.addEventListener("pointerdown",ev=>{{
   if(contentFilter?.open && !contentFilter.contains(ev.target)) closeContentMenu();
@@ -2140,6 +2173,7 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
 }});
 
 updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);restoreTransientUiState();setInterval(tickClock,1000);
+window.addEventListener("pagehide",stashTransientUiState);
 // Exact local category transition, independent of Pages publication latency.
 setInterval(()=>renderLive(false),2000);
 

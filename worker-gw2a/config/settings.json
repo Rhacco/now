@@ -8,12 +8,12 @@
     "catalog": 720,
     "ninja": 360,
     "metasheet": 10,
-    "hardstuck": 10,
-    "ttwurm": 15,
-    "dcap": 15,
-    "gw2community": 15,
-    "vip": 15,
-    "choya": 15,
+    "hardstuck": 15,
+    "ttwurm": 30,
+    "dcap": 30,
+    "gw2community": 20,
+    "vip": 20,
+    "choya": 20,
     "fast": 720,
     "news": 240,
     "maps": 1440
@@ -61,6 +61,6 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.8.3",
+  "engine_version": "1.8.4",
   "extra_limit": 2
 }
