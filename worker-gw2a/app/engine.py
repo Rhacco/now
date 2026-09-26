@@ -13,20 +13,25 @@ import tempfile
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.5"
+ENGINE_VERSION = "1.9.0"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "gw2a" / "index.html"
 
 URLS = {
+    "waypoints": "https://api.guildwars2.com/v2/continents/1/floors/1?lang=en",
+    "waypoints_desert": "https://api.guildwars2.com/v2/continents/1/floors/49/regions/12?lang=en",
+    "event_levels": "https://api.guildwars2.com/v1/event_details.json?lang=en",
     "maps": "https://api.guildwars2.com/v2/maps?ids=all&lang=en",
     "catalog": "https://raw.githubusercontent.com/giovazz89/gw2-api-event-timers/main/events.json",
     "ninja": "https://gw2.ninja/timer",
@@ -34,7 +39,7 @@ URLS = {
     "hardstuck": "https://hardstuck.gg/events/",
     "ttwurm": "https://sites.google.com/view/ttwurm/calendar",
     "dcap": "https://wiki.guildwars2.com/wiki/User:DCAP",
-    "gw2community": "https://gw2community.de/calendar/calendar-export/273/",
+    "gw2community": "https://gw2community.de/calendar/calendar-feed/",
     "vip": "https://gw2vip.net/",
     "choya": "https://choyaaa.com/meta",
     "fast": "https://fast.farming-community.eu/open-world/meta",
@@ -51,21 +56,26 @@ ANNOUNCEMENT_SOURCE_URLS = {
     "Choyareset": "https://choyaaa.com/meta",
 }
 
+SOURCE_REGIONS = {"metasheet": "EU", "ttwurm": "EU", "gw2community": "EU", "dcap": "NA", "vip": "NA"}
+
 
 CACHE_SCHEMA_VERSION = 2
-MAX_RESPONSE_BYTES = 8 * 1024 * 1024
+MAX_RESPONSE_BYTES = 16 * 1024 * 1024
 
 SOURCE_DATA_VERSIONS = {
-    "maps": 1,
-    "catalog": 1,
-    "ninja": 1,
+    "maps": 2,
+    "catalog": 2,
+    "waypoints": 1,
+    "waypoints_desert": 1,
+    "event_levels": 1,
+    "ninja": 2,
     "metasheet": 1,
     "hardstuck": 1,
     "ttwurm": 1,
     "dcap": 1,
-    "gw2community": 1,
+    "gw2community": 2,
     "vip": 1,
-    "choya": 1,
+    "choya": 2,
     "fast": 1,
     "news": 1,
 }
@@ -171,6 +181,67 @@ PHASE_PENALTIES = {
     "Crash Site": -12,
     "Escorts": -8
 }
+
+# Identities, content origin and entry maps verified against the GW2 Wiki,
+# 2026-09-26. Instance type and level scaling are deliberately independent.
+PUBLIC_INSTANCES = (
+    ("The Twisted Marionette", "Living World Season 1", "Eye of the North", False),
+    ("The Tower of Nightmares", "Living World Season 1", "Eye of the North", False),
+    ("The Battle For Lion's Arch", "Living World Season 1", "Eye of the North", False),
+    ("Dragonstorm", "The Icebrood Saga", "Eye of the North", False),
+    ("Convergence: Outer Nayos", "Secrets of the Obscure", "The Wizard's Tower", False),
+    ("Convergence: Mount Balrior", "Janthir Wilds", "Lowland Shore · Harvest Den", False),
+    ("Convergence: Nexus of Eternity", "Visions of Eternity", "Leyspring Hollows · Rooted Sanctuary", False),
+    ("Dragon Arena", "Special Events", "Hoelbrak · Lake Mourn", True),
+)
+
+
+def instance_identity(value: str) -> str:
+    value = re.sub(r"\s*\((?:public|private|challenge mode)\)\s*$", "", value.strip(), flags=re.I)
+    return re.sub(r"^the ", "", norm(value))
+
+
+def public_instance_meta(c: "Candidate") -> tuple[str, str, str, bool] | None:
+    wiki_path = urllib.parse.unquote(urllib.parse.urlsplit(c.wiki).path)
+    wiki_title = wiki_path.removeprefix("/wiki/").replace("_", " ")
+    labels = {instance_identity(c.event), instance_identity(wiki_title)}
+    # A generic track is only useful with its content category; never treat
+    # every unrelated occurrence of the word 'convergence' as this content.
+    if norm(c.track) == "convergences" and content_meta(c.category)["id"] == "soto":
+        labels.add(instance_identity("Convergence: Outer Nayos"))
+    for item in PUBLIC_INSTANCES:
+        if instance_identity(item[0]) in labels:
+            return item
+    # A phase can carry the instance identity in its track. Mount Balrior
+    # alone is ambiguous (also a raid), so do not infer it from that name.
+    track = instance_identity(c.track)
+    for item in PUBLIC_INSTANCES:
+        if track == instance_identity(item[0]) and (
+            item[0].startswith("Convergence:") or track in {
+                "dragonstorm", "twisted marionette", "tower of nightmares",
+                "battle for lion s arch", "dragon arena",
+            }
+        ):
+            return item
+    return None
+
+
+def is_known_level80_public_instance(c: "Candidate") -> bool:
+    meta = public_instance_meta(c)
+    return bool(meta and not meta[3])
+
+
+def is_structured_convergence(c: "Candidate") -> bool:
+    """Forward-compatible, corroborated identity; not a free substring match."""
+    title = urllib.parse.unquote(urllib.parse.urlsplit(c.wiki).path).removeprefix("/wiki/").replace("_", " ")
+    named = bool(re.match(r"^Convergence\s*:\s*\S", c.event, re.I))
+    wiki_match = named and norm(c.event) == norm(title)
+    track_match = norm(c.track) in {"convergence", "convergences"}
+    content_id = content_meta(c.category)["id"]
+    return named and (wiki_match or track_match) and (
+        content_id in {"soto", "jw", "voe"} or norm(c.category) == "public instances"
+    )
+
 
 SPECIAL_RECURRING_TERMS = (
     # Rotating / invasion / incursion / anomaly style events.
@@ -279,6 +350,10 @@ class Candidate:
     level: int | None = None
     level_min: int | None = None
     special: bool = False
+    event_id: str = ""
+    public_instance: bool = False
+    upscaled: bool = False
+    level_kind: str = "map"
 
     def key(self) -> str:
         minute = self.start.astimezone(timezone.utc).replace(second=0, microsecond=0).isoformat()
@@ -364,7 +439,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.5 (+GitHub Actions; static community dashboard)",
+            "User-Agent": f"gw2action/{ENGINE_VERSION} (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -440,6 +515,8 @@ def source_item_count(name: str, data: Any) -> int | None:
         return len(data)
     if not isinstance(data, dict):
         return None
+    if name in {"waypoints", "waypoints_desert", "event_levels"}:
+        return len(data)
 
     key_map = {
         "ninja": "occurrences",
@@ -579,6 +656,15 @@ def refresh_cached(
     except Exception as exc:
         message = f"{type(exc).__name__}: {exc}"
         record_failure(entry, now, message)
+        if isinstance(exc, urllib.error.HTTPError) and exc.code in {429, 503}:
+            retry = exc.headers.get("Retry-After", "") if exc.headers else ""
+            try:
+                retry_at = now + timedelta(seconds=max(0, int(retry))) if retry.isdigit() else parsedate_to_datetime(retry)
+                retry_at = retry_at.astimezone(timezone.utc)
+                if retry_at > parse_iso(entry["retry_after"]):
+                    entry["retry_after"] = iso(retry_at)
+            except (ValueError, TypeError, OverflowError):
+                pass
         return previous, True, message
 
 
@@ -594,6 +680,7 @@ def user_status_notice(
     state: dict[str, Any],
     ttl: dict[str, Any],
     now: datetime,
+    region: str = "EU",
 ) -> str:
     notices: list[str] = []
 
@@ -617,6 +704,8 @@ def user_status_notice(
     ]
     degraded = 0
     for name in community_names:
+        if SOURCE_REGIONS.get(name, region) != region:
+            continue
         entry = state.get("sources", {}).get(name, {})
         age = source_age_minutes(state, name, now)
         source_ttl = int(ttl.get(name, 15) or 15)
@@ -641,6 +730,7 @@ def parse_maps(raw: str) -> list[dict[str, Any]]:
         if not isinstance(item, dict) or not item.get("name"):
             continue
         out.append({
+            "id": item.get("id"),
             "name": item.get("name", ""),
             "min_level": int(item.get("min_level", 0) or 0),
             "max_level": int(item.get("max_level", 0) or 0),
@@ -648,6 +738,37 @@ def parse_maps(raw: str) -> list[dict[str, Any]]:
         })
     if len(out) < 50:
         raise ValueError(f"maps unexpectedly small: {len(out)}")
+    return out
+
+
+def parse_waypoints(raw: str) -> dict[str, Any]:
+    data = json.loads(raw)
+    regions = data.get("regions", {"region": data})
+    out = {}
+    for region in regions.values():
+        for map_id, area in region.get("maps", {}).items():
+            for poi in area.get("points_of_interest", {}).values():
+                if poi.get("type") != "waypoint" or not poi.get("name"):
+                    continue
+                code = poi.get("chat_link", "").strip()
+                if not re.fullmatch(r"\[&[A-Za-z0-9+/=]+\]", code):
+                    continue
+                out[code] = {"name": poi["name"], "map": area["name"],
+                             "map_id": int(map_id), "min_level": area.get("min_level", 0),
+                             "max_level": area.get("max_level", 0)}
+    if not out:
+        raise ValueError("no official waypoint records")
+    return out
+
+
+def parse_event_levels(raw: str) -> dict[str, Any]:
+    events = json.loads(raw).get("events", {})
+    out = {key: {"level": value["level"], "map_id": value["map_id"]}
+           for key, value in events.items()
+           if isinstance(value, dict) and isinstance(value.get("level"), int)
+           and 1 <= value["level"] <= 80 and isinstance(value.get("map_id"), int)}
+    if len(out) < 100:
+        raise ValueError("event metadata unexpectedly small")
     return out
 
 
@@ -671,7 +792,8 @@ def parse_catalog(raw: str) -> list[dict[str, Any]]:
             segments.append({
                 "id": seg.get("id"),
                 "name": seg.get("name", ""),
-                "chatlink": seg.get("chatlink", ""),
+                "chatlink": str(seg.get("chatlink", "")).strip(),
+                "event_id": seg.get("v1_event_id", ""),
                 "link": seg.get("link", track.get("link", "")),
                 "lfg": seg.get("lfg", 0) or 0,
                 "rewards": seg.get("rewards", {}) or {}
@@ -697,7 +819,7 @@ def parse_ninja(raw: str) -> dict[str, Any]:
     )
     occ = []
     for m in event_re.finditer(raw):
-        name = bytes(m.group("name"), "utf-8").decode("unicode_escape", errors="ignore")
+        name = json.loads('"' + m.group("name") + '"')
         occ.append({"start_minute": int(m.group("start")), "end_minute": int(m.group("end")), "event": name, "waypoint": m.group("wp")})
     if not occ:
         raise ValueError("no Ninja occurrences parsed")
@@ -789,9 +911,13 @@ def unfold_ical(raw: str) -> list[str]:
     return out
 
 
-def parse_ical_dt(value: str) -> datetime | None:
+def parse_ical_dt(value: str, tzid: str = "UTC") -> datetime | None:
     value = value.strip()
-    for fmt, tz in [("%Y%m%dT%H%M%SZ", timezone.utc), ("%Y%m%dT%H%M%S", timezone.utc), ("%Y%m%dT%H%M", timezone.utc)]:
+    try:
+        local_tz = ZoneInfo(tzid)
+    except (ValueError, KeyError):
+        return None
+    for fmt, tz in [("%Y%m%dT%H%M%SZ", timezone.utc), ("%Y%m%dT%H%M%S", local_tz), ("%Y%m%dT%H%M", local_tz)]:
         try:
             return datetime.strptime(value, fmt).replace(tzinfo=tz)
         except ValueError:
@@ -800,6 +926,27 @@ def parse_ical_dt(value: str) -> datetime | None:
 
 
 def parse_gw2community(raw: str) -> list[dict[str, Any]]:
+    if "<rss" in raw[:500]:
+        # The public feed expands recurring appointments. pubDate is the
+        # posting date, NOT the occurrence time; read the explicit title date.
+        root = ET.fromstring(raw)
+        months = {name: i for i, name in enumerate(("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"), 1)}
+        out = []
+        for item in root.findall("./channel/item"):
+            title = item.findtext("title", "")
+            match = re.search(r"\((?:\w+), (\d{1,2})\. (\w+) (\d{4}), (\d{2}):(\d{2})(?:[–-](\d{2}):(\d{2}))?\)$", title)
+            if not match or match[2] not in months:
+                continue
+            start = datetime(int(match[3]), months[match[2]], int(match[1]), int(match[4]), int(match[5]), tzinfo=ZoneInfo("Europe/Berlin"))
+            end = start.replace(hour=int(match[6]), minute=int(match[7])) if match[6] else start + timedelta(hours=2)
+            if end <= start:
+                end += timedelta(days=1)
+            out.append({"title": title[:match.start()].strip(), "start": iso(start), "end": iso(end), "url": item.findtext("link", ""), "region": "EU"})
+        if root.findall("./channel/item") and not out:
+            raise ValueError("calendar feed contains no readable occurrence dates")
+        return out
+    if "BEGIN:VCALENDAR" not in raw:
+        raise ValueError("expected calendar RSS or iCalendar data")
     lines = unfold_ical(raw)
     blocks: list[list[str]] = []
     cur: list[str] | None = None
@@ -814,13 +961,19 @@ def parse_gw2community(raw: str) -> list[dict[str, Any]]:
     out = []
     for block in blocks:
         props: dict[str, str] = {}
+        zones: dict[str, str] = {}
         for line in block:
             if ":" not in line:
                 continue
             k, v = line.split(":", 1)
             props[k.split(";", 1)[0]] = v
-        start = parse_ical_dt(props.get("DTSTART", ""))
-        end = parse_ical_dt(props.get("DTEND", ""))
+            zone = re.search(r'(?:^|;)TZID="?([^;"\r\n]+)', k)
+            if zone:
+                zones[k.split(";", 1)[0]] = zone[1]
+        if props.get("STATUS") == "CANCELLED":
+            continue
+        start = parse_ical_dt(props.get("DTSTART", ""), zones.get("DTSTART", "UTC"))
+        end = parse_ical_dt(props.get("DTEND", ""), zones.get("DTEND", "UTC"))
         if not start:
             continue
         out.append({
@@ -858,32 +1011,33 @@ def parse_vip(raw: str) -> list[dict[str, Any]]:
 
 
 def parse_choya(raw: str) -> dict[str, Any]:
-    text = strip_tags(raw)
-    join = ""
-    jm = re.search(r"(?i)/sqjoin\s+[^\n<]{2,80}", text)
-    if jm:
-        join = jm.group(0).strip()
-    pairs = []
-    # Source label -> canonical timer event. Some route labels are playful.
-    names = [
-        ("Tequatl the Sunless", "Tequatl the Sunless"),
-        ("Ley-Line Anomaly", "Ley-Line Anomaly"),
-        ("Treasure Mushroom", "Treasure Mushroom"),
-        ("Chak Gerent", "Chak Gerent"),
-        ("Octovine", "Octovine"),
-        ("The Ooze Pits", "Ooze Pits"),
-        ("Shackles of the Choya", "Shackles of the Ancients")
-    ]
-    for source_name, canonical in names:
-        i = text.lower().find(source_name.lower())
-        if i < 0:
+    aliases = {
+        "bonk tequatl": "Tequatl the Sunless", "bonk naked man": "Ley-Line Anomaly",
+        "eat chak gerent": "Chak Gerent", "save gold city from evil plant": "Octovine",
+        "slurp the ooze": "Ooze Pits", "shackles of the choya": "Shackles of the Ancients",
+        "depths of choya": "Depths of Cruelty", "bearvergence": "Convergence: Mount Balrior",
+        "beamvergence": "Convergence: Nexus of Eternity", "chovergence": "Convergence: Outer Nayos",
+        "choyastorm": "Dragonstorm", "choyakkar": "Drakkar and Spirits of the Wild",
+    }
+    out = []
+    for block in re.split(r'<div[^>]+class="stop-card"', raw)[1:]:
+        title = re.search(r'class="stop-boss"[^>]*>(.*?)</span>', block, re.S)
+        utc = re.search(r'data-utc="(\d{2}:\d{2})"', block)
+        code = re.search(r'data-code="([^"<>]+)"', block)
+        if not title or not utc or not code:
             continue
-        snippet = text[i:i+360]
-        wp = re.search(r"\[&[A-Za-z0-9+/=]{6,24}\]", snippet)
-        pairs.append({"title": canonical, "waypoint": wp.group(0) if wp else ""})
-    if not pairs:
-        raise ValueError("Choyareset route not found")
-    return {"sqjoin": join, "route": pairs}
+        name = norm(strip_tags(title[1]))
+        canonical = aliases.get(name) or ALIASES.get(name)
+        if canonical:
+            out.append({"title": canonical, "time_utc": utc[1], "waypoint": html.unescape(code[1])})
+    if not out:
+        raise ValueError("Choyareset route has no explicit timed stops")
+    # Do not infer a game region from the displayed timezone.
+    text = norm(strip_tags(raw))
+    na = bool(re.search(r"\b(?:north america|north american|na servers?|na region)\b", text))
+    eu = bool(re.search(r"\b(?:european servers?|eu servers?|eu region)\b", text))
+    region = "NA" if na and not eu else "EU" if eu and not na else ""
+    return {"route": out, "region": region}
 
 
 def parse_fast(raw: str) -> dict[str, Any]:
@@ -906,12 +1060,16 @@ def parse_news(raw: str) -> dict[str, Any]:
 def segment_location(track_name: str, event_name: str) -> str:
     if event_name in LOCATION_OVERRIDES:
         return LOCATION_OVERRIDES[event_name]
-    if track_name == "Ley-Line Anomaly":
+    if track_name in {"Ley-Line Anomaly", "Dragon Bash"}:
         return event_name
     return track_name
 
 
 def display_name(track_name: str, event_name: str) -> str:
+    if track_name == "Ley-Line Anomaly":
+        return "Ley-Line Anomaly"
+    if track_name == "Dragon Bash":
+        return "Hologram Stampede"
     if track_name in TRACK_DISPLAY_OVERRIDES:
         return TRACK_DISPLAY_OVERRIDES[track_name]
     return event_name
@@ -958,7 +1116,7 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
             # previous day's expansion already emits that real start time.
             if skip_first_emit and idx == 0:
                 continue
-            if not ev or ev in EXCLUDED_EVENTS or not wp:
+            if not ev or ev in EXCLUDED_EVENTS:
                 continue
             disp = display_name(name, ev)
             wiki_link = seg.get("link", "")
@@ -975,7 +1133,8 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
                 source="gw2-api-event-timers",
                 wiki=wiki_url(wiki_link),
                 base_priority=base_priority(cfg, track.get("category", ""), name, ev, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0)),
-                special=is_special_recurring(disp, name)
+                special=is_special_recurring(disp, name),
+                event_id=seg.get("event_id", "")
             ))
 
     partial_is_tail = bool(
@@ -1097,7 +1256,8 @@ def apply_map_levels(cands: list[Candidate], maps: list[dict[str, Any]] | None) 
         if not name:
             continue
         old = lookup.get(name)
-        if old is None or int(item.get("max_level", 0) or 0) > int(old.get("max_level", 0) or 0):
+        # Prefer the open-world map to a same-named story/raid instance.
+        if old is None or (item.get("type") == "Public", int(item.get("max_level", 0) or 0)) > (old.get("type") == "Public", int(old.get("max_level", 0) or 0)):
             lookup[name] = item
 
     for c in cands:
@@ -1115,6 +1275,73 @@ def apply_map_levels(cands: list[Candidate], maps: list[dict[str, Any]] | None) 
         if max_level > 0:
             c.level = max_level
             c.level_min = min_level if min_level > 0 else max_level
+
+
+def apply_known_level_overrides(cands: list[Candidate]) -> None:
+    for c in cands:
+        meta = public_instance_meta(c)
+        if meta:
+            c.category, c.location = meta[1], meta[2]
+            c.wiki = wiki_url(meta[0])
+            c.public_instance = True
+            c.upscaled = meta[3]
+            c.level_kind = "upscaled" if c.upscaled else "public"
+            c.level = c.level_min = 80
+        elif is_structured_convergence(c):
+            c.public_instance = True
+            c.level_kind = "public"
+            c.level = 80
+            c.level_min = 80
+
+
+WIKI_OVERRIDES = {
+    "Maws of Torment": "Maws of Torment", "Junundu Rising": "Junundu Rising",
+    "Serpents' Ire": "Serpents' Ire", "Forged with Fire": "Forged with Fire",
+    "The Oil Floes": "The Oil Floes", "Preparations": "The Battle for the Jade Sea",
+}
+
+
+def apply_metadata(cands: list[Candidate], cfg: dict[str, Any], values: dict[str, Any]) -> None:
+    """Enrich by source IDs/exact identities before using verified fallbacks."""
+    fallback = cfg.get("verified_metadata", {})
+    waypoint_data = dict(fallback.get("waypoints", {}))
+    for source in ("waypoints_desert", "waypoints"):
+        waypoint_data.update(values.get(source) or {})
+    maps = values.get("maps") or fallback.get("maps", [])
+    event_levels = dict(fallback.get("event_levels", {}))
+    event_levels.update(values.get("event_levels") or {})
+    track_data = fallback.get("tracks", {})
+    apply_map_levels(cands, maps)
+    map_by_id = {m.get("id"): m for m in maps}
+    for c in cands:
+        saved = track_data.get(norm(c.track), {})
+        if content_meta(c.category)["id"] == "unknown" and not c.category.strip():
+            c.category = saved.get("category", c.category)
+        if not c.waypoint:
+            c.waypoint = saved.get("entry_waypoint", "")
+        point = waypoint_data.get(c.waypoint)
+        if point:
+            c.waypoint_name = point["name"]
+            if not c.level and point.get("max_level", 0) > 0:
+                c.level = point["max_level"]
+                c.level_min = point.get("min_level") or c.level
+        detail = event_levels.get(c.event_id)
+        if detail:
+            c.level = c.level_min = detail["level"]
+            c.level_kind = "event"
+            if not c.location and detail.get("map_id") in map_by_id:
+                c.location = map_by_id[detail["map_id"]]["name"]
+        if not c.wiki and c.event in WIKI_OVERRIDES:
+            c.wiki = wiki_url(WIKI_OVERRIDES[c.event])
+    apply_known_level_overrides(cands)
+
+
+def is_level80_content(c: Candidate) -> bool:
+    if c.upscaled:
+        return False
+    if c.level_kind in {"event", "public"}:
+        return c.level == 80
+    return c.level == 80 and c.level_min == 80
 
 
 def apply_ninja_waypoints(cands: list[Candidate], ninja: dict[str, Any] | None) -> None:
@@ -1143,14 +1370,19 @@ def nearest_target(cands: list[Candidate], target: str, when: datetime, window_m
 
 def resolve_alias(title: str, cands: list[Candidate]) -> str | None:
     n = norm(title)
+    # These are different activities, even when they mention a timed meta/map.
+    if re.search(r"\b(?:cm|challenge mode|private|map clear|map completion|hp train)\b", n):
+        return None
     for key, target in ALIASES.items():
-        if key in n:
+        if re.search(r"\b" + re.escape(key) + r"\b", n):
             return target
     # Exact occurrence name/track is safer than fuzzy matching.
     names = sorted({c.event for c in cands} | {c.track for c in cands}, key=len, reverse=True)
     for name in names:
         nn = norm(name)
-        if len(nn) >= 7 and nn in n:
+        if nn in {"convergence", "convergences", "eye of the north", "the mists"}:
+            continue
+        if len(nn) >= 7 and re.search(r"\b" + re.escape(nn) + r"\b", n):
             return name
     return None
 
@@ -1223,7 +1455,7 @@ def apply_community(
                     ANNOUNCEMENT_ALLOWED_HOSTS,
                 ) or ANNOUNCEMENT_SOURCE_URLS.get(source_name, "")
                 add_community_signal(
-                    cands, target, start, source_name, 150,
+                    cands, target, start, source_name, 30,
                     announcement_url=announcement_url
                 )
 
@@ -1263,18 +1495,16 @@ def apply_community(
                         announcement_url=ANNOUNCEMENT_SOURCE_URLS["DCAP"]
                     )
 
-    # Choyareset: daily route starts around daily reset. Use its direct waypoints only
-    # when the corresponding timed event itself is present in the catalog window.
-    if choya:
+    # Use the source's explicit UTC route stops and a confirmed game region.
+    if choya and choya.get("region") == region:
         route = choya.get("route", [])
         for item in route:
             target = ALIASES.get(norm(item.get("title", "")), item.get("title", ""))
-            # Only route occurrences within 3 hours after reset are plausible train stops.
             for c in cands:
                 if norm(c.event) != norm(target) and norm(c.track) != norm(target):
                     continue
-                minutes_after_reset = (c.start.hour * 60 + c.start.minute)
-                if 0 <= minutes_after_reset <= 180:
+                hhmm = item.get("time_utc", "")
+                if c.start.strftime("%H:%M") == hhmm:
                     c.lightning = True
                     if "Choyareset" not in c.community_sources:
                         c.community_sources.append("Choyareset")
@@ -1356,7 +1586,6 @@ def choose(
     list[Candidate], list[Candidate],
     list[Candidate], list[Candidate]
 ]:
-    cands = [c for c in cands if c.waypoint]
     score_candidates(cands, now)
     cands = dedupe(cands)
 
@@ -1441,7 +1670,11 @@ def heat_hue(value: float, low: float, high: float) -> int:
 
 
 def content_meta(category: str) -> dict[str, Any]:
-    return CONTENT_BY_CATEGORY.get(category, CONTENT_UNKNOWN)
+    category_key = norm(category)
+    for item in CONTENT_GROUPS:
+        if category_key in {norm(item["category"]), norm(item["short"]), norm(item["id"])}:
+            return item
+    return CONTENT_UNKNOWN
 
 
 def content_badge(c: Candidate) -> str:
@@ -1461,12 +1694,7 @@ def waypoint_label(c: Candidate) -> str:
     """Best confirmed human-readable destination for the waypoint button."""
     if c.waypoint_name.strip():
         return c.waypoint_name.strip()
-    parts = [part.strip() for part in c.location.split("·") if part.strip()]
-    if len(parts) > 1 and "map-wide" not in parts[-1].lower():
-        return parts[-1]
-    if c.location.strip():
-        return c.location.strip()
-    return c.event.strip() or "Waypoint"
+    return "Waypoint (name unavailable)"
 
 
 def content_options_payload() -> list[dict[str, str]]:
@@ -1486,11 +1714,20 @@ def level_badge(c: Candidate) -> str:
     if not c.level:
         return '<span class="badge level-na" title="Map level unavailable">Level n/a</span>'
     hue = heat_hue(c.level, 20, 80)
-    if c.level_min and c.level_min != c.level:
+    label = f"Level {c.level}"
+    if c.upscaled:
+        title = "Public instance · Characters scale up to level 80"
+        label = "Scaled 80"
+    elif c.public_instance:
+        title = "Level 80 · Public instance"
+    elif c.level_kind == "event":
+        title = f"Event level {c.level}"
+    elif c.level_min and c.level_min != c.level:
         title = f'Map level {c.level_min}–{c.level}'
+        label = f'Map {c.level_min}–{c.level}'
     else:
         title = f'Map level {c.level}'
-    return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">Level {c.level}</span>'
+    return f'<span class="badge heat" style="--h:{hue}" title="{html.escape(title)}">{label}</span>'
 
 
 
@@ -1501,7 +1738,7 @@ def client_event_pool(
 ) -> list[Candidate]:
     # Keep enough absolute-time data in the page for exact client-side boundary updates.
     horizon = int(cfg.get("upcoming_horizon_minutes", 120))
-    deduped = dedupe([c for c in cands if c.waypoint])
+    deduped = dedupe(cands)
     low = now - timedelta(minutes=20)
     high = now + timedelta(minutes=horizon + 15)
 
@@ -1534,6 +1771,7 @@ def client_event_payload(cands: list[Candidate]) -> list[dict[str, Any]]:
             "waypoint": c.waypoint,
             "waypoint_label": waypoint_label(c),
             "level": c.level,
+            "level80_content": is_level80_content(c),
             "content_id": content_meta(c.category)["id"],
             "content_html": content_badge(c),
             "priority_html": priority_badge(c),
@@ -1582,28 +1820,35 @@ def event_links(c: Candidate) -> str:
     return info_link(c) + announcement_link(c)
 
 
+def waypoint_button(c: Candidate, extra_class: str = "") -> str:
+    if not c.waypoint:
+        return '<span class="waypoint-missing" title="See the Wiki link for directions">Waypoint unavailable</span>'
+    label = html.escape(waypoint_label(c))
+    code = html.escape(c.waypoint)
+    return f'<button class="wp {extra_class}" data-copy="{code}" title="Copy: {label}" aria-label="Copy: {label}">{code}</button>'
+
+
 def card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     st = c.start.astimezone(tz)
     time_label = st.strftime("%H:%M")
     return f'''<article class="event-card">
       <div class="time">{time_label}</div>
       <div class="info">
-        <div class="event-line"><span class="name">{signal_flash(c)}{html.escape(c.event)}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></div>
+        <div class="event-line"><span class="name" title="{html.escape(c.event)}">{signal_flash(c)}{html.escape(c.event)}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="{html.escape(c.location)}">{html.escape(c.location)}</span></div>
         <div class="badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
       </div>
-      <button class="wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
+      {waypoint_button(c)}
     </article>'''
 
 
-def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool, rank: int) -> str:
+def mini_card_html(c: Candidate, tz: ZoneInfo, upcoming: bool) -> str:
     st = c.start.astimezone(tz)
     time_label = st.strftime("%H:%M")
     return f'''<div class="mini-card">
-      <span class="rank">{rank}</span>
       <span class="mini-time">{time_label}</span>
-      <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b>{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
+      <div class="mini-info"><span class="mini-line">{signal_flash(c)}<b title="{html.escape(c.event)}">{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="{html.escape(c.location)}">{html.escape(c.location)}</span></span></div>
       <div class="mini-badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
-      <button class="wp mini-wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
+      {waypoint_button(c, "mini-wp")}
     </div>'''
 
 
@@ -1611,9 +1856,9 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
     st = c.start.astimezone(tz)
     return f'''<div class="all-card">
       <span class="all-time">{st.strftime("%H:%M")}</span>
-      <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title">{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">{html.escape(c.location)}</span></span></div>
+      <div class="all-info"><span class="title-row">{signal_flash(c)}<b class="event-title" title="{html.escape(c.event)}">{html.escape(c.event)}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="{html.escape(c.location)}">{html.escape(c.location)}</span></span></div>
       <div class="all-badges">{priority_badge(c)}{level_badge(c)}{content_badge(c)}{event_links(c)}</div>
-      <button class="wp all-wp" data-copy="{html.escape(c.waypoint)}" title="Copy: {html.escape(waypoint_label(c))}" aria-label="Copy: {html.escape(waypoint_label(c))}">{html.escape(c.waypoint)}</button>
+      {waypoint_button(c, "all-wp")}
     </div>'''
 
 
@@ -1642,6 +1887,7 @@ def page_version(
             c.waypoint, int(round(c.score)), c.level, c.category, c.lightning, c.special,
             c.announcement_url, action_window_minutes(c)
         ])
+    rows.append(client_event_payload(client_events))
     raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -1659,6 +1905,9 @@ def render_html(
         active, upcoming, active_extra, upcoming_extra,
         active_more, upcoming_more, client_events, notice
     )
+    # Refresh the finite client pool heartbeat even when an empty/sparse
+    # schedule produces identical event records for a while.
+    version = hashlib.sha256(f"{version}|{int(now.timestamp()) // 600}".encode()).hexdigest()[:16]
     client_json = json.dumps(
         client_event_payload(client_events),
         ensure_ascii=False,
@@ -1669,17 +1918,18 @@ def render_html(
         ensure_ascii=False,
         separators=(",", ":"),
     ).replace("</", "<\\/")
+    notice_json = json.dumps(notice).replace("<", "\\u003c")
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
-            return '<div class="empty">No events with a reliably resolved waypoint are currently available.</div>'
+            return '<div class="empty">No scheduled events in this time window.</div>'
         return "\n".join(card_html(c, tz, is_upcoming) for c in items)
 
     def extras(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return ""
-        rows = "\n".join(mini_card_html(c, tz, is_upcoming, 4 + i) for i, c in enumerate(items))
-        return f'<div class="extra-block"><div class="extra-title">More Activity · Ranks 4–5</div>{rows}</div>'
+        rows = "\n".join(mini_card_html(c, tz, is_upcoming) for c in items)
+        return f'<div class="extra-block">{rows}</div>'
 
     def expandable(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
@@ -1708,6 +1958,7 @@ body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI
 header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 12px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}}
 .status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
+.status-note[hidden]{{display:none}}
 .header-tools{{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:7px;position:relative;flex-wrap:wrap}}
 .control-group{{display:flex;align-items:center;gap:4px;position:relative;min-width:0}}
 .control-group+.control-group{{margin-left:2px;padding-left:9px;border-left:1px solid #2a2f36}}
@@ -1732,6 +1983,9 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .content-option:hover{{background:#1d2025;color:#fff}}
 .content-option input{{margin:0;accent-color:#d7aa42;flex:0 0 auto}}
 .content-option span{{white-space:nowrap}}
+.level-filter-option{{grid-column:1/-1;min-width:0}}
+.level-filter-option small{{font-size:inherit;color:var(--muted)}}
+@media(max-width:380px){{.level-filter-option small{{display:block}}}}
 .preference-note{{margin:14px 0 2px;text-align:center;color:#69717c;font-size:9px;line-height:1.3}}
 .preference-note.saved{{color:#77897b}}
 .preference-note.failed{{color:#b89278}}
@@ -1755,11 +2009,11 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .announcement{{color:#d5b76f}}
 .wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}}
 .wp:hover{{border-color:#69717e;background:#151820}}
-.extra-block{{margin:8px 0 4px;padding:8px 10px;background:#131519;border:1px solid #242931;border-radius:10px}}
-.extra-title{{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#7f8792;margin:0 0 5px 2px}}
-.mini-card{{display:grid;grid-template-columns:24px 78px 1fr auto 128px;gap:7px;align-items:center;padding:5px 4px;border-top:1px solid #252a31;min-height:42px}}
+.waypoint-missing{{font-size:10px;color:var(--muted)}}
+.sr-only{{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}}
+.extra-block{{margin:8px 0 4px;padding:4px 10px;background:#131519;border:1px solid #242931;border-radius:10px}}
+.mini-card{{display:grid;grid-template-columns:78px 1fr auto 128px;gap:7px;align-items:center;padding:5px 4px;border-top:1px solid #252a31;min-height:42px}}
 .mini-card:first-of-type{{border-top:0}}
-.rank{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#7f8792;text-align:center}}
 .mini-time{{font:800 11px ui-monospace,SFMono-Regular,Consolas,monospace}}
 .mini-info{{min-width:0}}
 .mini-info b{{font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;flex:0 1 auto}}
@@ -1789,9 +2043,9 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   .info{{grid-area:info;min-width:0}}
   .wp{{grid-area:wp;width:100%}}
   .name{{max-width:52%}}
-  .mini-card{{grid-template-columns:22px 58px 1fr}}
-  .mini-badges{{grid-column:3}}
-  .mini-wp{{grid-column:1/4;width:100%}}
+  .mini-card{{grid-template-columns:58px 1fr}}
+  .mini-badges{{grid-column:2}}
+  .mini-wp{{grid-column:1/3;width:100%}}
   .all-card{{grid-template-columns:50px 1fr}}
   .all-badges{{grid-column:2}}
   .all-wp{{grid-column:1/3;width:100%}}
@@ -1822,7 +2076,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
       </details>
     </div>
   </div>
-  {f'<div class="status-note">{html.escape(notice)}</div>' if notice else ''}
+  <div id="data-status" class="status-note"{'' if notice else ' hidden'}>{html.escape(notice)}</div>
 </header>
 
 <h2>Now · Highest Activity</h2>
@@ -1834,13 +2088,19 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
 <footer id="preference-note" class="preference-note">Preferences will be saved in a single cookie.</footer>
+<span id="copy-status" class="sr-only" role="status"></span>
 </div>
 
 <script>
 const EVENT_DATA={client_json};
 const CONTENT_OPTIONS={content_options_json};
-const UPCOMING_HORIZON_MS=120*60*1000;
+const UPCOMING_HORIZON_MS={int(cfg.get("upcoming_horizon_minutes", 120))}*60*1000;
+const NOW_LIMIT={int(cfg.get("now_limit", 3))};
+const NEXT_LIMIT={int(cfg.get("next_limit", 3))};
+const EXTRA_LIMIT={int(cfg.get("extra_limit", 2))};
 const PRESTART_MS=5*60*1000;
+const DATA_GENERATED_AT_MS={int(now.timestamp()*1000)};
+const SOURCE_NOTICE={notice_json};
 
 let localZone="";
 try {{ localZone=Intl.DateTimeFormat().resolvedOptions().timeZone || ""; }} catch(e) {{}}
@@ -1861,7 +2121,9 @@ function cookiePath() {{
 }}
 function rawCookie(name) {{
   const prefix=`${{name}}=`;
-  for(const part of document.cookie.split(";")) {{
+  let raw="";
+  try {{ raw=document.cookie; }} catch(e) {{ return ""; }}
+  for(const part of raw.split(";")) {{
     const trimmed=part.trim();
     if(trimmed.startsWith(prefix)) return trimmed.slice(prefix.length);
   }}
@@ -1920,8 +2182,11 @@ function savePreferences() {{
   const payload={{v:2,time:timeMode,disabled:[...disabledContent].sort(),level80:showLevel80}};
   const encoded=encodeURIComponent(JSON.stringify(payload));
   const secure=window.location.protocol==="https:" ? "; Secure" : "";
-  document.cookie=`${{PREF_COOKIE_KEY}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;
-  const saved=rawCookie(PREF_COOKIE_KEY)===encoded;
+  let saved=false;
+  try {{
+    document.cookie=`${{PREF_COOKIE_KEY}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;
+    saved=rawCookie(PREF_COOKIE_KEY)===encoded;
+  }} catch(e) {{}}
   preferenceSaveState=saved ? "saved" : "failed";
   if(saved) {{
     try {{
@@ -1933,8 +2198,10 @@ function savePreferences() {{
   return saved;
 }}
 function contentEnabled(event) {{
-  const contentAllowed=event.content_id==="unknown" || !disabledContent.has(event.content_id);
-  const levelAllowed=showLevel80 || event.level!==80;
+  // Unknown categories stay visible by design so new content is never silently hidden.
+  if(event.content_id==="unknown") return true;
+  const contentAllowed=!disabledContent.has(event.content_id);
+  const levelAllowed=showLevel80 || !event.level80_content;
   return contentAllowed && levelAllowed;
 }}
 
@@ -1962,7 +2229,7 @@ function updateContentSummary() {{
   const total=CONTENT_OPTIONS.length;
   const enabled=total-disabledContent.size;
   const base=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
-  summary.textContent=showLevel80 ? base : `${{base}} · L80 off`;
+  summary.textContent=showLevel80 ? base : `${{base}} · Lvl 80 off`;
   summary.title="Filter content and level";
 }}
 
@@ -1970,7 +2237,7 @@ function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
   const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  const level80=`<label class="content-option level-filter-option" title="Turn off to hide level 80 events"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events · disable while leveling alts</span></label>`;
+  const level80=`<label class="content-option level-filter-option" title="Useful when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>(disable for leveling alts)</small></span></label>`;
   menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
 }}
@@ -1986,7 +2253,7 @@ function positionContentMenu() {{
   const viewportHeight=document.documentElement.clientHeight || window.innerHeight;
   const margin=8;
   const gap=6;
-  const width=Math.max(260,Math.min(640,viewportWidth-(margin*2)));
+  const width=Math.max(0,Math.min(640,viewportWidth-(margin*2)));
 
   menu.style.width=`${{width}}px`;
   menu.style.right="auto";
@@ -2000,11 +2267,11 @@ function positionContentMenu() {{
   const below=viewportHeight-rect.bottom-gap-margin;
   const above=rect.top-gap-margin;
   const placeBelow=below>=Math.min(desiredHeight,240) || below>=above;
-  const available=Math.max(150,Math.min(440,placeBelow?below:above));
+  const available=Math.max(0,Math.min(440,viewportHeight-margin*2,placeBelow?below:above));
   menu.style.maxHeight=`${{available}}px`;
 
   if(placeBelow) {{
-    menu.style.top=`${{Math.max(margin,rect.bottom+gap)}}px`;
+    menu.style.top=`${{Math.min(viewportHeight-margin-available,Math.max(margin,rect.bottom+gap))}}px`;
   }} else {{
     const top=Math.max(margin,rect.top-gap-available);
     menu.style.top=`${{top}}px`;
@@ -2021,25 +2288,53 @@ function closeContentMenu() {{
   if(filter?.open) filter.open=false;
 }}
 
-const TRANSIENT_UI_KEY="gw2action_ui_state_v2";
+const TRANSIENT_UI_KEY="gw2action_ui_state_v3:"+window.location.pathname;
+const detailsState={{}};
+
+function focusKey() {{
+  const el=document.activeElement;
+  if(el?.matches("input[data-content-id]")) return "content:"+el.dataset.contentId;
+  if(el?.matches("input[data-level80]")) return "level80";
+  if(el?.matches("[data-content-all]")) return "show-all";
+  if(el?.matches("[data-tz-mode]")) return "time:"+el.dataset.tzMode;
+  if(el?.matches("summary")) return "details:"+(el.parentElement.dataset.uiStateKey || "");
+  return "";
+}}
+function restoreFocus(key) {{
+  const controls=[...document.querySelectorAll("input[data-content-id],input[data-level80],[data-content-all],[data-tz-mode],details[data-ui-state-key]>summary")];
+  const target=controls.find(el=>
+    key==="content:"+el.dataset.contentId ||
+    (key==="level80" && el.matches("input[data-level80]")) ||
+    (key==="show-all" && el.hasAttribute("data-content-all")) ||
+    key==="time:"+el.dataset.tzMode ||
+    (el.matches("summary") && key==="details:"+el.parentElement.dataset.uiStateKey));
+  target?.focus({{preventScroll:true}});
+}}
+document.addEventListener("toggle",ev=>{{
+  const el=ev.target;
+  if(el?.isConnected && el.matches?.("details[data-ui-state-key]")) detailsState[el.dataset.uiStateKey]=el.open;
+}},true);
 
 function collectDetailsState() {{
-  const open={{}};
+  const open={{...detailsState}};
   document.querySelectorAll("details[data-ui-state-key]").forEach(item=>{{
     const key=item.dataset.uiStateKey;
     if(key) open[key]=Boolean(item.open);
   }});
+  Object.assign(detailsState,open);
   return open;
 }}
 
 function stashTransientUiState() {{
   const menu=document.getElementById("content-filter-menu");
   const state={{
-    v:2,
+    v:3,
     at:Date.now(),
     detailsOpen:collectDetailsState(),
     contentScrollTop:Number(menu?.scrollTop || 0),
-    pageScrollY:Number(window.scrollY || 0)
+    pageScrollY:Number(window.scrollY || 0),
+    focused:focusKey(),
+    preferences:{{time:timeMode,disabled:[...disabledContent],level80:showLevel80,state:preferenceSaveState}}
   }};
   try {{ sessionStorage.setItem(TRANSIENT_UI_KEY,JSON.stringify(state)); }} catch(e) {{}}
 }}
@@ -2052,9 +2347,20 @@ function restoreTransientUiState() {{
     if(raw) state=JSON.parse(raw);
   }} catch(e) {{ state=null; }}
 
-  if(!state || state.v!==2 || !Number.isFinite(state.at) || Date.now()-state.at>90000) return;
+  if(!state || state.v!==3 || !Number.isFinite(state.at) || Date.now()-state.at<0 || Date.now()-state.at>90000) return;
+
+  const pref=state.preferences;
+  if(pref) {{
+    timeMode=pref.time==="local" && localDistinct ? "local" : "server";
+    disabledContent=new Set((Array.isArray(pref.disabled)?pref.disabled:[]).filter(id=>knownContentIds.has(id)));
+    showLevel80=typeof pref.level80==="boolean"?pref.level80:true;
+    if(["idle","saved","failed"].includes(pref.state)) preferenceSaveState=pref.state;
+    clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();
+    updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();
+  }}
 
   if(state.detailsOpen && typeof state.detailsOpen==="object") {{
+    Object.assign(detailsState,state.detailsOpen);
     document.querySelectorAll("details[data-ui-state-key]").forEach(item=>{{
       const key=item.dataset.uiStateKey;
       if(key && Object.prototype.hasOwnProperty.call(state.detailsOpen,key)) {{
@@ -2062,6 +2368,7 @@ function restoreTransientUiState() {{
       }}
     }});
   }}
+  renderLive(true);
 
   const filter=document.getElementById("content-filter");
   const menu=document.getElementById("content-filter-menu");
@@ -2079,6 +2386,7 @@ function restoreTransientUiState() {{
       window.scrollTo({{top:Math.max(0,state.pageScrollY),left:0,behavior:"auto"}})
     ));
   }}
+  restoreFocus(state.focused || "");
 }}
 
 function clockFormatter() {{
@@ -2095,25 +2403,29 @@ function tickClock() {{ const el=document.getElementById("clock"); if(el) el.tex
 function esc(value) {{
   return String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('\"',"&quot;").replaceAll("'","&#39;");
 }}
-function topCard(e) {{
-  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div><button class="wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></article>`;
+function waypointButton(e,cls="") {{
+  if(!e.waypoint) return '<span class="waypoint-missing" title="See the Wiki link for directions">Waypoint unavailable</span>';
+  return `<button class="wp ${{cls}}" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button>`;
 }}
-function miniCard(e,rank) {{
-  return `<div class="mini-card"><span class="rank">${{rank}}</span><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b>${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp mini-wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></div>`;
+function topCard(e) {{
+  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name" title="${{esc(e.event)}}">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div>${{waypointButton(e,"")}}</article>`;
+}}
+function miniCard(e) {{
+  return `<div class="mini-card"><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"mini-wp")}}</div>`;
 }}
 function compactCard(e) {{
-  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div><button class="wp all-wp" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button></div>`;
+  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title" title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"all-wp")}}</div>`;
 }}
 
 function byScore(a,b) {{ return (b.score-a.score)||(Date.parse(a.start)-Date.parse(b.start))||a.event.localeCompare(b.event); }}
 function byTime(a,b) {{ return (Date.parse(a.start)-Date.parse(b.start))||(b.score-a.score)||a.event.localeCompare(b.event); }}
 function pickUpcomingExtras(rest) {{
   const spotlight=rest.filter(e=>e.special).sort(byTime);
-  const picked=spotlight.slice(0,2);
+  const picked=spotlight.slice(0,EXTRA_LIMIT);
   const keys=new Set(picked.map(e=>e.key));
-  if(picked.length<2) {{
+  if(picked.length<EXTRA_LIMIT) {{
     const fallback=rest.filter(e=>!keys.has(e.key)).sort(byScore);
-    picked.push(...fallback.slice(0,2-picked.length));
+    picked.push(...fallback.slice(0,EXTRA_LIMIT-picked.length));
   }}
   return picked;
 }}
@@ -2121,10 +2433,10 @@ function layoutAt(nowMs) {{
   const visible=EVENT_DATA.filter(contentEnabled);
   const active=visible.filter(e=>Date.parse(e.active_from)<=nowMs && nowMs<Date.parse(e.active_until));
   const upcoming=visible.filter(e=>{{const start=Date.parse(e.start);return (nowMs+PRESTART_MS)<start && start<=(nowMs+UPCOMING_HORIZON_MS);}});
-  const activeTop=[...active].sort(byScore).slice(0,3).sort(byTime);
+  const activeTop=[...active].sort(byScore).slice(0,NOW_LIMIT).sort(byTime);
   const activeTopKeys=new Set(activeTop.map(e=>e.key));
   const activeMore=active.filter(e=>!activeTopKeys.has(e.key)).sort(byTime);
-  const upcomingTop=[...upcoming].sort(byScore).slice(0,3).sort(byTime);
+  const upcomingTop=[...upcoming].sort(byScore).slice(0,NEXT_LIMIT).sort(byTime);
   const upcomingTopKeys=new Set(upcomingTop.map(e=>e.key));
   const upcomingRest=upcoming.filter(e=>!upcomingTopKeys.has(e.key));
   const upcomingExtra=pickUpcomingExtras(upcomingRest).sort(byTime);
@@ -2134,7 +2446,7 @@ function layoutAt(nowMs) {{
 }}
 function emptyBlock() {{
   const filtersActive=disabledContent.size>0 || !showLevel80;
-  const message=filtersActive ? "No events match the selected filters." : "No events with a reliably resolved waypoint are currently available.";
+  const message=filtersActive ? "No events match the selected filters." : "No scheduled events in this time window.";
   return `<div class="empty">${{message}}</div>`;
 }}
 function detailsBlock(label,items,wasOpen,stateKey) {{
@@ -2143,17 +2455,26 @@ function detailsBlock(label,items,wasOpen,stateKey) {{
 }}
 let lastLayoutSignature="";
 function renderLive(force=false) {{
-  const nowMoreOpen=document.querySelector("#now-more details")?.open || false;
-  const nextMoreOpen=document.querySelector("#next-more details")?.open || false;
+  const dataStatus=document.getElementById("data-status");
+  if(dataStatus) {{
+    const delayed=Date.now()>DATA_GENERATED_AT_MS+15*60*1000;
+    dataStatus.textContent=delayed ? "Updates are delayed; upcoming events may be incomplete." : SOURCE_NOTICE;
+    dataStatus.hidden=!dataStatus.textContent;
+  }}
+  const openState=collectDetailsState();
+  const nowMoreOpen=Boolean(openState["now-more"]);
+  const nextMoreOpen=Boolean(openState["next-more"]);
   const groups=layoutAt(Date.now());
   const signature=JSON.stringify([groups.activeTop.map(e=>e.key),groups.activeMore.map(e=>e.key),groups.upcomingTop.map(e=>e.key),groups.upcomingExtra.map(e=>e.key),groups.upcomingMore.map(e=>e.key),timeMode,[...disabledContent].sort(),showLevel80]);
   if(!force && signature===lastLayoutSignature) return;
+  const focused=focusKey();
   lastLayoutSignature=signature;
   document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
   document.getElementById("now-more").innerHTML=detailsBlock("All Other Current Events",groups.activeMore,nowMoreOpen,"now-more");
   document.getElementById("next-top").innerHTML=groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock();
-  document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block"><div class="extra-title">More Activity · Ranks 4–5</div>${{groups.upcomingExtra.map((e,i)=>miniCard(e,4+i)).join("")}}</div>`:"";
+  document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block">${{groups.upcomingExtra.map(e=>miniCard(e)).join("")}}</div>`:"";
   document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen,"next-more");
+  restoreFocus(focused);
 }}
 
 document.getElementById("time-zone-tools")?.addEventListener("click",ev=>{{
@@ -2184,7 +2505,12 @@ document.getElementById("content-filter-menu")?.addEventListener("change",ev=>{{
 document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   const all=ev.target.closest("[data-content-all]");
   if(!all) return;
+  const focused=focusKey();
+  const scrollTop=document.getElementById("content-filter-menu").scrollTop;
   disabledContent.clear();showLevel80=true;savePreferences();buildContentFilter();renderLive(true);
+  positionContentMenu();
+  document.getElementById("content-filter-menu").scrollTop=scrollTop;
+  restoreFocus(focused);
 }});
 
 const contentFilter=document.getElementById("content-filter");
@@ -2213,7 +2539,12 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
   const btn=ev.target.closest(".wp");
   if(!btn) return;
   const value=btn.dataset.copy;
-  try {{await navigator.clipboard.writeText(value);const old=btn.textContent;btn.textContent=`✓ ${{value}}`;setTimeout(()=>{{btn.textContent=old;}},900);}} catch(e) {{}}
+  try {{await navigator.clipboard.writeText(value);const old=btn.textContent;btn.textContent=`✓ ${{value}}`;setTimeout(()=>{{btn.textContent=old;}},900);}} catch(e) {{
+    const range=document.createRange();range.selectNodeContents(btn);
+    const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);
+    const status=document.getElementById("copy-status");
+    if(status) status.textContent="Automatic copy unavailable. Press Ctrl+C or Cmd+C to copy the selected waypoint.";
+  }}
 }});
 
 updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);restoreTransientUiState();setInterval(tickClock,1000);
@@ -2261,6 +2592,9 @@ def main() -> int:
 
     parsers = {
         "maps": parse_maps,
+        "waypoints": parse_waypoints,
+        "waypoints_desert": parse_waypoints,
+        "event_levels": parse_event_levels,
         "catalog": parse_catalog,
         "ninja": parse_ninja,
         "metasheet": parse_metasheet,
@@ -2276,6 +2610,9 @@ def main() -> int:
 
     values: dict[str, Any] = {}
     for name, parser in parsers.items():
+        if SOURCE_REGIONS.get(name, cfg.get("region", "EU")) != cfg.get("region", "EU"):
+            values[name] = None
+            continue
         if args.no_network:
             values[name] = state["sources"].get(name, {}).get("data")
             if values[name] is None:
@@ -2306,20 +2643,26 @@ def main() -> int:
 
     cands = catalog_candidates(catalog, cfg, now)
     cands.extend(verified_rotating_event_candidates(now))
-    apply_map_levels(cands, values.get("maps"))
     apply_ninja_waypoints(cands, values.get("ninja"))
+    def community_value(name: str) -> Any:
+        age = source_age_minutes(state, name, now)
+        if age is not None and age > max(180, int(ttl.get(name, 30)) * 3):
+            return None
+        return values.get(name)
+
     apply_community(
         cands,
         now,
         cfg.get("region", "EU"),
-        values.get("metasheet"),
-        values.get("hardstuck"),
-        values.get("ttwurm"),
-        values.get("dcap"),
-        values.get("gw2community"),
-        values.get("vip"),
-        values.get("choya"),
+        community_value("metasheet"),
+        community_value("hardstuck"),
+        community_value("ttwurm"),
+        community_value("dcap"),
+        community_value("gw2community"),
+        community_value("vip"),
+        community_value("choya"),
     )
+    apply_metadata(cands, cfg, values)
     apply_fast_context(cands, values.get("fast"))
 
     active, upcoming, active_extra, upcoming_extra, active_more, upcoming_more = choose(
@@ -2327,7 +2670,7 @@ def main() -> int:
     )
     client_events = client_event_pool(cands, cfg, now)
 
-    notice = user_status_notice(state, ttl, now)
+    notice = user_status_notice(state, ttl, now, cfg.get("region", "EU"))
 
     page = render_html(
         active,

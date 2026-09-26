@@ -11,12 +11,15 @@
     "hardstuck": 15,
     "ttwurm": 30,
     "dcap": 30,
-    "gw2community": 20,
+    "gw2community": 60,
     "vip": 20,
     "choya": 20,
     "fast": 720,
     "news": 240,
-    "maps": 1440
+    "maps": 1440,
+    "waypoints": 1440,
+    "waypoints_desert": 1440,
+    "event_levels": 1440
   },
   "category_priority": {
     "Core Tyria": 46,
@@ -61,6 +64,1239 @@
     "Death-Branded Shatterer": 80,
     "Ley-Line Anomaly": 78
   },
-  "engine_version": "1.8.5",
-  "extra_limit": 2
+  "engine_version": "1.9.0",
+  "extra_limit": 2,
+  "verified_metadata": {
+    "checked_at": "2026-09-26",
+    "sources": [
+      "https://api.guildwars2.com/v2/maps?ids=all&lang=en",
+      "https://api.guildwars2.com/v2/continents/1/floors/1?lang=en",
+      "https://api.guildwars2.com/v2/continents/1/floors/49/regions/12?lang=en",
+      "https://api.guildwars2.com/v1/event_details.json?lang=en",
+      "https://wiki.guildwars2.com/wiki/Public_instance",
+      "https://wiki.guildwars2.com/wiki/Dynamic_level_adjustment"
+    ],
+    "waypoints": {
+      "[&BA4MAAA=]": {
+        "name": "Dalada Forest Waypoint",
+        "map": "Grothmar Valley",
+        "map_id": 1330,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BAIIAAA=]": {
+        "name": "Southwatch Waypoint",
+        "map": "Auric Basin",
+        "map_id": 1043,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BAgIAAA=]": {
+        "name": "Pact Encampment Waypoint",
+        "map": "Verdant Brink",
+        "map_id": 1052,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BAkLAAA=]": {
+        "name": "Chalon Docks Waypoint",
+        "map": "Domain of Istan",
+        "map_id": 1263,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BAkMAAA=]": {
+        "name": "Eye of the North Waypoint",
+        "map": "Eye of the North",
+        "map_id": 1370,
+        "min_level": 0,
+        "max_level": 0
+      },
+      "[&BB8OAAA=]": {
+        "name": "Tower Courtyard Waypoint",
+        "map": "The Wizard's Tower",
+        "map_id": 1509,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BBAEAAA=]": {
+        "name": "Trader's Forum Waypoint",
+        "map": "Lion's Arch",
+        "map_id": 50,
+        "min_level": 0,
+        "max_level": 80
+      },
+      "[&BBAIAAA=]": {
+        "name": "Pact Base Camp Waypoint",
+        "map": "Dragon's Stand",
+        "map_id": 1041,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BBIAAAA=]": {
+        "name": "Cereboth Waypoint",
+        "map": "Kessex Hills",
+        "map_id": 23,
+        "min_level": 15,
+        "max_level": 25
+      },
+      "[&BBkNAAA=]": {
+        "name": "Ministry Ward Waypoint",
+        "map": "New Kaineng City",
+        "map_id": 1438,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BBwHAAA=]": {
+        "name": "Bazaar Docks Waypoint",
+        "map": "Labyrinthine Cliffs",
+        "map_id": 922,
+        "min_level": 1,
+        "max_level": 80
+      },
+      "[&BCcMAAA=]": {
+        "name": "Jora's Keep Waypoint",
+        "map": "Bjora Marches",
+        "map_id": 1343,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BCgKAAA=]": {
+        "name": "Olishar's Oasis Camp Waypoint",
+        "map": "Elon Riverlands",
+        "map_id": 1228,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BCoPAAA=]": {
+        "name": "Stricken Plains Waypoint",
+        "map": "Janthir Syntri",
+        "map_id": 1554,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BDQOAAA=]": {
+        "name": "Bastion of the Natural Waypoint",
+        "map": "Amnytas",
+        "map_id": 1517,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BDYQAAA=]": {
+        "name": "Hall of Assemblage Waypoint",
+        "map": "Leyspring Hollows",
+        "map_id": 1633,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BDkMAAA=]": {
+        "name": "Still Waters Speaking Waypoint",
+        "map": "Bjora Marches",
+        "map_id": 1343,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BE4DAAA=]": {
+        "name": "Lowland Burns Waypoint",
+        "map": "Blazeridge Steppes",
+        "map_id": 20,
+        "min_level": 40,
+        "max_level": 50
+      },
+      "[&BEEFAAA=]": {
+        "name": "Twilight Arbor Waypoint",
+        "map": "Caledon Forest",
+        "map_id": 34,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BEcAAAA=]": {
+        "name": "Muridian Waypoint",
+        "map": "Metrica Province",
+        "map_id": 35,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BEwCAAA=]": {
+        "name": "Valance Tutory Waypoint",
+        "map": "Timberline Falls",
+        "map_id": 29,
+        "min_level": 50,
+        "max_level": 60
+      },
+      "[&BFMKAAA=]": {
+        "name": "Augury's Shadow Waypoint",
+        "map": "Elon Riverlands",
+        "map_id": 1228,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BGEPAAA=]": {
+        "name": "Mantle's Arrival Waypoint",
+        "map": "Bava Nisos",
+        "map_id": 1574,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BGMCAAA=]": {
+        "name": "Havfrue Basin Waypoint",
+        "map": "Dredgehaunt Cliffs",
+        "map_id": 26,
+        "min_level": 40,
+        "max_level": 50
+      },
+      "[&BGUNAAA=]": {
+        "name": "Daigo Ward Waypoint",
+        "map": "Seitung Province",
+        "map_id": 1442,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BGsKAAA=]": {
+        "name": "Makali Outpost Waypoint",
+        "map": "Desert Highlands",
+        "map_id": 1211,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BH0BAAA=]": {
+        "name": "Twinspur Haven Waypoint",
+        "map": "Wayfarer Foothills",
+        "map_id": 28,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BHQKAAA=]": {
+        "name": "Market Ruins Waypoint",
+        "map": "Domain of Vabbi",
+        "map_id": 1248,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BHUAAAA=]": {
+        "name": "Mrot Boru Waypoint",
+        "map": "Brisban Wildlands",
+        "map_id": 54,
+        "min_level": 15,
+        "max_level": 25
+      },
+      "[&BHoCAAA=]": {
+        "name": "Earthshake Waypoint",
+        "map": "Frostgorge Sound",
+        "map_id": 30,
+        "min_level": 70,
+        "max_level": 80
+      },
+      "[&BIAHAAA=]": {
+        "name": "Dry Top Entry Waypoint",
+        "map": "Dry Top",
+        "map_id": 988,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BIMLAAA=]": {
+        "name": "Soul's Vendetta Waypoint",
+        "map": "Jahai Bluffs",
+        "map_id": 1301,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BJ4PAAA=]": {
+        "name": "Priory Expedition Waypoint",
+        "map": "Starlit Weald",
+        "map_id": 1593,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BJEPAAA=]": {
+        "name": "Pub Canach Waypoint",
+        "map": "Shipwreck Strand",
+        "map_id": 1595,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BJMLAAA=]": {
+        "name": "Venta Pass Waypoint",
+        "map": "Jahai Bluffs",
+        "map_id": 1301,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BJkBAAA=]": {
+        "name": "Mistriven Waypoint",
+        "map": "Lornar's Pass",
+        "map_id": 27,
+        "min_level": 25,
+        "max_level": 40
+      },
+      "[&BK0JAAA=]": {
+        "name": "Doric's Landing Waypoint",
+        "map": "Lake Doric",
+        "map_id": 1185,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BK4OAAA=]": {
+        "name": "Harvest Den Waypoint",
+        "map": "Lowland Shore",
+        "map_id": 1550,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BK8JAAA=]": {
+        "name": "Red Leaf Retreat Waypoint",
+        "map": "Lake Doric",
+        "map_id": 1185,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BKIMAAA=]": {
+        "name": "Jade Quarry Waypoint",
+        "map": "Dragon's End",
+        "map_id": 1422,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BKMKAAA=]": {
+        "name": "The Darklands Waypoint",
+        "map": "The Desolation",
+        "map_id": 1226,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BKYLAAA=]": {
+        "name": "Revolution's Heart Waypoint",
+        "map": "Thunderhead Peaks",
+        "map_id": 1310,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BKgBAAA=]": {
+        "name": "Laughing Gull Waypoint",
+        "map": "Bloodtide Coast",
+        "map_id": 73,
+        "min_level": 45,
+        "max_level": 55
+      },
+      "[&BKoBAAA=]": {
+        "name": "Firthside Vigil Waypoint",
+        "map": "Bloodtide Coast",
+        "map_id": 73,
+        "min_level": 45,
+        "max_level": 55
+      },
+      "[&BL4AAAA=]": {
+        "name": "Soderhem Steading Waypoint",
+        "map": "Snowden Drifts",
+        "map_id": 31,
+        "min_level": 15,
+        "max_level": 25
+      },
+      "[&BL4NAAA=]": {
+        "name": "Droknar's Light Waypoint",
+        "map": "Skywatch Archipelago",
+        "map_id": 1510,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BLAAAAA=]": {
+        "name": "Junction Camp Waypoint",
+        "map": "Harathi Hinterlands",
+        "map_id": 17,
+        "min_level": 35,
+        "max_level": 45
+      },
+      "[&BLQAAAA=]": {
+        "name": "Lornar's Waypoint",
+        "map": "Snowden Drifts",
+        "map_id": 31,
+        "min_level": 15,
+        "max_level": 25
+      },
+      "[&BLQJAAA=]": {
+        "name": "Lakeside Bazaar Waypoint",
+        "map": "Lake Doric",
+        "map_id": 1185,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BLsKAAA=]": {
+        "name": "Amnoon Waypoint",
+        "map": "Crystal Oasis",
+        "map_id": 1210,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BLsLAAA=]": {
+        "name": "History's End Waypoint",
+        "map": "Thunderhead Peaks",
+        "map_id": 1310,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BM0CAAA=]": {
+        "name": "Maelstrom's Waypoint",
+        "map": "Mount Maelstrom",
+        "map_id": 39,
+        "min_level": 60,
+        "max_level": 70
+      },
+      "[&BMEKAAA=]": {
+        "name": "Lair of the Forgotten Waypoint",
+        "map": "The Desolation",
+        "map_id": 1226,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BMIDAAA=]": {
+        "name": "Krennak's Homestead Waypoint",
+        "map": "Wayfarer Foothills",
+        "map_id": 28,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BMcDAAA=]": {
+        "name": "Loreclaw Waypoint",
+        "map": "Plains of Ashford",
+        "map_id": 19,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BMwMAAA=]": {
+        "name": "Kropa Waypoint",
+        "map": "The Echovald Wilds",
+        "map_id": 1452,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BN0AAAA=]": {
+        "name": "Nageling Waypoint",
+        "map": "Diessa Plateau",
+        "map_id": 32,
+        "min_level": 15,
+        "max_level": 25
+      },
+      "[&BN0HAAA=]": {
+        "name": "Northwatch Waypoint",
+        "map": "Auric Basin",
+        "map_id": 1043,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BNABAAA=]": {
+        "name": "Splintered Coast Waypoint",
+        "map": "Sparkfly Fen",
+        "map_id": 53,
+        "min_level": 55,
+        "max_level": 65
+      },
+      "[&BNQCAAA=]": {
+        "name": "Old Sledge Site Waypoint",
+        "map": "Mount Maelstrom",
+        "map_id": 39,
+        "min_level": 60,
+        "max_level": 70
+      },
+      "[&BNUGAAA=]": {
+        "name": "Pearl Islet Waypoint",
+        "map": "Southsun Cove",
+        "map_id": 873,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BNwGAAA=]": {
+        "name": "Kiel's Outpost Waypoint",
+        "map": "Southsun Cove",
+        "map_id": 873,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BO0AAAA=]": {
+        "name": "Junction Haven Waypoint",
+        "map": "Gendarran Fields",
+        "map_id": 24,
+        "min_level": 25,
+        "max_level": 35
+      },
+      "[&BO0KAAA=]": {
+        "name": "Vehjin Palace Waypoint",
+        "map": "Domain of Vabbi",
+        "map_id": 1248,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BOQAAAA=]": {
+        "name": "Provern Shore Waypoint",
+        "map": "Gendarran Fields",
+        "map_id": 24,
+        "min_level": 25,
+        "max_level": 35
+      },
+      "[&BOYBAAA=]": {
+        "name": "Hellion Waypoint",
+        "map": "Iron Marches",
+        "map_id": 25,
+        "min_level": 50,
+        "max_level": 60
+      },
+      "[&BPUHAAA=]": {
+        "name": "Ley-Line Confluence Waypoint",
+        "map": "Tangled Depths",
+        "map_id": 1045,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BPcAAAA=]": {
+        "name": "Swamplost Haven Waypoint",
+        "map": "Queensdale",
+        "map_id": 15,
+        "min_level": 1,
+        "max_level": 15
+      },
+      "[&BPgLAAA=]": {
+        "name": "Wardowns Waypoint",
+        "map": "Grothmar Valley",
+        "map_id": 1330,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BPkMAAA=]": {
+        "name": "Jade Gate Waypoint",
+        "map": "The Echovald Wilds",
+        "map_id": 1452,
+        "min_level": 80,
+        "max_level": 80
+      },
+      "[&BPwPAAA=]": {
+        "name": "Pilgrim's Rest Waypoint",
+        "map": "Eternity's Garden",
+        "map_id": 1622,
+        "min_level": 80,
+        "max_level": 80
+      }
+    },
+    "event_levels": {
+      "00F2145D-4EE8-41E0-8959-84E03B2071B1": {
+        "level": 80,
+        "map_id": 1335
+      },
+      "03BF176A-D59F-49CA-A311-39FC6F533F2F": {
+        "level": 50,
+        "map_id": 20
+      },
+      "0464CB9E-1848-4AAA-BA31-4779A959DD71": {
+        "level": 80,
+        "map_id": 30
+      },
+      "0FA88EEA-5B23-4DEA-91F1-A8B1DD1BCE91": {
+        "level": 80,
+        "map_id": 1226
+      },
+      "242BD241-E360-48F1-A8D9-57180E146789": {
+        "level": 50,
+        "map_id": 73
+      },
+      "2F1E09AF-092B-48E6-BD20-435026298CE0": {
+        "level": 80,
+        "map_id": 1310
+      },
+      "30F25EA1-3421-4633-AC3C-0FCDD057182C": {
+        "level": 80,
+        "map_id": 1335
+      },
+      "31CEBA08-E44D-472F-81B0-7143D73797F5": {
+        "level": 15,
+        "map_id": 15
+      },
+      "33F76E9E-0BB6-46D0-A3A9-BE4CDFC4A3A4": {
+        "level": 15,
+        "map_id": 35
+      },
+      "5282B66A-126F-4DA4-8E9D-0D9802227B6D": {
+        "level": 80,
+        "map_id": 873
+      },
+      "568A30CF-8512-462F-9D67-647D69BEFAED": {
+        "level": 65,
+        "map_id": 53
+      },
+      "57ADAD27-3C12-4103-ADE4-232252659F91": {
+        "level": 80,
+        "map_id": 1228
+      },
+      "5BB43CBC-5919-4961-8C24-1A65482BAC8A": {
+        "level": 80,
+        "map_id": 1211
+      },
+      "66D1D929-F367-4945-A8A4-40EE1E32532E": {
+        "level": 80,
+        "map_id": 1343
+      },
+      "67129180-858A-4768-BE5B-FFEF01128E4A": {
+        "level": 80,
+        "map_id": 988
+      },
+      "6B0265A6-0085-4268-981E-1B91005E5995": {
+        "level": 54,
+        "map_id": 25
+      },
+      "7418C0EB-BFFE-4899-871C-C63540502C8D": {
+        "level": 26,
+        "map_id": 24
+      },
+      "84A563F9-BB7A-4BC4-A8F2-2823346313E0": {
+        "level": 80,
+        "map_id": 1228
+      },
+      "87C67639-FFB9-4F91-A594-B65472EEAC3A": {
+        "level": 80,
+        "map_id": 1335
+      },
+      "8915A6A9-9943-4177-92E7-631461A53162": {
+        "level": 80,
+        "map_id": 1301
+      },
+      "8DBFFBC8-6D6A-4A87-9EC4-37A694E4B444": {
+        "level": 80,
+        "map_id": 1310
+      },
+      "9AA133DC-F630-4A0E-BB5D-EE34A2B306C2": {
+        "level": 68,
+        "map_id": 39
+      },
+      "9F5747F2-1430-459F-A627-C1699E656140": {
+        "level": 80,
+        "map_id": 1052
+      },
+      "9FFA99CB-F5AD-4EBE-9DC7-775B4542C2A1": {
+        "level": 80,
+        "map_id": 1043
+      },
+      "A820BED2-AC11-4568-BCB1-54498C79F717": {
+        "level": 80,
+        "map_id": 1248
+      },
+      "A9EC79C9-809C-4BE2-BBBA-80CD1A067D75": {
+        "level": 80,
+        "map_id": 1301
+      },
+      "B6CDD04D-281E-4FAF-B323-B307F502CBEB": {
+        "level": 80,
+        "map_id": 1343
+      },
+      "C2FCB6EE-A08F-4FCA-A3F6-302CE96531AF": {
+        "level": 80,
+        "map_id": 1343
+      },
+      "C33A5B3D-5FEA-4D2E-ACF8-EC12B1E1F226": {
+        "level": 80,
+        "map_id": 1335
+      },
+      "C5972F64-B894-45B4-BC31-2DEEA6B7C033": {
+        "level": 15,
+        "map_id": 34
+      },
+      "C876757A-EF3E-4FBE-A484-07FF790D9B05": {
+        "level": 66,
+        "map_id": 39
+      },
+      "CB8544C1-6530-454D-B1C6-6599C08F96EF": {
+        "level": 80,
+        "map_id": 922
+      },
+      "D92AF44A-647E-41CE-8E92-3E0CEE3AA38D": {
+        "level": 80,
+        "map_id": 50
+      },
+      "E36B80D5-7373-4336-8954-86F886C9725D": {
+        "level": 56,
+        "map_id": 29
+      },
+      "E6872A86-E434-4FC1-B803-89921FF0F6D6": {
+        "level": 43,
+        "map_id": 17
+      },
+      "E68AA03E-C11D-4EC1-BD79-0D0880D4CF9E": {
+        "level": 80,
+        "map_id": 1263
+      },
+      "E7231CBC-2DFD-4105-BEAD-2484DE5CF2E4": {
+        "level": 80,
+        "map_id": 1343
+      },
+      "F06787F5-CFC0-499A-954E-EC125FA71C9D": {
+        "level": 55,
+        "map_id": 73
+      },
+      "F7D9D427-5E54-4F12-977A-9809B23FBA99": {
+        "level": 10,
+        "map_id": 28
+      }
+    },
+    "maps": [
+      {
+        "id": 15,
+        "name": "Queensdale",
+        "min_level": 1,
+        "max_level": 15,
+        "type": "Public"
+      },
+      {
+        "id": 17,
+        "name": "Harathi Hinterlands",
+        "min_level": 35,
+        "max_level": 45,
+        "type": "Public"
+      },
+      {
+        "id": 19,
+        "name": "Plains of Ashford",
+        "min_level": 1,
+        "max_level": 15,
+        "type": "Public"
+      },
+      {
+        "id": 20,
+        "name": "Blazeridge Steppes",
+        "min_level": 40,
+        "max_level": 50,
+        "type": "Public"
+      },
+      {
+        "id": 23,
+        "name": "Kessex Hills",
+        "min_level": 15,
+        "max_level": 25,
+        "type": "Public"
+      },
+      {
+        "id": 24,
+        "name": "Gendarran Fields",
+        "min_level": 25,
+        "max_level": 35,
+        "type": "Public"
+      },
+      {
+        "id": 25,
+        "name": "Iron Marches",
+        "min_level": 50,
+        "max_level": 60,
+        "type": "Public"
+      },
+      {
+        "id": 26,
+        "name": "Dredgehaunt Cliffs",
+        "min_level": 40,
+        "max_level": 50,
+        "type": "Public"
+      },
+      {
+        "id": 27,
+        "name": "Lornar's Pass",
+        "min_level": 25,
+        "max_level": 40,
+        "type": "Public"
+      },
+      {
+        "id": 28,
+        "name": "Wayfarer Foothills",
+        "min_level": 1,
+        "max_level": 15,
+        "type": "Public"
+      },
+      {
+        "id": 29,
+        "name": "Timberline Falls",
+        "min_level": 50,
+        "max_level": 60,
+        "type": "Public"
+      },
+      {
+        "id": 30,
+        "name": "Frostgorge Sound",
+        "min_level": 70,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 31,
+        "name": "Snowden Drifts",
+        "min_level": 15,
+        "max_level": 25,
+        "type": "Public"
+      },
+      {
+        "id": 32,
+        "name": "Diessa Plateau",
+        "min_level": 15,
+        "max_level": 25,
+        "type": "Public"
+      },
+      {
+        "id": 34,
+        "name": "Caledon Forest",
+        "min_level": 1,
+        "max_level": 15,
+        "type": "Public"
+      },
+      {
+        "id": 35,
+        "name": "Metrica Province",
+        "min_level": 1,
+        "max_level": 15,
+        "type": "Public"
+      },
+      {
+        "id": 39,
+        "name": "Mount Maelstrom",
+        "min_level": 60,
+        "max_level": 70,
+        "type": "Public"
+      },
+      {
+        "id": 50,
+        "name": "Lion's Arch",
+        "min_level": 0,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 53,
+        "name": "Sparkfly Fen",
+        "min_level": 55,
+        "max_level": 65,
+        "type": "Public"
+      },
+      {
+        "id": 54,
+        "name": "Brisban Wildlands",
+        "min_level": 15,
+        "max_level": 25,
+        "type": "Public"
+      },
+      {
+        "id": 73,
+        "name": "Bloodtide Coast",
+        "min_level": 45,
+        "max_level": 55,
+        "type": "Public"
+      },
+      {
+        "id": 873,
+        "name": "Southsun Cove",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 922,
+        "name": "Labyrinthine Cliffs",
+        "min_level": 1,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 988,
+        "name": "Dry Top",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1041,
+        "name": "Dragon's Stand",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1042,
+        "name": "Verdant Brink",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1043,
+        "name": "Auric Basin",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1045,
+        "name": "Tangled Depths",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1052,
+        "name": "Verdant Brink",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1185,
+        "name": "Lake Doric",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1210,
+        "name": "Crystal Oasis",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1211,
+        "name": "Desert Highlands",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1226,
+        "name": "The Desolation",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1228,
+        "name": "Elon Riverlands",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1248,
+        "name": "Domain of Vabbi",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1263,
+        "name": "Domain of Istan",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1301,
+        "name": "Jahai Bluffs",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1310,
+        "name": "Thunderhead Peaks",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1330,
+        "name": "Grothmar Valley",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1343,
+        "name": "Bjora Marches",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1370,
+        "name": "Eye of the North",
+        "min_level": 0,
+        "max_level": 0,
+        "type": "Public"
+      },
+      {
+        "id": 1422,
+        "name": "Dragon's End",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1438,
+        "name": "New Kaineng City",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1442,
+        "name": "Seitung Province",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1452,
+        "name": "The Echovald Wilds",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1509,
+        "name": "The Wizard's Tower",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1510,
+        "name": "Skywatch Archipelago",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1517,
+        "name": "Amnytas",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1550,
+        "name": "Lowland Shore",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1554,
+        "name": "Janthir Syntri",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1574,
+        "name": "Bava Nisos",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1593,
+        "name": "Starlit Weald",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1595,
+        "name": "Shipwreck Strand",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1622,
+        "name": "Eternity's Garden",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      },
+      {
+        "id": 1633,
+        "name": "Leyspring Hollows",
+        "min_level": 80,
+        "max_level": 80,
+        "type": "Public"
+      }
+    ],
+    "tracks": {
+      "day and night": {
+        "category": "Core Tyria",
+        "entry_waypoint": ""
+      },
+      "world bosses": {
+        "category": "Core Tyria",
+        "entry_waypoint": ""
+      },
+      "hard world bosses": {
+        "category": "Core Tyria",
+        "entry_waypoint": ""
+      },
+      "pvp tournaments": {
+        "category": "Core Tyria",
+        "entry_waypoint": ""
+      },
+      "eye of the north": {
+        "category": "Living World Season 1",
+        "entry_waypoint": "[&BAkMAAA=]"
+      },
+      "scarlet s invasion": {
+        "category": "Living World Season 1",
+        "entry_waypoint": ""
+      },
+      "dry top": {
+        "category": "Living World Season 2",
+        "entry_waypoint": "[&BIAHAAA=]"
+      },
+      "verdant brink": {
+        "category": "Heart of Thorns",
+        "entry_waypoint": "[&BAgIAAA=]"
+      },
+      "auric basin": {
+        "category": "Heart of Thorns",
+        "entry_waypoint": "[&BN0HAAA=]"
+      },
+      "tangled depths": {
+        "category": "Heart of Thorns",
+        "entry_waypoint": "[&BPUHAAA=]"
+      },
+      "dragon s stand": {
+        "category": "Heart of Thorns",
+        "entry_waypoint": "[&BBAIAAA=]"
+      },
+      "lake doric": {
+        "category": "Living World Season 3",
+        "entry_waypoint": "[&BK0JAAA=]"
+      },
+      "ley line anomaly": {
+        "category": "Core Tyria",
+        "entry_waypoint": ""
+      },
+      "crystal oasis": {
+        "category": "Path of Fire",
+        "entry_waypoint": "[&BLsKAAA=]"
+      },
+      "desert highlands": {
+        "category": "Path of Fire",
+        "entry_waypoint": "[&BGsKAAA=]"
+      },
+      "elon riverlands": {
+        "category": "Path of Fire",
+        "entry_waypoint": "[&BFMKAAA=]"
+      },
+      "the desolation": {
+        "category": "Path of Fire",
+        "entry_waypoint": "[&BKMKAAA=]"
+      },
+      "domain of vabbi": {
+        "category": "Path of Fire",
+        "entry_waypoint": "[&BHQKAAA=]"
+      },
+      "domain of istan": {
+        "category": "Living World Season 4",
+        "entry_waypoint": "[&BAkLAAA=]"
+      },
+      "jahai bluffs": {
+        "category": "Living World Season 4",
+        "entry_waypoint": "[&BIMLAAA=]"
+      },
+      "thunderhead peaks": {
+        "category": "Living World Season 4",
+        "entry_waypoint": "[&BLsLAAA=]"
+      },
+      "grothmar valley": {
+        "category": "The Icebrood Saga",
+        "entry_waypoint": "[&BA4MAAA=]"
+      },
+      "bjora marches": {
+        "category": "The Icebrood Saga",
+        "entry_waypoint": "[&BDkMAAA=]"
+      },
+      "dragonstorm": {
+        "category": "The Icebrood Saga",
+        "entry_waypoint": ""
+      },
+      "festival of the four winds": {
+        "category": "Special Events",
+        "entry_waypoint": ""
+      },
+      "dragon bash": {
+        "category": "Special Events",
+        "entry_waypoint": ""
+      },
+      "halloween": {
+        "category": "Special Events",
+        "entry_waypoint": ""
+      },
+      "cantha day and night": {
+        "category": "End of Dragons",
+        "entry_waypoint": ""
+      },
+      "seitung province": {
+        "category": "End of Dragons",
+        "entry_waypoint": "[&BGUNAAA=]"
+      },
+      "new kaineng city": {
+        "category": "End of Dragons",
+        "entry_waypoint": "[&BBkNAAA=]"
+      },
+      "the echovald wilds": {
+        "category": "End of Dragons",
+        "entry_waypoint": "[&BMwMAAA=]"
+      },
+      "dragon s end": {
+        "category": "End of Dragons",
+        "entry_waypoint": "[&BKIMAAA=]"
+      },
+      "skywatch archipelago": {
+        "category": "Secrets of the Obscure",
+        "entry_waypoint": "[&BL4NAAA=]"
+      },
+      "wizard s tower": {
+        "category": "Secrets of the Obscure",
+        "entry_waypoint": ""
+      },
+      "amnytas": {
+        "category": "Secrets of the Obscure",
+        "entry_waypoint": "[&BDQOAAA=]"
+      },
+      "convergences": {
+        "category": "Secrets of the Obscure",
+        "entry_waypoint": ""
+      },
+      "janthir syntri": {
+        "category": "Janthir Wilds",
+        "entry_waypoint": "[&BCoPAAA=]"
+      },
+      "mount balrior": {
+        "category": "Janthir Wilds",
+        "entry_waypoint": ""
+      },
+      "bava nisos": {
+        "category": "Janthir Wilds",
+        "entry_waypoint": "[&BGEPAAA=]"
+      },
+      "shipwreck strand": {
+        "category": "Visions of Eternity",
+        "entry_waypoint": "[&BJEPAAA=]"
+      },
+      "starlit weald": {
+        "category": "Visions of Eternity",
+        "entry_waypoint": "[&BJ4PAAA=]"
+      },
+      "eternity s garden": {
+        "category": "Visions of Eternity",
+        "entry_waypoint": "[&BPwPAAA=]"
+      },
+      "leyspring hollows": {
+        "category": "Visions of Eternity",
+        "entry_waypoint": "[&BDYQAAA=]"
+      },
+      "the mists": {
+        "category": "Visions of Eternity",
+        "entry_waypoint": ""
+      }
+    }
+  }
 }
