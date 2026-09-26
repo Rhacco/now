@@ -20,7 +20,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.1"
+ENGINE_VERSION = "1.8.2"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -357,7 +357,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.1 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.8.2 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1679,10 +1679,10 @@ body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI
 header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 12px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}}
 .status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
-.header-tools{{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin-top:8px;position:relative}}
-.control-group{{display:flex;flex-direction:column;align-items:flex-start;gap:4px;position:relative}}
-.control-label{{font-size:9px;line-height:1;color:#737b86;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-left:3px}}
-.control-divider{{align-self:stretch;width:1px;min-height:30px;background:#2a2f36;margin:1px 1px 0}}
+.header-tools{{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:7px;position:relative;flex-wrap:wrap}}
+.control-group{{display:flex;align-items:center;gap:4px;position:relative;min-width:0}}
+.control-group+.control-group{{margin-left:2px;padding-left:9px;border-left:1px solid #2a2f36}}
+.control-label{{font-size:10px;line-height:1;color:#7f8792;font-weight:800;white-space:nowrap}}
 .tz-tools{{display:flex;justify-content:center;gap:4px}}
 .tz-btn,.content-filter>summary{{border:1px solid #30353d;background:#121419;color:#9aa2ad;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer;line-height:1.2}}
 .tz-btn:hover,.content-filter>summary:hover{{color:#fff;border-color:#555e6b}}
@@ -1693,17 +1693,17 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .content-filter[open]>summary::after{{content:" ▴"}}
 .content-filter>summary::-webkit-details-marker{{display:none}}
 .content-filter[open]>summary{{color:#fff;background:#242932;border-color:#5d6673}}
-.content-menu{{position:absolute;top:calc(100% + 7px);right:0;width:min(610px,calc(100vw - 24px));max-height:390px;overflow:auto;padding:10px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:30}}
-.content-menu-head{{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:2px 4px 8px;border-bottom:1px solid #292e35;margin-bottom:6px}}
+.content-menu{{position:fixed;top:auto;right:auto;bottom:auto;left:auto;width:min(640px,calc(100vw - 20px));max-height:min(440px,calc(100vh - 20px));overflow:auto;padding:10px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:40;overscroll-behavior:contain}}
+.content-menu-head{{position:sticky;top:-10px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 4px 8px;background:#15171b;border-bottom:1px solid #292e35;margin:-10px 0 6px}}
 .content-menu-title{{font-size:10px;font-weight:800;color:#c6cbd2;text-transform:uppercase;letter-spacing:.05em}}
 .content-all-btn{{border:0;background:transparent;color:#9fb7d7;font-size:10px;font-weight:800;cursor:pointer;padding:3px 4px}}
 .content-all-btn:hover{{color:#fff}}
-.content-grid{{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:2px 8px}}
-.content-option{{display:flex;align-items:center;gap:7px;padding:6px 7px;border-radius:6px;font-size:11px;color:#c3c8cf;cursor:pointer;min-width:0}}
+.content-grid{{display:grid;grid-template-columns:repeat(2,minmax(285px,1fr));gap:2px 10px}}
+.content-option{{display:flex;align-items:center;gap:7px;padding:6px 7px;border-radius:6px;font-size:11px;color:#c3c8cf;cursor:pointer;min-width:max-content}}
 .content-option:hover{{background:#1d2025;color:#fff}}
 .content-option input{{margin:0;accent-color:#d7aa42;flex:0 0 auto}}
-.content-option span{{white-space:nowrap;overflow:visible;text-overflow:clip}}
-.preference-note{{margin:18px 0 2px;text-align:center;color:#69717c;font-size:9px;line-height:1.35}}
+.content-option span{{white-space:nowrap}}
+.preference-note{{margin:14px 0 2px;text-align:center;color:#69717c;font-size:9px;line-height:1.3}}
 .preference-note.saved{{color:#77897b}}
 .preference-note.failed{{color:#b89278}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
@@ -1765,9 +1765,9 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   .all-card{{grid-template-columns:50px 1fr}}
   .all-badges{{grid-column:2}}
   .all-wp{{grid-column:1/3;width:100%}}
-  .header-tools{{gap:7px}}
-  .control-divider{{min-height:28px}}
-  .content-menu{{position:fixed;top:78px;right:10px;left:10px;width:auto;max-height:60vh}}
+  .header-tools{{gap:6px}}
+  .control-group+.control-group{{padding-left:7px}}
+  .content-menu{{width:calc(100vw - 16px)}}
   .content-grid{{grid-template-columns:1fr}}
 }}
 </style>
@@ -1778,17 +1778,16 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   <div id="clock"></div>
   <div class="header-tools" aria-label="Display controls">
     <div class="control-group">
-      <span class="control-label" title="Display time zone">Time</span>
+      <span class="control-label">Time:</span>
       <div id="time-zone-tools" class="tz-tools">
-        <button type="button" class="tz-btn" data-tz-mode="local" title="Your device time">Local</button>
-        <button type="button" class="tz-btn" data-tz-mode="server" title="GW2 server time">Server · UTC</button>
+        <button type="button" class="tz-btn" data-tz-mode="local" title="Device time">Local</button>
+        <button type="button" class="tz-btn" data-tz-mode="server" title="GW2 server time · UTC">Server · UTC</button>
       </div>
     </div>
-    <span class="control-divider" aria-hidden="true"></span>
     <div class="control-group">
-      <span class="control-label" title="Filter events">Content</span>
+      <span class="control-label">Content:</span>
       <details id="content-filter" class="content-filter">
-        <summary id="content-filter-summary" title="Filter events">All</summary>
+        <summary id="content-filter-summary" title="Filter content">All</summary>
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
@@ -1804,7 +1803,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
-<footer id="preference-note" class="preference-note">Preference cookie is saved only after you change a setting.</footer>
+<footer id="preference-note" class="preference-note">Preferences will be saved in a single cookie.</footer>
 </div>
 
 <script>
@@ -1877,13 +1876,13 @@ function updatePreferenceNote() {{
   if(!note) return;
   note.classList.remove("saved","failed");
   if(preferenceSaveState==="saved") {{
-    note.textContent="Preference cookie saved on this device.";
+    note.textContent="Preferences saved in a single cookie.";
     note.classList.add("saved");
   }} else if(preferenceSaveState==="failed") {{
-    note.textContent="We tried to save the preference cookie, but it was blocked.";
+    note.textContent="Preferences could not be saved in this browser.";
     note.classList.add("failed");
   }} else {{
-    note.textContent="Preference cookie is saved only after you change a setting.";
+    note.textContent="Preferences will be saved in a single cookie.";
   }}
 }}
 function savePreferences() {{
@@ -1911,7 +1910,7 @@ function updateTimeZoneControls() {{
   const localButton=tools.querySelector('[data-tz-mode="local"]');
   if(localButton) {{
     localButton.hidden=!localDistinct;
-    localButton.title=localDistinct ? `Your device time · ${{localZone}}` : "Your device time";
+    localButton.title=localDistinct ? `Device time · ${{localZone}}` : "Device time";
   }}
   const serverButton=tools.querySelector('[data-tz-mode="server"]');
   if(serverButton) serverButton.title="GW2 server time · UTC";
@@ -1928,15 +1927,59 @@ function updateContentSummary() {{
   const total=CONTENT_OPTIONS.length;
   const enabled=total-disabledContent.size;
   summary.textContent=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
-  summary.title=disabledContent.size===0 ? "Filter events" : `${{enabled}} of ${{total}} shown`;
+  summary.title=disabledContent.size===0 ? "Filter content" : `${{enabled}} of ${{total}} shown`;
 }}
 
 function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
   const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Enable all">Show all</button></div><div class="content-grid">${{rows}}</div>`;
+  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Select all content">Show all</button></div><div class="content-grid">${{rows}}</div>`;
   updateContentSummary();
+}}
+
+function positionContentMenu() {{
+  const filter=document.getElementById("content-filter");
+  const summary=document.getElementById("content-filter-summary");
+  const menu=document.getElementById("content-filter-menu");
+  if(!filter?.open || !summary || !menu) return;
+
+  const rect=summary.getBoundingClientRect();
+  const viewportWidth=document.documentElement.clientWidth || window.innerWidth;
+  const viewportHeight=document.documentElement.clientHeight || window.innerHeight;
+  const margin=8;
+  const gap=6;
+  const width=Math.max(260,Math.min(640,viewportWidth-(margin*2)));
+
+  menu.style.width=`${{width}}px`;
+  menu.style.left="0px";
+  menu.style.top="0px";
+  menu.style.right="auto";
+  menu.style.bottom="auto";
+  menu.style.maxHeight=`${{Math.max(150,viewportHeight-(margin*2))}}px`;
+
+  const desiredHeight=Math.min(menu.scrollHeight,440);
+  const below=viewportHeight-rect.bottom-gap-margin;
+  const above=rect.top-gap-margin;
+  const placeBelow=below>=Math.min(desiredHeight,240) || below>=above;
+  const available=Math.max(150,Math.min(440,placeBelow?below:above));
+  const left=Math.min(Math.max(margin,rect.right-width),Math.max(margin,viewportWidth-width-margin));
+
+  menu.style.left=`${{left}}px`;
+  menu.style.maxHeight=`${{available}}px`;
+
+  if(placeBelow) {{
+    menu.style.top=`${{Math.max(margin,rect.bottom+gap)}}px`;
+    menu.style.bottom="auto";
+  }} else {{
+    menu.style.top="auto";
+    menu.style.bottom=`${{Math.max(margin,viewportHeight-rect.top+gap)}}px`;
+  }}
+}}
+
+function closeContentMenu() {{
+  const filter=document.getElementById("content-filter");
+  if(filter?.open) filter.open=false;
 }}
 
 function clockFormatter() {{
@@ -2037,6 +2080,22 @@ document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   if(!all) return;
   disabledContent.clear();savePreferences();buildContentFilter();renderLive(true);
 }});
+
+const contentFilter=document.getElementById("content-filter");
+contentFilter?.addEventListener("toggle",()=>{{
+  if(contentFilter.open) requestAnimationFrame(positionContentMenu);
+}});
+document.addEventListener("pointerdown",ev=>{{
+  if(contentFilter?.open && !contentFilter.contains(ev.target)) closeContentMenu();
+}});
+document.addEventListener("keydown",ev=>{{
+  if(ev.key==="Escape" && contentFilter?.open) {{
+    closeContentMenu();
+    document.getElementById("content-filter-summary")?.focus();
+  }}
+}});
+window.addEventListener("resize",()=>{{if(contentFilter?.open) positionContentMenu();}});
+window.addEventListener("scroll",()=>{{if(contentFilter?.open) positionContentMenu();}},true);
 
 document.querySelector(".app")?.addEventListener("click",async ev=>{{
   const btn=ev.target.closest(".wp");
