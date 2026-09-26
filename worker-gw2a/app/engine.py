@@ -20,7 +20,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.2"
+ENGINE_VERSION = "1.8.3"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -357,7 +357,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.2 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.8.3 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1952,34 +1952,69 @@ function positionContentMenu() {{
   const width=Math.max(260,Math.min(640,viewportWidth-(margin*2)));
 
   menu.style.width=`${{width}}px`;
-  menu.style.left="0px";
-  menu.style.top="0px";
   menu.style.right="auto";
   menu.style.bottom="auto";
-  menu.style.maxHeight=`${{Math.max(150,viewportHeight-(margin*2))}}px`;
+
+  // Popovers are centered horizontally in the visible viewport.
+  const centeredLeft=Math.max(margin,Math.round((viewportWidth-width)/2));
+  menu.style.left=`${{centeredLeft}}px`;
 
   const desiredHeight=Math.min(menu.scrollHeight,440);
   const below=viewportHeight-rect.bottom-gap-margin;
   const above=rect.top-gap-margin;
   const placeBelow=below>=Math.min(desiredHeight,240) || below>=above;
   const available=Math.max(150,Math.min(440,placeBelow?below:above));
-  const left=Math.min(Math.max(margin,rect.right-width),Math.max(margin,viewportWidth-width-margin));
-
-  menu.style.left=`${{left}}px`;
   menu.style.maxHeight=`${{available}}px`;
 
   if(placeBelow) {{
     menu.style.top=`${{Math.max(margin,rect.bottom+gap)}}px`;
-    menu.style.bottom="auto";
   }} else {{
-    menu.style.top="auto";
-    menu.style.bottom=`${{Math.max(margin,viewportHeight-rect.top+gap)}}px`;
+    const top=Math.max(margin,rect.top-gap-available);
+    menu.style.top=`${{top}}px`;
   }}
 }}
 
 function closeContentMenu() {{
   const filter=document.getElementById("content-filter");
   if(filter?.open) filter.open=false;
+}}
+
+const TRANSIENT_UI_KEY="gw2action_ui_state_v1";
+function stashTransientUiState() {{
+  const filter=document.getElementById("content-filter");
+  const menu=document.getElementById("content-filter-menu");
+  const state={{
+    v:1,
+    at:Date.now(),
+    contentOpen:Boolean(filter?.open),
+    contentScrollTop:Number(menu?.scrollTop || 0),
+    pageScrollY:Number(window.scrollY || 0)
+  }};
+  try {{ sessionStorage.setItem(TRANSIENT_UI_KEY,JSON.stringify(state)); }} catch(e) {{}}
+}}
+function restoreTransientUiState() {{
+  let state=null;
+  try {{
+    const raw=sessionStorage.getItem(TRANSIENT_UI_KEY);
+    sessionStorage.removeItem(TRANSIENT_UI_KEY);
+    if(raw) state=JSON.parse(raw);
+  }} catch(e) {{ state=null; }}
+  if(!state || state.v!==1 || !Number.isFinite(state.at) || Date.now()-state.at>90000) return;
+
+  if(Number.isFinite(state.pageScrollY)) {{
+    requestAnimationFrame(()=>window.scrollTo({{top:Math.max(0,state.pageScrollY),left:0,behavior:"auto"}}));
+  }}
+  if(state.contentOpen) {{
+    const filter=document.getElementById("content-filter");
+    const menu=document.getElementById("content-filter-menu");
+    if(filter) {{
+      filter.open=true;
+      requestAnimationFrame(()=>{{
+        positionContentMenu();
+        if(menu && Number.isFinite(state.contentScrollTop)) menu.scrollTop=Math.max(0,state.contentScrollTop);
+      }});
+    }}
+  }}
 }}
 
 function clockFormatter() {{
@@ -2104,7 +2139,7 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
   try {{await navigator.clipboard.writeText(value);const old=btn.textContent;btn.textContent=`✓ ${{value}}`;setTimeout(()=>{{btn.textContent=old;}},900);}} catch(e) {{}}
 }});
 
-updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);setInterval(tickClock,1000);
+updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);restoreTransientUiState();setInterval(tickClock,1000);
 // Exact local category transition, independent of Pages publication latency.
 setInterval(()=>renderLive(false),2000);
 
@@ -2115,7 +2150,12 @@ async function checkForUpdate(){{
     const u=new URL(window.location.pathname,window.location.origin);u.searchParams.set("_",Date.now().toString());
     const r=await fetch(u.toString(),{{cache:"no-store"}});if(!r.ok)return;
     const text=await r.text();const match=text.match(/<meta name="gw2-page-version" content="([^"]+)">/);
-    if(match && match[1]!==currentVersion){{const next=new URL(window.location.pathname,window.location.origin);next.searchParams.set("_",Date.now().toString());window.location.replace(next.toString());}}
+    if(match && match[1]!==currentVersion){{
+      stashTransientUiState();
+      const next=new URL(window.location.pathname,window.location.origin);
+      next.searchParams.set("_",Date.now().toString());
+      window.location.replace(next.toString());
+    }}
   }}catch(e){{}}
 }}
 setInterval(checkForUpdate,20000);
