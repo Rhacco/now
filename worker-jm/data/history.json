@@ -1,0 +1,3781 @@
+[
+  {
+    "timestamp": "2026-09-24T12:19:46.847Z",
+    "provider": "OpenRouter",
+    "requested_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Lehrer fragt: „Nenne mir drei berühmte Männer, die mit ‚B‘ beginnen.“\nFritzchen überlegt kurz: „Beckenbauer, Beethoven, Bach.“\n„Sehr gut. Und drei, die mit ‚M‘ beginnen?“\n„Müller, Meier, Schmidt.“\n„Aber Schmidt fängt doch mit ‚S‘ an!“\n„Egal, der heißt jetzt so. Der hat geheiratet.“",
+    "attempts": [
+      {
+        "model": "thinkingmachines/inkling:free",
+        "http_status": 403,
+        "error": "thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"
+      },
+      {
+        "model": "qwen/qwen3.8-27b:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 315,
+      "completion_tokens": 92,
+      "total_tokens": 407,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:19:47.598Z",
+    "provider": "Groq",
+    "requested_model": "openai/gpt-oss-20b",
+    "returned_model": "openai/gpt-oss-20b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Wie nennt man einen Bumerang, der nicht zurückkommt? Ein Stock.",
+    "usage": {
+      "queue_time": 0.139287916,
+      "prompt_tokens": 344,
+      "prompt_time": 0.021357742,
+      "completion_tokens": 234,
+      "completion_time": 0.312599263,
+      "total_tokens": 578,
+      "total_time": 0.333957005,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:20:26.069Z",
+    "provider": "OpenRouter",
+    "requested_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "returned_model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Warum können Bäume nicht lügen? Weil sie immer die Wurzel sagen.",
+    "attempts": [
+      {
+        "model": "thinkingmachines/inkling:free",
+        "http_status": 403,
+        "error": "thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps"
+      },
+      {
+        "model": "qwen/qwen3.8-27b:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "returned_model": null,
+        "error": "Leere Textantwort",
+        "finish_reason": null
+      },
+      {
+        "model": "google/gemma-4-31b-it:free",
+        "http_status": 429,
+        "error": "Provider returned error"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 423,
+      "completion_tokens": 19,
+      "total_tokens": 442,
+      "cost": 0,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0,
+        "upstream_inference_prompt_cost": 0,
+        "upstream_inference_completions_cost": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:20:26.880Z",
+    "provider": "Groq",
+    "requested_model": "openai/gpt-oss-20b",
+    "returned_model": null,
+    "status": "error",
+    "http_status": null,
+    "error": "HTTP erfolgreich, aber keine Textantwort erhalten."
+  },
+  {
+    "timestamp": "2026-09-24T12:27:24.123Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:27:24.595Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Ein Polizist stoppt einen Autofahrer und fragt: „Haben Sie zu schnell gefahren?“\nDer Fahrer antwortet: „Nein, Herr Polizist, ich bin erst seit einer Minute da.“\nDer Polizist seufzt: „Das erklärt nicht, warum Sie gerade die Ampel überfahren haben.“",
+    "lines": 3,
+    "local_similarity": 0.10810810810810811,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017841964,
+          "prompt_tokens": 373,
+          "prompt_time": 0.033282068,
+          "completion_tokens": 68,
+          "completion_time": 0.134091477,
+          "total_tokens": 441,
+          "total_time": 0.167373545
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017841964,
+      "prompt_tokens": 373,
+      "prompt_time": 0.033282068,
+      "completion_tokens": 68,
+      "completion_time": 0.134091477,
+      "total_tokens": 441,
+      "total_time": 0.167373545
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:27:52.123Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:27:52.642Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Ich bin Zahnarzt und habe immer schlechte Laune.\nMeine Frau fragt: „Warum?“\nIch sage: „Weil ich täglich den Menschen in den Mund muss,\ndie mir nichts Gutes zu wünschen scheinen.“",
+    "lines": 4,
+    "local_similarity": 0.125,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.043554003,
+          "prompt_tokens": 445,
+          "prompt_time": 0.038273559,
+          "completion_tokens": 50,
+          "completion_time": 0.106188282,
+          "total_tokens": 495,
+          "total_time": 0.144461841
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.043554003,
+      "prompt_tokens": 445,
+      "prompt_time": 0.038273559,
+      "completion_tokens": 50,
+      "completion_time": 0.106188282,
+      "total_tokens": 495,
+      "total_time": 0.144461841
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:28:26.131Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:28:26.663Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Arzt fragt: „Haben Sie schon gefrühstückt?“\nDer Patient nickt: „Ja, aber ich habe noch nichts gegessen.“\nDer Arzt staunt: „Wie geht das?“\nDer Patient: „Ich habe nur das Brötchen und den Marmeladentopf verwechselt.“",
+    "lines": 4,
+    "local_similarity": 0.14285714285714285,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017808758,
+          "prompt_tokens": 499,
+          "prompt_time": 0.041374621,
+          "completion_tokens": 68,
+          "completion_time": 0.13408264,
+          "total_tokens": 567,
+          "total_time": 0.175457261
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017808758,
+      "prompt_tokens": 499,
+      "prompt_time": 0.041374621,
+      "completion_tokens": 68,
+      "completion_time": 0.13408264,
+      "total_tokens": 567,
+      "total_time": 0.175457261
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:28:37.187Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "Keine gültige Witzantwort nach kontrolliertem Fallback.",
+    "diagnostics": [
+      {
+        "request": 1,
+        "http_status": 400,
+        "error": "'models' array must have 3 items or fewer.",
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "thinkingmachines/inkling:free",
+          "qwen/qwen3.8-27b:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:28:37.664Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Warum streiten sich die Mathelehrer nie?\nWeil sie immer einvernehmlich sind.",
+    "lines": 2,
+    "local_similarity": 0.29411764705882354,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.088165277,
+          "prompt_tokens": 571,
+          "prompt_time": 0.045660127,
+          "completion_tokens": 24,
+          "completion_time": 0.045865964,
+          "total_tokens": 595,
+          "total_time": 0.091526091
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088165277,
+      "prompt_tokens": 571,
+      "prompt_time": 0.045660127,
+      "completion_tokens": 24,
+      "completion_time": 0.045865964,
+      "total_tokens": 595,
+      "total_time": 0.091526091
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:38:04.739Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Gärtner legt drei Tomaten in die Pfanne.\nSeine Frau schreit: „Was machst du da?“\nEr verteidigt sich: „Ich bin doch kein Tomate, ich bin ein Mensch.“\n„Dann nimm sie raus!“\n„Zu spät, die Soße ist schon zu dick.“",
+    "lines": 5,
+    "local_similarity": 0.10909090909090909,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.026389422,
+          "prompt_tokens": 577,
+          "prompt_time": 0.042500936,
+          "completion_tokens": 70,
+          "completion_time": 0.154123514,
+          "total_tokens": 647,
+          "total_time": 0.19662445
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.026389422,
+      "prompt_tokens": 577,
+      "prompt_time": 0.042500936,
+      "completion_tokens": 70,
+      "completion_time": 0.154123514,
+      "total_tokens": 647,
+      "total_time": 0.19662445
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:38:32.977Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "http_status": 429,
+        "error": "Provider returned error"
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 575,
+          "completion_tokens": 280,
+          "total_tokens": 855,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 311,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 574,
+          "completion_tokens": 280,
+          "total_tokens": 854,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 281,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:42:31.604Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Hausmeister klemmt sich 100,0000 in die Hosentasche.\nAm nächsten Tag fragt er die Direktion: „Warum haben Sie den Schalter umgestellt?“\n„Wegen der Energiekosten.“\n„Dann gut, aber ich habe jetzt 1,0000!“",
+    "lines": 4,
+    "local_similarity": 0.18604651162790697,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.017127772,
+          "prompt_tokens": 744,
+          "prompt_time": 0.062811977,
+          "completion_tokens": 70,
+          "completion_time": 0.132889817,
+          "total_tokens": 814,
+          "total_time": 0.195701794
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017127772,
+      "prompt_tokens": 744,
+      "prompt_time": 0.062811977,
+      "completion_tokens": 70,
+      "completion_time": 0.132889817,
+      "total_tokens": 814,
+      "total_time": 0.195701794
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:43:05.914Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "returned_model": "z-ai/glm-5.2:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 778,
+          "completion_tokens": 280,
+          "total_tokens": 1058,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 280,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 739,
+          "completion_tokens": 280,
+          "total_tokens": 1019,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 258,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 741,
+          "completion_tokens": 280,
+          "total_tokens": 1021,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 305,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:45:23.526Z",
+    "provider": "Groq",
+    "requested_model": "qwen/qwen3.8-27b",
+    "returned_model": "qwen/qwen3.8-27b",
+    "status": "ok",
+    "http_status": 200,
+    "text": "Der Taxifahrer fragt den Fahrgast: „Möchten Sie die Türe zu?“\nDer Fahrgast fragt zurück: „Ist die Türe denn offen?“\nDer Taxifahrer antwortet: „Nein, aber ich wollte michergefälliger sein.“",
+    "lines": 3,
+    "local_similarity": 0.20930232558139536,
+    "diagnostics": [
+      {
+        "model": "qwen/qwen3.8-27b",
+        "returned_model": "qwen/qwen3.8-27b",
+        "http_status": 200,
+        "valid": true,
+        "validation": "ok",
+        "usage": {
+          "queue_time": 0.0172955,
+          "prompt_tokens": 881,
+          "prompt_time": 0.076501785,
+          "completion_tokens": 63,
+          "completion_time": 0.135055247,
+          "total_tokens": 944,
+          "total_time": 0.211557032
+        }
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0172955,
+      "prompt_tokens": 881,
+      "prompt_time": 0.076501785,
+      "completion_tokens": 63,
+      "completion_time": 0.135055247,
+      "total_tokens": 944,
+      "total_time": 0.211557032
+    }
+  },
+  {
+    "timestamp": "2026-09-24T12:46:13.003Z",
+    "provider": "OpenRouter",
+    "status": "error",
+    "error": "kein gültiger Witz nach allen aktuellen Free-Fallbacks",
+    "diagnostics": [
+      {
+        "models": [
+          "google/gemma-4-26b-a4b-it:free",
+          "google/gemma-4-31b-it:free",
+          "z-ai/glm-5.2:free"
+        ],
+        "returned_model": "z-ai/glm-5.2:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 913,
+          "completion_tokens": 280,
+          "total_tokens": 1193,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 280,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nvidia/nemotron-3.5-lightning:free",
+          "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "nvidia/nemotron-3-super-120b-a12b:free"
+        ],
+        "returned_model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "mehr als 5 Zeilen",
+        "usage": {
+          "prompt_tokens": 873,
+          "completion_tokens": 280,
+          "total_tokens": 1153,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 267,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "models": [
+          "nex-agi/nex-n2.5-mini:free",
+          "nex-agi/nex-n2.5-pro:free",
+          "inclusionai/ling-3.0-flash-sante:free"
+        ],
+        "returned_model": "nex-agi/nex-n2.5-mini:free",
+        "http_status": 200,
+        "valid": false,
+        "validation": "leere Antwort",
+        "usage": {
+          "prompt_tokens": 878,
+          "completion_tokens": 280,
+          "total_tokens": 1158,
+          "cost": 0,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 512,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0,
+            "upstream_inference_prompt_cost": 0,
+            "upstream_inference_completions_cost": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 293,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Bäcker fragt den Kunden: „Möchten Sie das Brot in Folie einpacken?“\nDer Kunde antwortet: „Nein, bitte nicht.“\nDer Bäcker wundert sich: „Ist es zu teuer?“\nDer Kunde sagt: „Nein, ich habe Angst, dass es mich erstickt.“\nDer Bäcker denkt: „Na ja, als Brot hat es wenig Lunge.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Hund fragt seinen Hundesitter: „Wo warst du heute?“\nDer Sitter antwortet ernst: „Ich war beim Tierarzt.“\n„Ach, und was hat er gesagt?“\n„Er meinte, du seist ein ganz normaler Hund.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T12:53:52.808737+00:00",
+    "provider": "LegacyReserve",
+    "status": "blocked",
+    "text": "Der Hausmeister fragt den Chef: „Können Sie mir ein paar Tage unbezahlten Urlaub geben?“\nDer Chef fragt erstaunt: „Warum denn unbezahlt?“\nDer Hausmeister antwortet: „Weil ich zwar reich bin, aber leider nur an Problemen.“",
+    "note": "Alte Reserve aus v0.2.4: nur gegen Wiederholung gesperrt, nicht mehr zur Ausgabe verwendet."
+  },
+  {
+    "timestamp": "2026-09-24T13:00:24.287Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Die Ehefrau klagt: „Du kümmerst dich gar nicht mehr um mich!“\nDer Ehemann antwortet beschwichtigend: „Doch, ich sehe dich jeden Tag.“\n„Aber ich meine nicht, dass du mich nur anschaust!“\n„Oh Gott, das hatte ich nicht gewusst.\nIch dachte, du wärst eine Wand.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.038915075,
+              "prompt_tokens": 1195,
+              "prompt_time": 0.09518308,
+              "completion_tokens": 81,
+              "completion_time": 0.170511954,
+              "total_tokens": 1276,
+              "total_time": 0.265695034
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 2
+  },
+  {
+    "timestamp": "2026-09-24T13:03:47.014Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Chef fragt: „Warum sind Sie heute so spät dran?“\nIch antworte: „Der Wecker hat nicht geklingelt.“\n„Dann haben Sie wohl nicht auf ihn aufgepasst.“\n„Im Gegenteil, ich habe sehr gut auf ihn aufgepasst.\nIch habe ihn nur aus Sicherheitsgründen abgeschaltet.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.253689995,
+              "prompt_tokens": 1382,
+              "prompt_time": 0.138282645,
+              "completion_tokens": 72,
+              "completion_time": 0.144051045,
+              "total_tokens": 1454,
+              "total_time": 0.28233369
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 4
+  },
+  {
+    "timestamp": "2026-09-24T13:04:41.849Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Ich wollte heute besonders brav sein\nund habe die Mülltonne vor die Tür gestellt.\nDer Nachbar kam vorbei und fragte:\n„Müssen Sie das wirklich?“\nIch sagte: „Nein, aber dann weht es nicht mehr in Ihr Fenster.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.033724843,
+              "prompt_tokens": 1593,
+              "prompt_time": 0.116962798,
+              "completion_tokens": 56,
+              "completion_time": 0.116624483,
+              "total_tokens": 1649,
+              "total_time": 0.233587281
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 6
+  },
+  {
+    "timestamp": "2026-09-24T13:05:12.511Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mutter: „Warum hast du den Schreibtisch umgeräumt?“  \nKind: „Der hat einen Keks im Kopf.“  \nMutter: „Was meinst du?“  \nKind: „Ich wollte ihn essen, aber er hat die Keksdose weggeworfen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.92",
+            "usage": {
+              "queue_time": 0.069474365,
+              "prompt_tokens": 1769,
+              "prompt_time": 0.160004005,
+              "completion_tokens": 55,
+              "completion_time": 0.126871237,
+              "total_tokens": 1824,
+              "total_time": 0.286875242
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.219025833,
+              "prompt_tokens": 1670,
+              "prompt_time": 0.098822788,
+              "completion_tokens": 92,
+              "completion_time": 0.107887205,
+              "total_tokens": 1762,
+              "total_time": 0.206709993,
+              "completion_tokens_details": {
+                "reasoning_tokens": 26
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 2,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:05:32.718Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Hund blickt seinen Herrchen an,\nals hätte er gerade die ganze Welt verloren.\nDer Mann seufzt: „Was ist denn los?“\nDer Hund legt den Kopf schief.\nEr wollte eigentlich nur das Schnitzel.",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.017200285,
+              "prompt_tokens": 1958,
+              "prompt_time": 0.176403168,
+              "completion_tokens": 53,
+              "completion_time": 0.104553822,
+              "total_tokens": 2011,
+              "total_time": 0.28095699
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:05:51.824Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Der Arzt sagt: „Sie müssen dringend weniger Salz essen.“\nDer Patient fragt: „Aber Doktor, ich esse doch gar kein Salz.“\nDer Arzt staunt: „Dann woher kommt die Schwellung?“\nDer Patient seufzt: „Von den Tränen. Sie sind so salzig.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.08428421,
+              "prompt_tokens": 2016,
+              "prompt_time": 0.180862708,
+              "completion_tokens": 66,
+              "completion_time": 0.129929849,
+              "total_tokens": 2082,
+              "total_time": 0.310792557
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:06:23.286Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Wie ist dein Tag?“\nIch sage: „Gut, ich habe heute zwei Stunden gespart.“\nSie staunt: „Oh, und wo?“\nIch antworte: „Ich bin im Stau nicht in den Streit eingestiegen.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.017243449,
+              "prompt_tokens": 2098,
+              "prompt_time": 0.181972153,
+              "completion_tokens": 59,
+              "completion_time": 0.132256319,
+              "total_tokens": 2157,
+              "total_time": 0.314228472
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:06:36.959Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mein Sohn fragt: „Papa, warum heißt der Fliegenpilz so?“\nIch sage: „Weil er fleißig herumfliegt.“\nEr staunt: „Aber der ist doch fest am Boden!“\nIch antworte: „Doch, nur wenn er auf den Kopf gestellt wird.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.043073175,
+              "prompt_tokens": 2150,
+              "prompt_time": 0.182267433,
+              "completion_tokens": 69,
+              "completion_time": 0.13556399,
+              "total_tokens": 2219,
+              "total_time": 0.317831423
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T13:07:26.239Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "„Entschuldigung, ich habe Ihren Stift genommen.“  \n„Kein Problem, den habe ich ja nie benutzt.“  \n„Genau, ich wollte nur sicher gehen, dass er nicht doch noch Arbeit macht.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-120b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.016924962,
+              "prompt_tokens": 2223,
+              "prompt_time": 0.17491792,
+              "completion_tokens": 57,
+              "completion_time": 0.108154,
+              "total_tokens": 2280,
+              "total_time": 0.28307192
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.016475842,
+              "prompt_tokens": 2077,
+              "prompt_time": 0.138103528,
+              "completion_tokens": 96,
+              "completion_time": 0.147823002,
+              "total_tokens": 2173,
+              "total_time": 0.28592653,
+              "completion_tokens_details": {
+                "reasoning_tokens": 12
+              }
+            }
+          },
+          {
+            "model": "openai/gpt-oss-120b",
+            "returned_model": "openai/gpt-oss-120b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.018673698,
+              "prompt_tokens": 2077,
+              "prompt_time": 0.108007645,
+              "completion_tokens": 63,
+              "completion_time": 0.133418885,
+              "total_tokens": 2140,
+              "total_time": 0.24142653,
+              "completion_tokens_details": {
+                "reasoning_tokens": 10
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8
+  },
+  {
+    "timestamp": "2026-09-24T14:30:00.836Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du bist heute so aufmerksam.“\nIch frage: „Woran merkst du das?“\nSie antwortet: „Du hast endlich die Tür abgeriegelt,\ndie ich seit Wochen zugehalten habe.“\nIch seufze: „Ich dachte, du wärst gegen Zugluft.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.275227981,
+              "prompt_tokens": 2339,
+              "prompt_time": 0.214183822,
+              "completion_tokens": 71,
+              "completion_time": 0.139297437,
+              "total_tokens": 2410,
+              "total_time": 0.353481259
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T14:38:00.729Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Wäsche aufgehängt?“\nIch sage stolz: „Ja, komplett und ordentlich.“\nSie seufzt: „Leider nur in der Badewanne.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.429830222,
+              "prompt_tokens": 2403,
+              "prompt_time": 0.216466764,
+              "completion_tokens": 45,
+              "completion_time": 0.090815989,
+              "total_tokens": 2448,
+              "total_time": 0.307282753
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T15:58:10.179Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt mich: „Hast du die Fenster zumachen?“\nIch sage: „Ja, alle vier.“\nSie seufzt: „Dann ist es kein Wunder,\ndass der Hosenboden so schnell schmilzt.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.088655095,
+              "prompt_tokens": 2463,
+              "prompt_time": 0.177091892,
+              "completion_tokens": 53,
+              "completion_time": 0.100902782,
+              "total_tokens": 2516,
+              "total_time": 0.277994674
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T16:03:51.993Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du das Fenster zugezogen?“\nIch sage stolz: „Ja, ganz dicht.“\nSie starrt mich an: „Dann kommst du nie wieder rein.“\nIch seufze: „Doch, ich habe ja den Schlüssel.“\nSie sagt: „Der ist drinnen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.053121554,
+              "prompt_tokens": 2509,
+              "prompt_time": 0.217378786,
+              "completion_tokens": 72,
+              "completion_time": 0.166768454,
+              "total_tokens": 2581,
+              "total_time": 0.38414724
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T17:49:58.493Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau kramt stundenlang in der Schublade.\nIch frage: „Findest du das nicht?“\nSie seufzt: „Nein, ich suche nur meinen Platz.“\nIch antworte: „Dann nimm einfach meinen.“\nSie schaut mich an: „Du bist aber genau der, den ich vermisse.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.200961429,
+              "prompt_tokens": 2585,
+              "prompt_time": 0.179055866,
+              "completion_tokens": 77,
+              "completion_time": 0.153136836,
+              "total_tokens": 2662,
+              "total_time": 0.332192702
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T17:52:03.089Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum sitzt du da so still am Tisch?“\nIch sage: „Ich denke nach.“\nSie seufzt: „Über was denn?“\nIch antworte: „Darüber, dass du wieder meinen Teller ausräuchert hast.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004333148,
+              "prompt_tokens": 2666,
+              "prompt_time": 0.222028624,
+              "completion_tokens": 60,
+              "completion_time": 0.11722033,
+              "total_tokens": 2726,
+              "total_time": 0.339248954
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T17:52:57.593Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Hast du den Abwasch erledigt?“\nIch nicke stolz: „Ja, alles spülfrei und trocken.“\nSie seufzt: „Dann ist es kein Wunder,\ndass du heute den Müll in den Topf gekippt hast.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.119029203,
+              "prompt_tokens": 2730,
+              "prompt_time": 0.208299887,
+              "completion_tokens": 65,
+              "completion_time": 0.123536049,
+              "total_tokens": 2795,
+              "total_time": 0.331835936
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T17:53:59.674Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du die Tassen weggeräumt?“  \nMann: „Ja, alles sauber.“  \nFrau: „Dann bist du doch der, der meine Kaffeetasse versteckt hat.“  \nMann: „Ich hab sie im Kühlschrank gelassen, weil sie heiß war.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "exakte Wiederholung",
+            "usage": {
+              "queue_time": 0.02308129,
+              "prompt_tokens": 2799,
+              "prompt_time": 0.232860137,
+              "completion_tokens": 71,
+              "completion_time": 0.138918344,
+              "total_tokens": 2870,
+              "total_time": 0.371778481
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.021356873,
+              "prompt_tokens": 2593,
+              "prompt_time": 0.130628217,
+              "completion_tokens": 273,
+              "completion_time": 0.306959788,
+              "total_tokens": 2866,
+              "total_time": 0.437588005,
+              "completion_tokens_details": {
+                "reasoning_tokens": 199
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T18:19:59.050Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du den Müll rausgebracht?“\nIch sage stolz: „Ja, direkt vor die Tür.“\nSie seufzt: „Leider nur, dass du ihn wieder reingeholt hast.“\nIch verteidige mich: „Der war einfach zu unordentlich.“\nSie antwortet: „Dann hat er wenigstens eine Eigenschaft mit dir gemeinsam.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.022156122,
+              "prompt_tokens": 2867,
+              "prompt_time": 0.203293019,
+              "completion_tokens": 85,
+              "completion_time": 0.161263775,
+              "total_tokens": 2952,
+              "total_time": 0.364556794
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T18:49:58.183Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Brennt was?“\nIch nicke: „Nur die Jalousie.“\nSie ruft: „Lass sie aus!“\nIch antworte: „Zu spät, sie hat den Platz schon eingenommen.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.063945703,
+              "prompt_tokens": 2968,
+              "prompt_time": 0.210458119,
+              "completion_tokens": 56,
+              "completion_time": 0.105790299,
+              "total_tokens": 3024,
+              "total_time": 0.316248418
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T19:19:59.231Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du bist heute so aktiv.“\nIch frage: „Woran merkst du das?“\nSie antwortet: „Du hast den Staubsauger angemacht.“\nIch verteidige mich: „Ja, aber ich habe ihn nur aus dem Schuppen geholt.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064541961,
+              "prompt_tokens": 3017,
+              "prompt_time": 0.207305884,
+              "completion_tokens": 64,
+              "completion_time": 0.120937084,
+              "total_tokens": 3081,
+              "total_time": 0.328242968
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T19:30:24.096Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum sitzt du heute schon so lange im Bad?“\nIch sage: „Ich übe gerade, wie ich aussehe,\nwenn ich total entspannt bin.“\nSie ruft: „Dann mach die Türe auf,\nich schaue gern zu.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.088610106,
+              "prompt_tokens": 3085,
+              "prompt_time": 0.217895245,
+              "completion_tokens": 65,
+              "completion_time": 0.143006894,
+              "total_tokens": 3150,
+              "total_time": 0.360902139
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T19:50:03.040Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du das Fenster zugezogen?“  \nMann: „Ja, ich habe es in die Schublade gelegt.“  \nFrau: „Warum?“  \nMann: „Damit der Wind nicht die Bücher vertreibt.“  \nFrau: „Dann hast du die Bibliothek gerettet.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.97",
+            "usage": {
+              "queue_time": 0.024730632,
+              "prompt_tokens": 3154,
+              "prompt_time": 0.254297045,
+              "completion_tokens": 85,
+              "completion_time": 0.165024835,
+              "total_tokens": 3239,
+              "total_time": 0.41932188
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.172829115,
+              "prompt_tokens": 2913,
+              "prompt_time": 0.157825654,
+              "completion_tokens": 710,
+              "completion_time": 0.830498534,
+              "total_tokens": 3623,
+              "total_time": 0.988324188,
+              "completion_tokens_details": {
+                "reasoning_tokens": 637
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T20:20:02.256Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mann: „Ich habe die Tür geschlossen, weil du den Keks aus der Schublade genommen hast.“  \nFrau: „Oh, das ist nett.“  \nMann: „Dann hast du jetzt die Tür zu.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.96",
+            "usage": {
+              "queue_time": 0.064582369,
+              "prompt_tokens": 3228,
+              "prompt_time": 0.253465945,
+              "completion_tokens": 70,
+              "completion_time": 0.134725091,
+              "total_tokens": 3298,
+              "total_time": 0.388191036
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.058330193,
+              "prompt_tokens": 2979,
+              "prompt_time": 0.195641746,
+              "completion_tokens": 74,
+              "completion_time": 0.079116393,
+              "total_tokens": 3053,
+              "total_time": 0.274758139,
+              "completion_tokens_details": {
+                "reasoning_tokens": 18
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T20:49:58.212Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du den Staubsauger ausgewischt?“\nIch nicke stolz: „Ja, sogar die Fugen.“\nSie seufzt: „Dann ist es kein Wunder,\ndass der Hosenboden so schnell schmilzt.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.123440744,
+              "prompt_tokens": 3281,
+              "prompt_time": 0.283346844,
+              "completion_tokens": 58,
+              "completion_time": 0.114506793,
+              "total_tokens": 3339,
+              "total_time": 0.397853637
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T21:20:00.619Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mutter: „Du hast den Kühlschrank geöffnet, obwohl ich gerade den Joghurt eingepackt habe.“  \nVater: „Ich wollte nur sehen, ob er noch frisch ist.“  \nMutter: „Aber du hast den Joghurt aus dem Kühlschrank genommen.“  \nVater: „Ich hab ihn ins Thermos‑Becher‑Kühl-Set gelegt, damit er nicht zu kalt wird.“  \nMutter: „Dann hast du den Joghurt warm gemacht.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "exakte Wiederholung",
+            "usage": {
+              "queue_time": 0.070200161,
+              "prompt_tokens": 3343,
+              "prompt_time": 0.269715169,
+              "completion_tokens": 58,
+              "completion_time": 0.11354102,
+              "total_tokens": 3401,
+              "total_time": 0.383256189
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.193314178,
+              "prompt_tokens": 3085,
+              "prompt_time": 0.170277062,
+              "completion_tokens": 121,
+              "completion_time": 0.126905151,
+              "total_tokens": 3206,
+              "total_time": 0.297182213,
+              "completion_tokens_details": {
+                "reasoning_tokens": 12
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T21:49:57.921Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mann: „Ich habe den Staubsauger ausgelegt, damit er nicht mehr über den Teppich tanzt.“  \nFrau: „Dann hast du ihn auch schon aus der Küche geholt.“  \nMann: „Ja, weil er sonst zu viel Luft schnuppert.“  \nFrau: „Also hast du ihn jetzt in die Küche gebracht, damit er nichts mehr riecht?“  \nMann: „Genau, jetzt bleibt er sauber und ruhig.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.97",
+            "usage": {
+              "queue_time": 0.070179321,
+              "prompt_tokens": 3448,
+              "prompt_time": 0.255340529,
+              "completion_tokens": 71,
+              "completion_time": 0.137411638,
+              "total_tokens": 3519,
+              "total_time": 0.392752167
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.003761228,
+              "prompt_tokens": 3187,
+              "prompt_time": 0.229299054,
+              "completion_tokens": 122,
+              "completion_time": 0.132951023,
+              "total_tokens": 3309,
+              "total_time": 0.362250077,
+              "completion_tokens_details": {
+                "reasoning_tokens": 17
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T22:20:00.669Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum starrst du so traurig auf die Leere im Kühlschrank?“\nIch seufze: „Weil ich mich frage, ob das Licht auch auf mich wartet, wenn ich abends komme.“\nSie antwortet: „Nein, das schaltet sich aus, sobald die Tür zu ist.“\nIch sage: „Dann ist es ja wie mit mir. Ich leuchte nur, wenn du mich anschaust.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064185619,
+              "prompt_tokens": 3549,
+              "prompt_time": 0.261754296,
+              "completion_tokens": 101,
+              "completion_time": 0.208956042,
+              "total_tokens": 3650,
+              "total_time": 0.470710338
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T22:42:00.406Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du bist heute so vorausschauend.“\nIch frage: „Woran merkst du das?“\nSie antwortet: „Du hast den letzten Keks in die Vitrine gestellt.“\nIch verteidige mich: „Damit du ihn morgen hast.“\nSie seufzt: „Ich wollte ihn aber heute essen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064460968,
+              "prompt_tokens": 3654,
+              "prompt_time": 0.259303435,
+              "completion_tokens": 76,
+              "completion_time": 0.143418279,
+              "total_tokens": 3730,
+              "total_time": 0.402721714
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T22:49:58.572Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum sitzt du hier so traurig am Fenster?“\nIch sage: „Ich warte auf die Sonne.“\nSie seufzt: „Aber sie ist doch schon seit Wochen weg.“\nIch antworte: „Genau, ich schaue, ob sie mir nachtrauert.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.17548627,
+              "prompt_tokens": 3734,
+              "prompt_time": 0.332342859,
+              "completion_tokens": 69,
+              "completion_time": 0.152333839,
+              "total_tokens": 3803,
+              "total_time": 0.484676698
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T23:20:00.839Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum sitzt du so traurig auf der Couch?“\nIch seufze: „Ich habe vergessen, den Müll rauszubringen.“\nSie lacht: „Dann ist er jetzt halt ein Teil der Inneneinrichtung.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.087748534,
+              "prompt_tokens": 3807,
+              "prompt_time": 0.279605797,
+              "completion_tokens": 57,
+              "completion_time": 0.108303577,
+              "total_tokens": 3864,
+              "total_time": 0.387909374
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-24T23:49:56.845Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum lüftest du so eifrig?“\nIch sage: „Ich hole die frische Luft rein.“\nSie seufzt: „Dann nimm sie wieder raus.“\nIch frage: „Warum?“\nSie antwortet: „Ich wollte gerade den guten Geruch des Schokoladenkuchens genießen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.087494869,
+              "prompt_tokens": 3768,
+              "prompt_time": 0.267834201,
+              "completion_tokens": 79,
+              "completion_time": 0.15057331,
+              "total_tokens": 3847,
+              "total_time": 0.418407511
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T00:19:58.916Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Suppe probiert?“\nIch nicke ernst: „Ja, sie ist perfekt.“\nSie fragt überrascht: „Oh, und was hast du reingetan?“\nIch seufze: „Ich habe einfach geguckt, ob du mich liebst.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004486454,
+              "prompt_tokens": 3829,
+              "prompt_time": 0.332464517,
+              "completion_tokens": 65,
+              "completion_time": 0.127748036,
+              "total_tokens": 3894,
+              "total_time": 0.460212553
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T00:49:59.767Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Blumen gegossen?“\nIch sage stolz: „Ja, jeden einzelnen Topf.“\nSie seufzt: „Leider nur mit Salzwasser.“\nIch verteidige mich: „Ich dachte, die mögen es kräftig.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.023274817,
+              "prompt_tokens": 3876,
+              "prompt_time": 0.268237704,
+              "completion_tokens": 62,
+              "completion_time": 0.117763909,
+              "total_tokens": 3938,
+              "total_time": 0.386001613
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T00:53:09.421Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Heizung runtergedreht?“\nIch sage stolz: „Ja, auf Stufe zwei.“\nSie seufzt: „Dann ist es kein Wunder,\ndass du heute frierst.“\nIch antworte: „Doch, aber ich dachte, du mögest die Gemütlichkeit.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064106791,
+              "prompt_tokens": 3869,
+              "prompt_time": 0.275103253,
+              "completion_tokens": 74,
+              "completion_time": 0.140130868,
+              "total_tokens": 3943,
+              "total_time": 0.415234121
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T01:19:58.909Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du bist heute so aufmerksam.“\nIch frage: „Woran merkst du das?“\nSie antwortet: „Du hast endlich den Schrank abgeschlossen.“\nIch frage: „Was ist denn drin?“\nSie seufzt: „Meine Wutanfälle.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.08782834,
+              "prompt_tokens": 3892,
+              "prompt_time": 0.286157999,
+              "completion_tokens": 66,
+              "completion_time": 0.125496915,
+              "total_tokens": 3958,
+              "total_time": 0.411654914
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T01:49:58.331Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum hast du die Wäsche so hoch aufgehängt?“\nIch sage stolz: „Damit sie schneller trocknet.“\nSie seufzt: „Ja, aber jetzt reicht mein Arm nicht mehr.“\nIch antworte: „Dann nimm mal deine Hündin.\nDie springt ja auch gern hoch.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064543566,
+              "prompt_tokens": 3889,
+              "prompt_time": 0.269456898,
+              "completion_tokens": 76,
+              "completion_time": 0.143869505,
+              "total_tokens": 3965,
+              "total_time": 0.413326403
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T02:19:58.520Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum hast du das Fenster aufgehalten?“\nIch sage: „Damit der Kater nicht einschlafen kann.“\nSie seufzt: „Dann ist er jetzt aber wach.“\nIch antworte: „Ja, und er starrt mich so an,\nals hätte ich ihm die Welt kaputtgemacht.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.087774419,
+              "prompt_tokens": 3941,
+              "prompt_time": 0.271747371,
+              "completion_tokens": 78,
+              "completion_time": 0.166816031,
+              "total_tokens": 4019,
+              "total_time": 0.438563402
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T02:50:05.670Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Wäsche aufgehängt?“\nIch sage stolz: „Ja, alles ordentlich und trocken.“\nSie seufzt: „Leider nur in der Badewanne.“\nIch verteidige mich: „Da trocknet sie schneller.“\nSie antwortet: „Doch, aber jetzt stehst du unter der Dusche.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.012836179,
+              "prompt_tokens": 3948,
+              "prompt_time": 0.341017689,
+              "completion_tokens": 81,
+              "completion_time": 0.185232956,
+              "total_tokens": 4029,
+              "total_time": 0.526250645
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T03:19:59.877Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du die Wäsche aufgehängt?“  \nMann: „Ja, ich habe sie in den Schrank gelegt.“  \nFrau: „Der ist doch noch im Schrank.“  \nMann: „Ich habe sie nur in den Schrank gelegt, damit sie nicht mehr in der Luft liegt.“  \nFrau: „Dann hast du sie gerade aus dem Schrank gelassen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "exakte Wiederholung",
+            "usage": {
+              "queue_time": 0.004538014,
+              "prompt_tokens": 3958,
+              "prompt_time": 0.343074753,
+              "completion_tokens": 81,
+              "completion_time": 0.163275724,
+              "total_tokens": 4039,
+              "total_time": 0.506350477
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.306668683,
+              "prompt_tokens": 3638,
+              "prompt_time": 0.182795193,
+              "completion_tokens": 137,
+              "completion_time": 0.14131379,
+              "total_tokens": 3775,
+              "total_time": 0.324108983,
+              "completion_tokens_details": {
+                "reasoning_tokens": 45
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T03:49:58.074Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Wäsche gefaltet?“\nIch sage: „Ja, alles schön in Quadrate.“\nSie seufzt: „Dann nimm sie wieder raus.“\nIch frage: „Warum?“\nSie antwortet: „Die sind zu klein zum Einstecken.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.023018706,
+              "prompt_tokens": 3979,
+              "prompt_time": 0.273633166,
+              "completion_tokens": 69,
+              "completion_time": 0.130974365,
+              "total_tokens": 4048,
+              "total_time": 0.404607531
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T04:19:58.518Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du den Keks gegessen?“\nIch schüttle den Kopf: „Nein, ich habe nur zugeguckt.“\nSie starrt mich an: „Dann warum ist er weg?“\nIch seufze: „Weil ich ihn mir in den Bauch gesteckt habe,\ndamit er dort in Ruhe bleiben kann.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.087489955,
+              "prompt_tokens": 3958,
+              "prompt_time": 0.318372349,
+              "completion_tokens": 81,
+              "completion_time": 0.158636618,
+              "total_tokens": 4039,
+              "total_time": 0.477008967
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T04:49:59.691Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mann: „Ich habe die Decke von der Couch gezogen.“  \nFrau: „Warum? Siehst du etwas Besonderes?“  \nMann: „Ja, ich wollte sehen, ob die Luft noch frei ist.“  \nFrau: „Dann hast du die Luft verschoben.“  \nMann: „Genau, damit ich wieder Platz zum Atmen habe.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.064087862,
+              "prompt_tokens": 3981,
+              "prompt_time": 0.273705518,
+              "completion_tokens": 82,
+              "completion_time": 0.155440902,
+              "total_tokens": 4063,
+              "total_time": 0.42914642
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.032499634,
+              "prompt_tokens": 3664,
+              "prompt_time": 0.186458873,
+              "completion_tokens": 102,
+              "completion_time": 0.112936605,
+              "total_tokens": 3766,
+              "total_time": 0.299395478,
+              "completion_tokens_details": {
+                "reasoning_tokens": 17
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T05:19:56.747Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du hast mir ein Lied gesungen.“\nIch frage: „Hast du es gemocht?“\nSie seufzt: „Ja, die Melodie war schön.“\nIch lache: „Gut, denn der Text war frei erfunden.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004628156,
+              "prompt_tokens": 4011,
+              "prompt_time": 0.324149723,
+              "completion_tokens": 60,
+              "completion_time": 0.13538571,
+              "total_tokens": 4071,
+              "total_time": 0.459535433
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T05:40:46.290Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mann: „Ich habe den Wasserhahn repariert.“  \nFrau: „Wirklich? Ich dachte, du hast ihn einfach abgeklemmt.“  \nMann: „Nein, ich habe ihn nur aus dem Haus geholt, damit er nicht mehr im Bad spuckt.“  \nFrau: „Dann hast du ihn auch nicht wieder zurückgebracht.“",
+    "edge_mode": true,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "exakte Wiederholung",
+            "usage": {
+              "queue_time": 0.022303737,
+              "prompt_tokens": 3989,
+              "prompt_time": 0.294001139,
+              "completion_tokens": 79,
+              "completion_time": 0.160575568,
+              "total_tokens": 4068,
+              "total_time": 0.454576707
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.022178434,
+              "prompt_tokens": 3672,
+              "prompt_time": 0.219557129,
+              "completion_tokens": 118,
+              "completion_time": 0.137561144,
+              "total_tokens": 3790,
+              "total_time": 0.357118273,
+              "completion_tokens_details": {
+                "reasoning_tokens": 33
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T05:49:58.958Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Mann: „Ich habe die Tassen abgewaschen und in die Spülmaschine gelegt.“  \nFrau: „Gut, dann warte ich, bis du den Deckel wieder draufsetzt.“  \nMann: „Ist das wichtig?“  \nFrau: „Ja, sonst kühlt die Kaffeetasse den Kühlschrank.“  \nMann: „Dann hat er ja schon gefroren.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.85",
+            "usage": {
+              "queue_time": 0.064082238,
+              "prompt_tokens": 3983,
+              "prompt_time": 0.297498669,
+              "completion_tokens": 64,
+              "completion_time": 0.121005193,
+              "total_tokens": 4047,
+              "total_time": 0.418503862
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.003408635,
+              "prompt_tokens": 3674,
+              "prompt_time": 0.187328083,
+              "completion_tokens": 136,
+              "completion_time": 0.14182754,
+              "total_tokens": 3810,
+              "total_time": 0.329155623,
+              "completion_tokens_details": {
+                "reasoning_tokens": 44
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T06:20:01.194Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum schaust du so ernst in den Kühlschrank?“\nIch seufze: „Ich suche die restlichen Kekse.“\nSie staunt: „Die waren doch schon gestern weg.“\nIch antworte: „Genau, ich wollte mich nur vergewissern,\ndass sie wirklich weg sind.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.023063407,
+              "prompt_tokens": 4012,
+              "prompt_time": 0.296337249,
+              "completion_tokens": 73,
+              "completion_time": 0.158451953,
+              "total_tokens": 4085,
+              "total_time": 0.454789202
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T06:49:58.657Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Schuhe in den Schrank geräumt?“\nIch nicke stolz: „Ja, alles ordentlich.“\nSie seufzt: „Dann ist es kein Wunder,\ndass du heute barfuß durch die Küche stapfst.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.023231239,
+              "prompt_tokens": 4025,
+              "prompt_time": 0.287624912,
+              "completion_tokens": 59,
+              "completion_time": 0.117898997,
+              "total_tokens": 4084,
+              "total_time": 0.405523909
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T07:19:58.720Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Wäsche aufgehängt?“  \nIch nicke: „Ja, alle zusammen in den Schrank.“  \nSie schmunzelt: „Dann hast du sie doch schon weggeräumt.“  \nIch lächle: „Genau, damit sie nicht mehr in der Luft hängen.“  \nSie sagt: „Dann bleibt nur noch der Duft von frischer Kleidung.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "zu ähnlich 0.92",
+            "usage": {
+              "queue_time": 0.021783459,
+              "prompt_tokens": 4030,
+              "prompt_time": 0.290793704,
+              "completion_tokens": 60,
+              "completion_time": 0.118911524,
+              "total_tokens": 4090,
+              "total_time": 0.409705228
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.171452013,
+              "prompt_tokens": 3723,
+              "prompt_time": 0.202529732,
+              "completion_tokens": 118,
+              "completion_time": 0.185176909,
+              "total_tokens": 3841,
+              "total_time": 0.387706641,
+              "completion_tokens_details": {
+                "reasoning_tokens": 26
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T07:50:01.163Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Blumen gegossen?“\nIch nicke stolz: „Ja, jeden einzelnen Topf.“\nSie seufzt: „Leider nur mit Kaffeesatz.“\nIch verteidige mich: „Ich dachte, die mögen es kräftig.“\nSie sagt: „Dann haben sie jetzt wenigstens Charakter.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.024032855,
+              "prompt_tokens": 4049,
+              "prompt_time": 0.298834215,
+              "completion_tokens": 78,
+              "completion_time": 0.160766525,
+              "total_tokens": 4127,
+              "total_time": 0.45960074
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T08:20:00.118Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum starrst du so traurig auf die Leere im Kühlschrank?“\nIch seufze: „Ich warte, bis die Milch zurückkommt.“\nSie lacht: „Aber die ist doch schon seit Tagen weg.“\nIch antworte: „Genau, ich schaue, ob sie mir nachtrauert.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.070123235,
+              "prompt_tokens": 4068,
+              "prompt_time": 0.338389536,
+              "completion_tokens": 78,
+              "completion_time": 0.152881735,
+              "total_tokens": 4146,
+              "total_time": 0.491271271
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T08:49:59.263Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum starrst du so traurig auf die Wäscheline?“\nIch seufze: „Weil die Socken allein hängen.“\nSie lacht: „Dann nimm eine raus.“\nIch sage: „Dann hängen zwei allein.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.021639651,
+              "prompt_tokens": 4077,
+              "prompt_time": 0.280165818,
+              "completion_tokens": 64,
+              "completion_time": 0.123346717,
+              "total_tokens": 4141,
+              "total_time": 0.403512535
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T09:19:58.655Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du hast ja schon wieder den ganzen Abend am Telefon gesessen.“\nIch verteidige mich: „Ich habe doch nur den Akku geladen.“\nSie seufzt: „Dann ist es kein Wunder,\ndass du heute so abgebrannt wirkst.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.050299533,
+              "prompt_tokens": 4096,
+              "prompt_time": 0.341822934,
+              "completion_tokens": 64,
+              "completion_time": 0.147615328,
+              "total_tokens": 4160,
+              "total_time": 0.489438262
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T09:49:59.984Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum stehst du so lange in der Badewanne?“\nIch seufze: „Ich übe gerade, wie ich aussehe,\nwenn ich total entspannt bin.“\nSie ruft: „Dann mach die Türe auf,\nich schaue gern zu.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004586344,
+              "prompt_tokens": 4089,
+              "prompt_time": 0.281153102,
+              "completion_tokens": 70,
+              "completion_time": 0.132996755,
+              "total_tokens": 4159,
+              "total_time": 0.414149857
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T10:20:01.163Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Brille in die Tasche gelegt?“\nIch nicke: „Ja, ganz sicher.“\nSie starrt mich an: „Dann hast du sie auch verloren.“\nIch verteidige mich: „Nein, ich habe sie nur in Ruhe gelassen.“\nSie seufzt: „Dann lies mir jetzt den Brief vor, ohne zu blinzeln.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004634099,
+              "prompt_tokens": 4114,
+              "prompt_time": 0.354815576,
+              "completion_tokens": 88,
+              "completion_time": 0.183858633,
+              "total_tokens": 4202,
+              "total_time": 0.538674209
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T10:34:35.527Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum stehst du so lange vor der Schublade?“\nIch sage: „Ich suche den Löffel.“\nSie seufzt: „Der liegt doch seit drei Tagen auf dem Tisch.“\nIch antworte: „Ja, aber dort ist er für mich nicht zu finden.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.049862601,
+              "prompt_tokens": 4149,
+              "prompt_time": 0.372849944,
+              "completion_tokens": 69,
+              "completion_time": 0.135752473,
+              "total_tokens": 4218,
+              "total_time": 0.508602417
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T10:49:57.846Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum stehst du so lange vor dem leeren Regal?“\nIch seufze: „Ich überlege, ob der Keks mich vermisst.“\nSie lacht: „Der war doch schon gestern weg.“\nIch antworte: „Genau, ich schaue nur, ob er mir nachtrauert.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004771736,
+              "prompt_tokens": 4146,
+              "prompt_time": 0.334758377,
+              "completion_tokens": 77,
+              "completion_time": 0.169374261,
+              "total_tokens": 4223,
+              "total_time": 0.504132638
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T11:19:59.120Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du den Staubsauger ausgepackt?“  \nMann: „Ja, ich wollte sehen, ob er noch leise ist.“  \nFrau: „Dann hast du ihn doch noch nicht angeschaltet.“  \nMann: „Genau, ich warte, bis er selbstständig wird.“  \nFrau: „Dann hat er schon den Hausrat übernommen.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.022466269,
+              "prompt_tokens": 4146,
+              "prompt_time": 0.285000102,
+              "completion_tokens": 80,
+              "completion_time": 0.151953316,
+              "total_tokens": 4226,
+              "total_time": 0.436953418
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.082637224,
+              "prompt_tokens": 3820,
+              "prompt_time": 0.191769202,
+              "completion_tokens": 110,
+              "completion_time": 0.124619506,
+              "total_tokens": 3930,
+              "total_time": 0.316388708,
+              "completion_tokens_details": {
+                "reasoning_tokens": 20
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T11:50:09.392Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Hast du meine Jacke gesehen?“\nIch nicke: „Ja, sie hängt am Haken.“\nSie ruft frustriert: „Dann ist sie verschwunden!“\nIch frage: „Warum?“\nSie antwortet: „Weil ich sie dort gar nicht hingelegt habe.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004299768,
+              "prompt_tokens": 4170,
+              "prompt_time": 0.348856308,
+              "completion_tokens": 73,
+              "completion_time": 0.154818597,
+              "total_tokens": 4243,
+              "total_time": 0.503674905
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T12:19:58.525Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du den Tisch gedeckt?“\nIch nicke stolz: „Ja, ganz oben auf dem Regal.“\nSie seufzt: „Dann müssen wir jetzt im Stehen essen.“\nIch antworte: „Doch, aber dann bist du näher an der Decke.“\nSie sagt: „Genau dort ist es am kältesten.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.022146775,
+              "prompt_tokens": 4178,
+              "prompt_time": 0.296822441,
+              "completion_tokens": 84,
+              "completion_time": 0.159212304,
+              "total_tokens": 4262,
+              "total_time": 0.456034745
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T12:50:04.432Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau sagt: „Du bist heute so rücksichtsvoll.“\nIch frage: „Woran merkst du das?“\nSie antwortet: „Du hast mir den letzten Keks überlassen.“\nIch lache: „Nur, weil du gerade abgelenkt warst.“\nSie seufzt: „Danke, ich bin es gewohnt.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.023556976,
+              "prompt_tokens": 4198,
+              "prompt_time": 0.288387875,
+              "completion_tokens": 82,
+              "completion_time": 0.155751055,
+              "total_tokens": 4280,
+              "total_time": 0.44413893
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T13:19:57.589Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du das Fenster gekippt?“\nIch nicke stolz: „Ja, ganz leicht.“\nSie seufzt: „Dann ist es kein Wunder,\ndass du jetzt nasse Socken hast.“\nIch verteidige mich: „Die trocknen im Heizkörper.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.10249207,
+              "prompt_tokens": 4194,
+              "prompt_time": 0.350472759,
+              "completion_tokens": 69,
+              "completion_time": 0.158707343,
+              "total_tokens": 4263,
+              "total_time": 0.509180102
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T13:49:58.327Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Hast du die Post sortiert?“\nIch nicke stolz: „Ja, alles im Briefkasten.“\nSie seufzt: „Dann haben wir sie doch schon wieder nicht gelesen.“\nIch verteidige mich: „Doch, aber jetzt weiß ich wenigstens,\ndass du sie nicht vermissen kannst.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.050052872,
+              "prompt_tokens": 4207,
+              "prompt_time": 0.377936738,
+              "completion_tokens": 76,
+              "completion_time": 0.154933846,
+              "total_tokens": 4283,
+              "total_time": 0.532870584
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T14:19:59.115Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum sitzt du heute schon so lange auf der Couch?“\nIch sage: „Ich warte darauf, dass der Film endlich losgeht.“\nSie seufzt: „Aber wir haben doch gar kein Kino.“\nIch antworte: „Genau, deshalb schaue ich nur zu.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004883623,
+              "prompt_tokens": 4219,
+              "prompt_time": 0.289813512,
+              "completion_tokens": 69,
+              "completion_time": 0.131062336,
+              "total_tokens": 4288,
+              "total_time": 0.420875848
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T15:31:38.209Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum stehst du so lange vor dem Spiegel?“\nIch sage: „Ich übe gerade, wie ich aussehe, wenn ich dich verliebt ansehe.“\nSie seufzt: „Dann stell dich mal hin, wo ich dich sehen kann.“\nIch antworte: „Doch, aber dann muss ich erst den Spiegel drehen.“\nSie sagt: „Dann sieh mich einfach an, der Spiegel kann warten.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.096263009,
+              "prompt_tokens": 4223,
+              "prompt_time": 0.309934376,
+              "completion_tokens": 103,
+              "completion_time": 0.206151156,
+              "total_tokens": 4326,
+              "total_time": 0.516085532
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T19:29:59.237Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum hast du den Müllbeutel auf dem Tisch stehen lassen?“\nIch sage: „Damit er mich fragt, ob ich noch was brauche.“\nSie seufzt: „Dann hast du jetzt den ganzen Abend mit ihm geredet.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004886767,
+              "prompt_tokens": 4256,
+              "prompt_time": 0.301957625,
+              "completion_tokens": 60,
+              "completion_time": 0.113855427,
+              "total_tokens": 4316,
+              "total_time": 0.415813052
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-25T22:44:01.686Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du die Kissen neu gestapelt?“  \nMann: „Ja, ich habe sie nach der Hängematte ausgerichtet.“  \nFrau: „Dann sitzt du ja nicht mehr im Bett.“  \nMann: „Genau, ich wollte, dass das Bett endlich Luft bekommt.“  \nFrau: „Dann ist die Hängematte jetzt dein neues Sofa.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": ">5 Zeilen",
+            "usage": {
+              "queue_time": 0.023177524,
+              "prompt_tokens": 4267,
+              "prompt_time": 0.293062931,
+              "completion_tokens": 86,
+              "completion_time": 0.163309466,
+              "total_tokens": 4353,
+              "total_time": 0.456372397
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.045228382,
+              "prompt_tokens": 3919,
+              "prompt_time": 0.213909718,
+              "completion_tokens": 107,
+              "completion_time": 0.133166006,
+              "total_tokens": 4026,
+              "total_time": 0.347075724,
+              "completion_tokens_details": {
+                "reasoning_tokens": 14
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T00:55:22.627Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Frau: „Hast du das Handy aufgeladen?“  \nMann: „Ja, ich habe die Ladestation im Wohnzimmer versteckt.“  \nFrau: „Dann ist es wirklich praktisch, wenn du den Stromverbrauch kontrollierst.“  \nMann: „Genau, ich wollte nur sicherstellen, dass ich keine Batterien mehr brauche.“  \nFrau: „Dann ist das ein echter Energiesparer – für die ganze Familie.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "openai/gpt-oss-20b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": false,
+            "validation": "exakte Wiederholung",
+            "usage": {
+              "queue_time": 0.220030695,
+              "prompt_tokens": 4295,
+              "prompt_time": 0.358608319,
+              "completion_tokens": 81,
+              "completion_time": 0.159290475,
+              "total_tokens": 4376,
+              "total_time": 0.517898794
+            }
+          },
+          {
+            "model": "openai/gpt-oss-20b",
+            "returned_model": "openai/gpt-oss-20b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.003611472,
+              "prompt_tokens": 3948,
+              "prompt_time": 0.214495405,
+              "completion_tokens": 119,
+              "completion_time": 0.122757138,
+              "total_tokens": 4067,
+              "total_time": 0.337252543,
+              "completion_tokens_details": {
+                "reasoning_tokens": 21
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T05:52:09.724Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum starrst du so traurig auf den leeren Teller?“\nIch seufze: „Ich suche den Keks, den ich vorhin gegessen habe.“\nSie lacht: „Doch, der ist doch längst verdaut.“\nIch antworte: „Genau, ich schaue nur, ob er mir nachtrauert.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.064071631,
+              "prompt_tokens": 4288,
+              "prompt_time": 0.304598624,
+              "completion_tokens": 83,
+              "completion_time": 0.159212302,
+              "total_tokens": 4371,
+              "total_time": 0.463810926
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T10:30:42.062Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum liegst du schon wieder in der Küche?“\nIch seufze: „Ich habe den Biss des Hundes gespürt.“\nSie lacht: „Der hat doch nichts gebissen.“\nIch sage: „Nein, aber er hat geschaut,\nals wollte er mich adoptieren.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.024278553,
+              "prompt_tokens": 4274,
+              "prompt_time": 0.305237438,
+              "completion_tokens": 71,
+              "completion_time": 0.134712121,
+              "total_tokens": 4345,
+              "total_time": 0.439949559
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T14:41:57.353Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum machst du das Licht im Bad an?“\nIch sage: „Ich suche nach einem Ersatz.“\nSie seufzt: „Für was denn?“\nIch antworte: „Für die Zitrone. Die war ja so sauer.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.099206137,
+              "prompt_tokens": 4244,
+              "prompt_time": 0.295716401,
+              "completion_tokens": 60,
+              "completion_time": 0.114146773,
+              "total_tokens": 4304,
+              "total_time": 0.409863174
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T18:03:00.646Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum trägst du die Küche im Arm?“\nIch sage: „Ich wollte dich überraschen.“\nSie staunt: „Oh, das ist ja rührend.“\nIch seufze: „Doch, aber ich habe das Salz versehentlich mit der Kaffeetasse verwechselt.\nUnd jetzt schmeckt der Kaffee nach Meer.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004680845,
+              "prompt_tokens": 4228,
+              "prompt_time": 0.290645714,
+              "completion_tokens": 81,
+              "completion_time": 0.153565363,
+              "total_tokens": 4309,
+              "total_time": 0.444211077
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  },
+  {
+    "timestamp": "2026-09-26T21:03:08.588Z",
+    "provider": "Groq",
+    "status": "ok",
+    "text": "Meine Frau fragt: „Warum stehst du so lange vor der Spülmaschine?“\nIch sage: „Ich warte, bis sie fertig ist.“\nSie seufzt: „Aber sie läuft doch gar nicht.“\nIch antworte: „Genau, dann weiß ich ja, dass ich nichts falsch gemacht habe.“",
+    "edge_mode": false,
+    "attempts": [
+      {
+        "provider": "Groq",
+        "status": "ok",
+        "returned_model": "qwen/qwen3.8-27b",
+        "error": null,
+        "diagnostics": [
+          {
+            "model": "qwen/qwen3.8-27b",
+            "returned_model": "qwen/qwen3.8-27b",
+            "http_status": 200,
+            "valid": true,
+            "validation": "ok",
+            "usage": {
+              "queue_time": 0.004525604,
+              "prompt_tokens": 4242,
+              "prompt_time": 0.342850213,
+              "completion_tokens": 72,
+              "completion_time": 0.145056765,
+              "total_tokens": 4314,
+              "total_time": 0.487906978
+            }
+          }
+        ]
+      }
+    ],
+    "reserve_used": null,
+    "reserve_added": 0,
+    "reserve_after": 8,
+    "webhook_status": 200
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-09-26T21:03:08.588Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "Meine Frau fragt: „Warum stehst du so lange vor der Spülmaschine?“\nIch sage: „Ich warte, bis sie fertig ist.“\nSie seufzt: „Aber sie läuft doch gar nicht.“\nIch antworte: „Genau, dann weiß ich ja, dass ich nichts falsch gemacht habe.“",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "qwen/qwen3.8-27b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "qwen/qwen3.8-27b",
+          "returned_model": "qwen/qwen3.8-27b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "usage": {
+            "queue_time": 0.004525604,
+            "prompt_tokens": 4242,
+            "prompt_time": 0.342850213,
+            "completion_tokens": 72,
+            "completion_time": 0.145056765,
+            "total_tokens": 4314,
+            "total_time": 0.487906978
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "webhook_status": 200,
+  "context_jokes_sent": 50,
+  "reserve_count": 8
+}
