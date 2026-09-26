@@ -20,7 +20,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.8.0"
+ENGINE_VERSION = "1.8.1"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -357,7 +357,7 @@ def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES)
     req = urllib.request.Request(
         url,
         headers={
-            "User-Agent": "gw2action/1.8.0 (+GitHub Actions; static community dashboard)",
+            "User-Agent": "gw2action/1.8.1 (+GitHub Actions; static community dashboard)",
             "Accept": "*/*",
             "Accept-Encoding": "identity",
         },
@@ -1679,25 +1679,33 @@ body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI
 header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 12px;text-align:center}}
 #clock{{font-size:23px;font-weight:800}}
 .status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
-.header-tools{{display:flex;justify-content:center;align-items:center;gap:5px;margin-top:6px;position:relative}}
+.header-tools{{display:flex;justify-content:center;align-items:flex-end;gap:10px;margin-top:8px;position:relative}}
+.control-group{{display:flex;flex-direction:column;align-items:flex-start;gap:4px;position:relative}}
+.control-label{{font-size:9px;line-height:1;color:#737b86;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding-left:3px}}
+.control-divider{{align-self:stretch;width:1px;min-height:30px;background:#2a2f36;margin:1px 1px 0}}
 .tz-tools{{display:flex;justify-content:center;gap:4px}}
-.tz-btn,.content-filter>summary{{border:1px solid #30353d;background:#121419;color:#8f97a2;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer;line-height:1.2}}
+.tz-btn,.content-filter>summary{{border:1px solid #30353d;background:#121419;color:#9aa2ad;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer;line-height:1.2}}
 .tz-btn:hover,.content-filter>summary:hover{{color:#fff;border-color:#555e6b}}
 .tz-btn.active{{color:#fff;background:#242932;border-color:#5d6673}}
 .content-filter{{position:relative}}
-.content-filter>summary{{list-style:none;user-select:none}}
+.content-filter>summary{{list-style:none;user-select:none;min-width:52px;text-align:center}}
+.content-filter>summary::after{{content:" ▾";color:#6f7782;font-size:9px}}
+.content-filter[open]>summary::after{{content:" ▴"}}
 .content-filter>summary::-webkit-details-marker{{display:none}}
 .content-filter[open]>summary{{color:#fff;background:#242932;border-color:#5d6673}}
-.content-menu{{position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%);width:min(330px,calc(100vw - 24px));max-height:360px;overflow:auto;padding:8px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:30}}
-.content-menu-head{{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:2px 2px 7px;border-bottom:1px solid #292e35;margin-bottom:5px}}
+.content-menu{{position:absolute;top:calc(100% + 7px);right:0;width:min(610px,calc(100vw - 24px));max-height:390px;overflow:auto;padding:10px;background:#15171b;border:1px solid #343a43;border-radius:10px;box-shadow:0 10px 28px rgba(0,0,0,.38);text-align:left;z-index:30}}
+.content-menu-head{{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:2px 4px 8px;border-bottom:1px solid #292e35;margin-bottom:6px}}
 .content-menu-title{{font-size:10px;font-weight:800;color:#c6cbd2;text-transform:uppercase;letter-spacing:.05em}}
 .content-all-btn{{border:0;background:transparent;color:#9fb7d7;font-size:10px;font-weight:800;cursor:pointer;padding:3px 4px}}
 .content-all-btn:hover{{color:#fff}}
-.content-grid{{display:grid;grid-template-columns:1fr 1fr;gap:2px 6px}}
-.content-option{{display:flex;align-items:center;gap:7px;padding:5px 6px;border-radius:6px;font-size:11px;color:#c3c8cf;cursor:pointer;min-width:0}}
+.content-grid{{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:2px 8px}}
+.content-option{{display:flex;align-items:center;gap:7px;padding:6px 7px;border-radius:6px;font-size:11px;color:#c3c8cf;cursor:pointer;min-width:0}}
 .content-option:hover{{background:#1d2025;color:#fff}}
-.content-option input{{margin:0;accent-color:#d7aa42}}
-.content-option span{{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.content-option input{{margin:0;accent-color:#d7aa42;flex:0 0 auto}}
+.content-option span{{white-space:nowrap;overflow:visible;text-overflow:clip}}
+.preference-note{{margin:18px 0 2px;text-align:center;color:#69717c;font-size:9px;line-height:1.35}}
+.preference-note.saved{{color:#77897b}}
+.preference-note.failed{{color:#b89278}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:62px;padding:8px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 .event-card:hover{{background:var(--panel2)}}
@@ -1757,6 +1765,9 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   .all-card{{grid-template-columns:50px 1fr}}
   .all-badges{{grid-column:2}}
   .all-wp{{grid-column:1/3;width:100%}}
+  .header-tools{{gap:7px}}
+  .control-divider{{min-height:28px}}
+  .content-menu{{position:fixed;top:78px;right:10px;left:10px;width:auto;max-height:60vh}}
   .content-grid{{grid-template-columns:1fr}}
 }}
 </style>
@@ -1765,15 +1776,22 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div class="app">
 <header>
   <div id="clock"></div>
-  <div class="header-tools">
-    <div id="time-zone-tools" class="tz-tools" hidden>
-      <button type="button" class="tz-btn" data-tz-mode="local">Local</button>
-      <button type="button" class="tz-btn" data-tz-mode="server">Server · UTC</button>
+  <div class="header-tools" aria-label="Display controls">
+    <div class="control-group">
+      <span class="control-label" title="Display time zone">Time</span>
+      <div id="time-zone-tools" class="tz-tools">
+        <button type="button" class="tz-btn" data-tz-mode="local" title="Your device time">Local</button>
+        <button type="button" class="tz-btn" data-tz-mode="server" title="GW2 server time">Server · UTC</button>
+      </div>
     </div>
-    <details id="content-filter" class="content-filter">
-      <summary id="content-filter-summary">Content: All</summary>
-      <div id="content-filter-menu" class="content-menu"></div>
-    </details>
+    <span class="control-divider" aria-hidden="true"></span>
+    <div class="control-group">
+      <span class="control-label" title="Filter events">Content</span>
+      <details id="content-filter" class="content-filter">
+        <summary id="content-filter-summary" title="Filter events">All</summary>
+        <div id="content-filter-menu" class="content-menu"></div>
+      </details>
+    </div>
   </div>
   {f'<div class="status-note">{html.escape(notice)}</div>' if notice else ''}
 </header>
@@ -1786,6 +1804,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
+<footer id="preference-note" class="preference-note">Preference cookie is saved only after you change a setting.</footer>
 </div>
 
 <script>
@@ -1798,39 +1817,104 @@ let localZone="";
 try {{ localZone=Intl.DateTimeFormat().resolvedOptions().timeZone || ""; }} catch(e) {{}}
 const utcLikeZones=new Set(["UTC","Etc/UTC","GMT","Etc/GMT"]);
 const localDistinct=Boolean(localZone && !utcLikeZones.has(localZone));
+
+const PREF_COOKIE_KEY="gw2action_prefs";
+const LEGACY_TIME_KEY="gw2action-time-mode";
+const LEGACY_CONTENT_KEY="gw2action-disabled-content-v1";
+const knownContentIds=new Set(CONTENT_OPTIONS.map(item=>item.id));
+let preferenceSaveState="idle";
+
+function cookiePath() {{
+  const path=window.location.pathname || "/";
+  if(path.endsWith("/")) return path;
+  const slash=path.lastIndexOf("/");
+  return slash>=0 ? path.slice(0,slash+1) : "/";
+}}
+function rawCookie(name) {{
+  const prefix=`${{name}}=`;
+  for(const part of document.cookie.split(";")) {{
+    const trimmed=part.trim();
+    if(trimmed.startsWith(prefix)) return trimmed.slice(prefix.length);
+  }}
+  return "";
+}}
+function readPreferenceCookie() {{
+  const raw=rawCookie(PREF_COOKIE_KEY);
+  if(!raw) return null;
+  try {{
+    const parsed=JSON.parse(decodeURIComponent(raw));
+    return parsed && parsed.v===1 ? parsed : null;
+  }} catch(e) {{ return null; }}
+}}
+function legacyPreferences() {{
+  let time="";
+  let disabled=[];
+  try {{
+    time=localStorage.getItem(LEGACY_TIME_KEY) || "";
+    const parsed=JSON.parse(localStorage.getItem(LEGACY_CONTENT_KEY) || "[]");
+    if(Array.isArray(parsed)) disabled=parsed;
+  }} catch(e) {{}}
+  return {{time,disabled}};
+}}
+
+const cookiePrefs=readPreferenceCookie();
+if(cookiePrefs) preferenceSaveState="saved";
+const oldPrefs=cookiePrefs ? {{time:"",disabled:[]}} : legacyPreferences();
 let timeMode="server";
-try {{
-  const saved=localStorage.getItem("gw2action-time-mode");
-  if(saved==="local" && localDistinct) timeMode="local";
-  else if(saved==="server") timeMode="server";
-  else if(localDistinct) timeMode="local";
-}} catch(e) {{ if(localDistinct) timeMode="local"; }}
+const requestedTime=cookiePrefs?.time || oldPrefs.time;
+if(requestedTime==="local" && localDistinct) timeMode="local";
+else if(requestedTime==="server") timeMode="server";
+else if(localDistinct) timeMode="local";
 
 function selectedZone() {{ return timeMode==="local" && localDistinct ? localZone : "UTC"; }}
-function saveTimeMode() {{ try {{ localStorage.setItem("gw2action-time-mode",timeMode); }} catch(e) {{}} }}
 
-const CONTENT_FILTER_KEY="gw2action-disabled-content-v1";
-const knownContentIds=new Set(CONTENT_OPTIONS.map(item=>item.id));
 let disabledContent=new Set();
-try {{
-  const saved=JSON.parse(localStorage.getItem(CONTENT_FILTER_KEY) || "[]");
-  if(Array.isArray(saved)) disabledContent=new Set(saved.filter(id=>knownContentIds.has(id)));
-}} catch(e) {{ disabledContent=new Set(); }}
-function saveContentFilter() {{
-  try {{ localStorage.setItem(CONTENT_FILTER_KEY,JSON.stringify([...disabledContent].sort())); }} catch(e) {{}}
+const storedDisabled=cookiePrefs?.disabled ?? oldPrefs.disabled;
+if(Array.isArray(storedDisabled)) disabledContent=new Set(storedDisabled.filter(id=>knownContentIds.has(id)));
+
+function updatePreferenceNote() {{
+  const note=document.getElementById("preference-note");
+  if(!note) return;
+  note.classList.remove("saved","failed");
+  if(preferenceSaveState==="saved") {{
+    note.textContent="Preference cookie saved on this device.";
+    note.classList.add("saved");
+  }} else if(preferenceSaveState==="failed") {{
+    note.textContent="We tried to save the preference cookie, but it was blocked.";
+    note.classList.add("failed");
+  }} else {{
+    note.textContent="Preference cookie is saved only after you change a setting.";
+  }}
+}}
+function savePreferences() {{
+  const payload={{v:1,time:timeMode,disabled:[...disabledContent].sort()}};
+  const encoded=encodeURIComponent(JSON.stringify(payload));
+  const secure=window.location.protocol==="https:" ? "; Secure" : "";
+  document.cookie=`${{PREF_COOKIE_KEY}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;
+  const saved=rawCookie(PREF_COOKIE_KEY)===encoded;
+  preferenceSaveState=saved ? "saved" : "failed";
+  if(saved) {{
+    try {{
+      localStorage.removeItem(LEGACY_TIME_KEY);
+      localStorage.removeItem(LEGACY_CONTENT_KEY);
+    }} catch(e) {{}}
+  }}
+  updatePreferenceNote();
+  return saved;
 }}
 function contentEnabled(event) {{ return !disabledContent.has(event.content_id); }}
 
 function updateTimeZoneControls() {{
   const tools=document.getElementById("time-zone-tools");
   if(!tools) return;
-  if(localDistinct) {{
-    tools.hidden=false;
-    const localButton=tools.querySelector('[data-tz-mode="local"]');
-    if(localButton) localButton.title=`Local time · ${{localZone}}`;
-  }} else {{
-    tools.hidden=true;
+  tools.hidden=false;
+  const localButton=tools.querySelector('[data-tz-mode="local"]');
+  if(localButton) {{
+    localButton.hidden=!localDistinct;
+    localButton.title=localDistinct ? `Your device time · ${{localZone}}` : "Your device time";
   }}
+  const serverButton=tools.querySelector('[data-tz-mode="server"]');
+  if(serverButton) serverButton.title="GW2 server time · UTC";
   tools.querySelectorAll(".tz-btn").forEach(btn=>{{
     const active=btn.dataset.tzMode===timeMode;
     btn.classList.toggle("active",active);
@@ -1843,15 +1927,15 @@ function updateContentSummary() {{
   if(!summary) return;
   const total=CONTENT_OPTIONS.length;
   const enabled=total-disabledContent.size;
-  summary.textContent=disabledContent.size===0 ? "Content: All" : `Content: ${{enabled}}/${{total}}`;
-  summary.title=disabledContent.size===0 ? "All content is shown" : `${{enabled}} of ${{total}} content groups shown`;
+  summary.textContent=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
+  summary.title=disabledContent.size===0 ? "Filter events" : `${{enabled}} of ${{total}} shown`;
 }}
 
 function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
-  const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option" title="${{esc(item.label)}}"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Shown content</span><button type="button" class="content-all-btn" data-content-all>Show all</button></div><div class="content-grid">${{rows}}</div>`;
+  const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
+  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Enable all">Show all</button></div><div class="content-grid">${{rows}}</div>`;
   updateContentSummary();
 }}
 
@@ -1935,7 +2019,7 @@ document.getElementById("time-zone-tools")?.addEventListener("click",ev=>{{
   const mode=btn.dataset.tzMode;
   if(mode==="local" && !localDistinct) return;
   if(mode!=="local" && mode!=="server") return;
-  timeMode=mode;saveTimeMode();clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();updateTimeZoneControls();tickClock();renderLive(true);
+  timeMode=mode;savePreferences();clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();updateTimeZoneControls();tickClock();renderLive(true);
 }});
 
 document.getElementById("content-filter-menu")?.addEventListener("change",ev=>{{
@@ -1945,13 +2029,13 @@ document.getElementById("content-filter-menu")?.addEventListener("change",ev=>{{
   if(!knownContentIds.has(id)) return;
   if(input.checked) disabledContent.delete(id);
   else disabledContent.add(id);
-  saveContentFilter();updateContentSummary();renderLive(true);
+  savePreferences();updateContentSummary();renderLive(true);
 }});
 
 document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   const all=ev.target.closest("[data-content-all]");
   if(!all) return;
-  disabledContent.clear();saveContentFilter();buildContentFilter();renderLive(true);
+  disabledContent.clear();savePreferences();buildContentFilter();renderLive(true);
 }});
 
 document.querySelector(".app")?.addEventListener("click",async ev=>{{
@@ -1961,7 +2045,7 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
   try {{await navigator.clipboard.writeText(value);const old=btn.textContent;btn.textContent=`✓ ${{value}}`;setTimeout(()=>{{btn.textContent=old;}},900);}} catch(e) {{}}
 }});
 
-updateTimeZoneControls();buildContentFilter();tickClock();renderLive(true);setInterval(tickClock,1000);
+updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);setInterval(tickClock,1000);
 // Exact local category transition, independent of Pages publication latency.
 setInterval(()=>renderLive(false),2000);
 
