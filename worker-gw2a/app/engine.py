@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.1.0"
+ENGINE_VERSION = "2.1.1"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -2005,11 +2005,12 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .level-filter-option{{min-width:0}}
 .level-filter-option small{{font-size:inherit;color:var(--muted)}}
 @media(max-width:380px){{.level-filter-option small{{display:block}}}}
-.preference-footer{{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px 0 2px}}
+.preference-footer{{display:flex;align-items:center;justify-content:center;gap:3px;flex-wrap:wrap;margin:14px 0 2px}}
 .preference-note{{color:#69717c;font-size:9px;line-height:1.3}}
 .preference-note.saved{{color:#77897b}}
 .preference-note.failed{{color:#b89278}}
 .delete-cookie{{padding:0;border:0;background:none;color:#929daa;font:inherit;font-size:9px;text-decoration:underline;text-underline-offset:2px;cursor:pointer}}
+.delete-cookie[hidden]{{display:none}}
 .delete-cookie:hover,.delete-cookie:focus-visible{{color:#fff}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:62px;padding:8px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
@@ -2109,7 +2110,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
-<footer class="preference-footer"><span id="preference-note" class="preference-note" role="status">Preferences will be saved in a single cookie.</span><button id="delete-preferences" class="delete-cookie" type="button" title="Remove saved preferences from this browser">Delete cookie</button></footer>
+<footer class="preference-footer"><span id="preference-note" class="preference-note" role="status">Preferences will be saved in a single cookie.</span><button id="delete-preferences" class="delete-cookie" type="button" title="Remove saved preferences from this browser" hidden>Delete cookie</button></footer>
 <span id="copy-status" class="sr-only" role="status"></span>
 </div>
 
@@ -2153,6 +2154,19 @@ function rawCookie(name) {{
   }}
   return "";
 }}
+function ownCookieNames() {{
+  const names=new Set();
+  for(const part of document.cookie.split(";")) {{
+    const name=part.trim().split("=",1)[0];
+    if(/^gw2action(?:_|-)/.test(name)) names.add(name);
+  }}
+  return names;
+}}
+function syncDeleteCookieButton() {{
+  const button=document.getElementById("delete-preferences");
+  if(!button) return;
+  try {{ button.hidden=ownCookieNames().size===0; }} catch(e) {{ button.hidden=true; }}
+}}
 function readPreferenceCookie() {{
   const raw=rawCookie(PREF_COOKIE_KEY);
   if(!raw) return null;
@@ -2190,6 +2204,7 @@ let showLevel80=typeof cookiePrefs?.level80==="boolean" ? cookiePrefs.level80 : 
 
 function updatePreferenceNote() {{
   const note=document.getElementById("preference-note");
+  syncDeleteCookieButton();
   if(!note) return;
   note.classList.remove("saved","failed");
   if(preferenceSaveState==="saved") {{
@@ -2232,21 +2247,17 @@ function deleteStoredPreferences() {{
   suppressTransientUiState=true;
   let cookiesCleared=true;
   try {{
-    const ownNames=new Set([PREF_COOKIE_KEY]);
-    for(const part of document.cookie.split(";")) {{
-      const name=part.trim().split("=",1)[0];
-      if(/^gw2action(?:_|-)/.test(name)) ownNames.add(name);
-    }}
+    const ownNames=ownCookieNames();
     const paths=new Set(["/"]);
     let parent="";
     for(const part of cookiePath().split("/").filter(Boolean)) {{
       parent+="/"+part;
       paths.add(parent);paths.add(parent+"/");
     }}
-    for(const name of ownNames) for(const path of paths) {{
-      document.cookie=`${{name}}=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=${{path}}; SameSite=Lax`;
+    for(const name of ownNames) for(const path of paths) for(const domain of ["",`; Domain=${{window.location.hostname}}`]) {{
+      document.cookie=`${{name}}=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=${{path}}${{domain}}; SameSite=Lax`;
     }}
-    cookiesCleared=!document.cookie.split(";").some(part=>/^gw2action(?:_|-)/.test(part.trim().split("=",1)[0]));
+    cookiesCleared=ownCookieNames().size===0;
   }} catch(e) {{ cookiesCleared=false; }}
   function clearOwnKeys(storage) {{
     try {{
@@ -2308,7 +2319,7 @@ function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
   const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  const level80=`<label class="content-option level-filter-option" title="Optional when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>(optional while leveling alts)</small></span></label>`;
+  const level80=`<label class="content-option level-filter-option" title="Useful when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>· can be hidden while leveling alts</small></span></label>`;
   menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
 }}
@@ -2542,7 +2553,7 @@ function renderLive(force=false) {{
   const focused=focusKey();
   lastLayoutSignature=signature;
   document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
-  document.getElementById("now-more").innerHTML=detailsBlock("All Other Current Events",groups.activeMore,nowMoreOpen,"now-more");
+  document.getElementById("now-more").innerHTML=detailsBlock("More Current Activity",groups.activeMore,nowMoreOpen,"now-more");
   document.getElementById("next-top").innerHTML=groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock();
   document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block">${{groups.upcomingExtra.map(e=>miniCard(e)).join("")}}</div>`:"";
   document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen,"next-more");
@@ -2585,6 +2596,7 @@ document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   restoreFocus(focused);
 }});
 document.getElementById("delete-preferences")?.addEventListener("click",deleteStoredPreferences);
+window.addEventListener("focus",syncDeleteCookieButton);
 
 const contentFilter=document.getElementById("content-filter");
 contentFilter?.addEventListener("toggle",()=>{{
