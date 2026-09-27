@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.2"
+ENGINE_VERSION = "2.2.3"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -46,15 +46,39 @@ URLS = {
     "news": "https://www.guildwars2.com/en/feed/"
 }
 
-ANNOUNCEMENT_SOURCE_URLS = {
+COMMUNITY_INFO_URLS = {
     "Meta-Train": "https://docs.google.com/spreadsheets/d/1I2501rbqKjAD6HXQOtHAPQjLdqeS2tQIc9kEwyXuDKo/edit",
     "Hardstuck": "https://hardstuck.gg/events/",
     "GW2Community": "https://gw2community.de/calendar/",
-    "ViP": "https://gw2vip.net/",
+    "ViP": "https://guildwarsvip.com/",
     "TT Wurm EU": "https://sites.google.com/view/ttwurm/calendar",
     "DCAP": "https://wiki.guildwars2.com/wiki/User:DCAP",
     "Choyareset": "https://choyaaa.com/meta",
 }
+
+CREDIT_GROUPS = (
+    ("Game data & event reference", (
+        ("ArenaNet · Guild Wars 2 API", "https://wiki.guildwars2.com/wiki/API:Main",
+         "Map levels, event details and waypoint data"),
+        ("GW2 API Event Timers · giovazz89", "https://github.com/giovazz89/gw2-api-event-timers",
+         "Recurring event schedules"),
+        ("Guild Wars 2 Wiki contributors", "https://wiki.guildwars2.com/wiki/Main_Page",
+         "Map and event guides"),
+        ("GW2 Ninja", "https://gw2.ninja/timer", "Timer and waypoint references"),
+        ("Guild Wars 2 News", "https://www.guildwars2.com/en/news/",
+         "Official announcements"),
+    )),
+    ("Community plans & farming", (
+        ("Meta-Train schedule", COMMUNITY_INFO_URLS["Meta-Train"], "Community run times"),
+        ("Hardstuck", COMMUNITY_INFO_URLS["Hardstuck"], "Community events and guides"),
+        ("GW2Community.de", COMMUNITY_INFO_URLS["GW2Community"], "Community calendar"),
+        ("ViP", COMMUNITY_INFO_URLS["ViP"], "Community calendar"),
+        ("Triple Trouble Wurm EU", COMMUNITY_INFO_URLS["TT Wurm EU"], "Organized wurm runs"),
+        ("DCAP", COMMUNITY_INFO_URLS["DCAP"], "NA community runs"),
+        ("Choyareset", COMMUNITY_INFO_URLS["Choyareset"], "Meta train route"),
+        ("[fast] Farming Community", URLS["fast"], "Farming context"),
+    )),
+)
 
 SOURCE_REGIONS = {"metasheet": "EU", "ttwurm": "EU", "gw2community": "EU", "dcap": "NA"}
 
@@ -95,17 +119,10 @@ DROP_GUARDS = {
 }
 
 ANNOUNCEMENT_ALLOWED_HOSTS = {
-    "docs.google.com",
     "hardstuck.gg",
     "www.hardstuck.gg",
     "gw2community.de",
     "www.gw2community.de",
-    "gw2vip.net",
-    "www.gw2vip.net",
-    "sites.google.com",
-    "wiki.guildwars2.com",
-    "choyaaa.com",
-    "www.choyaaa.com",
 }
 WORLD_BOSS_LOCATIONS = {
     "Admiral Taidha Covington": "Bloodtide Coast",
@@ -169,11 +186,17 @@ CONTENT_OPTIONS = CONTENT_GROUPS
 # instance via the in-game LFG, never assertions that a spawn is live.
 FARM_MAPS = (
     ("The Silverwastes · RIBA", "The Silverwastes", "Living World Season 2",
-     "Camp Resolve Waypoint", "[&BH8HAAA=]", "The_Silverwastes"),
+     "Camp Resolve Waypoint", "[&BH8HAAA=]", "The_Silverwastes",
+     "https://hardstuck.gg/gw2/guides/events/the-silverwastes-guide-to-riba/",
+     "RIBA guide by Hardstuck"),
     ("Dragonfall · Meta train", "Dragonfall", "Living World Season 4",
-     "Pact Command Waypoint", "[&BN4LAAA=]", "Dragonfall"),
+     "Pact Command Waypoint", "[&BN4LAAA=]", "Dragonfall",
+     "https://fast.farming-community.eu/open-world/farmtrain",
+     "Farmtrain overview by [fast]"),
     ("Drizzlewood Coast · Meta train", "Drizzlewood Coast", "The Icebrood Saga",
-     "Base Camp Waypoint", "[&BGQMAAA=]", "Drizzlewood_Coast"),
+     "Base Camp Waypoint", "[&BGQMAAA=]", "Drizzlewood_Coast",
+     "https://fast.farming-community.eu/open-world/farmtrain",
+     "Farmtrain overview by [fast]"),
 )
 
 CATALOG_TRACKS_IGNORED = {
@@ -449,6 +472,21 @@ def safe_https_url(value: str, allowed_hosts: set[str] | None = None) -> str:
     if allowed_hosts and host not in allowed_hosts:
         return ""
     return urllib.parse.urlunsplit(parsed)
+
+
+def specific_announcement_url(source: str, value: str) -> str:
+    """Only link to the dated event page, never to a general calendar."""
+    url = safe_https_url(value, ANNOUNCEMENT_ALLOWED_HOSTS)
+    parsed = urllib.parse.urlsplit(url) if url else None
+    host = parsed.hostname if parsed else ""
+    path = parsed.path if parsed else ""
+    if (source == "Hardstuck" and host in {"hardstuck.gg", "www.hardstuck.gg"}
+            and path.startswith("/events/") and path.strip("/") != "events"):
+        return url
+    if (source == "GW2Community" and host in {"gw2community.de", "www.gw2community.de"}
+            and path.startswith("/calendar/event/") and path.strip("/") != "calendar/event"):
+        return url
+    return ""
 
 
 def fetch_text(url: str, timeout: int = 15, max_bytes: int = MAX_RESPONSE_BYTES) -> str:
@@ -1483,13 +1521,9 @@ def apply_community(
                 continue
             target = resolve_alias(row.get("title", ""), cands)
             if target:
-                announcement_url = safe_https_url(
-                    row.get("url", ""),
-                    ANNOUNCEMENT_ALLOWED_HOSTS,
-                ) or ANNOUNCEMENT_SOURCE_URLS.get(source_name, "")
                 add_community_signal(
                     cands, target, start, source_name, 30,
-                    announcement_url=announcement_url
+                    announcement_url=specific_announcement_url(source_name, row.get("url", ""))
                 )
 
     # Triple Trouble EU community: page publishes gather times in CET (fixed UTC+1).
@@ -1512,7 +1546,6 @@ def apply_community(
                 gather + timedelta(minutes=45),
                 "TT Wurm EU",
                 20,
-                announcement_url=ANNOUNCEMENT_SOURCE_URLS["TT Wurm EU"]
             )
 
     # DCAP runs are explicitly NA; do not promote them on an EU dashboard.
@@ -1525,7 +1558,6 @@ def apply_community(
                 if weekday_match(item["rule"], dt):
                     add_community_signal(
                         cands, item["target"], dt, "DCAP", 30,
-                        announcement_url=ANNOUNCEMENT_SOURCE_URLS["DCAP"]
                     )
 
     # Use the source's explicit UTC route stops and a confirmed game region.
@@ -1541,8 +1573,6 @@ def apply_community(
                     c.lightning = True
                     if "Choyareset" not in c.community_sources:
                         c.community_sources.append("Choyareset")
-                    if not c.announcement_url:
-                        c.announcement_url = ANNOUNCEMENT_SOURCE_URLS["Choyareset"]
                     if item.get("waypoint"):
                         c.waypoint = item["waypoint"]
                         c.direct_waypoint = True
@@ -1845,8 +1875,20 @@ def announcement_link(c: Candidate) -> str:
     )
 
 
+def source_info_link(c: Candidate) -> str:
+    for source in c.community_sources:
+        url = safe_https_url(COMMUNITY_INFO_URLS.get(source, ""))
+        if url:
+            return (
+                f'<a class="info-link" href="{html.escape(url)}" '
+                f'target="_blank" rel="noopener" '
+                f'title="Community schedule · {html.escape(source)}">Info</a>'
+            )
+    return ""
+
+
 def event_links(c: Candidate) -> str:
-    return info_link(c) + announcement_link(c)
+    return info_link(c) + source_info_link(c) + announcement_link(c)
 
 
 def waypoint_button(c: Candidate, extra_class: str = "") -> str:
@@ -1893,7 +1935,7 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
 
 def farm_options_html() -> str:
     rows = []
-    for title, location, category, waypoint_name, waypoint, wiki_page in FARM_MAPS:
+    for title, location, category, waypoint_name, waypoint, wiki_page, info_url, info_title in FARM_MAPS:
         content = content_meta(category)
         rows.append(
             f'<div class="farm-card" data-farm-content-id="{content["id"]}">'
@@ -1904,7 +1946,9 @@ def farm_options_html() -> str:
             f'style="--content-h:{content["hue"]}" '
             f'title="{html.escape(content["label"])}">{content["short"]}</span>'
             f'<a class="wiki" target="_blank" rel="noopener" '
-            f'href="https://wiki.guildwars2.com/wiki/{wiki_page}">Wiki</a></div>'
+            f'href="https://wiki.guildwars2.com/wiki/{wiki_page}">Wiki</a>'
+            f'<a class="info-link" target="_blank" rel="noopener" '
+            f'href="{html.escape(info_url)}" title="{html.escape(info_title)}">Info</a></div>'
             f'<button class="wp farm-wp" type="button" data-copy="{waypoint}" '
             f'title="Copy: {html.escape(waypoint_name)}" '
             f'aria-label="Copy: {html.escape(waypoint_name)}">{waypoint}</button>'
@@ -1918,6 +1962,26 @@ def farm_options_html() -> str:
         'Random spawns are not live-tracked.</p>'
         f'<div class="farm-list">{"".join(rows)}</div>'
         '</details>'
+    )
+
+
+def credits_html() -> str:
+    groups = []
+    for heading, sources in CREDIT_GROUPS:
+        items = "".join(
+            f'<li><a href="{html.escape(url)}" target="_blank" rel="noopener">'
+            f'{html.escape(name)}</a><span>{html.escape(detail)}</span></li>'
+            for name, url, detail in sources
+        )
+        groups.append(f'<section><h2>{html.escape(heading)}</h2><ul class="credit-list">{items}</ul></section>')
+    return (
+        '<section id="credits" class="credits-view" hidden>'
+        '<a class="back-link" href="#activity-view">← Back to activity</a>'
+        '<h1>Sources & Thanks</h1>'
+        '<p>Thanks to the players, communities and creators who share schedules, guides and game data.</p>'
+        f'{"".join(groups)}'
+        '<p class="credits-note">Community plans can change. Check in game for an active group.</p>'
+        '</section>'
     )
 
 
@@ -1967,17 +2031,18 @@ def render_html(
         active, upcoming, active_extra, upcoming_extra,
         active_more, upcoming_more, client_events, notice
     )
-    client_json = json.dumps(
-        client_event_payload(client_events),
+    snapshot_json = json.dumps(
+        {"format": 1, "page_version": version, "engine": ENGINE_VERSION,
+         "events": client_event_payload(client_events), "notice": notice,
+         "generated_at_ms": int(now.timestamp() * 1000)},
         ensure_ascii=False,
         separators=(",", ":"),
-    ).replace("</", "<\\/")
+    ).replace("<", "\\u003c")
     content_options_json = json.dumps(
         content_options_payload(),
         ensure_ascii=False,
         separators=(",", ":"),
     ).replace("</", "<\\/")
-    notice_json = json.dumps(notice).replace("<", "\\u003c")
 
     def section(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
@@ -2015,7 +2080,7 @@ def render_html(
 body{{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}}
 .app{{max-width:920px;margin:auto;padding:18px}}
 header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%,rgba(15,16,18,0));padding:8px 0 12px;text-align:center}}
-#clock{{font-size:23px;font-weight:800}}
+#clock{{font-size:clamp(15px,2.8vw,23px);font-weight:800}}
 .status-note{{display:inline-block;margin-top:7px;padding:5px 9px;border:1px solid #55492f;border-radius:999px;background:#1b1811;color:#d7bd7a;font-size:10px;font-weight:700}}
 .status-note[hidden]{{display:none}}
 .header-tools{{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:7px;position:relative;flex-wrap:wrap}}
@@ -2023,8 +2088,10 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .control-group+.control-group{{margin-left:2px;padding-left:9px;border-left:1px solid #2a2f36}}
 .control-label{{font-size:10px;line-height:1;color:#7f8792;font-weight:800;white-space:nowrap}}
 .tz-tools{{display:flex;justify-content:center;gap:4px}}
-.tz-btn,.content-filter>summary{{border:1px solid #30353d;background:#121419;color:#9aa2ad;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer;line-height:1.2}}
-.tz-btn:hover,.content-filter>summary:hover{{color:#fff;border-color:#555e6b}}
+.tz-btn,.content-filter>summary,.credits-link{{border:1px solid #30353d;background:#121419;color:#9aa2ad;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:700;cursor:pointer;line-height:1.2}}
+.tz-btn:hover,.content-filter>summary:hover,.credits-link:hover{{color:#fff;border-color:#555e6b}}
+.credits-link{{text-decoration:none}}
+.credits-link[aria-current="page"]{{color:#fff;background:#242932;border-color:#5d6673}}
 .tz-btn.active{{color:#fff;background:#242932;border-color:#5d6673}}
 .content-filter{{position:relative}}
 .content-filter>summary{{list-style:none;user-select:none;min-width:52px;text-align:center}}
@@ -2067,9 +2134,10 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .content-badge{{color:hsl(var(--content-h) 78% 78%);border-color:hsl(var(--content-h) 42% 38%);background:hsl(var(--content-h) 34% 16% / .72)}}
 .content-unknown{{color:#aeb5bf;border-color:#4b515a;background:#1a1d21}}
 .level-na{{color:#a7adb6;background:#171a1f}}
-.wiki,.announcement{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
-.wiki:hover,.announcement:hover{{text-decoration:underline;color:#fff}}
+.wiki,.announcement,.info-link{{font-size:10px;color:#aab1bb;text-decoration:none;margin-left:2px}}
+.wiki:hover,.announcement:hover,.info-link:hover{{text-decoration:underline;color:#fff}}
 .announcement{{color:#d5b76f}}
+.info-link{{color:#a7c5de}}
 .wp{{border:1px solid #424751;background:#101216;color:#fff;border-radius:9px;padding:10px 8px;cursor:pointer;font:800 12px/1 ui-monospace,SFMono-Regular,Consolas,monospace}}
 .wp:hover{{border-color:#69717e;background:#151820}}
 .waypoint-missing{{font-size:10px;color:var(--muted)}}
@@ -2106,6 +2174,20 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .farm-name span{{color:var(--muted);font-size:10px}}
 .farm-links{{display:flex;align-items:center;gap:5px}}
 .farm-wp{{padding:8px 6px;font-size:10px}}
+.credits-view{{max-width:720px;margin:18px auto 30px}}
+.credits-view h1{{font-size:20px;margin:14px 2px 6px}}
+.credits-view p{{font-size:12px;color:var(--muted);line-height:1.5;margin:0 2px 10px}}
+.credits-view h2{{margin-top:20px}}
+.back-link{{color:#a7c5de;text-decoration:none;font-size:11px}}
+.back-link:hover{{color:#fff;text-decoration:underline}}
+.credit-list{{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}}
+.credit-list li{{display:flex;flex-direction:column;gap:3px;padding:9px 11px;background:var(--panel);border:1px solid var(--line);border-radius:9px;min-width:0}}
+.credit-list a{{color:#c7d9ef;text-decoration:none;font-size:11px;font-weight:800}}
+.credit-list a:hover{{color:#fff;text-decoration:underline}}
+.credit-list span,.credits-view .credits-note{{color:var(--muted);font-size:10px}}
+.credits-view .credits-note{{margin-top:16px}}
+#credits:target{{display:block}}
+body:has(#credits:target) #activity-view{{display:none}}
 .empty{{padding:20px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 @media(max-width:760px){{
   .app{{padding:10px}}
@@ -2126,6 +2208,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   .control-group+.control-group{{padding-left:7px}}
   .content-menu{{width:calc(100vw - 16px)}}
   .content-grid{{grid-template-columns:1fr}}
+  .credit-list{{grid-template-columns:1fr}}
 }}
 </style>
 </head>
@@ -2148,10 +2231,12 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
+    <a id="credits-link" class="credits-link" href="#credits" title="Sources and thanks">Credits</a>
   </div>
   <div id="data-status" class="status-note"{'' if notice else ' hidden'}>{html.escape(notice)}</div>
 </header>
 
+<main id="activity-view">
 <h2 title="Suggestions from known start times and community plans">Now · Recommended Activity</h2>
 <div id="now-top">{section(active, False)}</div>
 <div id="now-more">{expandable(active_more, False)}</div>
@@ -2162,20 +2247,24 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-more">{expandable(upcoming_more, True)}</div>
 {farm_options_html()}
 <footer class="preference-footer"><span id="preference-note" class="preference-note" role="status">Preferences will be saved in a single cookie.</span><button id="delete-preferences" class="delete-cookie" type="button" title="Remove saved preferences from this browser" hidden>Delete cookie</button></footer>
+</main>
+{credits_html()}
 <span id="copy-status" class="sr-only" role="status"></span>
 </div>
 
+<script id="gw2-snapshot" type="application/json">{snapshot_json}</script>
 <script>
-const EVENT_DATA={client_json};
+const initialSnapshot=JSON.parse(document.getElementById("gw2-snapshot").textContent);
+const currentEngine=initialSnapshot.engine;
+let EVENT_DATA=initialSnapshot.events;
 const CONTENT_OPTIONS={content_options_json};
 const UPCOMING_HORIZON_MS={int(cfg.get("upcoming_horizon_minutes", 120))}*60*1000;
 const NOW_LIMIT={int(cfg.get("now_limit", 3))};
 const NEXT_LIMIT={int(cfg.get("next_limit", 3))};
 const EXTRA_LIMIT={int(cfg.get("extra_limit", 2))};
 const PRESTART_MS=5*60*1000;
-const DATA_GENERATED_AT_MS={int(now.timestamp()*1000)};
-let lastPublishedAtMs=DATA_GENERATED_AT_MS;
-const SOURCE_NOTICE={notice_json};
+let lastPublishedAtMs=initialSnapshot.generated_at_ms;
+let SOURCE_NOTICE=initialSnapshot.notice;
 
 let localZone="";
 try {{ localZone=Intl.DateTimeFormat().resolvedOptions().timeZone || ""; }} catch(e) {{}}
@@ -2579,7 +2668,10 @@ function restoreTransientUiState() {{
 }}
 
 function clockFormatter() {{
-  return new Intl.DateTimeFormat("en-GB",{{timeZone:selectedZone(),weekday:"long",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}});
+  const timeZone=selectedZone();
+  const date=new Intl.DateTimeFormat("en-US",{{timeZone,weekday:"long",month:"long",day:"numeric"}});
+  const time=new Intl.DateTimeFormat("en-GB",{{timeZone,hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}});
+  return {{format(now){{return `${{date.format(now)}}, ${{time.format(now)}}`;}}}};
 }}
 function eventTimeFormatter() {{
   return new Intl.DateTimeFormat("en-GB",{{timeZone:selectedZone(),hour:"2-digit",minute:"2-digit",hourCycle:"h23"}});
@@ -2638,11 +2730,23 @@ function emptyBlock() {{
   const message=filtersActive ? "No events match the selected filters." : "No scheduled events in this time window.";
   return `<div class="empty">${{message}}</div>`;
 }}
-function detailsBlock(label,items,wasOpen,stateKey) {{
+function detailsBlock(label,items,stateKey) {{
   if(!items.length) return "";
-  return `<details class="all-block" data-ui-state-key="${{esc(stateKey)}}" ${{wasOpen?"open":""}}><summary>${{label}} <span>(${{items.length}})</span></summary><div class="all-list">${{items.map(compactCard).join("")}}</div></details>`;
+  return `<details class="all-block" data-ui-state-key="${{esc(stateKey)}}"><summary>${{label}} <span>(${{items.length}})</span></summary><div class="all-list">${{items.map(compactCard).join("")}}</div></details>`;
 }}
 let lastLayoutSignature="";
+const lastSectionMarkup=new Map();
+function updateLiveSection(id,markup,wasOpen) {{
+  if(lastSectionMarkup.get(id)===markup) return;
+  const el=document.getElementById(id);
+  if(!el) return;
+  el.innerHTML=markup;
+  lastSectionMarkup.set(id,markup);
+  if(typeof wasOpen==="boolean") {{
+    const details=el.querySelector("details");
+    if(details) details.open=wasOpen;
+  }}
+}}
 function renderLive(force=false) {{
   const dataStatus=document.getElementById("data-status");
   if(dataStatus) {{
@@ -2654,15 +2758,16 @@ function renderLive(force=false) {{
   const nowMoreOpen=Boolean(openState["now-more"]);
   const nextMoreOpen=Boolean(openState["next-more"]);
   const groups=layoutAt(Date.now());
-  const signature=JSON.stringify([groups.activeTop.map(e=>e.key),groups.activeMore.map(e=>e.key),groups.upcomingTop.map(e=>e.key),groups.upcomingExtra.map(e=>e.key),groups.upcomingMore.map(e=>e.key),timeMode,[...disabledContent].sort(),showLevel80]);
+  const signature=JSON.stringify([groups.activeTop,groups.activeMore,groups.upcomingTop,groups.upcomingExtra,groups.upcomingMore,timeMode,[...disabledContent].sort(),showLevel80]);
   if(!force && signature===lastLayoutSignature) return;
+  if(!force && document.activeElement?.closest?.("#now-top,#now-more,#next-top,#next-extra,#next-more")) return;
   const focused=focusKey();
   lastLayoutSignature=signature;
-  document.getElementById("now-top").innerHTML=groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock();
-  document.getElementById("now-more").innerHTML=detailsBlock("More Current Activity",groups.activeMore,nowMoreOpen,"now-more");
-  document.getElementById("next-top").innerHTML=groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock();
-  document.getElementById("next-extra").innerHTML=groups.upcomingExtra.length?`<div class="extra-block">${{groups.upcomingExtra.map(e=>miniCard(e)).join("")}}</div>`:"";
-  document.getElementById("next-more").innerHTML=detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,nextMoreOpen,"next-more");
+  updateLiveSection("now-top",groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock());
+  updateLiveSection("now-more",detailsBlock("More Current Activity",groups.activeMore,"now-more"),nowMoreOpen);
+  updateLiveSection("next-top",groups.upcomingTop.length?groups.upcomingTop.map(topCard).join(""):emptyBlock());
+  updateLiveSection("next-extra",groups.upcomingExtra.length?`<div class="extra-block">${{groups.upcomingExtra.map(miniCard).join("")}}</div>`:"");
+  updateLiveSection("next-more",detailsBlock("More Upcoming Activity · Next 2 Hours",groups.upcomingMore,"next-more"),nextMoreOpen);
   restoreFocus(focused);
 }}
 
@@ -2705,6 +2810,7 @@ document.getElementById("delete-preferences")?.addEventListener("click",deleteSt
 window.addEventListener("focus",syncExternalPreferenceChange);
 window.addEventListener("pageshow",syncExternalPreferenceChange);
 document.addEventListener("visibilitychange",()=>{{if(!document.hidden) syncExternalPreferenceChange();}});
+document.addEventListener("focusout",()=>renderLive(false));
 
 const contentFilter=document.getElementById("content-filter");
 contentFilter?.addEventListener("toggle",()=>{{
@@ -2740,30 +2846,74 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
   }}
 }});
 
+let activityScrollY=0;
+let showingCredits=false;
+document.getElementById("credits-link")?.addEventListener("click",()=>{{activityScrollY=window.scrollY;}});
+function syncRoute() {{
+  const credits=window.location.hash==="#credits";
+  const activity=document.getElementById("activity-view");
+  const page=document.getElementById("credits");
+  if(!activity || !page) return;
+  activity.hidden=credits;
+  page.hidden=!credits;
+  const link=document.getElementById("credits-link");
+  if(credits) {{
+    link?.setAttribute("aria-current","page");
+    closeContentMenu();
+    requestAnimationFrame(()=>window.scrollTo({{top:0,left:0,behavior:"auto"}}));
+  }} else {{
+    link?.removeAttribute("aria-current");
+    if(showingCredits) requestAnimationFrame(()=>window.scrollTo({{top:activityScrollY,left:0,behavior:"auto"}}));
+  }}
+  showingCredits=credits;
+}}
+window.addEventListener("hashchange",syncRoute);
+
 updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);restoreTransientUiState();setInterval(tickClock,1000);
+syncRoute();
 window.addEventListener("pagehide",stashTransientUiState);
 // Exact local category transition, independent of Pages publication latency.
 setInterval(()=>{{syncExternalPreferenceChange();renderLive(false);}},2000);
 
 if(window.location.search){{history.replaceState(null,"",window.location.pathname+window.location.hash);}}
-const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;
+const versionMeta=document.querySelector('meta[name="gw2-page-version"]');
+let currentVersion=versionMeta.content;
+let updateInFlight=false;
 async function checkForUpdate(){{
+  if(updateInFlight || document.hidden) return;
+  updateInFlight=true;
   try{{
     const u=new URL(window.location.pathname,window.location.origin);u.searchParams.set("_",Date.now().toString());
     const r=await fetch(u.toString(),{{cache:"no-store"}});if(!r.ok)return;
-    const text=await r.text();const match=text.match(/<meta name="gw2-page-version" content="([^"]+)">/);
-    const published=text.match(/const DATA_GENERATED_AT_MS=([0-9]+);/);
-    if(published) lastPublishedAtMs=Number(published[1]);
-    if(match && match[1]!==currentVersion){{
+    const page=new DOMParser().parseFromString(await r.text(),"text/html");
+    const version=page.querySelector('meta[name="gw2-page-version"]')?.content;
+    const snapshotText=page.getElementById("gw2-snapshot")?.textContent;
+    if(!version || !snapshotText) return;
+    const snapshot=JSON.parse(snapshotText);
+    if(snapshot.format!==1 || snapshot.page_version!==version ||
+       !Array.isArray(snapshot.events) || typeof snapshot.notice!=="string" ||
+       !Number.isFinite(snapshot.generated_at_ms) || snapshot.generated_at_ms<lastPublishedAtMs) return;
+    if(snapshot.engine!==currentEngine){{
+      // Keep the current view while a menu or list is open.
+      if(window.location.hash==="#credits" || document.querySelector("details[open]")) return;
       stashTransientUiState();
-      const next=new URL(window.location.pathname,window.location.origin);
+      const next=new URL(window.location.href);
       next.searchParams.set("_",Date.now().toString());
       window.location.replace(next.toString());
+      return;
+    }}
+    lastPublishedAtMs=snapshot.generated_at_ms;
+    if(version!==currentVersion){{
+      EVENT_DATA=snapshot.events;
+      SOURCE_NOTICE=snapshot.notice;
+      currentVersion=version;
+      versionMeta.content=version;
     }}
     renderLive(false);
-  }}catch(e){{}}
+  }}catch(e){{}}finally{{updateInFlight=false;}}
 }}
 setInterval(checkForUpdate,20000);
+document.addEventListener("visibilitychange",()=>{{if(!document.hidden) checkForUpdate();}});
 </script>
 </body>
 </html>'''
