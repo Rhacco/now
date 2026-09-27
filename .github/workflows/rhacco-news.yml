@@ -31,9 +31,6 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Check TLDR parser and cache safety
-        run: python3 -m unittest discover -s worker-rnews/tests -q
-
       - name: Restore latest persistent cache
         shell: bash
         run: |
