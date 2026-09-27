@@ -22,13 +22,14 @@ from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.1.2"
+ENGINE_VERSION = "0.1.4"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "rn" / "index.html"
 CACHE_SCHEMA_VERSION = 1
 MAX_RESPONSE_BYTES = 4 * 1024 * 1024
 USER_AGENT = f"RhaccoNews/{ENGINE_VERSION} (+static GitHub Actions news aggregator)"
+TOPICS = (("world", "Weltpolitik"), ("dach", "DACH + Luxemburg"), ("royal", "Royal Families"))
 
 STOPWORDS = {
     # German
@@ -463,9 +464,17 @@ def refresh_source(state: dict[str, Any], src: dict[str, Any], now: datetime, no
 
 def to_articles(src: dict[str, Any], data: list[dict[str, Any]], now: datetime, max_age_hours: int) -> list[Article]:
     out: list[Article] = []
+    language_codes = {
+        "de": "de", "deu": "de", "ger": "de", "german": "de",
+        "en": "en", "eng": "en", "english": "en",
+    }
     for item in data:
         published = parse_dt(item.get("published")) or now
         if now - published > timedelta(hours=max_age_hours):
+            continue
+        raw_language = str(item.get("language") or src.get("language") or "").strip().casefold()
+        language = language_codes.get(raw_language.split("-", 1)[0])
+        if language not in {"de", "en"}:
             continue
         source_name = str(item.get("source_name") or src.get("name") or src["id"])
         publisher = str(item.get("publisher") or src.get("publisher") or source_name)
@@ -477,7 +486,7 @@ def to_articles(src: dict[str, Any], data: list[dict[str, Any]], now: datetime, 
             source_name=source_name,
             publisher=publisher,
             country=str(item.get("country") or src.get("country") or "").upper(),
-            language=str(item.get("language") or src.get("language") or "").lower(),
+            language=language,
             kind=str(src.get("kind") or "editorial"),
             tab=str(src.get("tab") or "world"),
             summary=str(item.get("summary") or "")[:500],
@@ -559,24 +568,37 @@ def age_label(dt: datetime, now: datetime) -> str:
     return f"vor {hours // 24} T."
 
 
-def source_chip(a: Article, now: datetime) -> str:
+def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> str:
     kind = "Primär" if a.kind == "primary" else ("Discovery" if a.kind == "discovery" else "Medium")
     via = f" · via {html.escape(a.via)}" if a.via else ""
     title = f"{a.source_name} · {kind} · {age_label(a.published, now)}{via}"
+    attributes = {
+        "source-id": a.source_id,
+        "publisher": a.publisher,
+        "kind": a.kind,
+        "title": a.title,
+        "age": age_label(a.published, now),
+        "published": iso(a.published),
+        "summary": strip_tags(a.summary)[:220] if demo else "",
+    }
+    data = " ".join(f'data-{key}="{html.escape(value, quote=True)}"' for key, value in attributes.items())
     return (
-        f'<a class="source-chip kind-{html.escape(a.kind)}" href="{html.escape(a.url, quote=True)}" '
+        f'<a class="source-chip kind-{html.escape(a.kind)}" {data}{" hidden" if hidden else ""} href="{html.escape(a.url, quote=True)}" '
         f'target="_blank" rel="noopener noreferrer" title="{html.escape(title, quote=True)}">'
         f'<span>{html.escape(a.source_name)}</span><small>{html.escape(a.country or "—")}</small></a>'
     )
 
 
-def card_html(cluster: list[Article], now: datetime, demo: bool) -> str:
+def card_html(cluster: list[Article], now: datetime, demo: bool, hidden: bool = False) -> str:
     rep = representative(cluster)
     non_discovery = [a for a in cluster if a.kind != "discovery"]
     publisher_count = len({a.publisher.casefold() for a in non_discovery})
     countries = len({a.country for a in non_discovery if a.country})
     primary = any(a.kind == "primary" for a in cluster)
-    chips = "".join(source_chip(a, now) for a in sorted(cluster, key=lambda x: (x.kind == "discovery", -x.published.timestamp()))[:8])
+    chips = "".join(
+        source_chip(a, now, demo, i >= 8)
+        for i, a in enumerate(sorted(cluster, key=lambda x: (x.kind == "discovery", -x.published.timestamp())))
+    )
     source_word = "Quelle" if len(non_discovery) == 1 else "Quellen"
     publisher_word = "Herausgeber" if publisher_count == 1 else "Herausgeber"
     meta = f"{len(non_discovery)} {source_word} · {publisher_count} {publisher_word}"
@@ -587,10 +609,10 @@ def card_html(cluster: list[Article], now: datetime, demo: bool) -> str:
     demo_badge = '<span class="badge demo-badge">DEMO</span>' if demo else ""
     # Public live page deliberately avoids republishing feed descriptions.
     summary = strip_tags(rep.summary) if demo else ""
-    summary_html = f'<p class="summary">{html.escape(summary[:220])}</p>' if summary else ""
+    summary_html = f'<p class="summary"{"" if summary else " hidden"}>{html.escape(summary[:220])}</p>' if demo else ""
     return f"""
-    <article class="story-card">
-      <div class="story-topline"><span>{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span>{demo_badge}</div>
+    <article class="story-card"{" hidden" if hidden else ""}>
+      <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span>{demo_badge}</div>
       <h2><a href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
       {summary_html}
       <div class="source-row">{chips}</div>
@@ -618,11 +640,61 @@ def status_summary(cfg: dict[str, Any], state: dict[str, Any], now: datetime) ->
     return ok, stale, failed, waiting
 
 
+def content_filter_html(cfg: dict[str, Any]) -> str:
+    groups = []
+    for tab, label in TOPICS:
+        rows = []
+        for source in cfg.get("sources", []):
+            if not source.get("enabled", True) or source.get("tab") != tab:
+                continue
+            sid = html.escape(str(source["id"]), quote=True)
+            name = html.escape(str(source["name"]))
+            country = html.escape(str(source.get("country", "")))
+            optional = " · API" if source.get("optional") else ""
+            rows.append(
+                f'<label class="content-option"><input type="checkbox" data-source-id="{sid}" checked>'
+                f'<span>{name} <small>· {country}{optional}</small></span></label>'
+            )
+        groups.append(f'<section><h3>{label}</h3>{"".join(rows)}</section>')
+    topics = "".join(
+        f'<label class="content-option"><input type="checkbox" data-topic-id="{html.escape(tab, quote=True)}">'
+        f'<span>{html.escape(label)}</span></label>' for tab, label in TOPICS
+    )
+    return (
+        '<div class="header-controls">'
+        '<div class="content-controls"><span>Inhalte:</span>'
+        '<details id="content-filter" class="content-filter">'
+        '<summary id="content-filter-summary" title="Themen-Tabs auswählen">Alle aus</summary>'
+        '<div id="content-filter-menu" class="content-menu topic-menu">'
+        '<div class="content-menu-head"><strong>Themen anzeigen</strong>'
+        '<button type="button" id="hide-all-topics">Alle aus</button></div>'
+        f'{topics}</div></details></div>'
+        '<div class="content-controls"><span>Quellen:</span>'
+        '<details id="sources-filter" class="content-filter">'
+        '<summary id="sources-filter-summary" title="Einzelne Quellen für die Anzeige auswählen">Alle</summary>'
+        '<div id="sources-filter-menu" class="content-menu">'
+        '<div class="content-menu-head"><strong>Quellen auswählen</strong>'
+        '<button type="button" id="show-all-sources">Alle anzeigen</button></div>'
+        '<p class="content-help">Die Auswahl filtert Meldungen und Quellenlinks dieser Seite. '
+        'Das Länderkürzel bezeichnet die Herkunft der Quelle.</p>'
+        f'<div class="content-grid">{"".join(groups)}</div></div></details></div></div>'
+    )
+
+
 def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, Any], state: dict[str, Any], now: datetime, demo: bool, errors: dict[str, str]) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
     local = now.astimezone(tz)
-    world = "\n".join(card_html(c, now, demo) for c in clusters_by_tab.get("world", [])) or '<div class="empty">Keine aktuellen Meldungen im Zeitfenster.</div>'
-    dach = "\n".join(card_html(c, now, demo) for c in clusters_by_tab.get("dach", [])) or '<div class="empty">Keine aktuellen Meldungen im Zeitfenster.</div>'
+    max_visible = max(1, int(cfg.get("max_clusters_per_tab", 24)))
+    sections = {}
+    for tab, _ in TOPICS:
+        cards = "\n".join(card_html(c, now, demo, i >= max_visible) for i, c in enumerate(clusters_by_tab.get(tab, [])))
+        sections[tab] = cards or '<div class="empty">Keine aktuellen Meldungen im Zeitfenster.</div>'
+    tabs_markup = "\n".join(f'<button class="tab" data-tab="{tab}" type="button" hidden>{html.escape(label)}</button>' for tab, label in TOPICS)
+    panes_markup = "\n".join(
+        f'<section id="pane-{tab}" class="pane">{sections[tab]}'
+        '<div class="empty filtered-empty" hidden>Keine Meldungen für die gewählten Quellen.</div></section>'
+        for tab, _ in TOPICS
+    )
     ok, stale, failed, waiting = status_summary(cfg, state, now)
     if demo:
         status_text = f"Prototyp · {len([s for s in cfg.get('sources',[]) if s.get('enabled',True)])} Quellen konfiguriert · keine Live-Abfrage im Snapshot"
@@ -632,6 +704,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
     if errors and not demo:
         error_note = f'<details class="errors"><summary>{len(errors)} Quellen mit Fehler/Fallback</summary><pre>{html.escape(json.dumps(errors, ensure_ascii=False, indent=2))}</pre></details>'
     demo_banner = '<div class="demo-banner">HTML-Snapshot mit DEMO-DATEN – keine Live-Nachrichten.</div>' if demo else ""
+    filter_markup = content_filter_html(cfg)
     return f"""<!doctype html>
 <html lang="de">
 <head>
@@ -642,35 +715,238 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 <style>
 :root{{--bg:#0b0c0f;--panel:#14161b;--panel2:#1a1d24;--text:#f3f4f6;--muted:#9ca3af;--line:#2a2f39;--accent:#7c5cff;--accent2:#a78bfa;--good:#69d18f;--warn:#f4c95d;--shadow:0 14px 45px rgba(0,0,0,.24)}}
 *{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.demo-banner{{border:1px solid #6654bc;background:#211b3a;color:#d9d1ff;border-radius:12px;padding:9px 12px;margin-bottom:14px;font-size:13px}}.tabs{{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}.badge{{border-radius:999px;border:1px solid var(--line);padding:2px 7px;font-weight:750;letter-spacing:.02em}}.demo-badge{{color:#d9d1ff;border-color:#6654bc;background:#211b3a}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.summary{{color:#c4c7ce;margin:0 0 12px;font-size:14px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
+.story-card[hidden],.source-chip[hidden],.summary[hidden],.filtered-empty[hidden],.delete-cookie[hidden],.tabs[hidden],.tab[hidden],.topics-empty[hidden]{{display:none}}
+.header-meta{{display:flex;flex-direction:column;align-items:flex-end;gap:7px}}
+.header-controls{{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}}
+.content-controls{{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:11px;font-weight:700}}
+.content-filter>summary{{list-style:none;cursor:pointer;user-select:none;border:1px solid #51417f;border-radius:999px;background:#28223f;color:#fff;padding:4px 10px;min-width:55px;text-align:center}}
+.content-filter>summary::-webkit-details-marker{{display:none}}
+.content-filter>summary::after{{content:" ▾";color:#cbbdff}}
+.content-filter[open]>summary::after{{content:" ▴"}}
+.content-menu{{position:fixed;z-index:20;visibility:hidden;pointer-events:none;width:min(660px,calc(100vw - 16px));max-height:min(460px,calc(100vh - 16px));overflow:auto;background:#16161e;border:1px solid #51417f;border-radius:12px;padding:12px;box-shadow:0 16px 40px rgba(0,0,0,.5);text-align:left;overscroll-behavior:contain}}
+.content-menu.positioned{{visibility:visible;pointer-events:auto}}
+.topic-menu{{width:min(340px,calc(100vw - 16px))}}
+.content-menu-head{{position:sticky;top:-12px;z-index:1;background:#16161e;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 2px 10px;border-bottom:1px solid var(--line)}}
+.content-menu-head strong{{font-size:12px;color:var(--text)}}
+.content-menu-head button{{border:0;background:none;color:#bbabff;font:inherit;font-size:11px;cursor:pointer}}
+.content-help{{font-size:11px;color:var(--muted);margin:8px 2px}}
+.content-grid{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.content-grid h3{{font-size:12px;color:#d8d0ff;margin:4px 4px 8px}}
+.content-option{{display:flex;align-items:flex-start;gap:7px;padding:5px 4px;border-radius:6px;font-size:11px;color:#e1dfeb;cursor:pointer}}
+.content-option:hover{{background:#252434}}
+.content-option input{{margin:2px 0 0;accent-color:var(--accent);flex:0 0 auto}}
+.content-option span{{min-width:0;overflow-wrap:anywhere}}
+.content-option small{{font-size:10px;color:var(--muted)}}
+.preference-footer{{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap;margin-top:12px;font-size:9px;color:#89909c}}
+.preference-footer .saved{{color:#83a58b}}
+.preference-footer .failed{{color:#d8a689}}
+.delete-cookie{{border:0;background:none;color:#aeb5c2;text-decoration:underline;cursor:pointer;font:inherit;padding:0}}
+@media(max-width:620px){{.header-meta{{align-items:flex-start}}.header-controls{{justify-content:flex-start}}.content-grid{{grid-template-columns:1fr}}}}
 </style>
 </head>
 <body>
 <div class="shell">
-<header><div><h1>&quot;Rhacco News&quot;</h1><div class="updated">Live-Quellen-Aggregator · Workflow alle {int(cfg.get("run_interval_minutes", 5))} Min. · Quellen mit eigenem TTL</div></div><div class="updated">Stand: {html.escape(local.strftime('%d.%m.%Y · %H:%M'))}</div></header>
+<header><div><h1>&quot;Rhacco News&quot;</h1><div class="updated">Live-Quellen-Aggregator · Workflow alle {int(cfg.get("run_interval_minutes", 5))} Min. · Quellen mit eigenem TTL</div></div><div class="header-meta"><div class="updated">Stand: {html.escape(local.strftime('%d.%m.%Y · %H:%M'))}</div>{filter_markup}</div></header>
 {demo_banner}
-<nav class="tabs" aria-label="News-Bereiche">
-<button class="tab active" data-tab="world" type="button">Weltpolitik</button>
-<button class="tab" data-tab="dach" type="button">DACH + Luxemburg</button>
-</nav>
+<nav class="tabs" aria-label="News-Bereiche" hidden>{tabs_markup}</nav>
 <main>
-<section id="pane-world" class="pane active">{world}</section>
-<section id="pane-dach" class="pane">{dach}</section>
+<div id="topics-empty" class="empty topics-empty">Wähle oben unter „Inhalte“ mindestens ein Thema aus.</div>
+{panes_markup}
 </main>
-<footer>{html.escape(status_text)}{error_note}</footer>
+<footer><div>{html.escape(status_text)}</div>{error_note}<div class="preference-footer"><span id="preference-note" role="status">Einstellungen werden in einem Cookie gespeichert.</span><button type="button" id="delete-preferences" class="delete-cookie" hidden>Cookie löschen</button></div></footer>
 </div>
 <script>
 (()=>{{
  const buttons=[...document.querySelectorAll('.tab')];
  const panes=[...document.querySelectorAll('.pane')];
- const key='rhacco-news-tab-v1';
- function setTab(name){{
-   buttons.forEach(b=>b.classList.toggle('active',b.dataset.tab===name));
-   panes.forEach(p=>p.classList.toggle('active',p.id==='pane-'+name));
-   try{{localStorage.setItem(key,name)}}catch(e){{}}
+ const tabs=document.querySelector('.tabs');
+ const topicsEmpty=document.getElementById('topics-empty');
+ const topicFilter=document.getElementById('content-filter');
+ const topicMenu=document.getElementById('content-filter-menu');
+ const sourceFilter=document.getElementById('sources-filter');
+ const sourceMenu=document.getElementById('sources-filter-menu');
+ const topicInputs=[...topicMenu.querySelectorAll('input[data-topic-id]')];
+ const inputs=[...sourceMenu.querySelectorAll('input[data-source-id]')];
+ const knownTopics=new Set(topicInputs.map(input=>input.dataset.topicId));
+ const knownIds=new Set(inputs.map(input=>input.dataset.sourceId));
+ const maxVisible={max_visible};
+ const cookieKey='rhacco_news_prefs';
+ const legacyTabKey='rhacco-news-tab-v1';
+ const note=document.getElementById('preference-note');
+ const deleteButton=document.getElementById('delete-preferences');
+ function cookiePath(){{
+   const path=window.location.pathname || '/';
+   return path.endsWith('/') ? path : path.slice(0,path.lastIndexOf('/')+1) || '/';
  }}
- buttons.forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
- let saved='world';try{{saved=localStorage.getItem(key)||'world'}}catch(e){{}}
- if(!buttons.some(b=>b.dataset.tab===saved))saved='world';setTab(saved);
+ function rawCookie(){{
+   try{{
+     const entry=document.cookie.split(';').map(part=>part.trim()).find(part=>part.startsWith(cookieKey+'='));
+     return entry ? entry.slice(cookieKey.length+1) : '';
+   }}catch(e){{return '';}}
+ }}
+ function readPreferences(){{
+   try{{
+     const raw=rawCookie();
+     if(!raw) return null;
+     const data=JSON.parse(decodeURIComponent(raw));
+     return data && (data.v===1||data.v===2) && knownTopics.has(data.tab) && Array.isArray(data.disabled) ? data : null;
+   }}catch(e){{return null;}}
+ }}
+ function clearLegacyTab(){{try{{localStorage.removeItem(legacyTabKey);}}catch(e){{}}}}
+ const stored=readPreferences();
+ let activeTab=stored?.tab || 'world';
+ let selectedTopics=new Set((stored?.v===2 && Array.isArray(stored.topics) ? stored.topics : []).filter(id=>knownTopics.has(id)));
+ let disabled=new Set((stored?.disabled || []).filter(id=>knownIds.has(id)));
+ let saveState=stored ? 'saved' : rawCookie() ? 'failed' : 'idle';
+ if(stored) clearLegacyTab();
+ else if(!rawCookie()){{
+   try{{const old=localStorage.getItem(legacyTabKey);if(old==='dach')activeTab=old;}}catch(e){{}}
+   clearLegacyTab();
+ }}
+ function updateNote(){{
+   note.classList.toggle('saved',saveState==='saved'||saveState==='deleted');
+   note.classList.toggle('failed',saveState==='failed');
+   note.textContent=saveState==='saved' ? 'Einstellungen in einem Cookie gespeichert.'
+     : saveState==='deleted' ? 'Gespeicherte Einstellungen entfernt.'
+     : saveState==='failed' ? 'Cookie konnte nicht gespeichert oder gelesen werden.'
+     : 'Einstellungen werden in einem Cookie gespeichert.';
+   deleteButton.hidden=!rawCookie();
+ }}
+ function savePreferences(){{
+   const encoded=encodeURIComponent(JSON.stringify({{v:2,tab:activeTab,topics:[...selectedTopics].sort(),disabled:[...disabled].sort()}}));
+   const secure=window.location.protocol==='https:' ? '; Secure' : '';
+   try{{document.cookie=`${{cookieKey}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;}}catch(e){{}}
+   saveState=rawCookie()===encoded ? 'saved' : 'failed';
+   if(saveState==='saved')clearLegacyTab();
+   updateNote();
+ }}
+ function applyTopics(){{
+   topicInputs.forEach(input=>input.checked=selectedTopics.has(input.dataset.topicId));
+   const count=selectedTopics.size;
+   document.getElementById('content-filter-summary').textContent=count ? `${{count}}/${{knownTopics.size}}` : 'Alle aus';
+   const visible=buttons.filter(button=>selectedTopics.has(button.dataset.tab));
+   if(visible.length && !selectedTopics.has(activeTab))activeTab=visible[0].dataset.tab;
+   tabs.hidden=visible.length===0;
+   tabs.style.gridTemplateColumns=`repeat(${{Math.max(1,visible.length)}},minmax(0,1fr))`;
+   topicsEmpty.hidden=visible.length>0;
+   buttons.forEach(button=>{{
+     button.hidden=!selectedTopics.has(button.dataset.tab);
+     const active=visible.length>0 && button.dataset.tab===activeTab;
+     button.classList.toggle('active',active);
+     button.setAttribute('aria-pressed',String(active));
+   }});
+   panes.forEach(pane=>pane.classList.toggle('active',visible.length>0 && pane.id==='pane-'+activeTab));
+ }}
+ function applySelection(){{
+   inputs.forEach(input=>input.checked=!disabled.has(input.dataset.sourceId));
+   const summary=document.getElementById('sources-filter-summary');
+   summary.textContent=disabled.size ? `${{knownIds.size-disabled.size}}/${{knownIds.size}}` : 'Alle';
+   for(const pane of panes){{
+     let shown=0;
+     for(const card of pane.querySelectorAll('.story-card')){{
+       const chips=[...card.querySelectorAll('.source-chip')];
+       const selected=chips.filter(chip=>!knownIds.has(chip.dataset.sourceId)||!disabled.has(chip.dataset.sourceId));
+       card.hidden=selected.length===0 || shown>=maxVisible;
+       if(card.hidden)continue;
+       shown++;
+       let rep=selected[0];
+       const priority={{editorial:2,primary:1,discovery:0}};
+       for(const chip of selected.slice(1)){{
+         if((priority[chip.dataset.kind]??0)>(priority[rep.dataset.kind]??0) ||
+           (chip.dataset.kind===rep.dataset.kind && chip.dataset.published>rep.dataset.published))rep=chip;
+       }}
+       const headline=card.querySelector('h2 a');
+       headline.textContent=rep.dataset.title;
+       headline.href=rep.href;
+       card.querySelector('.story-age').textContent=rep.dataset.age;
+       const summaryText=card.querySelector('.summary');
+       if(summaryText){{summaryText.textContent=rep.dataset.summary||'';summaryText.hidden=!summaryText.textContent;}}
+       const editorial=selected.filter(chip=>chip.dataset.kind!=='discovery');
+       const publishers=new Set(editorial.map(chip=>chip.dataset.publisher.toLocaleLowerCase()));
+       const countries=new Set(editorial.map(chip=>chip.querySelector('small').textContent).filter(x=>x&&x!=='—'));
+       let label=`${{editorial.length}} ${{editorial.length===1?'Quelle':'Quellen'}} · ${{publishers.size}} Herausgeber`;
+       if(countries.size>1)label+=` · ${{countries.size}} Länder`;
+       if(selected.some(chip=>chip.dataset.kind==='primary'))label+=' · Primärquelle';
+       card.querySelector('.source-count').textContent=label;
+       let visible=0;
+       for(const chip of chips){{
+         const enabled=selected.includes(chip);
+         chip.hidden=!enabled || visible>=8;
+         if(enabled)visible++;
+       }}
+     }}
+     pane.querySelector('.filtered-empty').hidden=shown>0 || !pane.querySelector('.story-card');
+   }}
+ }}
+ function positionMenu(filter){{
+   if(!filter.open)return;
+   const menu=filter.querySelector('.content-menu');
+   const anchor=filter.querySelector('summary').getBoundingClientRect();
+   const margin=8, gap=6, width=Math.min(filter===topicFilter?340:660,window.innerWidth-margin*2);
+   menu.style.width=`${{width}}px`;
+   menu.style.left=`${{Math.max(margin,Math.round((window.innerWidth-width)/2))}}px`;
+   const below=window.innerHeight-anchor.bottom-gap-margin;
+   const above=anchor.top-gap-margin;
+   const useBelow=below>=Math.min(menu.scrollHeight,220) || below>=above;
+   const available=Math.max(0,Math.min(460,window.innerHeight-margin*2,useBelow?below:above));
+   menu.style.maxHeight=`${{available}}px`;
+   menu.style.top=`${{Math.max(margin,useBelow?anchor.bottom+gap:anchor.top-gap-available)}}px`;
+   menu.classList.add('positioned');
+ }}
+ function closeMenus(){{
+   for(const filter of [topicFilter,sourceFilter]){{filter.open=false;filter.querySelector('.content-menu').classList.remove('positioned');}}
+ }}
+ topicMenu.addEventListener('change',event=>{{
+   const input=event.target.closest('input[data-topic-id]');
+   if(!input || !knownTopics.has(input.dataset.topicId))return;
+   if(input.checked)selectedTopics.add(input.dataset.topicId);
+   else selectedTopics.delete(input.dataset.topicId);
+   applyTopics();savePreferences();
+ }});
+ document.getElementById('hide-all-topics').addEventListener('click',()=>{{
+   selectedTopics.clear();applyTopics();savePreferences();
+ }});
+ sourceMenu.addEventListener('change',event=>{{
+   const input=event.target.closest('input[data-source-id]');
+   if(!input || !knownIds.has(input.dataset.sourceId))return;
+   if(input.checked)disabled.delete(input.dataset.sourceId);
+   else disabled.add(input.dataset.sourceId);
+   applySelection();savePreferences();
+ }});
+ document.getElementById('show-all-sources').addEventListener('click',()=>{{
+   disabled.clear();applySelection();savePreferences();
+ }});
+ buttons.forEach(button=>button.addEventListener('click',()=>{{
+   if(!selectedTopics.has(button.dataset.tab))return;
+   activeTab=button.dataset.tab;applyTopics();savePreferences();
+ }}));
+ deleteButton.addEventListener('click',()=>{{
+   const paths=new Set(['/']);let parent='';
+   for(const part of cookiePath().split('/').filter(Boolean)){{parent+='/'+part;paths.add(parent);paths.add(parent+'/');}}
+   try{{
+     for(const path of paths)for(const domain of ['',`; Domain=${{window.location.hostname}}`])
+       document.cookie=`${{cookieKey}}=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=${{path}}${{domain}}; SameSite=Lax`;
+   }}catch(e){{}}
+   clearLegacyTab();
+   selectedTopics.clear();disabled.clear();activeTab='world';applyTopics();applySelection();
+   saveState=rawCookie() ? 'failed' : 'deleted';
+   updateNote();
+ }});
+ for(const filter of [topicFilter,sourceFilter])filter.addEventListener('toggle',()=>{{
+   const other=filter===topicFilter?sourceFilter:topicFilter;
+   if(filter.open){{other.open=false;other.querySelector('.content-menu').classList.remove('positioned');positionMenu(filter);}}
+   else filter.querySelector('.content-menu').classList.remove('positioned');
+ }});
+ document.addEventListener('pointerdown',event=>{{
+   if((topicFilter.open&&!topicFilter.contains(event.target))||(sourceFilter.open&&!sourceFilter.contains(event.target)))closeMenus();
+ }});
+ document.addEventListener('keydown',event=>{{
+   const open=[topicFilter,sourceFilter].find(filter=>filter.open);
+   if(event.key==='Escape'&&open){{closeMenus();open.querySelector('summary').focus();}}
+ }});
+ window.addEventListener('resize',()=>{{for(const filter of [topicFilter,sourceFilter])if(filter.open)positionMenu(filter);}});
+ window.addEventListener('scroll',()=>{{for(const filter of [topicFilter,sourceFilter])if(filter.open)positionMenu(filter);}},true);
+ applyTopics();applySelection();updateNote();
 }})();
 </script>
 </body></html>"""
@@ -678,7 +954,22 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 
 def demo_articles(now: datetime) -> list[Article]:
     def a(title: str, mins: int, source: str, publisher: str, country: str, kind: str, tab: str, url: str, summary: str = "") -> Article:
-        return Article(title, url, now - timedelta(minutes=mins), source.casefold().replace(" ", "-"), source, publisher, country, "de", kind, tab, summary)
+        ids = {
+            ("world", "Deutschlandfunk"): "dlf-politik",
+            ("world", "DER STANDARD"): "standard-international",
+            ("world", "SRF"): "srf-international",
+            ("world", "EU-Kommission"): "eu-commission",
+            ("world", "RTL Today"): "rtl-world",
+            ("dach", "Deutschlandfunk"): "dlf-news",
+            ("dach", "ORF"): "orf-news",
+            ("dach", "SRF"): "srf-schweiz",
+            ("dach", "RTL Luxembourg"): "rtl-luxembourg",
+            ("dach", "Bundesregierung"): "bundesregierung",
+            ("royal", "GALA Royals"): "gala-royals",
+            ("royal", "Royal Central"): "royal-central",
+            ("royal", "HELLO! Royalty"): "hello-royalty",
+        }
+        return Article(title, url, now - timedelta(minutes=mins), ids[(tab, source)], source, publisher, country, "de", kind, tab, summary)
     return [
         a("Beispiel: Mehrere Staaten beraten über neue gemeinsame Maßnahmen", 12, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-1-dlf", "Mehrere voneinander getrennte Quellen berichten über dasselbe internationale Ereignis."),
         a("Beispiel: Staaten beraten über gemeinsame Maßnahmen", 18, "DER STANDARD", "STANDARD", "AT", "editorial", "world", "https://example.com/world-1-standard"),
@@ -691,6 +982,9 @@ def demo_articles(now: datetime) -> list[Article]:
         a("Beispiel: Grenzüberschreitendes DACH-Thema wird neu geregelt", 28, "SRF", "SRG SSR", "CH", "editorial", "dach", "https://example.com/dach-1-srf"),
         a("Beispiel: Luxemburg veröffentlicht eine neue nationale Mitteilung", 31, "RTL Luxembourg", "RTL", "LU", "editorial", "dach", "https://example.com/dach-2-rtl"),
         a("Beispiel: Offizielle Mitteilung aus Deutschland", 47, "Bundesregierung", "Bund", "DE", "primary", "dach", "https://example.com/dach-3-bund"),
+        a("Beispiel: Königshäuser feiern ein gemeinsames Fest", 14, "GALA Royals", "GALA", "DE", "editorial", "royal", "https://example.com/royal-1-gala"),
+        a("Beispiel: Royal families celebrate together", 23, "Royal Central", "Royal Central", "GB", "editorial", "royal", "https://example.com/royal-2-central"),
+        a("Beispiel: Princess shares a surprise from the palace", 36, "HELLO! Royalty", "HELLO!", "GB", "editorial", "royal", "https://example.com/royal-3-hello"),
     ]
 
 
@@ -709,6 +1003,19 @@ def dedupe_articles(articles: list[Article]) -> list[Article]:
         if new_p > old_p or (new_p == old_p and art.published > old.published):
             by_url[key] = art
     return list(by_url.values())
+
+
+def select_display_candidates(clusters: list[list[Article]], limit: int, source_ids: list[str]) -> list[list[Article]]:
+    """Keep the usual top stories and some candidates for each selectable source."""
+    included = set(range(min(limit, len(clusters))))
+    per_source = min(limit, 12)
+    for source_id in source_ids:
+        matches = (i for i, cluster in enumerate(clusters) if any(a.source_id == source_id for a in cluster))
+        for i, match in enumerate(matches):
+            if i >= per_source:
+                break
+            included.add(match)
+    return [cluster for i, cluster in enumerate(clusters) if i in included]
 
 
 def main() -> int:
@@ -731,6 +1038,10 @@ def main() -> int:
     state = normalize_state(load_json(STATE_PATH, {}))
     errors: dict[str, str] = {}
     changed = False
+    configured = {src["id"] for src in cfg.get("sources", []) if src.get("enabled", True)}
+    for old_id in set(state["sources"]) - configured:
+        del state["sources"][old_id]
+        changed = True
     articles: list[Article] = []
 
     if args.demo:
@@ -750,22 +1061,25 @@ def main() -> int:
     # publisher's own feed metadata merely because their seen-time is newer.
     articles = dedupe_articles(articles)
 
-    by_tab: dict[str, list[Article]] = {"world": [], "dach": []}
+    by_tab: dict[str, list[Article]] = {key: [] for key, _ in TOPICS}
     for art in articles:
         by_tab.setdefault(art.tab, []).append(art)
 
     clusters_by_tab: dict[str, list[list[Article]]] = {}
+    limit = max(1, int(cfg.get("max_clusters_per_tab", 20)))
     for tab, tab_articles in by_tab.items():
         clusters = cluster_articles(tab_articles, int(cfg.get("cluster_window_hours", 18)))
         clusters.sort(key=lambda c: cluster_score(c, now), reverse=True)
-        clusters_by_tab[tab] = clusters[: int(cfg.get("max_clusters_per_tab", 20))]
+        source_ids = [src["id"] for src in cfg.get("sources", []) if src.get("enabled", True) and src.get("tab") == tab]
+        clusters_by_tab[tab] = select_display_candidates(clusters, limit, source_ids)
 
     page = render_html(clusters_by_tab, cfg, state, now, args.demo, errors)
     out = Path(args.output).resolve() if args.output else INDEX_PATH
     atomic_write(out, page)
     if changed or not STATE_PATH.exists():
         atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
-    print(f"OK engine={ENGINE_VERSION} output={out} articles={len(articles)} world={len(clusters_by_tab.get('world', []))} dach={len(clusters_by_tab.get('dach', []))} errors={len(errors)} demo={args.demo}")
+    counts = " ".join(f"{key}={len(clusters_by_tab.get(key, []))}" for key, _ in TOPICS)
+    print(f"OK engine={ENGINE_VERSION} output={out} articles={len(articles)} {counts} errors={len(errors)} demo={args.demo}")
     return 0
 
 

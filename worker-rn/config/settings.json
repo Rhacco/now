@@ -1,5 +1,5 @@
 {
-  "engine_version": "0.1.2",
+  "engine_version": "0.1.4",
   "timezone": "Europe/Berlin",
   "run_interval_minutes": 5,
   "max_age_hours": 48,
@@ -78,20 +78,6 @@
       "enabled": true
     },
     {
-      "id": "lessentiel-world",
-      "name": "L'essentiel Monde",
-      "publisher": "L'essentiel",
-      "country": "LU",
-      "language": "fr",
-      "kind": "editorial",
-      "format": "rss",
-      "tab": "world",
-      "url": "https://partner-feeds.lessentiel.lu/rss/lessentiel-fr/monde",
-      "ttl_minutes": 30,
-      "max_items": 40,
-      "enabled": true
-    },
-    {
       "id": "eu-commission",
       "name": "EU-Kommission Press Corner",
       "publisher": "European Commission",
@@ -114,7 +100,7 @@
       "kind": "discovery",
       "format": "gdelt",
       "tab": "world",
-      "query": "(politics OR government OR parliament OR election OR war OR diplomacy OR sanctions OR NATO OR \"European Union\" OR Ukraine OR Russia OR Israel OR Iran OR China OR Taiwan)",
+      "query": "(politics OR government OR parliament OR election OR war OR diplomacy OR sanctions OR NATO OR \"European Union\" OR Ukraine OR Russia OR Israel OR Iran OR China OR Taiwan) (sourcelang:english OR sourcelang:german)",
       "timespan": "60min",
       "maxrecords": 150,
       "ttl_minutes": 30,
@@ -126,7 +112,7 @@
       "name": "GNews Discovery Weltpolitik",
       "publisher": "GNews",
       "country": "GLOBAL",
-      "language": "multi",
+      "language": "en",
       "kind": "discovery",
       "format": "gnews",
       "tab": "world",
@@ -136,14 +122,15 @@
       "ttl_minutes": 30,
       "api_key_env": "GNEWS_API_KEY",
       "optional": true,
-      "enabled": true
+      "enabled": true,
+      "language_filter": "en"
     },
     {
       "id": "newsapi-world",
       "name": "NewsAPI Discovery Weltpolitik",
       "publisher": "NewsAPI",
       "country": "GLOBAL",
-      "language": "multi",
+      "language": "en",
       "kind": "discovery",
       "format": "newsapi",
       "tab": "world",
@@ -153,7 +140,8 @@
       "ttl_minutes": 30,
       "api_key_env": "NEWSAPI_KEY",
       "optional": true,
-      "enabled": true
+      "enabled": true,
+      "language_filter": "en"
     },
     {
       "id": "dlf-news",
@@ -226,20 +214,6 @@
       "enabled": true
     },
     {
-      "id": "lessentiel-luxembourg",
-      "name": "L'essentiel Luxembourg",
-      "publisher": "L'essentiel",
-      "country": "LU",
-      "language": "fr",
-      "kind": "editorial",
-      "format": "rss",
-      "tab": "dach",
-      "url": "https://partner-feeds.lessentiel.lu/rss/lessentiel-fr/luxembourg",
-      "ttl_minutes": 30,
-      "max_items": 40,
-      "enabled": true
-    },
-    {
       "id": "bundesregierung",
       "name": "Bundesregierung kompakt",
       "publisher": "Bundesregierung",
@@ -268,20 +242,6 @@
       "enabled": true
     },
     {
-      "id": "lux-government",
-      "name": "Luxemburger Regierung",
-      "publisher": "Gouvernement du Luxembourg",
-      "country": "LU",
-      "language": "fr",
-      "kind": "primary",
-      "format": "rss",
-      "tab": "dach",
-      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites.rss",
-      "ttl_minutes": 60,
-      "max_items": 40,
-      "enabled": true
-    },
-    {
       "id": "gdelt-dach",
       "name": "GDELT Discovery DACH+LU",
       "publisher": "GDELT",
@@ -290,7 +250,7 @@
       "kind": "discovery",
       "format": "gdelt",
       "tab": "dach",
-      "query": "(Germany OR Deutschland OR Austria OR Österreich OR Switzerland OR Schweiz OR Luxembourg OR Luxemburg)",
+      "query": "(Germany OR Deutschland OR Austria OR Österreich OR Switzerland OR Schweiz OR Luxembourg OR Luxemburg) (sourcelang:english OR sourcelang:german)",
       "timespan": "60min",
       "maxrecords": 150,
       "ttl_minutes": 30,
@@ -331,6 +291,78 @@
       "ttl_minutes": 30,
       "api_key_env": "NEWSAPI_KEY",
       "optional": true,
+      "enabled": true
+    },
+    {
+      "id": "gala-royals",
+      "name": "GALA Royals",
+      "publisher": "FUNKE Mediengruppe",
+      "country": "DE",
+      "language": "de",
+      "kind": "editorial",
+      "format": "rss",
+      "tab": "royal",
+      "url": "https://www.gala.de/feed/rss-royals/",
+      "ttl_minutes": 30,
+      "max_items": 40,
+      "enabled": true
+    },
+    {
+      "id": "rtl-royals",
+      "name": "RTL Royals",
+      "publisher": "RTL Deutschland",
+      "country": "DE",
+      "language": "de",
+      "kind": "editorial",
+      "format": "rss",
+      "tab": "royal",
+      "url": "https://www.rtl.de/rss/feed/unterhaltung/royals",
+      "ttl_minutes": 30,
+      "max_items": 40,
+      "enabled": true
+    },
+    {
+      "id": "royal-central",
+      "name": "Royal Central",
+      "publisher": "Royal Central",
+      "country": "GB",
+      "language": "en",
+      "kind": "editorial",
+      "format": "rss",
+      "tab": "royal",
+      "url": "https://royalcentral.co.uk/feed/",
+      "ttl_minutes": 30,
+      "max_items": 40,
+      "enabled": true
+    },
+    {
+      "id": "hello-royalty",
+      "name": "HELLO! Royalty",
+      "publisher": "HELLO!",
+      "country": "GB",
+      "language": "en",
+      "kind": "editorial",
+      "format": "rss",
+      "tab": "royal",
+      "url": "https://www.hellomagazine.com/feeds/rss/any/royalty/any/50.xml",
+      "ttl_minutes": 30,
+      "max_items": 40,
+      "enabled": true
+    },
+    {
+      "id": "gdelt-royal",
+      "name": "GDELT Royal Discovery",
+      "publisher": "GDELT",
+      "country": "GLOBAL",
+      "language": "multi",
+      "kind": "discovery",
+      "format": "gdelt",
+      "tab": "royal",
+      "query": "(\"royal family\" OR \"royal wedding\" OR \"royal palace\" OR \"crown prince\" OR \"crown princess\" OR monarchy OR \"king charles\" OR \"queen maxima\") (sourcelang:english OR sourcelang:german)",
+      "timespan": "60min",
+      "maxrecords": 150,
+      "ttl_minutes": 30,
+      "max_items": 150,
       "enabled": true
     }
   ],
