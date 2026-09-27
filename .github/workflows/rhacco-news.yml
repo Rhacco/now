@@ -11,11 +11,14 @@ permissions:
   id-token: write
 
 concurrency:
-  group: rhacco-news-live-refresh
+  group: rhacco-news-update
   cancel-in-progress: false
 
+env:
+  STATE_BRANCH: rhacco-news-state
+
 jobs:
-  refresh:
+  update:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
@@ -23,9 +26,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout
+      - name: Checkout engine branch
         uses: actions/checkout@v7
         with:
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -33,30 +37,100 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Restore latest persistent cache
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p worker-rn/data
+
+          if git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
+            git fetch origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
+
+            if git cat-file -e "origin/${STATE_BRANCH}:worker-rn/data/cache.json" 2>/dev/null; then
+              git show "origin/${STATE_BRANCH}:worker-rn/data/cache.json" > worker-rn/data/cache.json
+              echo "Persistent cache restored from ${STATE_BRANCH}."
+            else
+              echo "State branch exists, but no cache is available yet; using the seed cache."
+            fi
+          else
+            echo "State branch does not exist yet; the first successful run will create it."
+          fi
+
       - name: Refresh "Rhacco News"
         env:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-        run: python worker-rn/app/engine.py
+        run: python3 worker-rn/app/engine.py
 
       - name: Validate generated files
+        shell: bash
         run: |
-          python -m py_compile worker-rn/app/engine.py
+          set -euo pipefail
+          python3 -m py_compile worker-rn/app/engine.py
           test -s rn/index.html
-          python - <<'PY'
+          test -s worker-rn/data/cache.json
+          python3 - <<'PY'
           from html.parser import HTMLParser
           from pathlib import Path
+
           class P(HTMLParser):
               pass
-          html = Path('rn/index.html').read_text(encoding='utf-8')
-          P().feed(html)
-          assert '&quot;Rhacco News&quot;' in html
-          assert 'Weltpolitik' in html
-          assert 'DACH + Luxemburg' in html
+
+          page = Path("rn/index.html").read_text(encoding="utf-8")
+          P().feed(page)
+          assert 'Rhacco News' in page
+          assert 'Weltpolitik' in page
+          assert 'DACH + Luxemburg' in page
           PY
 
-      - name: Prepare Pages artifact
+      - name: Publish page and persistent cache to state branch
+        shell: bash
         run: |
+          set -euo pipefail
+
+          STATE_DIR="${RUNNER_TEMP}/rhacco-news-state"
+          rm -rf "${STATE_DIR}"
+
+          git config user.name "rhacco-news-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git show-ref --verify --quiet "refs/remotes/origin/${STATE_BRANCH}"; then
+            git worktree add --detach "${STATE_DIR}" "origin/${STATE_BRANCH}"
+            git -C "${STATE_DIR}" checkout -B "${STATE_BRANCH}" "origin/${STATE_BRANCH}"
+            STATE_EXISTS=1
+          else
+            git worktree add --detach "${STATE_DIR}" HEAD
+            git -C "${STATE_DIR}" checkout --orphan "${STATE_BRANCH}"
+            git -C "${STATE_DIR}" rm -rf . >/dev/null 2>&1 || true
+            STATE_EXISTS=0
+          fi
+
+          rm -rf "${STATE_DIR}/rn" "${STATE_DIR}/worker-rn"
+          mkdir -p "${STATE_DIR}/rn" "${STATE_DIR}/worker-rn/data"
+
+          cp rn/index.html "${STATE_DIR}/rn/index.html"
+          cp worker-rn/data/cache.json "${STATE_DIR}/worker-rn/data/cache.json"
+
+          cat > "${STATE_DIR}/index.html" <<'HTML'
+          <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=rn/"><title>&quot;Rhacco News&quot;</title><a href="rn/">&quot;Rhacco News&quot; öffnen</a></html>
+          HTML
+
+          git -C "${STATE_DIR}" add -A
+
+          if git -C "${STATE_DIR}" diff --cached --quiet; then
+            echo "No state/page update required."
+          elif [ "${STATE_EXISTS}" -eq 1 ]; then
+            git -C "${STATE_DIR}" commit --amend --no-edit
+            git -C "${STATE_DIR}" push --force-with-lease origin "HEAD:${STATE_BRANCH}"
+          else
+            git -C "${STATE_DIR}" commit -m 'Initialize "Rhacco News" state'
+            git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
+          fi
+
+      - name: Prepare Pages artifact
+        shell: bash
+        run: |
+          set -euo pipefail
           rm -rf _site
           mkdir -p _site/rn
           cp rn/index.html _site/rn/index.html
@@ -75,19 +149,3 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v5
-
-      - name: Persist refreshed source cache
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add worker-rn/data/cache.json
-          if git diff --cached --quiet; then
-            echo "No cache changes to commit."
-            exit 0
-          fi
-          git commit -m "chore(rhacco-news): refresh source cache"
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
