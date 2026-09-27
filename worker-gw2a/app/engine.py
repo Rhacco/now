@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "1.9.0"
+ENGINE_VERSION = "2.1.0"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -56,7 +56,7 @@ ANNOUNCEMENT_SOURCE_URLS = {
     "Choyareset": "https://choyaaa.com/meta",
 }
 
-SOURCE_REGIONS = {"metasheet": "EU", "ttwurm": "EU", "gw2community": "EU", "dcap": "NA", "vip": "NA"}
+SOURCE_REGIONS = {"metasheet": "EU", "ttwurm": "EU", "gw2community": "EU", "dcap": "NA"}
 
 
 CACHE_SCHEMA_VERSION = 2
@@ -129,7 +129,9 @@ LOCATION_OVERRIDES = {
     "Twisted Marionette (Public)": "Eye of the North",
     "Tower of Nightmares (Public)": "Eye of the North",
     "Battle For Lion's Arch (Public)": "Eye of the North",
-    "Convergences (Public)": "The Wizard's Tower"
+    "Convergences (Public)": "The Wizard's Tower",
+    "Target Practice": "The Wizard's Tower",
+    "Fly by Night": "The Wizard's Tower"
 }
 
 TRACK_DISPLAY_OVERRIDES = {
@@ -168,7 +170,7 @@ CATALOG_TRACKS_IGNORED = {
 CATALOG_TRACKS_REPLACED_BY_VERIFIED_SCHEDULE = {
     "Scarlet's Invasion"
 }
-EXCLUDED_EVENTS = {"Reset", "Target Practice", "Fly by Night", "Target Practice & Fly by Night"}
+EXCLUDED_EVENTS = {"Reset"}
 PHASE_PENALTIES = {
     "Pylons": -16,
     "Challenges": -8,
@@ -179,7 +181,9 @@ PHASE_PENALTIES = {
     "Day: Securing Verdant Brink": -18,
     "Night: Night and the Enemy": -10,
     "Crash Site": -12,
-    "Escorts": -8
+    "Escorts": -8,
+    "Target Practice": -65,
+    "Fly by Night": -65
 }
 
 # Identities, content origin and entry maps verified against the GW2 Wiki,
@@ -202,9 +206,9 @@ def instance_identity(value: str) -> str:
 
 
 def public_instance_meta(c: "Candidate") -> tuple[str, str, str, bool] | None:
-    wiki_path = urllib.parse.unquote(urllib.parse.urlsplit(c.wiki).path)
-    wiki_title = wiki_path.removeprefix("/wiki/").replace("_", " ")
-    labels = {instance_identity(c.event), instance_identity(wiki_title)}
+    # A general article link does not prove that the timed segment itself is
+    # that public instance. Only the event or corroborating timer track does.
+    labels = {instance_identity(c.event)}
     # A generic track is only useful with its content category; never treat
     # every unrelated occurrence of the word 'convergence' as this content.
     if norm(c.track) == "convergences" and content_meta(c.category)["id"] == "soto":
@@ -774,7 +778,11 @@ def parse_event_levels(raw: str) -> dict[str, Any]:
 
 def is_special_recurring(event: str, track: str) -> bool:
     text = norm(event + " " + track)
-    return any(term in text for term in SPECIAL_RECURRING_TERMS)
+    # A title about a convergence is not itself a timed convergence.
+    if re.match(r"(?i)^Convergence:\s*\S", event) or norm(track) == "convergences":
+        return True
+    return any(re.search(r"\b" + re.escape(term) + r"\b", text)
+               for term in SPECIAL_RECURRING_TERMS if term != "convergence")
 
 
 def parse_catalog(raw: str) -> list[dict[str, Any]]:
@@ -1006,7 +1014,12 @@ def parse_vip(raw: str) -> list[dict[str, Any]]:
         if key in seen:
             continue
         seen.add(key)
-        out.append({"title": title, "start": iso(start), "end": iso(end), "region": "NA"})
+        # The calendar's display timezone does not establish the game region.
+        # Respect a region only when the individual title says so explicitly.
+        eu = bool(re.search(r"\bEU\b", title, re.I))
+        na = bool(re.search(r"\bNA\b", title, re.I))
+        row_region = "EU" if eu and not na else "NA" if na and not eu else ""
+        out.append({"title": title, "start": iso(start), "end": iso(end), "region": row_region})
     return out
 
 
@@ -1052,7 +1065,7 @@ def parse_news(raw: str) -> dict[str, Any]:
     for line in text.splitlines():
         if len(line) > 240:
             continue
-        if re.search(r"(?i)(bonus event|rush event|fractal incursion|world boss|meta-event|convergence)", line):
+        if re.search(r"(?i)\b(?:bonus event|rush event|fractal incursion|world boss|meta-event|convergences?)\b", line):
             lines.append(line)
     return {"lines": lines[:100]}
 
@@ -1118,24 +1131,30 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
                 continue
             if not ev or ev in EXCLUDED_EVENTS:
                 continue
-            disp = display_name(name, ev)
-            wiki_link = seg.get("link", "")
-            if name == "Convergences" and ev == "Convergences (Public)":
-                wiki_link = "Convergence: Outer Nayos"
-            out.append(Candidate(
-                event=disp,
-                track=name,
-                category=track.get("category", ""),
-                start=start,
-                end=end,
-                location=segment_location(name, ev),
-                waypoint=wp,
-                source="gw2-api-event-timers",
-                wiki=wiki_url(wiki_link),
-                base_priority=base_priority(cfg, track.get("category", ""), name, ev, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0)),
-                special=is_special_recurring(disp, name),
-                event_id=seg.get("event_id", "")
-            ))
+            phases = ("Target Practice", "Fly by Night") if name == "Wizard's Tower" and ev == "Target Practice & Fly by Night" else (ev,)
+            for phase in phases:
+                disp = "Skyscale Target Practice" if name == "Wizard's Tower" and phase == "Target Practice" else display_name(name, phase)
+                wiki_link = seg.get("link", "")
+                if name == "Wizard's Tower" and phase == "Target Practice":
+                    wiki_link = "Skyscale Target Practice in the Wizard's Tower"
+                elif name == "Wizard's Tower" and phase == "Fly by Night":
+                    wiki_link = "Wizard's Tower: Fly by Night"
+                elif name == "Convergences" and phase == "Convergences (Public)":
+                    wiki_link = "Convergence: Outer Nayos"
+                out.append(Candidate(
+                    event=disp,
+                    track=name,
+                    category=track.get("category", ""),
+                    start=start,
+                    end=end,
+                    location=segment_location(name, phase),
+                    waypoint=wp,
+                    source="gw2-api-event-timers",
+                    wiki=wiki_url(wiki_link),
+                    base_priority=base_priority(cfg, track.get("category", ""), name, phase, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0)),
+                    special=is_special_recurring(disp, name),
+                    event_id=seg.get("event_id", "")
+                ))
 
     partial_is_tail = bool(
         partial and pattern
@@ -1521,7 +1540,7 @@ def apply_fast_context(cands: list[Candidate], fast: dict[str, Any] | None) -> N
     text = fast.get("normalized_text", "")
     for c in cands:
         terms = [norm(c.event), norm(c.track)]
-        if any(len(t) >= 6 and t in text for t in terms):
+        if any(len(t) >= 6 and re.search(r"\b" + re.escape(t) + r"\b", text) for t in terms):
             c.fast_seen = True
 
 
@@ -1530,7 +1549,9 @@ def action_window_minutes(c: Candidate) -> int:
     text = norm(c.event + " " + c.track)
 
     for terms, minutes in ACTION_WINDOW_OVERRIDES:
-        if any(term in text for term in terms):
+        if any(re.search(r"\b" + re.escape(term) + r"\b", text)
+               and (term != "convergence" or c.public_instance or is_structured_convergence(c))
+               for term in terms):
             return minutes
 
     scheduled = max(1.0, (c.end - c.start).total_seconds() / 60.0)
@@ -1553,8 +1574,6 @@ def score_candidates(cands: list[Candidate], now: datetime) -> None:
         score += min(12, 4 * max(0, counts.get(c.key(), 1) - 1))
         if c.fast_seen:
             score += 5
-        if c.direct_waypoint:
-            score += 3
         if c.start > now:
             mins = max(0.0, (c.start - now).total_seconds() / 60)
             score += max(0.0, 30.0 - mins / 4.0)
@@ -1878,16 +1897,19 @@ def page_version(
         for c in items:
             rows.append([
                 group, c.event, iso(c.start), iso(c.end), c.location,
-                c.waypoint, int(round(c.score)), c.level, c.category,
+                c.waypoint, c.level, c.category,
                 c.lightning, c.special, c.announcement_url
             ])
     for c in client_events:
         rows.append([
             "client", c.event, iso(c.start), iso(c.end), c.location,
-            c.waypoint, int(round(c.score)), c.level, c.category, c.lightning, c.special,
+            c.waypoint, c.level, c.category, c.lightning, c.special,
             c.announcement_url, action_window_minutes(c)
         ])
-    rows.append(client_event_payload(client_events))
+    # Live score/heat changes do not require a full document reload. The
+    # group memberships and all stable event/link metadata remain versioned.
+    rows.append([{k: v for k, v in item.items() if k not in {"score", "priority_html"}}
+                 for item in client_event_payload(client_events)])
     raw = json.dumps(rows, ensure_ascii=False, separators=(",", ":"), sort_keys=False)
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -1905,9 +1927,6 @@ def render_html(
         active, upcoming, active_extra, upcoming_extra,
         active_more, upcoming_more, client_events, notice
     )
-    # Refresh the finite client pool heartbeat even when an empty/sparse
-    # schedule produces identical event records for a while.
-    version = hashlib.sha256(f"{version}|{int(now.timestamp()) // 600}".encode()).hexdigest()[:16]
     client_json = json.dumps(
         client_event_payload(client_events),
         ensure_ascii=False,
@@ -1983,12 +2002,15 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .content-option:hover{{background:#1d2025;color:#fff}}
 .content-option input{{margin:0;accent-color:#d7aa42;flex:0 0 auto}}
 .content-option span{{white-space:nowrap}}
-.level-filter-option{{grid-column:1/-1;min-width:0}}
+.level-filter-option{{min-width:0}}
 .level-filter-option small{{font-size:inherit;color:var(--muted)}}
 @media(max-width:380px){{.level-filter-option small{{display:block}}}}
-.preference-note{{margin:14px 0 2px;text-align:center;color:#69717c;font-size:9px;line-height:1.3}}
+.preference-footer{{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:14px 0 2px}}
+.preference-note{{color:#69717c;font-size:9px;line-height:1.3}}
 .preference-note.saved{{color:#77897b}}
 .preference-note.failed{{color:#b89278}}
+.delete-cookie{{padding:0;border:0;background:none;color:#929daa;font:inherit;font-size:9px;text-decoration:underline;text-underline-offset:2px;cursor:pointer}}
+.delete-cookie:hover,.delete-cookie:focus-visible{{color:#fff}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:62px;padding:8px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 .event-card:hover{{background:var(--panel2)}}
@@ -2087,7 +2109,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
-<footer id="preference-note" class="preference-note">Preferences will be saved in a single cookie.</footer>
+<footer class="preference-footer"><span id="preference-note" class="preference-note" role="status">Preferences will be saved in a single cookie.</span><button id="delete-preferences" class="delete-cookie" type="button" title="Remove saved preferences from this browser">Delete cookie</button></footer>
 <span id="copy-status" class="sr-only" role="status"></span>
 </div>
 
@@ -2100,6 +2122,7 @@ const NEXT_LIMIT={int(cfg.get("next_limit", 3))};
 const EXTRA_LIMIT={int(cfg.get("extra_limit", 2))};
 const PRESTART_MS=5*60*1000;
 const DATA_GENERATED_AT_MS={int(now.timestamp()*1000)};
+let lastPublishedAtMs=DATA_GENERATED_AT_MS;
 const SOURCE_NOTICE={notice_json};
 
 let localZone="";
@@ -2112,6 +2135,7 @@ const LEGACY_TIME_KEY="gw2action-time-mode";
 const LEGACY_CONTENT_KEY="gw2action-disabled-content-v1";
 const knownContentIds=new Set(CONTENT_OPTIONS.map(item=>item.id));
 let preferenceSaveState="idle";
+let suppressTransientUiState=false;
 
 function cookiePath() {{
   const path=window.location.pathname || "/";
@@ -2174,11 +2198,18 @@ function updatePreferenceNote() {{
   }} else if(preferenceSaveState==="failed") {{
     note.textContent="Preferences could not be saved in this browser.";
     note.classList.add("failed");
+  }} else if(preferenceSaveState==="deleted") {{
+    note.textContent="Saved preferences removed.";
+    note.classList.add("saved");
+  }} else if(preferenceSaveState==="clear-failed") {{
+    note.textContent="Could not confirm all preferences were removed.";
+    note.classList.add("failed");
   }} else {{
     note.textContent="Preferences will be saved in a single cookie.";
   }}
 }}
 function savePreferences() {{
+  suppressTransientUiState=false;
   const payload={{v:2,time:timeMode,disabled:[...disabledContent].sort(),level80:showLevel80}};
   const encoded=encodeURIComponent(JSON.stringify(payload));
   const secure=window.location.protocol==="https:" ? "; Secure" : "";
@@ -2196,6 +2227,46 @@ function savePreferences() {{
   }}
   updatePreferenceNote();
   return saved;
+}}
+function deleteStoredPreferences() {{
+  suppressTransientUiState=true;
+  let cookiesCleared=true;
+  try {{
+    const ownNames=new Set([PREF_COOKIE_KEY]);
+    for(const part of document.cookie.split(";")) {{
+      const name=part.trim().split("=",1)[0];
+      if(/^gw2action(?:_|-)/.test(name)) ownNames.add(name);
+    }}
+    const paths=new Set(["/"]);
+    let parent="";
+    for(const part of cookiePath().split("/").filter(Boolean)) {{
+      parent+="/"+part;
+      paths.add(parent);paths.add(parent+"/");
+    }}
+    for(const name of ownNames) for(const path of paths) {{
+      document.cookie=`${{name}}=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=${{path}}; SameSite=Lax`;
+    }}
+    cookiesCleared=!document.cookie.split(";").some(part=>/^gw2action(?:_|-)/.test(part.trim().split("=",1)[0]));
+  }} catch(e) {{ cookiesCleared=false; }}
+  function clearOwnKeys(storage) {{
+    try {{
+      const keys=[];
+      for(let i=0;i<storage.length;i++) {{
+        const key=storage.key(i);
+        if(key && /^gw2action(?:_|-)/.test(key)) keys.push(key);
+      }}
+      for(const key of keys) storage.removeItem(key);
+      return keys.every(key=>storage.getItem(key)===null);
+    }} catch(e) {{ return false; }}
+  }}
+  const localCleared=clearOwnKeys(localStorage);
+  const sessionCleared=clearOwnKeys(sessionStorage);
+  timeMode=localDistinct?"local":"server";
+  disabledContent.clear();showLevel80=true;
+  preferenceSaveState=cookiesCleared && localCleared && sessionCleared ? "deleted":"clear-failed";
+  clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();
+  updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);
+  return preferenceSaveState==="deleted";
 }}
 function contentEnabled(event) {{
   // Unknown categories stay visible by design so new content is never silently hidden.
@@ -2237,7 +2308,7 @@ function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
   const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
-  const level80=`<label class="content-option level-filter-option" title="Useful when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>(disable for leveling alts)</small></span></label>`;
+  const level80=`<label class="content-option level-filter-option" title="Optional when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>(optional while leveling alts)</small></span></label>`;
   menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
 }}
@@ -2326,6 +2397,7 @@ function collectDetailsState() {{
 }}
 
 function stashTransientUiState() {{
+  if(suppressTransientUiState) return;
   const menu=document.getElementById("content-filter-menu");
   const state={{
     v:3,
@@ -2457,7 +2529,7 @@ let lastLayoutSignature="";
 function renderLive(force=false) {{
   const dataStatus=document.getElementById("data-status");
   if(dataStatus) {{
-    const delayed=Date.now()>DATA_GENERATED_AT_MS+15*60*1000;
+    const delayed=Date.now()>lastPublishedAtMs+15*60*1000;
     dataStatus.textContent=delayed ? "Updates are delayed; upcoming events may be incomplete." : SOURCE_NOTICE;
     dataStatus.hidden=!dataStatus.textContent;
   }}
@@ -2512,6 +2584,7 @@ document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   document.getElementById("content-filter-menu").scrollTop=scrollTop;
   restoreFocus(focused);
 }});
+document.getElementById("delete-preferences")?.addEventListener("click",deleteStoredPreferences);
 
 const contentFilter=document.getElementById("content-filter");
 contentFilter?.addEventListener("toggle",()=>{{
@@ -2559,12 +2632,15 @@ async function checkForUpdate(){{
     const u=new URL(window.location.pathname,window.location.origin);u.searchParams.set("_",Date.now().toString());
     const r=await fetch(u.toString(),{{cache:"no-store"}});if(!r.ok)return;
     const text=await r.text();const match=text.match(/<meta name="gw2-page-version" content="([^"]+)">/);
+    const published=text.match(/const DATA_GENERATED_AT_MS=([0-9]+);/);
+    if(published) lastPublishedAtMs=Number(published[1]);
     if(match && match[1]!==currentVersion){{
       stashTransientUiState();
       const next=new URL(window.location.pathname,window.location.origin);
       next.searchParams.set("_",Date.now().toString());
       window.location.replace(next.toString());
     }}
+    renderLive(false);
   }}catch(e){{}}
 }}
 setInterval(checkForUpdate,20000);
