@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.1"
+ENGINE_VERSION = "2.2.2"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -152,7 +152,8 @@ CONTENT_GROUPS = (
     {"id": "soto", "short": "SotO", "label": "Secrets of the Obscure", "category": "Secrets of the Obscure", "hue": 43},
     {"id": "jw", "short": "JW", "label": "Janthir Wilds", "category": "Janthir Wilds", "hue": 220},
     {"id": "voe", "short": "VoE", "label": "Visions of Eternity", "category": "Visions of Eternity", "hue": 14},
-    {"id": "special", "short": "Special", "label": "Special Events", "category": "Special Events", "hue": 55},
+    {"id": "special", "short": "Special", "label": "Special Events", "category": "Special Events", "hue": 55,
+     "hint": "Festivals and limited-time activities appear here when scheduled."},
 )
 CONTENT_UNKNOWN = {
     "id": "unknown",
@@ -1713,7 +1714,7 @@ def content_badge(c: Candidate) -> str:
         )
     return (
         f'<span class="badge content-badge" style="--content-h:{meta["hue"]}" '
-        f'title="{html.escape(meta["label"])}">{html.escape(meta["short"])}</span>'
+        f'title="{html.escape(meta.get("hint", meta["label"]))}">{html.escape(meta["short"])}</span>'
     )
 
 
@@ -1726,7 +1727,8 @@ def waypoint_label(c: Candidate) -> str:
 
 def content_options_payload() -> list[dict[str, str]]:
     return [
-        {"id": item["id"], "short": item["short"], "label": item["label"]}
+        {"id": item["id"], "short": item["short"], "label": item["label"],
+         "hint": item.get("hint", "")}
         for item in CONTENT_OPTIONS
     ]
 
@@ -1734,7 +1736,7 @@ def content_options_payload() -> list[dict[str, str]]:
 def priority_badge(c: Candidate) -> str:
     score = int(round(c.score))
     hue = heat_hue(score, 65, 125)
-    return f'<span class="badge heat" style="--h:{hue}" title="Schedule, rewards and organized runs · not a live player count">Priority {score}</span>'
+    return f'<span class="badge heat" style="--h:{hue}" title="Higher means a stronger suggestion. This is not a percentage or live player count.">Prio {score}</span>'
 
 
 def level_badge(c: Candidate) -> str:
@@ -1813,7 +1815,7 @@ def signal_flash(c: Candidate) -> str:
     if not c.lightning:
         return ""
     sources = ", ".join(c.community_sources)
-    title = "Community event"
+    title = "Listed in a community schedule; check in game for a group"
     if sources:
         title += f" · {sources}"
     return f'<span class="flash" title="{html.escape(title)}">⚡️</span>'
@@ -1899,7 +1901,8 @@ def farm_options_html() -> str:
             f'<span> · {html.escape(location)}</span></div>'
             f'<div class="farm-links"><span class="badge">Level 80</span>'
             f'<span class="badge content-badge" '
-            f'style="--content-h:{content["hue"]}">{content["short"]}</span>'
+            f'style="--content-h:{content["hue"]}" '
+            f'title="{html.escape(content["label"])}">{content["short"]}</span>'
             f'<a class="wiki" target="_blank" rel="noopener" '
             f'href="https://wiki.guildwars2.com/wiki/{wiki_page}">Wiki</a></div>'
             f'<button class="wp farm-wp" type="button" data-copy="{waypoint}" '
@@ -1909,7 +1912,8 @@ def farm_options_html() -> str:
         )
     return (
         '<details id="farm-options" class="all-block" data-ui-state-key="farm-options">'
-        f'<summary>Farm Maps · Check LFG <span id="farm-count">({len(rows)})</span></summary>'
+        f'<summary title="Find an active map through the in-game LFG; progress varies by map.">'
+        f'Farm Maps · Check LFG <span id="farm-count">({len(rows)})</span></summary>'
         '<p class="farm-note">Open the in-game LFG to join an active map. '
         'Random spawns are not live-tracked.</p>'
         f'<div class="farm-list">{"".join(rows)}</div>'
@@ -2140,7 +2144,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
     <div class="control-group">
       <span class="control-label">Content:</span>
       <details id="content-filter" class="content-filter" data-ui-state-key="content-filter">
-        <summary id="content-filter-summary" title="Filter content and level">All</summary>
+        <summary id="content-filter-summary" title="Choose which content and levels to show">All</summary>
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
@@ -2148,11 +2152,11 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   <div id="data-status" class="status-note"{'' if notice else ' hidden'}>{html.escape(notice)}</div>
 </header>
 
-<h2 title="Recommendations from schedules and rewards, not live player counts">Now · Recommended Activity</h2>
+<h2 title="Suggestions from known start times and community plans">Now · Recommended Activity</h2>
 <div id="now-top">{section(active, False)}</div>
 <div id="now-more">{expandable(active_more, False)}</div>
 
-<h2 title="Recommendations from schedules and rewards, not live player counts">Up Next · Recommended</h2>
+<h2 title="Suggestions from upcoming starts and community plans">Up Next · Recommended</h2>
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
@@ -2395,7 +2399,7 @@ function updateContentSummary() {{
   const enabled=total-disabledContent.size;
   const base=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
   summary.textContent=showLevel80 ? base : `${{base}} · Lvl 80 off`;
-  summary.title="Filter content and level";
+  summary.title="Choose which content and levels to show";
   updateFarmVisibility();
 }}
 
@@ -2415,7 +2419,10 @@ function updateFarmVisibility() {{
 function buildContentFilter() {{
   const menu=document.getElementById("content-filter-menu");
   if(!menu) return;
-  const rows=CONTENT_OPTIONS.map(item=>`<label class="content-option"><input type="checkbox" data-content-id="${{esc(item.id)}}" ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`).join("");
+  const rows=CONTENT_OPTIONS.map(item=>{{
+    const help=item.hint?` title="${{esc(item.hint)}}"`:"";
+    return `<label class="content-option"${{help}}><input type="checkbox" data-content-id="${{esc(item.id)}}"${{help}} ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`;
+  }}).join("");
   const level80=`<label class="content-option level-filter-option" title="Useful when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>· can be hidden while leveling alts</small></span></label>`;
   menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
