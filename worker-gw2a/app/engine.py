@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.1.1"
+ENGINE_VERSION = "2.2.1"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -163,6 +163,17 @@ CONTENT_UNKNOWN = {
 }
 CONTENT_BY_CATEGORY = {item["category"]: item for item in CONTENT_GROUPS}
 CONTENT_OPTIONS = CONTENT_GROUPS
+
+# Untimed farm opportunities. These are directions for checking an active
+# instance via the in-game LFG, never assertions that a spawn is live.
+FARM_MAPS = (
+    ("The Silverwastes · RIBA", "The Silverwastes", "Living World Season 2",
+     "Camp Resolve Waypoint", "[&BH8HAAA=]", "The_Silverwastes"),
+    ("Dragonfall · Meta train", "Dragonfall", "Living World Season 4",
+     "Pact Command Waypoint", "[&BN4LAAA=]", "Dragonfall"),
+    ("Drizzlewood Coast · Meta train", "Drizzlewood Coast", "The Icebrood Saga",
+     "Base Camp Waypoint", "[&BGQMAAA=]", "Drizzlewood_Coast"),
+)
 
 CATALOG_TRACKS_IGNORED = {
     "Day and night", "Cantha: Day and night", "PvP Tournaments"
@@ -1093,12 +1104,14 @@ def base_priority(cfg: dict[str, Any], category: str, track: str, event: str, re
     override = cfg.get("priority_overrides", {})
     p = max(p, int(override.get(track, 0) or 0), int(override.get(event, 0) or 0))
     p += PHASE_PENALTIES.get(event, 0)
+    # Catalog rewards are opportunities, not a measured gold/hour rate or
+    # account-specific unearned achievement points. Catalog LFG is not live.
     if rewards.get("random_items"):
-        p += 3
-    if rewards.get("achievements"):
         p += 2
+    if rewards.get("achievements"):
+        p += 1
     if lfg:
-        p += min(6, int(lfg) // 3)
+        p += min(3, max(0, int(lfg)) // 4)
     return max(1, min(110, p))
 
 
@@ -1563,25 +1576,20 @@ def action_window_minutes(c: Candidate) -> int:
 
 
 def score_candidates(cands: list[Candidate], now: datetime) -> None:
-    # Agreement count by event/start.
-    counts: dict[str, int] = {}
-    for c in cands:
-        counts[c.key()] = counts.get(c.key(), 0) + 1
     for c in cands:
         score = float(c.base_priority)
         if c.lightning:
-            score += 30
-        score += min(12, 4 * max(0, counts.get(c.key(), 1) - 1))
+            score += 18  # Announced organized run, not a measured map population.
         if c.fast_seen:
-            score += 5
+            score += 3
         if c.start > now:
             mins = max(0.0, (c.start - now).total_seconds() / 60)
-            score += max(0.0, 30.0 - mins / 4.0)
+            score += max(0.0, 24.0 - mins / 5.0)
         else:
             window = float(action_window_minutes(c))
             age = max(0.0, (now - c.start).total_seconds() / 60.0)
             freshness = max(0.0, 1.0 - age / max(1.0, window))
-            score += 14.0 * freshness
+            score += 16.0 * freshness
         c.score = score
 
 
@@ -1726,7 +1734,7 @@ def content_options_payload() -> list[dict[str, str]]:
 def priority_badge(c: Candidate) -> str:
     score = int(round(c.score))
     hue = heat_hue(score, 65, 125)
-    return f'<span class="badge heat" style="--h:{hue}" title="Higher = more likely to be active">Priority {score}</span>'
+    return f'<span class="badge heat" style="--h:{hue}" title="Schedule, rewards and organized runs · not a live player count">Priority {score}</span>'
 
 
 def level_badge(c: Candidate) -> str:
@@ -1881,6 +1889,34 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
     </div>'''
 
 
+def farm_options_html() -> str:
+    rows = []
+    for title, location, category, waypoint_name, waypoint, wiki_page in FARM_MAPS:
+        content = content_meta(category)
+        rows.append(
+            f'<div class="farm-card" data-farm-content-id="{content["id"]}">'
+            f'<div class="farm-name"><b>{html.escape(title)}</b>'
+            f'<span> · {html.escape(location)}</span></div>'
+            f'<div class="farm-links"><span class="badge">Level 80</span>'
+            f'<span class="badge content-badge" '
+            f'style="--content-h:{content["hue"]}">{content["short"]}</span>'
+            f'<a class="wiki" target="_blank" rel="noopener" '
+            f'href="https://wiki.guildwars2.com/wiki/{wiki_page}">Wiki</a></div>'
+            f'<button class="wp farm-wp" type="button" data-copy="{waypoint}" '
+            f'title="Copy: {html.escape(waypoint_name)}" '
+            f'aria-label="Copy: {html.escape(waypoint_name)}">{waypoint}</button>'
+            '</div>'
+        )
+    return (
+        '<details id="farm-options" class="all-block" data-ui-state-key="farm-options">'
+        f'<summary>Farm Maps · Check LFG <span id="farm-count">({len(rows)})</span></summary>'
+        '<p class="farm-note">Open the in-game LFG to join an active map. '
+        'Random spawns are not live-tracked.</p>'
+        f'<div class="farm-list">{"".join(rows)}</div>'
+        '</details>'
+    )
+
+
 def page_version(
     active: list[Candidate], upcoming: list[Candidate],
     active_extra: list[Candidate], upcoming_extra: list[Candidate],
@@ -1953,7 +1989,7 @@ def render_html(
     def expandable(items: list[Candidate], is_upcoming: bool) -> str:
         if not items:
             return ""
-        label = "All Other Current Events" if not is_upcoming else "More Upcoming Activity · Next 2 Hours"
+        label = "More Current Activity" if not is_upcoming else "More Upcoming Activity · Next 2 Hours"
         rows = "\n".join(compact_action_html(c, tz) for c in items)
         return (
             f'<details class="all-block">'
@@ -2058,6 +2094,14 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .all-badges{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
 .all-badges .badge{{font-size:9px;padding:3px 5px}}
 .all-wp{{padding:8px 6px;font-size:10px}}
+.farm-note{{margin:0;padding:0 12px 8px;color:var(--muted);font-size:10px}}
+.farm-list{{padding:0 9px 8px}}
+.farm-card{{display:grid;grid-template-columns:minmax(0,1fr) auto 128px;gap:8px;align-items:center;min-height:40px;padding:5px 4px;border-top:1px solid #252a31}}
+.farm-card[hidden],#farm-options[hidden]{{display:none}}
+.farm-name{{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}}
+.farm-name span{{color:var(--muted);font-size:10px}}
+.farm-links{{display:flex;align-items:center;gap:5px}}
+.farm-wp{{padding:8px 6px;font-size:10px}}
 .empty{{padding:20px;text-align:center;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 @media(max-width:760px){{
   .app{{padding:10px}}
@@ -2072,6 +2116,8 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   .all-card{{grid-template-columns:50px 1fr}}
   .all-badges{{grid-column:2}}
   .all-wp{{grid-column:1/3;width:100%}}
+  .farm-card{{grid-template-columns:minmax(0,1fr) auto}}
+  .farm-wp{{grid-column:1/3;width:100%}}
   .header-tools{{gap:6px}}
   .control-group+.control-group{{padding-left:7px}}
   .content-menu{{width:calc(100vw - 16px)}}
@@ -2102,14 +2148,15 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
   <div id="data-status" class="status-note"{'' if notice else ' hidden'}>{html.escape(notice)}</div>
 </header>
 
-<h2>Now · Highest Activity</h2>
+<h2 title="Recommendations from schedules and rewards, not live player counts">Now · Recommended Activity</h2>
 <div id="now-top">{section(active, False)}</div>
 <div id="now-more">{expandable(active_more, False)}</div>
 
-<h2>Up Next · Highest Priority</h2>
+<h2 title="Recommendations from schedules and rewards, not live player counts">Up Next · Recommended</h2>
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
+{farm_options_html()}
 <footer class="preference-footer"><span id="preference-note" class="preference-note" role="status">Preferences will be saved in a single cookie.</span><button id="delete-preferences" class="delete-cookie" type="button" title="Remove saved preferences from this browser" hidden>Delete cookie</button></footer>
 <span id="copy-status" class="sr-only" role="status"></span>
 </div>
@@ -2186,6 +2233,7 @@ function legacyPreferences() {{
   return {{time,disabled}};
 }}
 
+let lastObservedPreferenceCookie=rawCookie(PREF_COOKIE_KEY);
 const cookiePrefs=readPreferenceCookie();
 if(cookiePrefs) preferenceSaveState="saved";
 const oldPrefs=cookiePrefs ? {{time:"",disabled:[]}} : legacyPreferences();
@@ -2216,6 +2264,11 @@ function updatePreferenceNote() {{
   }} else if(preferenceSaveState==="deleted") {{
     note.textContent="Saved preferences removed.";
     note.classList.add("saved");
+  }} else if(preferenceSaveState==="external-deleted") {{
+    note.textContent="Preference cookie removed in this browser.";
+  }} else if(preferenceSaveState==="unreadable") {{
+    note.textContent="Saved preferences could not be read.";
+    note.classList.add("failed");
   }} else if(preferenceSaveState==="clear-failed") {{
     note.textContent="Could not confirm all preferences were removed.";
     note.classList.add("failed");
@@ -2233,6 +2286,7 @@ function savePreferences() {{
     document.cookie=`${{PREF_COOKIE_KEY}}=${{encoded}}; Max-Age=31536000; Path=${{cookiePath()}}; SameSite=Lax${{secure}}`;
     saved=rawCookie(PREF_COOKIE_KEY)===encoded;
   }} catch(e) {{}}
+  lastObservedPreferenceCookie=rawCookie(PREF_COOKIE_KEY);
   preferenceSaveState=saved ? "saved" : "failed";
   if(saved) {{
     try {{
@@ -2242,6 +2296,35 @@ function savePreferences() {{
   }}
   updatePreferenceNote();
   return saved;
+}}
+function refreshPreferenceControls() {{
+  clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();
+  updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);
+}}
+function syncExternalPreferenceChange() {{
+  const current=rawCookie(PREF_COOKIE_KEY);
+  if(current===lastObservedPreferenceCookie) {{syncDeleteCookieButton();return;}}
+  const previous=lastObservedPreferenceCookie;
+  lastObservedPreferenceCookie=current;
+  const prefs=readPreferenceCookie();
+  if(prefs) {{
+    timeMode=prefs.time==="server" ? "server" : localDistinct ? "local" : "server";
+    disabledContent=new Set((Array.isArray(prefs.disabled)?prefs.disabled:[]).filter(id=>knownContentIds.has(id)));
+    showLevel80=typeof prefs.level80==="boolean"?prefs.level80:true;
+    preferenceSaveState="saved";
+    refreshPreferenceControls();
+  }} else if(previous || current) {{
+    timeMode=localDistinct?"local":"server";
+    disabledContent.clear();showLevel80=true;
+    preferenceSaveState=current?"unreadable":"external-deleted";
+    if(!current) {{
+      // An old localStorage preference or a pending page refresh must not
+      // recreate settings after the browser has removed the cookie.
+      try {{localStorage.removeItem(LEGACY_TIME_KEY);localStorage.removeItem(LEGACY_CONTENT_KEY);}} catch(e) {{}}
+      try {{sessionStorage.removeItem(TRANSIENT_UI_KEY);}} catch(e) {{}}
+    }}
+    refreshPreferenceControls();
+  }} else updatePreferenceNote();
 }}
 function deleteStoredPreferences() {{
   suppressTransientUiState=true;
@@ -2272,11 +2355,11 @@ function deleteStoredPreferences() {{
   }}
   const localCleared=clearOwnKeys(localStorage);
   const sessionCleared=clearOwnKeys(sessionStorage);
+  lastObservedPreferenceCookie=rawCookie(PREF_COOKIE_KEY);
   timeMode=localDistinct?"local":"server";
   disabledContent.clear();showLevel80=true;
   preferenceSaveState=cookiesCleared && localCleared && sessionCleared ? "deleted":"clear-failed";
-  clockFmt=clockFormatter();eventTimeFmt=eventTimeFormatter();
-  updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);
+  refreshPreferenceControls();
   return preferenceSaveState==="deleted";
 }}
 function contentEnabled(event) {{
@@ -2313,6 +2396,20 @@ function updateContentSummary() {{
   const base=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
   summary.textContent=showLevel80 ? base : `${{base}} · Lvl 80 off`;
   summary.title="Filter content and level";
+  updateFarmVisibility();
+}}
+
+function updateFarmVisibility() {{
+  const block=document.getElementById("farm-options");
+  if(!block) return;
+  let visible=0;
+  for(const row of block.querySelectorAll("[data-farm-content-id]")) {{
+    row.hidden=!showLevel80 || disabledContent.has(row.dataset.farmContentId);
+    if(!row.hidden) visible++;
+  }}
+  block.hidden=visible===0;
+  const count=document.getElementById("farm-count");
+  if(count) count.textContent=`(${{visible}})`;
 }}
 
 function buildContentFilter() {{
@@ -2417,7 +2514,7 @@ function stashTransientUiState() {{
     contentScrollTop:Number(menu?.scrollTop || 0),
     pageScrollY:Number(window.scrollY || 0),
     focused:focusKey(),
-    preferences:{{time:timeMode,disabled:[...disabledContent],level80:showLevel80,state:preferenceSaveState}}
+    preferences:{{time:timeMode,disabled:[...disabledContent],level80:showLevel80,state:preferenceSaveState,cookie:rawCookie(PREF_COOKIE_KEY)}}
   }};
   try {{ sessionStorage.setItem(TRANSIENT_UI_KEY,JSON.stringify(state)); }} catch(e) {{}}
 }}
@@ -2433,7 +2530,9 @@ function restoreTransientUiState() {{
   if(!state || state.v!==3 || !Number.isFinite(state.at) || Date.now()-state.at<0 || Date.now()-state.at>90000) return;
 
   const pref=state.preferences;
-  if(pref) {{
+  // A browser deletion between pagehide and reload must not revive stale
+  // preferences from sessionStorage, even if this tab had shown "saved".
+  if(pref && (pref.state!=="saved" || (pref.cookie && pref.cookie===rawCookie(PREF_COOKIE_KEY)))) {{
     timeMode=pref.time==="local" && localDistinct ? "local" : "server";
     disabledContent=new Set((Array.isArray(pref.disabled)?pref.disabled:[]).filter(id=>knownContentIds.has(id)));
     showLevel80=typeof pref.level80==="boolean"?pref.level80:true;
@@ -2596,7 +2695,9 @@ document.getElementById("content-filter-menu")?.addEventListener("click",ev=>{{
   restoreFocus(focused);
 }});
 document.getElementById("delete-preferences")?.addEventListener("click",deleteStoredPreferences);
-window.addEventListener("focus",syncDeleteCookieButton);
+window.addEventListener("focus",syncExternalPreferenceChange);
+window.addEventListener("pageshow",syncExternalPreferenceChange);
+document.addEventListener("visibilitychange",()=>{{if(!document.hidden) syncExternalPreferenceChange();}});
 
 const contentFilter=document.getElementById("content-filter");
 contentFilter?.addEventListener("toggle",()=>{{
@@ -2635,7 +2736,7 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
 updateTimeZoneControls();buildContentFilter();updatePreferenceNote();tickClock();renderLive(true);restoreTransientUiState();setInterval(tickClock,1000);
 window.addEventListener("pagehide",stashTransientUiState);
 // Exact local category transition, independent of Pages publication latency.
-setInterval(()=>renderLive(false),2000);
+setInterval(()=>{{syncExternalPreferenceChange();renderLive(false);}},2000);
 
 if(window.location.search){{history.replaceState(null,"",window.location.pathname+window.location.hash);}}
 const currentVersion=document.querySelector('meta[name="gw2-page-version"]').content;

@@ -2,12 +2,21 @@ name: All Workers & Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - ".github/workflows/all-workers-pages.yml"
+      - ".github/workflows/gw2-action.yml"
+      - ".github/workflows/rhacco-news.yml"
+      - "worker-gw2a/**"
+      - "worker-rn/**"
   schedule:
-    - cron: "*/5 * * * *"
+    # Every 5 minutes, offset from the busiest :00/:05 boundaries.
+    - cron: "2-59/5 * * * *"
 
 permissions:
   contents: write
-  actions: read
   pages: write
   id-token: write
 
@@ -31,12 +40,9 @@ jobs:
     needs:
       - gw2_action
       - rhacco_news
-    if: >-
-      ${{
-        always() &&
-        needs.gw2_action.result == 'success' &&
-        needs.rhacco_news.result == 'success'
-      }}
+    # Always publish the newest valid state available. A temporary failure in
+    # one worker must not freeze every other page.
+    if: ${{ always() && !cancelled() }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
@@ -46,18 +52,23 @@ jobs:
     env:
       GW2_STATE_BRANCH: gw2-action-state
       RN_STATE_BRANCH: rhacco-news-state
+      GW2_RESULT: ${{ needs.gw2_action.result }}
+      RN_RESULT: ${{ needs.rhacco_news.result }}
 
     steps:
       - name: Checkout repository metadata
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
-      - name: Assemble all Pages sites from worker state branches
+      - name: Assemble latest valid Pages sites
         shell: bash
         run: |
           set -euo pipefail
+
+          echo "GW2 worker result: ${GW2_RESULT}"
+          echo "Rhacco News worker result: ${RN_RESULT}"
 
           rm -rf _site
           mkdir -p _site
@@ -69,33 +80,43 @@ jobs:
             local target="$3"
             local label="$4"
 
-            if git ls-remote --exit-code --heads origin "${branch}" >/dev/null 2>&1; then
-              git fetch --force origin "${branch}:refs/remotes/origin/${branch}"
-            else
-              local rc=$?
-              if [ "${rc}" -eq 2 ]; then
-                echo "Required page state not initialized: ${label} (${branch})." >&2
-                exit 1
-              fi
-              echo "Unable to inspect state branch ${branch}." >&2
-              exit "${rc}"
+            if ! git ls-remote --exit-code --heads origin "${branch}" >/dev/null 2>&1; then
+              echo "No state branch available yet for ${label}: ${branch}" >&2
+              return 1
             fi
 
+            git fetch --force origin "${branch}:refs/remotes/origin/${branch}"
+
             if ! git cat-file -e "origin/${branch}:${source}" 2>/dev/null; then
-              echo "State branch ${branch} exists but ${source} is missing." >&2
-              exit 1
+              echo "${label}: ${branch}:${source} is missing." >&2
+              return 1
             fi
 
             mkdir -p "$(dirname "${target}")"
             git show "origin/${branch}:${source}" > "${target}"
             test -s "${target}"
-            echo "Added ${label}: ${branch}:${source} -> ${target}"
+
+            local state_time
+            state_time="$(git log -1 --format='%cI' "origin/${branch}" 2>/dev/null || true)"
+            echo "Added ${label}: ${branch}:${source} -> ${target} (state ${state_time:-unknown})"
           }
 
-          copy_state_page "${RN_STATE_BRANCH}" "rn/index.html" "_site/rn/index.html" "Rhacco News"
-          copy_state_page "${GW2_STATE_BRANCH}" "gw2a/index.html" "_site/gw2a/index.html" "GW2 Action"
+          HAS_RN=0
+          HAS_GW2=0
+          if copy_state_page "${RN_STATE_BRANCH}" "rn/index.html" "_site/rn/index.html" "Rhacco News"; then
+            HAS_RN=1
+          fi
+          if copy_state_page "${GW2_STATE_BRANCH}" "gw2a/index.html" "_site/gw2a/index.html" "GW2 Action"; then
+            HAS_GW2=1
+          fi
 
-          cat > _site/index.html <<'HTML'
+          if [ "${HAS_RN}" -eq 0 ] && [ "${HAS_GW2}" -eq 0 ]; then
+            echo "No valid worker page state is available; refusing an empty deployment." >&2
+            exit 1
+          fi
+
+          {
+            cat <<'HTML'
           <!doctype html>
           <html lang="de">
           <head>
@@ -120,24 +141,35 @@ jobs:
           </head>
           <body>
             <main aria-label="Pages">
-              <a href="rn/">Rhacco News</a>
-              <a href="gw2a/">GW2 Action</a>
+          HTML
+            if [ "${HAS_RN}" -eq 1 ]; then
+              echo '      <a href="rn/">Rhacco News</a>'
+            fi
+            if [ "${HAS_GW2}" -eq 1 ]; then
+              echo '      <a href="gw2a/">GW2 Action</a>'
+            fi
+            cat <<'HTML'
             </main>
           </body>
           </html>
           HTML
+          } > _site/index.html
 
-          mkdir -p _site/rhacco-news _site/gw2a-action
-          cat > _site/rhacco-news/index.html <<'HTML'
+          if [ "${HAS_RN}" -eq 1 ]; then
+            mkdir -p _site/rhacco-news
+            cat > _site/rhacco-news/index.html <<'HTML'
           <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../rn/"><title>Rhacco News</title><a href="../rn/">Rhacco News öffnen</a></html>
           HTML
-          cat > _site/gw2a-action/index.html <<'HTML'
+          fi
+
+          if [ "${HAS_GW2}" -eq 1 ]; then
+            mkdir -p _site/gw2a-action
+            cat > _site/gw2a-action/index.html <<'HTML'
           <!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../gw2a/"><title>GW2 Action</title><a href="../gw2a/">GW2 Action öffnen</a></html>
           HTML
+          fi
 
           test -s _site/index.html
-          test -s _site/rn/index.html
-          test -s _site/gw2a/index.html
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
 
