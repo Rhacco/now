@@ -1,0 +1,93 @@
+name: '"Rhacco News" live refresh'
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: rhacco-news-live-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Refresh "Rhacco News"
+        env:
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: python worker-rn/app/engine.py
+
+      - name: Validate generated files
+        run: |
+          python -m py_compile worker-rn/app/engine.py
+          test -s rn/index.html
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          class P(HTMLParser):
+              pass
+          html = Path('rn/index.html').read_text(encoding='utf-8')
+          P().feed(html)
+          assert '&quot;Rhacco News&quot;' in html
+          assert 'Weltpolitik' in html
+          assert 'DACH + Luxemburg' in html
+          PY
+
+      - name: Prepare Pages artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site/rn
+          cp rn/index.html _site/rn/index.html
+          cat > _site/index.html <<'HTML'
+          <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=rn/"><title>&quot;Rhacco News&quot;</title><a href="rn/">&quot;Rhacco News&quot; öffnen</a></html>
+          HTML
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: Persist refreshed source cache
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add worker-rn/data/cache.json
+          if git diff --cached --quiet; then
+            echo "No cache changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(rhacco-news): refresh source cache"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
