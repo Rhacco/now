@@ -1,0 +1,145 @@
+name: All Pages Workers
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - GW2 Action
+      - Rhacco News
+    types:
+      - completed
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: all-pages-workers-deploy
+  cancel-in-progress: true
+
+env:
+  GW2_STATE_BRANCH: gw2-action-state
+  RN_STATE_BRANCH: rhacco-news-state
+
+jobs:
+  deploy:
+    if: >-
+      ${{
+        github.event_name == 'workflow_dispatch' ||
+        github.event.workflow_run.conclusion == 'success'
+      }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository metadata
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Assemble all Pages sites from worker state branches
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -rf _site
+          mkdir -p _site
+          : > _site/.nojekyll
+
+          copy_state_page() {
+            local branch="$1"
+            local source="$2"
+            local target="$3"
+            local label="$4"
+
+            if git ls-remote --exit-code --heads origin "${branch}" >/dev/null 2>&1; then
+              git fetch --force origin "${branch}:refs/remotes/origin/${branch}"
+            else
+              local rc=$?
+              if [ "${rc}" -eq 2 ]; then
+                echo "Optional site not initialized yet: ${label} (${branch})."
+                return 1
+              fi
+              echo "Unable to inspect state branch ${branch}." >&2
+              exit "${rc}"
+            fi
+
+            if ! git cat-file -e "origin/${branch}:${source}" 2>/dev/null; then
+              echo "State branch ${branch} exists but ${source} is missing." >&2
+              exit 1
+            fi
+
+            mkdir -p "$(dirname "${target}")"
+            git show "origin/${branch}:${source}" > "${target}"
+            test -s "${target}"
+            echo "Added ${label}: ${branch}:${source} -> ${target}"
+            return 0
+          }
+
+          HAVE_GW2=0
+          HAVE_RN=0
+          copy_state_page "${GW2_STATE_BRANCH}" "gw2a/index.html" "_site/gw2a/index.html" "GW2 Action" && HAVE_GW2=1 || true
+          copy_state_page "${RN_STATE_BRANCH}" "rn/index.html" "_site/rn/index.html" "Rhacco News" && HAVE_RN=1 || true
+
+          if [ "${HAVE_GW2}" -eq 0 ] && [ "${HAVE_RN}" -eq 0 ]; then
+            echo "No initialized worker page is available yet." >&2
+            exit 1
+          fi
+
+          {
+            cat <<'HTML'
+          <!doctype html>
+          <html lang="de">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta name="color-scheme" content="dark light">
+            <title>Rhacco</title>
+            <style>body{font:16px/1.5 system-ui,sans-serif;max-width:720px;margin:60px auto;padding:0 20px}a{display:block;margin:14px 0;font-size:20px}</style>
+          </head>
+          <body><main><h1>Rhacco</h1>
+          HTML
+            if [ "${HAVE_RN}" -eq 1 ]; then
+              echo '<a href="rn/">Rhacco News</a>'
+            fi
+            if [ "${HAVE_GW2}" -eq 1 ]; then
+              echo '<a href="gw2a/">GW2 Action</a>'
+            fi
+            echo '</main></body></html>'
+          } > _site/index.html
+
+          if [ "${HAVE_RN}" -eq 1 ]; then
+            mkdir -p _site/rhacco-news
+            cat > _site/rhacco-news/index.html <<'HTML'
+          <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../rn/"><title>Rhacco News</title><a href="../rn/">Rhacco News öffnen</a></html>
+          HTML
+          fi
+
+          if [ "${HAVE_GW2}" -eq 1 ]; then
+            mkdir -p _site/gw2a-action
+            cat > _site/gw2a-action/index.html <<'HTML'
+          <!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../gw2a/"><title>GW2 Action</title><a href="../gw2a/">GW2 Action öffnen</a></html>
+          HTML
+          fi
+
+          test -s _site/index.html
+          echo "Pages artifact:"
+          find _site -maxdepth 2 -type f -print | sort
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

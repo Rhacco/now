@@ -1,4 +1,4 @@
-name: '"Rhacco News" live refresh'
+name: Rhacco News
 
 on:
   schedule:
@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: rhacco-news-update
@@ -21,15 +19,12 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout engine branch
         uses: actions/checkout@v7
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -44,25 +39,31 @@ jobs:
           mkdir -p worker-rn/data
 
           if git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
-            git fetch origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
+            git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
 
             if git cat-file -e "origin/${STATE_BRANCH}:worker-rn/data/cache.json" 2>/dev/null; then
               git show "origin/${STATE_BRANCH}:worker-rn/data/cache.json" > worker-rn/data/cache.json
               echo "Persistent cache restored from ${STATE_BRANCH}."
             else
-              echo "State branch exists, but no cache is available yet; using the seed cache."
+              echo "${STATE_BRANCH} exists without a cache; using the packaged seed cache."
             fi
           else
-            echo "State branch does not exist yet; the first successful run will create it."
+            rc=$?
+            if [ "${rc}" -eq 2 ]; then
+              echo "${STATE_BRANCH} does not exist yet; the first successful run will create it."
+            else
+              echo "Unable to inspect ${STATE_BRANCH}." >&2
+              exit "${rc}"
+            fi
           fi
 
-      - name: Refresh "Rhacco News"
+      - name: Refresh Rhacco News
         env:
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python3 worker-rn/app/engine.py
 
-      - name: Validate generated files
+      - name: Validate Rhacco News output
         shell: bash
         run: |
           set -euo pipefail
@@ -78,9 +79,9 @@ jobs:
 
           page = Path("rn/index.html").read_text(encoding="utf-8")
           P().feed(page)
-          assert 'Rhacco News' in page
-          assert 'Weltpolitik' in page
-          assert 'DACH + Luxemburg' in page
+          assert "Rhacco News" in page
+          assert "Weltpolitik" in page
+          assert "DACH + Luxemburg" in page
           PY
 
       - name: Publish page and persistent cache to state branch
@@ -111,41 +112,17 @@ jobs:
           cp rn/index.html "${STATE_DIR}/rn/index.html"
           cp worker-rn/data/cache.json "${STATE_DIR}/worker-rn/data/cache.json"
 
-          cat > "${STATE_DIR}/index.html" <<'HTML'
-          <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=rn/"><title>&quot;Rhacco News&quot;</title><a href="rn/">&quot;Rhacco News&quot; öffnen</a></html>
-          HTML
-
           git -C "${STATE_DIR}" add -A
 
           if git -C "${STATE_DIR}" diff --cached --quiet; then
-            echo "No state/page update required."
-          elif [ "${STATE_EXISTS}" -eq 1 ]; then
+            echo "No Rhacco News state/page update required."
+            exit 0
+          fi
+
+          if [ "${STATE_EXISTS}" -eq 1 ]; then
             git -C "${STATE_DIR}" commit --amend --no-edit
             git -C "${STATE_DIR}" push --force-with-lease origin "HEAD:${STATE_BRANCH}"
           else
-            git -C "${STATE_DIR}" commit -m 'Initialize "Rhacco News" state'
+            git -C "${STATE_DIR}" commit -m "Initialize Rhacco News state"
             git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
           fi
-
-      - name: Prepare Pages artifact
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf _site
-          mkdir -p _site/rn
-          cp rn/index.html _site/rn/index.html
-          cat > _site/index.html <<'HTML'
-          <!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=rn/"><title>&quot;Rhacco News&quot;</title><a href="rn/">&quot;Rhacco News&quot; öffnen</a></html>
-          HTML
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v5
-        with:
-          path: _site
-
-      - name: Deploy Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
