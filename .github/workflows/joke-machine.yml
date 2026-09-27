@@ -1,10 +1,10 @@
 name: Joke Machine
 
 on:
-  workflow_call:
   workflow_dispatch:
   schedule:
-    - cron: "11 * * * *"
+    # Poll every five minutes; publish at most once per hour.
+    - cron: "3-59/5 * * * *"
 
 permissions:
   contents: write
@@ -62,8 +62,32 @@ jobs:
       - name: Verify Node.js
         run: node -e 'const major=Number(process.versions.node.split(".")[0]); if (major < 18) { console.error("Node.js 18+ required"); process.exit(1); }'
 
+      - name: Check whether a joke is due
+        id: due
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "${EVENT_NAME}" != "schedule" ]; then
+            echo "run=true" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+          node - <<'JS'
+          const fs = require("fs");
+          const history = JSON.parse(fs.readFileSync("worker-jmac/data/history.json", "utf8"));
+          if (!Array.isArray(history)) throw new Error("Expected joke history array");
+          const last = [...history].reverse().find(entry =>
+            entry?.status === "ok" && Number.isFinite(Date.parse(entry.timestamp))
+          );
+          const due = !last || Date.now() - Date.parse(last.timestamp) >= 60 * 60 * 1000;
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `run=${due}\n`);
+          console.log(due ? "New joke is due." : "Recent joke found; skipping this check.");
+          JS
+
       - name: Run Joke Machine
         id: run_joke
+        if: steps.due.outputs.run == 'true'
         working-directory: worker-jmac
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}

@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.3"
+ENGINE_VERSION = "2.2.4"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -1941,7 +1941,7 @@ def farm_options_html() -> str:
             f'<div class="farm-card" data-farm-content-id="{content["id"]}">'
             f'<div class="farm-name"><b>{html.escape(title)}</b>'
             f'<span> · {html.escape(location)}</span></div>'
-            f'<div class="farm-links"><span class="badge">Level 80</span>'
+            f'<div class="farm-links"><span class="badge heat" style="--h:{heat_hue(80, 20, 80)}" title="Map level 80">Level 80</span>'
             f'<span class="badge content-badge" '
             f'style="--content-h:{content["hue"]}" '
             f'title="{html.escape(content["label"])}">{content["short"]}</span>'
@@ -1976,7 +1976,7 @@ def credits_html() -> str:
         groups.append(f'<section><h2>{html.escape(heading)}</h2><ul class="credit-list">{items}</ul></section>')
     return (
         '<section id="credits" class="credits-view" hidden>'
-        '<a class="back-link" href="#activity-view">← Back to activity</a>'
+        '<button class="back-link" id="back-to-activity" type="button">← Back to activity</button>'
         '<h1>Sources & Thanks</h1>'
         '<p>Thanks to the players, communities and creators who share schedules, guides and game data.</p>'
         f'{"".join(groups)}'
@@ -2178,7 +2178,7 @@ h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gol
 .credits-view h1{{font-size:20px;margin:14px 2px 6px}}
 .credits-view p{{font-size:12px;color:var(--muted);line-height:1.5;margin:0 2px 10px}}
 .credits-view h2{{margin-top:20px}}
-.back-link{{color:#a7c5de;text-decoration:none;font-size:11px}}
+.back-link{{border:0;background:transparent;padding:0;color:#a7c5de;text-decoration:none;font:inherit;font-size:11px;cursor:pointer}}
 .back-link:hover{{color:#fff;text-decoration:underline}}
 .credit-list{{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}}
 .credit-list li{{display:flex;flex-direction:column;gap:3px;padding:9px 11px;background:var(--panel);border:1px solid var(--line);border-radius:9px;min-width:0}}
@@ -2231,17 +2231,19 @@ body:has(#credits:target) #activity-view{{display:none}}
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
-    <a id="credits-link" class="credits-link" href="#credits" title="Sources and thanks">Credits</a>
+    <div class="control-group">
+      <a id="credits-link" class="credits-link" href="#credits" title="Sources and thanks">Credits</a>
+    </div>
   </div>
   <div id="data-status" class="status-note"{'' if notice else ' hidden'}>{html.escape(notice)}</div>
 </header>
 
 <main id="activity-view">
-<h2 title="Suggestions from known start times and community plans">Now · Recommended Activity</h2>
+<h2 title="Suggestions from known start times and community plans">NOW · Live activity right now</h2>
 <div id="now-top">{section(active, False)}</div>
 <div id="now-more">{expandable(active_more, False)}</div>
 
-<h2 title="Suggestions from upcoming starts and community plans">Up Next · Recommended</h2>
+<h2 title="Suggestions from upcoming starts and community plans">UP NEXT · Upcoming activity starting soon</h2>
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
@@ -2669,9 +2671,10 @@ function restoreTransientUiState() {{
 
 function clockFormatter() {{
   const timeZone=selectedZone();
-  const date=new Intl.DateTimeFormat("en-US",{{timeZone,weekday:"long",month:"long",day:"numeric"}});
+  const weekday=new Intl.DateTimeFormat("en-US",{{timeZone,weekday:"long"}});
+  const date=new Intl.DateTimeFormat("en-US",{{timeZone,month:"long",day:"numeric"}});
   const time=new Intl.DateTimeFormat("en-GB",{{timeZone,hour:"2-digit",minute:"2-digit",second:"2-digit",hourCycle:"h23"}});
-  return {{format(now){{return `${{date.format(now)}}, ${{time.format(now)}}`;}}}};
+  return {{format(now){{return `${{weekday.format(now)}} · ${{date.format(now)}} · ${{time.format(now)}}`;}}}};
 }}
 function eventTimeFormatter() {{
   return new Intl.DateTimeFormat("en-GB",{{timeZone:selectedZone(),hour:"2-digit",minute:"2-digit",hourCycle:"h23"}});
@@ -2848,7 +2851,19 @@ document.querySelector(".app")?.addEventListener("click",async ev=>{{
 
 let activityScrollY=0;
 let showingCredits=false;
-document.getElementById("credits-link")?.addEventListener("click",()=>{{activityScrollY=window.scrollY;}});
+let creditsOpenedFromActivity=false;
+document.getElementById("credits-link")?.addEventListener("click",()=>{{
+  activityScrollY=window.scrollY;
+  creditsOpenedFromActivity=true;
+}});
+document.getElementById("back-to-activity")?.addEventListener("click",()=>{{
+  if(window.location.hash==="#credits" && creditsOpenedFromActivity) {{
+    history.back();
+    return;
+  }}
+  history.replaceState(null,"",window.location.pathname+window.location.search);
+  syncRoute();
+}});
 function syncRoute() {{
   const credits=window.location.hash==="#credits";
   const activity=document.getElementById("activity-view");

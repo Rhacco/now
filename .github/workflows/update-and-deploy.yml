@@ -1,4 +1,4 @@
-name: All Workers & Pages
+name: Update & Deploy
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - master
       - main
     paths:
-      - ".github/workflows/all-workers-pages.yml"
+      - ".github/workflows/update-and-deploy.yml"
       - ".github/workflows/gw2-action.yml"
       - ".github/workflows/rhacco-news.yml"
       - "worker-gw2a/**"
@@ -22,7 +22,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: all-workers-pages
+  group: update-and-deploy
   cancel-in-progress: false
 
 jobs:
