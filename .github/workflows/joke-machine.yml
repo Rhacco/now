@@ -1,9 +1,8 @@
 name: Joke Machine
 
 on:
-  workflow_dispatch: {}
-  schedule:
-    - cron: "*/5 * * * *"
+  workflow_call:
+  workflow_dispatch:
 
 permissions:
   contents: write

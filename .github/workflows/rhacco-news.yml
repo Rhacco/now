@@ -1,8 +1,7 @@
 name: Rhacco News
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  workflow_call:
   workflow_dispatch:
 
 permissions:

@@ -1,4 +1,39 @@
 {
-  "version": 1,
-  "sources": {}
+  "sources": {
+    "bundesregierung": {},
+    "bundestag-presse": {},
+    "dlf-europa": {},
+    "dlf-news": {},
+    "dlf-politik": {},
+    "eu-commission": {},
+    "gdelt-dach": {},
+    "gdelt-world": {},
+    "gnews-dach": {
+      "disabled_reason": "missing GitHub secret/environment variable: GNEWS_API_KEY",
+      "last_checked": "2026-09-27T11:14:19.704150Z"
+    },
+    "gnews-world": {
+      "disabled_reason": "missing GitHub secret/environment variable: GNEWS_API_KEY",
+      "last_checked": "2026-09-27T11:14:19.704150Z"
+    },
+    "lessentiel-luxembourg": {},
+    "lessentiel-world": {},
+    "lux-government": {},
+    "newsapi-dach": {
+      "disabled_reason": "missing GitHub secret/environment variable: NEWSAPI_KEY",
+      "last_checked": "2026-09-27T11:14:19.704150Z"
+    },
+    "newsapi-world": {
+      "disabled_reason": "missing GitHub secret/environment variable: NEWSAPI_KEY",
+      "last_checked": "2026-09-27T11:14:19.704150Z"
+    },
+    "orf-news": {},
+    "rtl-luxembourg": {},
+    "rtl-world": {},
+    "srf-international": {},
+    "srf-schweiz": {},
+    "standard-inland": {},
+    "standard-international": {}
+  },
+  "version": 1
 }
