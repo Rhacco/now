@@ -22,14 +22,20 @@ from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.1.4"
+ENGINE_VERSION = "0.1.5"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "rn" / "index.html"
 CACHE_SCHEMA_VERSION = 1
 MAX_RESPONSE_BYTES = 4 * 1024 * 1024
 USER_AGENT = f"RhaccoNews/{ENGINE_VERSION} (+static GitHub Actions news aggregator)"
-TOPICS = (("world", "Weltpolitik"), ("dach", "DACH + Luxemburg"), ("royal", "Royal Families"))
+TOPICS = (
+    ("bio", "Bio & Medicine"),
+    ("cyber", "Cyber & Piracy"),
+    ("dach", "Germany & Neighbors"),
+    ("royal", "Royal Families"),
+    ("world", "World Politics"),
+)
 
 STOPWORDS = {
     # German
@@ -559,17 +565,18 @@ def representative(cluster: list[Article]) -> Article:
 def age_label(dt: datetime, now: datetime) -> str:
     mins = max(0, int((now - dt).total_seconds() // 60))
     if mins < 2:
-        return "gerade eben"
+        return "just now"
     if mins < 60:
-        return f"vor {mins} Min."
+        return f"{mins} minutes ago"
     hours = mins // 60
     if hours < 24:
-        return f"vor {hours} Std."
-    return f"vor {hours // 24} T."
+        return f"{hours} {'hour' if hours == 1 else 'hours'} ago"
+    days = hours // 24
+    return f"{days} {'day' if days == 1 else 'days'} ago"
 
 
 def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> str:
-    kind = "Primär" if a.kind == "primary" else ("Discovery" if a.kind == "discovery" else "Medium")
+    kind = "Official" if a.kind == "primary" else ("Found" if a.kind == "discovery" else "News")
     via = f" · via {html.escape(a.via)}" if a.via else ""
     title = f"{a.source_name} · {kind} · {age_label(a.published, now)}{via}"
     attributes = {
@@ -577,6 +584,7 @@ def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> 
         "publisher": a.publisher,
         "kind": a.kind,
         "title": a.title,
+        "language": a.language,
         "age": age_label(a.published, now),
         "published": iso(a.published),
         "summary": strip_tags(a.summary)[:220] if demo else "",
@@ -597,15 +605,15 @@ def card_html(cluster: list[Article], now: datetime, demo: bool, hidden: bool = 
     primary = any(a.kind == "primary" for a in cluster)
     chips = "".join(
         source_chip(a, now, demo, i >= 8)
-        for i, a in enumerate(sorted(cluster, key=lambda x: (x.kind == "discovery", -x.published.timestamp())))
+        for i, a in enumerate(sorted(cluster, key=lambda x: (x.source_name.casefold(), -x.published.timestamp())))
     )
-    source_word = "Quelle" if len(non_discovery) == 1 else "Quellen"
-    publisher_word = "Herausgeber" if publisher_count == 1 else "Herausgeber"
+    source_word = "source" if len(non_discovery) == 1 else "sources"
+    publisher_word = "publisher" if publisher_count == 1 else "publishers"
     meta = f"{len(non_discovery)} {source_word} · {publisher_count} {publisher_word}"
     if countries > 1:
-        meta += f" · {countries} Länder"
+        meta += f" · {countries} countries"
     if primary:
-        meta += " · Primärquelle"
+        meta += " · official source"
     demo_badge = '<span class="badge demo-badge">DEMO</span>' if demo else ""
     # Public live page deliberately avoids republishing feed descriptions.
     summary = strip_tags(rep.summary) if demo else ""
@@ -613,7 +621,7 @@ def card_html(cluster: list[Article], now: datetime, demo: bool, hidden: bool = 
     return f"""
     <article class="story-card"{" hidden" if hidden else ""}>
       <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span>{demo_badge}</div>
-      <h2><a href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
+      <h2><a lang="{html.escape(rep.language, quote=True)}" href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
       {summary_html}
       <div class="source-row">{chips}</div>
     </article>
@@ -644,7 +652,7 @@ def content_filter_html(cfg: dict[str, Any]) -> str:
     groups = []
     for tab, label in TOPICS:
         rows = []
-        for source in cfg.get("sources", []):
+        for source in sorted(cfg.get("sources", []), key=lambda item: str(item.get("name", "")).casefold()):
             if not source.get("enabled", True) or source.get("tab") != tab:
                 continue
             sid = html.escape(str(source["id"]), quote=True)
@@ -655,28 +663,28 @@ def content_filter_html(cfg: dict[str, Any]) -> str:
                 f'<label class="content-option"><input type="checkbox" data-source-id="{sid}" checked>'
                 f'<span>{name} <small>· {country}{optional}</small></span></label>'
             )
-        groups.append(f'<section><h3>{label}</h3>{"".join(rows)}</section>')
+        groups.append(f'<section><h3>{html.escape(label)}</h3>{"".join(rows)}</section>')
     topics = "".join(
         f'<label class="content-option"><input type="checkbox" data-topic-id="{html.escape(tab, quote=True)}">'
         f'<span>{html.escape(label)}</span></label>' for tab, label in TOPICS
     )
     return (
         '<div class="header-controls">'
-        '<div class="content-controls"><span>Inhalte:</span>'
+        '<div class="content-controls"><span>Content:</span>'
         '<details id="content-filter" class="content-filter">'
-        '<summary id="content-filter-summary" title="Themen-Tabs auswählen">Alle aus</summary>'
+        '<summary id="content-filter-summary" title="Choose topics">None</summary>'
         '<div id="content-filter-menu" class="content-menu topic-menu">'
-        '<div class="content-menu-head"><strong>Themen anzeigen</strong>'
-        '<button type="button" id="hide-all-topics">Alle aus</button></div>'
+        '<div class="content-menu-head"><strong>Show topics</strong>'
+        '<button type="button" id="hide-all-topics">Clear all</button></div>'
         f'{topics}</div></details></div>'
-        '<div class="content-controls"><span>Quellen:</span>'
+        '<div class="content-controls"><span>Sources:</span>'
         '<details id="sources-filter" class="content-filter">'
-        '<summary id="sources-filter-summary" title="Einzelne Quellen für die Anzeige auswählen">Alle</summary>'
+        '<summary id="sources-filter-summary" title="Choose sources">All</summary>'
         '<div id="sources-filter-menu" class="content-menu">'
-        '<div class="content-menu-head"><strong>Quellen auswählen</strong>'
-        '<button type="button" id="show-all-sources">Alle anzeigen</button></div>'
-        '<p class="content-help">Die Auswahl filtert Meldungen und Quellenlinks dieser Seite. '
-        'Das Länderkürzel bezeichnet die Herkunft der Quelle.</p>'
+        '<div class="content-menu-head"><strong>Show sources</strong>'
+        '<button type="button" id="show-all-sources">Select all</button></div>'
+        '<p class="content-help">Choose which news and source links to show here. '
+        'The country code shows where a source is based.</p>'
         f'<div class="content-grid">{"".join(groups)}</div></div></details></div></div>'
     )
 
@@ -688,33 +696,33 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
     sections = {}
     for tab, _ in TOPICS:
         cards = "\n".join(card_html(c, now, demo, i >= max_visible) for i, c in enumerate(clusters_by_tab.get(tab, [])))
-        sections[tab] = cards or '<div class="empty">Keine aktuellen Meldungen im Zeitfenster.</div>'
+        sections[tab] = cards or '<div class="empty">No recent news yet.</div>'
     tabs_markup = "\n".join(f'<button class="tab" data-tab="{tab}" type="button" hidden>{html.escape(label)}</button>' for tab, label in TOPICS)
     panes_markup = "\n".join(
         f'<section id="pane-{tab}" class="pane">{sections[tab]}'
-        '<div class="empty filtered-empty" hidden>Keine Meldungen für die gewählten Quellen.</div></section>'
+        '<div class="empty filtered-empty" hidden>No news from your chosen sources.</div></section>'
         for tab, _ in TOPICS
     )
     ok, stale, failed, waiting = status_summary(cfg, state, now)
     if demo:
-        status_text = f"Prototyp · {len([s for s in cfg.get('sources',[]) if s.get('enabled',True)])} Quellen konfiguriert · keine Live-Abfrage im Snapshot"
+        status_text = f"Demo · {len([s for s in cfg.get('sources',[]) if s.get('enabled',True)])} sources · no live news"
     else:
-        status_text = f"Quellenstatus: {ok} aktuell · {stale} veraltet · {failed} Fehler/leer · {waiting} optionale API ohne Secret"
+        status_text = f"Sources: {ok} current · {stale} old · {failed} empty or failed · {waiting} need an API key"
     error_note = ""
     if errors and not demo:
-        error_note = f'<details class="errors"><summary>{len(errors)} Quellen mit Fehler/Fallback</summary><pre>{html.escape(json.dumps(errors, ensure_ascii=False, indent=2))}</pre></details>'
-    demo_banner = '<div class="demo-banner">HTML-Snapshot mit DEMO-DATEN – keine Live-Nachrichten.</div>' if demo else ""
+        error_note = f'<details class="errors"><summary>{len(errors)} sources had an error</summary><pre>{html.escape(json.dumps(errors, ensure_ascii=False, indent=2))}</pre></details>'
+    demo_banner = '<div class="demo-banner">Demo page with sample news. No live news here.</div>' if demo else ""
     filter_markup = content_filter_html(cfg)
     return f"""<!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark light">
-<title>&quot;Rhacco News&quot;</title>
+<title>Rhacco News</title>
 <style>
 :root{{--bg:#0b0c0f;--panel:#14161b;--panel2:#1a1d24;--text:#f3f4f6;--muted:#9ca3af;--line:#2a2f39;--accent:#7c5cff;--accent2:#a78bfa;--good:#69d18f;--warn:#f4c95d;--shadow:0 14px 45px rgba(0,0,0,.24)}}
-*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.demo-banner{{border:1px solid #6654bc;background:#211b3a;color:#d9d1ff;border-radius:12px;padding:9px 12px;margin-bottom:14px;font-size:13px}}.tabs{{position:sticky;top:0;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}.badge{{border-radius:999px;border:1px solid var(--line);padding:2px 7px;font-weight:750;letter-spacing:.02em}}.demo-badge{{color:#d9d1ff;border-color:#6654bc;background:#211b3a}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.summary{{color:#c4c7ce;margin:0 0 12px;font-size:14px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
+*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.demo-banner{{border:1px solid #6654bc;background:#211b3a;color:#d9d1ff;border-radius:12px;padding:9px 12px;margin-bottom:14px;font-size:13px}}.tabs{{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;flex:1 1 135px;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}.badge{{border-radius:999px;border:1px solid var(--line);padding:2px 7px;font-weight:750;letter-spacing:.02em}}.demo-badge{{color:#d9d1ff;border-color:#6654bc;background:#211b3a}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.summary{{color:#c4c7ce;margin:0 0 12px;font-size:14px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
 .story-card[hidden],.source-chip[hidden],.summary[hidden],.filtered-empty[hidden],.delete-cookie[hidden],.tabs[hidden],.tab[hidden],.topics-empty[hidden]{{display:none}}
 .header-meta{{display:flex;flex-direction:column;align-items:flex-end;gap:7px}}
 .header-controls{{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}}
@@ -746,14 +754,14 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 </head>
 <body>
 <div class="shell">
-<header><div><h1>&quot;Rhacco News&quot;</h1><div class="updated">Live-Quellen-Aggregator · Workflow alle {int(cfg.get("run_interval_minutes", 5))} Min. · Quellen mit eigenem TTL</div></div><div class="header-meta"><div class="updated">Stand: {html.escape(local.strftime('%d.%m.%Y · %H:%M'))}</div>{filter_markup}</div></header>
+<header><div><h1>Rhacco News</h1><div class="updated">Live news · checked every {int(cfg.get("run_interval_minutes", 5))} min</div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
 {demo_banner}
-<nav class="tabs" aria-label="News-Bereiche" hidden>{tabs_markup}</nav>
+<nav class="tabs" aria-label="News topics" hidden>{tabs_markup}</nav>
 <main>
-<div id="topics-empty" class="empty topics-empty">Wähle oben unter „Inhalte“ mindestens ein Thema aus.</div>
+<div id="topics-empty" class="empty topics-empty">Choose a topic under Content above.</div>
 {panes_markup}
 </main>
-<footer><div>{html.escape(status_text)}</div>{error_note}<div class="preference-footer"><span id="preference-note" role="status">Einstellungen werden in einem Cookie gespeichert.</span><button type="button" id="delete-preferences" class="delete-cookie" hidden>Cookie löschen</button></div></footer>
+<footer><div>{html.escape(status_text)}</div>{error_note}<div class="preference-footer"><span id="preference-note" role="status">Your choices are saved in one cookie.</span><button type="button" id="delete-preferences" class="delete-cookie" hidden>Delete cookie</button></div></footer>
 </div>
 <script>
 (()=>{{
@@ -794,7 +802,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
  }}
  function clearLegacyTab(){{try{{localStorage.removeItem(legacyTabKey);}}catch(e){{}}}}
  const stored=readPreferences();
- let activeTab=stored?.tab || 'world';
+ let activeTab=stored?.tab || 'bio';
  let selectedTopics=new Set((stored?.v===2 && Array.isArray(stored.topics) ? stored.topics : []).filter(id=>knownTopics.has(id)));
  let disabled=new Set((stored?.disabled || []).filter(id=>knownIds.has(id)));
  let saveState=stored ? 'saved' : rawCookie() ? 'failed' : 'idle';
@@ -806,10 +814,10 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
  function updateNote(){{
    note.classList.toggle('saved',saveState==='saved'||saveState==='deleted');
    note.classList.toggle('failed',saveState==='failed');
-   note.textContent=saveState==='saved' ? 'Einstellungen in einem Cookie gespeichert.'
-     : saveState==='deleted' ? 'Gespeicherte Einstellungen entfernt.'
-     : saveState==='failed' ? 'Cookie konnte nicht gespeichert oder gelesen werden.'
-     : 'Einstellungen werden in einem Cookie gespeichert.';
+   note.textContent=saveState==='saved' ? 'Your choices are saved in one cookie.'
+     : saveState==='deleted' ? 'Your saved choices were removed.'
+     : saveState==='failed' ? 'The cookie could not be saved or read.'
+     : 'Your choices are saved in one cookie.';
    deleteButton.hidden=!rawCookie();
  }}
  function savePreferences(){{
@@ -823,11 +831,10 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
  function applyTopics(){{
    topicInputs.forEach(input=>input.checked=selectedTopics.has(input.dataset.topicId));
    const count=selectedTopics.size;
-   document.getElementById('content-filter-summary').textContent=count ? `${{count}}/${{knownTopics.size}}` : 'Alle aus';
+   document.getElementById('content-filter-summary').textContent=count ? `${{count}}/${{knownTopics.size}}` : 'None';
    const visible=buttons.filter(button=>selectedTopics.has(button.dataset.tab));
    if(visible.length && !selectedTopics.has(activeTab))activeTab=visible[0].dataset.tab;
    tabs.hidden=visible.length===0;
-   tabs.style.gridTemplateColumns=`repeat(${{Math.max(1,visible.length)}},minmax(0,1fr))`;
    topicsEmpty.hidden=visible.length>0;
    buttons.forEach(button=>{{
      button.hidden=!selectedTopics.has(button.dataset.tab);
@@ -840,7 +847,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
  function applySelection(){{
    inputs.forEach(input=>input.checked=!disabled.has(input.dataset.sourceId));
    const summary=document.getElementById('sources-filter-summary');
-   summary.textContent=disabled.size ? `${{knownIds.size-disabled.size}}/${{knownIds.size}}` : 'Alle';
+   summary.textContent=disabled.size ? `${{knownIds.size-disabled.size}}/${{knownIds.size}}` : 'All';
    for(const pane of panes){{
      let shown=0;
      for(const card of pane.querySelectorAll('.story-card')){{
@@ -858,15 +865,16 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
        const headline=card.querySelector('h2 a');
        headline.textContent=rep.dataset.title;
        headline.href=rep.href;
+       headline.lang=rep.dataset.language||'en';
        card.querySelector('.story-age').textContent=rep.dataset.age;
        const summaryText=card.querySelector('.summary');
        if(summaryText){{summaryText.textContent=rep.dataset.summary||'';summaryText.hidden=!summaryText.textContent;}}
        const editorial=selected.filter(chip=>chip.dataset.kind!=='discovery');
        const publishers=new Set(editorial.map(chip=>chip.dataset.publisher.toLocaleLowerCase()));
        const countries=new Set(editorial.map(chip=>chip.querySelector('small').textContent).filter(x=>x&&x!=='—'));
-       let label=`${{editorial.length}} ${{editorial.length===1?'Quelle':'Quellen'}} · ${{publishers.size}} Herausgeber`;
-       if(countries.size>1)label+=` · ${{countries.size}} Länder`;
-       if(selected.some(chip=>chip.dataset.kind==='primary'))label+=' · Primärquelle';
+       let label=`${{editorial.length}} ${{editorial.length===1?'source':'sources'}} · ${{publishers.size}} ${{publishers.size===1?'publisher':'publishers'}}`;
+       if(countries.size>1)label+=` · ${{countries.size}} countries`;
+       if(selected.some(chip=>chip.dataset.kind==='primary'))label+=' · official source';
        card.querySelector('.source-count').textContent=label;
        let visible=0;
        for(const chip of chips){{
@@ -928,7 +936,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
        document.cookie=`${{cookieKey}}=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; Path=${{path}}${{domain}}; SameSite=Lax`;
    }}catch(e){{}}
    clearLegacyTab();
-   selectedTopics.clear();disabled.clear();activeTab='world';applyTopics();applySelection();
+   selectedTopics.clear();disabled.clear();activeTab='bio';applyTopics();applySelection();
    saveState=rawCookie() ? 'failed' : 'deleted';
    updateNote();
  }});
@@ -955,36 +963,48 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 def demo_articles(now: datetime) -> list[Article]:
     def a(title: str, mins: int, source: str, publisher: str, country: str, kind: str, tab: str, url: str, summary: str = "") -> Article:
         ids = {
+            ("bio", "NIH Research Matters"): "nih-research",
+            ("bio", "NCI Cancer Currents"): "nci-currents",
+            ("bio", "Nature Medical Research"): "nature-medicine",
+            ("cyber", "BleepingComputer"): "bleepingcomputer",
+            ("cyber", "SANS Internet Storm Center"): "sans-isc",
+            ("cyber", "TorrentFreak"): "torrentfreak",
             ("world", "Deutschlandfunk"): "dlf-politik",
             ("world", "DER STANDARD"): "standard-international",
             ("world", "SRF"): "srf-international",
-            ("world", "EU-Kommission"): "eu-commission",
+            ("world", "European Commission"): "eu-commission",
             ("world", "RTL Today"): "rtl-world",
             ("dach", "Deutschlandfunk"): "dlf-news",
             ("dach", "ORF"): "orf-news",
             ("dach", "SRF"): "srf-schweiz",
             ("dach", "RTL Luxembourg"): "rtl-luxembourg",
-            ("dach", "Bundesregierung"): "bundesregierung",
+            ("dach", "German Government"): "bundesregierung",
             ("royal", "GALA Royals"): "gala-royals",
             ("royal", "Royal Central"): "royal-central",
             ("royal", "HELLO! Royalty"): "hello-royalty",
         }
-        return Article(title, url, now - timedelta(minutes=mins), ids[(tab, source)], source, publisher, country, "de", kind, tab, summary)
+        return Article(title, url, now - timedelta(minutes=mins), ids[(tab, source)], source, publisher, country, "en", kind, tab, summary)
     return [
-        a("Beispiel: Mehrere Staaten beraten über neue gemeinsame Maßnahmen", 12, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-1-dlf", "Mehrere voneinander getrennte Quellen berichten über dasselbe internationale Ereignis."),
-        a("Beispiel: Staaten beraten über gemeinsame Maßnahmen", 18, "DER STANDARD", "STANDARD", "AT", "editorial", "world", "https://example.com/world-1-standard"),
-        a("Beispiel: Staaten beraten über neue gemeinsame Maßnahmen", 24, "SRF", "SRG SSR", "CH", "editorial", "world", "https://example.com/world-1-srf"),
-        a("Beispiel: Offizielle Mitteilung – Staaten beraten gemeinsame Maßnahmen", 9, "EU-Kommission", "EU", "EU", "primary", "world", "https://example.com/world-1-primary"),
-        a("Beispiel: Zweites weltpolitisches Ereignis mit zwei Medienquellen", 37, "RTL Today", "RTL", "LU", "editorial", "world", "https://example.com/world-2-rtl"),
-        a("Beispiel: Zweites weltpolitisches Ereignis mit zwei Medienquellen", 44, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-2-dlf"),
-        a("Beispiel: Grenzüberschreitendes DACH-Thema wird neu geregelt", 16, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "dach", "https://example.com/dach-1-dlf", "Der Prototyp bündelt ähnliche Meldungen und zählt getrennte Herausgeber statt bloß Feed-Einträge."),
-        a("Beispiel: Grenzüberschreitendes DACH-Thema wird neu geregelt", 22, "ORF", "ORF", "AT", "editorial", "dach", "https://example.com/dach-1-orf"),
-        a("Beispiel: Grenzüberschreitendes DACH-Thema wird neu geregelt", 28, "SRF", "SRG SSR", "CH", "editorial", "dach", "https://example.com/dach-1-srf"),
-        a("Beispiel: Luxemburg veröffentlicht eine neue nationale Mitteilung", 31, "RTL Luxembourg", "RTL", "LU", "editorial", "dach", "https://example.com/dach-2-rtl"),
-        a("Beispiel: Offizielle Mitteilung aus Deutschland", 47, "Bundesregierung", "Bund", "DE", "primary", "dach", "https://example.com/dach-3-bund"),
-        a("Beispiel: Königshäuser feiern ein gemeinsames Fest", 14, "GALA Royals", "GALA", "DE", "editorial", "royal", "https://example.com/royal-1-gala"),
-        a("Beispiel: Royal families celebrate together", 23, "Royal Central", "Royal Central", "GB", "editorial", "royal", "https://example.com/royal-2-central"),
-        a("Beispiel: Princess shares a surprise from the palace", 36, "HELLO! Royalty", "HELLO!", "GB", "editorial", "royal", "https://example.com/royal-3-hello"),
+        a("Sample: New study helps doctors find cancer early", 13, "NIH Research Matters", "NIH", "US", "primary", "bio", "https://example.com/bio-1-nih", "Two research teams report new ways to find cancer earlier."),
+        a("Sample: New study helps doctors find cancer early", 20, "NCI Cancer Currents", "NCI", "US", "primary", "bio", "https://example.com/bio-1-nci"),
+        a("Sample: Scientists learn how cells repair damage", 32, "Nature Medical Research", "Nature Portfolio", "GB", "editorial", "bio", "https://example.com/bio-2-nature"),
+        a("Sample: New software bug puts online accounts at risk", 12, "BleepingComputer", "BleepingComputer", "US", "editorial", "cyber", "https://example.com/cyber-1-bc"),
+        a("Sample: Online attack linked to new software bug", 21, "SANS Internet Storm Center", "SANS", "US", "editorial", "cyber", "https://example.com/cyber-1-sans"),
+        a("Sample: Pirate site shut down after online probe", 38, "TorrentFreak", "TorrentFreak", "NL", "editorial", "cyber", "https://example.com/cyber-2-tf"),
+        a("Sample: Countries agree on a new plan", 12, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-1-dlf", "Several news sites report on the same event."),
+        a("Sample: Countries agree on a new plan", 18, "DER STANDARD", "STANDARD", "AT", "editorial", "world", "https://example.com/world-1-standard"),
+        a("Sample: Countries agree on a new plan", 24, "SRF", "SRG SSR", "CH", "editorial", "world", "https://example.com/world-1-srf"),
+        a("Sample: Countries agree on a new plan", 9, "European Commission", "EU", "EU", "primary", "world", "https://example.com/world-1-primary"),
+        a("Sample: Another world event draws attention", 37, "RTL Today", "RTL", "LU", "editorial", "world", "https://example.com/world-2-rtl"),
+        a("Sample: Another world event draws attention", 44, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-2-dlf"),
+        a("Sample: Neighboring countries agree on new rules", 16, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "dach", "https://example.com/dach-1-dlf", "The page groups similar news and counts different publishers."),
+        a("Sample: Neighboring countries agree on new rules", 22, "ORF", "ORF", "AT", "editorial", "dach", "https://example.com/dach-1-orf"),
+        a("Sample: Neighboring countries agree on new rules", 28, "SRF", "SRG SSR", "CH", "editorial", "dach", "https://example.com/dach-1-srf"),
+        a("Sample: Luxembourg shares new local plan", 31, "RTL Luxembourg", "RTL", "LU", "editorial", "dach", "https://example.com/dach-2-rtl"),
+        a("Sample: German government shares an update", 47, "German Government", "German Government", "DE", "primary", "dach", "https://example.com/dach-3-bund"),
+        a("Sample: Royal families meet for a party", 14, "GALA Royals", "GALA", "DE", "editorial", "royal", "https://example.com/royal-1-gala"),
+        a("Sample: Royal families celebrate together", 23, "Royal Central", "Royal Central", "GB", "editorial", "royal", "https://example.com/royal-2-central"),
+        a("Sample: Princess shares news from the palace", 36, "HELLO! Royalty", "HELLO!", "GB", "editorial", "royal", "https://example.com/royal-3-hello"),
     ]
 
 
@@ -1019,7 +1039,7 @@ def select_display_candidates(clusters: list[list[Article]], limit: int, source_
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description='Static two-tab aggregator for "Rhacco News"')
+    ap = argparse.ArgumentParser(description='Static news page for Rhacco News')
     ap.add_argument("--now", help="ISO-8601 test time")
     ap.add_argument("--no-network", action="store_true", help="Use cache only")
     ap.add_argument("--demo", action="store_true", help="Generate deterministic demo snapshot")
