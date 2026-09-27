@@ -41,10 +41,21 @@ jobs:
             git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
 
             if git cat-file -e "origin/${STATE_BRANCH}:worker-rn/data/cache.json" 2>/dev/null; then
-              git show "origin/${STATE_BRANCH}:worker-rn/data/cache.json" > worker-rn/data/cache.json
+              git show "origin/${STATE_BRANCH}:worker-rn/data/cache.json" > "${RUNNER_TEMP}/rhacco-news-cache.json"
+              python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          cache = json.loads((Path(os.environ["RUNNER_TEMP"]) / "rhacco-news-cache.json").read_text(encoding="utf-8"))
+          assert isinstance(cache, dict) and cache.get("version") == 1
+          assert isinstance(cache.get("sources"), dict)
+          PY
+              mv "${RUNNER_TEMP}/rhacco-news-cache.json" worker-rn/data/cache.json
               echo "Persistent cache restored from ${STATE_BRANCH}."
             else
-              echo "${STATE_BRANCH} exists without a cache; using the packaged seed cache."
+              echo "${STATE_BRANCH} has no cache; refusing to replace its state with the seed." >&2
+              exit 1
             fi
           else
             rc=$?
@@ -70,17 +81,33 @@ jobs:
           test -s rn/index.html
           test -s worker-rn/data/cache.json
           python3 - <<'PY'
+          import json
           from html.parser import HTMLParser
           from pathlib import Path
 
           class P(HTMLParser):
-              pass
+              def __init__(self):
+                  super().__init__()
+                  self.cards = 0
+                  self.tabs = set()
+
+              def handle_starttag(self, tag, attrs):
+                  fields = dict(attrs)
+                  if tag == "article" and "story-card" in fields.get("class", "").split():
+                      self.cards += 1
+                  if tag == "button" and "tab" in fields.get("class", "").split():
+                      self.tabs.add(fields.get("data-tab"))
 
           page = Path("rn/index.html").read_text(encoding="utf-8")
-          P().feed(page)
+          parsed = P()
+          parsed.feed(page)
           assert "Rhacco News" in page
-          assert "Weltpolitik" in page
-          assert "DACH + Luxemburg" in page
+          assert '<html lang="en">' in page
+          assert parsed.tabs == {"bio", "cyber", "dach", "royal", "world"}, parsed.tabs
+          assert parsed.cards > 0, "refusing to publish an empty news page"
+          cache = json.loads(Path("worker-rn/data/cache.json").read_text(encoding="utf-8"))
+          assert cache.get("version") == 1 and isinstance(cache.get("sources"), dict)
+          assert any(isinstance(entry, dict) and entry.get("data") for entry in cache["sources"].values()), "refusing to replace news cache with empty data"
           PY
 
       - name: Publish page and persistent cache to state branch
@@ -119,9 +146,9 @@ jobs:
           fi
 
           if [ "${STATE_EXISTS}" -eq 1 ]; then
-            git -C "${STATE_DIR}" commit --amend --no-edit
+            git -C "${STATE_DIR}" commit --amend -m "update rhacco news state"
             git -C "${STATE_DIR}" push --force-with-lease origin "HEAD:${STATE_BRANCH}"
           else
-            git -C "${STATE_DIR}" commit -m "Initialize Rhacco News state"
+            git -C "${STATE_DIR}" commit -m "update rhacco news state"
             git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
           fi

@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.1.5"
+ENGINE_VERSION = "0.1.6"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "rn" / "index.html"
@@ -446,6 +446,8 @@ def refresh_source(state: dict[str, Any], src: dict[str, Any], now: datetime, no
         }
         parser = parsers.get(fmt, parse_feed)
         data = parser(raw, src, now)
+        if not data and cached:
+            raise ValueError("empty response; keeping cached items")
         if not data and str(src.get("kind") or "") != "discovery":
             raise ValueError("parsed zero items")
         entry.update({
@@ -575,7 +577,7 @@ def age_label(dt: datetime, now: datetime) -> str:
     return f"{days} {'day' if days == 1 else 'days'} ago"
 
 
-def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> str:
+def source_chip(a: Article, now: datetime, hidden: bool = False) -> str:
     kind = "Official" if a.kind == "primary" else ("Found" if a.kind == "discovery" else "News")
     via = f" · via {html.escape(a.via)}" if a.via else ""
     title = f"{a.source_name} · {kind} · {age_label(a.published, now)}{via}"
@@ -587,7 +589,6 @@ def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> 
         "language": a.language,
         "age": age_label(a.published, now),
         "published": iso(a.published),
-        "summary": strip_tags(a.summary)[:220] if demo else "",
     }
     data = " ".join(f'data-{key}="{html.escape(value, quote=True)}"' for key, value in attributes.items())
     return (
@@ -597,14 +598,14 @@ def source_chip(a: Article, now: datetime, demo: bool, hidden: bool = False) -> 
     )
 
 
-def card_html(cluster: list[Article], now: datetime, demo: bool, hidden: bool = False) -> str:
+def card_html(cluster: list[Article], now: datetime, hidden: bool = False) -> str:
     rep = representative(cluster)
     non_discovery = [a for a in cluster if a.kind != "discovery"]
     publisher_count = len({a.publisher.casefold() for a in non_discovery})
     countries = len({a.country for a in non_discovery if a.country})
     primary = any(a.kind == "primary" for a in cluster)
     chips = "".join(
-        source_chip(a, now, demo, i >= 8)
+        source_chip(a, now, i >= 8)
         for i, a in enumerate(sorted(cluster, key=lambda x: (x.source_name.casefold(), -x.published.timestamp())))
     )
     source_word = "source" if len(non_discovery) == 1 else "sources"
@@ -614,15 +615,10 @@ def card_html(cluster: list[Article], now: datetime, demo: bool, hidden: bool = 
         meta += f" · {countries} countries"
     if primary:
         meta += " · official source"
-    demo_badge = '<span class="badge demo-badge">DEMO</span>' if demo else ""
-    # Public live page deliberately avoids republishing feed descriptions.
-    summary = strip_tags(rep.summary) if demo else ""
-    summary_html = f'<p class="summary"{"" if summary else " hidden"}>{html.escape(summary[:220])}</p>' if demo else ""
     return f"""
     <article class="story-card"{" hidden" if hidden else ""}>
-      <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span>{demo_badge}</div>
+      <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span></div>
       <h2><a lang="{html.escape(rep.language, quote=True)}" href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
-      {summary_html}
       <div class="source-row">{chips}</div>
     </article>
     """
@@ -689,13 +685,13 @@ def content_filter_html(cfg: dict[str, Any]) -> str:
     )
 
 
-def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, Any], state: dict[str, Any], now: datetime, demo: bool, errors: dict[str, str]) -> str:
+def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, Any], state: dict[str, Any], now: datetime, errors: dict[str, str]) -> str:
     tz = ZoneInfo(cfg.get("timezone", "Europe/Berlin"))
     local = now.astimezone(tz)
     max_visible = max(1, int(cfg.get("max_clusters_per_tab", 24)))
     sections = {}
     for tab, _ in TOPICS:
-        cards = "\n".join(card_html(c, now, demo, i >= max_visible) for i, c in enumerate(clusters_by_tab.get(tab, [])))
+        cards = "\n".join(card_html(c, now, i >= max_visible) for i, c in enumerate(clusters_by_tab.get(tab, [])))
         sections[tab] = cards or '<div class="empty">No recent news yet.</div>'
     tabs_markup = "\n".join(f'<button class="tab" data-tab="{tab}" type="button" hidden>{html.escape(label)}</button>' for tab, label in TOPICS)
     panes_markup = "\n".join(
@@ -704,14 +700,10 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
         for tab, _ in TOPICS
     )
     ok, stale, failed, waiting = status_summary(cfg, state, now)
-    if demo:
-        status_text = f"Demo · {len([s for s in cfg.get('sources',[]) if s.get('enabled',True)])} sources · no live news"
-    else:
-        status_text = f"Sources: {ok} current · {stale} old · {failed} empty or failed · {waiting} need an API key"
+    status_text = f"Sources: {ok} current · {stale} old · {failed} empty or failed · {waiting} need an API key"
     error_note = ""
-    if errors and not demo:
+    if errors:
         error_note = f'<details class="errors"><summary>{len(errors)} sources had an error</summary><pre>{html.escape(json.dumps(errors, ensure_ascii=False, indent=2))}</pre></details>'
-    demo_banner = '<div class="demo-banner">Demo page with sample news. No live news here.</div>' if demo else ""
     filter_markup = content_filter_html(cfg)
     return f"""<!doctype html>
 <html lang="en">
@@ -722,8 +714,8 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 <title>Rhacco News</title>
 <style>
 :root{{--bg:#0b0c0f;--panel:#14161b;--panel2:#1a1d24;--text:#f3f4f6;--muted:#9ca3af;--line:#2a2f39;--accent:#7c5cff;--accent2:#a78bfa;--good:#69d18f;--warn:#f4c95d;--shadow:0 14px 45px rgba(0,0,0,.24)}}
-*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.demo-banner{{border:1px solid #6654bc;background:#211b3a;color:#d9d1ff;border-radius:12px;padding:9px 12px;margin-bottom:14px;font-size:13px}}.tabs{{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;flex:1 1 135px;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}.badge{{border-radius:999px;border:1px solid var(--line);padding:2px 7px;font-weight:750;letter-spacing:.02em}}.demo-badge{{color:#d9d1ff;border-color:#6654bc;background:#211b3a}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.summary{{color:#c4c7ce;margin:0 0 12px;font-size:14px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
-.story-card[hidden],.source-chip[hidden],.summary[hidden],.filtered-empty[hidden],.delete-cookie[hidden],.tabs[hidden],.tab[hidden],.topics-empty[hidden]{{display:none}}
+*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.tabs{{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;flex:1 1 135px;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
+.story-card[hidden],.source-chip[hidden],.filtered-empty[hidden],.delete-cookie[hidden],.tabs[hidden],.tab[hidden],.topics-empty[hidden]{{display:none}}
 .header-meta{{display:flex;flex-direction:column;align-items:flex-end;gap:7px}}
 .header-controls{{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}}
 .content-controls{{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:11px;font-weight:700}}
@@ -755,7 +747,6 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 <body>
 <div class="shell">
 <header><div><h1>Rhacco News</h1><div class="updated">Live news · checked every {int(cfg.get("run_interval_minutes", 5))} min</div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
-{demo_banner}
 <nav class="tabs" aria-label="News topics" hidden>{tabs_markup}</nav>
 <main>
 <div id="topics-empty" class="empty topics-empty">Choose a topic under Content above.</div>
@@ -867,8 +858,6 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
        headline.href=rep.href;
        headline.lang=rep.dataset.language||'en';
        card.querySelector('.story-age').textContent=rep.dataset.age;
-       const summaryText=card.querySelector('.summary');
-       if(summaryText){{summaryText.textContent=rep.dataset.summary||'';summaryText.hidden=!summaryText.textContent;}}
        const editorial=selected.filter(chip=>chip.dataset.kind!=='discovery');
        const publishers=new Set(editorial.map(chip=>chip.dataset.publisher.toLocaleLowerCase()));
        const countries=new Set(editorial.map(chip=>chip.querySelector('small').textContent).filter(x=>x&&x!=='—'));
@@ -960,54 +949,6 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 </body></html>"""
 
 
-def demo_articles(now: datetime) -> list[Article]:
-    def a(title: str, mins: int, source: str, publisher: str, country: str, kind: str, tab: str, url: str, summary: str = "") -> Article:
-        ids = {
-            ("bio", "NIH Research Matters"): "nih-research",
-            ("bio", "NCI Cancer Currents"): "nci-currents",
-            ("bio", "Nature Medical Research"): "nature-medicine",
-            ("cyber", "BleepingComputer"): "bleepingcomputer",
-            ("cyber", "SANS Internet Storm Center"): "sans-isc",
-            ("cyber", "TorrentFreak"): "torrentfreak",
-            ("world", "Deutschlandfunk"): "dlf-politik",
-            ("world", "DER STANDARD"): "standard-international",
-            ("world", "SRF"): "srf-international",
-            ("world", "European Commission"): "eu-commission",
-            ("world", "RTL Today"): "rtl-world",
-            ("dach", "Deutschlandfunk"): "dlf-news",
-            ("dach", "ORF"): "orf-news",
-            ("dach", "SRF"): "srf-schweiz",
-            ("dach", "RTL Luxembourg"): "rtl-luxembourg",
-            ("dach", "German Government"): "bundesregierung",
-            ("royal", "GALA Royals"): "gala-royals",
-            ("royal", "Royal Central"): "royal-central",
-            ("royal", "HELLO! Royalty"): "hello-royalty",
-        }
-        return Article(title, url, now - timedelta(minutes=mins), ids[(tab, source)], source, publisher, country, "en", kind, tab, summary)
-    return [
-        a("Sample: New study helps doctors find cancer early", 13, "NIH Research Matters", "NIH", "US", "primary", "bio", "https://example.com/bio-1-nih", "Two research teams report new ways to find cancer earlier."),
-        a("Sample: New study helps doctors find cancer early", 20, "NCI Cancer Currents", "NCI", "US", "primary", "bio", "https://example.com/bio-1-nci"),
-        a("Sample: Scientists learn how cells repair damage", 32, "Nature Medical Research", "Nature Portfolio", "GB", "editorial", "bio", "https://example.com/bio-2-nature"),
-        a("Sample: New software bug puts online accounts at risk", 12, "BleepingComputer", "BleepingComputer", "US", "editorial", "cyber", "https://example.com/cyber-1-bc"),
-        a("Sample: Online attack linked to new software bug", 21, "SANS Internet Storm Center", "SANS", "US", "editorial", "cyber", "https://example.com/cyber-1-sans"),
-        a("Sample: Pirate site shut down after online probe", 38, "TorrentFreak", "TorrentFreak", "NL", "editorial", "cyber", "https://example.com/cyber-2-tf"),
-        a("Sample: Countries agree on a new plan", 12, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-1-dlf", "Several news sites report on the same event."),
-        a("Sample: Countries agree on a new plan", 18, "DER STANDARD", "STANDARD", "AT", "editorial", "world", "https://example.com/world-1-standard"),
-        a("Sample: Countries agree on a new plan", 24, "SRF", "SRG SSR", "CH", "editorial", "world", "https://example.com/world-1-srf"),
-        a("Sample: Countries agree on a new plan", 9, "European Commission", "EU", "EU", "primary", "world", "https://example.com/world-1-primary"),
-        a("Sample: Another world event draws attention", 37, "RTL Today", "RTL", "LU", "editorial", "world", "https://example.com/world-2-rtl"),
-        a("Sample: Another world event draws attention", 44, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "world", "https://example.com/world-2-dlf"),
-        a("Sample: Neighboring countries agree on new rules", 16, "Deutschlandfunk", "Deutschlandradio", "DE", "editorial", "dach", "https://example.com/dach-1-dlf", "The page groups similar news and counts different publishers."),
-        a("Sample: Neighboring countries agree on new rules", 22, "ORF", "ORF", "AT", "editorial", "dach", "https://example.com/dach-1-orf"),
-        a("Sample: Neighboring countries agree on new rules", 28, "SRF", "SRG SSR", "CH", "editorial", "dach", "https://example.com/dach-1-srf"),
-        a("Sample: Luxembourg shares new local plan", 31, "RTL Luxembourg", "RTL", "LU", "editorial", "dach", "https://example.com/dach-2-rtl"),
-        a("Sample: German government shares an update", 47, "German Government", "German Government", "DE", "primary", "dach", "https://example.com/dach-3-bund"),
-        a("Sample: Royal families meet for a party", 14, "GALA Royals", "GALA", "DE", "editorial", "royal", "https://example.com/royal-1-gala"),
-        a("Sample: Royal families celebrate together", 23, "Royal Central", "Royal Central", "GB", "editorial", "royal", "https://example.com/royal-2-central"),
-        a("Sample: Princess shares news from the palace", 36, "HELLO! Royalty", "HELLO!", "GB", "editorial", "royal", "https://example.com/royal-3-hello"),
-    ]
-
-
 def dedupe_articles(articles: list[Article]) -> list[Article]:
     """Deduplicate exact canonical URLs while preferring direct publishers."""
     by_url: dict[str, Article] = {}
@@ -1042,7 +983,6 @@ def main() -> int:
     ap = argparse.ArgumentParser(description='Static news page for Rhacco News')
     ap.add_argument("--now", help="ISO-8601 test time")
     ap.add_argument("--no-network", action="store_true", help="Use cache only")
-    ap.add_argument("--demo", action="store_true", help="Generate deterministic demo snapshot")
     ap.add_argument("--output", help="Override HTML output path")
     args = ap.parse_args()
 
@@ -1055,7 +995,15 @@ def main() -> int:
         print("FATAL: invalid --now", file=sys.stderr)
         return 2
 
-    state = normalize_state(load_json(STATE_PATH, {}))
+    raw_state = load_json(STATE_PATH, None)
+    if STATE_PATH.exists() and (
+        not isinstance(raw_state, dict)
+        or raw_state.get("version") != CACHE_SCHEMA_VERSION
+        or not isinstance(raw_state.get("sources"), dict)
+    ):
+        print("FATAL: invalid cache; keeping the previous page and cache", file=sys.stderr)
+        return 2
+    state = normalize_state(raw_state)
     errors: dict[str, str] = {}
     changed = False
     configured = {src["id"] for src in cfg.get("sources", []) if src.get("enabled", True)}
@@ -1064,22 +1012,22 @@ def main() -> int:
         changed = True
     articles: list[Article] = []
 
-    if args.demo:
-        articles = demo_articles(now)
-    else:
-        for src in cfg.get("sources", []):
-            if not src.get("enabled", True):
-                continue
-            data, err, source_changed = refresh_source(state, src, now, args.no_network)
-            changed = changed or source_changed
-            if err:
-                errors[src["id"]] = err
-            articles.extend(to_articles(src, data, now, int(cfg.get("max_age_hours", 48))))
+    for src in cfg.get("sources", []):
+        if not src.get("enabled", True):
+            continue
+        data, err, source_changed = refresh_source(state, src, now, args.no_network)
+        changed = changed or source_changed
+        if err:
+            errors[src["id"]] = err
+        articles.extend(to_articles(src, data, now, int(cfg.get("max_age_hours", 48))))
 
     # Exact URL dedupe before semantic clustering. Direct feeds beat discovery
     # aggregators for the same article so GDELT/API sightings never replace the
     # publisher's own feed metadata merely because their seen-time is newer.
     articles = dedupe_articles(articles)
+    if not articles:
+        print("FATAL: no recent news; keeping the previous page and cache", file=sys.stderr)
+        return 1
 
     by_tab: dict[str, list[Article]] = {key: [] for key, _ in TOPICS}
     for art in articles:
@@ -1093,13 +1041,13 @@ def main() -> int:
         source_ids = [src["id"] for src in cfg.get("sources", []) if src.get("enabled", True) and src.get("tab") == tab]
         clusters_by_tab[tab] = select_display_candidates(clusters, limit, source_ids)
 
-    page = render_html(clusters_by_tab, cfg, state, now, args.demo, errors)
+    page = render_html(clusters_by_tab, cfg, state, now, errors)
     out = Path(args.output).resolve() if args.output else INDEX_PATH
     atomic_write(out, page)
     if changed or not STATE_PATH.exists():
         atomic_write(STATE_PATH, json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
     counts = " ".join(f"{key}={len(clusters_by_tab.get(key, []))}" for key, _ in TOPICS)
-    print(f"OK engine={ENGINE_VERSION} output={out} articles={len(articles)} {counts} errors={len(errors)} demo={args.demo}")
+    print(f"OK engine={ENGINE_VERSION} output={out} articles={len(articles)} {counts} errors={len(errors)}")
     return 0
 
 
