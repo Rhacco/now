@@ -3,6 +3,8 @@ name: Joke Machine
 on:
   workflow_call:
   workflow_dispatch:
+  schedule:
+    - cron: "11 * * * *"
 
 permissions:
   contents: write
@@ -21,26 +23,39 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Restore Joke Machine state
+        id: restore
         shell: bash
         run: |
           set -euo pipefail
           state_ref="refs/remotes/origin/joke-machine-state"
           files=(history.json reserve.json latest-results.json)
 
-          if ! git fetch --quiet origin "refs/heads/joke-machine-state:${state_ref}"; then
-            echo "No state branch yet; using packaged seed state."
-            exit 0
-          fi
-
-          for file in "${files[@]}"; do
-            if ! git cat-file -e "${state_ref}:worker-jm/data/${file}" 2>/dev/null; then
-              echo "State branch is incomplete; using packaged seed state."
+          if git ls-remote --exit-code --heads origin joke-machine-state >/dev/null 2>&1; then
+            git fetch --quiet origin "refs/heads/joke-machine-state:${state_ref}"
+          else
+            rc=$?
+            if [ "${rc}" -eq 2 ]; then
+              echo "No state branch yet; using packaged seed state."
               exit 0
             fi
-          done
+            exit "${rc}"
+          fi
 
+          state_prefix=""
+          for prefix in worker-jmac/data worker-jm/data; do
+            complete=1
+            for file in "${files[@]}"; do
+              git cat-file -e "${state_ref}:${prefix}/${file}" 2>/dev/null || complete=0
+            done
+            if [ "${complete}" -eq 1 ]; then state_prefix="${prefix}"; break; fi
+          done
+          if [ -z "${state_prefix}" ]; then
+            echo "State branch is incomplete; refusing to replace saved history." >&2
+            exit 1
+          fi
+          mkdir -p worker-jmac/data
           for file in "${files[@]}"; do
-            git show "${state_ref}:worker-jm/data/${file}" > "worker-jm/data/${file}"
+            git show "${state_ref}:${state_prefix}/${file}" > "worker-jmac/data/${file}"
           done
           echo "State restored."
 
@@ -48,7 +63,8 @@ jobs:
         run: node -e 'const major=Number(process.versions.node.split(".")[0]); if (major < 18) { console.error("Node.js 18+ required"); process.exit(1); }'
 
       - name: Run Joke Machine
-        working-directory: worker-jm
+        id: run_joke
+        working-directory: worker-jmac
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -56,19 +72,19 @@ jobs:
         run: node app/main.js
 
       - name: Persist Joke Machine state
-        if: always()
+        if: ${{ always() && steps.restore.outcome == 'success' && steps.run_joke.outcome != 'skipped' }}
         shell: bash
         run: |
           set -euo pipefail
           state_dir="$(mktemp -d)"
-          cp worker-jm/data/history.json worker-jm/data/reserve.json worker-jm/data/latest-results.json "${state_dir}/"
+          cp worker-jmac/data/history.json worker-jmac/data/reserve.json worker-jmac/data/latest-results.json "${state_dir}/"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan joke-machine-state-next
           git rm -rf . >/dev/null 2>&1 || true
-          mkdir -p worker-jm/data
-          cp "${state_dir}/history.json" "${state_dir}/reserve.json" "${state_dir}/latest-results.json" worker-jm/data/
-          git add worker-jm/data/history.json worker-jm/data/reserve.json worker-jm/data/latest-results.json
+          mkdir -p worker-jmac/data
+          cp "${state_dir}/history.json" "${state_dir}/reserve.json" "${state_dir}/latest-results.json" worker-jmac/data/
+          git add worker-jmac/data/history.json worker-jmac/data/reserve.json worker-jmac/data/latest-results.json
           git commit -m "Joke Machine state"
           git push --force origin "HEAD:refs/heads/joke-machine-state"

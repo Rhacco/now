@@ -36,10 +36,21 @@ jobs:
             git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
 
             if git cat-file -e "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json" 2>/dev/null; then
-              git show "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json" > worker-gw2a/data/cache.json
+              git show "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json" > "${RUNNER_TEMP}/gw2-action-cache.json"
+              python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          cache = json.loads((Path(os.environ["RUNNER_TEMP"]) / "gw2-action-cache.json").read_text(encoding="utf-8"))
+          assert isinstance(cache, dict) and cache.get("version") in (1, 2)
+          assert isinstance(cache.get("sources"), dict)
+          PY
+              mv "${RUNNER_TEMP}/gw2-action-cache.json" worker-gw2a/data/cache.json
               echo "Persistent cache restored from ${STATE_BRANCH}."
             else
-              echo "${STATE_BRANCH} exists without a cache; using the packaged seed cache."
+              echo "${STATE_BRANCH} exists without a cache; refusing to replace saved state." >&2
+              exit 1
             fi
           else
             rc=$?
@@ -61,6 +72,13 @@ jobs:
           python3 -m py_compile worker-gw2a/app/engine.py
           test -s gw2a/index.html
           test -s worker-gw2a/data/cache.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          state = json.loads(Path("worker-gw2a/data/cache.json").read_text(encoding="utf-8"))
+          assert state.get("version") == 2 and isinstance(state.get("sources"), dict)
+          assert any(isinstance(item, dict) and item.get("data") for item in state["sources"].values()), "refusing to replace GW2 cache with empty data"
+          PY
 
       - name: Publish page and persistent cache to state branch
         shell: bash

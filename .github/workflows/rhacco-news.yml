@@ -31,27 +31,37 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Check TLDR parser and cache safety
+        run: python3 -m unittest discover -s worker-rnews/tests -q
+
       - name: Restore latest persistent cache
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p worker-rn/data
+          mkdir -p worker-rnews/data
 
           if git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
             git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
 
-            if git cat-file -e "origin/${STATE_BRANCH}:worker-rn/data/cache.json" 2>/dev/null; then
-              git show "origin/${STATE_BRANCH}:worker-rn/data/cache.json" > "${RUNNER_TEMP}/rhacco-news-cache.json"
+            cache_path=""
+            for candidate in worker-rnews/data/cache.json worker-rn/data/cache.json; do
+              if git cat-file -e "origin/${STATE_BRANCH}:${candidate}" 2>/dev/null; then
+                cache_path="${candidate}"
+                break
+              fi
+            done
+            if [ -n "${cache_path}" ]; then
+              git show "origin/${STATE_BRANCH}:${cache_path}" > "${RUNNER_TEMP}/rhacco-news-cache.json"
               python3 - <<'PY'
           import json
           import os
           from pathlib import Path
 
           cache = json.loads((Path(os.environ["RUNNER_TEMP"]) / "rhacco-news-cache.json").read_text(encoding="utf-8"))
-          assert isinstance(cache, dict) and cache.get("version") == 1
+          assert isinstance(cache, dict) and cache.get("version") in (1, 2)
           assert isinstance(cache.get("sources"), dict)
           PY
-              mv "${RUNNER_TEMP}/rhacco-news-cache.json" worker-rn/data/cache.json
+              mv "${RUNNER_TEMP}/rhacco-news-cache.json" worker-rnews/data/cache.json
               echo "Persistent cache restored from ${STATE_BRANCH}."
             else
               echo "${STATE_BRANCH} has no cache; refusing to replace its state with the seed." >&2
@@ -69,17 +79,17 @@ jobs:
 
       - name: Refresh Rhacco News
         env:
-          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
-          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-        run: python3 worker-rn/app/engine.py
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python3 worker-rnews/app/engine.py
 
       - name: Validate Rhacco News output
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m py_compile worker-rn/app/engine.py
+          python3 -m py_compile worker-rnews/app/engine.py worker-rnews/app/tldr.py
           test -s rn/index.html
-          test -s worker-rn/data/cache.json
+          test -s worker-rnews/data/cache.json
           python3 - <<'PY'
           import json
           from html.parser import HTMLParser
@@ -105,8 +115,8 @@ jobs:
           assert '<html lang="en">' in page
           assert parsed.tabs == {"bio", "cyber", "dach", "royal", "world"}, parsed.tabs
           assert parsed.cards > 0, "refusing to publish an empty news page"
-          cache = json.loads(Path("worker-rn/data/cache.json").read_text(encoding="utf-8"))
-          assert cache.get("version") == 1 and isinstance(cache.get("sources"), dict)
+          cache = json.loads(Path("worker-rnews/data/cache.json").read_text(encoding="utf-8"))
+          assert cache.get("version") == 2 and isinstance(cache.get("sources"), dict)
           assert any(isinstance(entry, dict) and entry.get("data") for entry in cache["sources"].values()), "refusing to replace news cache with empty data"
           PY
 
@@ -132,11 +142,11 @@ jobs:
             STATE_EXISTS=0
           fi
 
-          rm -rf "${STATE_DIR}/rn" "${STATE_DIR}/worker-rn"
-          mkdir -p "${STATE_DIR}/rn" "${STATE_DIR}/worker-rn/data"
+          rm -rf "${STATE_DIR}/rn" "${STATE_DIR}/worker-rnews" "${STATE_DIR}/worker-rn"
+          mkdir -p "${STATE_DIR}/rn" "${STATE_DIR}/worker-rnews/data"
 
           cp rn/index.html "${STATE_DIR}/rn/index.html"
-          cp worker-rn/data/cache.json "${STATE_DIR}/worker-rn/data/cache.json"
+          cp worker-rnews/data/cache.json "${STATE_DIR}/worker-rnews/data/cache.json"
 
           git -C "${STATE_DIR}" add -A
 

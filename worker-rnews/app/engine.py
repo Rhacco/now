@@ -12,21 +12,22 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from zoneinfo import ZoneInfo
+import tldr
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.1.6"
+ENGINE_VERSION = "0.2.0"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = REPO_ROOT / "rn" / "index.html"
-CACHE_SCHEMA_VERSION = 1
+CACHE_SCHEMA_VERSION = 2
 MAX_RESPONSE_BYTES = 4 * 1024 * 1024
 USER_AGENT = f"RhaccoNews/{ENGINE_VERSION} (+static GitHub Actions news aggregator)"
 TOPICS = (
@@ -60,6 +61,8 @@ class Article:
     tab: str
     summary: str = ""
     via: str = ""
+    tldr: str = ""
+    tldr_label: str = ""
 
 
 @dataclass(frozen=True)
@@ -374,9 +377,14 @@ def parse_newsapi(raw: str, src: dict[str, Any], fetched_at: datetime) -> list[d
     return out
 
 
+def parse_kev(raw: str, src: dict[str, Any], fetched_at: datetime) -> list[dict[str, Any]]:
+    return tldr.kev_items(raw, int(src.get("max_items", 60)))
+
+
 def normalize_state(raw: Any) -> dict[str, Any]:
-    if not isinstance(raw, dict) or raw.get("version") != CACHE_SCHEMA_VERSION:
+    if not isinstance(raw, dict) or raw.get("version") not in {1, CACHE_SCHEMA_VERSION}:
         return {"version": CACHE_SCHEMA_VERSION, "sources": {}}
+    raw["version"] = CACHE_SCHEMA_VERSION
     raw.setdefault("sources", {})
     return raw
 
@@ -443,6 +451,7 @@ def refresh_source(state: dict[str, Any], src: dict[str, Any], now: datetime, no
             "gdelt": parse_gdelt,
             "gnews": parse_gnews,
             "newsapi": parse_newsapi,
+            "kev": parse_kev,
         }
         parser = parsers.get(fmt, parse_feed)
         data = parser(raw, src, now)
@@ -499,6 +508,8 @@ def to_articles(src: dict[str, Any], data: list[dict[str, Any]], now: datetime, 
             tab=str(src.get("tab") or "world"),
             summary=str(item.get("summary") or "")[:500],
             via=str(item.get("via") or ""),
+            tldr=str(item.get("tldr") or "")[:450],
+            tldr_label=str(item.get("tldr_label") or "")[:80],
         ))
     return [a for a in out if a.title and a.url]
 
@@ -511,6 +522,10 @@ def title_tokens(title: str) -> set[str]:
 def similarity(a: Article, b: Article) -> float:
     if canonical_url(a.url) == canonical_url(b.url):
         return 1.0
+    ids_a = set(tldr.CVE.findall(a.title + " " + a.summary))
+    ids_b = set(tldr.CVE.findall(b.title + " " + b.summary))
+    if len(ids_a) == len(ids_b) == 1:
+        return 0.9 if {x.upper() for x in ids_a} == {x.upper() for x in ids_b} else 0.0
     ta, tb = title_tokens(a.title), title_tokens(b.title)
     if not ta or not tb:
         return 0.0
@@ -577,7 +592,7 @@ def age_label(dt: datetime, now: datetime) -> str:
     return f"{days} {'day' if days == 1 else 'days'} ago"
 
 
-def source_chip(a: Article, now: datetime, hidden: bool = False) -> str:
+def source_chip(a: Article, now: datetime) -> str:
     kind = "Official" if a.kind == "primary" else ("Found" if a.kind == "discovery" else "News")
     via = f" · via {html.escape(a.via)}" if a.via else ""
     title = f"{a.source_name} · {kind} · {age_label(a.published, now)}{via}"
@@ -589,10 +604,13 @@ def source_chip(a: Article, now: datetime, hidden: bool = False) -> str:
         "language": a.language,
         "age": age_label(a.published, now),
         "published": iso(a.published),
+        "brief": a.summary[:450],
+        "tldr": a.tldr[:450],
+        "tldr-label": a.tldr_label[:80],
     }
     data = " ".join(f'data-{key}="{html.escape(value, quote=True)}"' for key, value in attributes.items())
     return (
-        f'<a class="source-chip kind-{html.escape(a.kind)}" {data}{" hidden" if hidden else ""} href="{html.escape(a.url, quote=True)}" '
+        f'<a class="source-chip kind-{html.escape(a.kind)}" {data} href="{html.escape(a.url, quote=True)}" '
         f'target="_blank" rel="noopener noreferrer" title="{html.escape(title, quote=True)}">'
         f'<span>{html.escape(a.source_name)}</span><small>{html.escape(a.country or "—")}</small></a>'
     )
@@ -605,8 +623,8 @@ def card_html(cluster: list[Article], now: datetime, hidden: bool = False) -> st
     countries = len({a.country for a in non_discovery if a.country})
     primary = any(a.kind == "primary" for a in cluster)
     chips = "".join(
-        source_chip(a, now, i >= 8)
-        for i, a in enumerate(sorted(cluster, key=lambda x: (x.source_name.casefold(), -x.published.timestamp())))
+        source_chip(a, now)
+        for a in sorted(cluster, key=lambda x: (x.source_name.casefold(), -x.published.timestamp()))
     )
     source_word = "source" if len(non_discovery) == 1 else "sources"
     publisher_word = "publisher" if publisher_count == 1 else "publishers"
@@ -615,17 +633,32 @@ def card_html(cluster: list[Article], now: datetime, hidden: bool = False) -> st
         meta += f" · {countries} countries"
     if primary:
         meta += " · official source"
+    shown = next((a for a in cluster if a.tldr), None)
+    if shown:
+        label, brief = shown.tldr_label, shown.tldr
+    else:
+        shown = next((a for a in cluster if a.summary and a.kind != "discovery"), None)
+        label = "Publisher excerpt · " + shown.source_name if shown else ""
+        brief = tldr.compact(shown.summary, 380) if shown else ""
+    brief_html = (f'<p class="story-tldr"{"" if brief else " hidden"}><strong class="story-tldr-label">{html.escape(label)}</strong>'
+                  f'<span class="story-tldr-text">{html.escape(brief)}</span></p>'
+                  f'<p class="story-no-tldr"{" hidden" if brief else ""}>No verified brief is available yet. Read the sources below.</p>')
     return f"""
     <article class="story-card"{" hidden" if hidden else ""}>
-      <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span></div>
-      <h2><a lang="{html.escape(rep.language, quote=True)}" href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
-      <div class="source-row">{chips}</div>
+      <details class="story-expand"><summary title="Open story"><span class="story-brief-title">{html.escape(rep.title)}</span><small class="story-brief-meta"> · {html.escape(age_label(rep.published, now))} · {html.escape(str(len(non_discovery)))} sources</small></summary>
+        <div class="story-body">
+          <div class="story-topline"><span class="story-age">{html.escape(age_label(rep.published, now))}</span><span class="source-count">{html.escape(meta)}</span></div>
+          <h2><a lang="{html.escape(rep.language, quote=True)}" href="{html.escape(rep.url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(rep.title)}</a></h2>
+          {brief_html}
+          <div class="source-row" aria-label="Sources">{chips}</div>
+        </div>
+      </details>
     </article>
     """
 
 
 def status_summary(cfg: dict[str, Any], state: dict[str, Any], now: datetime) -> tuple[int, int, int, int]:
-    enabled = [s for s in cfg.get("sources", []) if s.get("enabled", True)]
+    enabled = [s for s in cfg.get("sources", []) if s.get("enabled", True) and not s.get("enrichment_only")]
     ok = stale = failed = waiting = 0
     for s in enabled:
         e = state.get("sources", {}).get(s["id"], {})
@@ -704,6 +737,11 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
     error_note = ""
     if errors:
         error_note = f'<details class="errors"><summary>{len(errors)} sources had an error</summary><pre>{html.escape(json.dumps(errors, ensure_ascii=False, indent=2))}</pre></details>'
+    gov_used = any(a.tldr_label.endswith("GOV.UK") for clusters in clusters_by_tab.values()
+                   for cluster in clusters for a in cluster)
+    license_note = ('<div>Contains public sector information licensed under the '
+                    '<a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" '
+                    'target="_blank" rel="noopener noreferrer">Open Government Licence v3.0</a>.</div>') if gov_used else ''
     filter_markup = content_filter_html(cfg)
     return f"""<!doctype html>
 <html lang="en">
@@ -738,6 +776,18 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 .content-option span{{min-width:0;overflow-wrap:anywhere}}
 .content-option small{{font-size:10px;color:var(--muted)}}
 .preference-footer{{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap;margin-top:12px;font-size:9px;color:#89909c}}
+.story-expand>summary{{display:flex;align-items:baseline;gap:5px;white-space:nowrap;overflow:hidden;cursor:pointer;list-style:none;min-height:24px}}
+.story-expand>summary::-webkit-details-marker{{display:none}}
+.story-expand>summary::before{{content:'▸';color:#ad9aff;flex:none}}
+.story-expand[open]>summary::before{{content:'▾'}}
+.story-brief-title{{font-weight:690;min-width:0;overflow:hidden;text-overflow:ellipsis}}
+.story-brief-meta{{flex:none;max-width:45%;overflow:hidden;text-overflow:ellipsis;color:var(--muted);font-size:11px}}
+.story-body{{border-top:1px solid var(--line);margin-top:12px;padding-top:12px}}
+.story-tldr{{margin:12px 0 0;line-height:1.55;color:#e8e9ee}}
+.story-tldr-label{{display:block;color:#bbabff;font-size:12px;margin-bottom:3px}}
+.story-no-tldr{{color:var(--muted);font-size:13px;margin:12px 0 0}}
+.story-tldr[hidden],.story-no-tldr[hidden]{{display:none}}
+.story-expand>summary:focus-visible{{outline:2px solid #a78bfa;outline-offset:3px;border-radius:4px}}
 .preference-footer .saved{{color:#83a58b}}
 .preference-footer .failed{{color:#d8a689}}
 .delete-cookie{{border:0;background:none;color:#aeb5c2;text-decoration:underline;cursor:pointer;font:inherit;padding:0}}
@@ -752,7 +802,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 <div id="topics-empty" class="empty topics-empty">Choose a topic under Content above.</div>
 {panes_markup}
 </main>
-<footer><div>{html.escape(status_text)}</div>{error_note}<div class="preference-footer"><span id="preference-note" role="status">Your choices are saved in one cookie.</span><button type="button" id="delete-preferences" class="delete-cookie" hidden>Delete cookie</button></div></footer>
+<footer><div>{html.escape(status_text)}</div>{error_note}{license_note}<div class="preference-footer"><span id="preference-note" role="status">Your choices are saved in one cookie.</span><button type="button" id="delete-preferences" class="delete-cookie" hidden>Delete cookie</button></div></footer>
 </div>
 <script>
 (()=>{{
@@ -857,6 +907,9 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
        headline.textContent=rep.dataset.title;
        headline.href=rep.href;
        headline.lang=rep.dataset.language||'en';
+       const briefTitle=card.querySelector('.story-brief-title');
+       briefTitle.textContent=rep.dataset.title;
+       briefTitle.lang=rep.dataset.language||'en';
        card.querySelector('.story-age').textContent=rep.dataset.age;
        const editorial=selected.filter(chip=>chip.dataset.kind!=='discovery');
        const publishers=new Set(editorial.map(chip=>chip.dataset.publisher.toLocaleLowerCase()));
@@ -865,11 +918,23 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
        if(countries.size>1)label+=` · ${{countries.size}} countries`;
        if(selected.some(chip=>chip.dataset.kind==='primary'))label+=' · official source';
        card.querySelector('.source-count').textContent=label;
-       let visible=0;
+       card.querySelector('.story-brief-meta').textContent=` · ${{rep.dataset.age}} · ${{editorial.length}} ${{editorial.length===1?'source':'sources'}}`;
+       const source=selected.find(chip=>chip.dataset.tldr) || selected.find(chip=>chip.dataset.kind!=='discovery'&&chip.dataset.brief);
+       const paragraph=card.querySelector('.story-tldr');
+       const emptyBrief=card.querySelector('.story-no-tldr');
+       if(source){{
+         if(paragraph){{
+           paragraph.hidden=false;
+           paragraph.querySelector('.story-tldr-label').textContent=source.dataset.tldr ? source.dataset.tldrLabel : `Publisher excerpt · ${{source.querySelector('span').textContent}}`;
+           paragraph.querySelector('.story-tldr-text').textContent=source.dataset.tldr || source.dataset.brief;
+         }}
+         if(emptyBrief)emptyBrief.hidden=true;
+       }}else{{
+         if(paragraph)paragraph.hidden=true;
+         if(emptyBrief)emptyBrief.hidden=false;
+       }}
        for(const chip of chips){{
-         const enabled=selected.includes(chip);
-         chip.hidden=!enabled || visible>=8;
-         if(enabled)visible++;
+         chip.hidden=!selected.includes(chip);
        }}
      }}
      pane.querySelector('.filtered-empty').hidden=shown>0 || !pane.querySelector('.story-card');
@@ -979,6 +1044,68 @@ def select_display_candidates(clusters: list[list[Article]], limit: int, source_
     return [cluster for i, cluster in enumerate(clusters) if i in included]
 
 
+def enrich_clusters(clusters_by_tab: dict[str, list[list[Article]]], state: dict[str, Any],
+                    now: datetime, no_network: bool, cfg: dict[str, Any]) -> bool:
+    """Only match existing stories; extra APIs cannot manufacture an event."""
+    changed = False
+    capacity = max(0, int(cfg.get("tldr", {}).get("max_enrich_requests", 6)))
+    requests_left = {"gov": capacity // 2, "ghsa": capacity // 3,
+                     "epmc": capacity - capacity // 2 - capacity // 3}
+    model_budget = [int(cfg.get("tldr", {}).get("max_ai_requests", 2))]
+    for tab, clusters in clusters_by_tab.items():
+        for cluster in clusters[:int(cfg.get("tldr", {}).get("max_clusters_per_tab", 5))]:
+            for i, article in enumerate(cluster):
+                gov_url = tldr.gov_content_url(article.url)
+                if not gov_url or requests_left["gov"] <= 0:
+                    continue
+                requests_left["gov"] -= 1
+                def read_gov(payload: Any) -> dict[str, str] | None:
+                    body, brief = tldr.gov_brief(payload)
+                    return {"body": body, "brief": brief} if body and brief else None
+                data, fetched = tldr.cached_lookup(state, "gov:" + article.url, gov_url,
+                                                     read_gov, now, no_network, ttl_hours=6)
+                changed = changed or fetched
+                if data and data.get("brief"):
+                    generated, created = tldr.model_summary(article.title, data["body"], state, model_budget, no_network)
+                    changed = changed or created
+                    cluster[i] = replace(article, tldr=generated or data["brief"],
+                                         tldr_label="AI TLDR · GOV.UK" if generated else "Official brief · GOV.UK")
+
+            # CVE matching is exact, even if the news item's wording is different.
+            if tab == "cyber" and requests_left["ghsa"] > 0:
+                ids = {m.group(0).upper() for a in cluster for m in tldr.CVE.finditer(a.title + " " + a.summary)}
+                for cve in sorted(ids)[:1]:
+                    requests_left["ghsa"] -= 1
+                    url = "https://api.github.com/advisories?" + urllib.parse.urlencode({"cve_id": cve, "type": "reviewed", "per_page": 5})
+                    data, fetched = tldr.cached_lookup(state, "ghsa:" + cve, url,
+                        lambda payload: tldr.ghsa_brief(payload, cve), now, no_network)
+                    changed = changed or fetched
+                    if data and not any(a.source_id == "github-advisories" and a.url == data["url"] for a in cluster):
+                        published = parse_dt(data.get("published")) or cluster[0].published
+                        cluster.append(Article(title=data["title"], url=data["url"], published=published,
+                            source_id="github-advisories", source_name="GitHub Advisory", publisher="GitHub Advisory Database",
+                            country="US", language="en", kind="primary", tab=tab,
+                            summary=data["summary"], tldr=data["tldr"], tldr_label=data["tldr_label"]))
+
+            # Literature is linked only by an exact DOI, never by a fuzzy headline.
+            if tab == "bio" and requests_left["epmc"] > 0:
+                dois = {tldr.first_doi(a.url + " " + a.summary) for a in cluster}
+                for doi in sorted(dois - {""})[:1]:
+                    requests_left["epmc"] -= 1
+                    url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(
+                        {"query": f'DOI:"{doi}" AND (LANG:eng OR LANG:ger)',
+                         "format": "json", "resultType": "core", "pageSize": 1})
+                    data, fetched = tldr.cached_lookup(state, "epmc:" + doi, url,
+                        lambda payload: tldr.epmc_study(payload, doi), now, no_network, ttl_hours=24)
+                    changed = changed or fetched
+                    if data and not any(a.source_id == "europe-pmc" and a.url == data["url"] for a in cluster):
+                        published = parse_dt(data.get("published")) or cluster[0].published
+                        cluster.append(Article(title=data["title"], url=data["url"], published=published,
+                            source_id="europe-pmc", source_name="Europe PMC · study", publisher="Europe PMC",
+                            country="GB", language="en", kind="primary", tab=tab, summary=data["summary"]))
+    return changed
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description='Static news page for Rhacco News')
     ap.add_argument("--now", help="ISO-8601 test time")
@@ -998,22 +1125,23 @@ def main() -> int:
     raw_state = load_json(STATE_PATH, None)
     if STATE_PATH.exists() and (
         not isinstance(raw_state, dict)
-        or raw_state.get("version") != CACHE_SCHEMA_VERSION
+        or raw_state.get("version") not in {1, CACHE_SCHEMA_VERSION}
         or not isinstance(raw_state.get("sources"), dict)
     ):
         print("FATAL: invalid cache; keeping the previous page and cache", file=sys.stderr)
         return 2
+    migrating = isinstance(raw_state, dict) and raw_state.get("version") == 1
     state = normalize_state(raw_state)
     errors: dict[str, str] = {}
-    changed = False
-    configured = {src["id"] for src in cfg.get("sources", []) if src.get("enabled", True)}
+    changed = migrating
+    configured = {src["id"] for src in cfg.get("sources", [])}
     for old_id in set(state["sources"]) - configured:
         del state["sources"][old_id]
         changed = True
     articles: list[Article] = []
 
     for src in cfg.get("sources", []):
-        if not src.get("enabled", True):
+        if not src.get("enabled", True) or src.get("enrichment_only"):
             continue
         data, err, source_changed = refresh_source(state, src, now, args.no_network)
         changed = changed or source_changed
@@ -1040,6 +1168,8 @@ def main() -> int:
         clusters.sort(key=lambda c: cluster_score(c, now), reverse=True)
         source_ids = [src["id"] for src in cfg.get("sources", []) if src.get("enabled", True) and src.get("tab") == tab]
         clusters_by_tab[tab] = select_display_candidates(clusters, limit, source_ids)
+
+    changed = enrich_clusters(clusters_by_tab, state, now, args.no_network, cfg) or changed
 
     page = render_html(clusters_by_tab, cfg, state, now, errors)
     out = Path(args.output).resolve() if args.output else INDEX_PATH

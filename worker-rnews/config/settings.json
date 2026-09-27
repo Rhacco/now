@@ -1,5 +1,5 @@
 {
-  "engine_version": "0.1.6",
+  "engine_version": "0.2.0",
   "timezone": "Europe/Berlin",
   "run_interval_minutes": 5,
   "max_age_hours": 48,
@@ -7,6 +7,32 @@
   "max_clusters_per_tab": 24,
   "stale_after_minutes": 360,
   "sources": [
+    {
+      "id": "europe-pmc",
+      "name": "Europe PMC Studies",
+      "publisher": "Europe PMC",
+      "country": "GB",
+      "language": "en",
+      "kind": "primary",
+      "format": "enrichment",
+      "enrichment_only": true,
+      "tab": "bio",
+      "enabled": true
+    },
+    {
+      "id": "govuk-mhra",
+      "name": "MHRA UK Medicines News",
+      "publisher": "MHRA",
+      "country": "GB",
+      "language": "en",
+      "kind": "primary",
+      "format": "rss",
+      "tab": "bio",
+      "url": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=medicines-and-healthcare-products-regulatory-agency",
+      "ttl_minutes": 60,
+      "max_items": 40,
+      "enabled": true
+    },
     {
       "id": "nature-medicine",
       "name": "Nature Medical Research",
@@ -103,6 +129,32 @@
       "url": "https://www.cisecurity.org/feed/advisories",
       "ttl_minutes": 30,
       "max_items": 30,
+      "enabled": true
+    },
+    {
+      "id": "cisa-kev",
+      "name": "CISA Known Exploited Vulnerabilities",
+      "publisher": "CISA",
+      "country": "US",
+      "language": "en",
+      "kind": "primary",
+      "format": "kev",
+      "tab": "cyber",
+      "url": "https://raw.githubusercontent.com/cisagov/kev-data/develop/known_exploited_vulnerabilities.json",
+      "ttl_minutes": 240,
+      "max_items": 60,
+      "enabled": true
+    },
+    {
+      "id": "github-advisories",
+      "name": "GitHub Security Advisories",
+      "publisher": "GitHub Advisory Database",
+      "country": "US",
+      "language": "en",
+      "kind": "primary",
+      "format": "enrichment",
+      "enrichment_only": true,
+      "tab": "cyber",
       "enabled": true
     },
     {
@@ -235,7 +287,7 @@
       "ttl_minutes": 30,
       "api_key_env": "GNEWS_API_KEY",
       "optional": true,
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "newsapi-dach",
@@ -253,7 +305,7 @@
       "ttl_minutes": 30,
       "api_key_env": "NEWSAPI_KEY",
       "optional": true,
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "orf-news",
@@ -456,7 +508,7 @@
       "ttl_minutes": 30,
       "api_key_env": "GNEWS_API_KEY",
       "optional": true,
-      "enabled": true,
+      "enabled": false,
       "language_filter": "en"
     },
     {
@@ -474,7 +526,7 @@
       "ttl_minutes": 30,
       "api_key_env": "NEWSAPI_KEY",
       "optional": true,
-      "enabled": true,
+      "enabled": false,
       "language_filter": "en"
     },
     {
@@ -506,5 +558,10 @@
       "enabled": true
     }
   ],
-  "app_name": "Rhacco News"
+  "app_name": "Rhacco News",
+  "tldr": {
+    "max_clusters_per_tab": 5,
+    "max_enrich_requests": 6,
+    "max_ai_requests": 2
+  }
 }
