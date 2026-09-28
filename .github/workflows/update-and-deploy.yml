@@ -314,7 +314,7 @@ jobs:
               failures = []
               now_ms = int(time.time() * 1000)
               for path, expected in expected_times.items():
-                  url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"]
+                  url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"] + "-" + str(attempt)
                   try:
                       request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
                       with urllib.request.urlopen(request, timeout=12) as response:
