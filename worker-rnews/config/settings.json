@@ -1,5 +1,5 @@
 {
-  "engine_version": "0.2.2",
+  "engine_version": "0.2.3",
   "timezone": "Europe/Berlin",
   "max_age_hours": 48,
   "cluster_window_hours": 18,

@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.4"
+ENGINE_VERSION = "2.2.5"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -2896,41 +2896,65 @@ if(window.location.search){{history.replaceState(null,"",window.location.pathnam
 const versionMeta=document.querySelector('meta[name="gw2-page-version"]');
 let currentVersion=versionMeta.content;
 let updateInFlight=false;
+let lastPagesAtMs=lastPublishedAtMs;
+let lastStateCheckAt=0;
+async function loadPage(url){{
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),12000);
+  try{{
+    const response=await fetch(url,{{cache:"no-store",signal:controller.signal}});
+    return response.ok ? new DOMParser().parseFromString(await response.text(),"text/html") : null;
+  }}finally{{clearTimeout(timeout);}}
+}}
+function applyUpdate(page,fromState=false){{
+  const version=page.querySelector('meta[name="gw2-page-version"]')?.content;
+  const snapshotText=page.getElementById("gw2-snapshot")?.textContent;
+  if(!version || !snapshotText) return;
+  const snapshot=JSON.parse(snapshotText);
+  if(snapshot.format!==1 || snapshot.page_version!==version ||
+     !Array.isArray(snapshot.events) || !snapshot.events.length || typeof snapshot.notice!=="string" ||
+     !Number.isFinite(snapshot.generated_at_ms) || snapshot.generated_at_ms> Date.now()+5*60*1000) return;
+  if(!fromState) lastPagesAtMs=Math.max(lastPagesAtMs,snapshot.generated_at_ms);
+  if(snapshot.generated_at_ms<lastPublishedAtMs) return;
+  if(snapshot.engine!==currentEngine){{
+    if(fromState || window.location.hash==="#credits" || document.querySelector("details[open]")) return;
+    stashTransientUiState();
+    const next=new URL(window.location.href);
+    next.searchParams.set("_",Date.now().toString());
+    window.location.replace(next.toString());
+    return;
+  }}
+  lastPublishedAtMs=snapshot.generated_at_ms;
+  if(version!==currentVersion){{
+    EVENT_DATA=snapshot.events;
+    currentVersion=version;
+    versionMeta.content=version;
+  }}
+  SOURCE_NOTICE=snapshot.notice;
+  renderLive(false);
+}}
 async function checkForUpdate(){{
   if(updateInFlight || document.hidden) return;
   updateInFlight=true;
   try{{
     const u=new URL(window.location.pathname,window.location.origin);u.searchParams.set("_",Date.now().toString());
-    const r=await fetch(u.toString(),{{cache:"no-store"}});if(!r.ok)return;
-    const page=new DOMParser().parseFromString(await r.text(),"text/html");
-    const version=page.querySelector('meta[name="gw2-page-version"]')?.content;
-    const snapshotText=page.getElementById("gw2-snapshot")?.textContent;
-    if(!version || !snapshotText) return;
-    const snapshot=JSON.parse(snapshotText);
-    if(snapshot.format!==1 || snapshot.page_version!==version ||
-       !Array.isArray(snapshot.events) || typeof snapshot.notice!=="string" ||
-       !Number.isFinite(snapshot.generated_at_ms) || snapshot.generated_at_ms<lastPublishedAtMs) return;
-    if(snapshot.engine!==currentEngine){{
-      // Keep the current view while a menu or list is open.
-      if(window.location.hash==="#credits" || document.querySelector("details[open]")) return;
-      stashTransientUiState();
-      const next=new URL(window.location.href);
-      next.searchParams.set("_",Date.now().toString());
-      window.location.replace(next.toString());
-      return;
+    const page=await loadPage(u.toString());
+    if(page) applyUpdate(page);
+  }}catch(e){{}}
+  try{{
+    // Pages can report a successful deploy while still serving an older artifact.
+    if(Date.now()>lastPagesAtMs+3*60*1000 && Date.now()>lastStateCheckAt+60*1000){{
+      lastStateCheckAt=Date.now();
+      const u=new URL("https://raw.githubusercontent.com/Rhacco/now/gw2-action-state/worker-gw2a/index.html");
+      u.searchParams.set("_",Date.now().toString());
+      const page=await loadPage(u.toString());
+      if(page) applyUpdate(page,true);
     }}
-    lastPublishedAtMs=snapshot.generated_at_ms;
-    if(version!==currentVersion){{
-      EVENT_DATA=snapshot.events;
-      SOURCE_NOTICE=snapshot.notice;
-      currentVersion=version;
-      versionMeta.content=version;
-    }}
-    renderLive(false);
   }}catch(e){{}}finally{{updateInFlight=false;}}
 }}
 setInterval(checkForUpdate,20000);
 document.addEventListener("visibilitychange",()=>{{if(!document.hidden) checkForUpdate();}});
+if(Date.now()>lastPagesAtMs+3*60*1000) checkForUpdate();
 </script>
 </body>
 </html>'''

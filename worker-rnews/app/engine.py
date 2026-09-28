@@ -23,7 +23,7 @@ import tldr
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.2.2"
+ENGINE_VERSION = "0.2.3"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = WORKER_ROOT / "index.html"
@@ -746,6 +746,9 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 *{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at 50% -10%,#1a1730 0,#0b0c0f 34%,#090a0d 100%);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}}a{{color:inherit}}.shell{{width:min(930px,calc(100% - 28px));margin:0 auto;padding:34px 0 54px}}header{{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}}h1{{font-size:31px;letter-spacing:-.04em;margin:0}}.updated{{color:var(--muted);font-size:13px;text-align:right}}.tabs{{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:5px;padding:5px;background:rgba(20,22,27,.94);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:14px;margin-bottom:16px;box-shadow:var(--shadow)}}.tab{{appearance:none;flex:1 1 135px;border:0;border-radius:10px;padding:11px 12px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}}.tab.active{{background:#28223f;color:#fff;box-shadow:inset 0 0 0 1px #51417f}}.pane{{display:none}}.pane.active{{display:block}}.story-card{{background:linear-gradient(180deg,var(--panel),#111318);border:1px solid var(--line);border-radius:16px;padding:17px 18px 15px;margin:0 0 12px;box-shadow:var(--shadow)}}.story-topline{{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:12px;margin-bottom:8px}}.source-count{{color:#c8cbd2}}h2{{font-size:20px;line-height:1.28;letter-spacing:-.015em;margin:0 0 7px}}h2 a{{text-decoration:none}}h2 a:hover{{text-decoration:underline;text-decoration-color:#7665bd;text-underline-offset:3px}}.source-row{{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}}.source-chip{{display:inline-flex;gap:7px;align-items:center;text-decoration:none;border:1px solid var(--line);background:var(--panel2);padding:6px 8px;border-radius:9px;font-size:12px;color:#e3e4e8}}.source-chip:hover{{border-color:#625492}}.source-chip small{{color:var(--muted);font-size:10px}}.source-chip.kind-primary{{border-color:#315c42;background:#122319}}.source-chip.kind-discovery{{border-style:dashed;color:#b8bbc3}}.empty{{border:1px dashed var(--line);border-radius:14px;padding:24px;text-align:center;color:var(--muted)}}footer{{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}}.errors{{margin-top:13px;text-align:left;border:1px solid var(--line);border-radius:10px;padding:8px 10px}}pre{{white-space:pre-wrap;word-break:break-word;font-size:11px}}@media(max-width:620px){{.shell{{width:min(100% - 18px,930px);padding-top:20px}}header{{align-items:flex-start;flex-direction:column;gap:6px}}.updated{{text-align:left}}h1{{font-size:27px}}h2{{font-size:18px}}.story-card{{padding:15px}}}}
 .story-card[hidden],.source-chip[hidden],.filtered-empty[hidden],.delete-cookie[hidden],.tabs[hidden],.tab[hidden],.topics-empty[hidden]{{display:none}}
 .header-meta{{display:flex;flex-direction:column;align-items:flex-end;gap:7px}}
+.get-latest{{border:1px solid #51417f;border-radius:999px;background:#28223f;color:#fff;padding:3px 9px;font:inherit;font-size:11px;cursor:pointer}}
+.get-latest:disabled{{opacity:.6;cursor:wait}}
+.latest-status{{color:var(--muted);font-size:11px}}
 .header-controls{{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap}}
 .content-controls{{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:11px;font-weight:700}}
 .content-filter>summary{{list-style:none;cursor:pointer;user-select:none;border:1px solid #51417f;border-radius:999px;background:#28223f;color:#fff;padding:4px 10px;min-width:55px;text-align:center}}
@@ -787,7 +790,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 </head>
 <body>
 <div class="shell">
-<header><div><h1>Rhacco News</h1><div class="updated">Live news · reload to see updates</div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
+<header><div><h1>Rhacco News</h1><div class="updated">Live news · press the button for new stories</div><button type="button" id="get-latest" class="get-latest">Get latest news</button><div id="latest-status" class="latest-status" role="status"></div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
 <nav class="tabs" aria-label="News topics" hidden>{tabs_markup}</nav>
 <main>
 <div id="topics-empty" class="empty topics-empty">Choose a topic under Content above.</div>
@@ -797,6 +800,32 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 </div>
 <script>
 (()=>{{
+ const latestButton=document.getElementById('get-latest');
+ latestButton.addEventListener('click',async()=>{{
+   const status=document.getElementById('latest-status');
+   latestButton.disabled=true;
+   status.textContent='Checking for new news…';
+   const controller=new AbortController();
+   const timeout=setTimeout(()=>controller.abort(),12000);
+   try{{
+     const url=new URL('https://raw.githubusercontent.com/Rhacco/now/rhacco-news-state/worker-rnews/index.html');
+     url.searchParams.set('_',String(Date.now()));
+     const response=await fetch(url.toString(),{{cache:'no-store',signal:controller.signal}});
+     if(!response.ok)throw new Error('No saved news available');
+     const fresh=await response.text();
+     const page=new DOMParser().parseFromString(fresh,'text/html');
+     const newTime=Number(page.querySelector('meta[name="page-generated-at-ms"]')?.content);
+     const oldTime=Number(document.querySelector('meta[name="page-generated-at-ms"]')?.content);
+     if(page.title!=='Rhacco News'||!page.querySelector('.tabs')||!page.getElementById('sources-filter')||
+        !Number.isFinite(newTime)||!Number.isFinite(oldTime)||newTime>Date.now()+5*60*1000)
+       throw new Error('The saved page is incomplete');
+     if(newTime<=oldTime){{status.textContent='This is the latest saved news.';return;}}
+     document.open();
+     document.write(fresh);
+     document.close();
+   }}catch(error){{status.textContent='Could not load the latest news. Try again later.';}}
+   finally{{clearTimeout(timeout);latestButton.disabled=false;}}
+ }});
  const buttons=[...document.querySelectorAll('.tab')];
  const panes=[...document.querySelectorAll('.pane')];
  const tabs=document.querySelector('.tabs');

@@ -61,6 +61,7 @@ jobs:
           fetch-depth: 0
 
       - name: Assemble latest valid Pages sites
+        id: assemble
         shell: bash
         run: |
           set -euo pipefail
@@ -170,15 +171,122 @@ jobs:
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
 
+          # A dispatch on the same default-branch commit has the same GITHUB_SHA.
+          # Use a real, freshly published state commit for each Pages deployment.
+          if [ "${RN_RESULT}" = success ] && [ "${HAS_RN}" -eq 1 ]; then
+            build_branch="${RN_STATE_BRANCH}"
+          elif [ "${GW2_RESULT}" = success ] && [ "${HAS_GW2}" -eq 1 ]; then
+            build_branch="${GW2_STATE_BRANCH}"
+          else
+            echo "Neither worker published a fresh state; refusing a stale deployment." >&2
+            exit 1
+          fi
+          build_version="$(git rev-parse "origin/${build_branch}")"
+          git cat-file -e "${build_version}^{commit}"
+          echo "build_version=${build_version}" >> "${GITHUB_OUTPUT}"
+          echo "Pages build version: ${build_version} (${build_branch})"
+
       - name: Configure Pages
         uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
+        id: upload
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
       - name: Deploy Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/github-script@v8
+        env:
+          BUILD_VERSION: ${{ steps.assemble.outputs.build_version }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
+        with:
+          script: |
+            const artifactId = Number(process.env.ARTIFACT_ID);
+            const buildVersion = process.env.BUILD_VERSION;
+            if (!Number.isSafeInteger(artifactId) || !/^[a-f0-9]{40}$/.test(buildVersion)) {
+              throw new Error('Missing Pages artifact or valid state commit');
+            }
+            const {owner, repo} = context.repo;
+            // Same GitHub API and job OIDC token used by actions/deploy-pages.
+            const token = await core.getIDToken();
+            const create = version => github.request('POST /repos/{owner}/{repo}/pages/deployments', {
+              owner, repo, artifact_id: artifactId, pages_build_version: version, oidc_token: token
+            });
+            let version = buildVersion;
+            let deployment;
+            try {
+              ({data: deployment} = await create(version));
+            } catch (error) {
+              if (error.status !== 404 || version === context.sha) throw error;
+              // Some Pages installations accept only the workflow commit.
+              // The public freshness check below will still reject a stuck site.
+              core.warning('Pages rejected the state commit; retrying with the workflow commit');
+              version = context.sha;
+              ({data: deployment} = await create(version));
+            }
+            const id = deployment.id || deployment.status_url?.split('/').pop();
+            if (!id || !deployment.page_url) throw new Error('Pages returned an incomplete deployment');
+            core.info('Pages deployment ID: ' + id + ', build commit: ' + version);
+            const deadline = Date.now() + 180000;
+            while (Date.now() < deadline) {
+              await new Promise(resolve => setTimeout(resolve, 5000));
+              const {data} = await github.request('GET /repos/{owner}/{repo}/pages/deployments/{id}', {
+                owner, repo, id
+              });
+              if (data.status === 'succeed') {
+                core.setOutput('page_url', deployment.page_url);
+                core.info('Pages reports success: ' + deployment.page_url);
+                return;
+              }
+              if (['deployment_failed', 'deployment_content_failed', 'deployment_cancelled', 'deployment_lost'].includes(data.status)) {
+                throw new Error('Pages deployment failed: ' + data.status);
+              }
+              core.info('Pages status: ' + (data.status || 'pending'));
+            }
+            throw new Error('Pages deployment did not finish within 3 minutes');
+
+      - name: Check published Pages freshness
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import re
+          import time
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          base = os.environ["PAGE_URL"].rstrip("/") + "/"
+          paths = ("worker-gw2a/index.html", "worker-rnews/index.html")
+          now_ms = int(time.time() * 1000)
+          failures = []
+          for path in paths:
+              local = Path("_site") / path
+              if not local.is_file():
+                  continue
+              expected = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', local.read_bytes())
+              if not expected:
+                  failures.append(f"{path}: artifact lacks a generation time")
+                  continue
+              url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"]
+              try:
+                  request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
+                  with urllib.request.urlopen(request, timeout=12) as response:
+                      actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', response.read(1000000))
+                  if not actual:
+                      raise ValueError("published page lacks a generation time")
+                  age_seconds = max(0, (now_ms - int(actual.group(1))) // 1000)
+                  lag_seconds = max(0, (int(expected.group(1)) - int(actual.group(1))) // 1000)
+                  print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
+                  if age_seconds > 900 or lag_seconds > 900:
+                      failures.append(f"{path}: Pages is serving an old page")
+              except Exception as error:
+                  failures.append(f"{path}: public page could not be checked: {error}")
+          if failures:
+              raise SystemExit("\n".join(failures))
+          PY
 
