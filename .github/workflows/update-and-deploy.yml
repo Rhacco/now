@@ -149,7 +149,7 @@ jobs:
           if copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/rn/index.html" "Rhacco News"; then
             HAS_RN=1
           fi
-          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw2a/index.html" "GW2 Action"; then
+          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw/index.html" "GW2 Action"; then
             HAS_GW2=1
           fi
 
@@ -197,7 +197,7 @@ jobs:
               echo '      <a href="rn/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
             fi
             if [ "${HAS_GW2}" -eq 1 ]; then
-              echo '      <a href="gw2a/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
+              echo '      <a href="gw/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
             fi
             cat <<'HTML'
             </main>
@@ -299,7 +299,7 @@ jobs:
           from pathlib import Path
 
           base = os.environ["PAGE_URL"].rstrip("/") + "/"
-          paths = ("gw2a/index.html", "rn/index.html")
+          paths = ("gw/index.html", "rn/index.html")
           expected_times = {}
           for path in paths:
               local = Path("_site") / path
