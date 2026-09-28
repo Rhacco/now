@@ -44,7 +44,7 @@ jobs:
     # Always publish the newest valid state available. A temporary failure in
     # one worker must not freeze every other page.
     if: ${{ always() && !cancelled() }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment:
       name: github-pages
@@ -58,7 +58,7 @@ jobs:
 
     steps:
       - name: Checkout repository metadata
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
