@@ -23,7 +23,7 @@ import tldr
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.2.0"
+ENGINE_VERSION = "0.2.1"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = WORKER_ROOT / "index.html"
@@ -797,7 +797,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 </head>
 <body>
 <div class="shell">
-<header><div><h1>Rhacco News</h1><div class="updated">Live news · checked every {int(cfg.get("run_interval_minutes", 5))} min</div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
+<header><div><h1>Rhacco News</h1><div class="updated">Live news · reload to see updates</div></div><div class="header-meta"><div class="updated">Updated: {html.escape(local.strftime('%d %b %Y · %H:%M'))}</div>{filter_markup}</div></header>
 <nav class="tabs" aria-label="News topics" hidden>{tabs_markup}</nav>
 <main>
 <div id="topics-empty" class="empty topics-empty">Choose a topic under Content above.</div>

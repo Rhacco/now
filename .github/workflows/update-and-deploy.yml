@@ -12,9 +12,6 @@ on:
       - ".github/workflows/rhacco-news.yml"
       - "worker-gw2a/**"
       - "worker-rnews/**"
-  schedule:
-    # Every 5 minutes, offset from the busiest :00/:05 boundaries.
-    - cron: "2-59/5 * * * *"
 
 permissions:
   contents: write
