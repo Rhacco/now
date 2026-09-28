@@ -23,7 +23,7 @@ import tldr
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = WORKER_ROOT.parent
-ENGINE_VERSION = "0.2.1"
+ENGINE_VERSION = "0.2.2"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
 INDEX_PATH = WORKER_ROOT / "index.html"
@@ -559,16 +559,6 @@ def cluster_articles(articles: list[Article], window_hours: int) -> list[list[Ar
     return clusters
 
 
-def cluster_score(cluster: list[Article], now: datetime) -> float:
-    non_discovery = [a for a in cluster if a.kind != "discovery"]
-    publishers = {a.publisher.casefold() for a in non_discovery}
-    countries = {a.country for a in non_discovery if a.country}
-    primary = any(a.kind == "primary" for a in cluster)
-    newest = max(a.published for a in cluster)
-    age_h = max(0.0, (now - newest).total_seconds() / 3600)
-    return len(publishers) * 22 + len(non_discovery) * 5 + len(countries) * 3 + (8 if primary else 0) + max(0, 12 - age_h)
-
-
 def representative(cluster: list[Article]) -> Article:
     editorial = [a for a in cluster if a.kind == "editorial"]
     if editorial:
@@ -891,19 +881,19 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
    const summary=document.getElementById('sources-filter-summary');
    summary.textContent=disabled.size ? `${{knownIds.size-disabled.size}}/${{knownIds.size}}` : 'All';
    for(const pane of panes){{
-     let shown=0;
+     const empty=pane.querySelector('.filtered-empty');
      for(const card of pane.querySelectorAll('.story-card')){{
        const chips=[...card.querySelectorAll('.source-chip')];
        const selected=chips.filter(chip=>!knownIds.has(chip.dataset.sourceId)||!disabled.has(chip.dataset.sourceId));
-       card.hidden=selected.length===0 || shown>=maxVisible;
+       card.hidden=selected.length===0;
        if(card.hidden)continue;
-       shown++;
        let rep=selected[0];
        const priority={{editorial:2,primary:1,discovery:0}};
        for(const chip of selected.slice(1)){{
          if((priority[chip.dataset.kind]??0)>(priority[rep.dataset.kind]??0) ||
            (chip.dataset.kind===rep.dataset.kind && chip.dataset.published>rep.dataset.published))rep=chip;
        }}
+       card.dataset.sortPublished=rep.dataset.published;
        const headline=card.querySelector('h2 a');
        headline.textContent=rep.dataset.title;
        headline.href=rep.href;
@@ -938,7 +928,15 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
          chip.hidden=!selected.includes(chip);
        }}
      }}
-     pane.querySelector('.filtered-empty').hidden=shown>0 || !pane.querySelector('.story-card');
+     const cards=[...pane.querySelectorAll('.story-card')].filter(card=>!card.hidden)
+       .sort((a,b)=>Date.parse(b.dataset.sortPublished)-Date.parse(a.dataset.sortPublished));
+     let shown=0;
+     for(const card of cards){{
+       card.hidden=shown>=maxVisible;
+       if(!card.hidden)shown++;
+       pane.insertBefore(card,empty);
+     }}
+     empty.hidden=shown>0 || !pane.querySelector('.story-card');
    }}
  }}
  function positionMenu(filter){{
@@ -1033,7 +1031,7 @@ def dedupe_articles(articles: list[Article]) -> list[Article]:
 
 
 def select_display_candidates(clusters: list[list[Article]], limit: int, source_ids: list[str]) -> list[list[Article]]:
-    """Keep the usual top stories and some candidates for each selectable source."""
+    """Keep the newest stories and candidates for each selectable source."""
     included = set(range(min(limit, len(clusters))))
     per_source = min(limit, 12)
     for source_id in source_ids:
@@ -1166,7 +1164,7 @@ def main() -> int:
     limit = max(1, int(cfg.get("max_clusters_per_tab", 20)))
     for tab, tab_articles in by_tab.items():
         clusters = cluster_articles(tab_articles, int(cfg.get("cluster_window_hours", 18)))
-        clusters.sort(key=lambda c: cluster_score(c, now), reverse=True)
+        clusters.sort(key=lambda c: representative(c).published, reverse=True)
         source_ids = [src["id"] for src in cfg.get("sources", []) if src.get("enabled", True) and src.get("tab") == tab]
         clusters_by_tab[tab] = select_display_candidates(clusters, limit, source_ids)
 
