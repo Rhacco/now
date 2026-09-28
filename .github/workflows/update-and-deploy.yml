@@ -2,6 +2,11 @@ name: Update & Deploy
 
 on:
   workflow_dispatch:
+    inputs:
+      deploy_now:
+        description: Publish Pages on this run (normally every fifth run)
+        type: boolean
+        default: false
   push:
     branches:
       - master
@@ -18,10 +23,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: update-and-deploy
-  cancel-in-progress: false
-
 jobs:
   gw2_action:
     name: GW2 Action
@@ -33,16 +34,43 @@ jobs:
     uses: ./.github/workflows/rhacco-news.yml
     secrets: inherit
 
+  pages_gate:
+    name: Choose Pages publish time
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    outputs:
+      publish: ${{ steps.pick.outputs.publish }}
+    steps:
+      - id: pick
+        env:
+          DEPLOY_NOW: ${{ inputs.deploy_now }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Workers update every dispatch; Pages publishes every fifth run.
+          if [ "${GITHUB_EVENT_NAME}" = "push" ] || [ "${DEPLOY_NOW}" = "true" ] || (( GITHUB_RUN_NUMBER % 5 == 0 )); then
+            echo "publish=true" >> "${GITHUB_OUTPUT}"
+            echo "Publish Pages on this run."
+          else
+            echo "publish=false" >> "${GITHUB_OUTPUT}"
+            echo "Workers will update; Pages publishes every fifth dispatch."
+          fi
+
   deploy_pages:
     name: Deploy all Pages
     needs:
       - gw2_action
       - rhacco_news
+      - pages_gate
     # Always publish the newest valid state available. A temporary failure in
     # one worker must not freeze every other page.
-    if: ${{ always() && !cancelled() }}
+    if: ${{ always() && !cancelled() && needs.pages_gate.outputs.publish == 'true' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
+    # A blocked Pages environment must not pause the minute-by-minute workers.
+    concurrency:
+      group: rhacco-pages-deploy
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
