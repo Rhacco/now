@@ -107,15 +107,17 @@ jobs:
             local target="$3"
             local label="$4"
 
-            if ! git ls-remote --exit-code --heads origin "${branch}" >/dev/null 2>&1; then
-              echo "No state branch available yet for ${label}: ${branch}" >&2
-              return 1
-            fi
-
-            if ! git fetch --force origin "${branch}:refs/remotes/origin/${branch}"; then
-              echo "${label}: unable to fetch ${branch}; refusing a possibly outdated copy." >&2
-              return 1
-            fi
+            local attempt
+            for attempt in 1 2 3; do
+              if git fetch --force --no-tags origin "${branch}:refs/remotes/origin/${branch}"; then
+                break
+              fi
+              if [ "${attempt}" -eq 3 ]; then
+                echo "${label}: unable to fetch ${branch}; keeping the last published site." >&2
+                return 1
+              fi
+              sleep "${attempt}"
+            done
 
             if ! git cat-file -e "origin/${branch}:${source}" 2>/dev/null; then
               echo "${label}: ${branch}:${source} is missing." >&2
@@ -129,6 +131,14 @@ jobs:
               return 1
             fi
 
+            if ! grep -Fq "<title>${label}</title>" "${target}" ||
+               ! grep -Eq '<meta name="page-generated-at-ms" content="[0-9]+">' "${target}" ||
+               ! grep -Fq '</html>' "${target}"; then
+              rm -f "${target}"
+              echo "${label}: incomplete state page; keeping the last published site." >&2
+              return 1
+            fi
+
             local state_time
             state_time="$(git log -1 --format='%cI' "origin/${branch}" 2>/dev/null || true)"
             echo "Added ${label}: ${branch}:${source} -> ${target} (state ${state_time:-unknown})"
@@ -136,15 +146,15 @@ jobs:
 
           HAS_RN=0
           HAS_GW2=0
-          if copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/worker-rnews/index.html" "Rhacco News"; then
+          if copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/rn/index.html" "Rhacco News"; then
             HAS_RN=1
           fi
-          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/worker-gw2a/index.html" "GW2 Action"; then
+          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw2a/index.html" "GW2 Action"; then
             HAS_GW2=1
           fi
 
-          if [ "${HAS_RN}" -eq 0 ] && [ "${HAS_GW2}" -eq 0 ]; then
-            echo "No valid worker page state is available; refusing an empty deployment." >&2
+          if [ "${HAS_RN}" -ne 1 ] || [ "${HAS_GW2}" -ne 1 ]; then
+            echo "Both valid worker pages are required; keeping the last published site." >&2
             exit 1
           fi
 
@@ -184,10 +194,10 @@ jobs:
               </a>
           HTML
             if [ "${HAS_RN}" -eq 1 ]; then
-              echo '      <a href="worker-rnews/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
+              echo '      <a href="rn/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
             fi
             if [ "${HAS_GW2}" -eq 1 ]; then
-              echo '      <a href="worker-gw2a/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
+              echo '      <a href="gw2a/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
             fi
             cat <<'HTML'
             </main>
@@ -289,32 +299,41 @@ jobs:
           from pathlib import Path
 
           base = os.environ["PAGE_URL"].rstrip("/") + "/"
-          paths = ("worker-gw2a/index.html", "worker-rnews/index.html")
-          now_ms = int(time.time() * 1000)
-          failures = []
+          paths = ("gw2a/index.html", "rn/index.html")
+          expected_times = {}
           for path in paths:
               local = Path("_site") / path
               if not local.is_file():
-                  continue
-              expected = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', local.read_bytes())
-              if not expected:
-                  failures.append(f"{path}: artifact lacks a generation time")
-                  continue
-              url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"]
-              try:
-                  request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
-                  with urllib.request.urlopen(request, timeout=12) as response:
-                      actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', response.read(1000000))
-                  if not actual:
-                      raise ValueError("published page lacks a generation time")
-                  age_seconds = max(0, (now_ms - int(actual.group(1))) // 1000)
-                  lag_seconds = max(0, (int(expected.group(1)) - int(actual.group(1))) // 1000)
-                  print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
-                  if age_seconds > 900 or lag_seconds > 900:
-                      failures.append(f"{path}: Pages is serving an old page")
-              except Exception as error:
-                  failures.append(f"{path}: public page could not be checked: {error}")
-          if failures:
-              raise SystemExit("\n".join(failures))
+                  raise SystemExit(f"{path}: missing from the Pages artifact")
+              stamp = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', local.read_bytes())
+              if not stamp:
+                  raise SystemExit(f"{path}: artifact lacks a generation time")
+              expected_times[path] = int(stamp.group(1))
+
+          for attempt in range(7):
+              failures = []
+              now_ms = int(time.time() * 1000)
+              for path, expected in expected_times.items():
+                  url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"]
+                  try:
+                      request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
+                      with urllib.request.urlopen(request, timeout=12) as response:
+                          actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', response.read(1000000))
+                      if not actual:
+                          raise ValueError("published page lacks a generation time")
+                      published = int(actual.group(1))
+                      age_seconds = max(0, (now_ms - published) // 1000)
+                      lag_seconds = max(0, (expected - published) // 1000)
+                      print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
+                      if age_seconds > 900 or lag_seconds > 120:
+                          failures.append(f"{path}: Pages is serving an old page")
+                  except Exception as error:
+                      failures.append(f"{path}: public page could not be checked: {error}")
+              if not failures:
+                  break
+              if attempt == 6:
+                  raise SystemExit("\n".join(failures))
+              print("Waiting 10s for Pages to serve the new version...")
+              time.sleep(10)
           PY
 
