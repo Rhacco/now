@@ -2120,6 +2120,7 @@ header{{position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 82%
 .delete-cookie[hidden]{{display:none}}
 .delete-cookie:hover,.delete-cookie:focus-visible{{color:#fff}}
 h2{{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);margin:16px 2px 8px}}
+#activity-view>h2{{text-transform:none}}
 .event-card{{display:grid;grid-template-columns:82px 1fr 150px;align-items:center;gap:8px;min-height:62px;padding:8px 12px;margin:7px 0;background:var(--panel);border:1px solid var(--line);border-radius:12px}}
 .event-card:hover{{background:var(--panel2)}}
 .time{{font:800 15px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace}}
@@ -2243,7 +2244,7 @@ body:has(#credits:target) #activity-view{{display:none}}
 <div id="now-top">{section(active, False)}</div>
 <div id="now-more">{expandable(active_more, False)}</div>
 
-<h2 title="Suggestions from upcoming starts and community plans">UP NEXT · Upcoming activity starting soon</h2>
+<h2 title="Suggestions from upcoming starts and community plans">UP NEXT · Starting soon</h2>
 <div id="next-top">{section(upcoming, True)}</div>
 <div id="next-extra">{extras(upcoming_extra, True)}</div>
 <div id="next-more">{expandable(upcoming_more, True)}</div>
