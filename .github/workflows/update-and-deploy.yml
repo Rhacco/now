@@ -143,6 +143,9 @@ jobs:
               a:hover{background:#20232a;border-color:#555b69;transform:translateY(-1px);box-shadow:0 11px 30px rgba(0,0,0,.24)}
               a:active{transform:translateY(0)}
               a:focus-visible{outline:3px solid #8f7cff;outline-offset:3px}
+              .workflow-badge{justify-self:center;width:auto;min-height:0;display:inline-flex;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;transition:none}
+              .workflow-badge:hover,.workflow-badge:active{background:transparent;border:0;box-shadow:none;transform:none}
+              .workflow-badge img{display:block;max-width:100%;height:auto}
               @media (max-width:520px){body{padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}main{gap:12px}a{min-height:64px;border-radius:13px}a .title{font-size:16px}}
               @media (min-width:900px){main{width:min(460px,100%)}}
               @media (prefers-reduced-motion:reduce){a{transition:none}}
@@ -150,6 +153,9 @@ jobs:
           </head>
           <body>
             <main aria-label="Pages">
+              <a class="workflow-badge" href="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml">
+                <img src="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml/badge.svg" alt="Update & Deploy workflow status">
+              </a>
           HTML
             if [ "${HAS_RN}" -eq 1 ]; then
               echo '      <a href="worker-rnews/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
