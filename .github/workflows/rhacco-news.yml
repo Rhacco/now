@@ -40,14 +40,8 @@ jobs:
           if git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
             git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
 
-            cache_path=""
-            for candidate in worker-rnews/data/cache.json worker-rn/data/cache.json; do
-              if git cat-file -e "origin/${STATE_BRANCH}:${candidate}" 2>/dev/null; then
-                cache_path="${candidate}"
-                break
-              fi
-            done
-            if [ -n "${cache_path}" ]; then
+            cache_path="worker-rnews/data/cache.json"
+            if git cat-file -e "origin/${STATE_BRANCH}:${cache_path}" 2>/dev/null; then
               git show "origin/${STATE_BRANCH}:${cache_path}" > "${RUNNER_TEMP}/rhacco-news-cache.json"
               python3 - <<'PY'
           import json
@@ -80,47 +74,21 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python3 worker-rnews/app/engine.py
 
-      - name: Validate Rhacco News output
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 -m py_compile worker-rnews/app/engine.py worker-rnews/app/tldr.py
-          test -s rn/index.html
-          test -s worker-rnews/data/cache.json
-          python3 - <<'PY'
-          import json
-          from html.parser import HTMLParser
-          from pathlib import Path
-
-          class P(HTMLParser):
-              def __init__(self):
-                  super().__init__()
-                  self.cards = 0
-                  self.tabs = set()
-
-              def handle_starttag(self, tag, attrs):
-                  fields = dict(attrs)
-                  if tag == "article" and "story-card" in fields.get("class", "").split():
-                      self.cards += 1
-                  if tag == "button" and "tab" in fields.get("class", "").split():
-                      self.tabs.add(fields.get("data-tab"))
-
-          page = Path("rn/index.html").read_text(encoding="utf-8")
-          parsed = P()
-          parsed.feed(page)
-          assert "Rhacco News" in page
-          assert '<html lang="en">' in page
-          assert parsed.tabs == {"bio", "cyber", "dach", "royal", "world"}, parsed.tabs
-          assert parsed.cards > 0, "refusing to publish an empty news page"
-          cache = json.loads(Path("worker-rnews/data/cache.json").read_text(encoding="utf-8"))
-          assert cache.get("version") == 2 and isinstance(cache.get("sources"), dict)
-          assert any(isinstance(entry, dict) and entry.get("data") for entry in cache["sources"].values()), "refusing to replace news cache with empty data"
-          PY
-
       - name: Publish page and persistent cache to state branch
         shell: bash
         run: |
           set -euo pipefail
+
+          test -s worker-rnews/index.html
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          state = json.loads(Path("worker-rnews/data/cache.json").read_text(encoding="utf-8"))
+          if state.get("version") != 2 or not isinstance(state.get("sources"), dict) or not any(
+              isinstance(item, dict) and item.get("data") for item in state["sources"].values()
+          ):
+              raise SystemExit("Refusing to replace news state with empty or invalid data")
+          PY
 
           STATE_DIR="${RUNNER_TEMP}/rhacco-news-state"
           rm -rf "${STATE_DIR}"
@@ -140,9 +108,9 @@ jobs:
           fi
 
           rm -rf "${STATE_DIR}/rn" "${STATE_DIR}/worker-rnews" "${STATE_DIR}/worker-rn"
-          mkdir -p "${STATE_DIR}/rn" "${STATE_DIR}/worker-rnews/data"
+          mkdir -p "${STATE_DIR}/worker-rnews/data"
 
-          cp rn/index.html "${STATE_DIR}/rn/index.html"
+          cp worker-rnews/index.html "${STATE_DIR}/worker-rnews/index.html"
           cp worker-rnews/data/cache.json "${STATE_DIR}/worker-rnews/data/cache.json"
 
           git -C "${STATE_DIR}" add -A

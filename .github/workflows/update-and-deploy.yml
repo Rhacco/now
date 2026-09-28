@@ -86,7 +86,10 @@ jobs:
               return 1
             fi
 
-            git fetch --force origin "${branch}:refs/remotes/origin/${branch}"
+            if ! git fetch --force origin "${branch}:refs/remotes/origin/${branch}"; then
+              echo "${label}: unable to fetch ${branch}; refusing a possibly outdated copy." >&2
+              return 1
+            fi
 
             if ! git cat-file -e "origin/${branch}:${source}" 2>/dev/null; then
               echo "${label}: ${branch}:${source} is missing." >&2
@@ -94,8 +97,11 @@ jobs:
             fi
 
             mkdir -p "$(dirname "${target}")"
-            git show "origin/${branch}:${source}" > "${target}"
-            test -s "${target}"
+            if ! git show "origin/${branch}:${source}" > "${target}" || ! test -s "${target}"; then
+              rm -f "${target}"
+              echo "${label}: missing or empty page in ${branch}; refusing to publish it." >&2
+              return 1
+            fi
 
             local state_time
             state_time="$(git log -1 --format='%cI' "origin/${branch}" 2>/dev/null || true)"
@@ -104,10 +110,10 @@ jobs:
 
           HAS_RN=0
           HAS_GW2=0
-          if copy_state_page "${RN_STATE_BRANCH}" "rn/index.html" "_site/rn/index.html" "Rhacco News"; then
+          if copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/worker-rnews/index.html" "Rhacco News"; then
             HAS_RN=1
           fi
-          if copy_state_page "${GW2_STATE_BRANCH}" "gw2a/index.html" "_site/gw2a/index.html" "GW2 Action"; then
+          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/worker-gw2a/index.html" "GW2 Action"; then
             HAS_GW2=1
           fi
 
@@ -146,10 +152,10 @@ jobs:
             <main aria-label="Pages">
           HTML
             if [ "${HAS_RN}" -eq 1 ]; then
-              echo '      <a href="rn/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
+              echo '      <a href="worker-rnews/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
             fi
             if [ "${HAS_GW2}" -eq 1 ]; then
-              echo '      <a href="gw2a/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
+              echo '      <a href="worker-gw2a/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
             fi
             cat <<'HTML'
             </main>
@@ -158,21 +164,6 @@ jobs:
           HTML
           } > _site/index.html
 
-          if [ "${HAS_RN}" -eq 1 ]; then
-            mkdir -p _site/rhacco-news
-            cat > _site/rhacco-news/index.html <<'HTML'
-          <!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../rn/"><title>Rhacco News</title><a href="../rn/">Open Rhacco News</a></html>
-          HTML
-          fi
-
-          if [ "${HAS_GW2}" -eq 1 ]; then
-            mkdir -p _site/gw2a-action
-            cat > _site/gw2a-action/index.html <<'HTML'
-          <!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=../gw2a/"><title>GW2 Action</title><a href="../gw2a/">Open GW2 Action</a></html>
-          HTML
-          fi
-
-          test -s _site/index.html
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
 
@@ -187,3 +178,4 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v5
+

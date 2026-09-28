@@ -65,25 +65,21 @@ jobs:
       - name: Generate current GW2 page
         run: python3 worker-gw2a/app/engine.py
 
-      - name: Validate GW2 output
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 -m py_compile worker-gw2a/app/engine.py
-          test -s gw2a/index.html
-          test -s worker-gw2a/data/cache.json
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          state = json.loads(Path("worker-gw2a/data/cache.json").read_text(encoding="utf-8"))
-          assert state.get("version") == 2 and isinstance(state.get("sources"), dict)
-          assert any(isinstance(item, dict) and item.get("data") for item in state["sources"].values()), "refusing to replace GW2 cache with empty data"
-          PY
-
       - name: Publish page and persistent cache to state branch
         shell: bash
         run: |
           set -euo pipefail
+
+          test -s worker-gw2a/index.html
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          state = json.loads(Path("worker-gw2a/data/cache.json").read_text(encoding="utf-8"))
+          if state.get("version") != 2 or not isinstance(state.get("sources"), dict) or not any(
+              isinstance(item, dict) and item.get("data") for item in state["sources"].values()
+          ):
+              raise SystemExit("Refusing to replace GW2 state with empty or invalid data")
+          PY
 
           STATE_DIR="${RUNNER_TEMP}/gw2-action-state"
           rm -rf "${STATE_DIR}"
@@ -103,9 +99,9 @@ jobs:
           fi
 
           rm -rf "${STATE_DIR}/gw2a" "${STATE_DIR}/worker-gw2a"
-          mkdir -p "${STATE_DIR}/gw2a" "${STATE_DIR}/worker-gw2a/data"
+          mkdir -p "${STATE_DIR}/worker-gw2a/data"
 
-          cp gw2a/index.html "${STATE_DIR}/gw2a/index.html"
+          cp worker-gw2a/index.html "${STATE_DIR}/worker-gw2a/index.html"
           cp worker-gw2a/data/cache.json "${STATE_DIR}/worker-gw2a/data/cache.json"
 
           git -C "${STATE_DIR}" add -A

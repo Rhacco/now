@@ -26,7 +26,7 @@ ENGINE_VERSION = "2.2.4"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
-INDEX_PATH = REPO_ROOT / "gw2a" / "index.html"
+INDEX_PATH = WORKER_ROOT / "index.html"
 
 URLS = {
     "waypoints": "https://api.guildwars2.com/v2/continents/1/floors/1?lang=en",
@@ -2073,6 +2073,7 @@ def render_html(
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="gw2-page-version" content="{version}">
+<meta name="page-generated-at-ms" content="{int(now.timestamp() * 1000)}">
 <title>GW2 Action</title>
 <style>
 :root{{--bg:#0f1012;--panel:#17191d;--panel2:#1d2025;--line:#2b2f36;--text:#f3f4f6;--muted:#9aa1aa;--gold:#d7aa42;}}

@@ -26,7 +26,7 @@ REPO_ROOT = WORKER_ROOT.parent
 ENGINE_VERSION = "0.2.0"
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
-INDEX_PATH = REPO_ROOT / "rn" / "index.html"
+INDEX_PATH = WORKER_ROOT / "index.html"
 CACHE_SCHEMA_VERSION = 2
 MAX_RESPONSE_BYTES = 4 * 1024 * 1024
 USER_AGENT = f"RhaccoNews/{ENGINE_VERSION} (+static GitHub Actions news aggregator)"
@@ -749,6 +749,7 @@ def render_html(clusters_by_tab: dict[str, list[list[Article]]], cfg: dict[str, 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark light">
+<meta name="page-generated-at-ms" content="{int(now.timestamp() * 1000)}">
 <title>Rhacco News</title>
 <style>
 :root{{--bg:#0b0c0f;--panel:#14161b;--panel2:#1a1d24;--text:#f3f4f6;--muted:#9ca3af;--line:#2a2f39;--accent:#7c5cff;--accent2:#a78bfa;--good:#69d18f;--warn:#f4c95d;--shadow:0 14px 45px rgba(0,0,0,.24)}}
