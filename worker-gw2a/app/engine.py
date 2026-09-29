@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.5"
+ENGINE_VERSION = "2.2.7"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -157,7 +157,8 @@ TRACK_DISPLAY_OVERRIDES = {
 }
 
 CONTENT_GROUPS = (
-    {"id": "core", "short": "Core", "label": "Core Tyria", "category": "Core Tyria", "hue": 210},
+    {"id": "core", "short": "Core", "label": "Core Tyria", "category": "Core Tyria", "hue": 210,
+     "hint": "Maps and public instances available without an expansion."},
     {"id": "lw1", "short": "LW1", "label": "Living World Season 1", "category": "Living World Season 1", "hue": 340},
     {"id": "lw2", "short": "LW2", "label": "Living World Season 2", "category": "Living World Season 2", "hue": 325},
     {"id": "hot", "short": "HoT", "label": "Heart of Thorns", "category": "Heart of Thorns", "hue": 105},
@@ -182,10 +183,42 @@ CONTENT_UNKNOWN = {
 CONTENT_BY_CATEGORY = {item["category"]: item for item in CONTENT_GROUPS}
 CONTENT_OPTIONS = CONTENT_GROUPS
 
+# Access follows the destination map, not the release that introduced an
+# event. Public instances use their own access requirement below instead of
+# the map containing their entrance.
+MAP_ACCESS_GROUPS = (
+    ("Core Tyria", (
+        "Blazeridge Steppes", "Bloodtide Coast", "Brisban Wildlands",
+        "Caledon Forest", "Diessa Plateau", "Dry Top", "Frostgorge Sound",
+        "Gendarran Fields", "Harathi Hinterlands", "Iron Marches",
+        "Kessex Hills", "Metrica Province", "Mount Maelstrom",
+        "Plains of Ashford", "Queensdale", "Snowden Drifts", "Southsun Cove",
+        "Sparkfly Fen", "The Silverwastes", "Timberline Falls",
+        "Wayfarer Foothills",
+    )),
+    ("Heart of Thorns", ("Auric Basin", "Dragon's Stand", "Tangled Depths", "Verdant Brink")),
+    ("Living World Season 3", ("Lake Doric",)),
+    ("Path of Fire", ("Crystal Oasis", "Desert Highlands", "Domain of Vabbi",
+                      "Elon Riverlands", "The Desolation")),
+    ("Living World Season 4", ("Domain of Istan", "Dragonfall", "Jahai Bluffs",
+                               "Thunderhead Peaks")),
+    ("The Icebrood Saga", ("Bjora Marches", "Drizzlewood Coast", "Grothmar Valley")),
+    ("End of Dragons", ("Dragon's End", "New Kaineng City", "Seitung Province",
+                        "The Echovald Wilds")),
+    ("Secrets of the Obscure", ("Amnytas", "Skywatch Archipelago", "The Wizard's Tower")),
+    ("Janthir Wilds", ("Bava Nisos", "Janthir Syntri", "Lowland Shore")),
+    ("Visions of Eternity", ("Eternity's Garden", "Leyspring Hollows",
+                             "Shipwreck Strand", "Starlit Weald")),
+)
+MAP_ACCESS_CATEGORIES = {name: category for category, names in MAP_ACCESS_GROUPS for name in names}
+
+def map_access_category(location: str) -> str:
+    return MAP_ACCESS_CATEGORIES.get(location.split("·", 1)[0].strip(), "")
+
 # Untimed farm opportunities. These are directions for checking an active
 # instance via the in-game LFG, never assertions that a spawn is live.
 FARM_MAPS = (
-    ("The Silverwastes · RIBA", "The Silverwastes", "Living World Season 2",
+    ("The Silverwastes · RIBA", "The Silverwastes", "Core Tyria",
      "Camp Resolve Waypoint", "[&BH8HAAA=]", "The_Silverwastes",
      "https://hardstuck.gg/gw2/guides/events/the-silverwastes-guide-to-riba/",
      "RIBA guide by Hardstuck"),
@@ -221,13 +254,13 @@ PHASE_PENALTIES = {
     "Fly by Night": -65
 }
 
-# Identities, content origin and entry maps verified against the GW2 Wiki,
-# 2026-09-26. Instance type and level scaling are deliberately independent.
+# Public instances have their own access requirement; their entry map and
+# story origin do not determine the filter. Level scaling stays independent.
 PUBLIC_INSTANCES = (
-    ("The Twisted Marionette", "Living World Season 1", "Eye of the North", False),
-    ("The Tower of Nightmares", "Living World Season 1", "Eye of the North", False),
-    ("The Battle For Lion's Arch", "Living World Season 1", "Eye of the North", False),
-    ("Dragonstorm", "The Icebrood Saga", "Eye of the North", False),
+    ("The Twisted Marionette", "Core Tyria", "Eye of the North", False),
+    ("The Tower of Nightmares", "Core Tyria", "Eye of the North", False),
+    ("The Battle For Lion's Arch", "Core Tyria", "Eye of the North", False),
+    ("Dragonstorm", "Path of Fire", "Eye of the North", False),
     ("Convergence: Outer Nayos", "Secrets of the Obscure", "The Wizard's Tower", False),
     ("Convergence: Mount Balrior", "Janthir Wilds", "Lowland Shore · Harvest Den", False),
     ("Convergence: Nexus of Eternity", "Visions of Eternity", "Leyspring Hollows · Rooted Sanctuary", False),
@@ -1266,7 +1299,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 out.append(Candidate(
                     event="Scarlet's Invasion",
                     track="Scarlet's Invasion",
-                    category="Living World Season 1",
+                    category="Core Tyria",
                     start=start,
                     end=start + timedelta(minutes=15),
                     location="Gendarran Fields · map-wide invasion",
@@ -1363,6 +1396,10 @@ def apply_known_level_overrides(cands: list[Candidate]) -> None:
             c.level_kind = "public"
             c.level = 80
             c.level_min = 80
+        if not c.public_instance and c.category != "Special Events":
+            access = map_access_category(c.location)
+            if access:
+                c.category = access
 
 
 WIKI_OVERRIDES = {
@@ -1936,7 +1973,7 @@ def compact_action_html(c: Candidate, tz: ZoneInfo) -> str:
 def farm_options_html() -> str:
     rows = []
     for title, location, category, waypoint_name, waypoint, wiki_page, info_url, info_title in FARM_MAPS:
-        content = content_meta(category)
+        content = content_meta(map_access_category(location) or category)
         rows.append(
             f'<div class="farm-card" data-farm-content-id="{content["id"]}">'
             f'<div class="farm-name"><b>{html.escape(title)}</b>'
@@ -2229,7 +2266,7 @@ body:has(#credits:target) #activity-view{{display:none}}
     <div class="control-group">
       <span class="control-label">Content:</span>
       <details id="content-filter" class="content-filter" data-ui-state-key="content-filter">
-        <summary id="content-filter-summary" title="Choose which content and levels to show">All</summary>
+        <summary id="content-filter-summary" title="Choose maps you can access and levels to show">All</summary>
         <div id="content-filter-menu" class="content-menu"></div>
       </details>
     </div>
@@ -2492,7 +2529,7 @@ function updateContentSummary() {{
   const enabled=total-disabledContent.size;
   const base=disabledContent.size===0 ? "All" : `${{enabled}}/${{total}}`;
   summary.textContent=showLevel80 ? base : `${{base}} · Lvl 80 off`;
-  summary.title="Choose which content and levels to show";
+  summary.title="Choose maps you can access and levels to show";
   updateFarmVisibility();
 }}
 
@@ -2517,7 +2554,7 @@ function buildContentFilter() {{
     return `<label class="content-option"${{help}}><input type="checkbox" data-content-id="${{esc(item.id)}}"${{help}} ${{disabledContent.has(item.id)?"":"checked"}}><span>${{esc(item.short)}} · ${{esc(item.label)}}</span></label>`;
   }}).join("");
   const level80=`<label class="content-option level-filter-option" title="Useful when leveling alts"><input type="checkbox" data-level80 ${{showLevel80?"checked":""}}><span>Level 80 Events <small>· can be hidden while leveling alts</small></span></label>`;
-  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Expansions & Content</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
+  menu.innerHTML=`<div class="content-menu-head"><span class="content-menu-title">Map Access & Events</span><button type="button" class="content-all-btn" data-content-all title="Show all filters">Show all</button></div><div class="content-grid">${{rows}}${{level80}}</div>`;
   updateContentSummary();
 }}
 
@@ -2577,9 +2614,20 @@ function focusKey() {{
   if(el?.matches("[data-content-all]")) return "show-all";
   if(el?.matches("[data-tz-mode]")) return "time:"+el.dataset.tzMode;
   if(el?.matches("summary")) return "details:"+(el.parentElement.dataset.uiStateKey || "");
+  const card=el?.closest?.("[data-event-key]");
+  if(card && el.matches?.("a,button")) {{
+    const kind=["wp","wiki","announcement","info-link"].find(name=>el.classList.contains(name));
+    if(kind) return `event:${{card.dataset.eventKey}}:${{kind}}`;
+  }}
   return "";
 }}
 function restoreFocus(key) {{
+  if(key.startsWith("event:")) {{
+    const [,eventKey,kind]=key.split(":");
+    const card=[...document.querySelectorAll("[data-event-key]")].find(el=>el.dataset.eventKey===eventKey);
+    card?.querySelector(`.${{kind}}`)?.focus({{preventScroll:true}});
+    return;
+  }}
   const controls=[...document.querySelectorAll("input[data-content-id],input[data-level80],[data-content-all],[data-tz-mode],details[data-ui-state-key]>summary")];
   const target=controls.find(el=>
     key==="content:"+el.dataset.contentId ||
@@ -2694,13 +2742,13 @@ function waypointButton(e,cls="") {{
   return `<button class="wp ${{cls}}" data-copy="${{esc(e.waypoint)}}" title="Copy: ${{esc(e.waypoint_label)}}" aria-label="Copy: ${{esc(e.waypoint_label)}}">${{esc(e.waypoint)}}</button>`;
 }}
 function topCard(e) {{
-  return `<article class="event-card"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name" title="${{esc(e.event)}}">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div>${{waypointButton(e,"")}}</article>`;
+  return `<article class="event-card" data-event-key="${{esc(e.key)}}"><div class="time">${{formatEventTime(e.start)}}</div><div class="info"><div class="event-line"><span class="name" title="${{esc(e.event)}}">${{e.flash_html}}${{esc(e.event)}}</span><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></div><div class="badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div></div>${{waypointButton(e,"")}}</article>`;
 }}
 function miniCard(e) {{
-  return `<div class="mini-card"><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"mini-wp")}}</div>`;
+  return `<div class="mini-card" data-event-key="${{esc(e.key)}}"><span class="mini-time">${{formatEventTime(e.start)}}</span><div class="mini-info"><span class="mini-line">${{e.flash_html}}<b title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="mini-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"mini-wp")}}</div>`;
 }}
 function compactCard(e) {{
-  return `<div class="all-card"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title" title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"all-wp")}}</div>`;
+  return `<div class="all-card" data-event-key="${{esc(e.key)}}"><span class="all-time">${{formatEventTime(e.start)}}</span><div class="all-info"><span class="title-row">${{e.flash_html}}<b class="event-title" title="${{esc(e.event)}}">${{esc(e.event)}}</b><span class="event-sep" aria-hidden="true">·</span><span class="inline-location" title="${{esc(e.location)}}">${{esc(e.location)}}</span></span></div><div class="all-badges">${{e.priority_html}}${{e.level_html}}${{e.content_html}}${{e.links_html}}</div>${{waypointButton(e,"all-wp")}}</div>`;
 }}
 
 function byScore(a,b) {{ return (b.score-a.score)||(Date.parse(a.start)-Date.parse(b.start))||a.event.localeCompare(b.event); }}
@@ -2765,7 +2813,6 @@ function renderLive(force=false) {{
   const groups=layoutAt(Date.now());
   const signature=JSON.stringify([groups.activeTop,groups.activeMore,groups.upcomingTop,groups.upcomingExtra,groups.upcomingMore,timeMode,[...disabledContent].sort(),showLevel80]);
   if(!force && signature===lastLayoutSignature) return;
-  if(!force && document.activeElement?.closest?.("#now-top,#now-more,#next-top,#next-extra,#next-more")) return;
   const focused=focusKey();
   lastLayoutSignature=signature;
   updateLiveSection("now-top",groups.activeTop.length?groups.activeTop.map(topCard).join(""):emptyBlock());
