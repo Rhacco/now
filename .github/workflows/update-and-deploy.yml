@@ -34,43 +34,21 @@ jobs:
     uses: ./.github/workflows/rhacco-news.yml
     secrets: inherit
 
-  pages_gate:
-    name: Choose Pages publish time
-    runs-on: ubuntu-24.04
-    timeout-minutes: 2
-    outputs:
-      publish: ${{ steps.pick.outputs.publish }}
-    steps:
-      - id: pick
-        env:
-          DEPLOY_NOW: ${{ inputs.deploy_now }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          # Workers update every dispatch; Pages publishes every fifth run.
-          if [ "${GITHUB_EVENT_NAME}" = "push" ] || [ "${DEPLOY_NOW}" = "true" ] || (( GITHUB_RUN_NUMBER % 5 == 0 )); then
-            echo "publish=true" >> "${GITHUB_OUTPUT}"
-            echo "Publish Pages on this run."
-          else
-            echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "Workers will update; Pages publishes every fifth dispatch."
-          fi
-
   deploy_pages:
-    name: Deploy all Pages
+    name: Deploy Pages
     needs:
       - gw2_action
       - rhacco_news
-      - pages_gate
-    # Always publish the newest valid state available. A temporary failure in
-    # one worker must not freeze every other page.
-    if: ${{ always() && !cancelled() && needs.pages_gate.outputs.publish == 'true' }}
+    # Publish only when a worker confirms a new state commit. Keep the existing
+    # release when a worker or Pages cannot confirm a fresh deployment.
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     # A blocked Pages environment must not pause the minute-by-minute workers.
     concurrency:
       group: rhacco-pages-deploy
-      cancel-in-progress: true
+      queue: max
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -80,9 +58,39 @@ jobs:
       RN_STATE_BRANCH: rhacco-news-state
       GW2_RESULT: ${{ needs.gw2_action.result }}
       RN_RESULT: ${{ needs.rhacco_news.result }}
+      GW2_UPDATED: ${{ needs.gw2_action.outputs.state_updated }}
+      RN_UPDATED: ${{ needs.rhacco_news.outputs.state_updated }}
 
     steps:
+      - name: Choose Pages publish time
+        id: pick
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          DEPLOY_NOW: ${{ inputs.deploy_now }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Workers update every dispatch; Pages publishes every fifth run.
+          if [ "${GITHUB_EVENT_NAME}" = "push" ] || [ "${DEPLOY_NOW}" = "true" ] || (( GITHUB_RUN_NUMBER % 5 == 0 )); then
+            if [ "${GW2_UPDATED}" = "true" ] || [ "${RN_UPDATED}" = "true" ]; then
+              echo "publish=true" >> "${GITHUB_OUTPUT}"
+              echo "Publish Pages on this run."
+            else
+              echo "publish=false" >> "${GITHUB_OUTPUT}"
+              echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
+              echo "No new worker state confirmed; keep the current Pages release."
+            fi
+          else
+            echo "publish=false" >> "${GITHUB_OUTPUT}"
+            echo "reason=not_due" >> "${GITHUB_OUTPUT}"
+            echo "Workers will update; Pages publishes every fifth dispatch."
+          fi
+
       - name: Checkout repository metadata
+        id: checkout
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.pick.outputs.publish == 'true' }}
         uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
@@ -90,6 +98,8 @@ jobs:
 
       - name: Assemble latest valid Pages sites
         id: assemble
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
         shell: bash
         run: |
           set -euo pipefail
@@ -158,6 +168,22 @@ jobs:
             exit 1
           fi
 
+          # Do not replace the site with an outdated state page from either worker.
+          python3 - <<'PY'
+          import re
+          import time
+          from pathlib import Path
+
+          now_ms = int(time.time() * 1000)
+          for path in ("_site/rn/index.html", "_site/gw/index.html"):
+              match = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', Path(path).read_bytes())
+              if not match:
+                  raise SystemExit(f"{path}: missing generation time")
+              age_ms = now_ms - int(match.group(1))
+              if age_ms > 900000 or age_ms < -120000:
+                  raise SystemExit(f"{path}: state page is too old or has a future timestamp")
+          PY
+
           {
             cat <<'HTML'
           <!doctype html>
@@ -211,9 +237,9 @@ jobs:
 
           # A dispatch on the same default-branch commit has the same GITHUB_SHA.
           # Use a real, freshly published state commit for each Pages deployment.
-          if [ "${RN_RESULT}" = success ] && [ "${HAS_RN}" -eq 1 ]; then
+          if [ "${RN_UPDATED}" = true ] && [ "${HAS_RN}" -eq 1 ]; then
             build_branch="${RN_STATE_BRANCH}"
-          elif [ "${GW2_RESULT}" = success ] && [ "${HAS_GW2}" -eq 1 ]; then
+          elif [ "${GW2_UPDATED}" = true ] && [ "${HAS_GW2}" -eq 1 ]; then
             build_branch="${GW2_STATE_BRANCH}"
           else
             echo "Neither worker published a fresh state; refusing a stale deployment." >&2
@@ -225,16 +251,23 @@ jobs:
           echo "Pages build version: ${build_version} (${build_branch})"
 
       - name: Configure Pages
+        id: pages
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.assemble.outcome == 'success' }}
         uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
         id: upload
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.pages.outcome == 'success' }}
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
       - name: Deploy Pages
         id: deployment
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.upload.outcome == 'success' }}
         uses: actions/github-script@v8
         env:
           BUILD_VERSION: ${{ steps.assemble.outputs.build_version }}
@@ -247,35 +280,95 @@ jobs:
               throw new Error('Missing Pages artifact or valid state commit');
             }
             const {owner, repo} = context.repo;
+            const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+            const temporary = error => [429, 500, 502, 503, 504].includes(error?.status);
             // Same GitHub API and job OIDC token used by actions/deploy-pages.
             const token = await core.getIDToken();
             const create = version => github.request('POST /repos/{owner}/{repo}/pages/deployments', {
               owner, repo, artifact_id: artifactId, pages_build_version: version, oidc_token: token
             });
+            const status = id => github.request('GET /repos/{owner}/{repo}/pages/deployments/{id}', {
+              owner, repo, id
+            });
+
+            // A broken POST response does not prove that GitHub rejected the deployment.
+            // Query by its build commit before sending the artifact again.
+            async function findAccepted(version) {
+              let uncertain = false;
+              for (let attempt = 1; attempt <= 3; attempt++) {
+                await pause(attempt * 2000);
+                try {
+                  const {data} = await status(version);
+                  if (data?.status) return true;
+                  throw new Error('Pages returned an incomplete deployment status');
+                } catch (error) {
+                  if (error.status === 404) continue;
+                  if (temporary(error)) { uncertain = true; continue; }
+                  throw error;
+                }
+              }
+              if (uncertain) throw new Error('Could not verify whether Pages accepted the deployment');
+              return false;
+            }
+
+            async function createOrRecover(version) {
+              for (let attempt = 1; attempt <= 3; attempt++) {
+                try {
+                  return (await create(version)).data;
+                } catch (error) {
+                  if (!temporary(error) && !(error.status === 422 && attempt > 1)) throw error;
+                  core.warning('Pages creation response failed (HTTP ' + (error.status || '?') + '); checking the deployment status.');
+                  if (await findAccepted(version)) return {id: version};
+                  if (!temporary(error) || attempt === 3) throw error;
+                  await pause(attempt * 3000);
+                }
+              }
+            }
+
             let version = buildVersion;
             let deployment;
             try {
-              ({data: deployment} = await create(version));
+              deployment = await createOrRecover(version);
             } catch (error) {
               if (error.status !== 404 || version === context.sha) throw error;
               // Some Pages installations accept only the workflow commit.
               // The public freshness check below will still reject a stuck site.
               core.warning('Pages rejected the state commit; retrying with the workflow commit');
               version = context.sha;
-              ({data: deployment} = await create(version));
+              deployment = await createOrRecover(version);
             }
-            const id = deployment.id || deployment.status_url?.split('/').pop();
-            if (!id || !deployment.page_url) throw new Error('Pages returned an incomplete deployment');
+            const id = deployment?.id || deployment?.status_url?.split('/').pop();
+            if (!id) throw new Error('Pages returned an incomplete deployment');
+            let pageUrl = deployment.page_url;
+            if (!pageUrl) {
+              // Recovered a deployment whose POST response was lost.
+              for (let attempt = 1; attempt <= 3; attempt++) {
+                try {
+                  const {data} = await github.request('GET /repos/{owner}/{repo}/pages', {owner, repo});
+                  pageUrl = data.html_url;
+                  break;
+                } catch (error) {
+                  if (!temporary(error) || attempt === 3) throw error;
+                  await pause(attempt * 2000);
+                }
+              }
+            }
+            if (!pageUrl) throw new Error('Pages did not return a public URL');
             core.info('Pages deployment ID: ' + id + ', build commit: ' + version);
             const deadline = Date.now() + 180000;
             while (Date.now() < deadline) {
-              await new Promise(resolve => setTimeout(resolve, 5000));
-              const {data} = await github.request('GET /repos/{owner}/{repo}/pages/deployments/{id}', {
-                owner, repo, id
-              });
+              await pause(5000);
+              let data;
+              try {
+                ({data} = await status(id));
+              } catch (error) {
+                if (!temporary(error) && error.status !== 404) throw error;
+                core.warning('Pages status temporarily unavailable (HTTP ' + (error.status || '?') + ').');
+                continue;
+              }
               if (data.status === 'succeed') {
-                core.setOutput('page_url', deployment.page_url);
-                core.info('Pages reports success: ' + deployment.page_url);
+                core.setOutput('page_url', pageUrl);
+                core.info('Pages reports success: ' + pageUrl);
                 return;
               }
               if (['deployment_failed', 'deployment_content_failed', 'deployment_cancelled', 'deployment_lost'].includes(data.status)) {
@@ -286,6 +379,9 @@ jobs:
             throw new Error('Pages deployment did not finish within 3 minutes');
 
       - name: Check published Pages freshness
+        id: freshness
+        continue-on-error: true
+        if: ${{ !cancelled() && steps.deployment.outcome == 'success' }}
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           RUN_ID: ${{ github.run_id }}
@@ -337,3 +433,44 @@ jobs:
               time.sleep(10)
           PY
 
+      - name: Report Pages result
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          PICK_OUTCOME: ${{ steps.pick.outcome }}
+          PUBLISH: ${{ steps.pick.outputs.publish }}
+          SKIP_REASON: ${{ steps.pick.outputs.reason }}
+          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
+          ASSEMBLE_OUTCOME: ${{ steps.assemble.outcome }}
+          CONFIGURE_OUTCOME: ${{ steps.pages.outcome }}
+          UPLOAD_OUTCOME: ${{ steps.upload.outcome }}
+          DEPLOY_OUTCOME: ${{ steps.deployment.outcome }}
+          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
+        shell: bash
+        run: |
+          if [ "${PICK_OUTCOME}" != "success" ]; then
+            message="Publish decision failed; Pages was not deployed."
+          elif [ "${PUBLISH}" != "true" ]; then
+            if [ "${SKIP_REASON}" = "not_due" ]; then
+              message="Scheduled skip; current Pages release remains in place."
+            else
+              message="No new worker state confirmed; current Pages release remains in place."
+            fi
+          elif [ "${CHECKOUT_OUTCOME}" != "success" ] || [ "${ASSEMBLE_OUTCOME}" != "success" ] || [ "${CONFIGURE_OUTCOME}" != "success" ] || [ "${UPLOAD_OUTCOME}" != "success" ]; then
+            message="Preparation failed; no Pages deployment was started."
+          elif [ "${DEPLOY_OUTCOME}" != "success" ]; then
+            message="Pages API did not confirm deployment; its public status is uncertain."
+          elif [ "${FRESHNESS_OUTCOME}" != "success" ]; then
+            message="Pages reported success, but public freshness was not verified."
+          else
+            message="Pages deployment and public freshness verified."
+          fi
+          if [ "${PICK_OUTCOME}" != "success" ] || { [ "${PUBLISH}" = "true" ] && [ "${FRESHNESS_OUTCOME}" != "success" ]; }; then
+            echo "::warning::Deploy Pages: ${message} See the step logs."
+          fi
+          {
+            echo "### Deploy Pages"
+            echo "${message}"
+            echo "Workers: GW2 ${GW2_RESULT} (new state ${GW2_UPDATED:-false}), News ${RN_RESULT} (new state ${RN_UPDATED:-false})."
+            echo "Checkout: ${CHECKOUT_OUTCOME}; assemble: ${ASSEMBLE_OUTCOME}; configure: ${CONFIGURE_OUTCOME}; upload: ${UPLOAD_OUTCOME}; deploy: ${DEPLOY_OUTCOME}; public check: ${FRESHNESS_OUTCOME}."
+          } >> "${GITHUB_STEP_SUMMARY}"

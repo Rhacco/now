@@ -2,6 +2,10 @@ name: GW2 Action
 
 on:
   workflow_call:
+    outputs:
+      state_updated:
+        description: A new state commit was confirmed
+        value: ${{ jobs.update.outputs.state_updated }}
   workflow_dispatch:
 
 permissions:
@@ -9,6 +13,7 @@ permissions:
 
 concurrency:
   group: gw2action-update
+  queue: max
   cancel-in-progress: false
 
 env:
@@ -16,17 +21,24 @@ env:
 
 jobs:
   update:
+    outputs:
+      state_updated: ${{ steps.publish.outputs.state_updated }}
     runs-on: ubuntu-24.04
     timeout-minutes: 4
 
     steps:
       - name: Checkout engine branch
+        id: checkout
+        continue-on-error: true
         uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
       - name: Restore latest persistent cache
+        id: restore
+        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
+        continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
@@ -63,9 +75,15 @@ jobs:
           fi
 
       - name: Generate current GW2 page
+        id: generate
+        if: ${{ !cancelled() && steps.restore.outcome == 'success' }}
+        continue-on-error: true
         run: python3 worker-gw2a/app/engine.py
 
       - name: Publish page and persistent cache to state branch
+        id: publish
+        if: ${{ !cancelled() && steps.generate.outcome == 'success' }}
+        continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
@@ -113,8 +131,79 @@ jobs:
 
           if [ "${STATE_EXISTS}" -eq 1 ]; then
             git -C "${STATE_DIR}" commit --amend --no-edit
-            git -C "${STATE_DIR}" push --force-with-lease origin "HEAD:${STATE_BRANCH}"
+            expected_remote="$(git rev-parse "refs/remotes/origin/${STATE_BRANCH}")"
           else
             git -C "${STATE_DIR}" commit -m "Initialize GW2 action state"
-            git -C "${STATE_DIR}" push origin "HEAD:${STATE_BRANCH}"
+            expected_remote=""
           fi
+
+          new_head="$(git -C "${STATE_DIR}" rev-parse HEAD)"
+          for attempt in 1 2 3; do
+            if [ "${STATE_EXISTS}" -eq 1 ]; then
+              if git -C "${STATE_DIR}" push \
+                "--force-with-lease=refs/heads/${STATE_BRANCH}:${expected_remote}" \
+                origin "HEAD:refs/heads/${STATE_BRANCH}"; then
+                break
+              fi
+            else
+              if git -C "${STATE_DIR}" push origin "HEAD:refs/heads/${STATE_BRANCH}"; then
+                break
+              fi
+            fi
+
+            # The remote may have accepted the push despite a broken response.
+            for check in 1 2 3; do
+              if remote_line="$(git ls-remote --heads origin "refs/heads/${STATE_BRANCH}")"; then
+                break
+              fi
+              if [ "${check}" -eq 3 ]; then
+                echo "Unable to verify the remote state after a failed push." >&2
+                exit 1
+              fi
+              sleep "${check}"
+            done
+            remote_head="${remote_line%%$'\t'*}"
+            if [ "${remote_head}" = "${new_head}" ]; then
+              echo "State push was accepted despite a broken response."
+              break
+            fi
+            if [ "${remote_head}" != "${expected_remote}" ]; then
+              echo "State branch changed remotely; refusing to overwrite it." >&2
+              exit 1
+            fi
+            if [ "${attempt}" -eq 3 ]; then
+              echo "State push still failed after three attempts." >&2
+              exit 1
+            fi
+            echo "State push failed; retrying after a short pause."
+            sleep "$(( attempt * 2 ))"
+          done
+
+          echo "state_updated=true" >> "${GITHUB_OUTPUT}"
+
+      - name: Report update result
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
+          RESTORE_OUTCOME: ${{ steps.restore.outcome }}
+          GENERATE_OUTCOME: ${{ steps.generate.outcome }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+          STATE_UPDATED: ${{ steps.publish.outputs.state_updated }}
+        shell: bash
+        run: |
+          if [ "${PUBLISH_OUTCOME}" = "success" ]; then
+            if [ "${STATE_UPDATED}" = "true" ]; then
+              message="GW2 Action: new state commit confirmed."
+            else
+              message="GW2 Action: no changed state to publish."
+            fi
+          else
+            message="GW2 Action: update not confirmed; no fresh state is assumed."
+            echo "::warning::${message} See the failed step above."
+          fi
+          {
+            echo "### GW2 Action"
+            echo "${message}"
+            echo "Checkout: ${CHECKOUT_OUTCOME}; restore: ${RESTORE_OUTCOME}; generate: ${GENERATE_OUTCOME}; publish: ${PUBLISH_OUTCOME}."
+          } >> "${GITHUB_STEP_SUMMARY}"
