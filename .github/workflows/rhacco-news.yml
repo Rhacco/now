@@ -1,4 +1,5 @@
 name: Rhacco News
+run-name: "${{ github.event_name == 'schedule' && 'News: Start full update' || 'News: Update' }}"
 
 on:
   workflow_call:
@@ -17,32 +18,17 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 env:
   STATE_BRANCH: rhacco-news-state
 
 jobs:
-  scheduled_full_site:
-    name: Refresh all sites via Update & Deploy
-    if: ${{ github.event_name == 'schedule' && !inputs.called_by_central }}
-    runs-on: ubuntu-24.04
-    timeout-minutes: 3
-    permissions:
-      actions: write
-    steps:
-      - name: Trigger complete update and Pages deploy
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          set -euo pipefail
-          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
-
   update:
-    if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
+    name: ${{ github.event_name == 'schedule' && !inputs.called_by_central && 'Start full update' || 'Update' }}
+    # Standalone schedules relay a full refresh without waiting for an update slot.
     concurrency:
-      group: rhacco-news-update
+      group: ${{ github.event_name == 'schedule' && !inputs.called_by_central && format('rhacco-news-update-schedule-{0}', github.run_id) || 'rhacco-news-update' }}
       queue: max
       cancel-in-progress: false
     outputs:
@@ -51,7 +37,18 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout engine branch
+      - name: Start full update
+        if: ${{ github.event_name == 'schedule' && !inputs.called_by_central }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
+
+      - name: Checkout code
+        if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
         id: checkout
         continue-on-error: true
         uses: actions/checkout@v7
@@ -67,7 +64,7 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Restore latest persistent cache
+      - name: Restore cache
         id: restore
         if: ${{ !cancelled() && steps.python.outcome == 'success' }}
         continue-on-error: true
@@ -107,7 +104,7 @@ jobs:
             fi
           fi
 
-      - name: Refresh Rhacco News
+      - name: Build News page
         id: generate
         if: ${{ !cancelled() && steps.restore.outcome == 'success' }}
         continue-on-error: true
@@ -116,7 +113,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python3 worker-rnews/app/engine.py
 
-      - name: Publish page and persistent cache to state branch
+      - name: Save page + cache
         id: publish
         if: ${{ !cancelled() && steps.generate.outcome == 'success' }}
         continue-on-error: true
@@ -217,8 +214,8 @@ jobs:
 
           echo "state_updated=true" >> "${GITHUB_OUTPUT}"
 
-      - name: Report update result
-        if: ${{ !cancelled() }}
+      - name: Update summary
+        if: ${{ !cancelled() && (github.event_name != 'schedule' || inputs.called_by_central) }}
         continue-on-error: true
         env:
           CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
