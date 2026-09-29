@@ -1,5 +1,5 @@
 name: Joke Machine
-run-name: "${{ github.event_name == 'schedule' && 'Joke check + full site' || 'Joke: Manual update' }}"
+run-name: "${{ github.event_name == 'schedule' && 'Joke Check & Full Update' || 'Joke: Manual Update' }}"
 
 on:
   workflow_dispatch:
@@ -12,14 +12,14 @@ permissions:
 
 jobs:
   scheduled_full_site:
-    name: Start full update
+    name: Start Full Update
     if: ${{ github.event_name == 'schedule' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 3
     permissions:
       actions: write
     steps:
-      - name: Start full update
+      - name: Start Full Update
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -29,7 +29,7 @@ jobs:
           gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
 
   joke-machine:
-    name: Joke check
+    name: Joke Check
     runs-on: ubuntu-24.04
     concurrency:
       group: joke-machine-state
@@ -40,7 +40,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
-      - name: Restore joke state
+      - name: Restore Joke State
         id: restore
         shell: bash
         run: |
@@ -77,7 +77,7 @@ jobs:
           done
           echo "State restored."
 
-      - name: Check joke due
+      - name: Check Joke Due
         id: due
         shell: bash
         env:
@@ -100,7 +100,7 @@ jobs:
           console.log(due ? "New joke is due." : "Recent joke found; skipping this check.");
           JS
 
-      - name: Generate joke
+      - name: Generate Joke
         id: run_joke
         if: steps.due.outputs.run == 'true'
         working-directory: worker-jmac
@@ -110,7 +110,7 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: node app/main.js
 
-      - name: Save joke state
+      - name: Save Joke State
         if: ${{ always() && steps.restore.outcome == 'success' && steps.run_joke.outcome != 'skipped' }}
         shell: bash
         run: |

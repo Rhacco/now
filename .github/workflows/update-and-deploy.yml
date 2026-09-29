@@ -1,5 +1,5 @@
 name: Update & Deploy
-run-name: "${{ github.event_name == 'workflow_dispatch' && inputs.mode != 'full' && 'Rotate + deploy' || 'Full update + deploy' }}"
+run-name: "${{ github.event_name == 'workflow_dispatch' && inputs.mode != 'full' && 'Rotate & Deploy' || 'Full Update & Deploy' }}"
 
 on:
   workflow_dispatch:
@@ -36,14 +36,14 @@ permissions:
 
 jobs:
   choose_workers:
-    name: Select workers
+    name: Select Workers
     runs-on: ubuntu-24.04
     outputs:
       gw2_action: ${{ steps.choose.outputs.gw2_action }}
       rhacco_news: ${{ steps.choose.outputs.rhacco_news }}
       full: ${{ steps.choose.outputs.full }}
     steps:
-      - name: Pick rotation
+      - name: Pick Rotation
         id: choose
         shell: bash
         env:
@@ -120,7 +120,7 @@ jobs:
       RN_UPDATED: ${{ needs.rhacco_news.outputs.state_updated }}
 
     steps:
-      - name: Check publish
+      - name: Check Publish
         id: pick
         if: ${{ !cancelled() }}
         continue-on-error: true
@@ -147,7 +147,7 @@ jobs:
             echo "No new worker state confirmed; keep the current Pages release."
           fi
 
-      - name: Checkout code
+      - name: Checkout Code
         id: checkout
         continue-on-error: true
         if: ${{ !cancelled() && steps.pick.outputs.publish == 'true' }}
@@ -441,7 +441,7 @@ jobs:
             }
             throw new Error('Pages deployment did not finish within 3 minutes');
 
-      - name: Verify live Pages
+      - name: Verify Live Pages
         id: freshness
         continue-on-error: true
         if: ${{ !cancelled() && steps.deployment.outcome == 'success' }}
@@ -496,7 +496,7 @@ jobs:
               time.sleep(10)
           PY
 
-      - name: Deploy summary
+      - name: Deploy Summary
         if: ${{ !cancelled() }}
         continue-on-error: true
         env:

@@ -1,10 +1,10 @@
-// Cloudflare Cron itself can run up to every minute.
+// Run Cloudflare Cron every minute; A1 dispatches every third minute.
 
 // Necessary variables/secrets: GH_OWNER, GH_PAT, GH_REPO, GH_REPO_BRANCH
 // Configure/add: Matching <ACTION>_ENABLED and <ACTION>_WORKFLOW variables in Cloudflare
 
 const ACTIONS = [
-  { key: "A1" },
+  { key: "A1", everyMinutes: 3 },
   { key: "A2", minutes: [19, 49] },
 ];
 
@@ -13,9 +13,10 @@ export default {
     const minute = new Date(controller.scheduledTime).getUTCMinutes();
 
     const jobs = ACTIONS
-      .filter(({ key, minutes }) =>
+      .filter(({ key, minutes, everyMinutes }) =>
         String(env[`${key}_ENABLED`] ?? "").trim() !== "0" &&
-        (!minutes || minutes.includes(minute)),
+        (!minutes || minutes.includes(minute)) &&
+        (!everyMinutes || minute % everyMinutes === 0),
       )
       .map(({ key }) => triggerWorkflow(env, required(env, `${key}_WORKFLOW`)));
 

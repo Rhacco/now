@@ -1,5 +1,5 @@
 name: Rhacco News
-run-name: "${{ github.event_name == 'schedule' && 'News: Start full update' || 'News: Update' }}"
+run-name: "${{ github.event_name == 'schedule' && 'News: Start Full Update' || 'News: Update' }}"
 
 on:
   workflow_call:
@@ -25,7 +25,7 @@ env:
 
 jobs:
   update:
-    name: ${{ github.event_name == 'schedule' && !inputs.called_by_central && 'Start full update' || 'Update' }}
+    name: ${{ github.event_name == 'schedule' && !inputs.called_by_central && 'Start Full Update' || 'Update' }}
     # Standalone schedules relay a full refresh without waiting for an update slot.
     concurrency:
       group: ${{ github.event_name == 'schedule' && !inputs.called_by_central && format('rhacco-news-update-schedule-{0}', github.run_id) || 'rhacco-news-update' }}
@@ -37,7 +37,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Start full update
+      - name: Start Full Update
         if: ${{ github.event_name == 'schedule' && !inputs.called_by_central }}
         env:
           GH_TOKEN: ${{ github.token }}
@@ -47,7 +47,7 @@ jobs:
           set -euo pipefail
           gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
 
-      - name: Checkout code
+      - name: Checkout Code
         if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
         id: checkout
         continue-on-error: true
@@ -56,7 +56,7 @@ jobs:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
-      - name: Set up Python
+      - name: Set Up Python
         id: python
         if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
         continue-on-error: true
@@ -64,7 +64,7 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Restore cache
+      - name: Restore Cache
         id: restore
         if: ${{ !cancelled() && steps.python.outcome == 'success' }}
         continue-on-error: true
@@ -104,7 +104,7 @@ jobs:
             fi
           fi
 
-      - name: Build News page
+      - name: Build News Page
         id: generate
         if: ${{ !cancelled() && steps.restore.outcome == 'success' }}
         continue-on-error: true
@@ -113,7 +113,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: python3 worker-rnews/app/engine.py
 
-      - name: Save page + cache
+      - name: Save Page & Cache
         id: publish
         if: ${{ !cancelled() && steps.generate.outcome == 'success' }}
         continue-on-error: true
@@ -214,7 +214,7 @@ jobs:
 
           echo "state_updated=true" >> "${GITHUB_OUTPUT}"
 
-      - name: Update summary
+      - name: Update Summary
         if: ${{ !cancelled() && (github.event_name != 'schedule' || inputs.called_by_central) }}
         continue-on-error: true
         env:
