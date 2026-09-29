@@ -45,7 +45,7 @@ jobs:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           set -euo pipefail
-          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
+          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full
 
       - name: Checkout Code
         if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
@@ -215,16 +215,13 @@ jobs:
         run: |
           if [ "${PUBLISH_OUTCOME}" = "success" ]; then
             if [ "${STATE_UPDATED}" = "true" ]; then
-              message="GW2 Action: new state commit confirmed."
+              message="**New GW2 page saved.**"
             else
-              message="GW2 Action: no changed state to publish."
+              message="**GW2 page is already current.**"
             fi
           else
-            message="GW2 Action: update not confirmed; no fresh state is assumed."
-            echo "::warning::${message} See the failed step above."
+            message="**GW2 update could not be confirmed.**"
+            echo "::warning::GW2 update not confirmed; see job logs."
           fi
-          {
-            echo "### GW2 Action"
-            echo "${message}"
-            echo "Checkout: ${CHECKOUT_OUTCOME}; restore: ${RESTORE_OUTCOME}; generate: ${GENERATE_OUTCOME}; publish: ${PUBLISH_OUTCOME}."
-          } >> "${GITHUB_STEP_SUMMARY}"
+          printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
+          printf 'Steps: checkout=%s restore=%s build=%s save=%s\n' "${CHECKOUT_OUTCOME}" "${RESTORE_OUTCOME}" "${GENERATE_OUTCOME}" "${PUBLISH_OUTCOME}"

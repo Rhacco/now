@@ -5,16 +5,12 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: Rotate one worker, or refresh all workers and Pages
+        description: "Auto: One Worker, Full: Both"
         type: choice
         options:
           - auto
           - full
         default: auto
-      deploy_now:
-        description: Compatibility flag for existing dispatch callers; fresh pages publish automatically
-        type: boolean
-        default: false
   schedule:
     - cron: "*/5 * * * *"
   push:
@@ -511,29 +507,37 @@ jobs:
           FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
         shell: bash
         run: |
+          detail=""
           if [ "${PICK_OUTCOME}" != "success" ]; then
-            message="Publish decision failed; Pages was not deployed."
+            message="**Pages update could not be started.**"
           elif [ "${PUBLISH}" != "true" ]; then
             if [ "${SKIP_REASON}" = "incomplete_full_update" ]; then
-              message="Full update was incomplete; the current Pages release remains in place."
+              message="**Pages unchanged.** Full update was incomplete."
             else
-              message="No new worker state confirmed; current Pages release remains in place."
+              message="**Pages unchanged.** No new data was saved."
             fi
           elif [ "${CHECKOUT_OUTCOME}" != "success" ] || [ "${ASSEMBLE_OUTCOME}" != "success" ] || [ "${CONFIGURE_OUTCOME}" != "success" ] || [ "${UPLOAD_OUTCOME}" != "success" ]; then
-            message="Preparation failed; no Pages deployment was started."
+            message="**Pages unchanged.** Site preparation failed."
           elif [ "${DEPLOY_OUTCOME}" != "success" ]; then
-            message="Pages API did not confirm deployment; its public status is uncertain."
+            message="**Deployment could not be confirmed.**"
           elif [ "${FRESHNESS_OUTCOME}" != "success" ]; then
-            message="Pages reported success, but public freshness was not verified."
+            message="**Public pages could not be verified.**"
           else
-            message="Pages deployment and public freshness verified."
+            message="**Both sites are live and verified.**"
+            if [ "${GW2_UPDATED}" = "true" ] && [ "${RN_UPDATED}" = "true" ]; then
+              detail="Fresh data: GW2 Action & Rhacco News."
+            elif [ "${GW2_UPDATED}" = "true" ]; then
+              detail="Fresh data: GW2 Action."
+            elif [ "${RN_UPDATED}" = "true" ]; then
+              detail="Fresh data: Rhacco News."
+            fi
           fi
           if [ "${PICK_OUTCOME}" != "success" ] || { [ "${PUBLISH}" = "true" ] && [ "${FRESHNESS_OUTCOME}" != "success" ]; }; then
-            echo "::warning::Deploy Pages: ${message} See the step logs."
+            echo "::warning::Pages update not confirmed; see job logs."
           fi
-          {
-            echo "### Deploy Pages"
-            echo "${message}"
-            echo "Workers: GW2 ${GW2_RESULT} (new state ${GW2_UPDATED:-false}), News ${RN_RESULT} (new state ${RN_UPDATED:-false})."
-            echo "Checkout: ${CHECKOUT_OUTCOME}; assemble: ${ASSEMBLE_OUTCOME}; configure: ${CONFIGURE_OUTCOME}; upload: ${UPLOAD_OUTCOME}; deploy: ${DEPLOY_OUTCOME}; public check: ${FRESHNESS_OUTCOME}."
-          } >> "${GITHUB_STEP_SUMMARY}"
+          printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
+          if [ -n "${detail}" ]; then
+            printf '%s\n' "${detail}" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+          printf 'Workers: GW2=%s (updated=%s), News=%s (updated=%s)\n' "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${RN_RESULT}" "${RN_UPDATED:-false}"
+          printf 'Steps: selection=%s checkout=%s build=%s configure=%s upload=%s deploy=%s verify=%s\n' "${PICK_OUTCOME}" "${CHECKOUT_OUTCOME}" "${ASSEMBLE_OUTCOME}" "${CONFIGURE_OUTCOME}" "${UPLOAD_OUTCOME}" "${DEPLOY_OUTCOME}" "${FRESHNESS_OUTCOME}"
