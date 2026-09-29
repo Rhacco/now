@@ -10,7 +10,7 @@ on:
         options:
           - auto
           - full
-        default: auto
+        default: full
   schedule:
     - cron: "*/5 * * * *"
   push:
@@ -93,8 +93,8 @@ jobs:
       - choose_workers
       - gw2_action
       - rhacco_news
-    # Publish only when a worker confirms a new state commit. Keep the existing
-    # release when a worker or Pages cannot confirm a fresh deployment.
+    # Full runs publish after both workers finish successfully; rotating runs
+    # publish when their selected worker saved new state.
     if: ${{ !cancelled() }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
@@ -114,6 +114,8 @@ jobs:
       RN_RESULT: ${{ needs.rhacco_news.result }}
       GW2_UPDATED: ${{ needs.gw2_action.outputs.state_updated }}
       RN_UPDATED: ${{ needs.rhacco_news.outputs.state_updated }}
+      GW2_READY: ${{ needs.gw2_action.outputs.state_ready }}
+      RN_READY: ${{ needs.rhacco_news.outputs.state_ready }}
 
     steps:
       - name: Check Publish
@@ -126,21 +128,25 @@ jobs:
         run: |
           set -euo pipefail
           if [ "${FULL_UPDATE}" = "true" ]; then
-            if [ "${GW2_UPDATED}" = "true" ] && [ "${RN_UPDATED}" = "true" ]; then
+            if [ "${GW2_READY}" = "true" ] && [ "${RN_READY}" = "true" ]; then
               echo "publish=true" >> "${GITHUB_OUTPUT}"
-              echo "Complete scheduled/push/full update; publish both refreshed pages."
+              echo "Both full-update workers completed; publish both pages."
             else
               echo "publish=false" >> "${GITHUB_OUTPUT}"
               echo "reason=incomplete_full_update" >> "${GITHUB_OUTPUT}"
-              echo "At least one full-update worker did not confirm a new state; keep the current Pages release."
+              echo "At least one full-update worker failed; keep the current Pages release."
             fi
           elif [ "${GW2_UPDATED}" = "true" ] || [ "${RN_UPDATED}" = "true" ]; then
             echo "publish=true" >> "${GITHUB_OUTPUT}"
             echo "Publish both Pages after the confirmed rotating-worker update."
-          else
+          elif [ "${GW2_READY}" = "true" ] || [ "${RN_READY}" = "true" ]; then
             echo "publish=false" >> "${GITHUB_OUTPUT}"
             echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
             echo "No new worker state confirmed; keep the current Pages release."
+          else
+            echo "publish=false" >> "${GITHUB_OUTPUT}"
+            echo "reason=incomplete_update" >> "${GITHUB_OUTPUT}"
+            echo "Worker update failed; keep the current Pages release."
           fi
 
       - name: Checkout Code
@@ -157,6 +163,8 @@ jobs:
         continue-on-error: true
         if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
         shell: bash
+        env:
+          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         run: |
           set -euo pipefail
 
@@ -294,12 +302,15 @@ jobs:
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
 
-          # A dispatch on the same default-branch commit has the same GITHUB_SHA.
-          # Use a real, freshly published state commit for each Pages deployment.
+          # Prefer a new state commit over the unchanged workflow commit.
+          # Full refreshes can also publish valid, unchanged state.
           if [ "${RN_UPDATED}" = true ] && [ "${HAS_RN}" -eq 1 ]; then
             build_branch="${RN_STATE_BRANCH}"
           elif [ "${GW2_UPDATED}" = true ] && [ "${HAS_GW2}" -eq 1 ]; then
             build_branch="${GW2_STATE_BRANCH}"
+          elif [ "${FULL_UPDATE}" = "true" ] && [ "${HAS_RN}" -eq 1 ]; then
+            # Full refreshes may contain valid state without a new commit.
+            build_branch="${RN_STATE_BRANCH}"
           else
             echo "Neither worker published a fresh state; refusing a stale deployment." >&2
             exit 1
@@ -513,6 +524,8 @@ jobs:
           elif [ "${PUBLISH}" != "true" ]; then
             if [ "${SKIP_REASON}" = "incomplete_full_update" ]; then
               message="**Pages unchanged.** Full update was incomplete."
+            elif [ "${SKIP_REASON}" = "incomplete_update" ]; then
+              message="**Pages unchanged.** Worker update failed."
             else
               message="**Pages unchanged.** No new data was saved."
             fi
@@ -541,3 +554,19 @@ jobs:
           fi
           printf 'Workers: GW2=%s (updated=%s), News=%s (updated=%s)\n' "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${RN_RESULT}" "${RN_UPDATED:-false}"
           printf 'Steps: selection=%s checkout=%s build=%s configure=%s upload=%s deploy=%s verify=%s\n' "${PICK_OUTCOME}" "${CHECKOUT_OUTCOME}" "${ASSEMBLE_OUTCOME}" "${CONFIGURE_OUTCOME}" "${UPLOAD_OUTCOME}" "${DEPLOY_OUTCOME}" "${FRESHNESS_OUTCOME}"
+
+      - name: Confirm Result
+        if: ${{ !cancelled() }}
+        env:
+          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
+          PICK_OUTCOME: ${{ steps.pick.outcome }}
+          PUBLISH: ${{ steps.pick.outputs.publish }}
+          SKIP_REASON: ${{ steps.pick.outputs.reason }}
+          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
+        run: |
+          if [ "${PICK_OUTCOME}" != "success" ]; then exit 1; fi
+          if [ "${PUBLISH}" != "true" ]; then
+            if [ "${FULL_UPDATE}" != "true" ] && [ "${SKIP_REASON}" = "no_fresh_state" ]; then exit 0; fi
+            exit 1
+          fi
+          [ "${FRESHNESS_OUTCOME}" = "success" ]

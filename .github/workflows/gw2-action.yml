@@ -1,5 +1,5 @@
 name: GW2 Action
-run-name: "${{ github.event_name == 'schedule' && 'GW2A: Start Full Update' || 'GW2A: Update' }}"
+run-name: "${{ !inputs.called_by_central && 'GW2A: Start Full Update' || 'GW2A: Update' }}"
 
 on:
   workflow_call:
@@ -12,6 +12,9 @@ on:
       state_updated:
         description: A new state commit was confirmed
         value: ${{ jobs.update.outputs.state_updated }}
+      state_ready:
+        description: The state update finished successfully, even if no files changed
+        value: ${{ jobs.update.outputs.state_ready }}
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
@@ -25,20 +28,21 @@ env:
 
 jobs:
   update:
-    name: ${{ github.event_name == 'schedule' && !inputs.called_by_central && 'Start Full Update' || 'Update' }}
-    # Standalone schedules relay a full refresh without waiting for an update slot.
+    name: ${{ !inputs.called_by_central && 'Start Full Update' || 'Update' }}
+    # Standalone manual and scheduled runs request a complete site refresh.
     concurrency:
-      group: ${{ github.event_name == 'schedule' && !inputs.called_by_central && format('gw2action-update-schedule-{0}', github.run_id) || 'gw2action-update' }}
+      group: ${{ !inputs.called_by_central && format('gw2action-update-standalone-{0}', github.run_id) || 'gw2action-update' }}
       queue: max
       cancel-in-progress: false
     outputs:
       state_updated: ${{ steps.publish.outputs.state_updated }}
+      state_ready: ${{ steps.publish.outcome == 'success' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 4
 
     steps:
       - name: Start Full Update
-        if: ${{ github.event_name == 'schedule' && !inputs.called_by_central }}
+        if: ${{ !inputs.called_by_central }}
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -48,7 +52,7 @@ jobs:
           gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full
 
       - name: Checkout Code
-        if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
+        if: ${{ inputs.called_by_central }}
         id: checkout
         continue-on-error: true
         uses: actions/checkout@v7
@@ -203,7 +207,7 @@ jobs:
           echo "state_updated=true" >> "${GITHUB_OUTPUT}"
 
       - name: Update Summary
-        if: ${{ !cancelled() && (github.event_name != 'schedule' || inputs.called_by_central) }}
+        if: ${{ !cancelled() && inputs.called_by_central }}
         continue-on-error: true
         env:
           CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}

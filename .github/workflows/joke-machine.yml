@@ -1,5 +1,5 @@
 name: Joke Machine
-run-name: "${{ github.event_name == 'schedule' && 'Joke Check & Full Update' || 'Joke: Manual Update' }}"
+run-name: Joke Check
 
 on:
   workflow_dispatch:
@@ -11,23 +11,6 @@ permissions:
   contents: write
 
 jobs:
-  scheduled_full_site:
-    name: Start Full Update
-    if: ${{ github.event_name == 'schedule' }}
-    runs-on: ubuntu-24.04
-    timeout-minutes: 3
-    permissions:
-      actions: write
-    steps:
-      - name: Start Full Update
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          set -euo pipefail
-          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full
-
   joke-machine:
     name: Joke Check
     runs-on: ubuntu-24.04

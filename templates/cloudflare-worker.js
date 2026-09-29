@@ -30,6 +30,9 @@ async function triggerWorkflow(env, workflow) {
   const repo_branch = required(env, "GH_REPO_BRANCH");
   const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${encodeURIComponent(workflow)}/dispatches`;
 
+  // Only the central external trigger rotates its data workers.
+  const inputs = workflow === "update-and-deploy.yml" ? { mode: "auto" } : undefined;
+
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -39,7 +42,7 @@ async function triggerWorkflow(env, workflow) {
       "User-Agent": "cloudflare-github-scheduler",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ ref: repo_branch }),
+    body: JSON.stringify(inputs ? { ref: repo_branch, inputs } : { ref: repo_branch }),
   });
 
   if (!response.ok) {
