@@ -51,7 +51,9 @@ jobs:
             selected=("${workers[@]}")
             echo "full=true" >> "${GITHUB_OUTPUT}"
           else
-            selected=("${workers[$(( (GITHUB_RUN_NUMBER - 1) % ${#workers[@]} ))]}")
+            # Full runs must not shift the external two-minute rotation.
+            rotation_slot=$(( $(date -u +%s) / 120 ))
+            selected=("${workers[$(( rotation_slot % ${#workers[@]} ))]}")
             echo "full=false" >> "${GITHUB_OUTPUT}"
           fi
           for worker in "${workers[@]}"; do
@@ -232,20 +234,30 @@ jobs:
             exit 1
           fi
 
-          # Do not replace the site with an outdated state page from either worker.
+          # The selected worker must be fresh. Keep the other valid page even if
+          # its worker has not run recently, so it cannot block a fresh update.
           python3 - <<'PY'
+          import os
           import re
           import time
           from pathlib import Path
 
           now_ms = int(time.time() * 1000)
-          for path in ("_site/rn/index.html", "_site/gw/index.html"):
+          pages = {
+              "_site/rn/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["RN_UPDATED"] == "true",
+              "_site/gw/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["GW2_UPDATED"] == "true",
+          }
+          for path, must_be_fresh in pages.items():
               match = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', Path(path).read_bytes())
               if not match:
                   raise SystemExit(f"{path}: missing generation time")
               age_ms = now_ms - int(match.group(1))
-              if age_ms > 900000 or age_ms < -120000:
-                  raise SystemExit(f"{path}: state page is too old or has a future timestamp")
+              if age_ms < -120000:
+                  raise SystemExit(f"{path}: state page has a future timestamp")
+              if must_be_fresh and age_ms > 900000:
+                  raise SystemExit(f"{path}: selected state page is too old")
+              if not must_be_fresh and age_ms > 900000:
+                  print(f"{path}: retaining the last valid page from the unselected worker")
           PY
 
           {
@@ -455,6 +467,7 @@ jobs:
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           RUN_ID: ${{ github.run_id }}
+          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         run: |
           python3 - <<'PY'
           import os
@@ -466,6 +479,10 @@ jobs:
 
           base = os.environ["PAGE_URL"].rstrip("/") + "/"
           paths = ("gw/index.html", "rn/index.html")
+          must_be_fresh = {
+              "gw/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["GW2_UPDATED"] == "true",
+              "rn/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["RN_UPDATED"] == "true",
+          }
           expected_times = {}
           for path in paths:
               local = Path("_site") / path
@@ -491,7 +508,7 @@ jobs:
                       age_seconds = max(0, (now_ms - published) // 1000)
                       lag_seconds = max(0, (expected - published) // 1000)
                       print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
-                      if age_seconds > 900 or lag_seconds > 120:
+                      if (must_be_fresh[path] and age_seconds > 900) or lag_seconds > 120:
                           failures.append(f"{path}: Pages is serving an old page")
                   except Exception as error:
                       failures.append(f"{path}: public page could not be checked: {error}")
