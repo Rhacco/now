@@ -29,6 +29,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
   pages: write
   id-token: write
 
@@ -66,6 +67,9 @@ jobs:
           printf 'Selected workers: %s\n' "${selected[*]}"
 
   gw2_action:
+    permissions:
+      contents: write
+      actions: write
     name: GW2 Action
     needs: choose_workers
     if: ${{ needs.choose_workers.outputs.gw2_action == 'true' }}
@@ -75,6 +79,9 @@ jobs:
     secrets: inherit
 
   rhacco_news:
+    permissions:
+      contents: write
+      actions: write
     name: Rhacco News
     needs: choose_workers
     if: ${{ needs.choose_workers.outputs.rhacco_news == 'true' }}
@@ -250,26 +257,24 @@ jobs:
               *{box-sizing:border-box}
               html,body{margin:0;width:100%;min-height:100%;background:#101114;color:#f7f7f8}
               body{min-height:100vh;min-height:100svh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-              main{width:min(440px,100%);margin:auto;display:grid;gap:14px;align-content:center;justify-items:stretch}
+              main{width:min(440px,100%);margin:auto;display:grid;gap:14px;align-content:center;justify-items:stretch;transform:translateY(17px)}
               a{width:100%;min-height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:12px 20px;border:1px solid #30323a;border-radius:15px;background:#181a1f;color:#f7f7f8;text-align:center;text-decoration:none;box-shadow:0 8px 26px rgba(0,0,0,.18);transition:background .15s ease,border-color .15s ease,transform .15s ease,box-shadow .15s ease}
               a .title{font-size:17px;font-weight:650;letter-spacing:.01em}
               a .info{font-size:11px;font-weight:400;line-height:1.3;color:#b2b6c1}
               a:hover{background:#20232a;border-color:#555b69;transform:translateY(-1px);box-shadow:0 11px 30px rgba(0,0,0,.24)}
               a:active{transform:translateY(0)}
               a:focus-visible{outline:3px solid #8f7cff;outline-offset:3px}
-              .workflow-badge{justify-self:center;width:auto;min-height:0;display:inline-flex;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;transition:none}
+              .workflow-status{position:fixed;inset-inline:0;bottom:max(20px,env(safe-area-inset-bottom));display:flex;justify-content:center;pointer-events:none}
+              .workflow-badge{width:auto;min-height:0;display:inline-flex;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;transition:none;pointer-events:auto}
               .workflow-badge:hover,.workflow-badge:active{background:transparent;border:0;box-shadow:none;transform:none}
               .workflow-badge img{display:block;max-width:100%;height:auto}
-              @media (max-width:520px){body{padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}main{gap:12px}a{min-height:64px;border-radius:13px}a .title{font-size:16px}}
+              @media (max-width:520px){body{padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}main{gap:12px;transform:translateY(16px)}.workflow-status{bottom:max(16px,env(safe-area-inset-bottom))}a{min-height:64px;border-radius:13px}a .title{font-size:16px}}
               @media (min-width:900px){main{width:min(460px,100%)}}
               @media (prefers-reduced-motion:reduce){a{transition:none}}
             </style>
           </head>
           <body>
             <main aria-label="Pages">
-              <a class="workflow-badge" href="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml">
-                <img src="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml/badge.svg" alt="Update & Deploy workflow status">
-              </a>
           HTML
             if [ "${HAS_RN}" -eq 1 ]; then
               echo '      <a href="rn/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
@@ -279,6 +284,11 @@ jobs:
             fi
             cat <<'HTML'
             </main>
+            <footer class="workflow-status" aria-label="Workflow status">
+              <a class="workflow-badge" href="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml">
+                <img src="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml/badge.svg" alt="Update & Deploy workflow status">
+              </a>
+            </footer>
           </body>
           </html>
           HTML
