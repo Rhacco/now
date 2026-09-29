@@ -4,18 +4,34 @@ on:
   workflow_dispatch:
   schedule:
     # Poll every five minutes; publish at most once per hour.
-    - cron: "3-59/5 * * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
 
-concurrency:
-  group: joke-machine-state
-  cancel-in-progress: false
-
 jobs:
+  scheduled_full_site:
+    name: Refresh all sites via Update & Deploy
+    if: ${{ github.event_name == 'schedule' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    permissions:
+      actions: write
+    steps:
+      - name: Trigger complete update and Pages deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
+
   joke-machine:
     runs-on: ubuntu-24.04
+    concurrency:
+      group: joke-machine-state
+      cancel-in-progress: false
     timeout-minutes: 25
 
     steps:

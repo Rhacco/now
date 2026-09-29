@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.8"
+ENGINE_VERSION = "2.2.9"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -339,13 +339,13 @@ ROTATING_EVENT_DESTINATIONS = {
     "Diessa Plateau": {"place": "Rancher's Wash", "waypoint": "[&BN0AAAA=]"},
     "Brisban Wildlands": {"place": "Venlin Vale", "waypoint": "[&BHUAAAA=]"},
     "Snowden Drifts": {"place": "The Frozen Sweeps", "waypoint": "[&BLQAAAA=]"},
-    "Gendarran Fields": {"place": "Provern Shore", "waypoint": "[&BOQAAAA=]"},
-    "Southsun Cove": {"place": "Kiel's Outpost", "waypoint": "[&BNwGAAA=]"},
-    "Metrica Province": {"place": "Muridian", "waypoint": "[&BEcAAAA=]"},
-    "Caledon Forest": {"place": "Twilight Arbor", "waypoint": "[&BEEFAAA=]"},
-    "Queensdale": {"place": "Swamplost Haven", "waypoint": "[&BPcAAAA=]"},
-    "Wayfarer Foothills": {"place": "Krennak's Homestead", "waypoint": "[&BMIDAAA=]"},
-    "Plains of Ashford": {"place": "Loreclaw", "waypoint": "[&BMcDAAA=]"},
+    "Gendarran Fields": {"place": "Cornucopian Fields", "waypoint": "[&BOMAAAA=]"},
+    "Southsun Cove": {"place": "Camp Karka", "waypoint": "[&BNcGAAA=]"},
+    "Metrica Province": {"place": "Desider Atum", "waypoint": "[&BEgAAAA=]"},
+    "Caledon Forest": {"place": "Mabon Market", "waypoint": "[&BDoBAAA=]"},
+    "Queensdale": {"place": "Phinney Ridge", "waypoint": "[&BPMAAAA=]"},
+    "Wayfarer Foothills": {"place": "Twinspur Haven", "waypoint": "[&BH0BAAA=]"},
+    "Plains of Ashford": {"place": "Ashford Forum", "waypoint": "[&BIQBAAA=]"},
 }
 
 ROTATING_EVENT_WIKI = {
@@ -1224,6 +1224,10 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
             seg = seg_by_id.get(item.get("r"), {})
             ev = seg.get("name", "")
             wp = seg.get("chatlink", "")
+            if ev == "Karka Queen":
+                # The boss can appear at several Southsun settlements. Its
+                # catalog point is near one edge; use the central fallback.
+                wp = ROTATING_EVENT_DESTINATIONS["Southsun Cove"]["waypoint"]
             # In this schedule format a shorter first partial segment is the
             # tail of an occurrence that started before UTC midnight. The
             # previous day's expansion already emits that real start time.

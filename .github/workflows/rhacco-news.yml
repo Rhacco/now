@@ -2,25 +2,49 @@ name: Rhacco News
 
 on:
   workflow_call:
+    inputs:
+      called_by_central:
+        description: The run was invoked by Update & Deploy
+        type: boolean
+        default: false
     outputs:
       state_updated:
         description: A new state commit was confirmed
         value: ${{ jobs.update.outputs.state_updated }}
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
-
-concurrency:
-  group: rhacco-news-update
-  queue: max
-  cancel-in-progress: false
 
 env:
   STATE_BRANCH: rhacco-news-state
 
 jobs:
+  scheduled_full_site:
+    name: Refresh all sites via Update & Deploy
+    if: ${{ github.event_name == 'schedule' && !inputs.called_by_central }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    permissions:
+      actions: write
+    steps:
+      - name: Trigger complete update and Pages deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full -f deploy_now=true
+
   update:
+    if: ${{ github.event_name != 'schedule' || inputs.called_by_central }}
+    concurrency:
+      group: rhacco-news-update
+      queue: max
+      cancel-in-progress: false
     outputs:
       state_updated: ${{ steps.publish.outputs.state_updated }}
     runs-on: ubuntu-24.04

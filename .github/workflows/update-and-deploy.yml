@@ -3,10 +3,19 @@ name: Update & Deploy
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: Rotate one worker, or refresh all workers and Pages
+        type: choice
+        options:
+          - auto
+          - full
+        default: auto
       deploy_now:
-        description: Publish Pages on this run (normally every fifth run)
+        description: Compatibility flag for existing dispatch callers; fresh pages publish automatically
         type: boolean
         default: false
+  schedule:
+    - cron: "*/5 * * * *"
   push:
     branches:
       - master
@@ -24,19 +33,60 @@ permissions:
   id-token: write
 
 jobs:
+  choose_workers:
+    name: Choose worker(s)
+    runs-on: ubuntu-24.04
+    outputs:
+      gw2_action: ${{ steps.choose.outputs.gw2_action }}
+      rhacco_news: ${{ steps.choose.outputs.rhacco_news }}
+      full: ${{ steps.choose.outputs.full }}
+    steps:
+      - name: Select workers by central run number
+        id: choose
+        shell: bash
+        env:
+          DISPATCH_MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+          workers=(gw2_action rhacco_news)
+          if [[ "${GITHUB_EVENT_NAME}" == "schedule" || "${GITHUB_EVENT_NAME}" == "push" || "${DISPATCH_MODE}" == "full" ]]; then
+            selected=("${workers[@]}")
+            echo "full=true" >> "${GITHUB_OUTPUT}"
+          else
+            selected=("${workers[$(( (GITHUB_RUN_NUMBER - 1) % ${#workers[@]} ))]}")
+            echo "full=false" >> "${GITHUB_OUTPUT}"
+          fi
+          for worker in "${workers[@]}"; do
+            enabled=false
+            for target in "${selected[@]}"; do
+              if [[ "${worker}" == "${target}" ]]; then enabled=true; fi
+            done
+            echo "${worker}=${enabled}" >> "${GITHUB_OUTPUT}"
+          done
+          printf 'Selected workers: %s\n' "${selected[*]}"
+
   gw2_action:
     name: GW2 Action
+    needs: choose_workers
+    if: ${{ needs.choose_workers.outputs.gw2_action == 'true' }}
     uses: ./.github/workflows/gw2-action.yml
+    with:
+      called_by_central: true
     secrets: inherit
 
   rhacco_news:
     name: Rhacco News
+    needs: choose_workers
+    if: ${{ needs.choose_workers.outputs.rhacco_news == 'true' }}
     uses: ./.github/workflows/rhacco-news.yml
+    with:
+      called_by_central: true
     secrets: inherit
 
   deploy_pages:
     name: Deploy Pages
     needs:
+      - choose_workers
       - gw2_action
       - rhacco_news
     # Publish only when a worker confirms a new state commit. Keep the existing
@@ -67,24 +117,26 @@ jobs:
         if: ${{ !cancelled() }}
         continue-on-error: true
         env:
-          DEPLOY_NOW: ${{ inputs.deploy_now }}
+          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         shell: bash
         run: |
           set -euo pipefail
-          # Workers update every dispatch; Pages publishes every fifth run.
-          if [ "${GITHUB_EVENT_NAME}" = "push" ] || [ "${DEPLOY_NOW}" = "true" ] || (( GITHUB_RUN_NUMBER % 5 == 0 )); then
-            if [ "${GW2_UPDATED}" = "true" ] || [ "${RN_UPDATED}" = "true" ]; then
+          if [ "${FULL_UPDATE}" = "true" ]; then
+            if [ "${GW2_UPDATED}" = "true" ] && [ "${RN_UPDATED}" = "true" ]; then
               echo "publish=true" >> "${GITHUB_OUTPUT}"
-              echo "Publish Pages on this run."
+              echo "Complete scheduled/push/full update; publish both refreshed pages."
             else
               echo "publish=false" >> "${GITHUB_OUTPUT}"
-              echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
-              echo "No new worker state confirmed; keep the current Pages release."
+              echo "reason=incomplete_full_update" >> "${GITHUB_OUTPUT}"
+              echo "At least one full-update worker did not confirm a new state; keep the current Pages release."
             fi
+          elif [ "${GW2_UPDATED}" = "true" ] || [ "${RN_UPDATED}" = "true" ]; then
+            echo "publish=true" >> "${GITHUB_OUTPUT}"
+            echo "Publish both Pages after the confirmed rotating-worker update."
           else
             echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "reason=not_due" >> "${GITHUB_OUTPUT}"
-            echo "Workers will update; Pages publishes every fifth dispatch."
+            echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
+            echo "No new worker state confirmed; keep the current Pages release."
           fi
 
       - name: Checkout repository metadata
@@ -451,8 +503,8 @@ jobs:
           if [ "${PICK_OUTCOME}" != "success" ]; then
             message="Publish decision failed; Pages was not deployed."
           elif [ "${PUBLISH}" != "true" ]; then
-            if [ "${SKIP_REASON}" = "not_due" ]; then
-              message="Scheduled skip; current Pages release remains in place."
+            if [ "${SKIP_REASON}" = "incomplete_full_update" ]; then
+              message="Full update was incomplete; the current Pages release remains in place."
             else
               message="No new worker state confirmed; current Pages release remains in place."
             fi
