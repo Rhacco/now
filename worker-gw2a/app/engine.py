@@ -22,7 +22,7 @@ from typing import Any, Callable
 from zoneinfo import ZoneInfo
 
 WORKER_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_VERSION = "2.2.7"
+ENGINE_VERSION = "2.2.8"
 REPO_ROOT = WORKER_ROOT.parent
 CONFIG_PATH = WORKER_ROOT / "config" / "settings.json"
 STATE_PATH = WORKER_ROOT / "data" / "cache.json"
@@ -354,6 +354,20 @@ ROTATING_EVENT_WIKI = {
     "Scarlet's Invasion": "https://wiki.guildwars2.com/wiki/Defeat_the_invading_minions_of_Scarlet_Briar",
 }
 
+# Event levels for the rotating layer. Zone level ranges are not the event
+# levels, and the Awakened spawn can vary within its documented range.
+FRACTAL_INCURSION_LEVELS = {
+    "Brisban Wildlands": 16,
+    "Diessa Plateau": 19,
+    "Kessex Hills": 20,
+    "Snowden Drifts": 24,
+}
+LEY_LINE_ANOMALY_LEVELS = {
+    "Gendarran Fields": 26,
+    "Iron Marches": 54,
+    "Timberline Falls": 56,
+}
+
 # Recommendation lifetime after START, based on event scope/structure rather
 # than character level or the priority score. All values stay within 5–10 min.
 ACTION_WINDOW_OVERRIDES = (
@@ -426,6 +440,7 @@ class Candidate:
     public_instance: bool = False
     upscaled: bool = False
     level_kind: str = "map"
+    scheduled_waypoint: str = ""
 
     def key(self) -> str:
         minute = self.start.astimezone(timezone.utc).replace(second=0, microsecond=0).isoformat()
@@ -1234,6 +1249,7 @@ def emit_sequence(track: dict[str, Any], cfg: dict[str, Any], day: datetime) -> 
                     end=end,
                     location=segment_location(name, phase),
                     waypoint=wp,
+                    scheduled_waypoint=wp,
                     source="gw2-api-event-timers",
                     wiki=wiki_url(wiki_link),
                     base_priority=base_priority(cfg, track.get("category", ""), name, phase, seg.get("rewards", {}) or {}, int(seg.get("lfg", 0) or 0)),
@@ -1285,6 +1301,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 end=start + timedelta(minutes=15),
                 location=f"{fmap} · {f['place']}",
                 waypoint=f["waypoint"],
+                scheduled_waypoint=f["waypoint"],
                 source="verified rotating schedule",
                 waypoint_name=f["place"],
                 wiki=ROTATING_EVENT_WIKI["Fractal Incursion"],
@@ -1304,6 +1321,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                     end=start + timedelta(minutes=15),
                     location="Gendarran Fields · map-wide invasion",
                     waypoint=s["waypoint"],
+                    scheduled_waypoint=s["waypoint"],
                     source="verified rotating schedule",
                     waypoint_name=s["place"],
                     wiki=ROTATING_EVENT_WIKI["Scarlet's Invasion"],
@@ -1325,6 +1343,7 @@ def verified_rotating_event_candidates(now: datetime) -> list[Candidate]:
                 end=astart + timedelta(minutes=15),
                 location=f"{amap} · {a['place']}",
                 waypoint=a["waypoint"],
+                scheduled_waypoint=a["waypoint"],
                 source="verified rotating schedule",
                 waypoint_name=a["place"],
                 wiki=ROTATING_EVENT_WIKI["Awakened Invasion"],
@@ -1400,6 +1419,21 @@ def apply_known_level_overrides(cands: list[Candidate]) -> None:
             access = map_access_category(c.location)
             if access:
                 c.category = access
+        if c.public_instance:
+            continue
+        location_map = c.location.split("·", 1)[0].strip()
+        if c.track == "Fractal Incursions" and location_map in FRACTAL_INCURSION_LEVELS:
+            c.level = c.level_min = FRACTAL_INCURSION_LEVELS[location_map]
+            c.level_kind = "event"
+        elif c.track == "Awakened Invasion":
+            c.level_min, c.level = 6, 30
+            c.level_kind = "event_range"
+        elif c.track == "Scarlet's Invasion" and location_map == "Gendarran Fields":
+            c.level_min, c.level = 25, 35
+            c.level_kind = "event_range"
+        elif c.track == "Ley-Line Anomaly" and location_map in LEY_LINE_ANOMALY_LEVELS:
+            c.level = c.level_min = LEY_LINE_ANOMALY_LEVELS[location_map]
+            c.level_kind = "event"
 
 
 WIKI_OVERRIDES = {
@@ -1421,6 +1455,7 @@ def apply_metadata(cands: list[Candidate], cfg: dict[str, Any], values: dict[str
     track_data = fallback.get("tracks", {})
     apply_map_levels(cands, maps)
     map_by_id = {m.get("id"): m for m in maps}
+    map_names = {str(m.get("name", "")) for m in maps}
     for c in cands:
         saved = track_data.get(norm(c.track), {})
         if content_meta(c.category)["id"] == "unknown" and not c.category.strip():
@@ -1428,13 +1463,28 @@ def apply_metadata(cands: list[Candidate], cfg: dict[str, Any], values: dict[str
         if not c.waypoint:
             c.waypoint = saved.get("entry_waypoint", "")
         point = waypoint_data.get(c.waypoint)
+        location_map = c.location.split("·", 1)[0].strip()
+        unverified_override = (c.waypoint and c.waypoint != c.scheduled_waypoint
+                               and not point)
+        if (location_map in map_names and not public_instance_meta(c)
+                and ((point and point.get("map") != location_map) or unverified_override)):
+            # A community route can change the waypoint after the timed
+            # candidate was built. Restore its map-specific scheduled point.
+            original = waypoint_data.get(c.scheduled_waypoint)
+            c.waypoint = c.scheduled_waypoint if original and original.get("map") == location_map else ""
+            c.direct_waypoint = False
+            c.waypoint_name = ""
+            point = waypoint_data.get(c.waypoint)
         if point:
             c.waypoint_name = point["name"]
             if not c.level and point.get("max_level", 0) > 0:
                 c.level = point["max_level"]
                 c.level_min = point.get("min_level") or c.level
         detail = event_levels.get(c.event_id)
-        if detail:
+        detail_map = map_by_id.get(detail.get("map_id")) if detail else None
+        if detail and not (detail_map and location_map in map_names
+                           and detail_map.get("name") != location_map
+                           and not public_instance_meta(c)):
             c.level = c.level_min = detail["level"]
             c.level_kind = "event"
             if not c.location and detail.get("map_id") in map_by_id:
@@ -1816,6 +1866,9 @@ def level_badge(c: Candidate) -> str:
         label = "Scaled 80"
     elif c.public_instance:
         title = "Level 80 · Public instance"
+    elif c.level_kind == "event_range" and c.level_min:
+        title = f"Event level {c.level_min}–{c.level}; varies by spawn"
+        label = f"Event {c.level_min}–{c.level}"
     elif c.level_kind == "event":
         title = f"Event level {c.level}"
     elif c.level_min and c.level_min != c.level:
