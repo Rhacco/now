@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-03T14:52:07.672Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "„Warum hast du die Fernbedienung im Kühlschrank?“  \nIch: „Ich wollte, dass wir beim Serien‑Marathon endlich mal kühle Pausen machen.“  \nSie: „Dann ist das nächste Werbeblock ja schon kalt.“",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "openai/gpt-oss-120b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "openai/gpt-oss-120b",
+          "returned_model": "openai/gpt-oss-120b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "reviewer": "Groq/openai/gpt-oss-120b",
+          "usage": {
+            "queue_time": 0.050838604,
+            "prompt_tokens": 3619,
+            "prompt_time": 0.177054675,
+            "completion_tokens": 78,
+            "completion_time": 0.16352514,
+            "total_tokens": 3697,
+            "total_time": 0.340579815,
+            "completion_tokens_details": {
+              "reasoning_tokens": 19
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "webhook_status": 200,
+  "context_jokes_sent": 50,
+  "reserve_count": 8
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "created_at": "2026-09-29T05:21:36.014Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-20b",
+    "text": "Mutter: „Hast du den Staubsauger ausgepackt?“  \nVater: „Ja, ich wollte prüfen, ob er noch leise ist.“  \nMutter: „Dann hast du ihn doch noch nicht angeschaltet.“  \nVater: „Genau, ich warte, bis er selbstständig wird.“  \nMutter: „Dann hat er schon den Haushalt übernommen.“"
+  },
+  {
+    "created_at": "2026-09-29T05:21:40.019Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-120b",
+    "text": "Ich stehe an der Bushaltestelle, der Bus kommt zu spät.  \nEine ältere Dame fragt: „Warten Sie auch noch?“  \nIch nicke: „Ja, ich will sehen, ob er noch pünktlich ist.“  \nSie lächelt: „Dann haben wir ja beide zu viel Freizeit.“"
+  },
+  {
+    "created_at": "2026-09-29T06:02:00.690Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-120b",
+    "text": "Wir gehen zum Supermarkt, ich sag: „Du holst die Milch, ich das Brot.“  \nSie kommt zurück mit drei Milchkartons – weil ich „Milch“ und nicht „das Brot“ gesagt habe."
+  },
+  {
+    "created_at": "2026-09-29T06:03:53.148Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-120b",
+    "text": "Ich: „Die smarte Waschmaschine hat ein Update.“  \nPartner: „Und was macht das?“  \nIch: „Sie schickt mir jetzt eine Push‑Benachrichtigung, wenn die Socken fertig sind.“  \nPartner: „Klasse, dann weiß ich endlich, wann ich neue Socken kaufen muss.“"
+  },
+  {
+    "created_at": "2026-09-29T06:04:19.755Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-20b",
+    "text": "Mein Nachbar hat einen Dachgarten.  \nIch habe einen Dachboden.  \nWir tauschen: Er bringt mir Gemüse, ich bringe ihm… die Dachziegel, damit er endlich einen Balkon hat."
+  },
+  {
+    "created_at": "2026-09-29T06:05:58.655Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-120b",
+    "text": "„Hast du den Müll rausgebracht?“  \n„Ja, ich habe ihn gleich mit dem Recycling getrennt.“  \n„Super, dann kann ich die Pizza bestellen – ich bringe den Salat mit.“"
+  },
+  {
+    "created_at": "2026-09-29T06:06:26.967Z",
+    "source_provider": "Groq",
+    "source_model": "qwen/qwen3.8-27b",
+    "text": "Nachbar: „Entschuldigung, ist der Rasenmäher noch in Benutzung?“\nIch: „Nein, der ist längst im Schrank.“\nNachbar: „Dann warum sieht der Rasen aus wie ein Dschungel?“\nIch: „Weil ich nur den Rasenmäher in den Schrank gelegt habe,\nnicht den Rasen.“"
+  },
+  {
+    "created_at": "2026-09-29T08:58:47.040Z",
+    "source_provider": "Groq",
+    "source_model": "openai/gpt-oss-120b",
+    "text": "Nachbar klopft: „Kann ich heute mal leiser Musik hören?“ – Ich: „Klar, wenn du vorher deine Heckensäge leiser machst.“"
+  }
+]
