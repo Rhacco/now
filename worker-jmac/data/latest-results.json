@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-10-10T19:21:55.767Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "Ich stelle den Topf in die Spülmaschine.  \n„Warum?“ fragt sie.  \n„Damit er endlich einen klaren Durchgang hat.“",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "openai/gpt-oss-20b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "openai/gpt-oss-120b",
+          "returned_model": "openai/gpt-oss-120b",
+          "http_status": 200,
+          "valid": false,
+          "validation": "Redaktion: NEIN: SINN",
+          "reviewer": "Groq/openai/gpt-oss-120b",
+          "usage": {
+            "queue_time": 0.024835017,
+            "prompt_tokens": 2959,
+            "prompt_time": 0.123401177,
+            "completion_tokens": 67,
+            "completion_time": 0.140071079,
+            "total_tokens": 3026,
+            "total_time": 0.263472256,
+            "completion_tokens_details": {
+              "reasoning_tokens": 12
+            }
+          }
+        },
+        {
+          "model": "openai/gpt-oss-20b",
+          "returned_model": "openai/gpt-oss-20b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "reviewer": "Groq/openai/gpt-oss-120b",
+          "usage": {
+            "queue_time": 0.171839605,
+            "prompt_tokens": 2959,
+            "prompt_time": 0.23904698,
+            "completion_tokens": 57,
+            "completion_time": 0.061200168,
+            "total_tokens": 3016,
+            "total_time": 0.300247148,
+            "completion_tokens_details": {
+              "reasoning_tokens": 18
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "webhook_status": 200,
+  "context_jokes_sent": 50,
+  "reserve_count": 8
+}
