@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-17T19:43:57.367Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "Ich: „Warum liegt deine Katze immer auf meinem Laptop?“  \nPartner: „Weil sie endlich ein warmes Plätzchen gefunden hat, das nicht ständig wegrutscht.“",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "openai/gpt-oss-120b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "openai/gpt-oss-120b",
+          "returned_model": "openai/gpt-oss-120b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "reviewer": "Groq/openai/gpt-oss-120b",
+          "usage": {
+            "queue_time": 0.24377375,
+            "prompt_tokens": 3007,
+            "prompt_time": 0.152357235,
+            "completion_tokens": 156,
+            "completion_time": 0.321537579,
+            "total_tokens": 3163,
+            "total_time": 0.473894814,
+            "completion_tokens_details": {
+              "reasoning_tokens": 110
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "webhook_status": 200,
+  "context_jokes_sent": 50,
+  "reserve_count": 8
+}
