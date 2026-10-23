@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-23T10:06:48.699Z",
+  "provider": "Groq",
+  "status": "ok",
+  "text": "Ich: Der Bus ist wieder 10 Minuten zu spät.  \nPartner: Dann steigen wir in die Bahn um.  \nIch: Super, die fährt immer pünktlich… zu spät.",
+  "edge_mode": false,
+  "attempts": [
+    {
+      "provider": "Groq",
+      "status": "ok",
+      "returned_model": "openai/gpt-oss-120b",
+      "error": null,
+      "diagnostics": [
+        {
+          "model": "openai/gpt-oss-120b",
+          "returned_model": "openai/gpt-oss-120b",
+          "http_status": 200,
+          "valid": true,
+          "validation": "ok",
+          "reviewer": "Groq/openai/gpt-oss-120b",
+          "usage": {
+            "queue_time": 0.290966546,
+            "prompt_tokens": 2959,
+            "prompt_time": 0.134473235,
+            "completion_tokens": 74,
+            "completion_time": 0.15562496,
+            "total_tokens": 3033,
+            "total_time": 0.290098195,
+            "completion_tokens_details": {
+              "reasoning_tokens": 24
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "reserve_used": null,
+  "reserve_added": 0,
+  "reserve_after": 8,
+  "webhook_status": 200,
+  "context_jokes_sent": 50,
+  "reserve_count": 8
+}
