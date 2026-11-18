@@ -12,6 +12,12 @@
       "gpt": "Im Wartezimmer steht ein Mann und starrt nervös auf die Uhr.  \nEine Dame neben ihm fragt: „Ist das lange?“  \nEr seufzt: „Ja, die Ärztin hat heute nur fünf Minuten.“  \nPlötzlich ruft die Rezeption: „Bitte, jetzt ist die Zeit für die Kaffeepause!“",
       "qwen": "Doktor: „Haben Sie Schmerzen?“\nPatient: „Nur hier im Wartezimmer.“\nDoktor: „Dann nehmen Sie doch lieber den Aufzug, der fährt direkt nach oben.“",
       "archive": "Im Lesesaal hatte jemand sein Handy auf Lautsprecher. Die Bibliothekarin bat ihn, draußen weiterzutelefonieren. Er ging vor die Tür. Jetzt hörten wir wenigstens nur noch seine Hälfte."
+    },
+    {
+      "timestamp": "2026-11-18T20:34:43.741Z",
+      "gpt": "Ich stehe am Kiosk, das Paket ist da, der Verkäufer lächelt und fragt:  \n„Möchten Sie das Paket jetzt öffnen?“  \nIch nicke, reiche ihm die Hand und sag: „Ja, bitte.“  \nEr wirft das Paket zurück: „Ich dachte, Sie wollen es erst mal auspacken.“",
+      "qwen": "Sehr geehrter Paket,\nich habe Sie heute am Kiosk abgeholt.\nBitte geben Sie das Geld direkt dem Postboten,\nder steht gerade hinter mir.",
+      "archive": "Mein Vater hat mich angerufen, weil sein Handy gefragt hat: „Sind Sie sicher?“ Ich fragte, wobei. „Weiß ich nicht“, sagte er, „deshalb rufe ich ja an.“"
     }
   ]
 }
