@@ -42,6 +42,12 @@
       "gpt": "Im Zug drängt sich ein Tourist an mich ran und fragt:  \n„Entschuldigung, wo ist der Ausstieg?“  \nIch zeige auf die Tür und sag: „Da hinten.“  \nEr dreht sich um – und steigt aus, weil er dachte, ich meine den Bahnhof.",
       "qwen": "Ich stehe in der S-Bahn und sage: „Entschuldigung, ist dieser Platz frei?“\nEin alter Herr winkt mich lässig heran: „Ja, ich hab ihn mir schon gesichert.“\nIch nehme erleichtert Platz.\nEr zieht seine Jacke aus, legt sie auf den Sitz und setzt sich daneben hin.",
       "archive": "Die Nachbarn haben sich über meinen Wecker beschwert. Das ist mir unangenehm. Ich selbst höre ihn schon seit Wochen nicht mehr."
+    },
+    {
+      "timestamp": "2026-11-18T20:44:54.711Z",
+      "gpt": "Mama: „Kinder, wer hat die Milch aus dem Kühlschrank genommen?“  \nTom: „Ich war im Bad, warte…“  \nLisa: „Ich habe das letzte Stück Kuchen gegessen.“  \nOma: „Ich dachte, das war ein Familienchat, nicht ein Milch-Detektiv‑Club.“",
+      "qwen": "Mama schreibt im Familienchat: „Wer hat das Fenster offen gelassen? Ich friere.“\nIch typе: „Tut mir leid, ich war heute Abend dran.“\nDrei Sekunden später: „Danke, ich habe es jetzt zu.“",
+      "archive": "Mein Vermieter sagte, ich dürfe die Wände streichen, wie ich wolle. Als ich „Dunkelgrün“ vorschlug, präzisierte er: „Solange sie weiß bleiben.“"
     }
   ]
 }
