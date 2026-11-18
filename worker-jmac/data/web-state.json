@@ -174,6 +174,12 @@
       "gpt": "Mama: „Kinder, bitte nicht mehr so laut im Haus, ich muss arbeiten!“  \nLukas: „Aber Mama, wir sind im Familien‑Chat, da ist doch alles leise.“  \nOma: „Dann schreibe ich jetzt nur noch mit Emojis.“  \n*Alle: *😶 (das Gesicht, das keiner hört)",
       "qwen": "Oma postet im Familienchat: „Wir besuchen die Enkel, bitte nicht putzen.“\nIch schreibe zurück: „Alles klar, wir lassen den Staub einfach liegen.“\nOma antwortet: „Ich bringe trotzdem die großen Wischer mit.“",
       "archive": "Im Kochkurs hieß es: „Legen Sie zuerst alle Zutaten bereit.“ Ich sagte: „Das mache ich zu Hause auch. Und wenn alles auf dem Tisch liegt, bestelle ich Pizza.“"
+    },
+    {
+      "timestamp": "2026-11-18T22:01:08.178Z",
+      "gpt": "Mama: „Kinder, bitte sagt mir, wer das letzte Stück Kuchen genommen hat!“  \nLukas: „Ich war’s nicht, ich war gerade beim Sport.“  \nLea: „Ich habe das Stück nicht gesehen, ich war im Bad.“  \nOpa im Chat: „Ich habe das Stück genommen – ich dachte, das wäre ein Update für die Familien‑App.“",
+      "qwen": "Mama schreibt im Familienchat: „Wer hat das Fenster aufgehalten?“\nIch tippe: „Ich.“\nDrei Sekunden später: „Danke, schließ es bitte.“\nIch steh noch in der Küche und frag mich, warum ich es nie zugeklemmt habe.",
+      "archive": "Beim Ausmisten fand ich eine Schachtel mit der Aufschrift „Wichtig“. Darin lagen Kabel für Geräte, die ich nicht mehr besitze. Ich habe sie wieder zugemacht. Falls die Geräte zurückkommen."
     }
   ]
 }
