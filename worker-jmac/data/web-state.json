@@ -144,6 +144,12 @@
       "gpt": "Im Familienchat fragt Mama: „Wer hat den Kuchen gegessen?“  \nOpa tippt schnell: „Ich war im Büro.“  \nOma schreibt: „Ich habe das Essen bestellt.“  \nVater antwortet: „Ich war gerade beim Zahnarzt – aber das war nur ein Stück von mir.“",
       "qwen": "Ich tippe im Familienchat: „Ich bin krank, bleib heute zu Hause.“\nMeine Tante antwortet: „Mach dich nicht an, du bist doch gerade erst frisch verheiratet.“",
       "archive": "Im Café wollte die Bedienung meinen Namen für den Kaffeebecher. Ich sagte „Martin“. Auf dem Becher stand „Kaffee“. Vielleicht wollte sie die Sache nicht unnötig persönlich machen."
+    },
+    {
+      "timestamp": "2026-11-18T21:16:43.837Z",
+      "gpt": "Ich bestelle beim Bäcker ein frisches Brötchen und sage: „Bitte ohne Körner, ich habe eine Allergie.“  \nEr nickt, legt das Brötchen in die Tüte und fragt: „Möchten Sie dazu noch ein Stück Kuchen?“  \nIch überlege kurz und antworte: „Nur, wenn er keine Nüsse hat.“  \nEr lächelt und gibt mir ein Stück Brot.",
+      "qwen": "Ich stehe am Bäcker und sage: „Machen Sie das Brot bitte nicht so knusprig, ich habe empfindliche Zähne.“\nDer Bäcker nickt, packt es ein und sagt: „Alles klar, aber dann ist es halt auch nicht mehr so gut.“",
+      "archive": "Ich habe ein Kochbuch gekauft, auf dem „Einfach und schnell“ steht. Das erste Rezept beginnt mit „Am Vorabend ...“. Ich bin schon beim Lesen zu spät dran."
     }
   ]
 }
