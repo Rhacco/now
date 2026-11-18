@@ -216,6 +216,12 @@
       "gpt": "Ich gehe zum Bäcker und frage: „Haben Sie noch frische Brötchen?“  \nDer Bäcker lächelt: „Klar, gerade aus dem Ofen.“  \nIch greife nach einem, rieche den Duft und sage: „Perfekt, ich brauch nur noch ein bisschen Geduld.“  \nEr wirft mir ein Brötchen zu und ruft: „Hier, das ist das Geduld‑Brötchen, es bleibt ewig warm!“",
       "qwen": "Ich stehe an der Theke und sage: „Gibt’s noch ein Stück vom Zimtschnecke?“\nDie Bäckerin schaut mich an und sagt: „Die ist weg.“\nIch nicke und frage: „Dann halt was anderes.“\nSie: „Nein, ich meine, die Zimtschnecke ist weg.“",
       "archive": "Am Restaurant-Eingang fragte ich den Kellner nach der Empfehlung des Hauses. Er schaute auf die Schlange hinter mir und sagte: „Reservieren.“"
+    },
+    {
+      "timestamp": "2026-11-18T22:55:13.772Z",
+      "gpt": "Ich stehe beim Bürgeramt, die Schlange ist riesig.  \n„Bitte Geduld“, sagt die Schildkröte hinter mir und nickt.  \nEndlich ist ich dran, lege den Antrag aufs Fenster.  \nDie Beamtin schaut und sagt: „Entschuldigung, wir schließen heute wegen Schildkröten‑Wartezeit.“",
+      "qwen": "Ich stehe am Schalter im Bürgerbüro und frage, wie lang die Wartezeit ist.\nDie Bedienung seufzt und sagt: „Das hängt ganz davon ab, was Sie hier erledigen wollen.“\nIch erwidere: „Ich will nur schnell einen Personalausweis abholen.“\nSie antwortet: „Dann sind Sie hier an der falschen Stelle.“",
+      "archive": "Im Waschsalon fragte mich jemand, ob der Trockner frei sei. Ich sagte ja. Er lud seine Wäsche ein und ging. Ich blieb davor sitzen und fühlte mich, als hätte ich gerade eine Stelle angenommen."
     }
   ]
 }
