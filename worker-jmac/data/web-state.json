@@ -180,6 +180,12 @@
       "gpt": "Mama: „Kinder, bitte sagt mir, wer das letzte Stück Kuchen genommen hat!“  \nLukas: „Ich war’s nicht, ich war gerade beim Sport.“  \nLea: „Ich habe das Stück nicht gesehen, ich war im Bad.“  \nOpa im Chat: „Ich habe das Stück genommen – ich dachte, das wäre ein Update für die Familien‑App.“",
       "qwen": "Mama schreibt im Familienchat: „Wer hat das Fenster aufgehalten?“\nIch tippe: „Ich.“\nDrei Sekunden später: „Danke, schließ es bitte.“\nIch steh noch in der Küche und frag mich, warum ich es nie zugeklemmt habe.",
       "archive": "Beim Ausmisten fand ich eine Schachtel mit der Aufschrift „Wichtig“. Darin lagen Kabel für Geräte, die ich nicht mehr besitze. Ich habe sie wieder zugemacht. Falls die Geräte zurückkommen."
+    },
+    {
+      "timestamp": "2026-11-18T22:11:02.274Z",
+      "gpt": "Ich stehe am Kiosk, das Schild blinkt: „Paketabholung 24 h“.  \nDer Verkäufer ruft: „Ihr Paket ist da, Herr Müller!“  \nIch greife nach dem Umschlag, doch er zieht nur einen Luftballon heraus.  \n„Da war wohl das falsche Paket – das ist das Geschenk vom Postboten.“",
+      "qwen": "„Ich habe hier ein großes Paket abzugeben.“\nDer Kiosk-Betreuer schaut auf die kleine Schachtel in meiner Hand.\n„Da stimmt doch was nicht, das ist kein großes Paket.“",
+      "archive": "Beim Taxi fragte der Fahrer: „Haben Sie es eilig?“ „Nein“, sagte ich. Er sah so enttäuscht aus, dass ich beinahe einen Termin erfunden hätte."
     }
   ]
 }
