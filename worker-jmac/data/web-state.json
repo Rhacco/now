@@ -132,6 +132,12 @@
       "gpt": "Ich steh am Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Aus welchem Grund?“.  \nIch sag: „Ich wollte es nur schnell abholen.“  \nDarauf erwidert er: „Dann zahlen Sie bitte die Versand‑Gebühr.“",
       "qwen": "Stelle dich an, um dein Paket abzuholen.\nDie Verkäuferin fragt: „Ist das für Sie?“\nDu nickst und zahlst.\nSie druckt dir eine Quittung für zwei Kaffee aus.",
       "archive": "Bei der Behörde sagte ich: „Ich habe alle Unterlagen dabei.“ Die Mitarbeiterin sah mich mitleidig an: „Das können Sie doch noch gar nicht wissen.“"
+    },
+    {
+      "timestamp": "2026-11-18T21:12:44.409Z",
+      "gpt": "Der Nachbar ruft aus dem Treppenhaus: „Kann mir bitte jemand die Tür aufhalten, ich habe die Einkaufstüte vergessen!“  \nIch halte die Tür, er schaut verwirrt und sagt: „Ich wollte die Tüte doch erst drinnen abstellen.“  \nIch nicke und öffne die Tür weiter.  \nPlötzlich fällt die Tüte – und ein kleiner Hund springt heraus und bellt: „Ich hab’s dir ja gesagt, du hast die Tür zu schnell gehalten!“",
+      "qwen": "Ich hab den Nachbarn im Treppenhaus gefragt, ob er oben sein Licht ausschalten kann.\nEr hat genickt und sich verabschiedet.\nDraußen wurde es stockdunkel.",
+      "archive": "Mein Navi sagte: „Wenn möglich, bitte wenden.“ Ich war auf dem Weg zu einem Familienbesuch. So viel Verständnis hatte es noch nie für mich gezeigt."
     }
   ]
 }
