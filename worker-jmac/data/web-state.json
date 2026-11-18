@@ -90,6 +90,12 @@
       "gpt": "Ich stehe beim Bäcker und bestelle ein frisches Brötchen.  \nDer Bäcker fragt: „Möchten Sie es lieber mit Körnern oder ganz normal?“  \nIch überlege kurz und sage: „Egal, Hauptsache es ist nicht mehr das, was ich gestern gegessen habe.“  \nDarauf legt er mir ein Toast‑Brot hin und meint: „Dann ist das ja schon das ‚neue‘ Brötchen.“",
       "qwen": "Ich stehe an der Theke und sage: „Gibt’s noch Semmeln?“\nDie Bäckerin nickt und legt mir eine frische Brezel hin.\nIch frage perplex: „Warum eine Brezel?“\nSie seufzt: „Weil die Leute immer ‚noch’ sagen, wenn sie wollen, dass alles schnell geht.“",
       "archive": "In unserer Nachbarschaftsgruppe fragte jemand, ob er sich eine Bohrmaschine leihen könne. Sieben Leute antworteten: „Ich hab eine.“ Keiner schrieb: „Kannst du haben.“ Wir sind gut ausgestattet."
+    },
+    {
+      "timestamp": "2026-11-18T20:58:51.365Z",
+      "gpt": "Ich stehe in der Schlange, das Regal ist leer,  \nder Kassierer lächelt und sagt: „Heute haben wir nur  \neinen Artikel im Angebot – das ist ein  \n„Kauf‑ein‑für‑zwei‑Kaffee“, weil ich das Geld selbst einstecke.“",
+      "qwen": "Ich warte seit zwanzig Minuten in der Schlange,\nder Kassierer tippt langsam,\nich könnte heulen.\n„Kassenbon mitnehmen?“",
+      "archive": "Bei der Bürgerbefragung sollte ich angeben, wie zufrieden ich mit den Öffnungszeiten bin. Das Formular bekam ich nur während der Öffnungszeiten. Ich musste mir extra freinehmen, um „unzufrieden“ anzukreuzen."
     }
   ]
 }
