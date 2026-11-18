@@ -1,4 +1,4 @@
-// Configure a Cloudflare Cron Trigger for */2 * * * *.
+// Configure a Cloudflare Cron Trigger for */5 * * * *.
 
 // Necessary variables/secrets: GH_OWNER, GH_PAT, GH_REPO, GH_REPO_BRANCH
 // Configure FULL_UPDATE_WORKFLOW with the workflow filename or ID and FULL_UPDATE_ENABLED with 1.
@@ -36,7 +36,7 @@ const PREVIEW = `<!doctype html>
     <p class="intro">A small control point for the scheduled GitHub workflows.</p>
     <div class="status"><span class="dot"></span>HTTP preview ready</div>
     <div class="cards">
-      <article><h2>Scheduled workflow</h2><strong>Every 2 minutes</strong><p>Dispatches the configured GitHub workflow.</p></article>
+      <article><h2>Scheduled workflow</h2><strong>Every 5 minutes</strong><p>Dispatches the configured GitHub workflow.</p></article>
     </div>
     <footer>Opening this page does not start a workflow. The Cloudflare Cron trigger runs the schedule.</footer>
   </main>
@@ -53,9 +53,8 @@ export default {
     });
   },
 
-  async scheduled(controller, env, ctx) {
-    const minute = new Date(controller.scheduledTime).getUTCMinutes();
-    if (minute % 2 !== 0 || String(env.FULL_UPDATE_ENABLED ?? "").trim() === "0") return;
+  async scheduled(_controller, env, ctx) {
+    if (String(env.FULL_UPDATE_ENABLED ?? "").trim() === "0") return;
 
     ctx.waitUntil(triggerWorkflow(env, required(env, "FULL_UPDATE_WORKFLOW")));
   },
