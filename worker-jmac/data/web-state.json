@@ -240,6 +240,12 @@
       "gpt": "Ich stehe beim Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Alles in Ordnung?“  \nIch nicke, greife nach dem Paket und will zahlen.  \nEr sagt: „Tut mir leid, das war das Paket für den Nachbarn.“",
       "qwen": "Ich hole mein Paket ab und der Kiosk-Betreiber rennt zur Hinterkammer.\nDrei Minuten später kommt er zurück, atemlos und blass.\n„Das Paket ist weg“, flüstert er.\n„Komisch“, sage ich, „ich stehe ja noch hier.“",
       "archive": "Ich musste online bestätigen, dass ich kein Roboter bin. Beim vierten Bild mit einer halben Ampel war ich mir selbst nicht mehr so sicher."
+    },
+    {
+      "timestamp": "2026-11-18T23:16:10.783Z",
+      "gpt": "Ich gehe zur Bibliothek, stelle die Bücher in den Rückgabeschrank und warte.  \nDer Automat piept und zeigt: „Bitte legen Sie das Buch mit der Rücksichts­voll­keit zurück.“  \nIch schiebe das dicke Kochbuch nach vorne, weil es das schwerste ist.  \nDer Automat spuckt aus: „Danke, jetzt haben wir endlich ein gutes Rezept für Ordnung.“",
+      "qwen": "Ich frage in der Bibliothek nach einem Krimi, den ich dringend zurückgeben muss.\nDie Dame sagt: „Müsste das eigentlich morgen sein.“\nIch atme auf und sage: „Dann ist das ja in Ordnung.“\nSie legt den Kopf schief und murmelt: „Sie meinen das Buch, das Sie bei mir abgeben wollen.“",
+      "archive": "Meine Schwester sagt, sie sei überhaupt nicht nachtragend. Sie kann mir allerdings noch den genauen Wortlaut unserer Streiterei von 2009 aufsagen."
     }
   ]
 }
