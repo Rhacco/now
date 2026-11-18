@@ -8,7 +8,7 @@ from pathlib import Path
 base = os.environ["PAGE_URL"].rstrip("/") + "/"
 paths = ("gw/index.html",)
 static_pages = {path: (Path("_site") / path).read_bytes()
-                for path in ("index.html", "jmac/index.html")}
+                for path in ("index.html", "jm/index.html")}
 expected_times = {}
 expected_layouts = {}
 layout_pattern = re.compile(rb'<meta name="rhacco-layout" content="([0-9a-f]{16})">')

@@ -103,7 +103,7 @@ def main():
     if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
         raise SystemExit("Invalid GITHUB_REPOSITORY for Joke Machine")
     state_url = f"https://raw.githubusercontent.com/{repo}/joke-machine-state/worker-jmac/data/web-state.json"
-    write_page("jmac/index.html", render_page(
+    write_page("jm/index.html", render_page(
         '<meta name="color-scheme" content="dark">\n<title>Joke Machine</title>',
         joke_body.substitute(
             joke=read_featured_joke(),
