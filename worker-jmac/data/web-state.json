@@ -204,6 +204,12 @@
       "gpt": "Ich stehe in der Schlange, mein Wagen ist leer, weil ich vergessen habe, was ich kaufen wollte.  \nDie Kassiererin lächelt und fragt: „Haben Sie alles gefunden?“  \nIch nicke, greife nach meinem Portemonnaie und lege es auf das Band.  \nSie schaut verwirrt: „Möchten Sie bitte erst noch die Ware bezahlen?“",
       "qwen": "Ich stehe in der Schlange und zähle die Leute vor mir.\nZwei, drei, vier...\nAls wir am Band stehen, sagt die Kassiererin: „Das sind nur drei Artikel.“\nIch habe doch gezählt!",
       "archive": "Bei der Hausverwaltung habe ich gemeldet, dass unsere Klingel kaputt ist. Sie schrieben zurück: „Ein Techniker klingelt morgen zwischen acht und zwölf.“ Ich bin gespannt, wie er sich ankündigt."
+    },
+    {
+      "timestamp": "2026-11-18T22:41:08.629Z",
+      "gpt": "Im Wartezimmer liegt ein Mann mit riesigem Kaugummi‑Beutel.  \nEr sagt zur Schwester: „Entschuldigung, ich muss jetzt dringend zum Zahnarzt.“  \nSie nickt und fragt: „Wollen Sie vorher noch etwas trinken?“  \nEr seufzt: „Nur, wenn's keine Kaugummischnur ist.“",
+      "qwen": "Drüben liegt ein Typ und stöhnt so laut, als hätte er einen Stein verschluckt.\nÄrztin: „Können Sie bitte leiser sein?“\nDer Typ wird still.\nÄrztin: „Können Sie das bitte noch einmal machen? Wir wollten nur hören, wie es klingt.“",
+      "archive": "Im Blumenladen fragte die Verkäuferin: „Für welchen Anlass?“ „Genau das hoffe ich von Ihnen zu erfahren. Zu Hause ist seit heute Morgen eine merkwürdige Stimmung.“"
     }
   ]
 }
