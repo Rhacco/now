@@ -24,6 +24,12 @@
       "gpt": "Ich klingel beim Nachbarn, weil ich mir die Milch vergessen habe.  \nEr öffnet, schaut mich an und sagt: „Kurz warten, ich hol das WLAN.“  \nIch nicke, weil ich gerade erst den Router ausgetauscht habe.  \nDann merkt er: „Ups, das war das falsche Haus.“",
       "qwen": "Wir stehen im Treppenhaus und warten auf den Aufzug.\nMein Nachbar fragt: „Können Sie kurz die Tür halten?“\nIch sage: „Klar, machen wir schon die ganze Zeit.“\nEr seufzt: „Nein, ich mein die Wohnungstür. Ich hab den Schlüssel vergessen.“",
       "archive": "Meine Mutter sagt immer: „Du kannst jederzeit vorbeikommen.“ Als ich unangemeldet vor ihrer Tür stand, fragte sie: „Wieso hast du nicht vorher angerufen?“"
+    },
+    {
+      "timestamp": "2026-11-18T20:38:43.218Z",
+      "gpt": "„Entschuldigung, ich habe meine Unterlagen vergessen.“  \n„Kein Problem, wir machen das jetzt digital.“  \nDer Beamte tippt, schaut und fragt: „Haben Sie Ihr Handy dabei?“  \nIch: „Nur mein Gedächtnis, das ist ja sowieso offline.“",
+      "qwen": "Ich stehe vor dem Schalter und sage: „Ich bräuchte einen Termin für die nächste Woche.“\nDie Dame schaut mich an und sagt: „Dafür müssen Sie sich vorher online anmelden.“\n„Das hab ich doch.“\n„Dann ist das ja gut, legen Sie das Formular hier ab.“",
+      "archive": "Im Zug sitze ich im Ruhebereich. Hinter mir tippt jemand eine Nachricht mit eingeschaltetem Tastenton. Falls er einen Roman schreibt, kenne ich inzwischen das erste Kapitel."
     }
   ]
 }
