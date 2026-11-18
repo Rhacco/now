@@ -2,10 +2,10 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T19:29:11.364Z",
-      "gpt": "Im Wartezimmer sitzt ein Mann, liest nervös die Zeitschrift und schaut immer wieder auf die Tür.  \nEine Krankenschwester kommt, lächelt und sagt: „Ihr Termin ist gleich.“  \nDer Mann atmet tief ein, legt das Magazin weg und fragt: „Endlich! Und wo ist der Kaffee?“  \nSie schüttelt den Kopf: „Der ist im Nebenraum – wir warten ja nicht auf Sie, sondern auf den Barista.“",
-      "qwen": "Ich sitze seit zwei Stunden im Wartezimmer und frage den Arzt.\n„Was, Sie haben das noch nie erlebt?“\nEr seufzt und sagt: „Ich hab nicht mal Zeit, Sie zu ignorieren.“",
-      "archive": "Ich: Ich koche heute.  \nPartner: Und ich decke den Tisch.  \nNach dem Essen: Ich spüle, du räumst die Reste weg.  \nSo haben wir unser schönstes Team‑Meeting des Tages."
+      "timestamp": "2026-11-18T20:25:04.675Z",
+      "gpt": "Ich stehe an der Kasse, ein Kind drängelt sich vor und ruft: „Mama, ich will das Spielzeug!“  \nDie Mutter lächelt, legt das Spielzeug zurück ins Regal und sagt: „Wir zahlen jetzt.“  \nDer Kassierer schaut verwirrt, weil das Kind plötzlich das Portemonnaie zieht.  \n„Ich kaufe mir nur das Spielzeug, weil es im Sonderangebot ist – 2‑für‑1, ich zahle nur einen Euro.“",
+      "qwen": "Ich stehe in der Supermarktwarteschlange und zähle die Leute vor mir.\nDreizehn Personen.\nIch seufze hörbar.\nDie Kassierin lächelt: „Keine Sorge, ich bin die einzige, die noch arbeitet.“",
+      "archive": "Im Wartezimmer hängt ein Schild: „Bitte melden Sie sich, wenn Sie länger als 30 Minuten warten.“ Ich ging zum Empfang. Die Frau sagte: „Sie sind erst seit 29 Minuten hier.“ Beeindruckender Kundenservice."
     }
   ]
 }
