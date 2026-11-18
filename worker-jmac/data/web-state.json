@@ -6,6 +6,12 @@
       "gpt": "Ich stehe an der Kasse, ein Kind drängelt sich vor und ruft: „Mama, ich will das Spielzeug!“  \nDie Mutter lächelt, legt das Spielzeug zurück ins Regal und sagt: „Wir zahlen jetzt.“  \nDer Kassierer schaut verwirrt, weil das Kind plötzlich das Portemonnaie zieht.  \n„Ich kaufe mir nur das Spielzeug, weil es im Sonderangebot ist – 2‑für‑1, ich zahle nur einen Euro.“",
       "qwen": "Ich stehe in der Supermarktwarteschlange und zähle die Leute vor mir.\nDreizehn Personen.\nIch seufze hörbar.\nDie Kassierin lächelt: „Keine Sorge, ich bin die einzige, die noch arbeitet.“",
       "archive": "Im Wartezimmer hängt ein Schild: „Bitte melden Sie sich, wenn Sie länger als 30 Minuten warten.“ Ich ging zum Empfang. Die Frau sagte: „Sie sind erst seit 29 Minuten hier.“ Beeindruckender Kundenservice."
+    },
+    {
+      "timestamp": "2026-11-18T20:32:47.089Z",
+      "gpt": "Im Wartezimmer steht ein Mann und starrt nervös auf die Uhr.  \nEine Dame neben ihm fragt: „Ist das lange?“  \nEr seufzt: „Ja, die Ärztin hat heute nur fünf Minuten.“  \nPlötzlich ruft die Rezeption: „Bitte, jetzt ist die Zeit für die Kaffeepause!“",
+      "qwen": "Doktor: „Haben Sie Schmerzen?“\nPatient: „Nur hier im Wartezimmer.“\nDoktor: „Dann nehmen Sie doch lieber den Aufzug, der fährt direkt nach oben.“",
+      "archive": "Im Lesesaal hatte jemand sein Handy auf Lautsprecher. Die Bibliothekarin bat ihn, draußen weiterzutelefonieren. Er ging vor die Tür. Jetzt hörten wir wenigstens nur noch seine Hälfte."
     }
   ]
 }
