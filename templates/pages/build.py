@@ -11,6 +11,7 @@ TEMPLATES = Path(__file__).resolve().parent
 ROOT = TEMPLATES.parents[1]
 SITE = ROOT / "_site"
 ARCHIVE = ROOT / "worker-jmac/data/jokes.json"
+JOKE_VISIBLE_ROWS = 10
 BASE = Template((TEMPLATES / "base.html").read_text(encoding="utf-8"))
 LAYOUT_VERSION = sha256(BASE.template.encode("utf-8")).hexdigest()[:16]
 
@@ -49,6 +50,20 @@ def read_featured_joke():
         pass
     print("::warning::The featured Joke Machine entry is unavailable.")
     return "Gerade ist kein Witz verfügbar."
+
+
+def read_joke_snapshot():
+    snapshot_file = os.environ.get("JMAC_SNAPSHOT_FILE")
+    if snapshot_file:
+        try:
+            state = json.loads(Path(snapshot_file).read_text(encoding="utf-8"))
+            if isinstance(state, dict) and state.get("version") == 2 and isinstance(state.get("rows"), list):
+                snapshot = {"version": 2, "rows": state["rows"][-JOKE_VISIBLE_ROWS:]}
+                return json.dumps(snapshot, separators=(",", ":")).replace("<", "\\u003c")
+        except (OSError, ValueError):
+            pass
+        print("::warning::The Joke Machine snapshot could not be loaded.")
+    return "null"
 
 
 def write_page(relative_path, content):
@@ -93,6 +108,8 @@ def main():
         joke_body.substitute(
             joke=read_featured_joke(),
             state_url=html.escape(state_url),
+            visible_rows=JOKE_VISIBLE_ROWS,
+            snapshot=read_joke_snapshot(),
             script=(TEMPLATES / "joke.js").read_text(encoding="utf-8").rstrip("\n"),
         ), lang="de", body_class="rhacco-joke",
     ))

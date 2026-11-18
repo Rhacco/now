@@ -58,6 +58,7 @@ jobs:
     env:
       GW2_STATE_BRANCH: gw2-action-state
       RN_STATE_BRANCH: rhacco-news-state
+      JMAC_STATE_BRANCH: joke-machine-state
       GW2_RESULT: ${{ needs.gw2_action.result }}
       JOKE_RESULT: ${{ needs.joke_machine.result }}
       GW2_UPDATED: ${{ needs.gw2_action.outputs.state_updated }}
@@ -167,6 +168,14 @@ jobs:
               raise SystemExit(f"{path}: GW2 Action state page is too old")
           PYTHON
 
+          jmac_ref="refs/remotes/origin/${JMAC_STATE_BRANCH}"
+          jmac_snapshot="$(mktemp)"
+          if git fetch --quiet --force --no-tags origin "refs/heads/${JMAC_STATE_BRANCH}:${jmac_ref}" &&
+             git show "${jmac_ref}:worker-jmac/data/web-state.json" > "${jmac_snapshot}"; then
+            export JMAC_SNAPSHOT_FILE="${jmac_snapshot}"
+          else
+            echo "::warning::No Joke Machine snapshot was available."
+          fi
           python3 templates/pages/build.py
 
           echo "Pages artifact:"

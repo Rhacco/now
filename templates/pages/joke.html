@@ -1,31 +1,34 @@
-<main class="rhacco-joke-board" data-state-url="$state_url">
+<main class="rhacco-joke-board" data-state-url="$state_url" data-visible-rows="$visible_rows">
   <div class="rhacco-joke-heading">
     <h1 lang="en">Joke Machine</h1>
-    <time id="jmac-updated" hidden></time>
   </div>
   <div id="jmac-rows" aria-live="polite">
-    <div class="rhacco-joke-row">
-      <section class="rhacco-joke-card" aria-labelledby="jmac-gpt-label">
-        <h2 id="jmac-gpt-label">
-          <a href="https://console.groq.com/docs/model/openai/gpt-oss-120b" target="_blank" rel="noopener noreferrer">GPT-OSS 120B</a>
-        </h2>
-        <p id="jmac-gpt">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
-      </section>
-      <section class="rhacco-joke-card" aria-labelledby="jmac-qwen-label">
-        <h2 id="jmac-qwen-label">
-          <a href="https://console.groq.com/docs/model/qwen/qwen3.8-27b" target="_blank" rel="noopener noreferrer">Qwen 3.8 27B</a>
-        </h2>
-        <p id="jmac-qwen">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
-      </section>
-      <section class="rhacco-joke-card" aria-labelledby="jmac-archive-label">
-        <h2 id="jmac-archive-label">
-          <a href="https://developers.openai.com/api/docs/models/gpt-6-sol" target="_blank" rel="noopener noreferrer">GPT-6 vorgeneriert</a>
-        </h2>
-        <p id="jmac-archive">$joke</p>
-      </section>
-    </div>
+    <article class="rhacco-joke-entry">
+      <header class="rhacco-joke-row-header" hidden><time></time></header>
+      <div class="rhacco-joke-row">
+        <section class="rhacco-joke-card" aria-labelledby="jmac-gpt-label">
+          <h2 id="jmac-gpt-label">
+            <a href="https://console.groq.com/docs/model/openai/gpt-oss-120b" target="_blank" rel="noopener noreferrer">GPT-OSS 120B live</a>
+          </h2>
+          <p id="jmac-gpt">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
+        </section>
+        <section class="rhacco-joke-card" aria-labelledby="jmac-qwen-label">
+          <h2 id="jmac-qwen-label">
+            <a href="https://console.groq.com/docs/model/qwen/qwen3.8-27b" target="_blank" rel="noopener noreferrer">Qwen 3.8 27B live</a>
+          </h2>
+          <p id="jmac-qwen">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
+        </section>
+        <section class="rhacco-joke-card" aria-labelledby="jmac-archive-label">
+          <h2 id="jmac-archive-label">
+            <a href="https://developers.openai.com/api/docs/models/gpt-6-sol" target="_blank" rel="noopener noreferrer">GPT-6 vorgeneriert</a>
+          </h2>
+          <p id="jmac-archive">$joke</p>
+        </section>
+      </div>
+    </article>
   </div>
 </main>
+<script id="jmac-snapshot" type="application/json">$snapshot</script>
 <script>
 $script
 </script>
