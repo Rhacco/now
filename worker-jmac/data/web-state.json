@@ -270,6 +270,12 @@
       "gpt": "Ich stehe in der Bibliothek, frage nach dem neuesten Krimi,  \nder Bibliothekar lächelt und sagt: „Im Kino läuft er gerade.“  \nIch gehe zum Kino, kaufe Popcorn, setze mich und warte –  \nim Museum hängt das Buch dann doch nur als Ausstellung.",
       "qwen": "Ich steh im Museum, im Kino und in der Bibliothek gleichzeitig.\nDie Leute gucken mich komisch an, weil ich laut bin.\nTatsächlich: Ich bin die Bibliothekarin, die gerade ihre Pause macht.",
       "archive": "Vor dem Kino sagte mein Freund: „Kein Wort über den Film, den Trailer kenne ich schon.“ Nach dem Film war er enttäuscht. Er hatte im Trailer vor allem die Werbung für die Nachos gemeint."
+    },
+    {
+      "timestamp": "2026-11-18T23:36:08.105Z",
+      "gpt": "Ich gehe ins Fundbüro, weil ich meinen Schlüssel verloren habe.  \nDer Beamte fragt nach dem Formular, das ich ausfüllen muss.  \nIch reiche das ausgefüllte Formular ein und warte.  \nEr schaut drauf und sagt: „Leider ist das Formular für verlorene Socken.“",
+      "qwen": "Ich gehe ins Fundbüro, weil ich meinen Reisepass verloren habe.\nDer Beamte grinst breit und sagt: „Oh, aber da haben wir keinen Pass gefunden.“\nIch frage, was denn da lag.\n„Nur ein leeres Formular, in dem steht, dass Sie nichts verloren haben.“",
+      "archive": "Beim Amt zog ich eine Nummer und setzte mich. Sekunden später war ich dran. Die Frau am Schalter sah überrascht aus: „Alle anderen trauen sich schon gar nicht mehr, so früh zu kommen.“"
     }
   ]
 }
