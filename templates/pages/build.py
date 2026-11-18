@@ -42,10 +42,12 @@ def render_page(head, body, *, lang="en", body_class="", home=False):
 def read_featured_joke():
     try:
         archive = json.loads(ARCHIVE.read_text(encoding="utf-8"))
-        if isinstance(archive, dict) and archive.get("version") == 1:
-            jokes = archive.get("jokes")
-            if isinstance(jokes, list) and jokes and isinstance(jokes[0], str) and jokes[0].strip():
-                return html.escape(jokes[0].strip())
+        if isinstance(archive, dict) and archive.get("version") == 2:
+            topics = archive.get("topics")
+            if isinstance(topics, dict):
+                for jokes in topics.values():
+                    if isinstance(jokes, list) and jokes and isinstance(jokes[0], str) and jokes[0].strip():
+                        return html.escape(jokes[0].strip())
     except (OSError, ValueError):
         pass
     print("::warning::The featured Joke Machine entry is unavailable.")
