@@ -2,6 +2,7 @@ import html
 import json
 import os
 import re
+from hashlib import sha256
 from pathlib import Path
 from string import Template
 
@@ -14,6 +15,7 @@ ARCHIVE = ROOT / "worker-jmac/data/jokes.json"
 # A short, self-contained joke selected from the bundled history.
 FEATURED_JOKE = "2026-09-24T12:19:47.598Z"
 BASE = Template((TEMPLATES / "base.html").read_text(encoding="utf-8"))
+LAYOUT_VERSION = sha256(BASE.template.encode("utf-8")).hexdigest()[:16]
 
 # Workers keep producing standalone pages for their existing state consumers.
 # Preserve their page-specific head and body when reusing them for Pages.
@@ -26,11 +28,13 @@ WORKER_DOCUMENT = re.compile(
 
 
 def render_page(head, body, *, lang="en", body_class="", home=False):
+    classes = "rhacco-home" if home else f"rhacco-subpage {body_class}".strip()
     return BASE.substitute(
+        layout_version=LAYOUT_VERSION,
         lang=lang,
         head=head,
         body=body,
-        body_attributes=f' class="{body_class}"' if body_class else "",
+        body_attributes=f' class="{classes}"',
         home_label="Zur Startseite" if lang == "de" else "Back to the home page",
         home_href="./" if home else "../",
         nav_hidden=" hidden" if home else "",
@@ -69,12 +73,20 @@ def write_page(relative_path, content):
 
 def main():
     workers = {}
-    for path in ("gw/index.html", "rn/index.html"):
-        document = (SITE / path).read_text(encoding="utf-8")
-        page = WORKER_DOCUMENT.fullmatch(document)
+    for path, body_class in (("gw/index.html", "rhacco-gw"), ("rn/index.html", "rhacco-news")):
+        source = SITE / path
+        if path == "rn/index.html" and not source.is_file():
+            continue
+        page = WORKER_DOCUMENT.fullmatch(source.read_text(encoding="utf-8"))
         if page is None:
+            if path == "rn/index.html":
+                source.unlink()
+                print(f"::warning::{path}: unsupported worker HTML structure")
+                continue
             raise SystemExit(f"{path}: unsupported worker HTML structure")
-        workers[path] = render_page(page["head"].strip(), page["body"].strip("\n"), lang=page["lang"])
+        workers[path] = render_page(
+            page["head"].strip(), page["body"].strip("\n"), lang=page["lang"], body_class=body_class,
+        )
 
     for path, content in workers.items():
         write_page(path, content)
@@ -82,7 +94,7 @@ def main():
     home_body = (TEMPLATES / "home.html").read_text(encoding="utf-8").rstrip("\n")
     write_page("index.html", render_page(
         '<meta name="color-scheme" content="dark">\n<meta name="theme-color" content="#101114">\n<title>Rhacco</title>',
-        home_body, body_class="rhacco-home", home=True,
+        home_body, home=True,
     ))
 
     joke_body = Template((TEMPLATES / "joke.html").read_text(encoding="utf-8").rstrip("\n"))

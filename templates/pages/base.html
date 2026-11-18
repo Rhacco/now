@@ -3,46 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="rhacco-layout" content="$layout_version">
 $head
 <style>
+  .rhacco-subpage {
+    --rhacco-nav-top: max(12px, env(safe-area-inset-top, 0px));
+    --rhacco-nav-height: calc(var(--rhacco-nav-top) + 44px + 8px);
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
   .rhacco-page-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
     display: flex;
-    padding: max(16px, env(safe-area-inset-top)) 0 0 max(16px, env(safe-area-inset-left));
+    align-items: center;
+    height: var(--rhacco-nav-height);
+    padding: var(--rhacco-nav-top) max(16px, env(safe-area-inset-right, 0px)) 8px
+      max(16px, env(safe-area-inset-left, 0px));
+    background: var(--bg, #101114);
   }
   .rhacco-page-nav[hidden] { display: none; }
-  .rhacco-page-nav a {
+  .rhacco-back-link {
     display: grid;
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     place-items: center;
     box-sizing: border-box;
     border: 1px solid #30323a;
-    border-radius: 14px;
+    border-radius: 12px;
     background: #181a1f;
     color: #f7f7f8;
-    font: 32px/1 system-ui, sans-serif;
     text-decoration: none;
   }
-  .rhacco-page-nav a:hover { background: #242730; border-color: #555b69; }
-  .rhacco-page-nav a:focus-visible, .rhacco-home a:focus-visible {
+  .rhacco-back-link svg { display: block; }
+  .rhacco-back-link:hover { background: #242730; border-color: #555b69; }
+  .rhacco-back-link:focus-visible, .rhacco-home a:focus-visible {
     outline: 3px solid #a99bff;
     outline-offset: 3px;
   }
+  .rhacco-subpage .rhacco-page-content { display: flow-root; min-width: 0; }
+  .rhacco-gw .app > header, .rhacco-news .tabs { top: var(--rhacco-nav-height); }
   .rhacco-home, .rhacco-joke {
-    min-height: 100vh;
-    min-height: 100dvh;
     margin: 0;
     background: #101114;
     color: #f7f7f8;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   .rhacco-home {
-    display: grid;
-    grid-template-rows: 1fr auto;
+    --rhacco-home-vertical-padding: max(16px, env(safe-area-inset-top, 0px), env(safe-area-inset-bottom, 0px));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
     box-sizing: border-box;
-    padding: 24px max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+    padding: var(--rhacco-home-vertical-padding) max(16px, env(safe-area-inset-right, 0px))
+      var(--rhacco-home-vertical-padding) max(16px, env(safe-area-inset-left, 0px));
   }
-  .rhacco-home-menu { display: grid; gap: 12px; width: min(460px, 100%); margin: auto; }
+  .rhacco-home .rhacco-page-content {
+    flex: auto;
+    display: grid;
+    grid-template-rows: minmax(36px, 1fr) auto minmax(36px, 1fr);
+  }
+  .rhacco-home-menu {
+    grid-row: 2;
+    justify-self: center;
+    display: grid;
+    gap: 12px;
+    width: min(460px, 100%);
+    margin: 0;
+  }
   .rhacco-home-card {
     box-sizing: border-box;
     min-height: 68px;
@@ -61,14 +93,13 @@ $head
   .rhacco-home-card:hover { background: #20232a; border-color: #555b69; }
   .rhacco-home-card strong { font-size: 17px; font-weight: 650; }
   .rhacco-home-card span { color: #b2b6c1; font-size: 13px; }
-  .rhacco-workflow-status { justify-self: center; margin-top: 16px; }
+  .rhacco-workflow-status { grid-row: 3; justify-self: center; align-self: end; }
   .rhacco-workflow-status img { display: block; max-width: 100%; }
-  .rhacco-joke { display: grid; grid-template-rows: auto 1fr; }
   .rhacco-joke-board {
     box-sizing: border-box;
     width: min(1080px, calc(100% - 32px));
-    margin: auto;
-    padding: 28px 0 54px;
+    margin: 0 auto;
+    padding: 18px 0 54px;
   }
   .rhacco-joke-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .rhacco-joke-heading h1 { margin: 0; font-size: clamp(24px, 4vw, 32px); }
@@ -81,6 +112,9 @@ $head
     padding: clamp(18px, 4vw, 30px);
   }
   .rhacco-joke-card h2 { margin: 0 0 16px; color: #d7c9ff; font-size: 15px; }
+  .rhacco-joke-card h2 a { color: inherit; text-underline-offset: 0.2em; }
+  .rhacco-joke-card h2 a:hover { color: #f0e9ff; }
+  .rhacco-joke-card h2 a:focus-visible { outline: 2px solid #a99bff; outline-offset: 3px; }
   .rhacco-joke-card p {
     margin: 0;
     font-size: clamp(17px, 2.6vw, 21px);
@@ -93,8 +127,15 @@ $head
 </head>
 <body$body_attributes>
 <nav class="rhacco-page-nav" aria-label="$home_label"$nav_hidden>
-  <a href="$home_href" aria-label="$home_label"><span aria-hidden="true">←</span></a>
+  <a class="rhacco-back-link" href="$home_href" aria-label="$home_label">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+      <path d="M19 12H5m7-7-7 7 7 7"/>
+    </svg>
+  </a>
 </nav>
+<div class="rhacco-page-content">
 $body
+</div>
 </body>
 </html>

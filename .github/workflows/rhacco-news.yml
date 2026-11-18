@@ -1,11 +1,11 @@
 name: Rhacco News
-run-name: "${{ !inputs.called_by_central && 'News: Start Full Update' || 'News: Update' }}"
+run-name: "News: Update"
 
 on:
   workflow_call:
     inputs:
       called_by_central:
-        description: The run was invoked by Update & Deploy
+        description: Compatibility input for existing callers
         type: boolean
         default: false
     outputs:
@@ -21,17 +21,15 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 env:
   STATE_BRANCH: rhacco-news-state
 
 jobs:
   update:
-    name: ${{ !inputs.called_by_central && 'Start Full Update' || 'Update' }}
-    # Standalone manual and scheduled runs request a complete site refresh.
+    name: Update
     concurrency:
-      group: ${{ !inputs.called_by_central && format('rhacco-news-update-standalone-{0}', github.run_id) || 'rhacco-news-update' }}
+      group: rhacco-news-update
       queue: max
       cancel-in-progress: false
     outputs:
@@ -41,18 +39,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Start Full Update
-        if: ${{ !inputs.called_by_central }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          set -euo pipefail
-          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}" -f mode=full
-
       - name: Checkout Code
-        if: ${{ inputs.called_by_central }}
         id: checkout
         continue-on-error: true
         uses: actions/checkout@v7
@@ -219,7 +206,7 @@ jobs:
           echo "state_updated=true" >> "${GITHUB_OUTPUT}"
 
       - name: Update Summary
-        if: ${{ !cancelled() && inputs.called_by_central }}
+        if: ${{ !cancelled() }}
         continue-on-error: true
         env:
           CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
@@ -242,3 +229,9 @@ jobs:
           fi
           printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
           printf 'Steps: checkout=%s Python=%s restore=%s build=%s save=%s\n' "${CHECKOUT_OUTCOME}" "${PYTHON_OUTCOME}" "${RESTORE_OUTCOME}" "${GENERATE_OUTCOME}" "${PUBLISH_OUTCOME}"
+
+      - name: Confirm Update
+        if: ${{ !cancelled() }}
+        env:
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+        run: test "${PUBLISH_OUTCOME}" = "success"

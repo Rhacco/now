@@ -20,11 +20,9 @@ on:
     paths:
       - ".github/workflows/update-and-deploy.yml"
       - ".github/workflows/gw2-action.yml"
-      - ".github/workflows/rhacco-news.yml"
+      - ".github/workflows/joke-machine.yml"
       - "worker-gw2a/**"
-      - "worker-rnews/**"
-      - "worker-jmac/data/history.json"
-      - "worker-jmac/data/jokes.json"
+      - "worker-jmac/**"
       - "templates/pages/**"
 
 permissions:
@@ -39,7 +37,7 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       gw2_action: ${{ steps.choose.outputs.gw2_action }}
-      rhacco_news: ${{ steps.choose.outputs.rhacco_news }}
+      joke_machine: ${{ steps.choose.outputs.joke_machine }}
       full: ${{ steps.choose.outputs.full }}
     steps:
       - name: Pick Rotation
@@ -49,7 +47,7 @@ jobs:
           DISPATCH_MODE: ${{ inputs.mode }}
         run: |
           set -euo pipefail
-          workers=(gw2_action rhacco_news)
+          workers=(gw2_action joke_machine)
           if [[ "${GITHUB_EVENT_NAME}" == "schedule" || "${GITHUB_EVENT_NAME}" == "push" || "${DISPATCH_MODE}" == "full" ]]; then
             selected=("${workers[@]}")
             echo "full=true" >> "${GITHUB_OUTPUT}"
@@ -80,30 +78,27 @@ jobs:
       called_by_central: true
     secrets: inherit
 
-  rhacco_news:
+  joke_machine:
     permissions:
       contents: write
-      actions: write
-    name: Rhacco News
+    name: Joke Machine
     needs: choose_workers
-    if: ${{ needs.choose_workers.outputs.rhacco_news == 'true' }}
-    uses: ./.github/workflows/rhacco-news.yml
-    with:
-      called_by_central: true
-    secrets: inherit
+    if: ${{ needs.choose_workers.outputs.joke_machine == 'true' }}
+    uses: ./.github/workflows/joke-machine.yml
+    secrets:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
   deploy_pages:
     name: Deploy Pages
     needs:
       - choose_workers
       - gw2_action
-      - rhacco_news
-    # Full runs publish after both workers finish successfully; rotating runs
-    # publish when their selected worker saved new state.
+      - joke_machine
+    # Joke Machine publishes its JSON independently of the Pages deployment.
     if: ${{ !cancelled() }}
     runs-on: ubuntu-24.04
     timeout-minutes: 10
-    # A blocked Pages environment must not pause the minute-by-minute workers.
+    # Pages deployments are queued independently of the workers.
     concurrency:
       group: rhacco-pages-deploy
       queue: max
@@ -116,11 +111,10 @@ jobs:
       GW2_STATE_BRANCH: gw2-action-state
       RN_STATE_BRANCH: rhacco-news-state
       GW2_RESULT: ${{ needs.gw2_action.result }}
-      RN_RESULT: ${{ needs.rhacco_news.result }}
+      JOKE_RESULT: ${{ needs.joke_machine.result }}
       GW2_UPDATED: ${{ needs.gw2_action.outputs.state_updated }}
-      RN_UPDATED: ${{ needs.rhacco_news.outputs.state_updated }}
+      JOKE_UPDATED: ${{ needs.joke_machine.outputs.state_updated }}
       GW2_READY: ${{ needs.gw2_action.outputs.state_ready }}
-      RN_READY: ${{ needs.rhacco_news.outputs.state_ready }}
 
     steps:
       - name: Check Publish
@@ -132,26 +126,23 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${FULL_UPDATE}" = "true" ]; then
-            if [ "${GW2_READY}" = "true" ] && [ "${RN_READY}" = "true" ]; then
+          if [ "${FULL_UPDATE}" != "true" ] && [ "${GW2_RESULT}" = "skipped" ]; then
+            echo "publish=false" >> "${GITHUB_OUTPUT}"
+            echo "reason=joke_only" >> "${GITHUB_OUTPUT}"
+            echo "Joke Machine rotation uses its own public JSON state."
+          elif [ "${GW2_RESULT}" = "success" ] && [ "${GW2_READY}" = "true" ]; then
+            if [ "${FULL_UPDATE}" = "true" ] || [ "${GW2_UPDATED}" = "true" ]; then
               echo "publish=true" >> "${GITHUB_OUTPUT}"
-              echo "Both full-update workers completed; publish both pages."
+              echo "GW2 Action state is ready; publish Pages."
             else
               echo "publish=false" >> "${GITHUB_OUTPUT}"
-              echo "reason=incomplete_full_update" >> "${GITHUB_OUTPUT}"
-              echo "At least one full-update worker failed; keep the current Pages release."
+              echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
+              echo "GW2 Action has no new state; keep the current Pages release."
             fi
-          elif [ "${GW2_UPDATED}" = "true" ] || [ "${RN_UPDATED}" = "true" ]; then
-            echo "publish=true" >> "${GITHUB_OUTPUT}"
-            echo "Publish both Pages after the confirmed rotating-worker update."
-          elif [ "${GW2_READY}" = "true" ] || [ "${RN_READY}" = "true" ]; then
-            echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
-            echo "No new worker state confirmed; keep the current Pages release."
           else
             echo "publish=false" >> "${GITHUB_OUTPUT}"
             echo "reason=incomplete_update" >> "${GITHUB_OUTPUT}"
-            echo "Worker update failed; keep the current Pages release."
+            echo "GW2 Action update failed; keep the current Pages release."
           fi
 
       - name: Checkout Code
@@ -168,13 +159,10 @@ jobs:
         continue-on-error: true
         if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
         shell: bash
-        env:
-          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         run: |
           set -euo pipefail
 
           echo "GW2 worker result: ${GW2_RESULT}"
-          echo "Rhacco News worker result: ${RN_RESULT}"
 
           rm -rf _site
           mkdir -p _site
@@ -192,7 +180,7 @@ jobs:
                 break
               fi
               if [ "${attempt}" -eq 3 ]; then
-                echo "${label}: unable to fetch ${branch}; keeping the last published site." >&2
+                echo "${label}: unable to fetch ${branch}." >&2
                 return 1
               fi
               sleep "${attempt}"
@@ -214,7 +202,7 @@ jobs:
                ! grep -Eq '<meta name="page-generated-at-ms" content="[0-9]+">' "${target}" ||
                ! grep -Fq '</html>' "${target}"; then
               rm -f "${target}"
-              echo "${label}: incomplete state page; keeping the last published site." >&2
+              echo "${label}: incomplete state page." >&2
               return 1
             fi
 
@@ -223,68 +211,36 @@ jobs:
             echo "Added ${label}: ${branch}:${source} -> ${target} (state ${state_time:-unknown})"
           }
 
-          HAS_RN=0
-          HAS_GW2=0
-          if copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/rn/index.html" "Rhacco News"; then
-            HAS_RN=1
-          fi
-          if copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw/index.html" "GW2 Action"; then
-            HAS_GW2=1
+          copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw/index.html" "GW2 Action"
+          if ! copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/rn/index.html" "Rhacco News"; then
+            echo "::warning::No Rhacco News snapshot was available."
           fi
 
-          if [ "${HAS_RN}" -ne 1 ] || [ "${HAS_GW2}" -ne 1 ]; then
-            echo "Both valid worker pages are required; keeping the last published site." >&2
-            exit 1
-          fi
-
-          # The selected worker must be fresh. Keep the other valid page even if
-          # its worker has not run recently, so it cannot block a fresh update.
-          python3 - <<'PY'
-          import os
+          python3 - <<'PYTHON'
           import re
           import time
           from pathlib import Path
 
-          now_ms = int(time.time() * 1000)
-          pages = {
-              "_site/rn/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["RN_UPDATED"] == "true",
-              "_site/gw/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["GW2_UPDATED"] == "true",
-          }
-          for path, must_be_fresh in pages.items():
-              match = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', Path(path).read_bytes())
-              if not match:
-                  raise SystemExit(f"{path}: missing generation time")
-              age_ms = now_ms - int(match.group(1))
-              if age_ms < -120000:
-                  raise SystemExit(f"{path}: state page has a future timestamp")
-              if must_be_fresh and age_ms > 900000:
-                  raise SystemExit(f"{path}: selected state page is too old")
-              if not must_be_fresh and age_ms > 900000:
-                  print(f"{path}: retaining the last valid page from the unselected worker")
-          PY
+          path = Path("_site/gw/index.html")
+          match = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', path.read_bytes())
+          if not match:
+              raise SystemExit(f"{path}: missing generation time")
+          age_ms = int(time.time() * 1000) - int(match.group(1))
+          if age_ms < -120000:
+              raise SystemExit(f"{path}: state page has a future timestamp")
+          if age_ms > 900000:
+              raise SystemExit(f"{path}: GW2 Action state page is too old")
+          PYTHON
 
           python3 templates/pages/build.py
 
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
 
-          # Prefer a new state commit over the unchanged workflow commit.
-          # Full refreshes can also publish valid, unchanged state.
-          if [ "${RN_UPDATED}" = true ] && [ "${HAS_RN}" -eq 1 ]; then
-            build_branch="${RN_STATE_BRANCH}"
-          elif [ "${GW2_UPDATED}" = true ] && [ "${HAS_GW2}" -eq 1 ]; then
-            build_branch="${GW2_STATE_BRANCH}"
-          elif [ "${FULL_UPDATE}" = "true" ] && [ "${HAS_RN}" -eq 1 ]; then
-            # Full refreshes may contain valid state without a new commit.
-            build_branch="${RN_STATE_BRANCH}"
-          else
-            echo "Neither worker published a fresh state; refusing a stale deployment." >&2
-            exit 1
-          fi
-          build_version="$(git rev-parse "origin/${build_branch}")"
+          build_version="$(git rev-parse "origin/${GW2_STATE_BRANCH}")"
           git cat-file -e "${build_version}^{commit}"
           echo "build_version=${build_version}" >> "${GITHUB_OUTPUT}"
-          echo "Pages build version: ${build_version} (${build_branch})"
+          echo "Pages build version: ${build_version} (${GW2_STATE_BRANCH})"
 
       - name: Configure Pages
         id: pages
@@ -421,7 +377,6 @@ jobs:
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           RUN_ID: ${{ github.run_id }}
-          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         run: |
           python3 - <<'PY'
           import os
@@ -432,19 +387,22 @@ jobs:
           from pathlib import Path
 
           base = os.environ["PAGE_URL"].rstrip("/") + "/"
-          paths = ("gw/index.html", "rn/index.html")
-          must_be_fresh = {
-              "gw/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["GW2_UPDATED"] == "true",
-              "rn/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["RN_UPDATED"] == "true",
-          }
+          paths = ("gw/index.html",)
           static_pages = {path: (Path("_site") / path).read_bytes()
                           for path in ("index.html", "jmac/index.html")}
           expected_times = {}
+          expected_layouts = {}
+          layout_pattern = re.compile(rb'<meta name="rhacco-layout" content="([0-9a-f]{16})">')
           for path in paths:
               local = Path("_site") / path
               if not local.is_file():
                   raise SystemExit(f"{path}: missing from the Pages artifact")
-              stamp = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', local.read_bytes())
+              content = local.read_bytes()
+              layout = layout_pattern.search(content)
+              if not layout:
+                  raise SystemExit(f"{path}: artifact lacks the shared page layout")
+              expected_layouts[path] = layout[1]
+              stamp = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', content)
               if not stamp:
                   raise SystemExit(f"{path}: artifact lacks a generation time")
               expected_times[path] = int(stamp.group(1))
@@ -462,6 +420,9 @@ jobs:
                           if content != static_pages[path]:
                               failures.append(f"{path}: published page differs from the Pages artifact")
                           continue
+                      layout = layout_pattern.search(content)
+                      if not layout or layout[1] != expected_layouts[path]:
+                          raise ValueError("published page lacks the current shared layout")
                       expected = expected_times[path]
                       actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', content)
                       if not actual:
@@ -470,7 +431,7 @@ jobs:
                       age_seconds = max(0, (now_ms - published) // 1000)
                       lag_seconds = max(0, (expected - published) // 1000)
                       print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
-                      if (must_be_fresh[path] and age_seconds > 900) or lag_seconds > 120:
+                      if age_seconds > 900 or lag_seconds > 120:
                           failures.append(f"{path}: Pages is serving an old page")
                   except Exception as error:
                       failures.append(f"{path}: public page could not be checked: {error}")
@@ -497,14 +458,13 @@ jobs:
           FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
         shell: bash
         run: |
-          detail=""
           if [ "${PICK_OUTCOME}" != "success" ]; then
             message="**Pages update could not be started.**"
           elif [ "${PUBLISH}" != "true" ]; then
-            if [ "${SKIP_REASON}" = "incomplete_full_update" ]; then
-              message="**Pages unchanged.** Full update was incomplete."
-            elif [ "${SKIP_REASON}" = "incomplete_update" ]; then
-              message="**Pages unchanged.** Worker update failed."
+            if [ "${SKIP_REASON}" = "incomplete_update" ]; then
+              message="**Pages unchanged.** GW2 Action update failed."
+            elif [ "${SKIP_REASON}" = "joke_only" ]; then
+              message="**Joke Machine rotation.** Pages deployment was skipped."
             else
               message="**Pages unchanged.** No new data was saved."
             fi
@@ -516,28 +476,18 @@ jobs:
             message="**Public pages could not be verified.**"
           else
             message="**Pages are live and verified.**"
-            if [ "${GW2_UPDATED}" = "true" ] && [ "${RN_UPDATED}" = "true" ]; then
-              detail="Fresh data: GW2 Action & Rhacco News."
-            elif [ "${GW2_UPDATED}" = "true" ]; then
-              detail="Fresh data: GW2 Action."
-            elif [ "${RN_UPDATED}" = "true" ]; then
-              detail="Fresh data: Rhacco News."
-            fi
           fi
           if [ "${PICK_OUTCOME}" != "success" ] || { [ "${PUBLISH}" = "true" ] && [ "${FRESHNESS_OUTCOME}" != "success" ]; }; then
             echo "::warning::Pages update not confirmed; see job logs."
           fi
           printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
-          if [ -n "${detail}" ]; then
-            printf '%s\n' "${detail}" >> "${GITHUB_STEP_SUMMARY}"
-          fi
-          printf 'Workers: GW2=%s (updated=%s), News=%s (updated=%s)\n' "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${RN_RESULT}" "${RN_UPDATED:-false}"
+          printf 'GW2 Action: %s (new state: %s)\n\nJoke Machine: %s (new state: %s)\n' \
+            "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${JOKE_RESULT}" "${JOKE_UPDATED:-false}" >> "${GITHUB_STEP_SUMMARY}"
           printf 'Steps: selection=%s checkout=%s build=%s configure=%s upload=%s deploy=%s verify=%s\n' "${PICK_OUTCOME}" "${CHECKOUT_OUTCOME}" "${ASSEMBLE_OUTCOME}" "${CONFIGURE_OUTCOME}" "${UPLOAD_OUTCOME}" "${DEPLOY_OUTCOME}" "${FRESHNESS_OUTCOME}"
 
       - name: Confirm Result
         if: ${{ !cancelled() }}
         env:
-          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
           PICK_OUTCOME: ${{ steps.pick.outcome }}
           PUBLISH: ${{ steps.pick.outputs.publish }}
           SKIP_REASON: ${{ steps.pick.outputs.reason }}
@@ -545,7 +495,7 @@ jobs:
         run: |
           if [ "${PICK_OUTCOME}" != "success" ]; then exit 1; fi
           if [ "${PUBLISH}" != "true" ]; then
-            if [ "${FULL_UPDATE}" != "true" ] && [ "${SKIP_REASON}" = "no_fresh_state" ]; then exit 0; fi
+            case "${SKIP_REASON}" in joke_only|no_fresh_state) exit 0 ;; esac
             exit 1
           fi
           [ "${FRESHNESS_OUTCOME}" = "success" ]

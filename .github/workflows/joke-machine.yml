@@ -2,6 +2,15 @@ name: Joke Machine
 run-name: Joke Check
 
 on:
+  workflow_call:
+    secrets:
+      GROQ_API_KEY:
+        description: Groq API key for both models
+        required: true
+    outputs:
+      state_updated:
+        description: A new joke trio was pushed to the state branch
+        value: ${{ jobs.joke-machine.outputs.state_updated }}
   workflow_dispatch:
     inputs:
       force:
@@ -23,6 +32,8 @@ jobs:
       queue: max
       cancel-in-progress: false
     timeout-minutes: 5
+    outputs:
+      state_updated: ${{ steps.publish.outputs.state_updated }}
 
     steps:
       - name: Checkout
@@ -64,6 +75,7 @@ jobs:
         run: node app/main.js
 
       - name: Publish Joke State
+        id: publish
         run: |
           set -euo pipefail
           if [ ! -f "${JMAC_STATE_FILE}" ]; then exit 0; fi
@@ -82,3 +94,4 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Joke Machine state"
           git push origin "HEAD:refs/heads/joke-machine-state"
+          echo "state_updated=true" >> "${GITHUB_OUTPUT}"
