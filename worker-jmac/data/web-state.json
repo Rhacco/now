@@ -120,6 +120,12 @@
       "gpt": "Mama: „Kinder, ich hab im Supermarkt 5 € gefunden, wer will das Geld?“  \nLena: „Ich! Ich habe gerade meine Hausaufgaben nicht gemacht.“  \nTim: „Ich nehme das Geld, ich muss jetzt das Handy für den Chat aufladen.“  \nOpa: „Ich nehme das Geld – endlich kann ich wieder den Familienchat leiser stellen.“",
       "qwen": "Mama schreibt im Familienchat: „Kommt ihr heute auf den Grillabend?“\nIch schreibe: „Sehr gerne, wir kommen um 18 Uhr.“\nGanz oben im Chat leuchtet das Lade-Symbol noch.",
       "archive": "Beim Optiker fragte man, ob ich meine alte Brille dabeihätte. Ich sagte: „Wenn ich wüsste, wo sie ist, wäre ich vielleicht gar nicht hier.“"
+    },
+    {
+      "timestamp": "2026-11-18T21:08:43.229Z",
+      "gpt": "Mama: „Kinder, heute gibt’s Pizza!“  \nLukas: „Super, ich bestell gleich die Hälfte.“  \nAnna: „Ich bringe den Salat mit.“  \nOma: „Ich dachte, das war der neue Familien‑Chat‑Bot.“",
+      "qwen": "Im Familienchat fragt Oma: „Wer hat das Foto von mir gemacht?“\nIch antworte: „Ich, Omi, ich hab dich beim Gänseblümchen-Pflücken fotografiert.“\nSie schreibt: „Danke, aber ich war doch heute im Krankenhaus.“\nIch: „Ja, aber die Gänseblümchen standen auf dem Zimmer.“",
+      "archive": "Für mein Bewerbungsfoto sagte die Fotografin: „Schauen Sie bitte selbstbewusst.“ Ich fragte: „Können Sie das hinterher noch bearbeiten?“"
     }
   ]
 }
