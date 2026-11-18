@@ -186,6 +186,12 @@
       "gpt": "Ich stehe am Kiosk, das Schild blinkt: „Paketabholung 24 h“.  \nDer Verkäufer ruft: „Ihr Paket ist da, Herr Müller!“  \nIch greife nach dem Umschlag, doch er zieht nur einen Luftballon heraus.  \n„Da war wohl das falsche Paket – das ist das Geschenk vom Postboten.“",
       "qwen": "„Ich habe hier ein großes Paket abzugeben.“\nDer Kiosk-Betreuer schaut auf die kleine Schachtel in meiner Hand.\n„Da stimmt doch was nicht, das ist kein großes Paket.“",
       "archive": "Beim Taxi fragte der Fahrer: „Haben Sie es eilig?“ „Nein“, sagte ich. Er sah so enttäuscht aus, dass ich beinahe einen Termin erfunden hätte."
+    },
+    {
+      "timestamp": "2026-11-18T22:20:58.069Z",
+      "gpt": "Im Zug drängt sich ein Tourist an den Platz neben mir, schaut auf mein Handy und fragt: „Entschuldigung, wo ist denn hier das WLAN?“. Ich lächle, tippe kurz und antworte: „Hier vorne, im nächsten Wagen – dort gibt’s immer freie Plätze.“",
+      "qwen": "Ich fahre stundenlang in der U-Bahn, bis ich den richtigen Bahnhof erreiche.\nDraußen auf dem Bahnsteig steht ein Schild: „Bitte Stufen beachten.“\nEin anderer Fahrgast neben mir stöhnt genervt: „Endlich, mal wieder ein vollgepackter Zug.“\nIch schaue verwirrt auf mein Handy: „Aber wir sind doch gerade ausgestiegen.“",
+      "archive": "Mein Nachbar bot an, während meines Urlaubs die Blumen zu gießen. Als ich zurückkam, sahen sie besser aus als je zuvor. Jetzt weiß ich nicht, ob ich ihm danken oder mich entschuldigen soll."
     }
   ]
 }
