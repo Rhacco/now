@@ -258,6 +258,12 @@
       "gpt": "Ich räum’ meine Klamotten aus, werfe alles in die Tonne –  \nmein Hund schaut mich an, als wär’s ein Kunstprojekt.  \nIch sag’: „Du hast ja nichts zu verlieren.“  \nEr bellt: „Dann füll ich die Tonne mit dir!“",
       "qwen": "Ich habe beim Ausmisten diese alte Schachtel mit CDs gefunden.\nIch habe sie vorsichtig geöffnet, um zu schauen, was sich noch retten lässt.\nDrin lag ein einzelner Bon vom Bäcker aus 2009.\nIch habe ihn eingekleistert, das ist endlich meine Währung.",
       "archive": "Auf dem Schild im Hausflur steht „Bitte die Tür schließen“. Jemand hat daruntergeschrieben: „Welche?“ Ich freue mich schon auf die nächste Eigentümerversammlung."
+    },
+    {
+      "timestamp": "2026-11-18T23:29:39.959Z",
+      "gpt": "Ich will beim Kochen das Rezept per App aufrufen, tippe den Namen ein –  \ndie App fragt, ob ich das Rezept per Sprachsteuerung starten will.  \nIch sage: „Ja, bitte!“ und das Handy sagt: „Entschuldigung, ich verstehe nur ‘Siri’.“",
+      "qwen": "Ich wollte nur schnell die Uhrzeit checken.\nDann hat mein Handy gefragt, ob ich ein Konzert buchen möchte.\nIch sagte: „Nein danke, ich hab keine Zeit.“\nJetzt hat es mir drei Restaurants vorgeschlagen, für die ich wohl auch keine Zeit habe.",
+      "archive": "Mein Handy setzte das Wort „morgen“ automatisch als Termin. Unter den Gästen stand niemand. Wenigstens hat es inzwischen verstanden, dass ich da keine Zeit habe."
     }
   ]
 }
