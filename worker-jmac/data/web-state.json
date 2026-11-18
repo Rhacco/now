@@ -126,6 +126,12 @@
       "gpt": "Mama: „Kinder, heute gibt’s Pizza!“  \nLukas: „Super, ich bestell gleich die Hälfte.“  \nAnna: „Ich bringe den Salat mit.“  \nOma: „Ich dachte, das war der neue Familien‑Chat‑Bot.“",
       "qwen": "Im Familienchat fragt Oma: „Wer hat das Foto von mir gemacht?“\nIch antworte: „Ich, Omi, ich hab dich beim Gänseblümchen-Pflücken fotografiert.“\nSie schreibt: „Danke, aber ich war doch heute im Krankenhaus.“\nIch: „Ja, aber die Gänseblümchen standen auf dem Zimmer.“",
       "archive": "Für mein Bewerbungsfoto sagte die Fotografin: „Schauen Sie bitte selbstbewusst.“ Ich fragte: „Können Sie das hinterher noch bearbeiten?“"
+    },
+    {
+      "timestamp": "2026-11-18T21:10:53.856Z",
+      "gpt": "Ich steh am Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Aus welchem Grund?“.  \nIch sag: „Ich wollte es nur schnell abholen.“  \nDarauf erwidert er: „Dann zahlen Sie bitte die Versand‑Gebühr.“",
+      "qwen": "Stelle dich an, um dein Paket abzuholen.\nDie Verkäuferin fragt: „Ist das für Sie?“\nDu nickst und zahlst.\nSie druckt dir eine Quittung für zwei Kaffee aus.",
+      "archive": "Bei der Behörde sagte ich: „Ich habe alle Unterlagen dabei.“ Die Mitarbeiterin sah mich mitleidig an: „Das können Sie doch noch gar nicht wissen.“"
     }
   ]
 }
