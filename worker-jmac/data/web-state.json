@@ -72,6 +72,12 @@
       "gpt": "Mama: „Kinder, ich habe die Rechnung vom Stromanbieter bekommen – 200 €!“  \nLukas: „Wow, das ist ja fast so viel wie unser Kinogutschein.“  \nAnna: „Vielleicht haben wir ja doch zu viel Netflix geschaut.“  \nOma: „Keine Sorge, ich habe das Geld schon an die Versicherung geschickt – für den Fall, dass das Licht ausgeht.“",
       "qwen": "Mama schreibt im Familienchat: „Ich habe heute den Arzt besucht.“\nAlle antworten sofort: „Wie geht es dir? Was hat er gesagt?“\nMama: „Er hat nur gesagt, ich bin die Einzige, die noch auf die Gruppe antwortet.“",
       "archive": "Der Kundendienst sagte: „Das Problem ist uns bekannt.“ „Prima“, sagte ich, „dann sind wir schon zu zweit.“ „Ach, wir sind deutlich mehr.“"
+    },
+    {
+      "timestamp": "2026-11-18T20:53:32.919Z",
+      "gpt": "Ich stehe im Treppenhaus, warte auf den Aufzug und sehe den Nachbarn mit seiner neuen, quietschenden Einkaufstasche.  \nEr lächelt, wir fangen an zu plaudern, und ich frage neugierig: „Wie viel wiegt die eigentlich?“  \nEr schaut mich ernst an, drückt die Tasche zusammen und sagt: „Genug, dass ich das Haus nicht mehr runtertragen kann.“  \nIch lache und antworte: „Dann lass uns doch einfach den Aufzug reparieren.“",
+      "qwen": "Ich stehe im Treppenhaus und warte, bis der Nachbar seine Schuhe anzieht.\nEr schaut mich an und sagt: „Entschuldigung, ich bin noch nicht fertig.“\nIch sage: „Doch, Sie sind fertig. Wir warten nur noch auf Ihre Ausrede.“",
+      "archive": "Im Fundbüro fragte man, woran ich meinen schwarzen Regenschirm erkennen würde. Ich sagte: „Daran, dass ich ihn wiedererkenne.“ Wir waren beide nicht besonders überzeugt."
     }
   ]
 }
