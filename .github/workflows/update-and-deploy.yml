@@ -11,42 +11,34 @@ on:
       - main
 
 permissions:
-  contents: write
-  actions: write
-  pages: write
-  id-token: write
+  contents: read
 
 jobs:
   gw2_action:
+    name: GW2 Action
     permissions:
       contents: write
-      actions: write
-    name: GW2 Action
     uses: ./.github/workflows/gw2-action.yml
-    with:
-      called_by_central: true
-    secrets: inherit
 
   joke_machine:
+    name: Joke Machine
     permissions:
       contents: write
-    name: Joke Machine
     uses: ./.github/workflows/joke-machine.yml
-    with:
-      force: true
     secrets:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
   deploy_pages:
     name: Deploy Pages
-    needs:
-      - gw2_action
-      - joke_machine
-    # Joke Machine publishes its JSON independently of the Pages deployment.
-    if: ${{ !cancelled() }}
+    needs: [gw2_action, joke_machine]
+    # A failed joke run leaves the last published snapshot available.
+    if: ${{ !cancelled() && needs.gw2_action.result == 'success' }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     runs-on: ubuntu-24.04
     timeout-minutes: 10
-    # Pages deployments are queued independently of the workers.
     concurrency:
       group: rhacco-pages-deploy
       queue: max
@@ -54,37 +46,13 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     env:
       GW2_STATE_BRANCH: gw2-action-state
       RN_STATE_BRANCH: rhacco-news-state
       JMAC_STATE_BRANCH: joke-machine-state
-      GW2_RESULT: ${{ needs.gw2_action.result }}
-      JOKE_RESULT: ${{ needs.joke_machine.result }}
-      GW2_UPDATED: ${{ needs.gw2_action.outputs.state_updated }}
-      JOKE_UPDATED: ${{ needs.joke_machine.outputs.state_updated }}
-      GW2_READY: ${{ needs.gw2_action.outputs.state_ready }}
 
     steps:
-      - name: Check Publish
-        id: pick
-        if: ${{ !cancelled() }}
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [ "${GW2_RESULT}" = "success" ] && [ "${GW2_READY}" = "true" ]; then
-            echo "publish=true" >> "${GITHUB_OUTPUT}"
-            echo "GW2 Action state is ready; publish Pages."
-          else
-            echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "GW2 Action update failed; keep the current Pages release."
-          fi
-
       - name: Checkout Code
-        id: checkout
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.pick.outputs.publish == 'true' }}
         uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
@@ -92,349 +60,30 @@ jobs:
 
       - name: Build Pages
         id: assemble
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          echo "GW2 worker result: ${GW2_RESULT}"
-
-          rm -rf _site
-          mkdir -p _site
-          : > _site/.nojekyll
-
-          copy_state_page() {
-            local branch="$1"
-            local source="$2"
-            local target="$3"
-            local label="$4"
-
-            local attempt
-            for attempt in 1 2 3; do
-              if git fetch --force --no-tags origin "${branch}:refs/remotes/origin/${branch}"; then
-                break
-              fi
-              if [ "${attempt}" -eq 3 ]; then
-                echo "${label}: unable to fetch ${branch}." >&2
-                return 1
-              fi
-              sleep "${attempt}"
-            done
-
-            if ! git cat-file -e "origin/${branch}:${source}" 2>/dev/null; then
-              echo "${label}: ${branch}:${source} is missing." >&2
-              return 1
-            fi
-
-            mkdir -p "$(dirname "${target}")"
-            if ! git show "origin/${branch}:${source}" > "${target}" || ! test -s "${target}"; then
-              rm -f "${target}"
-              echo "${label}: missing or empty page in ${branch}; refusing to publish it." >&2
-              return 1
-            fi
-
-            if ! grep -Fq "<title>${label}</title>" "${target}" ||
-               ! grep -Eq '<meta name="page-generated-at-ms" content="[0-9]+">' "${target}" ||
-               ! grep -Fq '</html>' "${target}"; then
-              rm -f "${target}"
-              echo "${label}: incomplete state page." >&2
-              return 1
-            fi
-
-            local state_time
-            state_time="$(git log -1 --format='%cI' "origin/${branch}" 2>/dev/null || true)"
-            echo "Added ${label}: ${branch}:${source} -> ${target} (state ${state_time:-unknown})"
-          }
-
-          copy_state_page "${GW2_STATE_BRANCH}" "worker-gw2a/index.html" "_site/gw/index.html" "GW2 Action"
-          if ! copy_state_page "${RN_STATE_BRANCH}" "worker-rnews/index.html" "_site/rn/index.html" "Rhacco News"; then
-            echo "::warning::No Rhacco News snapshot was available."
-          fi
-
-          python3 - <<'PYTHON'
-          import re
-          import time
-          from pathlib import Path
-
-          path = Path("_site/gw/index.html")
-          match = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', path.read_bytes())
-          if not match:
-              raise SystemExit(f"{path}: missing generation time")
-          age_ms = int(time.time() * 1000) - int(match.group(1))
-          if age_ms < -120000:
-              raise SystemExit(f"{path}: state page has a future timestamp")
-          if age_ms > 900000:
-              raise SystemExit(f"{path}: GW2 Action state page is too old")
-          PYTHON
-
-          jmac_ref="refs/remotes/origin/${JMAC_STATE_BRANCH}"
-          jmac_snapshot="$(mktemp)"
-          if git fetch --quiet --force --no-tags origin "refs/heads/${JMAC_STATE_BRANCH}:${jmac_ref}" &&
-             git show "${jmac_ref}:worker-jmac/data/web-state.json" > "${jmac_snapshot}"; then
-            export JMAC_SNAPSHOT_FILE="${jmac_snapshot}"
-          else
-            echo "::warning::No Joke Machine snapshot was available."
-          fi
-          python3 templates/pages/build.py
-
-          echo "Pages artifact:"
-          find _site -maxdepth 2 -type f -print | sort
-
-          build_version="$(git rev-parse "origin/${GW2_STATE_BRANCH}")"
-          git cat-file -e "${build_version}^{commit}"
-          echo "build_version=${build_version}" >> "${GITHUB_OUTPUT}"
-          echo "Pages build version: ${build_version} (${GW2_STATE_BRANCH})"
+        run: bash scripts/prepare-pages.sh
 
       - name: Configure Pages
-        id: pages
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.assemble.outcome == 'success' }}
         uses: actions/configure-pages@v6
 
       - name: Upload Pages
         id: upload
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.pages.outcome == 'success' }}
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
       - name: Deploy Pages
         id: deployment
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.upload.outcome == 'success' }}
         uses: actions/github-script@v8
         env:
           BUILD_VERSION: ${{ steps.assemble.outputs.build_version }}
           ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
         with:
           script: |
-            const artifactId = Number(process.env.ARTIFACT_ID);
-            const buildVersion = process.env.BUILD_VERSION;
-            if (!Number.isSafeInteger(artifactId) || !/^[a-f0-9]{40}$/.test(buildVersion)) {
-              throw new Error('Missing Pages artifact or valid state commit');
-            }
-            const {owner, repo} = context.repo;
-            const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
-            const temporary = error => [429, 500, 502, 503, 504].includes(error?.status);
-            // Same GitHub API and job OIDC token used by actions/deploy-pages.
-            const token = await core.getIDToken();
-            const create = version => github.request('POST /repos/{owner}/{repo}/pages/deployments', {
-              owner, repo, artifact_id: artifactId, pages_build_version: version, oidc_token: token
-            });
-            const status = id => github.request('GET /repos/{owner}/{repo}/pages/deployments/{id}', {
-              owner, repo, id
-            });
-
-            // A broken POST response does not prove that GitHub rejected the deployment.
-            // Query by its build commit before sending the artifact again.
-            async function findAccepted(version) {
-              let uncertain = false;
-              for (let attempt = 1; attempt <= 3; attempt++) {
-                await pause(attempt * 2000);
-                try {
-                  const {data} = await status(version);
-                  if (data?.status) return true;
-                  throw new Error('Pages returned an incomplete deployment status');
-                } catch (error) {
-                  if (error.status === 404) continue;
-                  if (temporary(error)) { uncertain = true; continue; }
-                  throw error;
-                }
-              }
-              if (uncertain) throw new Error('Could not verify whether Pages accepted the deployment');
-              return false;
-            }
-
-            async function createOrRecover(version) {
-              for (let attempt = 1; attempt <= 3; attempt++) {
-                try {
-                  return (await create(version)).data;
-                } catch (error) {
-                  if (!temporary(error) && !(error.status === 422 && attempt > 1)) throw error;
-                  core.warning('Pages creation response failed (HTTP ' + (error.status || '?') + '); checking the deployment status.');
-                  if (await findAccepted(version)) return {id: version};
-                  if (!temporary(error) || attempt === 3) throw error;
-                  await pause(attempt * 3000);
-                }
-              }
-            }
-
-            let version = buildVersion;
-            let deployment;
-            try {
-              deployment = await createOrRecover(version);
-            } catch (error) {
-              if (error.status !== 404 || version === context.sha) throw error;
-              // Some Pages installations accept only the workflow commit.
-              // The public freshness check below will still reject a stuck site.
-              core.warning('Pages rejected the state commit; retrying with the workflow commit');
-              version = context.sha;
-              deployment = await createOrRecover(version);
-            }
-            const id = deployment?.id || deployment?.status_url?.split('/').pop();
-            if (!id) throw new Error('Pages returned an incomplete deployment');
-            let pageUrl = deployment.page_url;
-            if (!pageUrl) {
-              // Recovered a deployment whose POST response was lost.
-              for (let attempt = 1; attempt <= 3; attempt++) {
-                try {
-                  const {data} = await github.request('GET /repos/{owner}/{repo}/pages', {owner, repo});
-                  pageUrl = data.html_url;
-                  break;
-                } catch (error) {
-                  if (!temporary(error) || attempt === 3) throw error;
-                  await pause(attempt * 2000);
-                }
-              }
-            }
-            if (!pageUrl) throw new Error('Pages did not return a public URL');
-            core.info('Pages deployment ID: ' + id + ', build commit: ' + version);
-            const deadline = Date.now() + 180000;
-            while (Date.now() < deadline) {
-              await pause(5000);
-              let data;
-              try {
-                ({data} = await status(id));
-              } catch (error) {
-                if (!temporary(error) && error.status !== 404) throw error;
-                core.warning('Pages status temporarily unavailable (HTTP ' + (error.status || '?') + ').');
-                continue;
-              }
-              if (data.status === 'succeed') {
-                core.setOutput('page_url', pageUrl);
-                core.info('Pages reports success: ' + pageUrl);
-                return;
-              }
-              if (['deployment_failed', 'deployment_content_failed', 'deployment_cancelled', 'deployment_lost'].includes(data.status)) {
-                throw new Error('Pages deployment failed: ' + data.status);
-              }
-              core.info('Pages status: ' + (data.status || 'pending'));
-            }
-            throw new Error('Pages deployment did not finish within 3 minutes');
+            const deploy = require('./scripts/deploy-pages.cjs');
+            await deploy({ github, context, core });
 
       - name: Verify Live Pages
-        id: freshness
-        continue-on-error: true
-        if: ${{ !cancelled() && steps.deployment.outcome == 'success' }}
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
           RUN_ID: ${{ github.run_id }}
-        run: |
-          python3 - <<'PY'
-          import os
-          import re
-          import time
-          import urllib.parse
-          import urllib.request
-          from pathlib import Path
-
-          base = os.environ["PAGE_URL"].rstrip("/") + "/"
-          paths = ("gw/index.html",)
-          static_pages = {path: (Path("_site") / path).read_bytes()
-                          for path in ("index.html", "jmac/index.html")}
-          expected_times = {}
-          expected_layouts = {}
-          layout_pattern = re.compile(rb'<meta name="rhacco-layout" content="([0-9a-f]{16})">')
-          for path in paths:
-              local = Path("_site") / path
-              if not local.is_file():
-                  raise SystemExit(f"{path}: missing from the Pages artifact")
-              content = local.read_bytes()
-              layout = layout_pattern.search(content)
-              if not layout:
-                  raise SystemExit(f"{path}: artifact lacks the shared page layout")
-              expected_layouts[path] = layout[1]
-              stamp = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', content)
-              if not stamp:
-                  raise SystemExit(f"{path}: artifact lacks a generation time")
-              expected_times[path] = int(stamp.group(1))
-
-          for attempt in range(7):
-              failures = []
-              now_ms = int(time.time() * 1000)
-              for path in (*static_pages, *expected_times):
-                  url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"] + "-" + str(attempt)
-                  try:
-                      request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
-                      with urllib.request.urlopen(request, timeout=12) as response:
-                          content = response.read(1000000)
-                      if path in static_pages:
-                          if content != static_pages[path]:
-                              failures.append(f"{path}: published page differs from the Pages artifact")
-                          continue
-                      layout = layout_pattern.search(content)
-                      if not layout or layout[1] != expected_layouts[path]:
-                          raise ValueError("published page lacks the current shared layout")
-                      expected = expected_times[path]
-                      actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', content)
-                      if not actual:
-                          raise ValueError("published page lacks a generation time")
-                      published = int(actual.group(1))
-                      age_seconds = max(0, (now_ms - published) // 1000)
-                      lag_seconds = max(0, (expected - published) // 1000)
-                      print(f"{path}: public age {age_seconds}s, behind artifact {lag_seconds}s")
-                      if age_seconds > 900 or lag_seconds > 120:
-                          failures.append(f"{path}: Pages is serving an old page")
-                  except Exception as error:
-                      failures.append(f"{path}: public page could not be checked: {error}")
-              if not failures:
-                  break
-              if attempt == 6:
-                  raise SystemExit("\n".join(failures))
-              print("Waiting 10s for Pages to serve the new version...")
-              time.sleep(10)
-          PY
-
-      - name: Deploy Summary
-        if: ${{ !cancelled() }}
-        continue-on-error: true
-        env:
-          PICK_OUTCOME: ${{ steps.pick.outcome }}
-          PUBLISH: ${{ steps.pick.outputs.publish }}
-          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
-          ASSEMBLE_OUTCOME: ${{ steps.assemble.outcome }}
-          CONFIGURE_OUTCOME: ${{ steps.pages.outcome }}
-          UPLOAD_OUTCOME: ${{ steps.upload.outcome }}
-          DEPLOY_OUTCOME: ${{ steps.deployment.outcome }}
-          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
-        shell: bash
-        run: |
-          if [ "${PICK_OUTCOME}" != "success" ]; then
-            message="**Pages update could not be started.**"
-          elif [ "${PUBLISH}" != "true" ]; then
-            message="**Pages unchanged.** GW2 Action update failed."
-          elif [ "${CHECKOUT_OUTCOME}" != "success" ] || [ "${ASSEMBLE_OUTCOME}" != "success" ] || [ "${CONFIGURE_OUTCOME}" != "success" ] || [ "${UPLOAD_OUTCOME}" != "success" ]; then
-            message="**Pages unchanged.** Site preparation failed."
-          elif [ "${DEPLOY_OUTCOME}" != "success" ]; then
-            message="**Deployment could not be confirmed.**"
-          elif [ "${FRESHNESS_OUTCOME}" != "success" ]; then
-            message="**Public pages could not be verified.**"
-          else
-            message="**Pages are live and verified.**"
-          fi
-          if [ "${PICK_OUTCOME}" != "success" ] || { [ "${PUBLISH}" = "true" ] && [ "${FRESHNESS_OUTCOME}" != "success" ]; }; then
-            echo "::warning::Pages update not confirmed; see job logs."
-          fi
-          if [ "${JOKE_RESULT}" != "success" ] || [ "${JOKE_UPDATED}" != "true" ]; then
-            printf '**Full update incomplete.** Joke Machine did not save a new trio.\n\n' >> "${GITHUB_STEP_SUMMARY}"
-          fi
-          printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
-          printf 'GW2 Action: %s (new state: %s)\n\nJoke Machine: %s (new state: %s)\n' \
-            "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${JOKE_RESULT}" "${JOKE_UPDATED:-false}" >> "${GITHUB_STEP_SUMMARY}"
-          printf 'Steps: selection=%s checkout=%s build=%s configure=%s upload=%s deploy=%s verify=%s\n' "${PICK_OUTCOME}" "${CHECKOUT_OUTCOME}" "${ASSEMBLE_OUTCOME}" "${CONFIGURE_OUTCOME}" "${UPLOAD_OUTCOME}" "${DEPLOY_OUTCOME}" "${FRESHNESS_OUTCOME}"
-
-      - name: Confirm Result
-        if: ${{ !cancelled() }}
-        env:
-          PICK_OUTCOME: ${{ steps.pick.outcome }}
-          PUBLISH: ${{ steps.pick.outputs.publish }}
-          FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
-        run: |
-          if [ "${PICK_OUTCOME}" != "success" ] || [ "${PUBLISH}" != "true" ]; then exit 1; fi
-          if [ "${FRESHNESS_OUTCOME}" != "success" ]; then exit 1; fi
-          if [ "${JOKE_RESULT}" != "success" ] || [ "${JOKE_UPDATED}" != "true" ]; then
-            echo "::error::Joke Machine did not publish a new trio."
-            exit 1
-          fi
+        run: python3 scripts/verify-pages.py

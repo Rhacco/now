@@ -3,27 +3,11 @@ run-name: Joke Check
 
 on:
   workflow_call:
-    inputs:
-      force:
-        description: Generate a fresh trio regardless of the last run time
-        type: boolean
-        default: false
     secrets:
       GROQ_API_KEY:
         description: Groq API key for both models
         required: true
-    outputs:
-      state_updated:
-        description: A new joke trio was pushed to the state branch
-        value: ${{ jobs.joke-machine.outputs.state_updated }}
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Auch kurz nach dem letzten Lauf ein Witztrio erzeugen"
-        type: boolean
-        default: false
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
@@ -37,8 +21,6 @@ jobs:
       queue: max
       cancel-in-progress: false
     timeout-minutes: 5
-    outputs:
-      state_updated: ${{ steps.publish.outputs.state_updated }}
 
     steps:
       - name: Checkout
@@ -66,14 +48,12 @@ jobs:
         working-directory: worker-jmac
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          JMAC_FORCE: ${{ inputs.force }}
         run: node app/main.js
 
       - name: Publish Joke State
-        id: publish
         run: |
           set -euo pipefail
-          if [ ! -f "${JMAC_STATE_FILE}" ]; then exit 0; fi
+          test -s "${JMAC_STATE_FILE}"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -86,8 +66,6 @@ jobs:
           mkdir -p worker-jmac/data
           cp "${JMAC_STATE_FILE}" worker-jmac/data/web-state.json
           git add -- worker-jmac/data/web-state.json
-          if git diff --cached --quiet -- worker-jmac/data/web-state.json; then exit 0; fi
           git rm --ignore-unmatch -- worker-jmac/data/{history.json,latest-results.json,reserve.json}
           git commit -m "Joke Machine state"
           git push origin "HEAD:refs/heads/joke-machine-state"
-          echo "state_updated=true" >> "${GITHUB_OUTPUT}"

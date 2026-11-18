@@ -75,13 +75,6 @@ async function main() {
   const archive = readArchive(readJson(path.join(DATA, "jokes.json")));
   const archiveJokes = new Set(archive);
   const rows = state.rows.filter(row => archiveJokes.has(row.archive));
-  const last = rows.at(-1);
-  const force = process.env.JMAC_FORCE === "true";
-  if (!force && rows.length === state.rows.length && last && Date.now() - Date.parse(last.timestamp) < 45 * 60_000) {
-    console.log("Das letzte Witztrio ist noch aktuell.");
-    return;
-  }
-
   const apiKey = process.env.GROQ_API_KEY?.trim();
   if (!apiKey) throw new Error("GROQ_API_KEY fehlt.");
 

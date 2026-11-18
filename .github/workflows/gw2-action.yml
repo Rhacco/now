@@ -1,237 +1,37 @@
 name: GW2 Action
-run-name: "${{ !inputs.called_by_central && github.event_name == 'workflow_dispatch' && 'GW2A: Start Full Update' || 'GW2A: Update' }}"
+run-name: GW2A Update
 
 on:
   workflow_call:
-    inputs:
-      called_by_central:
-        description: The run was invoked by Update & Deploy
-        type: boolean
-        default: false
-    outputs:
-      state_updated:
-        description: A new state commit was confirmed
-        value: ${{ jobs.update.outputs.state_updated }}
-      state_ready:
-        description: The state update finished successfully, even if no files changed
-        value: ${{ jobs.update.outputs.state_ready }}
   workflow_dispatch:
-  schedule:
-    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
-  actions: write
 
 env:
   STATE_BRANCH: gw2-action-state
 
 jobs:
   update:
-    name: ${{ !inputs.called_by_central && github.event_name == 'workflow_dispatch' && 'Start Full Update' || 'Update' }}
-    # The standalone manual run requests a complete site refresh.
-    concurrency:
-      group: ${{ !inputs.called_by_central && github.event_name == 'workflow_dispatch' && format('gw2action-update-standalone-{0}', github.run_id) || 'gw2action-update' }}
-      queue: max
-      cancel-in-progress: false
-    outputs:
-      state_updated: ${{ steps.publish.outputs.state_updated }}
-      state_ready: ${{ steps.publish.outcome == 'success' }}
+    name: Update
     runs-on: ubuntu-24.04
     timeout-minutes: 4
-
+    concurrency:
+      group: gw2action-update
+      queue: max
+      cancel-in-progress: false
     steps:
-      - name: Start Full Update
-        if: ${{ !inputs.called_by_central && github.event_name == 'workflow_dispatch' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-        run: |
-          set -euo pipefail
-          gh workflow run update-and-deploy.yml --ref "${DEFAULT_BRANCH}"
-
       - name: Checkout Code
-        if: ${{ inputs.called_by_central || github.event_name == 'schedule' }}
-        id: checkout
-        continue-on-error: true
         uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
           fetch-depth: 0
 
       - name: Restore Cache
-        id: restore
-        if: ${{ !cancelled() && steps.checkout.outcome == 'success' }}
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p worker-gw2a/data
-
-          if git ls-remote --exit-code --heads origin "${STATE_BRANCH}" >/dev/null 2>&1; then
-            git fetch --force origin "${STATE_BRANCH}:refs/remotes/origin/${STATE_BRANCH}"
-
-            if git cat-file -e "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json" 2>/dev/null; then
-              git show "origin/${STATE_BRANCH}:worker-gw2a/data/cache.json" > "${RUNNER_TEMP}/gw2-action-cache.json"
-              python3 - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          cache = json.loads((Path(os.environ["RUNNER_TEMP"]) / "gw2-action-cache.json").read_text(encoding="utf-8"))
-          assert isinstance(cache, dict) and cache.get("version") in (1, 2)
-          assert isinstance(cache.get("sources"), dict)
-          PY
-              mv "${RUNNER_TEMP}/gw2-action-cache.json" worker-gw2a/data/cache.json
-              echo "Persistent cache restored from ${STATE_BRANCH}."
-            else
-              echo "${STATE_BRANCH} exists without a cache; refusing to replace saved state." >&2
-              exit 1
-            fi
-          else
-            rc=$?
-            if [ "${rc}" -eq 2 ]; then
-              echo "${STATE_BRANCH} does not exist yet; the first successful run will create it."
-            else
-              echo "Unable to inspect ${STATE_BRANCH}." >&2
-              exit "${rc}"
-            fi
-          fi
+        run: bash scripts/page-state.sh restore worker-gw2a
 
       - name: Build GW2 Page
-        id: generate
-        if: ${{ !cancelled() && steps.restore.outcome == 'success' }}
-        continue-on-error: true
         run: python3 worker-gw2a/app/engine.py
 
       - name: Save Page & Cache
-        id: publish
-        if: ${{ !cancelled() && steps.generate.outcome == 'success' }}
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          test -s worker-gw2a/index.html
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          state = json.loads(Path("worker-gw2a/data/cache.json").read_text(encoding="utf-8"))
-          if state.get("version") != 2 or not isinstance(state.get("sources"), dict) or not any(
-              isinstance(item, dict) and item.get("data") for item in state["sources"].values()
-          ):
-              raise SystemExit("Refusing to replace GW2 state with empty or invalid data")
-          PY
-
-          STATE_DIR="${RUNNER_TEMP}/gw2-action-state"
-          rm -rf "${STATE_DIR}"
-
-          git config user.name "gw2action-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          if git show-ref --verify --quiet "refs/remotes/origin/${STATE_BRANCH}"; then
-            git worktree add --detach "${STATE_DIR}" "origin/${STATE_BRANCH}"
-            git -C "${STATE_DIR}" checkout -B "${STATE_BRANCH}" "origin/${STATE_BRANCH}"
-            STATE_EXISTS=1
-          else
-            git worktree add --detach "${STATE_DIR}" HEAD
-            git -C "${STATE_DIR}" checkout --orphan "${STATE_BRANCH}"
-            git -C "${STATE_DIR}" rm -rf . >/dev/null 2>&1 || true
-            STATE_EXISTS=0
-          fi
-
-          rm -rf "${STATE_DIR}/gw2a" "${STATE_DIR}/worker-gw2a"
-          mkdir -p "${STATE_DIR}/worker-gw2a/data"
-
-          cp worker-gw2a/index.html "${STATE_DIR}/worker-gw2a/index.html"
-          cp worker-gw2a/data/cache.json "${STATE_DIR}/worker-gw2a/data/cache.json"
-
-          git -C "${STATE_DIR}" add -A
-
-          if git -C "${STATE_DIR}" diff --cached --quiet; then
-            echo "No GW2 state/page update required."
-            exit 0
-          fi
-
-          if [ "${STATE_EXISTS}" -eq 1 ]; then
-            git -C "${STATE_DIR}" commit --amend --no-edit
-            expected_remote="$(git rev-parse "refs/remotes/origin/${STATE_BRANCH}")"
-          else
-            git -C "${STATE_DIR}" commit -m "Initialize GW2 action state"
-            expected_remote=""
-          fi
-
-          new_head="$(git -C "${STATE_DIR}" rev-parse HEAD)"
-          for attempt in 1 2 3; do
-            if [ "${STATE_EXISTS}" -eq 1 ]; then
-              if git -C "${STATE_DIR}" push \
-                "--force-with-lease=refs/heads/${STATE_BRANCH}:${expected_remote}" \
-                origin "HEAD:refs/heads/${STATE_BRANCH}"; then
-                break
-              fi
-            else
-              if git -C "${STATE_DIR}" push origin "HEAD:refs/heads/${STATE_BRANCH}"; then
-                break
-              fi
-            fi
-
-            # The remote may have accepted the push despite a broken response.
-            for check in 1 2 3; do
-              if remote_line="$(git ls-remote --heads origin "refs/heads/${STATE_BRANCH}")"; then
-                break
-              fi
-              if [ "${check}" -eq 3 ]; then
-                echo "Unable to verify the remote state after a failed push." >&2
-                exit 1
-              fi
-              sleep "${check}"
-            done
-            remote_head="${remote_line%%$'\t'*}"
-            if [ "${remote_head}" = "${new_head}" ]; then
-              echo "State push was accepted despite a broken response."
-              break
-            fi
-            if [ "${remote_head}" != "${expected_remote}" ]; then
-              echo "State branch changed remotely; refusing to overwrite it." >&2
-              exit 1
-            fi
-            if [ "${attempt}" -eq 3 ]; then
-              echo "State push still failed after three attempts." >&2
-              exit 1
-            fi
-            echo "State push failed; retrying after a short pause."
-            sleep "$(( attempt * 2 ))"
-          done
-
-          echo "state_updated=true" >> "${GITHUB_OUTPUT}"
-
-      - name: Update Summary
-        if: ${{ !cancelled() && (inputs.called_by_central || github.event_name == 'schedule') }}
-        continue-on-error: true
-        env:
-          CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
-          RESTORE_OUTCOME: ${{ steps.restore.outcome }}
-          GENERATE_OUTCOME: ${{ steps.generate.outcome }}
-          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
-          STATE_UPDATED: ${{ steps.publish.outputs.state_updated }}
-        shell: bash
-        run: |
-          if [ "${PUBLISH_OUTCOME}" = "success" ]; then
-            if [ "${STATE_UPDATED}" = "true" ]; then
-              message="**New GW2 page saved.**"
-            else
-              message="**GW2 page is already current.**"
-            fi
-          else
-            message="**GW2 update could not be confirmed.**"
-            echo "::warning::GW2 update not confirmed; see job logs."
-          fi
-          printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
-          printf 'Steps: checkout=%s restore=%s build=%s save=%s\n' "${CHECKOUT_OUTCOME}" "${RESTORE_OUTCOME}" "${GENERATE_OUTCOME}" "${PUBLISH_OUTCOME}"
-
-      - name: Confirm Update
-        if: ${{ !cancelled() && (inputs.called_by_central || github.event_name == 'schedule') }}
-        env:
-          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
-        run: test "${PUBLISH_OUTCOME}" = "success"
+        run: bash scripts/page-state.sh publish worker-gw2a
