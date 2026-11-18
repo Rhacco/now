@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "rows": [
+    {
+      "timestamp": "2026-11-18T19:29:11.364Z",
+      "gpt": "Im Wartezimmer sitzt ein Mann, liest nervös die Zeitschrift und schaut immer wieder auf die Tür.  \nEine Krankenschwester kommt, lächelt und sagt: „Ihr Termin ist gleich.“  \nDer Mann atmet tief ein, legt das Magazin weg und fragt: „Endlich! Und wo ist der Kaffee?“  \nSie schüttelt den Kopf: „Der ist im Nebenraum – wir warten ja nicht auf Sie, sondern auf den Barista.“",
+      "qwen": "Ich sitze seit zwei Stunden im Wartezimmer und frage den Arzt.\n„Was, Sie haben das noch nie erlebt?“\nEr seufzt und sagt: „Ich hab nicht mal Zeit, Sie zu ignorieren.“",
+      "archive": "Ich: Ich koche heute.  \nPartner: Und ich decke den Tisch.  \nNach dem Essen: Ich spüle, du räumst die Reste weg.  \nSo haben wir unser schönstes Team‑Meeting des Tages."
+    }
+  ]
+}
