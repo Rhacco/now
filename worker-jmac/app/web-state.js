@@ -40,25 +40,15 @@ function checkState(state) {
   return state;
 }
 
-function readArchive(curated, legacy) {
-  if (curated !== undefined) {
-    if (curated?.version !== 1 || !Array.isArray(curated.jokes) || !curated.jokes.every(isJoke)) {
-      throw new Error("jokes.json erwartet JSON-Version 1 und das Array jokes mit gültigen Witz-Texten.");
-    }
-    const ids = new Set(curated.jokes.map(identity));
-    if (ids.size !== curated.jokes.length || ids.size < WINDOW_SIZE) {
-      throw new Error("jokes.json benötigt mindestens 50 unterschiedliche Witze und darf keine Duplikate enthalten.");
-    }
-    return curated.jokes;
+function readArchive(curated) {
+  if (curated?.version !== 1 || !Array.isArray(curated.jokes) || !curated.jokes.every(isJoke)) {
+    throw new Error("jokes.json erwartet JSON-Version 1 und das Array jokes mit gültigen Witz-Texten.");
   }
-
-  if (!Array.isArray(legacy)) throw new Error("Das bisherige Witzarchiv ist ungültig.");
-  const archive = new Map();
-  for (const row of legacy) {
-    const text = typeof row?.text === "string" ? row.text.trim().replace(/\r\n/g, "\n") : "";
-    if (row?.status === "ok" && isJoke(text)) archive.set(identity(text), text);
+  const ids = new Set(curated.jokes.map(identity));
+  if (ids.size !== curated.jokes.length || ids.size < WINDOW_SIZE) {
+    throw new Error("jokes.json benötigt mindestens 50 unterschiedliche Witze und darf keine Duplikate enthalten.");
   }
-  return [...archive.values()];
+  return curated.jokes;
 }
 
 function appendRow(state, archive, result, timestamp) {

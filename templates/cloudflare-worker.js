@@ -1,11 +1,7 @@
-// Run Cloudflare Cron every minute; A1 dispatches every second minute.
+// Configure a Cloudflare Cron Trigger for */2 * * * *.
 
 // Necessary variables/secrets: GH_OWNER, GH_PAT, GH_REPO, GH_REPO_BRANCH
-// Configure/add: Matching <ACTION>_ENABLED and <ACTION>_WORKFLOW variables in Cloudflare
-
-const ACTIONS = [
-  { key: "A1", everyMinutes: 2 },
-];
+// Configure FULL_UPDATE_WORKFLOW with the workflow filename or ID and FULL_UPDATE_ENABLED with 1.
 
 const PREVIEW = `<!doctype html>
 <html lang="en">
@@ -14,7 +10,7 @@ const PREVIEW = `<!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10131d">
   <link rel="icon" href="data:,">
-  <title>Rhacco Scheduler</title>
+  <title>Workflow Scheduler</title>
   <style>
     :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
     *{box-sizing:border-box}
@@ -35,12 +31,12 @@ const PREVIEW = `<!doctype html>
 </head>
 <body>
   <main>
-    <div class="eyebrow">Rhacco · Automation</div>
+    <div class="eyebrow">Automation</div>
     <h1>Scheduler</h1>
     <p class="intro">A small control point for the scheduled GitHub workflows.</p>
     <div class="status"><span class="dot"></span>HTTP preview ready</div>
     <div class="cards">
-      <article><h2>Update &amp; Deploy</h2><strong>Every 2 minutes</strong><p>Runs one rotating data worker, then publishes fresh pages.</p></article>
+      <article><h2>Scheduled workflow</h2><strong>Every 2 minutes</strong><p>Dispatches the configured GitHub workflow.</p></article>
     </div>
     <footer>Opening this page does not start a workflow. The Cloudflare Cron trigger runs the schedule.</footer>
   </main>
@@ -59,16 +55,9 @@ export default {
 
   async scheduled(controller, env, ctx) {
     const minute = new Date(controller.scheduledTime).getUTCMinutes();
+    if (minute % 2 !== 0 || String(env.FULL_UPDATE_ENABLED ?? "").trim() === "0") return;
 
-    const jobs = ACTIONS
-      .filter(({ key, minutes, everyMinutes }) =>
-        String(env[`${key}_ENABLED`] ?? "").trim() !== "0" &&
-        (!minutes || minutes.includes(minute)) &&
-        (!everyMinutes || minute % everyMinutes === 0),
-      )
-      .map(({ key }) => triggerWorkflow(env, required(env, `${key}_WORKFLOW`)));
-
-    ctx.waitUntil(Promise.all(jobs));
+    ctx.waitUntil(triggerWorkflow(env, required(env, "FULL_UPDATE_WORKFLOW")));
   },
 };
 
@@ -77,9 +66,6 @@ async function triggerWorkflow(env, workflow) {
   const repo = encodeURIComponent(required(env, "GH_REPO"));
   const repo_branch = required(env, "GH_REPO_BRANCH");
   const url = `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${encodeURIComponent(workflow)}/dispatches`;
-
-  // Only the central external trigger rotates its data workers.
-  const inputs = workflow === "update-and-deploy.yml" ? { mode: "auto" } : undefined;
 
   const response = await fetch(url, {
     method: "POST",
@@ -90,7 +76,7 @@ async function triggerWorkflow(env, workflow) {
       "User-Agent": "cloudflare-github-scheduler",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(inputs ? { ref: repo_branch, inputs } : { ref: repo_branch }),
+    body: JSON.stringify({ ref: repo_branch }),
   });
 
   if (!response.ok) {

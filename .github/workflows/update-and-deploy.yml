@@ -1,29 +1,14 @@
 name: Update & Deploy
-run-name: "${{ github.event_name == 'workflow_dispatch' && inputs.mode != 'full' && 'Rotate & Deploy' || 'Full Update & Deploy' }}"
+run-name: Full Update & Deploy
 
 on:
   workflow_dispatch:
-    inputs:
-      mode:
-        description: "Auto: One Worker, Full: Both"
-        type: choice
-        options:
-          - auto
-          - full
-        default: full
   schedule:
     - cron: "*/5 * * * *"
   push:
     branches:
       - master
       - main
-    paths:
-      - ".github/workflows/update-and-deploy.yml"
-      - ".github/workflows/gw2-action.yml"
-      - ".github/workflows/joke-machine.yml"
-      - "worker-gw2a/**"
-      - "worker-jmac/**"
-      - "templates/pages/**"
 
 permissions:
   contents: write
@@ -32,47 +17,11 @@ permissions:
   id-token: write
 
 jobs:
-  choose_workers:
-    name: Select Workers
-    runs-on: ubuntu-24.04
-    outputs:
-      gw2_action: ${{ steps.choose.outputs.gw2_action }}
-      joke_machine: ${{ steps.choose.outputs.joke_machine }}
-      full: ${{ steps.choose.outputs.full }}
-    steps:
-      - name: Pick Rotation
-        id: choose
-        shell: bash
-        env:
-          DISPATCH_MODE: ${{ inputs.mode }}
-        run: |
-          set -euo pipefail
-          workers=(gw2_action joke_machine)
-          if [[ "${GITHUB_EVENT_NAME}" == "schedule" || "${GITHUB_EVENT_NAME}" == "push" || "${DISPATCH_MODE}" == "full" ]]; then
-            selected=("${workers[@]}")
-            echo "full=true" >> "${GITHUB_OUTPUT}"
-          else
-            # Full runs must not shift the external two-minute rotation.
-            rotation_slot=$(( $(date -u +%s) / 120 ))
-            selected=("${workers[$(( rotation_slot % ${#workers[@]} ))]}")
-            echo "full=false" >> "${GITHUB_OUTPUT}"
-          fi
-          for worker in "${workers[@]}"; do
-            enabled=false
-            for target in "${selected[@]}"; do
-              if [[ "${worker}" == "${target}" ]]; then enabled=true; fi
-            done
-            echo "${worker}=${enabled}" >> "${GITHUB_OUTPUT}"
-          done
-          printf 'Selected workers: %s\n' "${selected[*]}"
-
   gw2_action:
     permissions:
       contents: write
       actions: write
     name: GW2 Action
-    needs: choose_workers
-    if: ${{ needs.choose_workers.outputs.gw2_action == 'true' }}
     uses: ./.github/workflows/gw2-action.yml
     with:
       called_by_central: true
@@ -82,16 +31,15 @@ jobs:
     permissions:
       contents: write
     name: Joke Machine
-    needs: choose_workers
-    if: ${{ needs.choose_workers.outputs.joke_machine == 'true' }}
     uses: ./.github/workflows/joke-machine.yml
+    with:
+      force: true
     secrets:
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
   deploy_pages:
     name: Deploy Pages
     needs:
-      - choose_workers
       - gw2_action
       - joke_machine
     # Joke Machine publishes its JSON independently of the Pages deployment.
@@ -121,27 +69,14 @@ jobs:
         id: pick
         if: ${{ !cancelled() }}
         continue-on-error: true
-        env:
-          FULL_UPDATE: ${{ needs.choose_workers.outputs.full }}
         shell: bash
         run: |
           set -euo pipefail
-          if [ "${FULL_UPDATE}" != "true" ] && [ "${GW2_RESULT}" = "skipped" ]; then
-            echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "reason=joke_only" >> "${GITHUB_OUTPUT}"
-            echo "Joke Machine rotation uses its own public JSON state."
-          elif [ "${GW2_RESULT}" = "success" ] && [ "${GW2_READY}" = "true" ]; then
-            if [ "${FULL_UPDATE}" = "true" ] || [ "${GW2_UPDATED}" = "true" ]; then
-              echo "publish=true" >> "${GITHUB_OUTPUT}"
-              echo "GW2 Action state is ready; publish Pages."
-            else
-              echo "publish=false" >> "${GITHUB_OUTPUT}"
-              echo "reason=no_fresh_state" >> "${GITHUB_OUTPUT}"
-              echo "GW2 Action has no new state; keep the current Pages release."
-            fi
+          if [ "${GW2_RESULT}" = "success" ] && [ "${GW2_READY}" = "true" ]; then
+            echo "publish=true" >> "${GITHUB_OUTPUT}"
+            echo "GW2 Action state is ready; publish Pages."
           else
             echo "publish=false" >> "${GITHUB_OUTPUT}"
-            echo "reason=incomplete_update" >> "${GITHUB_OUTPUT}"
             echo "GW2 Action update failed; keep the current Pages release."
           fi
 
@@ -449,7 +384,6 @@ jobs:
         env:
           PICK_OUTCOME: ${{ steps.pick.outcome }}
           PUBLISH: ${{ steps.pick.outputs.publish }}
-          SKIP_REASON: ${{ steps.pick.outputs.reason }}
           CHECKOUT_OUTCOME: ${{ steps.checkout.outcome }}
           ASSEMBLE_OUTCOME: ${{ steps.assemble.outcome }}
           CONFIGURE_OUTCOME: ${{ steps.pages.outcome }}
@@ -461,13 +395,7 @@ jobs:
           if [ "${PICK_OUTCOME}" != "success" ]; then
             message="**Pages update could not be started.**"
           elif [ "${PUBLISH}" != "true" ]; then
-            if [ "${SKIP_REASON}" = "incomplete_update" ]; then
-              message="**Pages unchanged.** GW2 Action update failed."
-            elif [ "${SKIP_REASON}" = "joke_only" ]; then
-              message="**Joke Machine rotation.** Pages deployment was skipped."
-            else
-              message="**Pages unchanged.** No new data was saved."
-            fi
+            message="**Pages unchanged.** GW2 Action update failed."
           elif [ "${CHECKOUT_OUTCOME}" != "success" ] || [ "${ASSEMBLE_OUTCOME}" != "success" ] || [ "${CONFIGURE_OUTCOME}" != "success" ] || [ "${UPLOAD_OUTCOME}" != "success" ]; then
             message="**Pages unchanged.** Site preparation failed."
           elif [ "${DEPLOY_OUTCOME}" != "success" ]; then
@@ -480,6 +408,9 @@ jobs:
           if [ "${PICK_OUTCOME}" != "success" ] || { [ "${PUBLISH}" = "true" ] && [ "${FRESHNESS_OUTCOME}" != "success" ]; }; then
             echo "::warning::Pages update not confirmed; see job logs."
           fi
+          if [ "${JOKE_RESULT}" != "success" ] || [ "${JOKE_UPDATED}" != "true" ]; then
+            printf '**Full update incomplete.** Joke Machine did not save a new trio.\n\n' >> "${GITHUB_STEP_SUMMARY}"
+          fi
           printf '%s\n' "${message}" >> "${GITHUB_STEP_SUMMARY}"
           printf 'GW2 Action: %s (new state: %s)\n\nJoke Machine: %s (new state: %s)\n' \
             "${GW2_RESULT}" "${GW2_UPDATED:-false}" "${JOKE_RESULT}" "${JOKE_UPDATED:-false}" >> "${GITHUB_STEP_SUMMARY}"
@@ -490,12 +421,11 @@ jobs:
         env:
           PICK_OUTCOME: ${{ steps.pick.outcome }}
           PUBLISH: ${{ steps.pick.outputs.publish }}
-          SKIP_REASON: ${{ steps.pick.outputs.reason }}
           FRESHNESS_OUTCOME: ${{ steps.freshness.outcome }}
         run: |
-          if [ "${PICK_OUTCOME}" != "success" ]; then exit 1; fi
-          if [ "${PUBLISH}" != "true" ]; then
-            case "${SKIP_REASON}" in joke_only|no_fresh_state) exit 0 ;; esac
+          if [ "${PICK_OUTCOME}" != "success" ] || [ "${PUBLISH}" != "true" ]; then exit 1; fi
+          if [ "${FRESHNESS_OUTCOME}" != "success" ]; then exit 1; fi
+          if [ "${JOKE_RESULT}" != "success" ] || [ "${JOKE_UPDATED}" != "true" ]; then
+            echo "::error::Joke Machine did not publish a new trio."
             exit 1
           fi
-          [ "${FRESHNESS_OUTCOME}" = "success" ]

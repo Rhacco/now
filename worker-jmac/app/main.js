@@ -5,7 +5,6 @@ const { MODELS, isJoke, checkState, readArchive, appendRow } = require("./web-st
 
 const DATA = path.join(__dirname, "..", "data");
 const STATE_FILE = process.env.JMAC_STATE_FILE || path.join(DATA, "web-state.json");
-const LEGACY_ARCHIVE = process.env.JMAC_LEGACY_ARCHIVE || path.join(DATA, "history.json");
 const GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions";
 
 const SETTINGS = [
@@ -73,18 +72,18 @@ async function generate(model, messages, apiKey) {
 
 async function main() {
   const state = checkState(readJson(STATE_FILE, true));
-  const last = state.rows.at(-1);
+  const archive = readArchive(readJson(path.join(DATA, "jokes.json")));
+  const archiveJokes = new Set(archive);
+  const rows = state.rows.filter(row => archiveJokes.has(row.archive));
+  const last = rows.at(-1);
   const force = process.env.JMAC_FORCE === "true";
-  if (!force && last && Date.now() - Date.parse(last.timestamp) < 45 * 60_000) {
+  if (!force && rows.length === state.rows.length && last && Date.now() - Date.parse(last.timestamp) < 45 * 60_000) {
     console.log("Das letzte Witztrio ist noch aktuell.");
     return;
   }
 
   const apiKey = process.env.GROQ_API_KEY?.trim();
   if (!apiKey) throw new Error("GROQ_API_KEY fehlt.");
-  const curated = readJson(path.join(DATA, "jokes.json"), true);
-  const archive = readArchive(curated, curated === undefined ? readJson(LEGACY_ARCHIVE) : undefined);
-  if (!archive.length) throw new Error("Das Witzarchiv ist leer.");
 
   const setting = SETTINGS[randomInt(SETTINGS.length)];
   const messages = [
@@ -95,7 +94,7 @@ async function main() {
     generate(MODELS.gpt, messages, apiKey),
     generate(MODELS.qwen, messages, apiKey),
   ]);
-  const updated = appendRow(state, archive, { gpt, qwen }, new Date().toISOString());
+  const updated = appendRow({ ...state, rows }, archive, { gpt, qwen }, new Date().toISOString());
   mkdirSync(path.dirname(STATE_FILE), { recursive: true });
   const temporary = STATE_FILE + ".tmp";
   writeFileSync(temporary, JSON.stringify(updated, null, 2) + "\n");

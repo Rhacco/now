@@ -3,6 +3,11 @@ run-name: Joke Check
 
 on:
   workflow_call:
+    inputs:
+      force:
+        description: Generate a fresh trio regardless of the last run time
+        type: boolean
+        default: false
     secrets:
       GROQ_API_KEY:
         description: Groq API key for both models
@@ -53,19 +58,9 @@ jobs:
             exit "${rc}"
           fi
           echo "JMAC_STATE_COMMIT=$(git rev-parse "${state_ref}")" >> "${GITHUB_ENV}"
-          for prefix in worker-jmac/data worker-jm/data; do
-            if git cat-file -e "${state_ref}:${prefix}/history.json" 2>/dev/null; then
-              git show "${state_ref}:${prefix}/history.json" > "${state_dir}/history.json"
-              echo "JMAC_LEGACY_ARCHIVE=${state_dir}/history.json" >> "${GITHUB_ENV}"
-              break
-            fi
-          done
-          for prefix in worker-jmac/data worker-jm/data; do
-            if git cat-file -e "${state_ref}:${prefix}/web-state.json" 2>/dev/null; then
-              git show "${state_ref}:${prefix}/web-state.json" > "${state_dir}/web-state.json"
-              break
-            fi
-          done
+          if git cat-file -e "${state_ref}:worker-jmac/data/web-state.json" 2>/dev/null; then
+            git show "${state_ref}:worker-jmac/data/web-state.json" > "${state_dir}/web-state.json"
+          fi
 
       - name: Generate Joke Trio
         working-directory: worker-jmac
@@ -91,7 +86,8 @@ jobs:
           mkdir -p worker-jmac/data
           cp "${JMAC_STATE_FILE}" worker-jmac/data/web-state.json
           git add -- worker-jmac/data/web-state.json
-          if git diff --cached --quiet; then exit 0; fi
+          if git diff --cached --quiet -- worker-jmac/data/web-state.json; then exit 0; fi
+          git rm --ignore-unmatch -- worker-jmac/data/{history.json,latest-results.json,reserve.json}
           git commit -m "Joke Machine state"
           git push origin "HEAD:refs/heads/joke-machine-state"
           echo "state_updated=true" >> "${GITHUB_OUTPUT}"

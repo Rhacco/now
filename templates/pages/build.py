@@ -10,10 +10,7 @@ from string import Template
 TEMPLATES = Path(__file__).resolve().parent
 ROOT = TEMPLATES.parents[1]
 SITE = ROOT / "_site"
-HISTORY = ROOT / "worker-jmac/data/history.json"
 ARCHIVE = ROOT / "worker-jmac/data/jokes.json"
-# A short, self-contained joke selected from the bundled history.
-FEATURED_JOKE = "2026-09-24T12:19:47.598Z"
 BASE = Template((TEMPLATES / "base.html").read_text(encoding="utf-8"))
 LAYOUT_VERSION = sha256(BASE.template.encode("utf-8")).hexdigest()[:16]
 
@@ -50,17 +47,6 @@ def read_featured_joke():
                 return html.escape(jokes[0].strip())
     except (OSError, ValueError):
         pass
-    try:
-        history = json.loads(HISTORY.read_text(encoding="utf-8"))
-    except (OSError, ValueError):
-        history = []
-    if isinstance(history, list):
-        for entry in history:
-            if not isinstance(entry, dict) or entry.get("timestamp") != FEATURED_JOKE:
-                continue
-            text = entry.get("text")
-            if entry.get("status") == "ok" and isinstance(text, str) and text.strip():
-                return html.escape(text.strip())
     print("::warning::The featured Joke Machine entry is unavailable.")
     return "Gerade ist kein Witz verfügbar."
 
