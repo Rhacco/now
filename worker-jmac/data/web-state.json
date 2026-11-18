@@ -162,6 +162,12 @@
       "gpt": "Mama: „Ich habe das Rezept für Omas Kuchen gefunden, das wir morgen backen!“  \nVater: „Super, dann hol ich gleich die Zutaten.“  \nKinder: „Ich mach den Chat‑Sticker, damit Oma das Ergebnis sehen kann.“  \nOma: „Ich dachte, ihr wollt das Rezept – nicht das Meme.“",
       "qwen": "Mama schreibt im Familienchat: „Mein neues Handy ist total nervig, es macht ständig Piep.“\nIch antworte sofort: „Mama, das ist ein Anruf. Du musst drücken und sagen: Hallo.“\nDrei Minuten Stille.\n„Papa hat gerade aufgelegt, ich habe ihn nicht erkannt.“",
       "archive": "Mein Freund hat gesagt, die Wanderung sei „ganz entspannt“. Nach dem ersten Anstieg fragte ich, ob er sich auf die Aussicht bezieht oder auf den Zustand, in dem ich gefunden werden soll."
+    },
+    {
+      "timestamp": "2026-11-18T21:41:08.975Z",
+      "gpt": "Im Zug sitzt ein Mann und liest die Zeitung, während die Durchsage verkündet, dass das nächste Gleis wegen Bauarbeiten gesperrt ist.  \nEr schaut auf die Anzeigetafel, die plötzlich „Bitte halten Sie Abstand – 2 m“ blinkt.  \nEr legt das Buch weg, zieht die Nase zu und sagt: „Endlich mal ein Grund, nicht zu lesen.“  \nDie Durchsage folgt: „Bitte nicht die Nase zuziehen, sonst verpassen Sie den nächsten Halt.“",
+      "qwen": "Ich staune, wie der Mann neben mir in der U-Bahn total entspannt liest.\nErst jetzt merke ich, dass er den ganzen Weg über nur das Fenster ansah.\nGenau mein Gesicht.",
+      "archive": "In der Apotheke fragte die Mitarbeiterin, ob ich die Packungsbeilage schon gelesen hätte. „Noch nicht.“ Sie nickte: „Dann haben Sie heute Abend ja etwas vor.“"
     }
   ]
 }
