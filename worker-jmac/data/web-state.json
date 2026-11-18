@@ -246,6 +246,12 @@
       "gpt": "Ich gehe zur Bibliothek, stelle die Bücher in den Rückgabeschrank und warte.  \nDer Automat piept und zeigt: „Bitte legen Sie das Buch mit der Rücksichts­voll­keit zurück.“  \nIch schiebe das dicke Kochbuch nach vorne, weil es das schwerste ist.  \nDer Automat spuckt aus: „Danke, jetzt haben wir endlich ein gutes Rezept für Ordnung.“",
       "qwen": "Ich frage in der Bibliothek nach einem Krimi, den ich dringend zurückgeben muss.\nDie Dame sagt: „Müsste das eigentlich morgen sein.“\nIch atme auf und sage: „Dann ist das ja in Ordnung.“\nSie legt den Kopf schief und murmelt: „Sie meinen das Buch, das Sie bei mir abgeben wollen.“",
       "archive": "Meine Schwester sagt, sie sei überhaupt nicht nachtragend. Sie kann mir allerdings noch den genauen Wortlaut unserer Streiterei von 2009 aufsagen."
+    },
+    {
+      "timestamp": "2026-11-18T23:21:10.652Z",
+      "gpt": "Ich steige in die Bahn, setze mich neben einen Mann mit riesigem Koffer.  \nEr schaut mich an, lächelt und sagt: „Heute fährt er endlich mit.“  \nIch nicke, weil ich dachte, er meint den Zug.  \nEr zieht den Koffer aus, öffnet ihn und ruft: „Endlich, mein Hund ist wieder da!“",
+      "qwen": "Ich rechne in der S-Bahn die Minuten bis zum Ziel durch.\nDer Zug hält, alle steigen aus.\nIch bleibe sitzen und denke: „Eigentlich war ich noch gar nicht fertig.“",
+      "archive": "Beim Umzug sagte ein Freund: „Ich helfe dir gern, wenn du alles gepackt hast.“ Als er kam, war ich noch nicht fertig. Jetzt weiß ich, dass „wenn“ eine Bedingung war, kein Zeitvorschlag."
     }
   ]
 }
