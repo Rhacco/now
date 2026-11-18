@@ -1,0 +1,23 @@
+<main class="rhacco-joke-board" data-state-url="$state_url">
+  <div class="rhacco-joke-heading">
+    <h1 lang="en">Joke Machine</h1>
+    <time id="jmac-updated" hidden></time>
+  </div>
+  <div class="rhacco-joke-row" aria-live="polite">
+    <section class="rhacco-joke-card" aria-labelledby="jmac-gpt-label">
+      <h2 id="jmac-gpt-label">GPT-OSS 120B</h2>
+      <p id="jmac-gpt">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
+    </section>
+    <section class="rhacco-joke-card" aria-labelledby="jmac-qwen-label">
+      <h2 id="jmac-qwen-label">Qwen 3.8 27B</h2>
+      <p id="jmac-qwen">Ein frischer Witz erscheint nach dem nächsten Lauf.</p>
+    </section>
+    <section class="rhacco-joke-card" aria-labelledby="jmac-archive-label">
+      <h2 id="jmac-archive-label">Aus der Witzsammlung</h2>
+      <p id="jmac-archive">$joke</p>
+    </section>
+  </div>
+</main>
+<script>
+$script
+</script>

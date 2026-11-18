@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+$head
+<style>
+  .rhacco-page-nav {
+    display: flex;
+    padding: max(16px, env(safe-area-inset-top)) 0 0 max(16px, env(safe-area-inset-left));
+  }
+  .rhacco-page-nav[hidden] { display: none; }
+  .rhacco-page-nav a {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    box-sizing: border-box;
+    border: 1px solid #30323a;
+    border-radius: 14px;
+    background: #181a1f;
+    color: #f7f7f8;
+    font: 32px/1 system-ui, sans-serif;
+    text-decoration: none;
+  }
+  .rhacco-page-nav a:hover { background: #242730; border-color: #555b69; }
+  .rhacco-page-nav a:focus-visible, .rhacco-home a:focus-visible {
+    outline: 3px solid #a99bff;
+    outline-offset: 3px;
+  }
+  .rhacco-home, .rhacco-joke {
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    background: #101114;
+    color: #f7f7f8;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .rhacco-home {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    box-sizing: border-box;
+    padding: 24px max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  }
+  .rhacco-home-menu { display: grid; gap: 12px; width: min(460px, 100%); margin: auto; }
+  .rhacco-home-card {
+    box-sizing: border-box;
+    min-height: 68px;
+    display: grid;
+    align-content: center;
+    gap: 3px;
+    padding: 12px 20px;
+    border: 1px solid #30323a;
+    border-radius: 15px;
+    background: #181a1f;
+    box-shadow: 0 8px 26px rgb(0 0 0 / 18%);
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+  }
+  .rhacco-home-card:hover { background: #20232a; border-color: #555b69; }
+  .rhacco-home-card strong { font-size: 17px; font-weight: 650; }
+  .rhacco-home-card span { color: #b2b6c1; font-size: 13px; }
+  .rhacco-workflow-status { justify-self: center; margin-top: 16px; }
+  .rhacco-workflow-status img { display: block; max-width: 100%; }
+  .rhacco-joke { display: grid; grid-template-rows: auto 1fr; }
+  .rhacco-joke-board {
+    box-sizing: border-box;
+    width: min(1080px, calc(100% - 32px));
+    margin: auto;
+    padding: 28px 0 54px;
+  }
+  .rhacco-joke-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .rhacco-joke-heading h1 { margin: 0; font-size: clamp(24px, 4vw, 32px); }
+  .rhacco-joke-heading time { color: #b8bdca; font-size: 13px; }
+  .rhacco-joke-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+  .rhacco-joke-card {
+    border: 1px solid #30323a;
+    border-radius: 16px;
+    background: #181a1f;
+    padding: clamp(18px, 4vw, 30px);
+  }
+  .rhacco-joke-card h2 { margin: 0 0 16px; color: #d7c9ff; font-size: 15px; }
+  .rhacco-joke-card p {
+    margin: 0;
+    font-size: clamp(17px, 2.6vw, 21px);
+    line-height: 1.55;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  @media (max-width: 760px) { .rhacco-joke-row { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body$body_attributes>
+<nav class="rhacco-page-nav" aria-label="$home_label"$nav_hidden>
+  <a href="$home_href" aria-label="$home_label"><span aria-hidden="true">←</span></a>
+</nav>
+$body
+</body>
+</html>

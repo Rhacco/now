@@ -23,6 +23,9 @@ on:
       - ".github/workflows/rhacco-news.yml"
       - "worker-gw2a/**"
       - "worker-rnews/**"
+      - "worker-jmac/data/history.json"
+      - "worker-jmac/data/jokes.json"
+      - "templates/pages/**"
 
 permissions:
   contents: write
@@ -260,56 +263,7 @@ jobs:
                   print(f"{path}: retaining the last valid page from the unselected worker")
           PY
 
-          {
-            cat <<'HTML'
-          <!doctype html>
-          <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width,initial-scale=1">
-            <meta name="color-scheme" content="dark">
-            <meta name="theme-color" content="#101114">
-            <title>Rhacco</title>
-            <style>
-              *{box-sizing:border-box}
-              html,body{margin:0;width:100%;min-height:100%;background:#101114;color:#f7f7f8}
-              body{min-height:100vh;min-height:100svh;min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-              main{width:min(440px,100%);margin:auto;display:grid;gap:14px;align-content:center;justify-items:stretch;transform:translateY(17px)}
-              a{width:100%;min-height:68px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:12px 20px;border:1px solid #30323a;border-radius:15px;background:#181a1f;color:#f7f7f8;text-align:center;text-decoration:none;box-shadow:0 8px 26px rgba(0,0,0,.18);transition:background .15s ease,border-color .15s ease,transform .15s ease,box-shadow .15s ease}
-              a .title{font-size:17px;font-weight:650;letter-spacing:.01em}
-              a .info{font-size:11px;font-weight:400;line-height:1.3;color:#b2b6c1}
-              a:hover{background:#20232a;border-color:#555b69;transform:translateY(-1px);box-shadow:0 11px 30px rgba(0,0,0,.24)}
-              a:active{transform:translateY(0)}
-              a:focus-visible{outline:3px solid #8f7cff;outline-offset:3px}
-              .workflow-status{position:fixed;inset-inline:0;bottom:max(20px,env(safe-area-inset-bottom));display:flex;justify-content:center;pointer-events:none}
-              .workflow-badge{width:auto;min-height:0;display:inline-flex;gap:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;transition:none;pointer-events:auto}
-              .workflow-badge:hover,.workflow-badge:active{background:transparent;border:0;box-shadow:none;transform:none}
-              .workflow-badge img{display:block;max-width:100%;height:auto}
-              @media (max-width:520px){body{padding:max(16px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(16px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}main{gap:12px;transform:translateY(16px)}.workflow-status{bottom:max(16px,env(safe-area-inset-bottom))}a{min-height:64px;border-radius:13px}a .title{font-size:16px}}
-              @media (min-width:900px){main{width:min(460px,100%)}}
-              @media (prefers-reduced-motion:reduce){a{transition:none}}
-            </style>
-          </head>
-          <body>
-            <main aria-label="Pages">
-          HTML
-            if [ "${HAS_RN}" -eq 1 ]; then
-              echo '      <a href="rn/"><span class="title">Rhacco News</span><span class="info">World news, science, royals, and cyber stories.</span></a>'
-            fi
-            if [ "${HAS_GW2}" -eq 1 ]; then
-              echo '      <a href="gw/"><span class="title">GW2 Action</span><span class="info">Live events, maps, and activities in Guild Wars 2.</span></a>'
-            fi
-            cat <<'HTML'
-            </main>
-            <footer class="workflow-status" aria-label="Workflow status">
-              <a class="workflow-badge" href="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml">
-                <img src="https://github.com/Rhacco/now/actions/workflows/update-and-deploy.yml/badge.svg" alt="Update & Deploy workflow status">
-              </a>
-            </footer>
-          </body>
-          </html>
-          HTML
-          } > _site/index.html
+          python3 templates/pages/build.py
 
           echo "Pages artifact:"
           find _site -maxdepth 2 -type f -print | sort
@@ -483,6 +437,8 @@ jobs:
               "gw/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["GW2_UPDATED"] == "true",
               "rn/index.html": os.environ["FULL_UPDATE"] == "true" or os.environ["RN_UPDATED"] == "true",
           }
+          static_pages = {path: (Path("_site") / path).read_bytes()
+                          for path in ("index.html", "jmac/index.html")}
           expected_times = {}
           for path in paths:
               local = Path("_site") / path
@@ -496,12 +452,18 @@ jobs:
           for attempt in range(7):
               failures = []
               now_ms = int(time.time() * 1000)
-              for path, expected in expected_times.items():
+              for path in (*static_pages, *expected_times):
                   url = urllib.parse.urljoin(base, path) + "?check=" + os.environ["RUN_ID"] + "-" + str(attempt)
                   try:
                       request = urllib.request.Request(url, headers={"Cache-Control": "no-cache"})
                       with urllib.request.urlopen(request, timeout=12) as response:
-                          actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', response.read(1000000))
+                          content = response.read(1000000)
+                      if path in static_pages:
+                          if content != static_pages[path]:
+                              failures.append(f"{path}: published page differs from the Pages artifact")
+                          continue
+                      expected = expected_times[path]
+                      actual = re.search(rb'<meta name="page-generated-at-ms" content="(\d+)">', content)
                       if not actual:
                           raise ValueError("published page lacks a generation time")
                       published = int(actual.group(1))
@@ -553,7 +515,7 @@ jobs:
           elif [ "${FRESHNESS_OUTCOME}" != "success" ]; then
             message="**Public pages could not be verified.**"
           else
-            message="**Both sites are live and verified.**"
+            message="**Pages are live and verified.**"
             if [ "${GW2_UPDATED}" = "true" ] && [ "${RN_UPDATED}" = "true" ]; then
               detail="Fresh data: GW2 Action & Rhacco News."
             elif [ "${GW2_UPDATED}" = "true" ]; then

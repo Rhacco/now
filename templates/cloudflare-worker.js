@@ -5,7 +5,6 @@
 
 const ACTIONS = [
   { key: "A1", everyMinutes: 2 },
-  { key: "A2", minutes: [19, 49] },
 ];
 
 const PREVIEW = `<!doctype html>
@@ -42,7 +41,6 @@ const PREVIEW = `<!doctype html>
     <div class="status"><span class="dot"></span>HTTP preview ready</div>
     <div class="cards">
       <article><h2>Update &amp; Deploy</h2><strong>Every 2 minutes</strong><p>Runs one rotating data worker, then publishes fresh pages.</p></article>
-      <article><h2>Joke Machine</h2><strong>At :19 and :49</strong><p>Independent joke check, with no Pages deployment.</p></article>
     </div>
     <footer>Opening this page does not start a workflow. The Cloudflare Cron trigger runs the schedule.</footer>
   </main>

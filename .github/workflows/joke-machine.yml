@@ -3,8 +3,12 @@ run-name: Joke Check
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Auch kurz nach dem letzten Lauf ein Witztrio erzeugen"
+        type: boolean
+        default: false
   schedule:
-    # Poll every five minutes; publish at most once per hour.
     - cron: "*/5 * * * *"
 
 permissions:
@@ -16,97 +20,65 @@ jobs:
     runs-on: ubuntu-24.04
     concurrency:
       group: joke-machine-state
+      queue: max
       cancel-in-progress: false
-    timeout-minutes: 25
+    timeout-minutes: 5
 
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       - name: Restore Joke State
-        id: restore
-        shell: bash
-        run: |
-          set -euo pipefail
-          state_ref="refs/remotes/origin/joke-machine-state"
-          files=(history.json reserve.json latest-results.json)
-
-          if git ls-remote --exit-code --heads origin joke-machine-state >/dev/null 2>&1; then
-            git fetch --quiet origin "refs/heads/joke-machine-state:${state_ref}"
-          else
-            rc=$?
-            if [ "${rc}" -eq 2 ]; then
-              echo "No state branch yet; using packaged seed state."
-              exit 0
-            fi
-            exit "${rc}"
-          fi
-
-          state_prefix=""
-          for prefix in worker-jmac/data worker-jm/data; do
-            complete=1
-            for file in "${files[@]}"; do
-              git cat-file -e "${state_ref}:${prefix}/${file}" 2>/dev/null || complete=0
-            done
-            if [ "${complete}" -eq 1 ]; then state_prefix="${prefix}"; break; fi
-          done
-          if [ -z "${state_prefix}" ]; then
-            echo "State branch is incomplete; refusing to replace saved history." >&2
-            exit 1
-          fi
-          mkdir -p worker-jmac/data
-          for file in "${files[@]}"; do
-            git show "${state_ref}:${state_prefix}/${file}" > "worker-jmac/data/${file}"
-          done
-          echo "State restored."
-
-      - name: Check Joke Due
-        id: due
-        shell: bash
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-        run: |
-          set -euo pipefail
-          if [ "${EVENT_NAME}" != "schedule" ]; then
-            echo "run=true" >> "${GITHUB_OUTPUT}"
-            exit 0
-          fi
-          node - <<'JS'
-          const fs = require("fs");
-          const history = JSON.parse(fs.readFileSync("worker-jmac/data/history.json", "utf8"));
-          if (!Array.isArray(history)) throw new Error("Expected joke history array");
-          const last = [...history].reverse().find(entry =>
-            entry?.status === "ok" && Number.isFinite(Date.parse(entry.timestamp))
-          );
-          const due = !last || Date.now() - Date.parse(last.timestamp) >= 60 * 60 * 1000;
-          fs.appendFileSync(process.env.GITHUB_OUTPUT, `run=${due}\n`);
-          console.log(due ? "New joke is due." : "Recent joke found; skipping this check.");
-          JS
-
-      - name: Generate Joke
-        id: run_joke
-        if: steps.due.outputs.run == 'true'
-        working-directory: worker-jmac
-        env:
-          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: node app/main.js
-
-      - name: Save Joke State
-        if: ${{ always() && steps.restore.outcome == 'success' && steps.run_joke.outcome != 'skipped' }}
-        shell: bash
         run: |
           set -euo pipefail
           state_dir="$(mktemp -d)"
-          cp worker-jmac/data/history.json worker-jmac/data/reserve.json worker-jmac/data/latest-results.json "${state_dir}/"
+          state_ref="refs/remotes/origin/joke-machine-state"
+          echo "JMAC_STATE_FILE=${state_dir}/web-state.json" >> "${GITHUB_ENV}"
+          if git ls-remote --exit-code --heads origin joke-machine-state >/dev/null; then
+            git fetch --quiet --force origin "refs/heads/joke-machine-state:${state_ref}"
+          else
+            rc=$?
+            if [ "${rc}" -eq 2 ]; then exit 0; fi
+            exit "${rc}"
+          fi
+          echo "JMAC_STATE_COMMIT=$(git rev-parse "${state_ref}")" >> "${GITHUB_ENV}"
+          for prefix in worker-jmac/data worker-jm/data; do
+            if git cat-file -e "${state_ref}:${prefix}/history.json" 2>/dev/null; then
+              git show "${state_ref}:${prefix}/history.json" > "${state_dir}/history.json"
+              echo "JMAC_LEGACY_ARCHIVE=${state_dir}/history.json" >> "${GITHUB_ENV}"
+              break
+            fi
+          done
+          for prefix in worker-jmac/data worker-jm/data; do
+            if git cat-file -e "${state_ref}:${prefix}/web-state.json" 2>/dev/null; then
+              git show "${state_ref}:${prefix}/web-state.json" > "${state_dir}/web-state.json"
+              break
+            fi
+          done
+
+      - name: Generate Joke Trio
+        working-directory: worker-jmac
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          JMAC_FORCE: ${{ inputs.force }}
+        run: node app/main.js
+
+      - name: Publish Joke State
+        run: |
+          set -euo pipefail
+          if [ ! -f "${JMAC_STATE_FILE}" ]; then exit 0; fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout --orphan joke-machine-state-next
-          git rm -rf . >/dev/null 2>&1 || true
+          if [ -n "${JMAC_STATE_COMMIT:-}" ]; then
+            git switch --detach "${JMAC_STATE_COMMIT}"
+          else
+            git switch --orphan joke-machine-state-initial
+          fi
+
           mkdir -p worker-jmac/data
-          cp "${state_dir}/history.json" "${state_dir}/reserve.json" "${state_dir}/latest-results.json" worker-jmac/data/
-          git add worker-jmac/data/history.json worker-jmac/data/reserve.json worker-jmac/data/latest-results.json
+          cp "${JMAC_STATE_FILE}" worker-jmac/data/web-state.json
+          git add -- worker-jmac/data/web-state.json
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "Joke Machine state"
-          git push --force origin "HEAD:refs/heads/joke-machine-state"
+          git push origin "HEAD:refs/heads/joke-machine-state"
