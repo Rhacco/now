@@ -138,6 +138,12 @@
       "gpt": "Der Nachbar ruft aus dem Treppenhaus: „Kann mir bitte jemand die Tür aufhalten, ich habe die Einkaufstüte vergessen!“  \nIch halte die Tür, er schaut verwirrt und sagt: „Ich wollte die Tüte doch erst drinnen abstellen.“  \nIch nicke und öffne die Tür weiter.  \nPlötzlich fällt die Tüte – und ein kleiner Hund springt heraus und bellt: „Ich hab’s dir ja gesagt, du hast die Tür zu schnell gehalten!“",
       "qwen": "Ich hab den Nachbarn im Treppenhaus gefragt, ob er oben sein Licht ausschalten kann.\nEr hat genickt und sich verabschiedet.\nDraußen wurde es stockdunkel.",
       "archive": "Mein Navi sagte: „Wenn möglich, bitte wenden.“ Ich war auf dem Weg zu einem Familienbesuch. So viel Verständnis hatte es noch nie für mich gezeigt."
+    },
+    {
+      "timestamp": "2026-11-18T21:14:51.091Z",
+      "gpt": "Im Familienchat fragt Mama: „Wer hat den Kuchen gegessen?“  \nOpa tippt schnell: „Ich war im Büro.“  \nOma schreibt: „Ich habe das Essen bestellt.“  \nVater antwortet: „Ich war gerade beim Zahnarzt – aber das war nur ein Stück von mir.“",
+      "qwen": "Ich tippe im Familienchat: „Ich bin krank, bleib heute zu Hause.“\nMeine Tante antwortet: „Mach dich nicht an, du bist doch gerade erst frisch verheiratet.“",
+      "archive": "Im Café wollte die Bedienung meinen Namen für den Kaffeebecher. Ich sagte „Martin“. Auf dem Becher stand „Kaffee“. Vielleicht wollte sie die Sache nicht unnötig persönlich machen."
     }
   ]
 }
