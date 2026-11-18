@@ -84,6 +84,12 @@
       "gpt": "Ich stehe beim Bäcker und frage: „Ein Brot, bitte, und ein Stück Kuchen dazu.“  \nDer Bäcker nickt, schneidet das Brot zu und legt den Kuchen daneben.  \n„Wie viel kostet das alles?“ frage ich.  \nEr lächelt: „Nur 5 € – das Brot ist heute im Sonderangebot, weil es schon 2 Tage alt ist.“",
       "qwen": "Ich stehe beim Bäcker und sage: „Geben Sie mir bitte ein kleines Stück vom Blechkuchen.“\nDie Verkäuferin guckt mich an und fragt: „Das haben wir nicht, nur ganze Bleche.“\nIch frustriert: „Aber Sie haben doch vorhin noch die Stückchen verkauft!“\nSie seufzt: „Ja, aber die waren für die Ehefrauen bestimmt, und ich sehe Ihnen an, dass Sie verheiratet sind.“",
       "archive": "Im Museum habe ich auf einen Audioguide verzichtet. Jetzt höre ich den des Mannes neben mir. Er trägt seine Kopfhörer um den Hals und hat offenbar eine Führung für den gesamten Saal gebucht."
+    },
+    {
+      "timestamp": "2026-11-18T20:56:50.671Z",
+      "gpt": "Ich stehe beim Bäcker und bestelle ein frisches Brötchen.  \nDer Bäcker fragt: „Möchten Sie es lieber mit Körnern oder ganz normal?“  \nIch überlege kurz und sage: „Egal, Hauptsache es ist nicht mehr das, was ich gestern gegessen habe.“  \nDarauf legt er mir ein Toast‑Brot hin und meint: „Dann ist das ja schon das ‚neue‘ Brötchen.“",
+      "qwen": "Ich stehe an der Theke und sage: „Gibt’s noch Semmeln?“\nDie Bäckerin nickt und legt mir eine frische Brezel hin.\nIch frage perplex: „Warum eine Brezel?“\nSie seufzt: „Weil die Leute immer ‚noch’ sagen, wenn sie wollen, dass alles schnell geht.“",
+      "archive": "In unserer Nachbarschaftsgruppe fragte jemand, ob er sich eine Bohrmaschine leihen könne. Sieben Leute antworteten: „Ich hab eine.“ Keiner schrieb: „Kannst du haben.“ Wir sind gut ausgestattet."
     }
   ]
 }
