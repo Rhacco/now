@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:10:58.041Z",
-      "gpt": "Ich rief die Hausverwaltung wegen lauter Musik, doch der Nachbar kam nur, weil er das WLAN-Passwort vergessen hatte.",
-      "qwen": "Der Nachbar fragt, ob man ihn nie im Fernsehen gesehen habe. Ich zucke die Achseln: „Nein, aber in der Zeitung waren Sie öfter.“",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-19T03:16:09.312Z",
       "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ – „Er will endlich mal kühlen Kopf bewahren.“",
       "qwen": "Ich frage, ob jemand Salz haben will. Die ganze Familie schweigt verdächtig.",
@@ -300,6 +294,12 @@
       "gpt": "Ich steige in den Bus, der plötzlich in die falsche Richtung fährt – zum Glück hat der Fahrer einen Fahrplan für den Umweg.",
       "qwen": "Auf dem Parkplatz fragt der Taxifahrer: „Wohin möchten Sie denn?“\nIch zeige auf mein eigenes Auto: „Dorthin.“",
       "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:21:07.414Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach für einen Kurs im Multitasking.“",
+      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich bin extrem belastbar. Ich habe drei Bewerbungen abgeschickt.“",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
