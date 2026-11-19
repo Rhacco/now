@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:10:58.858Z",
-      "gpt": "Ich bestelle im Café einen Espresso und frage nach dem Zucker, doch die Barista gibt mir einen Löffel Honig – sie arbeitet im Restaurant.",
-      "qwen": "Der Kellner bringt die „Cremesuppe“ ohne Sahne. Ich frage verwundert, ob das Restaurant nicht pleite ist.",
-      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
-    },
-    {
       "timestamp": "2026-11-19T02:15:58.844Z",
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Kurz, Sie können schon morgen in der Apotheke das Rezept abholen.“",
       "qwen": "Warum die Warteschlange?\nDer Arzt ist gerade in der Apotheke, um sich selbst einen Termin zu besorgen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt der Tourist: „Gibt es hier WLAN?“ Die Durchsage: „Bitte halten Sie sich an die Küstenlinie, nicht ans Netz.“",
       "qwen": "Ich frag mein Auto: „Wie lange noch bis zum Strand?“ Es antwortet: „Du hast den Zündschlüssel nicht umgedreht.“",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-19T06:21:06.402Z",
+      "gpt": "Im Museum fragt ein Besucher nach dem Film im Nebenraum, die Bibliothekarin flüstert: „Bitte leise, das ist ein Hörbuch.“",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand. „Dort drin sind wir schon.“",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
