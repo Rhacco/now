@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:40:57.399Z",
-      "gpt": "Im Fitnessstudio fragt die Yogalehrerin: „Wer will heute entspannen?“ Der Trainer drückt die Hantel und sagt: „Ich schon.“",
-      "qwen": "Beim Yoga „Baum“ gehalten, wackelte ich die ganze Zeit. Lehrerin: „Stell dich tiefer in den Boden.“",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-19T18:45:59.847Z",
       "gpt": "Ich habe meinem Nachbarn die Mülltonne geklaut, damit er endlich mal die Hausordnung liest – jetzt steht sie neben seinem Bett.",
       "qwen": "Der Nachbar hämmert gleichmäßig um drei Uhr nachts. Ich rufe wütend rein: „Haben Sie etwa keinen Schlaf?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich war im Café, bestellte einen Cappuccino und fragte nach Zucker. Die Barista lächelte: „Wir servieren nur Espresso – unser Kaffee ist schon süß genug.“",
       "qwen": "Im Restaurant: „Ist das hier echtes Wildschwein?“ – „Nein, das ist unser Koch.“",
       "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
+    },
+    {
+      "timestamp": "2026-11-19T22:50:56.893Z",
+      "gpt": "Ich habe beim Ausmisten die alte Fernbedienung gefunden – jetzt kann ich endlich das Licht im Keller an- und ausschalten.",
+      "qwen": "Wir haben beim Ausmisten die alte Kaffeemaschine gefunden. Seitdem trinken wir nur noch Wasser, weil sie nicht mehr funktioniert.",
+      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
     }
   ]
 }
