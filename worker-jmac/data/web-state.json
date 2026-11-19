@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:51:00.509Z",
-      "gpt": "Mama fragt: „Warum hast du das Frühstück vergraben?“ – Tim: „Ich wollte, dass die Cornflakes endlich mal ein bisschen Erde sehen.“",
-      "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ Ich antworte: „Weil die Katze rauswollte.“ Er seufzt: „Die Katze ist längst tot.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-19T01:56:04.571Z",
       "gpt": "Im Zug zum Strand vergaß ich die Sonnencreme – aber immerhin war das Wetter im Fahrstuhl angenehm kühl.",
       "qwen": "Ich komme aus dem Urlaub zurück und sage: „Endlich Ruhe.“\nMeine Frau erwidert: „Endlich allein.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, der Verkäufer lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept, Sie backen es selbst.“",
       "qwen": "Ich frage: „Haben Sie das auch in Schwarz?“\nDer Verkäufer zückt sein Handy: „Ich bin gerade schwarz.“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-19T06:01:08.361Z",
+      "gpt": "Mama fragt: „Warum hast du das ganze Gemüse in die Waschmaschine gesteckt?“  \nWeil ich die Karotten nicht mehr in den Müll, sondern in die Wäsche geben wollte.",
+      "qwen": "Ich frag die Oma, wozu sie die Fassade streicht. Sie sagt: Damit die Risse nicht zu groß werden.",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
