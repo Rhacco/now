@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:16:06.571Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, natürlich.“",
-      "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte: „Haben Sie Weiterbildungen abgeschlossen?“, worauf ich antwortete: „Ja, ich habe meinen eigenen Abschiedsvermerk selbst geschrieben.“",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-19T17:21:13.761Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie ein Taxi benötigen.“ Ich steige aus, weil ich keinen Fahrplan mehr lese.",
       "qwen": "„Nächster Halt: Bahnhofsvorplatz“, rief der Busfahrer. Ich sprang aussteigend aus dem Auto.",
@@ -300,6 +294,12 @@
       "gpt": "Ich gehe zum Wochenmarkt, um frische Eier zu kaufen – der Verkäufer fragt, ob ich sie lieber vom Supermarkt habe, weil dort die Hühner schneller laufen.",
       "qwen": "Beim Wochenmarkt: „Das ist Bio, da steckt keine Chemie drin!“\nBeim Discounter: „Das ist Bio, da ist extra viel Chemie drin, aber pflanzlich.“",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-19T21:25:58.108Z",
+      "gpt": "Ich rief den Kundendienst, weil das Paket leer war – er meinte, das sei die neue „Zero‑Weight“-Lieferoption. Ich fragte nach einem Rückerstattungsgutschein, er schickte mir ein leeres Kuvert.",
+      "qwen": "Paketbote: „Unterschreiben Sie hier.“ Ich: „Ist das ein Vertrag?“ Er: „Nein, aber ohne Unterschrift darf ich nicht gehn.“",
+      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
     }
   ]
 }
