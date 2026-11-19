@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:38:43.218Z",
-      "gpt": "„Entschuldigung, ich habe meine Unterlagen vergessen.“  \n„Kein Problem, wir machen das jetzt digital.“  \nDer Beamte tippt, schaut und fragt: „Haben Sie Ihr Handy dabei?“  \nIch: „Nur mein Gedächtnis, das ist ja sowieso offline.“",
-      "qwen": "Ich stehe vor dem Schalter und sage: „Ich bräuchte einen Termin für die nächste Woche.“\nDie Dame schaut mich an und sagt: „Dafür müssen Sie sich vorher online anmelden.“\n„Das hab ich doch.“\n„Dann ist das ja gut, legen Sie das Formular hier ab.“",
-      "archive": "Im Zug sitze ich im Ruhebereich. Hinter mir tippt jemand eine Nachricht mit eingeschaltetem Tastenton. Falls er einen Roman schreibt, kenne ich inzwischen das erste Kapitel."
-    },
-    {
       "timestamp": "2026-11-18T20:40:48.433Z",
       "gpt": "Ich sortiere alte Klamotten aus, lege alles in einen Haufen und rufe: „Jetzt wird gespendet!“  \nMeine Freundin schaut und sagt: „Super, dann nimm doch die leeren Tüten mit.“",
       "qwen": "Ich habe beim Ausmisten meine alte Schulmappe gefunden.\nDa lag noch ein Zettel mit der Aufschrift: „Bitte nicht fressen“.\nIch frage mich, was der Lehrer damit meinte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug frage ich nach dem nächsten Halt, im Bus nach dem nächsten Stopp, im Taxi nach dem Weg – im Auto frage ich mich, warum ich überhaupt noch fahr.",
       "qwen": "Ich wechselte vom Taxi in den Bus, weil dort die Klimaanlage funktioniert.",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-19T00:15:57.900Z",
+      "gpt": "In der Bibliothek flüsterte ich: „Popcorn!“ – plötzlich kam das Kino um die Ecke und sagte: „Leise, das Museum schaut zu!“",
+      "qwen": "Kurz vor der Kinokasse fragt der alte Mann nach: „Entschuldigung, sind wir hier schon im Museum?“",
+      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
     }
   ]
 }
