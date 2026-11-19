@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:31:06.575Z",
-      "gpt": "Ich öffne die Wetter‑App, sie zeigt Regen, also greife ich zum Regenschirm – mein Handy piept: „Akkustand 1 %“.",
-      "qwen": "Ich stellte das Handy auf lautlos, damit es nicht klingelt. Ein Sekündchen später vibrierte es trotzdem.",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-19T19:36:12.930Z",
       "gpt": "Im Zug drückte ich den Notruf, weil der WLAN-Ausfall mich in die Steinzeit zurückversetzte – der Schaffner kam, bot mir ein Buch an.",
       "qwen": "Ich fragte den Taxifahrer nach dem schnellsten Weg. Er lachte und fuhr einfach weiter.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga im Fitnessstudio, weil der Trainer meinte, ich soll entspannen – jetzt liegt er neben mir, weil er beim herabschauenden Hund eingeschlafen ist.",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter, weil ich die Übungen nicht mehr kann.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-19T23:36:04.858Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich lerne, meine Antworten zu planen.“",
+      "qwen": "Ich fragte nach Weiterbildung, doch der Chef lächelte nur.\n„Wir schulen Sie in Geduld, während wir Ihre Stelle streichen.“",
+      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
     }
   ]
 }
