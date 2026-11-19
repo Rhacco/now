@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:11:09.211Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
-      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt eine Fundnummer.\nDie Fundnummer gibt's erst, wenn der Fundbericht da ist.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-19T08:15:58.907Z",
       "gpt": "Nach dem Yoga‑Kurs fragt der Trainer: „Wie war die Entspannung?“ – Ich: „Super, ich habe endlich meine Kniebeuge im Schlaf gefunden.“",
       "qwen": "Ich habe in der Hängematte Yoga gemacht. Das war sehr entspannend, bis die Matze rutschte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin einen neuen Topfblumenstrauß geschenkt – sie zog sofort den Rasenmäher raus, weil sie dachte, ich habe ihr einen Rasen geklaut.",
       "qwen": "Ich klopfte höflich an die Nachbarstür.\nDa öffnete sich ein Fenster im dritten Stock.",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-19T12:16:04.236Z",
+      "gpt": "Ich tippe eifrig in der Wetter‑App, weil ich den Regen nicht verpassen will – mein Handy zeigt plötzlich „Offline: Regen kommt nicht“.",
+      "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach der Steckdose. Dann merk ich, dass ich den Ladekabelklemmer schon seit zwei Wochen im Kofferraum vergessen habe.",
+      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
     }
   ]
 }
