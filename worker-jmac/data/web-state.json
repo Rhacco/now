@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:06:05.990Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ Ich antworte: „Nur, wenn er mit Espresso süß ist.“",
-      "qwen": "Ich fragte im Café: „Gibt’s auch süßes?“\nDie Bedienung lächelte: „Ja, der Zucker ist hier drin.“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-19T01:11:12.970Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn sie aus Stoff ist.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“ Ich zeige auf die Tomate.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, wo ist der Ausgang?“ – Ich zeige auf das Fenster: „Da draußen ist unser Ziel.“",
       "qwen": "Ich habe den Koffer gepackt, damit der Urlaub nicht zu kurz kommt.",
       "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
+    },
+    {
+      "timestamp": "2026-11-19T05:15:58.751Z",
+      "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Regal gefunden.“ Das Personal schüttelt den Kopf – das war das Drehbuch des Films.",
+      "qwen": "Im Museum bin ich stehen geblieben, im Kino saß ich fest, aber in der Bibliothek habe ich mich endlich ein bisschen umgesehen.",
+      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
     }
   ]
 }
