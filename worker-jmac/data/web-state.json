@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:56:06.767Z",
-      "gpt": "Ich packe den Kühlschrank aus, finde ein altes Sandwich und denke: „Endlich ein Snack, den ich nicht mehr tragen muss.“",
-      "qwen": "Wir haben beim Ausmisten die alte Waschmaschine gefunden. Sie hat nur zwei Stecker.",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-19T03:01:05.183Z",
       "gpt": "Im Café fragt die Kundin nach dem Tagesgericht, und der Koch erklärt: „Heute gibt's Überraschungs‑Suppe – das ist das Wasser, das wir heute vergessen haben zu kochen.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich das Wasser erst abkochen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gepäckfach?“ Der Schaffner lächelt: „Nur, wenn Sie den Sand mitnehmen.“",
       "qwen": "Am Strand rufe ich fröhlich: „Hallo, Nachbar!“ Der daneben antwortet nicht. Ich schaue nach. Es ist ein Schild.",
       "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
+    },
+    {
+      "timestamp": "2026-11-19T07:05:58.200Z",
+      "gpt": "Mama fragt: „Warum hast du das Glas Wasser auf den Boden gekippt?“  \nWeil ich den Hund von seiner Diät ablenken wollte.",
+      "qwen": "Die Kinder fragen: „Warum muss Mama immer schreien?“ Sie antwortet: „Damit der Stau in ihrer Kopfhörer schneller abfließt.“",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
