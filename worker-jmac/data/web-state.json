@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:46:11.517Z",
-      "gpt": "Im Zug zum Strand fragt ich die Durchsage: „Nächster Halt: Meer.“ Die Stimme antwortet: „Bitte halten Sie die Tür zu, wir fahren nach Hause.“",
-      "qwen": "Sagte ich: „Wir fahren in den Urlaub, um abzuschalten.“ Meine Frau: „Perfekt, dann stell ich den Wecker.“",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-19T19:51:06.640Z",
       "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Ich: „Ich nicht.“ Papa grinst: „Ich habe ihn erst nach dem Aufräumen versteckt.“",
       "qwen": "Ich frage, warum das Essen kalt ist. Meine Frau sagt, sie wartet auf mich, um anzufangen zu essen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich bis dahin endlich meine PowerPoint‑Skills verbessere.“",
       "qwen": "Der Chef lobt meine Weiterbildung, da ich jetzt auch Englisch spreche. Eigentlich wollte ich nur in Ruhe meinen Kaffee ausschlucken.",
       "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
+    },
+    {
+      "timestamp": "2026-11-19T23:51:09.205Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder schwach?“ Ich antworte: „Stark, damit ich das Restaurant später überstehe.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zum Mitnehmen?“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
