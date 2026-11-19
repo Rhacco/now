@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:56:09.175Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund mich für die herabschauende Katze hält und sofort mit dem Ball spielt.",
-      "qwen": "Ich mache Yoga, um meine Verspannungen zu lösen. Jetzt sind meine Oberschenkel so verspannt, dass ich nicht mehr in die Hosen passe.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-19T01:01:07.068Z",
       "gpt": "Ich klopfe an die Nachbarin, um mir den Rasenmäher zu leihen – sie reicht mir stattdessen ihren Staubsauger, weil ihr Rasen jetzt „sauber“ ist.",
       "qwen": "Der Nachbar fragt, ob seine neue Wandfarbe nicht zu aggressiv wirkt. Ich erwidere: „Die Wand weiß noch nicht, was sie tut.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt der Patient nervös: „Wie lange dauert die Behandlung?“ Die Ärztin lächelt: „Nur bis zur Apotheke – dort wartet schon die Rechnung.“",
       "qwen": "Ärztin: „Sie müssen abnehmen.“\nIch: „Ja, und ich muss die Apotheke mitnehmen.“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-19T05:06:05.298Z",
+      "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie geben mir einen Eimer – ich dachte, sie wollen mir beim Gießen helfen.",
+      "qwen": "Ich fragte den Nachbarn, warum er nachts um drei laute Metal-Hammer schlägt. Er antwortete: „Ich übe meinen Abschluss als Schlüsseldiener.“",
+      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
     }
   ]
 }
