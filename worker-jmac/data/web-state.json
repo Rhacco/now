@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:56:08.456Z",
-      "gpt": "Ich öffne die Wetter‑App, um den Regen zu checken, und sie zeigt: „Du hast das Fenster offen.“",
-      "qwen": "Ich starrte auf die leere Akkuanzeige und tippte hektisch weg. Als das Handy starb, fiel die Dummheit meiner App-Wahl auf.",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-19T18:01:15.132Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
       "qwen": "Im Wartezimmer beschwerst du dich über den Arzt. Die Apothekerin seufzt: „Gönnt mir den Spaß, die Diagnose zu bestätigen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den alten Toaster ein, weil ich ihn nie benutze, und stelle fest, dass er noch immer mehr Toast macht als ich.",
       "qwen": "Ich habe die alte Waschmaschine zur Spende rausgestellt. Der Nachbar hat sie direkt abgeholt, mich aber gefragt, ob ich den Mülleimer auch gleich mitnehme.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-19T22:06:12.487Z",
+      "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim herabschauenden Hund bellt mein Nachbar und ich muss doch wieder rennen.",
+      "qwen": "Ich übe seit Wochen Yoga. Heute habe ich endlich den perfekten Gleichgewichtshalt erreicht: Ich steh auf dem Kopf.",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
