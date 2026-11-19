@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:51:08.992Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich heute?“  \nDer Patient seufzt: „Wie immer – ständig nervös.“  \nSie nickt und reicht ihm ein Rezept.  \nIn der Apotheke steht er plötzlich: „Endlich mal etwas, das ich nicht ausdrucken muss.“",
-      "qwen": "Der Arzt ruft: „Herr Müller, gleich kurz in den Behandlungszimmer.“\nIch eile nach draußen.\nDort steht die Apothekerin und sagt: „Schön, dass Sie da sind, ich hatte Sie gerade gesucht.“",
-      "archive": "Im Wartezimmer rief jemand „Herr Müller!“ Drei Männer standen auf. Die Helferin sah auf ihre Liste. „Wunderbar, dann machen wir erst mal die Vornamen.“"
-    },
-    {
       "timestamp": "2026-11-18T23:55:59.273Z",
       "gpt": "Ich packe den alten Toaster ein, weil ich glaube, er fehlt noch im neuen Haus.  \nMeine Mutter schaut und sagt: „Der war doch schon 1998 kaputt.“  \nIch lege ihn zurück in die Kiste und schreibe daneben: „Für die Zukunft.“  \nAm Umzugstag merkt der Umzugswagenfahrer: „Hier ist ja ein Toaster, der nicht funktioniert.“",
       "qwen": "Beim Ausmisten finde ich eine Kiste voller alter Briefe.\nMeine Frau starrt mich an: „Wer sind die Leute?\"\nIch antworte ehrlich: „Meine Ex-Freundinnen.\"\nSie sagt: „Dann wirf die Kiste direkt in den Müll.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte halten Sie Ihre Handys bereit.“ Der Schaffner lächelt und sagt: „Damit wir beim Aussteigen nicht nach dem Ticket suchen.“",
       "qwen": "Ich bin zwei Stunden im Stau, dann fahre ich um und nehme den Bus. Der bleibt direkt hinter mir stehen.",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-19T03:51:07.725Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Idee, das Projekt zu beschleunigen?“ Darauf meldet sich die Kaffeemaschine: „Ich habe bereits den Turbo‑Modus.“",
+      "qwen": "Der Chef fragt, warum ich so spät bin. Ich sage: „Stau.“ Er nickt und sagt: „Gut, dann sitzen wir eben länger im Kreis.“",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
