@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:01:07.068Z",
-      "gpt": "Ich klopfe an die Nachbarin, um mir den Rasenmäher zu leihen – sie reicht mir stattdessen ihren Staubsauger, weil ihr Rasen jetzt „sauber“ ist.",
-      "qwen": "Der Nachbar fragt, ob seine neue Wandfarbe nicht zu aggressiv wirkt. Ich erwidere: „Die Wand weiß noch nicht, was sie tut.“",
-      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
-    },
-    {
       "timestamp": "2026-11-19T01:06:05.990Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ Ich antworte: „Nur, wenn er mit Espresso süß ist.“",
       "qwen": "Ich fragte im Café: „Gibt’s auch süßes?“\nDie Bedienung lächelte: „Ja, der Zucker ist hier drin.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie geben mir einen Eimer – ich dachte, sie wollen mir beim Gießen helfen.",
       "qwen": "Ich fragte den Nachbarn, warum er nachts um drei laute Metal-Hammer schlägt. Er antwortete: „Ich übe meinen Abschluss als Schlüsseldiener.“",
       "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
+    },
+    {
+      "timestamp": "2026-11-19T05:10:58.606Z",
+      "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, wo ist der Ausgang?“ – Ich zeige auf das Fenster: „Da draußen ist unser Ziel.“",
+      "qwen": "Ich habe den Koffer gepackt, damit der Urlaub nicht zu kurz kommt.",
+      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
     }
   ]
 }
