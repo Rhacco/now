@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:36:08.791Z",
-      "gpt": "Im Zug zum Strand fragt ich den Schaffner nach dem nächsten Halt – er zeigt auf das Schild „Badeparadies“ und meint: „Hier gibt's nur Wasser, nicht Strand.“",
-      "qwen": "Im Urlaub fragte ich die Frau, ob sie Deutsch spricht. Sie nickte und sagte: „Ja, aber nur, wenn Sie es nicht hören.\"",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-19T13:41:07.773Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, aber ich habe das verlorene Formular gefunden.“",
       "qwen": "Ich holte meinen verlorenen Schlüssel im Fundbüro ab. Der Beamte verlangte den Fundbeleg, den ich gerade verloren hatte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einem Lautsprecher, der auch als Wecker dient – der Verkäufer gibt mir ein Telefon, weil er „aufwachen“ kann.",
       "qwen": "Die Putzfrau fragt: „Dürfen wir hier auch Musik hören?“\nDer Chef nickt, denn sie wäscht nichts, nur die Fenster.",
       "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
+    },
+    {
+      "timestamp": "2026-11-19T17:41:07.222Z",
+      "gpt": "Ich packe meine Klamotten für den Umzug und finde ein altes T-Shirt mit Aufschrift „Ich bin nicht mehr hier“. Das ist mein neuer Ausmist‑Plan.",
+      "qwen": "Ich habe den ganzen Tag alte Kisten ausgemistet, bis mir die Finger schmerzten. Jetzt habe ich nichts mehr, in das ich die neuen Kisten packen kann.",
+      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
     }
   ]
 }
