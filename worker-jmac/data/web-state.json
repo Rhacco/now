@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:50:58.261Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, ich habe nur das verlorene Handy gefunden.“",
-      "qwen": "Ich habe den verlorenen Ausweis im Fundbüro abgegeben. Der Beamte verlangte für die Rückgabe mein Dienstausweis.",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-19T08:56:05.147Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kinobesitzer antwortet: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "In der Bibliothek fragte ich nach dem Krimi, doch der Bibliothekar zeigte nur auf das Kino. „Dort ist der Mörder noch lebendig“, erklärte er trocken.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ Ich antworte: „Nur beim Aufstehen – dann bin ich schon im Stretch‑Modus.“",
       "qwen": "Ich habe meinen Yoga-Lehrer gefragt, wie man den Kopf leer bekommt. Er sagte, er sei schon leer – nur der Körper fehlt noch.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-19T12:56:07.969Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie das Ziel erreicht haben.“ Der Pendler: „Ich sitze im Bus.“",
+      "qwen": "Ich stieg aus dem Taxi, winkte dem Bus und rief das Auto. „Mann,“, seufzte der Fahrer, „du fährst ja jeden Weg zweimal.“",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
