@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:01:05.183Z",
-      "gpt": "Im Café fragt die Kundin nach dem Tagesgericht, und der Koch erklärt: „Heute gibt's Überraschungs‑Suppe – das ist das Wasser, das wir heute vergessen haben zu kochen.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich das Wasser erst abkochen?“",
-      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
-    },
-    {
       "timestamp": "2026-11-19T03:05:59.052Z",
       "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wie fühlen Sie sich?“ Der Anfänger antwortet: „Wie ein Smartphone im Flugmodus – komplett abgeschaltet.“",
       "qwen": "Beim Yoga-Entspannungskurs sagte die Trainerin: „Atmen Sie ruhig aus.“\nIch atmete aus, bis ich umkippte.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das Glas Wasser auf den Boden gekippt?“  \nWeil ich den Hund von seiner Diät ablenken wollte.",
       "qwen": "Die Kinder fragen: „Warum muss Mama immer schreien?“ Sie antwortet: „Damit der Stau in ihrer Kopfhörer schneller abfließt.“",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-19T07:11:08.880Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie gibt mir ein Geschenkpapier – „Damit Sie die Preise nicht mehr sehen.“",
+      "qwen": "Papi, frag den Verkäufer, ob der Fisch noch lebt. Er sagt: „Das hängt doch davon ab, was Sie damit vorhaben.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
