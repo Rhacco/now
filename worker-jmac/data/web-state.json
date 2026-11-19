@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:41:07.222Z",
-      "gpt": "Ich packe meine Klamotten für den Umzug und finde ein altes T-Shirt mit Aufschrift „Ich bin nicht mehr hier“. Das ist mein neuer Ausmist‑Plan.",
-      "qwen": "Ich habe den ganzen Tag alte Kisten ausgemistet, bis mir die Finger schmerzten. Jetzt habe ich nichts mehr, in das ich die neuen Kisten packen kann.",
-      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
-    },
-    {
       "timestamp": "2026-11-19T17:46:04.083Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich dann endlich die PowerPoint‑Fertigkeiten habe, die Sie fordern.“",
       "qwen": "Nach der Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie auch schon mal eine Bewerbung abgelehnt?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ – Ich antworte: „Nur beim Aufstehen, dann bin ich schon ganz entspannt.“",
       "qwen": "Ich wollte beim Yoga entspannen, bin aber vom Stuhl gefallen. Jetzt übe ich Liegestütze, weil der Rücken nicht mehr gut wird.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-19T21:50:57.650Z",
+      "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt – ich drücke den Knopf, weil ich das Ziel schon kenne. Der Zug hält, weil er mich nicht versteht.",
+      "qwen": "Ich stelle mich in die Taxireihe, doch der Fahrer winkt mich zu seinem Auto. „Sie sind dran“, sagt er, „aber fahren tut meine Frau.“",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
