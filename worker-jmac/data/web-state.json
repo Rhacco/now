@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:16:09.312Z",
-      "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ – „Er will endlich mal kühlen Kopf bewahren.“",
-      "qwen": "Ich frage, ob jemand Salz haben will. Die ganze Familie schweigt verdächtig.",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-19T03:20:57.981Z",
       "gpt": "Im Zug steht ein Mann und fragt nach dem nächsten Halt. Der Schaffner lächelt: „Nur noch ein Stopp – die nächste Haltestelle ist Ihr Parkplatz.“",
       "qwen": "Allein im Taxi, ich sage: „Bitte schnell, ich muss zur Bahn.“ Der Fahrer lacht und stellt die Uhr auf null.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach für einen Kurs im Multitasking.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich bin extrem belastbar. Ich habe drei Bewerbungen abgeschickt.“",
       "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:26:03.559Z",
+      "gpt": "Mama ruft: „Wer hat den Kuchen gegessen?“ Ich: „Ich nicht.“ Papa: „Dann musst du das Stück haben, das du nie gegessen hast.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nicht genug, um eine Diät zu starten.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
