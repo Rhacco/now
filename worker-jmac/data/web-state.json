@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:15:58.534Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken klaut.",
-      "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich.“",
-      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
-    },
-    {
       "timestamp": "2026-11-19T15:21:13.713Z",
       "gpt": "Im Meeting fragt der Chef, wer die Deadline verpasst hat – und die Kaffeemaschine piept: „Ich habe den Termin auch nicht gefunden.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nNiemand rührte sich, bis der Drucker hustete.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Frau: „Entschuldigung, ist das hier der Weg zum Strand?“ Der Schaffner lächelt: „Nur, wenn Sie im Schwimmbad bleiben.“",
       "qwen": "Im Urlaub fragte ich den Kellner nach dem besten Schnäppchen. Er zeigte auf die Minibar: „Die ist leer.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-19T19:21:04.503Z",
+      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Kurz, ich gehe gleich in die Apotheke – mein Rezept ist schon fertig.“",
+      "qwen": "Der Arzt sagt: „Zwei Tabletten täglich.“ Ich frage: „Morgens oder abends?“ Er antwortet: „Mittags, ich bin um zwei zu.“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
