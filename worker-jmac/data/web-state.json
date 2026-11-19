@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:51:09.819Z",
-      "gpt": "In der Bibliothek fragt mich ein Besucher: „Welcher Film läuft heute?“ – Ich zeige auf das Sachbuchregal: „Hier gibt’s nur Dokumentarfilm.“",
-      "qwen": "Im Museum zeig ich den Dackel an, im Kino kauf ich Popcorn für ihn. In der Bibliothek fragt die Dame nach der Ausweisnummer: „Dackel, sitzt auf der Nase.“",
-      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
-    },
-    {
       "timestamp": "2026-11-19T07:55:56.020Z",
       "gpt": "Der Paketbote fragt: „Haben Sie das Paket angenommen?“ – Ich: „Ja, ich habe es gerade erst an die Post zurückgeschickt.“",
       "qwen": "Der Kurier schüttelt den Kopf: „Dieses Paket ist zu schwer.“ Ich frage: „Wie schwer ist es denn?“ Er antwortet: „Zu schwer für Ihre Geduld.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an den Nachbarn, weil der Fernseher zu laut ist – er öffnet die Tür, wir sehen nur das leere Wohnzimmer. \"Ich dachte, du bist hier.\"",
       "qwen": "Der Nachbar klopft an und fragt, ob ich noch wach bin. Ich sage: „Ja, weil Sie klopfen.“",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-19T11:55:59.699Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich: „Im nächsten Weiterbildungsseminar – endlich lerne ich, pünktlich zu kommen.“",
+      "qwen": "Ich habe im Vorstellungsgespräch ehrlich zugegeben, dass ich nichts weiß. Der Chef lachte und bot mir sofort einen Kurs-Platz an.",
+      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
     }
   ]
 }
