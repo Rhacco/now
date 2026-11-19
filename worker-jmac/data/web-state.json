@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:45:59.891Z",
-      "gpt": "Mama fragt: „Warum hast du die Waschmaschine aus dem Fenster geworfen?“  \nTim: „Ich wollte den Trockner endlich mal sehen, wie er fliegt.“",
-      "qwen": "Ich frage mein Kind, was es mit dem alten Opa macht. „Nichts, er schaut fern.“ „Und du?“ „Ich schau zu, wie er schaut.“",
-      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
-    },
-    {
       "timestamp": "2026-11-19T10:51:00.125Z",
       "gpt": "Im Zug vergaß ich mein Ticket, doch die Kontrolleure gaben mir ein Kompliment: „Endlich jemand, der auch im Sitzen fährt.“",
       "qwen": "Ich steige vom Taxi aus und sehe den Bus kommen. „Alles gut?“, fragt der Fahrer. „Nein, ich bin zu Fuß.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Weiterbildungen?“ – Ich: „Ich habe bereits einen Kurs in Ausreden belegt.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich bin sehr ausdauernd, denn ich habe schon zehn Interviews überlebt, in denen man mich abgewiesen hat.“",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-19T14:56:00.154Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Glühbirne, und der Verkäufer meint: „Hier gibt's nur LED – das spart schon beim Stromzählen.“",
+      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich denke: „Endlich, ich brauche dringend eine Beratung.“",
+      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
     }
   ]
 }
