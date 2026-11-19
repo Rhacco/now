@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:01:08.000Z",
-      "gpt": "Ich habe beim Ausmisten die alte Kaffeemaschine gefunden, die ich seit Jahren nicht mehr benutze.  \n„Vielleicht doch noch einen Kaffee trinken“, überlege ich und stelle sie auf die Arbeitsplatte.  \nNach einem Moment hörte ich ein leises Klicken – das Gerät sprang sofort an.  \nUnd plötzlich stand die Katze neben mir, schnurrte und sagte: „Endlich ein neuer Staubsauger!“",
-      "qwen": "Ich habe beim Ausmisten eine Videokassette aus dem Jahr 1998 gefunden.\nMein Kollege meinte, wir sollten den Inhalt sofort sichern.\nIch hab’s abgefilmt, aber der Film hat sich beim Abspielen als komplett leer erwiesen.\nJetzt weiß ich, warum meine Großmutter damals so laut geschrien hat.",
-      "archive": "Beim Umzug sagte ich: „Das Sofa passt locker durch die Tür.“ Mein Freund fragte: „In welche Richtung?“ Drei Stunden später wusste ich, dass er Erfahrung hat."
-    },
-    {
       "timestamp": "2026-11-18T23:06:01.070Z",
       "gpt": "Ich stehe vor dem Kiosk, das Paket in der Hand, und frage: „Ist das für mich?“  \nDer Kiosk‑Mitarbeiter schaut drauf, lächelt und sagt: „Ja, das ist Ihr Paket.“  \nIch öffne es, ziehe einen leeren Karton heraus und drehe mich verwirrt um.  \n„Ach so, das war nur die Rücksendung von meinem letzten Einkauf.“",
       "qwen": "Ich klingele am Kiosk und frage nach meinem Paket.\nDer Verkäufer zieht eine riesige, schwere Kiste hervor.\n„Das ist Ihr Paket“, sagt er und drückt sie mir in die Hände.\n„Ich hab aber nur ein Parfum bestellt“, entgegne ich verdutzt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Bibliotheksregal gefunden.“ Der Bibliothekar im Kino ruft: „Leise, das ist kein Trailer!​",
       "qwen": "Bibliothek, Kino und Museum: Ich wollte nur ein Buch ausleihen. Der Bibliothekar sagte: „Heute nur im Museum.“",
       "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
+    },
+    {
+      "timestamp": "2026-11-19T02:56:06.767Z",
+      "gpt": "Ich packe den Kühlschrank aus, finde ein altes Sandwich und denke: „Endlich ein Snack, den ich nicht mehr tragen muss.“",
+      "qwen": "Wir haben beim Ausmisten die alte Waschmaschine gefunden. Sie hat nur zwei Stecker.",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
