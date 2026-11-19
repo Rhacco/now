@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:31:06.436Z",
-      "gpt": "Ich warte im Wartezimmer, die Ärztin ruft: „Sie haben ein Rezept.“ Ich antworte: „Super, ich habe noch nie ein Rezept für Wartezeit bekommen.“",
-      "qwen": "Ich fragte den Apotheker, ob der Arzt mich operieren will. Er winkte ab: „Kommen Sie lieber morgen, dann bin ich wieder da.“",
-      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
-    },
-    {
       "timestamp": "2026-11-19T06:36:02.596Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie in der Apotheke ankommt.“",
       "qwen": "„Drei Tabletten täglich nach den Mahlzeiten“, sagt der Arzt.\n„Und wenn ich keine Mahlzeiten habe?“, frage ich.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und packe sofort den Regenschirm ein – mein Handy zeigt mir dann, dass ich heute keinen Regenschirm habe.",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch nehme es aus der Steckdose und es stirbt sofort.",
       "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
+    },
+    {
+      "timestamp": "2026-11-19T10:30:58.041Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst testet neue Lieferzeiten.“ Ich melde mich sofort ab.",
+      "qwen": "Der Lieferant fragt: „Ist jemand zu Hause?“ Ich rufe: „Ich bin’s, aber das Paket hat mich überholt.\"",
+      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
     }
   ]
 }
