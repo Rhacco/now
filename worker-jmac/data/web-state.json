@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:46:07.246Z",
-      "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft endlich die „Stummfilm‑Ausgabe“ des Romans.",
-      "qwen": "Im Museum weigere ich mich, zu flüstern. Die Aufseherin ruft: „Hier dürfen Sie gar nicht schweigen!”",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-19T16:50:41.045Z",
       "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich heute Regenschirm brauche – und bekomme eine Push‑Benachrichtigung: „Deine Batterie ist zu schwach, um zu laufen.“",
       "qwen": "Ich wischte frustriert den Bildschirm ab.\nDarauf: Meine eigene Fingertatsache.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Kater das Bein geklaut – jetzt macht er den heraufschauenden Kater.",
       "qwen": "Der Trainer schrie: „Mehr Muskeln, weniger Schmerzmittel!“\nIch fragte: „Haben Sie das gerade ernst gemeint?“",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-19T20:51:09.497Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Ich: „Nein, ich habe nur meine Schlüssel gefunden.“",
+      "qwen": "Ich fand meine Brieftasche im Fundbüro. Die Auszahlung des Gewinns verweigerte man mir jedoch, da ich keine Verlustbescheinigung vorlegte.",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
