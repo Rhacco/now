@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:40:58.521Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Entschuldigung?“",
-      "qwen": "Der Bot fragt: „Ist jemand zu Hause?“ Ich rufe: „Ja, ich bin’s.“",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-19T03:45:57.042Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte halten Sie Ihre Handys bereit.“ Der Schaffner lächelt und sagt: „Damit wir beim Aussteigen nicht nach dem Ticket suchen.“",
       "qwen": "Ich bin zwei Stunden im Stau, dann fahre ich um und nehme den Bus. Der bleibt direkt hinter mir stehen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Espresso, doch der Barista fragt: „Möchten Sie ihn mit Milch?“, und schenkt ihm einen Milchschnitzer.",
       "qwen": "Ich bestellte im Café einen Kaffee, der so teuer war, dass ich ihn trank, während ich weinte.",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:46:26.020Z",
+      "gpt": "Mutter fragt: „Warum hast du das ganze Salz in die Suppe geschüttet?“ Vater: „Ich wollte endlich mal die Stimmung würzen.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, bis du den Müll rausbringst.“",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
