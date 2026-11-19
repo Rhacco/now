@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:06:20.052Z",
-      "gpt": "Der neue Nachbar klopft, fragt nach dem WLAN-Passwort und bekommt: „Sorry, hier gibt's nur die Hausnummer, das reicht für jede Verbindung.“",
-      "qwen": "Der Nachbar klagte über meine laute Musik. Ich ließ leiser. Er kam zurück und sagte: „Und jetzt höre ich endlich deinen schlechten Geschmack.“",
-      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
-    },
-    {
       "timestamp": "2026-11-19T00:11:06.455Z",
       "gpt": "Im Zug frage ich nach dem nächsten Halt, im Bus nach dem nächsten Stopp, im Taxi nach dem Weg – im Auto frage ich mich, warum ich überhaupt noch fahr.",
       "qwen": "Ich wechselte vom Taxi in den Bus, weil dort die Klimaanlage funktioniert.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Mann antwortet: „Wie ein Rezept, das ich in der Apotheke noch nie abgeholt habe.“",
       "qwen": "„Ich habe Ihnen ein Rezept ausgestellt“, sagt der Arzt.\nDie Apothekerin blinzelt: „Das ist aber mein Zahnarztkartei.“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-19T04:11:09.041Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen – ich greife zum Notizblock, schreibe „Kaffee nachschlagen“ und merke, dass das die einzige produktive Idee ist.",
+      "qwen": "Ich fragte den Chef, ob wir die Besprechung kürzen können. Er nickte und sagte: „Nein, wir brauchen die volle Stunde für den Abschied.\"",
+      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
     }
   ]
 }
