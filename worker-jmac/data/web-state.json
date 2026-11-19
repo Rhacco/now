@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:41:05.985Z",
-      "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit drei Tagen im Aufzug stecken bleibt – die Stimme am anderen Ende fragt, ob ich das Paket schon ausgepackt habe.",
-      "qwen": "Der Paketbote klingelte, ich fragte nach der Unterschrift. Er riss das Etikett ab und ging.",
-      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
-    },
-    {
       "timestamp": "2026-11-19T14:46:01.601Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich klage über Herzrasen. Der Arzt fragt: „Wie schnell?“ Ich zeig ihm meine Uhr: „Solange!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt die Yogalehrerin: „Wer will heute entspannen?“ Der Trainer drückt die Hantel und sagt: „Ich schon.“",
       "qwen": "Beim Yoga „Baum“ gehalten, wackelte ich die ganze Zeit. Lehrerin: „Stell dich tiefer in den Boden.“",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-19T18:45:59.847Z",
+      "gpt": "Ich habe meinem Nachbarn die Mülltonne geklaut, damit er endlich mal die Hausordnung liest – jetzt steht sie neben seinem Bett.",
+      "qwen": "Der Nachbar hämmert gleichmäßig um drei Uhr nachts. Ich rufe wütend rein: „Haben Sie etwa keinen Schlaf?“",
+      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
     }
   ]
 }
