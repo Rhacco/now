@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:51:07.634Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, das Sie gerade ankündigen.“",
-      "qwen": "Ich habe mich für den Chefposten beworben. Der Personalchef fragte: „Was ist Ihre größte Schwäche?“",
-      "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
-    },
-    {
       "timestamp": "2026-11-19T05:55:57.544Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, der Verkäufer lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept, Sie backen es selbst.“",
       "qwen": "Ich frage: „Haben Sie das auch in Schwarz?“\nDer Verkäufer zückt sein Handy: „Ich bin gerade schwarz.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen, damit sie den Rasen kürzer bekommt. Jetzt mäht sie den Rasen, weil er zu kurz ist.",
       "qwen": "Der neue Nachbar fragt leise, ob ich mit dem Essen fertig bin.\nEr will nur die Gießkanne ausleihen.",
       "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
+    },
+    {
+      "timestamp": "2026-11-19T09:55:56.619Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, um meine Schritte zu zählen – sie meldet nach fünf Minuten: „Du hast bereits 10 000 Kalorien verbrannt.“",
+      "qwen": "Ich habe die App „Türöffnung“ installiert. Jetzt muss ich erst per Passwort die eigene Wohnungstür entsperren.",
+      "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
     }
   ]
 }
