@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:16:10.783Z",
-      "gpt": "Ich gehe zur Bibliothek, stelle die Bücher in den Rückgabeschrank und warte.  \nDer Automat piept und zeigt: „Bitte legen Sie das Buch mit der Rücksichts­voll­keit zurück.“  \nIch schiebe das dicke Kochbuch nach vorne, weil es das schwerste ist.  \nDer Automat spuckt aus: „Danke, jetzt haben wir endlich ein gutes Rezept für Ordnung.“",
-      "qwen": "Ich frage in der Bibliothek nach einem Krimi, den ich dringend zurückgeben muss.\nDie Dame sagt: „Müsste das eigentlich morgen sein.“\nIch atme auf und sage: „Dann ist das ja in Ordnung.“\nSie legt den Kopf schief und murmelt: „Sie meinen das Buch, das Sie bei mir abgeben wollen.“",
-      "archive": "Meine Schwester sagt, sie sei überhaupt nicht nachtragend. Sie kann mir allerdings noch den genauen Wortlaut unserer Streiterei von 2009 aufsagen."
-    },
-    {
       "timestamp": "2026-11-18T23:21:10.652Z",
       "gpt": "Ich steige in die Bahn, setze mich neben einen Mann mit riesigem Koffer.  \nEr schaut mich an, lächelt und sagt: „Heute fährt er endlich mit.“  \nIch nicke, weil ich dachte, er meint den Zug.  \nEr zieht den Koffer aus, öffnet ihn und ruft: „Endlich, mein Hund ist wieder da!“",
       "qwen": "Ich rechne in der S-Bahn die Minuten bis zum Ziel durch.\nDer Zug hält, alle steigen aus.\nIch bleibe sitzen und denke: „Eigentlich war ich noch gar nicht fertig.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wie fühlen Sie sich?“ Der Anfänger antwortet: „Wie ein Smartphone im Flugmodus – komplett abgeschaltet.“",
       "qwen": "Beim Yoga-Entspannungskurs sagte die Trainerin: „Atmen Sie ruhig aus.“\nIch atmete aus, bis ich umkippte.",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-19T03:10:58.041Z",
+      "gpt": "Ich rief die Hausverwaltung wegen lauter Musik, doch der Nachbar kam nur, weil er das WLAN-Passwort vergessen hatte.",
+      "qwen": "Der Nachbar fragt, ob man ihn nie im Fernsehen gesehen habe. Ich zucke die Achseln: „Nein, aber in der Zeitung waren Sie öfter.“",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
