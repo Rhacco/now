@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:06:05.759Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Weiterbildungs‑Webinar – und Sie?“",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich kann mich sehr gut weiterbilden.“",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-19T17:11:01.411Z",
       "gpt": "Beim Auspacken des Umzugskartons findet er sein altes Handy – und fragt sich, warum er das neue Modell gekauft hat, das er noch nie eingeschaltet hat.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Macht sie noch?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und sagt: „Nein, ich habe nur das Formular, das ich gerade verloren habe.“",
       "qwen": "„Ich habe den Fund nicht gemeldet, weil das Formular 40 Seiten hat.“\n„Dann verlieren Sie ihn ja endgültig.“",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-19T21:15:59.493Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient: „Wie ein Rezept, das noch nie eingelöst wurde.“",
+      "qwen": "Ich klagte über Migräne. Der Arzt schickte mich zur Apotheke, wo ich eine Flasche Whiskey bekam.",
+      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
     }
   ]
 }
