@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:05:59.948Z",
-      "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
-      "qwen": "Die Oma fragt, wie es der Enkelin geht. „Gut, aber sie will nicht mehr mit mir schlafen.“",
-      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
-    },
-    {
       "timestamp": "2026-11-19T18:11:09.195Z",
       "gpt": "Der Nachbar klopft, weil er leise Musik hören will – ich schenke ihm Kopfhörer, weil er immer wieder laut schallt.",
       "qwen": "Ich habe die Wand dicker verputzt, damit die Nachbarn mich nicht mehr hören, und der Nachbar hat daraufhin seine Lautsprecher draußen aufgestellt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten meldet sie: „Bitte erstelle ein Konto – für dein Sofa.“",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch öffne die Ladebuchse: Dort sitzt ein Müsliriegel.",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-19T22:16:08.294Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Kassenbon noch?“ – „Nein, aber ich habe das Formular dafür ausgefüllt.“",
+      "qwen": "Ich gebe die Fundsache ab und erhalte ein Formular mit dreihundert Seiten. „Bitte unterschreiben Sie hier, dort und unter dem Datum.“",
+      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
     }
   ]
 }
