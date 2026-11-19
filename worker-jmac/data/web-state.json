@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:00:59.436Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für den Wochenmarkt?“ – Ich antworte: „Nur, wenn Sie mir das Gemüse aus dem Sonderangebot geben.“",
-      "qwen": "Frau Müller fragt nach dem Preis der Erdbeeren. „Zehn Euro das Kilo“, antwortet der Mann. Sie starrt ihn an: „Und das sind keine Tomaten.“",
-      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
-    },
-    {
       "timestamp": "2026-11-19T02:05:58.641Z",
       "gpt": "Ich habe im Vorstellungsgespräch gesagt, ich lerne ständig dazu – und die Personalchefin fragte, ob ich schon den Kurs „Wie man absagt“ besucht habe.",
       "qwen": "Nach meiner Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie Platz für mich?“\nDer Chef schaut stirnrunzelnd in seinen Kaffeebecher: „Ja, hier noch zwei Zentimeter Luft.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Da hinten, wo das Meer endet.“",
       "qwen": "Ich habe am Strand eine Taube gesehen. Sie hat mich angetrollt.",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-19T06:11:09.856Z",
+      "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Der Mann lächelt: „Nur wenn ich im Taxi sitze.“",
+      "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich nicke. Er sagt: „Dann steig aus.“",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
