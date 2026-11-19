@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:46:06.574Z",
-      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um ans Meer zu kommen?“ Der Schaffner: „Am nächsten Bahnhof – er heißt ‘Küste’.“",
-      "qwen": "Ich wollte im Urlaub total entspannen und lesen. Die Fliege auf meinem Buch hat das verhindert.",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-19T09:51:05.096Z",
       "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen, damit sie den Rasen kürzer bekommt. Jetzt mäht sie den Rasen, weil er zu kurz ist.",
       "qwen": "Der neue Nachbar fragt leise, ob ich mit dem Essen fertig bin.\nEr will nur die Gießkanne ausleihen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Zeugen, der den verlorenen Stift bezeugt.",
       "qwen": "Fundbüro: „Ihr Formular ist unvollständig.“ Ich: „Aber ich habe doch alles ausgefüllt!“",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-19T13:50:57.814Z",
+      "gpt": "Im Supermarkt fragt ich nach Bio‑Bananen, die Verkäuferin sagt: „Hier gibt’s nur Bio‑Bananen.“ Am Wochenmarkt kaufe ich welche, die Verkäuferin fragt: „Bio?“",
+      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für Tomaten. Er zückte eine Waage statt der Kasse.",
+      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
     }
   ]
 }
