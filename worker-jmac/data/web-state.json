@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:11:09.041Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen – ich greife zum Notizblock, schreibe „Kaffee nachschlagen“ und merke, dass das die einzige produktive Idee ist.",
-      "qwen": "Ich fragte den Chef, ob wir die Besprechung kürzen können. Er nickte und sagte: „Nein, wir brauchen die volle Stunde für den Abschied.\"",
-      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
-    },
-    {
       "timestamp": "2026-11-19T04:15:58.543Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie die Apotheke – ich warte schon seit Stunden auf das Rezept.“",
       "qwen": "Ich fragte den Arzt: „Soll ich zum Apotheker?“ Er nickte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt eine Fundnummer.\nDie Fundnummer gibt's erst, wenn der Fundbericht da ist.",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-19T08:15:58.907Z",
+      "gpt": "Nach dem Yoga‑Kurs fragt der Trainer: „Wie war die Entspannung?“ – Ich: „Super, ich habe endlich meine Kniebeuge im Schlaf gefunden.“",
+      "qwen": "Ich habe in der Hängematte Yoga gemacht. Das war sehr entspannend, bis die Matze rutschte.",
+      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
     }
   ]
 }
