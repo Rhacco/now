@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:05:58.877Z",
-      "gpt": "Ich mach Yoga, um den Stress abzubauen.  \nNach der ersten Pose ruft mein Sohn: „Mama, das ist ja wie ein Knoten!“  \nIch lächle und sage: „Genau, das ist die neue Entspannungs‑Übung.“  \nEr schaut verwirrt: „Dann warum gibt’s keine Medaille?“",
-      "qwen": "Im Kurs „Entspannung durch Yoga“ fragt die Trainerin: „Wer hat zu Hause schon mal Mediation probiert?“\nMein Nachbar hebt die Hand und seufzt: „Ja, das Kissen auf dem Sofa.“",
-      "archive": "Der Trainer im Fitnessstudio rief: „Noch zehn Wiederholungen!“ Ich fragte: „Von welcher Übung?“ Er sagte: „Von Ihrem Gemecker.“"
-    },
-    {
       "timestamp": "2026-11-19T00:06:20.052Z",
       "gpt": "Der neue Nachbar klopft, fragt nach dem WLAN-Passwort und bekommt: „Sorry, hier gibt's nur die Hausnummer, das reicht für jede Verbindung.“",
       "qwen": "Der Nachbar klagte über meine laute Musik. Ich ließ leiser. Er kam zurück und sagte: „Und jetzt höre ich endlich deinen schlechten Geschmack.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der nicht piept, und der Verkäufer reicht mir einen Kopfhörer. „Damit hörst du das Piepen nicht mehr.“",
       "qwen": "In der Filiale fragt der Kunde: „Haben Sie diesen Rasenroboter auch in Schwarz?“ Der Verkäufer seufzt und antwortet: „Nein, aber er ist definitiv nicht sauber.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-19T04:06:05.026Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Mann antwortet: „Wie ein Rezept, das ich in der Apotheke noch nie abgeholt habe.“",
+      "qwen": "„Ich habe Ihnen ein Rezept ausgestellt“, sagt der Arzt.\nDie Apothekerin blinzelt: „Das ist aber mein Zahnarztkartei.“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
