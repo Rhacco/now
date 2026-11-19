@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:16:11.301Z",
-      "gpt": "Ich habe meiner Nachbarin ein Schild mit „Bitte nicht stören – Arbeit“ in die Tür gehängt. Sie hat es umgedreht: „Bitte nicht arbeiten – Störung“.",
-      "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellen würde. „Nur bei Fremden“, sagte sie. „Dann bin ich doch endlich dort.“",
-      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
-    },
-    {
       "timestamp": "2026-11-19T10:20:58.136Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, ich habe schon das Formular für das verlorene Formular ausgefüllt.“",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular fragte, warum ich die Scheckkarte verloren habe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Bär steht auf, streckt sich und ruft: „Ich bin doch kein Kater!“",
       "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat sich auf meinen Bauch gelegt.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-19T14:26:04.760Z",
+      "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, dann fragte sie, ob ich noch ein Paket tragen will – ich dachte, das sei das Abendessen.",
+      "qwen": "Der Nachbar klopft an und fragt, ob ich ihn mal kurz anleihen kann. Ich zucke nur die Schultern und sage: „Klar, nimm dir ruhig den alten Schirm vom Flur.“",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
