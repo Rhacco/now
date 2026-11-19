@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:40:59.248Z",
-      "gpt": "Ich rief die Nachbarn, weil mein Herd rauchte, und sie schickten mir ein Feuerzeug – zum Grillen, nicht zum Löschen.",
-      "qwen": "Der Nachbar kläffe drei Uhr nachts seinen Hund an. Ich rufe zurück: „Dein Hund kläfft dich an!“",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-19T04:46:00.617Z",
       "gpt": "Ich warte im Wartezimmer, die Uhr tickt, plötzlich ruft die Apotheke: „Ihr Rezept ist fertig, aber Sie stehen hier noch.“",
       "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Nichts Schlimmes, nur ein kleiner Tumor.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, um mich auf Regen vorzubereiten – sie zeigt „Sonnig“, also ziehe ich den Regenschirm aus, weil ich nicht riskieren will, dass das Handy nass wird.",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nDann sterbe ich doch gleich.",
       "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
+    },
+    {
+      "timestamp": "2026-11-19T08:45:57.370Z",
+      "gpt": "Der Paketbote fragt: „Unterschrift?“ – Ich zeige auf das leere Feld und sage: „Ich habe doch gerade angerufen, dass ich das Paket selbst abhole.“",
+      "qwen": "Der Kurier drückt mir das Paket in die Hand: „Bitte unterschreiben Sie hier.“\nIch sage: „Zahlen muss ich doch nur bei Amazon, oder?“",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
