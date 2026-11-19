@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:21:06.975Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich, aber ich dachte, wir reden heute per Zoom.“",
-      "qwen": "Der Chef fragt: „Haben Sie die Dringlichkeit der Lage verstanden?“\nIch nicke und sage: „Ja, deshalb schlafe ich.“",
-      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
-    },
-    {
       "timestamp": "2026-11-19T12:25:59.164Z",
       "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet, und sehe: „Sonnenschein in 5 Minuten.“ – Meine Kaffeemaschine macht daraufhin sofort einen Espresso.",
       "qwen": "Ich habe mein Handy auf laut geschalten und warte seit Stunden auf die Anrufe.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino und frage nach Zucker; die Barista gibt mir einen Löffel Salz – ich trinke jetzt Espresso‑Martini.",
       "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Barista schaltete den Herd aus und sagte: „Dann ist’s kalt.“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-19T16:30:58.677Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket selbst zurückschicken soll. Ich antworte: „Nur, wenn Sie es nicht öffnen.“",
+      "qwen": "Die Spedition meldet das Paket als verloren. Als ich nachfrage, antwortet der Bot: „Es ist gerade in Transit.“",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
