@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:46:03.757Z",
-      "gpt": "Ich frage in der Bibliothek nach dem neuesten Kinofilm, die Bibliothekarin reicht mir ein Buch – auf dem Cover steht: „Stummfilm“.",
-      "qwen": "Im Kino bin ich eingeschlafen, im Museum habe ich genickt. Der Bibliothekar fragte mich nur: „Müssen wir das Buch zurückgeben?“",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-19T01:51:00.509Z",
       "gpt": "Mama fragt: „Warum hast du das Frühstück vergraben?“ – Tim: „Ich wollte, dass die Cornflakes endlich mal ein bisschen Erde sehen.“",
       "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ Ich antworte: „Weil die Katze rauswollte.“ Er seufzt: „Die Katze ist längst tot.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, das Sie gerade ankündigen.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Personalchef fragte: „Was ist Ihre größte Schwäche?“",
       "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
+    },
+    {
+      "timestamp": "2026-11-19T05:55:57.544Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, der Verkäufer lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept, Sie backen es selbst.“",
+      "qwen": "Ich frage: „Haben Sie das auch in Schwarz?“\nDer Verkäufer zückt sein Handy: „Ich bin gerade schwarz.“",
+      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
     }
   ]
 }
