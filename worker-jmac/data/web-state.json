@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:41:07.773Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, aber ich habe das verlorene Formular gefunden.“",
-      "qwen": "Ich holte meinen verlorenen Schlüssel im Fundbüro ab. Der Beamte verlangte den Fundbeleg, den ich gerade verloren hatte.",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-19T13:45:59.491Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Zeugen, der den verlorenen Stift bezeugt.",
       "qwen": "Fundbüro: „Ihr Formular ist unvollständig.“ Ich: „Aber ich habe doch alles ausgefüllt!“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe meine Klamotten für den Umzug und finde ein altes T-Shirt mit Aufschrift „Ich bin nicht mehr hier“. Das ist mein neuer Ausmist‑Plan.",
       "qwen": "Ich habe den ganzen Tag alte Kisten ausgemistet, bis mir die Finger schmerzten. Jetzt habe ich nichts mehr, in das ich die neuen Kisten packen kann.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-19T17:46:04.083Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich dann endlich die PowerPoint‑Fertigkeiten habe, die Sie fordern.“",
+      "qwen": "Nach der Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie auch schon mal eine Bewerbung abgelehnt?“",
+      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
     }
   ]
 }
