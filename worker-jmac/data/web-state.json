@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:40:57.091Z",
-      "gpt": "Im Bus drückte ich den Notrufknopf – die Durchsage: „Bitte nicht schreien, wir fahren nicht zum Flughafen.“",
-      "qwen": "Ich steig aus dem Taxi, rufe den Bus, fang die Bahn, dann das Auto. Der Fahrer warf mir den Schlüssel zackig zu.",
-      "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
-    },
-    {
       "timestamp": "2026-11-19T00:45:57.724Z",
       "gpt": "Im Wartezimmer fragt die Patientin nach der Wartezeit – die Apothekerin meint: „Nur noch ein Rezept, dann geht’s endlich weiter.“",
       "qwen": "Ich sage dem Arzt, ich habe keine Schmerzen. Er verschreibt mir Tropfen für die Augen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich warte im Wartezimmer, die Uhr tickt, plötzlich ruft die Apotheke: „Ihr Rezept ist fertig, aber Sie stehen hier noch.“",
       "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Nichts Schlimmes, nur ein kleiner Tumor.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-19T04:50:59.753Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy zeigt plötzlich „Sonnenschein“, weil es im Akku‑Sparmodus ist.",
+      "qwen": "Mein Handy zeigt 15 Prozent Akku an. Ich suche frustriert nach dem Ladekabel, während es vor meinen Augen auf 14 Prozent fällt.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
