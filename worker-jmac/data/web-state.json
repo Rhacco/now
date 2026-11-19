@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:20:57.841Z",
-      "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder aus Versehen in den Garten gestellt?“ Sohn: „Ich wollte ihr endlich mal frische Luft geben.“",
-      "qwen": "Die Kinder streiten sich um den letzten Bissen. Die Mutter teilt ihn fair, isst aber selbst den Teller leer.",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-19T11:25:57.857Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Bär aus der Ecke hebt die Pfote und schnarcht weiter.",
       "qwen": "Ich mache Yoga, bis die Pose „Krieger“ fällig wird.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich den Platznachbarn nach dem besten Sonnenbrand‑Tipps – er reicht mir sein Handtuch und sagt: „Hier drunter liegt das Freibad.“",
       "qwen": "Ich fragte den Kellner nach dem besten Strand. Er zeigte auf den Pool im Erdgeschoss.",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-19T15:31:24.810Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin zeigt stolz ihr leeres Whiteboard: „Ich habe das Projekt bereits abgeschlossen – es hat nie begonnen.“",
+      "qwen": "In der Besprechung fragte der Chef: „Gibt es noch jemanden, der nicht weiß, was er tun soll?“\nHände gingen hoch.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
