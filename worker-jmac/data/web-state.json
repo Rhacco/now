@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:05:58.641Z",
-      "gpt": "Ich habe im Vorstellungsgespräch gesagt, ich lerne ständig dazu – und die Personalchefin fragte, ob ich schon den Kurs „Wie man absagt“ besucht habe.",
-      "qwen": "Nach meiner Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie Platz für mich?“\nDer Chef schaut stirnrunzelnd in seinen Kaffeebecher: „Ja, hier noch zwei Zentimeter Luft.“",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-19T02:10:58.858Z",
       "gpt": "Ich bestelle im Café einen Espresso und frage nach dem Zucker, doch die Barista gibt mir einen Löffel Honig – sie arbeitet im Restaurant.",
       "qwen": "Der Kellner bringt die „Cremesuppe“ ohne Sahne. Ich frage verwundert, ob das Restaurant nicht pleite ist.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Der Mann lächelt: „Nur wenn ich im Taxi sitze.“",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich nicke. Er sagt: „Dann steig aus.“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-19T06:16:07.796Z",
+      "gpt": "Im Zug zum Strand fragt der Tourist: „Gibt es hier WLAN?“ Die Durchsage: „Bitte halten Sie sich an die Küstenlinie, nicht ans Netz.“",
+      "qwen": "Ich frag mein Auto: „Wie lange noch bis zum Strand?“ Es antwortet: „Du hast den Zündschlüssel nicht umgedreht.“",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
