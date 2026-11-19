@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:20:59.012Z",
-      "gpt": "Im Zug nach Italien vergaß ich das Ticket – der Schaffner lächelte: „Kein Problem, das ist ja nur ein Kurztrip ins Nachbarland.“",
-      "qwen": "Ich wollte im Urlaub nur relaxen, nicht arbeiten.\nDeshalb habe ich meinen Laptop im Pool ertränkt.",
-      "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
-    },
-    {
       "timestamp": "2026-11-19T16:26:11.640Z",
       "gpt": "Ich bestelle im Café einen Cappuccino und frage nach Zucker; die Barista gibt mir einen Löffel Salz – ich trinke jetzt Espresso‑Martini.",
       "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Barista schaltete den Herd aus und sagte: „Dann ist’s kalt.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst nach dem Telefonat mit dem Kundendienst?“ Der Lieferant: „Wir wollen erst sicherstellen, dass Sie es wirklich öffnen wollen.“",
       "qwen": "Der Kurier fragt: „Ist jemand da?“ Ich rufe: „Ja, ich bin’s.“ Er legt auf.",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-19T20:26:00.094Z",
+      "gpt": "In der Bibliothek fragt der Bibliothekar: „Möchten Sie das Buch leihen?“ – Der Besucher: „Nur, wenn es im Kino vorgeführt und im Museum ausgestellt wird.“",
+      "qwen": "Im Museum zeigte der Guide das Gemälde: „Das ist ein stiller Moment.“\nKurz darauf flüsterte er dem Besucher zu: „Psst, schrei nicht, wir sind im Bibliotheksbereich.“",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
