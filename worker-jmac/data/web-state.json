@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:01:02.839Z",
-      "gpt": "Im Wartezimmer fragt der Patient nervös: „Wie lange dauert die Behandlung?“ Die Ärztin lächelt: „Nur bis zur Apotheke – dort wartet schon die Rechnung.“",
-      "qwen": "Ärztin: „Sie müssen abnehmen.“\nIch: „Ja, und ich muss die Apotheke mitnehmen.“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-19T05:06:05.298Z",
       "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie geben mir einen Eimer – ich dachte, sie wollen mir beim Gießen helfen.",
       "qwen": "Ich fragte den Nachbarn, warum er nachts um drei laute Metal-Hammer schlägt. Er antwortete: „Ich übe meinen Abschluss als Schlüsseldiener.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sie sagt Regen, also nehme ich den Regenschirm – mein Handy piept: „Du brauchst keinen Schirm, du bist drinnen.“",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schläft nur noch mein Handy.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-19T09:05:58.475Z",
+      "gpt": "Ich mache Yoga, um runterzukommen. Mein Hund legt sich neben mich und macht den herabschauenden Hund – ich falle vom Sofa.",
+      "qwen": "Ich war nach dem Yoga völlig entspannt. Dann habe ich mein Handy gesehen.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
