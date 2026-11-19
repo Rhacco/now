@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:50:57.814Z",
-      "gpt": "Im Supermarkt fragt ich nach Bio‑Bananen, die Verkäuferin sagt: „Hier gibt’s nur Bio‑Bananen.“ Am Wochenmarkt kaufe ich welche, die Verkäuferin fragt: „Bio?“",
-      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für Tomaten. Er zückte eine Waage statt der Kasse.",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-19T13:55:57.797Z",
       "gpt": "Ich packe das Sofa in Kartons – der Umzugshelfer fragt verwirrt, warum ich das Haus nicht mitnehme.",
       "qwen": "Auch die letzte Kiste ist voll. Die Frau schaut in den leeren Karton, dann an sich selbst: „Die habe ich doch gerade erst ausgepackt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann antwortet: „Nein, ich habe nur das Formular, weil ich mich selbst verloren habe.“",
       "qwen": "An der Fundbüro-Theke: „Ich habe meinen Schlüssel verloren.“ Der Beamte starrt mich an: „Dann sollten Sie ihn nicht gefunden haben.“",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-19T17:56:08.456Z",
+      "gpt": "Ich öffne die Wetter‑App, um den Regen zu checken, und sie zeigt: „Du hast das Fenster offen.“",
+      "qwen": "Ich starrte auf die leere Akkuanzeige und tippte hektisch weg. Als das Handy starb, fiel die Dummheit meiner App-Wahl auf.",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
