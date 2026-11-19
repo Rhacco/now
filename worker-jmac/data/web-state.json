@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:21:07.414Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach für einen Kurs im Multitasking.“",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich bin extrem belastbar. Ich habe drei Bewerbungen abgeschickt.“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-19T07:26:03.559Z",
       "gpt": "Mama ruft: „Wer hat den Kuchen gegessen?“ Ich: „Ich nicht.“ Papa: „Dann musst du das Stück haben, das du nie gegessen hast.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nicht genug, um eine Diät zu starten.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch die Angestellte fragte: „Haben Sie das Geld, das Sie gefunden haben, bereits versteuert?“",
       "qwen": "Ich fragte im Fundbüro nach meinem Schlüssel. Die Dame zeigte auf die Antragsformulare: „Ohne diese dreizehn Stempel geht nichts.“",
       "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
+    },
+    {
+      "timestamp": "2026-11-19T11:20:57.841Z",
+      "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder aus Versehen in den Garten gestellt?“ Sohn: „Ich wollte ihr endlich mal frische Luft geben.“",
+      "qwen": "Die Kinder streiten sich um den letzten Bissen. Die Mutter teilt ihn fair, isst aber selbst den Teller leer.",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
