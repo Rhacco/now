@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:36:12.930Z",
-      "gpt": "Im Zug drückte ich den Notruf, weil der WLAN-Ausfall mich in die Steinzeit zurückversetzte – der Schaffner kam, bot mir ein Buch an.",
-      "qwen": "Ich fragte den Taxifahrer nach dem schnellsten Weg. Er lachte und fuhr einfach weiter.",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-19T19:41:10.899Z",
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann nickt: „Ja, ich habe sogar das verlorene Formular gefunden.“",
       "qwen": "Fundbüro: „Melden Sie den Fund schriftlich an.“\nIch: „Dann ist er ja schon wieder verloren.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich lerne, meine Antworten zu planen.“",
       "qwen": "Ich fragte nach Weiterbildung, doch der Chef lächelte nur.\n„Wir schulen Sie in Geduld, während wir Ihre Stelle streichen.“",
       "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
+    },
+    {
+      "timestamp": "2026-11-19T23:40:56.853Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Kassiererin lächelt und reicht ihr das Kassenband. „Das ist doch das, was Sie brauchen.“",
+      "qwen": "„Haben Sie das auch in Rot?“ fragte ich zögernd. Der Verkäufer zuckte nur mit den Schultern und sagte: „Na ja, wir sind ja auch keine Hexen.“",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
