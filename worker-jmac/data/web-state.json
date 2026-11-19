@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:21:06.776Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm die PowerPoint‑Folien – die zeigen nur ein leeres Diagramm, weil mein Fortschritt noch in der Cloud ist.",
-      "qwen": "Beim Brainstorming schlug ich vor, die Meetings zu streichen.\nDer Chef nicken zustimmend und schickte mich damit in ein neues.",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-19T05:26:02.680Z",
       "gpt": "Im Zug zum Strand fragt die Mutter ihr Kind: „Warum hast du den Koffer nicht eingepackt?“ – „Ich wollte nur das WLAN mitnehmen.“",
       "qwen": "Ich habe den Koffer gepackt, damit wir die schönsten Sonnenuntergänge am Strand erleben können. Dann hat die Schwiegermutter gefragt, wo wir wohnen wollen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Apotheker: „Probieren Sie mal diese neue Pille gegen die Schlaflosigkeit.“\nIch: „Dann kann ich ab morgen endlich wieder normal in die Arztpraxis gehen.“",
       "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
+    },
+    {
+      "timestamp": "2026-11-19T09:26:10.443Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich gelernt habe, meine Antworten zu planen.“",
+      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die gibt es, wenn Sie eine haben.“",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
