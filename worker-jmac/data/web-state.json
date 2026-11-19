@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:46:07.447Z",
-      "gpt": "Im Café bestellt er einen Espresso, doch der Barista fragt: „Möchten Sie ihn mit Milch?“, und schenkt ihm einen Milchschnitzer.",
-      "qwen": "Ich bestellte im Café einen Kaffee, der so teuer war, dass ich ihn trank, während ich weinte.",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-19T07:46:26.020Z",
       "gpt": "Mutter fragt: „Warum hast du das ganze Salz in die Suppe geschüttet?“ Vater: „Ich wollte endlich mal die Stimmung würzen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, bis du den Müll rausbringst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
       "qwen": "Kopf verkrampft.\nNur der Apothekerknaus passt.",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-19T11:46:03.558Z",
+      "gpt": "Im Zug zur Strandpromenade fragt die Frau: „Wird das Wasser heute warm?“ Der Schaffner lächelt: „Nur, wenn Sie das Ticket für die Sauna gelöst haben.“",
+      "qwen": "Sagte ich: „Schön, dass du da bist.“\nEr: „Hab ich gesagt?“",
+      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
     }
   ]
 }
