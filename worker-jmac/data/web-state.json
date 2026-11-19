@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:45:58.863Z",
-      "gpt": "Ich füllte das Fundbüro-Formular aus, doch das verlorene Formular war schon im nächsten Schalter.",
-      "qwen": "Ich habe meinen verlorenen Schlüssel im Fundbüro abgeholt. Der Mitarbeiter fragte nur: „Haben Sie das Formular 7b ausgefüllt?“",
-      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
-    },
-    {
       "timestamp": "2026-11-19T15:51:02.117Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt fertig?“ – Die Praktikantin meldet sich: „Ich habe das Protokoll fertig, das Projekt nicht.“",
       "qwen": "„Ich habe die Besprechung auf 15 Minuten verkürzt.“\nDas saust du weg, bevor man die Krawatte aufmachen kann.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich die Durchsage: „Nächster Halt: Meer.“ Die Stimme antwortet: „Bitte halten Sie die Tür zu, wir fahren nach Hause.“",
       "qwen": "Sagte ich: „Wir fahren in den Urlaub, um abzuschalten.“ Meine Frau: „Perfekt, dann stell ich den Wecker.“",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-19T19:51:06.640Z",
+      "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Ich: „Ich nicht.“ Papa grinst: „Ich habe ihn erst nach dem Aufräumen versteckt.“",
+      "qwen": "Ich frage, warum das Essen kalt ist. Meine Frau sagt, sie wartet auf mich, um anzufangen zu essen.",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
