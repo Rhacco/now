@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:06:05.638Z",
-      "gpt": "Im Zug zum Strand fragt der Tourist: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Im Meer, da gibt’s keine Sitzplätze.“",
-      "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnencreme ins Gesicht geblasen.",
-      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
-    },
-    {
       "timestamp": "2026-11-19T10:06:29.310Z",
       "gpt": "Beim Ausmisten packte ich das leere Glas, das ich nie benutzt hatte, und fragte mich, warum ich das Chaos immer erst beim Umzug finde.",
       "qwen": "Wir haben beim Ausmisten eine alte Briefmarke gefunden. Die klebt an einem 50-Euro-Schein.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Könnten wir das Projekt bitte in den Urlaub verschieben? Dann haben wir alle mehr Abstand.“",
       "qwen": "Der Chef wollte die Besprechung verkürzen. Also habe ich das Ende der Tabelle gelöscht.",
       "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
+    },
+    {
+      "timestamp": "2026-11-19T14:11:07.230Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf – die Durchsage kam: „Bitte halten Sie die Hände vom Fahrplan.“",
+      "qwen": "Ich setzte im Taxi ab, doch der Fahrer fuhr einfach weiter. Er meinte nur: „Das Auto ist ein Leihwagen, ich bin noch nicht fertig.“",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
