@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:50:41.045Z",
-      "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich heute Regenschirm brauche – und bekomme eine Push‑Benachrichtigung: „Deine Batterie ist zu schwach, um zu laufen.“",
-      "qwen": "Ich wischte frustriert den Bildschirm ab.\nDarauf: Meine eigene Fingertatsache.",
-      "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
-    },
-    {
       "timestamp": "2026-11-19T16:51:06.310Z",
       "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift „Ich bin jetzt schlank“. Das ist das einzige, was ich jetzt noch tragen kann.",
       "qwen": "Ich wollte die alte Matratze entsorgen, aber sie passte nicht ins Auto. Meine Frau lachte und sagte: „Kauf dir einfach ein größeres Auto.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Ich: „Nein, ich habe nur meine Schlüssel gefunden.“",
       "qwen": "Ich fand meine Brieftasche im Fundbüro. Die Auszahlung des Gewinns verweigerte man mir jedoch, da ich keine Verlustbescheinigung vorlegte.",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-19T20:56:06.651Z",
+      "gpt": "Mama fragt: „Warum hast du den Kuchen nicht probiert?“ Ich: „Ich wollte nicht, dass er sich noch mehr ausbreitet.“",
+      "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt.\nSie schaute mich an und sagte: „Ja, aber nur an guten Tagen.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
