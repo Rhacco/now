@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:46:42.810Z",
-      "gpt": "Im Zug sitzt ein Pendler und murmelt: „Endlich mal ein freier Sitz.“  \nEr legt die Tasche hin, lehnt sich zurück und schließt die Augen.  \nDer Zug fährt plötzlich in die falsche Richtung.  \nJetzt sitzt er immer noch frei – nur im falschen Zug.",
-      "qwen": "Ich sitze in der S-Bahn, der Platz neben mir ist frei.\nDer Rentner neben mir kramt lange in seiner Tasche.\nEr zieht eine Zeitung hervor und legt sie sich auf den Schoß.\n„Können Sie nicht einfach dorthin schauen?“, fragt er mich.",
-      "archive": "Meine neue Matratze sollte zwischen acht und achtzehn Uhr geliefert werden. Ich habe mir dafür freigenommen. Noch nie hat mich eine Matratze so lange wach gehalten, bevor ich überhaupt darauf lag."
-    },
-    {
       "timestamp": "2026-11-18T20:48:42.394Z",
       "gpt": "Ich stelle das Buch zurück, das ich gerade erst gelesen habe.  \nDie Bibliothekarin lächelt und sagt: „Schön, dass Sie es zu Ende gebracht haben.“  \nIch erwidere: „Ich dachte, das wäre nur die Rückgabe‑Frist.“  \nSie meint: „Beides.“",
       "qwen": "Ich habe mein Buch pünktlich in den Kasten geworfen.\nDie Mitarbeiterin schaut mich enttäuscht an: „Sie hätten es ja auch auf dem Postweg schicken können.“\n„Dann hätten Sie es nie gelesen“, sage ich.\nSie nickt ernst: „Genau.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Nein, nur Wartezeit.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-19T00:30:59.752Z",
+      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den Keks genommen?“ Der Vater grinst: „Ich, ich wollte nur den Kalorienverbrauch messen.“",
+      "qwen": "Mama fragt, ob ich spülen will.\nIch sag ja, denn ich hasse Bratensauce.",
+      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
     }
   ]
 }
