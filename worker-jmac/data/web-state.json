@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:51:02.117Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt fertig?“ – Die Praktikantin meldet sich: „Ich habe das Protokoll fertig, das Projekt nicht.“",
-      "qwen": "„Ich habe die Besprechung auf 15 Minuten verkürzt.“\nDas saust du weg, bevor man die Krawatte aufmachen kann.",
-      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
-    },
-    {
       "timestamp": "2026-11-19T15:56:11.129Z",
       "gpt": "Ich rufe den Kundendienst, weil mein Paket schon wieder im falschen Haus ist. Sie sagen: „Keine Sorge, das war nur ein Test für den Türklopfer.“",
       "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch: „Nein, ich bin’s.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Ich: „Ich nicht.“ Papa grinst: „Ich habe ihn erst nach dem Aufräumen versteckt.“",
       "qwen": "Ich frage, warum das Essen kalt ist. Meine Frau sagt, sie wartet auf mich, um anzufangen zu essen.",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-19T19:55:58.634Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista schenkt mir nur heißen Kaffee. „Ich wollte doch nur wach werden“, sage ich und trinke den Espresso.",
+      "qwen": "Wir bestellen ein Schnitzel. Der Kellner bringt es mit Pommes, aber das Schnitzel fehlt.",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
