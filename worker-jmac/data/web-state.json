@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:40:58.876Z",
-      "gpt": "Ich frage im Elektrofachgeschäft nach einer leisen Waschmaschine, der Verkäufer reicht mir Kopfhörer – damit ich die Lautstärke selbst bestimme.",
-      "qwen": "Ich fragte den Verkäufer nach dem Wi-Fi-Passwort.\nEr nickte und reichte mir die Ware.",
-      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
-    },
-    {
       "timestamp": "2026-11-19T05:45:56.689Z",
       "gpt": "Ich fragte im Vorstellungsgespräch, ob ich für den Job auch gleich die Fortbildung mitbringen darf – der Chef nickte und reichte mir die Bewerbungsunterlagen.",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich zeigte stolz meinen Weiterbildungsnachweis: „Ich habe mich nicht weitergebildet.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Yogakurs fragt die Lehrerin: „Wie fühlt sich die Entspannung an?“ – Der Anfänger antwortet: „Wie ein Marathon, nur ohne Ziel.“",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt genug, um zu merken, wie kaputt ich wirklich bin.",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-19T09:46:06.574Z",
+      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um ans Meer zu kommen?“ Der Schaffner: „Am nächsten Bahnhof – er heißt ‘Küste’.“",
+      "qwen": "Ich wollte im Urlaub total entspannen und lesen. Die Fliege auf meinem Buch hat das verhindert.",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
