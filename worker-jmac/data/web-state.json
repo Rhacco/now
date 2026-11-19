@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:36:02.591Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator schmunzelt: „Nur, wenn du es zurückschreibst.“",
-      "qwen": "Die Bibliothek ist lautlos, das Kino dunkel, das Museum still.",
-      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
-    },
-    {
       "timestamp": "2026-11-19T14:41:05.985Z",
       "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit drei Tagen im Aufzug stecken bleibt – die Stimme am anderen Ende fragt, ob ich das Paket schon ausgepackt habe.",
       "qwen": "Der Paketbote klingelte, ich fragte nach der Unterschrift. Er riss das Etikett ab und ging.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Berge-Entdeckungspause fragt der Tourist: „Gibt es hier WLAN?“ – Der Schaffner lächelt: „Nur wenn Sie den Gipfel erreichen.“",
       "qwen": "An der Kasse fragt die Kassiererin: „Haben Sie Ihren Gutschein dabei?“\nIch zücke meine Zahnbürste und sage: „Hier, für die Zahnfee?“",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-19T18:40:57.399Z",
+      "gpt": "Im Fitnessstudio fragt die Yogalehrerin: „Wer will heute entspannen?“ Der Trainer drückt die Hantel und sagt: „Ich schon.“",
+      "qwen": "Beim Yoga „Baum“ gehalten, wackelte ich die ganze Zeit. Lehrerin: „Stell dich tiefer in den Boden.“",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
