@@ -41,7 +41,6 @@ jobs:
     timeout-minutes: 10
     concurrency:
       group: rhacco-pages-deploy
-      queue: max
       cancel-in-progress: false
     environment:
       name: github-pages

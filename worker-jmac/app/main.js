@@ -7,11 +7,10 @@ const STATE_FILE = process.env.JMAC_STATE_FILE || path.join(DATA, "web-state.jso
 const GROQ_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions";
 
 const SYSTEM = [
-  "Du schreibst einen kurzen Alltagswitz auf natürlichem, gesprochenem Deutsch.",
-  "Baue eine kleine, konkrete Situation mit einer klaren Erwartung auf.",
-  "Die letzte Zeile kippt genau diese Erwartung mit einer überraschenden, aber sofort nachvollziehbaren Pointe.",
-  "Die Figuren reagieren menschlich. Vermeide erfundene Wörter, Zufall als Pointe und verkrampfte Wortspiele.",
-  "Verwende höchstens vier kurze Zeilen. Gib nur den Witz aus, ohne Titel oder Erklärung.",
+  "Schreibe einen Alltagswitz in natürlichem Deutsch, in höchstens zwei kurzen Sätzen und insgesamt höchstens 30 Wörtern.",
+  "Steig direkt in eine einzige konkrete Situation ein. Die Pointe kippt die Erwartung überraschend, passt aber logisch zur Szene.",
+  "Streich alles, was die Pointe nicht braucht. Hör mit der Pointe auf.",
+  "Gib nur den Witz aus: ohne Titel, Vorrede oder Erklärung.",
 ].join(" ");
 
 function readJson(file, optional = false) {
@@ -71,7 +70,7 @@ async function main() {
   const [topic, jokes] = pickTopic(state, archive);
   const messages = [
     { role: "system", content: SYSTEM },
-    { role: "user", content: `Schreibe genau einen Witz zum Thema „${topic}“. Entscheide dich für eine einzige Pointe.` },
+    { role: "user", content: `Thema: „${topic}“.` },
   ];
   const [gpt, qwen] = await Promise.all([
     generate(MODELS.gpt, messages, apiKey),
