@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:42:43.632Z",
-      "gpt": "Im Zug drängt sich ein Tourist an mich ran und fragt:  \n„Entschuldigung, wo ist der Ausstieg?“  \nIch zeige auf die Tür und sag: „Da hinten.“  \nEr dreht sich um – und steigt aus, weil er dachte, ich meine den Bahnhof.",
-      "qwen": "Ich stehe in der S-Bahn und sage: „Entschuldigung, ist dieser Platz frei?“\nEin alter Herr winkt mich lässig heran: „Ja, ich hab ihn mir schon gesichert.“\nIch nehme erleichtert Platz.\nEr zieht seine Jacke aus, legt sie auf den Sitz und setzt sich daneben hin.",
-      "archive": "Die Nachbarn haben sich über meinen Wecker beschwert. Das ist mir unangenehm. Ich selbst höre ihn schon seit Wochen nicht mehr."
-    },
-    {
       "timestamp": "2026-11-18T20:44:54.711Z",
       "gpt": "Mama: „Kinder, wer hat die Milch aus dem Kühlschrank genommen?“  \nTom: „Ich war im Bad, warte…“  \nLisa: „Ich habe das letzte Stück Kuchen gegessen.“  \nOma: „Ich dachte, das war ein Familienchat, nicht ein Milch-Detektiv‑Club.“",
       "qwen": "Mama schreibt im Familienchat: „Wer hat das Fenster offen gelassen? Ich friere.“\nIch typе: „Tut mir leid, ich war heute Abend dran.“\nDrei Sekunden später: „Danke, ich habe es jetzt zu.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meinen Sitzplatz nicht finden konnte – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht zurück.“",
       "qwen": "Wir wollten am Strand entspannen. Stattdessen legte sich die Gattin zum Sonnenbaden hin, während ich die Luftmatratze aufpumpte.",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-19T00:26:12.425Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach einer glutenfreien Alternative zu Brot, und die Verkäuferin reicht ihr ein Blatt Papier. \"Für die Diät\", flüstert sie.",
+      "qwen": "Ich fragte im Supermarkt nach einem Eimer Farbe. Der Verkäufer meinte: „Nehmen Sie die rote, die ist viel kräftiger.“",
+      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
     }
   ]
 }
