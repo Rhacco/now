@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:46:00.617Z",
-      "gpt": "Ich warte im Wartezimmer, die Uhr tickt, plötzlich ruft die Apotheke: „Ihr Rezept ist fertig, aber Sie stehen hier noch.“",
-      "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Nichts Schlimmes, nur ein kleiner Tumor.“",
-      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
-    },
-    {
       "timestamp": "2026-11-19T04:50:59.753Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy zeigt plötzlich „Sonnenschein“, weil es im Akku‑Sparmodus ist.",
       "qwen": "Mein Handy zeigt 15 Prozent Akku an. Ich suche frustriert nach dem Ladekabel, während es vor meinen Augen auf 14 Prozent fällt.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote fragt: „Unterschrift?“ – Ich zeige auf das leere Feld und sage: „Ich habe doch gerade angerufen, dass ich das Paket selbst abhole.“",
       "qwen": "Der Kurier drückt mir das Paket in die Hand: „Bitte unterschreiben Sie hier.“\nIch sage: „Zahlen muss ich doch nur bei Amazon, oder?“",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-19T08:50:58.261Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, ich habe nur das verlorene Handy gefunden.“",
+      "qwen": "Ich habe den verlorenen Ausweis im Fundbüro abgegeben. Der Beamte verlangte für die Rückgabe mein Dienstausweis.",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
