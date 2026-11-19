@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:11:08.880Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie gibt mir ein Geschenkpapier – „Damit Sie die Preise nicht mehr sehen.“",
-      "qwen": "Papi, frag den Verkäufer, ob der Fisch noch lebt. Er sagt: „Das hängt doch davon ab, was Sie damit vorhaben.“",
-      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
-    },
-    {
       "timestamp": "2026-11-19T07:16:10.999Z",
       "gpt": "Ich steige in den Bus, der plötzlich in die falsche Richtung fährt – zum Glück hat der Fahrer einen Fahrplan für den Umweg.",
       "qwen": "Auf dem Parkplatz fragt der Taxifahrer: „Wohin möchten Sie denn?“\nIch zeige auf mein eigenes Auto: „Dorthin.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Blatt war bereits im Fach „Verloren“. So war das Fundbüro doch nur ein Fundort.",
       "qwen": "Ich habe meinen Verlust beim Fundbüro gemeldet. Sie meinten, ich müsste erst das Formular „Kein Verlust“ ausfüllen.",
       "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
+    },
+    {
+      "timestamp": "2026-11-19T11:11:08.538Z",
+      "gpt": "Ich stehe am Supermarkt, warte in der Schlange und sehe plötzlich den Wochenmarkt nebenan – dort gibt's die gleichen Preise, nur ohne Kassierer.",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Kartoffeln aus dem Glas?“\nNee, die sind echt, mein Schatz!",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
