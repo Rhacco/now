@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:45:59.186Z",
-      "gpt": "Ich mache Yoga im Park, um zu entspannen, und plötzlich fragt mich ein Hund: „Kannst du mir zeigen, wie man den herabschauenden Hund macht?“",
-      "qwen": "Ich habe eine Stunde Yoga gemacht. Jetzt kann ich mich nicht mehr anziehen, aber dafür atme ich optimal.",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-19T12:51:07.928Z",
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ Ich antworte: „Nur beim Aufstehen – dann bin ich schon im Stretch‑Modus.“",
       "qwen": "Ich habe meinen Yoga-Lehrer gefragt, wie man den Kopf leer bekommt. Er sagte, er sei schon leer – nur der Körper fehlt noch.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich heute Regenschirm brauche – und bekomme eine Push‑Benachrichtigung: „Deine Batterie ist zu schwach, um zu laufen.“",
       "qwen": "Ich wischte frustriert den Bildschirm ab.\nDarauf: Meine eigene Fingertatsache.",
       "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
+    },
+    {
+      "timestamp": "2026-11-19T16:51:06.310Z",
+      "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift „Ich bin jetzt schlank“. Das ist das einzige, was ich jetzt noch tragen kann.",
+      "qwen": "Ich wollte die alte Matratze entsorgen, aber sie passte nicht ins Auto. Meine Frau lachte und sagte: „Kauf dir einfach ein größeres Auto.“",
+      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
     }
   ]
 }
