@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:55:56.619Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, um meine Schritte zu zählen – sie meldet nach fünf Minuten: „Du hast bereits 10 000 Kalorien verbrannt.“",
-      "qwen": "Ich habe die App „Türöffnung“ installiert. Jetzt muss ich erst per Passwort die eigene Wohnungstür entsperren.",
-      "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
-    },
-    {
       "timestamp": "2026-11-19T10:00:59.279Z",
       "gpt": "Im Zug fragt die Dame nach dem Weg zum Strand. Der Schaffner lächelt: „Geben Sie einfach dem Zug eine Pause, dann kommen wir ans Ziel.“",
       "qwen": "Ich packe die Koffer für die Wüste.\nMeine Frau fragt: „Brauchst du Wasser?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe das Sofa in Kartons – der Umzugshelfer fragt verwirrt, warum ich das Haus nicht mitnehme.",
       "qwen": "Auch die letzte Kiste ist voll. Die Frau schaut in den leeren Karton, dann an sich selbst: „Die habe ich doch gerade erst ausgepackt.“",
       "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
+    },
+    {
+      "timestamp": "2026-11-19T14:01:05.873Z",
+      "gpt": "Ich packe den Toaster ein, weil ich beim Umzug endlich die ganze Hitze aus meinem Leben entfernen will. Dann merke ich, er war nur ein Staubsauger.",
+      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte nervös: „Ist sie echt?“",
+      "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
     }
   ]
 }
