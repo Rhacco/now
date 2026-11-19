@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:55:57.797Z",
-      "gpt": "Ich packe das Sofa in Kartons – der Umzugshelfer fragt verwirrt, warum ich das Haus nicht mitnehme.",
-      "qwen": "Auch die letzte Kiste ist voll. Die Frau schaut in den leeren Karton, dann an sich selbst: „Die habe ich doch gerade erst ausgepackt.“",
-      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
-    },
-    {
       "timestamp": "2026-11-19T14:01:05.873Z",
       "gpt": "Ich packe den Toaster ein, weil ich beim Umzug endlich die ganze Hitze aus meinem Leben entfernen will. Dann merke ich, er war nur ein Staubsauger.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte nervös: „Ist sie echt?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, um den Regen zu checken, und sie zeigt: „Du hast das Fenster offen.“",
       "qwen": "Ich starrte auf die leere Akkuanzeige und tippte hektisch weg. Als das Handy starb, fiel die Dummheit meiner App-Wahl auf.",
       "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
+    },
+    {
+      "timestamp": "2026-11-19T18:01:15.132Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
+      "qwen": "Im Wartezimmer beschwerst du dich über den Arzt. Die Apothekerin seufzt: „Gönnt mir den Spaß, die Diagnose zu bestätigen.“",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
