@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:56:05.418Z",
-      "gpt": "Im Zug verpasst er den Anschluss, steigt ins Taxi, das Stau hat – und merkt, er hätte einfach zu Fuß gehen können.",
-      "qwen": "Ich bat den Taxifahrer, schneller zu fahren. Er lachte: „Ich bin Arzt, ich kann nicht bremsen.“",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-19T05:01:02.839Z",
       "gpt": "Im Wartezimmer fragt der Patient nervös: „Wie lange dauert die Behandlung?“ Die Ärztin lächelt: „Nur bis zur Apotheke – dort wartet schon die Rechnung.“",
       "qwen": "Ärztin: „Sie müssen abnehmen.“\nIch: „Ja, und ich muss die Apotheke mitnehmen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kinobesitzer antwortet: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "In der Bibliothek fragte ich nach dem Krimi, doch der Bibliothekar zeigte nur auf das Kino. „Dort ist der Mörder noch lebendig“, erklärte er trocken.",
       "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
+    },
+    {
+      "timestamp": "2026-11-19T09:01:05.753Z",
+      "gpt": "Ich öffne die Wetter-App, sie sagt Regen, also nehme ich den Regenschirm – mein Handy piept: „Du brauchst keinen Schirm, du bist drinnen.“",
+      "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schläft nur noch mein Handy.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
