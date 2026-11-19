@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:51:09.031Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
-      "qwen": "Die Verkäuferin fragt: „Möchten Sie dazu noch eine Beratung?“\nIch sage: „Nein, ich will nur stehlen.“",
-      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
-    },
-    {
       "timestamp": "2026-11-19T00:56:09.175Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund mich für die herabschauende Katze hält und sofort mit dem Ball spielt.",
       "qwen": "Ich mache Yoga, um meine Verspannungen zu lösen. Jetzt sind meine Oberschenkel so verspannt, dass ich nicht mehr in die Hosen passe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug verpasst er den Anschluss, steigt ins Taxi, das Stau hat – und merkt, er hätte einfach zu Fuß gehen können.",
       "qwen": "Ich bat den Taxifahrer, schneller zu fahren. Er lachte: „Ich bin Arzt, ich kann nicht bremsen.“",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-19T05:01:02.839Z",
+      "gpt": "Im Wartezimmer fragt der Patient nervös: „Wie lange dauert die Behandlung?“ Die Ärztin lächelt: „Nur bis zur Apotheke – dort wartet schon die Rechnung.“",
+      "qwen": "Ärztin: „Sie müssen abnehmen.“\nIch: „Ja, und ich muss die Apotheke mitnehmen.“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
