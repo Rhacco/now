@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:31:02.538Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Fortbildungen?“ Ich antworte: „Ich habe schon einen Kurs belegt – wie man das Wort „Absage“ richtig schreibt.“",
-      "qwen": "Ich erkläre im Vorstellungsgespräch, dass ich nach der Weiterbildung jetzt KI programmieren kann. Der Chef fragt: „Und wie läuft das genau?“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-19T13:36:08.791Z",
       "gpt": "Im Zug zum Strand fragt ich den Schaffner nach dem nächsten Halt – er zeigt auf das Schild „Badeparadies“ und meint: „Hier gibt's nur Wasser, nicht Strand.“",
       "qwen": "Im Urlaub fragte ich die Frau, ob sie Deutsch spricht. Sie nickte und sagte: „Ja, aber nur, wenn Sie es nicht hören.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle online ein neues Sofa, der Lieferant klingelt, ich öffne die Tür – ein Paket mit einer Anleitung zum Zusammenbauen. Kundenservice: „Viel Spaß!“",
       "qwen": "Die Mitarbeiterin lächelt: „Ist das Paket angekommen?“ Ich nickte und fragte: „Ja, aber wo ist der Inhalt?",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-19T17:35:59.897Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einem Lautsprecher, der auch als Wecker dient – der Verkäufer gibt mir ein Telefon, weil er „aufwachen“ kann.",
+      "qwen": "Die Putzfrau fragt: „Dürfen wir hier auch Musik hören?“\nDer Chef nickt, denn sie wäscht nichts, nur die Fenster.",
+      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
     }
   ]
 }
