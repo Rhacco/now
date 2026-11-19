@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:40:59.023Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige auf die Packung: „Hier steht doch schon ‚Unterschrift hier‘.“",
-      "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Nur mein Paket, das sitzt schon drin.“",
-      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
-    },
-    {
       "timestamp": "2026-11-19T10:45:59.891Z",
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine aus dem Fenster geworfen?“  \nTim: „Ich wollte den Trockner endlich mal sehen, wie er fliegt.“",
       "qwen": "Ich frage mein Kind, was es mit dem alten Opa macht. „Nichts, er schaut fern.“ „Und du?“ „Ich schau zu, wie er schaut.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich klage über Herzrasen. Der Arzt fragt: „Wie schnell?“ Ich zeig ihm meine Uhr: „Solange!“",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-19T14:51:09.885Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Weiterbildungen?“ – Ich: „Ich habe bereits einen Kurs in Ausreden belegt.“",
+      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich bin sehr ausdauernd, denn ich habe schon zehn Interviews überlebt, in denen man mich abgewiesen hat.“",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
