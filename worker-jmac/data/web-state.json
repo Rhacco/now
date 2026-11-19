@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:31:08.857Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Haben wir noch Sitzplätze?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer mitnehmen.“",
-      "qwen": "Ich rufe die Zahl des Strandbuffets an.\n„Hier spricht die Rezeption, bitte wählen Sie eine andere Nummer.“",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-19T12:36:06.980Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Webinar, das Sie gerade ankündigen.“",
       "qwen": "Der Chef fragt: „Was bringt Ihre Weiterbildung?“\nIch antworte: „Nichts, Sie können mich jetzt feuern.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe am Supermarktregal, greife nach Bio‑Müsli, doch die Packung riecht nach frischen Äpfeln – ich bin im Wochenmarkt gelandet.",
       "qwen": "Der Wochenmarkt ist voll, der Supermarkt leer.\nIch habe mich vertan: Meine Brille liegt im Einkaufswagen.",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-19T16:40:57.003Z",
+      "gpt": "Ich packe beim Ausmisten die leere Kartonbox ein – dann merke ich, dass ich das Haus ohne Möbel umziehe.",
+      "qwen": "Ich habe den letzten Karton verpackt und den Schlüssel eingeworfen. Draußen wartet der Mülleimer auf den Möbelwagen.",
+      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
     }
   ]
 }
