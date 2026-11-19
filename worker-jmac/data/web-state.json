@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:21:10.652Z",
-      "gpt": "Ich steige in die Bahn, setze mich neben einen Mann mit riesigem Koffer.  \nEr schaut mich an, lächelt und sagt: „Heute fährt er endlich mit.“  \nIch nicke, weil ich dachte, er meint den Zug.  \nEr zieht den Koffer aus, öffnet ihn und ruft: „Endlich, mein Hund ist wieder da!“",
-      "qwen": "Ich rechne in der S-Bahn die Minuten bis zum Ziel durch.\nDer Zug hält, alle steigen aus.\nIch bleibe sitzen und denke: „Eigentlich war ich noch gar nicht fertig.“",
-      "archive": "Beim Umzug sagte ein Freund: „Ich helfe dir gern, wenn du alles gepackt hast.“ Als er kam, war ich noch nicht fertig. Jetzt weiß ich, dass „wenn“ eine Bedingung war, kein Zeitvorschlag."
-    },
-    {
       "timestamp": "2026-11-18T23:26:07.304Z",
       "gpt": "Ich räum’ meine Klamotten aus, werfe alles in die Tonne –  \nmein Hund schaut mich an, als wär’s ein Kunstprojekt.  \nIch sag’: „Du hast ja nichts zu verlieren.“  \nEr bellt: „Dann füll ich die Tonne mit dir!“",
       "qwen": "Ich habe beim Ausmisten diese alte Schachtel mit CDs gefunden.\nIch habe sie vorsichtig geöffnet, um zu schauen, was sich noch retten lässt.\nDrin lag ein einzelner Bon vom Bäcker aus 2009.\nIch habe ihn eingekleistert, das ist endlich meine Währung.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief die Hausverwaltung wegen lauter Musik, doch der Nachbar kam nur, weil er das WLAN-Passwort vergessen hatte.",
       "qwen": "Der Nachbar fragt, ob man ihn nie im Fernsehen gesehen habe. Ich zucke die Achseln: „Nein, aber in der Zeitung waren Sie öfter.“",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-19T03:16:09.312Z",
+      "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ – „Er will endlich mal kühlen Kopf bewahren.“",
+      "qwen": "Ich frage, ob jemand Salz haben will. Die ganze Familie schweigt verdächtig.",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
