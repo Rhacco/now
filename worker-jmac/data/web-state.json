@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:36:07.965Z",
-      "gpt": "Ich habe meiner Nachbarin ein Schild mit „Bitte leise sein – schlafende Babys“ aufgehängt; sie hat daraufhin ihr Baby aus dem Fenster geworfen.",
-      "qwen": "Ich habe im Hausflur eine Treppe eingebaut.\nJetzt kann ich endlich von oben zu meinen Nachbarn hinuntersehen.",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-19T00:40:57.091Z",
       "gpt": "Im Bus drückte ich den Notrufknopf – die Durchsage: „Bitte nicht schreien, wir fahren nicht zum Flughafen.“",
       "qwen": "Ich steig aus dem Taxi, rufe den Bus, fang die Bahn, dann das Auto. Der Fahrer warf mir den Schlüssel zackig zu.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief die Nachbarn, weil mein Herd rauchte, und sie schickten mir ein Feuerzeug – zum Grillen, nicht zum Löschen.",
       "qwen": "Der Nachbar kläffe drei Uhr nachts seinen Hund an. Ich rufe zurück: „Dein Hund kläfft dich an!“",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-19T04:46:00.617Z",
+      "gpt": "Ich warte im Wartezimmer, die Uhr tickt, plötzlich ruft die Apotheke: „Ihr Rezept ist fertig, aber Sie stehen hier noch.“",
+      "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Nichts Schlimmes, nur ein kleiner Tumor.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
