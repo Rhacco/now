@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:08:43.229Z",
-      "gpt": "Mama: „Kinder, heute gibt’s Pizza!“  \nLukas: „Super, ich bestell gleich die Hälfte.“  \nAnna: „Ich bringe den Salat mit.“  \nOma: „Ich dachte, das war der neue Familien‑Chat‑Bot.“",
-      "qwen": "Im Familienchat fragt Oma: „Wer hat das Foto von mir gemacht?“\nIch antworte: „Ich, Omi, ich hab dich beim Gänseblümchen-Pflücken fotografiert.“\nSie schreibt: „Danke, aber ich war doch heute im Krankenhaus.“\nIch: „Ja, aber die Gänseblümchen standen auf dem Zimmer.“",
-      "archive": "Für mein Bewerbungsfoto sagte die Fotografin: „Schauen Sie bitte selbstbewusst.“ Ich fragte: „Können Sie das hinterher noch bearbeiten?“"
-    },
-    {
       "timestamp": "2026-11-18T21:10:53.856Z",
       "gpt": "Ich steh am Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Aus welchem Grund?“.  \nIch sag: „Ich wollte es nur schnell abholen.“  \nDarauf erwidert er: „Dann zahlen Sie bitte die Versand‑Gebühr.“",
       "qwen": "Stelle dich an, um dein Paket abzuholen.\nDie Verkäuferin fragt: „Ist das für Sie?“\nDu nickst und zahlst.\nSie druckt dir eine Quittung für zwei Kaffee aus.",
@@ -300,6 +294,12 @@
       "gpt": "Mama sagt: „Wir machen heute Familienfoto.“ Papa fragt: „Mit welchem Handy?“ – „Mit dem, das du immer an die Wand hängst.“",
       "qwen": "Ich fragte meinen Vater: „Wie war die Welt vor dem Strom?“ Er antwortete: „Dunkel, kalt und ohne WLAN.“",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-19T01:30:59.473Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Besucher nickt und sagt: „Nur, wenn du Popcorn leihst.“",
+      "qwen": "Ich wollte in die Bibliothek, sah aber ein Kino und ging ins Museum.",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
