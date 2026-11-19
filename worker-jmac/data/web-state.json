@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:06:05.026Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Mann antwortet: „Wie ein Rezept, das ich in der Apotheke noch nie abgeholt habe.“",
-      "qwen": "„Ich habe Ihnen ein Rezept ausgestellt“, sagt der Arzt.\nDie Apothekerin blinzelt: „Das ist aber mein Zahnarztkartei.“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-19T04:11:09.041Z",
       "gpt": "Im Meeting fragt der Chef nach Ideen – ich greife zum Notizblock, schreibe „Kaffee nachschlagen“ und merke, dass das die einzige produktive Idee ist.",
       "qwen": "Ich fragte den Chef, ob wir die Besprechung kürzen können. Er nickte und sagte: „Nein, wir brauchen die volle Stunde für den Abschied.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Der Kunde lächelt: „Nur, wenn Sie mir den Wochenmarkt vorbeibringen.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Haben Sie Kundenkarte?“\nIch nicke, sie scannt sie, und ich denke: „Endlich, hier versteht man sich.“",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-19T08:11:09.211Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
+      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt eine Fundnummer.\nDie Fundnummer gibt's erst, wenn der Fundbericht da ist.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
