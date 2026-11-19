@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:11:12.970Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn sie aus Stoff ist.“",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“ Ich zeige auf die Tomate.",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-19T01:16:05.903Z",
       "gpt": "Ich gehe in die Bibliothek, um einen Film zu recherchieren, und finde im Museum das Drehbuch – dort steht: „Bitte leise sein.“",
       "qwen": "Ich fragte, wo das Museum sei. Der Bibliothekar winkte zum Kino: „Dort laufen die alten Meister.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Regal gefunden.“ Das Personal schüttelt den Kopf – das war das Drehbuch des Films.",
       "qwen": "Im Museum bin ich stehen geblieben, im Kino saß ich fest, aber in der Bibliothek habe ich mich endlich ein bisschen umgesehen.",
       "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
+    },
+    {
+      "timestamp": "2026-11-19T05:21:06.776Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm die PowerPoint‑Folien – die zeigen nur ein leeres Diagramm, weil mein Fortschritt noch in der Cloud ist.",
+      "qwen": "Beim Brainstorming schlug ich vor, die Meetings zu streichen.\nDer Chef nicken zustimmend und schickte mich damit in ein neues.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
