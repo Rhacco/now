@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:05:59.088Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Da hinten, wo das Meer endet.“",
-      "qwen": "Ich habe am Strand eine Taube gesehen. Sie hat mich angetrollt.",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-19T06:11:09.856Z",
       "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Der Mann lächelt: „Nur wenn ich im Taxi sitze.“",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich nicke. Er sagt: „Dann steig aus.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt der Tourist: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Im Meer, da gibt’s keine Sitzplätze.“",
       "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnencreme ins Gesicht geblasen.",
       "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
+    },
+    {
+      "timestamp": "2026-11-19T10:06:29.310Z",
+      "gpt": "Beim Ausmisten packte ich das leere Glas, das ich nie benutzt hatte, und fragte mich, warum ich das Chaos immer erst beim Umzug finde.",
+      "qwen": "Wir haben beim Ausmisten eine alte Briefmarke gefunden. Die klebt an einem 50-Euro-Schein.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
