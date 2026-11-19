@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:56:07.195Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung erst nächste Woche beginnt.“",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich lerne schnell.“ Er nickte und kündigte mich.",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-19T11:00:58.685Z",
       "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – am Ende musste ich den Schlüssel zurückgeben, weil ich das Formular selbst verlegt hatte.",
       "qwen": "Ich füllte alle Felder des Fundamts-Formulars aus, bis mir die Tinte auslief. Die Dame winkte ab: „Für die Abtrocknung brauchen wir ein eigenes Formular.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage beim Wochenmarkt nach Bio‑Erdbeeren, die Verkäuferin meint: „Hier gibt's nur Bio‑Preis‑vergleiche.“",
       "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Im Supermarkt sind sie es auch, nur künstlich.",
       "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
+    },
+    {
+      "timestamp": "2026-11-19T15:06:11.824Z",
+      "gpt": "Mama ruft: „Wer hat die letzte Banane gegessen?“ Papa grinst: „Ich, weil ich sie im Obstkorb versteckt habe.“",
+      "qwen": "Ich rief: „Mama, wer hat das hier ausgedacht?“\nDie Antwort: „Dein Bruder, er wollte dich ärgern.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
