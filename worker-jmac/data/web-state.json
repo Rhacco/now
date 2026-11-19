@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:41:04.249Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wenigstens wach bleiben.“ Er nickt begeistert – er dachte, ich spreche vom Projekt.",
-      "qwen": "Der Chef fragt, ob ich für die E-Mail-Zeitfenster verfügbar bin. Ich sage, ich bräuchte mehr O2.",
-      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
-    },
-    {
       "timestamp": "2026-11-19T15:45:58.863Z",
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch das verlorene Formular war schon im nächsten Schalter.",
       "qwen": "Ich habe meinen verlorenen Schlüssel im Fundbüro abgeholt. Der Mitarbeiter fragte nur: „Haben Sie das Formular 7b ausgefüllt?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann nickt: „Ja, ich habe sogar das verlorene Formular gefunden.“",
       "qwen": "Fundbüro: „Melden Sie den Fund schriftlich an.“\nIch: „Dann ist er ja schon wieder verloren.“",
       "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
+    },
+    {
+      "timestamp": "2026-11-19T19:46:11.517Z",
+      "gpt": "Im Zug zum Strand fragt ich die Durchsage: „Nächster Halt: Meer.“ Die Stimme antwortet: „Bitte halten Sie die Tür zu, wir fahren nach Hause.“",
+      "qwen": "Sagte ich: „Wir fahren in den Urlaub, um abzuschalten.“ Meine Frau: „Perfekt, dann stell ich den Wecker.“",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
