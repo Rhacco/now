@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:46:01.601Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Ich klage über Herzrasen. Der Arzt fragt: „Wie schnell?“ Ich zeig ihm meine Uhr: „Solange!“",
-      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
-    },
-    {
       "timestamp": "2026-11-19T14:51:09.885Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Weiterbildungen?“ – Ich: „Ich habe bereits einen Kurs in Ausreden belegt.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich bin sehr ausdauernd, denn ich habe schon zehn Interviews überlebt, in denen man mich abgewiesen hat.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn die Mülltonne geklaut, damit er endlich mal die Hausordnung liest – jetzt steht sie neben seinem Bett.",
       "qwen": "Der Nachbar hämmert gleichmäßig um drei Uhr nachts. Ich rufe wütend rein: „Haben Sie etwa keinen Schlaf?“",
       "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
+    },
+    {
+      "timestamp": "2026-11-19T18:50:59.228Z",
+      "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich einen Regenschirm brauche – sie zeigt „100 % Chance auf neue Benachrichtigungen“.",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch lege es weg, es stirbt sofort.",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
