@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:36:12.156Z",
-      "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es hat noch 99 % Akku. Jetzt überlege ich, ob ich den Stromzähler ausbuchen soll.",
-      "qwen": "Wir haben die alte Küche aussortiert und alles in den Keller geräumt. Jetzt wohnen wir dort und die Küche kocht auf dem Dachboden.",
-      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
-    },
-    {
       "timestamp": "2026-11-19T05:40:58.876Z",
       "gpt": "Ich frage im Elektrofachgeschäft nach einer leisen Waschmaschine, der Verkäufer reicht mir Kopfhörer – damit ich die Lautstärke selbst bestimme.",
       "qwen": "Ich fragte den Verkäufer nach dem Wi-Fi-Passwort.\nEr nickte und reichte mir die Ware.",
@@ -300,6 +294,12 @@
       "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder offen gelassen?“ Sohn: „Ich wollte, dass die Socken endlich mal Luft holen.“",
       "qwen": "Mutter ruft: „Komm, wir essen gleich.“\nIch antworte: „Ich bin schon da, ich bin dein Teller.“",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-19T09:41:07.328Z",
+      "gpt": "Im Yogakurs fragt die Lehrerin: „Wie fühlt sich die Entspannung an?“ – Der Anfänger antwortet: „Wie ein Marathon, nur ohne Ziel.“",
+      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt genug, um zu merken, wie kaputt ich wirklich bin.",
+      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
     }
   ]
 }
