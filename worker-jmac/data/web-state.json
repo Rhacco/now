@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:40:57.003Z",
-      "gpt": "Ich packe beim Ausmisten die leere Kartonbox ein – dann merke ich, dass ich das Haus ohne Möbel umziehe.",
-      "qwen": "Ich habe den letzten Karton verpackt und den Schlüssel eingeworfen. Draußen wartet der Mülleimer auf den Möbelwagen.",
-      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
-    },
-    {
       "timestamp": "2026-11-19T16:46:07.246Z",
       "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft endlich die „Stummfilm‑Ausgabe“ des Romans.",
       "qwen": "Im Museum weigere ich mich, zu flüstern. Die Aufseherin ruft: „Hier dürfen Sie gar nicht schweigen!”",
@@ -300,6 +294,12 @@
       "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
       "qwen": "Mein Vater fragte: „Wie geht’s dir?“ Ich sagte: „Gut, Papa.“ Er antwortete: „Dann koch selbst.“",
       "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
+    },
+    {
+      "timestamp": "2026-11-19T20:46:08.232Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Kater das Bein geklaut – jetzt macht er den heraufschauenden Kater.",
+      "qwen": "Der Trainer schrie: „Mehr Muskeln, weniger Schmerzmittel!“\nIch fragte: „Haben Sie das gerade ernst gemeint?“",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
