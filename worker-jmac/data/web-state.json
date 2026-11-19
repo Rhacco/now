@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:15:59.860Z",
-      "gpt": "Ich rufe beim Kundenservice an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter sagt: „Wir schicken es gleich noch einmal – diesmal per Brieftaube.“",
-      "qwen": "Der Kurier fragt: „Sind Sie der Empfänger?“ Ich nicke. Er sagt: „Dann unterschreiben Sie hier, dass ich nichts geliefert habe.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-19T14:21:11.022Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Bär steht auf, streckt sich und ruft: „Ich bin doch kein Kater!“",
       "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat sich auf meinen Bauch gelegt.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Ich: „Ich nicht, ich habe nur die leere Schachtel gegessen.“",
       "qwen": "Die Frage, wer das Fenster schließt, bleibt unbeantwortet. Draußen regnet es seit drei Stunden.",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-19T18:21:00.095Z",
+      "gpt": "Mama ruft: „Wer hat die Milch gekippt?“ Papa antwortet: „Ich, ich wollte den Hund nicht wecken.“",
+      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Ich.“\nMama: „Danke, du bist mein Held.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
