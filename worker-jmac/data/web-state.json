@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:14:51.091Z",
-      "gpt": "Im Familienchat fragt Mama: „Wer hat den Kuchen gegessen?“  \nOpa tippt schnell: „Ich war im Büro.“  \nOma schreibt: „Ich habe das Essen bestellt.“  \nVater antwortet: „Ich war gerade beim Zahnarzt – aber das war nur ein Stück von mir.“",
-      "qwen": "Ich tippe im Familienchat: „Ich bin krank, bleib heute zu Hause.“\nMeine Tante antwortet: „Mach dich nicht an, du bist doch gerade erst frisch verheiratet.“",
-      "archive": "Im Café wollte die Bedienung meinen Namen für den Kaffeebecher. Ich sagte „Martin“. Auf dem Becher stand „Kaffee“. Vielleicht wollte sie die Sache nicht unnötig persönlich machen."
-    },
-    {
       "timestamp": "2026-11-18T21:16:43.837Z",
       "gpt": "Ich bestelle beim Bäcker ein frisches Brötchen und sage: „Bitte ohne Körner, ich habe eine Allergie.“  \nEr nickt, legt das Brötchen in die Tüte und fragt: „Möchten Sie dazu noch ein Stück Kuchen?“  \nIch überlege kurz und antworte: „Nur, wenn er keine Nüsse hat.“  \nEr lächelt und gibt mir ein Stück Brot.",
       "qwen": "Ich stehe am Bäcker und sage: „Machen Sie das Brot bitte nicht so knusprig, ich habe empfindliche Zähne.“\nDer Bäcker nickt, packt es ein und sagt: „Alles klar, aber dann ist es halt auch nicht mehr so gut.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug aus: „Alte Socken, die nie passen.“ – Die Kiste war leer, weil ich sie nie gekauft habe.",
       "qwen": "Ich habe die alte Kaffeemaschine nach 15 Jahren ausgemistet. Die neue brauchte nur sechs Sekunden für ihren ersten Kaffee.",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-19T01:46:03.757Z",
+      "gpt": "Ich frage in der Bibliothek nach dem neuesten Kinofilm, die Bibliothekarin reicht mir ein Buch – auf dem Cover steht: „Stummfilm“.",
+      "qwen": "Im Kino bin ich eingeschlafen, im Museum habe ich genickt. Der Bibliothekar fragte mich nur: „Müssen wir das Buch zurückgeben?“",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
