@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:41:00.083Z",
-      "gpt": "Im Museum fragt der Bibliothekar: „Darf ich hier leise lesen?“ – Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
-      "qwen": "Im Museum sah ich das Original, im Kino den Film, in der Bibliothek fragte ich: „Wo ist der Rest?\"",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-19T07:46:07.447Z",
       "gpt": "Im Café bestellt er einen Espresso, doch der Barista fragt: „Möchten Sie ihn mit Milch?“, und schenkt ihm einen Milchschnitzer.",
       "qwen": "Ich bestellte im Café einen Kaffee, der so teuer war, dass ich ihn trank, während ich weinte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Steak medium oder durch?“ Ich antworte: „Durch, ich will, dass es endlich fertig ist.“",
       "qwen": "Im Café fragte ich: „Haben Sie das hier selbst gebacken?“\nDie Kellnerin lachte und sagte: „Nein, das ist der Tisch.“",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-19T11:41:07.693Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
+      "qwen": "Kopf verkrampft.\nNur der Apothekerknaus passt.",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
