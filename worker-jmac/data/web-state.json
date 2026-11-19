@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:35:59.897Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einem Lautsprecher, der auch als Wecker dient – der Verkäufer gibt mir ein Telefon, weil er „aufwachen“ kann.",
-      "qwen": "Die Putzfrau fragt: „Dürfen wir hier auch Musik hören?“\nDer Chef nickt, denn sie wäscht nichts, nur die Fenster.",
-      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
-    },
-    {
       "timestamp": "2026-11-19T17:41:07.222Z",
       "gpt": "Ich packe meine Klamotten für den Umzug und finde ein altes T-Shirt mit Aufschrift „Ich bin nicht mehr hier“. Das ist mein neuer Ausmist‑Plan.",
       "qwen": "Ich habe den ganzen Tag alte Kisten ausgemistet, bis mir die Finger schmerzten. Jetzt habe ich nichts mehr, in das ich die neuen Kisten packen kann.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den verlorenen Ausweis ausgefüllt?“ Ich: „Nein, ich warte nur auf den Schein, den ich nie finde.“",
       "qwen": "Ich gab den Fundbericht ab, doch der Beamte stellte die Frage: „In welcher Stadt haben Sie den Hund verloren?“",
       "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
+    },
+    {
+      "timestamp": "2026-11-19T21:45:57.763Z",
+      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ – Ich antworte: „Nur beim Aufstehen, dann bin ich schon ganz entspannt.“",
+      "qwen": "Ich wollte beim Yoga entspannen, bin aber vom Stuhl gefallen. Jetzt übe ich Liegestütze, weil der Rücken nicht mehr gut wird.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
