@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:11:09.195Z",
-      "gpt": "Der Nachbar klopft, weil er leise Musik hören will – ich schenke ihm Kopfhörer, weil er immer wieder laut schallt.",
-      "qwen": "Ich habe die Wand dicker verputzt, damit die Nachbarn mich nicht mehr hören, und der Nachbar hat daraufhin seine Lautsprecher draußen aufgestellt.",
-      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
-    },
-    {
       "timestamp": "2026-11-19T18:16:12.715Z",
       "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Ich: „Ich nicht, ich habe nur die leere Schachtel gegessen.“",
       "qwen": "Die Frage, wer das Fenster schließt, bleibt unbeantwortet. Draußen regnet es seit drei Stunden.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Kassenbon noch?“ – „Nein, aber ich habe das Formular dafür ausgefüllt.“",
       "qwen": "Ich gebe die Fundsache ab und erhalte ein Formular mit dreihundert Seiten. „Bitte unterschreiben Sie hier, dort und unter dem Datum.“",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-19T22:21:00.158Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – die verschreibe ich mir gleich in der Apotheke.“",
+      "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Sie haben Diabetes.“",
+      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
     }
   ]
 }
