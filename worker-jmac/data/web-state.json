@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:46:05.590Z",
-      "gpt": "Ich gehe zum Yoga‑Kurs, um endlich flexibel zu werden.  \nDer Lehrer sagt: „Stellt euch vor, ihr seid ein Blatt im Wind.“  \nIch schließe die Augen, atme tief ein…  \nUnd plötzlich weht mir das Handy aus der Hand.",
-      "qwen": "Ich wollte endlich zur Ruhe kommen.\nAlso habe ich Yoga probiert.\nJetzt sorge ich mich,\ndass ich mich beim Atmen verknotet habe.",
-      "archive": "Unsere Yogalehrerin sagte: „Alles, was unnötig anspannt, darf gehen.“ Mein Nachbar rollte die Matte ein und verabschiedete sich."
-    },
-    {
       "timestamp": "2026-11-18T23:51:08.992Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich heute?“  \nDer Patient seufzt: „Wie immer – ständig nervös.“  \nSie nickt und reicht ihm ein Rezept.  \nIn der Apotheke steht er plötzlich: „Endlich mal etwas, das ich nicht ausdrucken muss.“",
       "qwen": "Der Arzt ruft: „Herr Müller, gleich kurz in den Behandlungszimmer.“\nIch eile nach draußen.\nDort steht die Apothekerin und sagt: „Schön, dass Sie da sind, ich hatte Sie gerade gesucht.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Entschuldigung?“",
       "qwen": "Der Bot fragt: „Ist jemand zu Hause?“ Ich rufe: „Ja, ich bin’s.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-19T03:45:57.042Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte halten Sie Ihre Handys bereit.“ Der Schaffner lächelt und sagt: „Damit wir beim Aussteigen nicht nach dem Ticket suchen.“",
+      "qwen": "Ich bin zwei Stunden im Stau, dann fahre ich um und nehme den Bus. Der bleibt direkt hinter mir stehen.",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
