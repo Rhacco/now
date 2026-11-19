@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:26:12.425Z",
-      "gpt": "Im Supermarkt fragt die Kundin nach einer glutenfreien Alternative zu Brot, und die Verkäuferin reicht ihr ein Blatt Papier. \"Für die Diät\", flüstert sie.",
-      "qwen": "Ich fragte im Supermarkt nach einem Eimer Farbe. Der Verkäufer meinte: „Nehmen Sie die rote, die ist viel kräftiger.“",
-      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
-    },
-    {
       "timestamp": "2026-11-19T00:26:22.853Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Nein, nur Wartezeit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, sie zählt meine Schritte – und nach fünf Minuten zeigt sie: „Kaffee‑Pause, 0 km zurückgelegt.“",
       "qwen": "Ich sagte dem Handy: „Schau mal, wie spät es ist.“\nEs antwortete: „Das tust du selbst.“",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-19T04:31:10.488Z",
+      "gpt": "Mama ruft: „Wer hat meine Brille genommen?“ Papa antwortet: „Ich! Ich wollte nur sehen, ob du noch gut aussiehst.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sah mich fassungslos an und fragte: „Du zahlst die Miete?“",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
