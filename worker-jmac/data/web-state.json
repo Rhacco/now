@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:56:07.565Z",
-      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo ist der Bahnhof?“ – Der Schaffner lächelt: „Sie sitzen gerade im Zug.“",
-      "qwen": "Im Urlaub fragte die Frau: „Warum starrst du so aufs Meer?“\n„Ich warte, bis das Boot kommt, das ich heute Morgen gekauft habe.“",
-      "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
-    },
-    {
       "timestamp": "2026-11-19T04:01:07.948Z",
       "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der nicht piept, und der Verkäufer reicht mir einen Kopfhörer. „Damit hörst du das Piepen nicht mehr.“",
       "qwen": "In der Filiale fragt der Kunde: „Haben Sie diesen Rasenroboter auch in Schwarz?“ Der Verkäufer seufzt und antwortet: „Nein, aber er ist definitiv nicht sauber.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote fragt: „Haben Sie das Paket angenommen?“ – Ich: „Ja, ich habe es gerade erst an die Post zurückgeschickt.“",
       "qwen": "Der Kurier schüttelt den Kopf: „Dieses Paket ist zu schwer.“ Ich frage: „Wie schwer ist es denn?“ Er antwortet: „Zu schwer für Ihre Geduld.“",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-19T08:00:59.069Z",
+      "gpt": "Ich stehe am Supermarkt, warte auf die Kasse und frage nach dem Preis – die Kassiererin meint, das sei ein Wochenmarkt.",
+      "qwen": "Beim Supermarkt finde ich keine Erdbeeren.\nAuf dem Wochenmarkt fallen mir sofort die auf.",
+      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
     }
   ]
 }
