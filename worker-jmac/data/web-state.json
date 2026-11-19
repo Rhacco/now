@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:46:03.558Z",
-      "gpt": "Im Zug zur Strandpromenade fragt die Frau: „Wird das Wasser heute warm?“ Der Schaffner lächelt: „Nur, wenn Sie das Ticket für die Sauna gelöst haben.“",
-      "qwen": "Sagte ich: „Schön, dass du da bist.“\nEr: „Hab ich gesagt?“",
-      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
-    },
-    {
       "timestamp": "2026-11-19T11:51:03.149Z",
       "gpt": "Ich klopfe an den Nachbarn, weil der Fernseher zu laut ist – er öffnet die Tür, wir sehen nur das leere Wohnzimmer. \"Ich dachte, du bist hier.\"",
       "qwen": "Der Nachbar klopft an und fragt, ob ich noch wach bin. Ich sage: „Ja, weil Sie klopfen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt fertig?“ – Die Praktikantin meldet sich: „Ich habe das Protokoll fertig, das Projekt nicht.“",
       "qwen": "„Ich habe die Besprechung auf 15 Minuten verkürzt.“\nDas saust du weg, bevor man die Krawatte aufmachen kann.",
       "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
+    },
+    {
+      "timestamp": "2026-11-19T15:56:11.129Z",
+      "gpt": "Ich rufe den Kundendienst, weil mein Paket schon wieder im falschen Haus ist. Sie sagen: „Keine Sorge, das war nur ein Test für den Türklopfer.“",
+      "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch: „Nein, ich bin’s.“",
+      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
     }
   ]
 }
