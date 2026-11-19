@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:51:03.149Z",
-      "gpt": "Ich klopfe an den Nachbarn, weil der Fernseher zu laut ist – er öffnet die Tür, wir sehen nur das leere Wohnzimmer. \"Ich dachte, du bist hier.\"",
-      "qwen": "Der Nachbar klopft an und fragt, ob ich noch wach bin. Ich sage: „Ja, weil Sie klopfen.“",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-19T11:55:59.699Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich: „Im nächsten Weiterbildungsseminar – endlich lerne ich, pünktlich zu kommen.“",
       "qwen": "Ich habe im Vorstellungsgespräch ehrlich zugegeben, dass ich nichts weiß. Der Chef lachte und bot mir sofort einen Kurs-Platz an.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe den Kundendienst, weil mein Paket schon wieder im falschen Haus ist. Sie sagen: „Keine Sorge, das war nur ein Test für den Türklopfer.“",
       "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch: „Nein, ich bin’s.“",
       "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
+    },
+    {
+      "timestamp": "2026-11-19T16:00:57.886Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie oft trainieren Sie pro Woche?“ – Ich antworte: „Nur, wenn der Fernseher nicht läuft.“",
+      "qwen": "Im Yoga streck ich den Arm zum Himmel. Die Nachbarin ruft: „Und dann? Kletterst du runter?“",
+      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
     }
   ]
 }
