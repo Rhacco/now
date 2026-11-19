@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:16:04.236Z",
-      "gpt": "Ich tippe eifrig in der Wetter‑App, weil ich den Regen nicht verpassen will – mein Handy zeigt plötzlich „Offline: Regen kommt nicht“.",
-      "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach der Steckdose. Dann merk ich, dass ich den Ladekabelklemmer schon seit zwei Wochen im Kofferraum vergessen habe.",
-      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
-    },
-    {
       "timestamp": "2026-11-19T12:21:06.975Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich, aber ich dachte, wir reden heute per Zoom.“",
       "qwen": "Der Chef fragt: „Haben Sie die Dringlichkeit der Lage verstanden?“\nIch nicke und sage: „Ja, deshalb schlafe ich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug nach Italien vergaß ich das Ticket – der Schaffner lächelte: „Kein Problem, das ist ja nur ein Kurztrip ins Nachbarland.“",
       "qwen": "Ich wollte im Urlaub nur relaxen, nicht arbeiten.\nDeshalb habe ich meinen Laptop im Pool ertränkt.",
       "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
+    },
+    {
+      "timestamp": "2026-11-19T16:26:11.640Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino und frage nach Zucker; die Barista gibt mir einen Löffel Salz – ich trinke jetzt Espresso‑Martini.",
+      "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Barista schaltete den Herd aus und sagte: „Dann ist’s kalt.“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
