@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:01:05.873Z",
-      "gpt": "Ich packe den Toaster ein, weil ich beim Umzug endlich die ganze Hitze aus meinem Leben entfernen will. Dann merke ich, er war nur ein Staubsauger.",
-      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte nervös: „Ist sie echt?“",
-      "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
-    },
-    {
       "timestamp": "2026-11-19T14:06:06.469Z",
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Könnten wir das Projekt bitte in den Urlaub verschieben? Dann haben wir alle mehr Abstand.“",
       "qwen": "Der Chef wollte die Besprechung verkürzen. Also habe ich das Ende der Tabelle gelöscht.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
       "qwen": "Im Wartezimmer beschwerst du dich über den Arzt. Die Apothekerin seufzt: „Gönnt mir den Spaß, die Diagnose zu bestätigen.“",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-19T18:05:59.948Z",
+      "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
+      "qwen": "Die Oma fragt, wie es der Enkelin geht. „Gut, aber sie will nicht mehr mit mir schlafen.“",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
