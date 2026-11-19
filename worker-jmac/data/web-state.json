@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:11:09.856Z",
-      "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Der Mann lächelt: „Nur wenn ich im Taxi sitze.“",
-      "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich nicke. Er sagt: „Dann steig aus.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-19T06:16:07.796Z",
       "gpt": "Im Zug zum Strand fragt der Tourist: „Gibt es hier WLAN?“ Die Durchsage: „Bitte halten Sie sich an die Küstenlinie, nicht ans Netz.“",
       "qwen": "Ich frag mein Auto: „Wie lange noch bis zum Strand?“ Es antwortet: „Du hast den Zündschlüssel nicht umgedreht.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten packte ich das leere Glas, das ich nie benutzt hatte, und fragte mich, warum ich das Chaos immer erst beim Umzug finde.",
       "qwen": "Wir haben beim Ausmisten eine alte Briefmarke gefunden. Die klebt an einem 50-Euro-Schein.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-19T10:11:05.452Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung jetzt schon 3 % schneller läuft.“",
+      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Weiterbildungen. „Diplom gegen Scheidung“, antwortete ich.",
+      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
     }
   ]
 }
