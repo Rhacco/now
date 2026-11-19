@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:56:08.842Z",
-      "gpt": "Ich habe meinem Nachbarn ein Schild mit \"Bitte nicht klingeln, ich bin im Home‑Office\" aufgehängt. Er hat es gelesen und jetzt ruft er: \"Bewerbung für den Job?\"",
-      "qwen": "Ich habe den Nachbarn gefragt, ob er mein Auto parkt. Er schüttelte den Kopf, denn er wohnt in der Etage darüber.",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-19T07:01:05.664Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gepäckfach?“ Der Schaffner lächelt: „Nur, wenn Sie den Sand mitnehmen.“",
       "qwen": "Am Strand rufe ich fröhlich: „Hallo, Nachbar!“ Der daneben antwortet nicht. Ich schaue nach. Es ist ein Schild.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug vergaß ich mein Ticket, doch die Kontrolleure gaben mir ein Kompliment: „Endlich jemand, der auch im Sitzen fährt.“",
       "qwen": "Ich steige vom Taxi aus und sehe den Bus kommen. „Alles gut?“, fragt der Fahrer. „Nein, ich bin zu Fuß.“",
       "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
+    },
+    {
+      "timestamp": "2026-11-19T10:56:07.195Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung erst nächste Woche beginnt.“",
+      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich lerne schnell.“ Er nickte und kündigte mich.",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
