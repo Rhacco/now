@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:51:04.297Z",
-      "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Bibliotheksregal gefunden.“ Der Bibliothekar im Kino ruft: „Leise, das ist kein Trailer!​",
-      "qwen": "Bibliothek, Kino und Museum: Ich wollte nur ein Buch ausleihen. Der Bibliothekar sagte: „Heute nur im Museum.“",
-      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
-    },
-    {
       "timestamp": "2026-11-19T02:56:06.767Z",
       "gpt": "Ich packe den Kühlschrank aus, finde ein altes Sandwich und denke: „Endlich ein Snack, den ich nicht mehr tragen muss.“",
       "qwen": "Wir haben beim Ausmisten die alte Waschmaschine gefunden. Sie hat nur zwei Stecker.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn ein Schild mit \"Bitte nicht klingeln, ich bin im Home‑Office\" aufgehängt. Er hat es gelesen und jetzt ruft er: \"Bewerbung für den Job?\"",
       "qwen": "Ich habe den Nachbarn gefragt, ob er mein Auto parkt. Er schüttelte den Kopf, denn er wohnt in der Etage darüber.",
       "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:01:05.664Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gepäckfach?“ Der Schaffner lächelt: „Nur, wenn Sie den Sand mitnehmen.“",
+      "qwen": "Am Strand rufe ich fröhlich: „Hallo, Nachbar!“ Der daneben antwortet nicht. Ich schaue nach. Es ist ein Schild.",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
