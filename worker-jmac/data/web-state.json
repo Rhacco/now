@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:50:59.228Z",
-      "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich einen Regenschirm brauche – sie zeigt „100 % Chance auf neue Benachrichtigungen“.",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch lege es weg, es stirbt sofort.",
-      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
-    },
-    {
       "timestamp": "2026-11-19T18:55:58.592Z",
       "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie Zucker?“ – Ich: „Nein, ich habe heute schon genug „Kaffee“ im Büro.“",
       "qwen": "Ich bat den Kellner, den Wein leer zu trinken. Er entgegnete: „Den holen wir an der Tür wieder ab.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs „Wie man Bewerbungen schreibt“ – ich lerne gerade, wie ich absage.",
       "qwen": "Mein Chef meinte, ich bräuchte dringend eine Weiterbildung in Stressmanagement. Ich habe ihm den Kaffeeautomaten gezeigt, der seit Jahren streikt.",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-19T23:00:57.735Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldschein gefunden.“",
+      "qwen": "Im Fundbüro verlangt man nach der Requisite für die abhanden gekommene Wurst.",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
