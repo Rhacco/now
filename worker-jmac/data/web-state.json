@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:01:05.476Z",
-      "gpt": "Ich frage beim Wochenmarkt nach Bio‑Erdbeeren, die Verkäuferin meint: „Hier gibt's nur Bio‑Preis‑vergleiche.“",
-      "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Im Supermarkt sind sie es auch, nur künstlich.",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-19T15:06:11.824Z",
       "gpt": "Mama ruft: „Wer hat die letzte Banane gegessen?“ Papa grinst: „Ich, weil ich sie im Obstkorb versteckt habe.“",
       "qwen": "Ich rief: „Mama, wer hat das hier ausgedacht?“\nDie Antwort: „Dein Bruder, er wollte dich ärgern.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das ganze Brot gegessen?“ Sohn: „Ich wollte das Familienbudget nicht mehr teilen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber bitte leg das Besteck richtig hin.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-19T19:06:11.940Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie süß oder salzig?“ Ich antworte: „Beides – ich esse ja gerade das Menü des Restaurants.“",
+      "qwen": "Der Kellner bringt den Salat. „Oh, Entschuldigung, das ist schon gegessen“, sage ich und bestelle eine Pizza.",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
