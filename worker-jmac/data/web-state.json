@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:01:15.132Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
-      "qwen": "Im Wartezimmer beschwerst du dich über den Arzt. Die Apothekerin seufzt: „Gönnt mir den Spaß, die Diagnose zu bestätigen.“",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-19T18:05:59.948Z",
       "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
       "qwen": "Die Oma fragt, wie es der Enkelin geht. „Gut, aber sie will nicht mehr mit mir schlafen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim herabschauenden Hund bellt mein Nachbar und ich muss doch wieder rennen.",
       "qwen": "Ich übe seit Wochen Yoga. Heute habe ich endlich den perfekten Gleichgewichtshalt erreicht: Ich steh auf dem Kopf.",
       "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
+    },
+    {
+      "timestamp": "2026-11-19T22:10:57.500Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten meldet sie: „Bitte erstelle ein Konto – für dein Sofa.“",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch öffne die Ladebuchse: Dort sitzt ein Müsliriegel.",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
