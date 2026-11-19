@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:31:10.488Z",
-      "gpt": "Mama ruft: „Wer hat meine Brille genommen?“ Papa antwortet: „Ich! Ich wollte nur sehen, ob du noch gut aussiehst.“",
-      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sah mich fassungslos an und fragte: „Du zahlst die Miete?“",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-19T04:36:06.604Z",
       "gpt": "Ich habe meiner Nachbarin geholfen, das neue Sofa zu tragen – jetzt liegt ihr Sofa auf meinem Balkon und ich staune, weil ich plötzlich über den Stadtpark blicke.",
       "qwen": "Mein Nachbar hämmert um Mitternacht. Ich schreie: „Hören Sie auf, ich will schlafen!“ Er ruft: „Ich will nur, dass Sie die Zeit kennen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch an der Kasse fragt die Kassiererin: „Möchten Sie die Tomaten auch digitalisieren?“ – Ich sag: „Nein, nur essen.“",
       "qwen": "Im Supermarkt schimpft er über den Preis. Auf dem Wochenmarkt fragt er: „Haben Sie das auch im Angebot?“",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-19T08:35:59.513Z",
+      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort gibt’s schon die Tabletten.“",
+      "qwen": "Ich sagte: „Ärztin, ich brauch unbedingt ein Rezept.\"\nSie starrte mich an: „Das ist hier keine Apotheke.\"",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
