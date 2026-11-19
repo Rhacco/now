@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:12:44.409Z",
-      "gpt": "Der Nachbar ruft aus dem Treppenhaus: „Kann mir bitte jemand die Tür aufhalten, ich habe die Einkaufstüte vergessen!“  \nIch halte die Tür, er schaut verwirrt und sagt: „Ich wollte die Tüte doch erst drinnen abstellen.“  \nIch nicke und öffne die Tür weiter.  \nPlötzlich fällt die Tüte – und ein kleiner Hund springt heraus und bellt: „Ich hab’s dir ja gesagt, du hast die Tür zu schnell gehalten!“",
-      "qwen": "Ich hab den Nachbarn im Treppenhaus gefragt, ob er oben sein Licht ausschalten kann.\nEr hat genickt und sich verabschiedet.\nDraußen wurde es stockdunkel.",
-      "archive": "Mein Navi sagte: „Wenn möglich, bitte wenden.“ Ich war auf dem Weg zu einem Familienbesuch. So viel Verständnis hatte es noch nie für mich gezeigt."
-    },
-    {
       "timestamp": "2026-11-18T21:14:51.091Z",
       "gpt": "Im Familienchat fragt Mama: „Wer hat den Kuchen gegessen?“  \nOpa tippt schnell: „Ich war im Büro.“  \nOma schreibt: „Ich habe das Essen bestellt.“  \nVater antwortet: „Ich war gerade beim Zahnarzt – aber das war nur ein Stück von mir.“",
       "qwen": "Ich tippe im Familienchat: „Ich bin krank, bleib heute zu Hause.“\nMeine Tante antwortet: „Mach dich nicht an, du bist doch gerade erst frisch verheiratet.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also greife ich nach meinem Regenschirm – nur um zu merken, dass ich im Keller stehe.",
       "qwen": "Ich suchte die App „Stille“ und fand nur „Lautsprecher“.",
       "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
+    },
+    {
+      "timestamp": "2026-11-19T01:41:09.383Z",
+      "gpt": "Ich sortiere beim Umzug aus: „Alte Socken, die nie passen.“ – Die Kiste war leer, weil ich sie nie gekauft habe.",
+      "qwen": "Ich habe die alte Kaffeemaschine nach 15 Jahren ausgemistet. Die neue brauchte nur sechs Sekunden für ihren ersten Kaffee.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
