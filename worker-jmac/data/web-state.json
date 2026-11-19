@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:25:57.489Z",
-      "gpt": "Im Zug fragt der Schaffner nach meinem Ticket, ich zeige ihm meine Fahrkarte für den Bus – er lächelt: „Dann haben Sie ja wenigstens ein Sitzplatz.“",
-      "qwen": "Ich warte auf den Bus, der Taxi und das Auto stehen längst. Der Bus kommt, aber der Fahrer ist zu spät.",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-19T08:30:58.949Z",
       "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch an der Kasse fragt die Kassiererin: „Möchten Sie die Tomaten auch digitalisieren?“ – Ich sag: „Nein, nur essen.“",
       "qwen": "Im Supermarkt schimpft er über den Preis. Auf dem Wochenmarkt fragt er: „Haben Sie das auch im Angebot?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet, und sehe: „Sonnenschein in 5 Minuten.“ – Meine Kaffeemaschine macht daraufhin sofort einen Espresso.",
       "qwen": "Ich habe mein Handy auf laut geschalten und warte seit Stunden auf die Anrufe.",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-19T12:31:08.857Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Haben wir noch Sitzplätze?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer mitnehmen.“",
+      "qwen": "Ich rufe die Zahl des Strandbuffets an.\n„Hier spricht die Rezeption, bitte wählen Sie eine andere Nummer.“",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
