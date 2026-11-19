@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:00:59.279Z",
-      "gpt": "Im Zug fragt die Dame nach dem Weg zum Strand. Der Schaffner lächelt: „Geben Sie einfach dem Zug eine Pause, dann kommen wir ans Ziel.“",
-      "qwen": "Ich packe die Koffer für die Wüste.\nMeine Frau fragt: „Brauchst du Wasser?“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-19T10:06:05.638Z",
       "gpt": "Im Zug zum Strand fragt der Tourist: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Im Meer, da gibt’s keine Sitzplätze.“",
       "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnencreme ins Gesicht geblasen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den Toaster ein, weil ich beim Umzug endlich die ganze Hitze aus meinem Leben entfernen will. Dann merke ich, er war nur ein Staubsauger.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte nervös: „Ist sie echt?“",
       "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
+    },
+    {
+      "timestamp": "2026-11-19T14:06:06.469Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Könnten wir das Projekt bitte in den Urlaub verschieben? Dann haben wir alle mehr Abstand.“",
+      "qwen": "Der Chef wollte die Besprechung verkürzen. Also habe ich das Ende der Tabelle gelöscht.",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
