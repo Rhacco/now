@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:01:12.831Z",
-      "gpt": "Ich packe meine Lieblingssocken ein, weil ich beim Umzug nicht ohne sie laufen kann – und merke, dass ich sie nie getragen habe.",
-      "qwen": "Die Kiste mit den „Wichtigsten Unterlagen“ war leer. Darin lag nur mein uralter, verstaubter Waffenschein.",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-19T17:06:05.759Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Weiterbildungs‑Webinar – und Sie?“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich kann mich sehr gut weiterbilden.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn die Klingel ausgetauscht – jetzt klingelt er jedes Mal, wenn ich die Pizza bestelle.",
       "qwen": "Der Nachbar klopft an und fragt, ob ich seine Katze habe. Ich zeige auf die Tüte Müll, die er neben meiner Tür stehen lässt.",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-19T21:11:07.413Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und sagt: „Nein, ich habe nur das Formular, das ich gerade verloren habe.“",
+      "qwen": "„Ich habe den Fund nicht gemeldet, weil das Formular 40 Seiten hat.“\n„Dann verlieren Sie ihn ja endgültig.“",
+      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
     }
   ]
 }
