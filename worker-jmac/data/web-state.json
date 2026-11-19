@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:15:57.953Z",
-      "gpt": "Im Zug fragt die Frau: „Entschuldigung, ist das hier der Weg zum Strand?“ Der Schaffner lächelt: „Nur, wenn Sie im Schwimmbad bleiben.“",
-      "qwen": "Im Urlaub fragte ich den Kellner nach dem besten Schnäppchen. Er zeigte auf die Minibar: „Die ist leer.“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-19T19:21:04.503Z",
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Kurz, ich gehe gleich in die Apotheke – mein Rezept ist schon fertig.“",
       "qwen": "Der Arzt sagt: „Zwei Tabletten täglich.“ Ich frage: „Morgens oder abends?“ Er antwortet: „Mittags, ich bin um zwei zu.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Bild ausleihen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "Ich habe im Museum ein Gemälde gestohlen, im Kino einen Popcorn-Teller geklaut und in der Bibliothek ein Buch entwendet. Der Beamte meinte nur: „Das ist alles nur Leihgabe, nicht Diebstahl.“",
       "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
+    },
+    {
+      "timestamp": "2026-11-19T23:21:06.071Z",
+      "gpt": "Ich frage die Verkäuferin nach einem passenden Anzug, sie reicht mir einen Anzug und sagt: „Der kostet 199 €, inkl. Beratung, weil ich ihn selbst anprobiert habe.“",
+      "qwen": "Der Verkäufer drückt mir die letzte Packung hinein. „Das ist jetzt in Ihrem Eigentum,“ lächelt er, „zahlt aber erst nächsten Monat.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
