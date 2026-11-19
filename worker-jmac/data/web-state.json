@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:41:02.308Z",
-      "gpt": "Ich sitze im Wartezimmer, die Ärztin ruft: „Sie sind dran, bitte folgen Sie dem Schild zur Apotheke.“ Ich dachte, das ist mein Rezept.",
-      "qwen": "„Haben Sie Angst vor der Nadel?“\n„Nein, ich bin nur Allergiker.“",
-      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
-    },
-    {
       "timestamp": "2026-11-19T06:46:04.016Z",
       "gpt": "Mama fragt: „Warum hast du den Staubsauger im Bad stehen lassen?“ Ich: „Er wollte endlich mal ein Bad nehmen.“",
       "qwen": "Mama, warum hat Oma keine Zähne? Weil sie sich alles bei uns geliehen hat.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Kaffee „ohne Milch“, weil er die Kuh im Garten vergessen hat. Die Kellnerin bringt ihm einen leeren Becher.",
       "qwen": "Im Café fragt der Kellner: „Ist der Kaffee gut?“ Ich sage: „Ja, aber er schmeckt nach verbranntem Gummiband.“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-19T10:40:59.023Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige auf die Packung: „Hier steht doch schon ‚Unterschrift hier‘.“",
+      "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Nur mein Paket, das sitzt schon drin.“",
+      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
     }
   ]
 }
