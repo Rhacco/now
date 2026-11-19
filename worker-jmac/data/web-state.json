@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:25:58.138Z",
-      "gpt": "Im Zug zum Strand fragt ich den Platznachbarn nach dem besten Sonnenbrand‑Tipps – er reicht mir sein Handtuch und sagt: „Hier drunter liegt das Freibad.“",
-      "qwen": "Ich fragte den Kellner nach dem besten Strand. Er zeigte auf den Pool im Erdgeschoss.",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-19T15:31:24.810Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin zeigt stolz ihr leeres Whiteboard: „Ich habe das Projekt bereits abgeschlossen – es hat nie begonnen.“",
       "qwen": "In der Besprechung fragte der Chef: „Gibt es noch jemanden, der nicht weiß, was er tun soll?“\nHände gingen hoch.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Ich: „Einen Kaffee, bitte – ich bin schon wach.“",
       "qwen": "Im Café bestellte ich einen Kaffee, doch die Bedienung fragte: „Möchten Sie Ihren Teller auch gleich dazu?“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-19T19:31:06.575Z",
+      "gpt": "Ich öffne die Wetter‑App, sie zeigt Regen, also greife ich zum Regenschirm – mein Handy piept: „Akkustand 1 %“.",
+      "qwen": "Ich stellte das Handy auf lautlos, damit es nicht klingelt. Ein Sekündchen später vibrierte es trotzdem.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
