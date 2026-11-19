@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:51:07.725Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die Idee, das Projekt zu beschleunigen?“ Darauf meldet sich die Kaffeemaschine: „Ich habe bereits den Turbo‑Modus.“",
-      "qwen": "Der Chef fragt, warum ich so spät bin. Ich sage: „Stau.“ Er nickt und sagt: „Gut, dann sitzen wir eben länger im Kreis.“",
-      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
-    },
-    {
       "timestamp": "2026-11-19T03:56:07.565Z",
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo ist der Bahnhof?“ – Der Schaffner lächelt: „Sie sitzen gerade im Zug.“",
       "qwen": "Im Urlaub fragte die Frau: „Warum starrst du so aufs Meer?“\n„Ich warte, bis das Boot kommt, das ich heute Morgen gekauft habe.“",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt mich ein Besucher: „Welcher Film läuft heute?“ – Ich zeige auf das Sachbuchregal: „Hier gibt’s nur Dokumentarfilm.“",
       "qwen": "Im Museum zeig ich den Dackel an, im Kino kauf ich Popcorn für ihn. In der Bibliothek fragt die Dame nach der Ausweisnummer: „Dackel, sitzt auf der Nase.“",
       "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
+    },
+    {
+      "timestamp": "2026-11-19T07:55:56.020Z",
+      "gpt": "Der Paketbote fragt: „Haben Sie das Paket angenommen?“ – Ich: „Ja, ich habe es gerade erst an die Post zurückgeschickt.“",
+      "qwen": "Der Kurier schüttelt den Kopf: „Dieses Paket ist zu schwer.“ Ich frage: „Wie schwer ist es denn?“ Er antwortet: „Zu schwer für Ihre Geduld.“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
