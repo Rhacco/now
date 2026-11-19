@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:06:01.070Z",
-      "gpt": "Ich stehe vor dem Kiosk, das Paket in der Hand, und frage: „Ist das für mich?“  \nDer Kiosk‑Mitarbeiter schaut drauf, lächelt und sagt: „Ja, das ist Ihr Paket.“  \nIch öffne es, ziehe einen leeren Karton heraus und drehe mich verwirrt um.  \n„Ach so, das war nur die Rücksendung von meinem letzten Einkauf.“",
-      "qwen": "Ich klingele am Kiosk und frage nach meinem Paket.\nDer Verkäufer zieht eine riesige, schwere Kiste hervor.\n„Das ist Ihr Paket“, sagt er und drückt sie mir in die Hände.\n„Ich hab aber nur ein Parfum bestellt“, entgegne ich verdutzt.",
-      "archive": "Ich wollte mich für einen Entspannungskurs anmelden. „Leider ausgebucht“, sagte die Frau. Ich fragte nach der Warteliste. „Versuchen Sie doch erst mal, loszulassen.“"
-    },
-    {
       "timestamp": "2026-11-18T23:11:00.026Z",
       "gpt": "Ich stehe beim Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Alles in Ordnung?“  \nIch nicke, greife nach dem Paket und will zahlen.  \nEr sagt: „Tut mir leid, das war das Paket für den Nachbarn.“",
       "qwen": "Ich hole mein Paket ab und der Kiosk-Betreiber rennt zur Hinterkammer.\nDrei Minuten später kommt er zurück, atemlos und blass.\n„Das Paket ist weg“, flüstert er.\n„Komisch“, sage ich, „ich stehe ja noch hier.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den Kühlschrank aus, finde ein altes Sandwich und denke: „Endlich ein Snack, den ich nicht mehr tragen muss.“",
       "qwen": "Wir haben beim Ausmisten die alte Waschmaschine gefunden. Sie hat nur zwei Stecker.",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-19T03:01:05.183Z",
+      "gpt": "Im Café fragt die Kundin nach dem Tagesgericht, und der Koch erklärt: „Heute gibt's Überraschungs‑Suppe – das ist das Wasser, das wir heute vergessen haben zu kochen.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich das Wasser erst abkochen?“",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
