@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:10:53.856Z",
-      "gpt": "Ich steh am Kiosk, das Paket liegt bereit,  \nder Kassierer lächelt und fragt: „Aus welchem Grund?“.  \nIch sag: „Ich wollte es nur schnell abholen.“  \nDarauf erwidert er: „Dann zahlen Sie bitte die Versand‑Gebühr.“",
-      "qwen": "Stelle dich an, um dein Paket abzuholen.\nDie Verkäuferin fragt: „Ist das für Sie?“\nDu nickst und zahlst.\nSie druckt dir eine Quittung für zwei Kaffee aus.",
-      "archive": "Bei der Behörde sagte ich: „Ich habe alle Unterlagen dabei.“ Die Mitarbeiterin sah mich mitleidig an: „Das können Sie doch noch gar nicht wissen.“"
-    },
-    {
       "timestamp": "2026-11-18T21:12:44.409Z",
       "gpt": "Der Nachbar ruft aus dem Treppenhaus: „Kann mir bitte jemand die Tür aufhalten, ich habe die Einkaufstüte vergessen!“  \nIch halte die Tür, er schaut verwirrt und sagt: „Ich wollte die Tüte doch erst drinnen abstellen.“  \nIch nicke und öffne die Tür weiter.  \nPlötzlich fällt die Tüte – und ein kleiner Hund springt heraus und bellt: „Ich hab’s dir ja gesagt, du hast die Tür zu schnell gehalten!“",
       "qwen": "Ich hab den Nachbarn im Treppenhaus gefragt, ob er oben sein Licht ausschalten kann.\nEr hat genickt und sich verabschiedet.\nDraußen wurde es stockdunkel.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Besucher nickt und sagt: „Nur, wenn du Popcorn leihst.“",
       "qwen": "Ich wollte in die Bibliothek, sah aber ein Kino und ging ins Museum.",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-19T01:36:04.490Z",
+      "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also greife ich nach meinem Regenschirm – nur um zu merken, dass ich im Keller stehe.",
+      "qwen": "Ich suchte die App „Stille“ und fand nur „Lautsprecher“.",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
