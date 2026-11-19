@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:15:58.543Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie die Apotheke – ich warte schon seit Stunden auf das Rezept.“",
-      "qwen": "Ich fragte den Arzt: „Soll ich zum Apotheker?“ Er nickte.",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-19T04:20:58.288Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige ihm meine leere Kreditkarte.",
       "qwen": "Der Kurier drückt mir das Paket in die Hand und ruft: „Bitte unterschreiben Sie hier, dass alles in Ordnung ist.“\nIch gehe vor die Tür und werfe es ihm zurück.",
@@ -300,6 +294,12 @@
       "gpt": "Nach dem Yoga‑Kurs fragt der Trainer: „Wie war die Entspannung?“ – Ich: „Super, ich habe endlich meine Kniebeuge im Schlaf gefunden.“",
       "qwen": "Ich habe in der Hängematte Yoga gemacht. Das war sehr entspannend, bis die Matze rutschte.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-19T08:21:04.862Z",
+      "gpt": "Der neue Nachbar klopft, fragt nach einem Stromausfall‑Stecker und meint: „Ich wollte nur kurz die Beleuchtung testen.“ – Er zog den Stecker aus der Steckdose.",
+      "qwen": "Ich klopfte laut an die Tür meines Nachbarn, um ihm mein neues Haus anzukündigen. Er öffnete und fragte: „Können Sie leiser sein, ich schlafe?“",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
