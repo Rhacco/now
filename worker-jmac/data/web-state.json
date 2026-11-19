@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:35:58.373Z",
-      "gpt": "Im Café bestellt er einen Kaffee „ohne Milch“, weil er die Kuh im Garten vergessen hat. Die Kellnerin bringt ihm einen leeren Becher.",
-      "qwen": "Im Café fragt der Kellner: „Ist der Kaffee gut?“ Ich sage: „Ja, aber er schmeckt nach verbranntem Gummiband.“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-19T10:40:59.023Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige auf die Packung: „Hier steht doch schon ‚Unterschrift hier‘.“",
       "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Nur mein Paket, das sitzt schon drin.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit drei Tagen im Aufzug stecken bleibt – die Stimme am anderen Ende fragt, ob ich das Paket schon ausgepackt habe.",
       "qwen": "Der Paketbote klingelte, ich fragte nach der Unterschrift. Er riss das Etikett ab und ging.",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-19T14:46:01.601Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Ich klage über Herzrasen. Der Arzt fragt: „Wie schnell?“ Ich zeig ihm meine Uhr: „Solange!“",
+      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
     }
   ]
 }
