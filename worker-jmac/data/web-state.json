@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:51:05.096Z",
-      "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen, damit sie den Rasen kürzer bekommt. Jetzt mäht sie den Rasen, weil er zu kurz ist.",
-      "qwen": "Der neue Nachbar fragt leise, ob ich mit dem Essen fertig bin.\nEr will nur die Gießkanne ausleihen.",
-      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
-    },
-    {
       "timestamp": "2026-11-19T09:55:56.619Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, um meine Schritte zu zählen – sie meldet nach fünf Minuten: „Du hast bereits 10 000 Kalorien verbrannt.“",
       "qwen": "Ich habe die App „Türöffnung“ installiert. Jetzt muss ich erst per Passwort die eigene Wohnungstür entsperren.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach Bio‑Bananen, die Verkäuferin sagt: „Hier gibt’s nur Bio‑Bananen.“ Am Wochenmarkt kaufe ich welche, die Verkäuferin fragt: „Bio?“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für Tomaten. Er zückte eine Waage statt der Kasse.",
       "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
+    },
+    {
+      "timestamp": "2026-11-19T13:55:57.797Z",
+      "gpt": "Ich packe das Sofa in Kartons – der Umzugshelfer fragt verwirrt, warum ich das Haus nicht mitnehme.",
+      "qwen": "Auch die letzte Kiste ist voll. Die Frau schaut in den leeren Karton, dann an sich selbst: „Die habe ich doch gerade erst ausgepackt.“",
+      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
     }
   ]
 }
