@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:26:11.640Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino und frage nach Zucker; die Barista gibt mir einen Löffel Salz – ich trinke jetzt Espresso‑Martini.",
-      "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Barista schaltete den Herd aus und sagte: „Dann ist’s kalt.“",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-19T16:30:58.677Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket selbst zurückschicken soll. Ich antworte: „Nur, wenn Sie es nicht öffnen.“",
       "qwen": "Die Spedition meldet das Paket als verloren. Als ich nachfrage, antwortet der Bot: „Es ist gerade in Transit.“",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt der Bibliothekar: „Möchten Sie das Buch leihen?“ – Der Besucher: „Nur, wenn es im Kino vorgeführt und im Museum ausgestellt wird.“",
       "qwen": "Im Museum zeigte der Guide das Gemälde: „Das ist ein stiller Moment.“\nKurz darauf flüsterte er dem Besucher zu: „Psst, schrei nicht, wir sind im Bibliotheksbereich.“",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-19T20:31:00.776Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Der Arzt fragte: „Haben Sie Fieber?“\nIch: „Nein, lieber Herr Doktor, ich bin nur unterkühlt.“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
