@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:35:58.667Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Steak medium oder durch?“ Ich antworte: „Durch, ich will, dass es endlich fertig ist.“",
-      "qwen": "Im Café fragte ich: „Haben Sie das hier selbst gebacken?“\nDie Kellnerin lachte und sagte: „Nein, das ist der Tisch.“",
-      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
-    },
-    {
       "timestamp": "2026-11-19T11:41:07.693Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
       "qwen": "Kopf verkrampft.\nNur der Apothekerknaus passt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wenigstens wach bleiben.“ Er nickt begeistert – er dachte, ich spreche vom Projekt.",
       "qwen": "Der Chef fragt, ob ich für die E-Mail-Zeitfenster verfügbar bin. Ich sage, ich bräuchte mehr O2.",
       "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
+    },
+    {
+      "timestamp": "2026-11-19T15:45:58.863Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch das verlorene Formular war schon im nächsten Schalter.",
+      "qwen": "Ich habe meinen verlorenen Schlüssel im Fundbüro abgeholt. Der Mitarbeiter fragte nur: „Haben Sie das Formular 7b ausgefüllt?“",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
