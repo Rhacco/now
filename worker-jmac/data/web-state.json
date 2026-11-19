@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:56:07.969Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie das Ziel erreicht haben.“ Der Pendler: „Ich sitze im Bus.“",
-      "qwen": "Ich stieg aus dem Taxi, winkte dem Bus und rief das Auto. „Mann,“, seufzte der Fahrer, „du fährst ja jeden Weg zweimal.“",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-19T13:01:06.113Z",
       "gpt": "Im Zug zur Bergewanderung fragt die Frau: „Wie lange dauert die Tour?“ Der Begleiter: „Kurz, wir steigen gleich aus – das ist ein Freizeitpark.“",
       "qwen": "Auf dem Campingplatz fragte ich: „Haben Sie hier auch ein Bad?“ Der Vermieter zeigte auf den See: „Das ist das Bad.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das falsche Paket erhalten?“ – „Nein, das ist das richtige, ich wollte nur den Kundenservice testen.“",
       "qwen": "Der Zusteller fragt: „Ist jemand zu Hause?“\nIch: „Ja, ich bin’s.“\nEr: „Dann können Sie ja das Paket selbst einsammeln.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-19T17:01:12.831Z",
+      "gpt": "Ich packe meine Lieblingssocken ein, weil ich beim Umzug nicht ohne sie laufen kann – und merke, dass ich sie nie getragen habe.",
+      "qwen": "Die Kiste mit den „Wichtigsten Unterlagen“ war leer. Darin lag nur mein uralter, verstaubter Waffenschein.",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
