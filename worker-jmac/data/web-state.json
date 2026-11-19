@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:41:08.975Z",
-      "gpt": "Im Zug sitzt ein Mann und liest die Zeitung, während die Durchsage verkündet, dass das nächste Gleis wegen Bauarbeiten gesperrt ist.  \nEr schaut auf die Anzeigetafel, die plötzlich „Bitte halten Sie Abstand – 2 m“ blinkt.  \nEr legt das Buch weg, zieht die Nase zu und sagt: „Endlich mal ein Grund, nicht zu lesen.“  \nDie Durchsage folgt: „Bitte nicht die Nase zuziehen, sonst verpassen Sie den nächsten Halt.“",
-      "qwen": "Ich staune, wie der Mann neben mir in der U-Bahn total entspannt liest.\nErst jetzt merke ich, dass er den ganzen Weg über nur das Fenster ansah.\nGenau mein Gesicht.",
-      "archive": "In der Apotheke fragte die Mitarbeiterin, ob ich die Packungsbeilage schon gelesen hätte. „Noch nicht.“ Sie nickte: „Dann haben Sie heute Abend ja etwas vor.“"
-    },
-    {
       "timestamp": "2026-11-18T21:50:58.594Z",
       "gpt": "Mama: „Kinder, bitte nicht mehr so laut im Haus, ich muss arbeiten!“  \nLukas: „Aber Mama, wir sind im Familien‑Chat, da ist doch alles leise.“  \nOma: „Dann schreibe ich jetzt nur noch mit Emojis.“  \n*Alle: *😶 (das Gesicht, das keiner hört)",
       "qwen": "Oma postet im Familienchat: „Wir besuchen die Enkel, bitte nicht putzen.“\nIch schreibe zurück: „Alles klar, wir lassen den Staub einfach liegen.“\nOma antwortet: „Ich bringe trotzdem die großen Wischer mit.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für den Wochenmarkt?“ – Ich antworte: „Nur, wenn Sie mir das Gemüse aus dem Sonderangebot geben.“",
       "qwen": "Frau Müller fragt nach dem Preis der Erdbeeren. „Zehn Euro das Kilo“, antwortet der Mann. Sie starrt ihn an: „Und das sind keine Tomaten.“",
       "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
+    },
+    {
+      "timestamp": "2026-11-19T02:05:58.641Z",
+      "gpt": "Ich habe im Vorstellungsgespräch gesagt, ich lerne ständig dazu – und die Personalchefin fragte, ob ich schon den Kurs „Wie man absagt“ besucht habe.",
+      "qwen": "Nach meiner Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie Platz für mich?“\nDer Chef schaut stirnrunzelnd in seinen Kaffeebecher: „Ja, hier noch zwei Zentimeter Luft.“",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
