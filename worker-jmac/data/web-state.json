@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:11:04.322Z",
-      "gpt": "Ich habe meiner Nachbarin einen neuen Topfblumenstrauß geschenkt – sie zog sofort den Rasenmäher raus, weil sie dachte, ich habe ihr einen Rasen geklaut.",
-      "qwen": "Ich klopfte höflich an die Nachbarstür.\nDa öffnete sich ein Fenster im dritten Stock.",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-19T12:16:04.236Z",
       "gpt": "Ich tippe eifrig in der Wetter‑App, weil ich den Regen nicht verpassen will – mein Handy zeigt plötzlich „Offline: Regen kommt nicht“.",
       "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach der Steckdose. Dann merk ich, dass ich den Ladekabelklemmer schon seit zwei Wochen im Kofferraum vergessen habe.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten den Toaster mit dem Fernbedienung verwechselt – jetzt schaltet das Brot das TV ein.",
       "qwen": "Am Umzugstag packt die Frau die letzte Kiste. „Das ist alles, was wir noch haben“, sagt sie. „Kein Wunder“, antwortet der Mann, „du hast doch den Rest der Wohnung verkauft.“",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-19T16:20:59.012Z",
+      "gpt": "Im Zug nach Italien vergaß ich das Ticket – der Schaffner lächelte: „Kein Problem, das ist ja nur ein Kurztrip ins Nachbarland.“",
+      "qwen": "Ich wollte im Urlaub nur relaxen, nicht arbeiten.\nDeshalb habe ich meinen Laptop im Pool ertränkt.",
+      "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
     }
   ]
 }
