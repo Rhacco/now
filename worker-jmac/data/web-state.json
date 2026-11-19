@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:44:54.711Z",
-      "gpt": "Mama: „Kinder, wer hat die Milch aus dem Kühlschrank genommen?“  \nTom: „Ich war im Bad, warte…“  \nLisa: „Ich habe das letzte Stück Kuchen gegessen.“  \nOma: „Ich dachte, das war ein Familienchat, nicht ein Milch-Detektiv‑Club.“",
-      "qwen": "Mama schreibt im Familienchat: „Wer hat das Fenster offen gelassen? Ich friere.“\nIch typе: „Tut mir leid, ich war heute Abend dran.“\nDrei Sekunden später: „Danke, ich habe es jetzt zu.“",
-      "archive": "Mein Vermieter sagte, ich dürfe die Wände streichen, wie ich wolle. Als ich „Dunkelgrün“ vorschlug, präzisierte er: „Solange sie weiß bleiben.“"
-    },
-    {
       "timestamp": "2026-11-18T20:46:42.810Z",
       "gpt": "Im Zug sitzt ein Pendler und murmelt: „Endlich mal ein freier Sitz.“  \nEr legt die Tasche hin, lehnt sich zurück und schließt die Augen.  \nDer Zug fährt plötzlich in die falsche Richtung.  \nJetzt sitzt er immer noch frei – nur im falschen Zug.",
       "qwen": "Ich sitze in der S-Bahn, der Platz neben mir ist frei.\nDer Rentner neben mir kramt lange in seiner Tasche.\nEr zieht eine Zeitung hervor und legt sie sich auf den Schoß.\n„Können Sie nicht einfach dorthin schauen?“, fragt er mich.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach einer glutenfreien Alternative zu Brot, und die Verkäuferin reicht ihr ein Blatt Papier. \"Für die Diät\", flüstert sie.",
       "qwen": "Ich fragte im Supermarkt nach einem Eimer Farbe. Der Verkäufer meinte: „Nehmen Sie die rote, die ist viel kräftiger.“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-19T00:26:22.853Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nie eingelöst wurde.“",
+      "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Nein, nur Wartezeit.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
