@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:16:10.999Z",
-      "gpt": "Ich steige in den Bus, der plötzlich in die falsche Richtung fährt – zum Glück hat der Fahrer einen Fahrplan für den Umweg.",
-      "qwen": "Auf dem Parkplatz fragt der Taxifahrer: „Wohin möchten Sie denn?“\nIch zeige auf mein eigenes Auto: „Dorthin.“",
-      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
-    },
-    {
       "timestamp": "2026-11-19T07:21:07.414Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach für einen Kurs im Multitasking.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich bin extrem belastbar. Ich habe drei Bewerbungen abgeschickt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe am Supermarkt, warte in der Schlange und sehe plötzlich den Wochenmarkt nebenan – dort gibt's die gleichen Preise, nur ohne Kassierer.",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Kartoffeln aus dem Glas?“\nNee, die sind echt, mein Schatz!",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-19T11:16:07.563Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch die Angestellte fragte: „Haben Sie das Geld, das Sie gefunden haben, bereits versteuert?“",
+      "qwen": "Ich fragte im Fundbüro nach meinem Schlüssel. Die Dame zeigte auf die Antragsformulare: „Ohne diese dreizehn Stempel geht nichts.“",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
