@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T22:20:58.069Z",
-      "gpt": "Im Zug drängt sich ein Tourist an den Platz neben mir, schaut auf mein Handy und fragt: „Entschuldigung, wo ist denn hier das WLAN?“. Ich lächle, tippe kurz und antworte: „Hier vorne, im nächsten Wagen – dort gibt’s immer freie Plätze.“",
-      "qwen": "Ich fahre stundenlang in der U-Bahn, bis ich den richtigen Bahnhof erreiche.\nDraußen auf dem Bahnsteig steht ein Schild: „Bitte Stufen beachten.“\nEin anderer Fahrgast neben mir stöhnt genervt: „Endlich, mal wieder ein vollgepackter Zug.“\nIch schaue verwirrt auf mein Handy: „Aber wir sind doch gerade ausgestiegen.“",
-      "archive": "Mein Nachbar bot an, während meines Urlaubs die Blumen zu gießen. Als ich zurückkam, sahen sie besser aus als je zuvor. Jetzt weiß ich nicht, ob ich ihm danken oder mich entschuldigen soll."
-    },
-    {
       "timestamp": "2026-11-18T22:24:50.720Z",
       "gpt": "Ich räume meine Schublade aus, finde ein altes Foto vom letzten Sommer.  \n„Wow, das war ein schöner Tag“, sage ich und staube das Bild ab.  \nDann fällt mir ein, dass ich das Bild nie gemacht habe.  \nIch habe das Foto von meinem Handy‑Bildschirm ausgedruckt.",
       "qwen": "Hab den alten Kofferraum endlich ausgezogen.\nDa lag ein Zettel von 1985 mit dem Plan für den Weltfrieden.\nIch hab ihn gelächelt.\nDanach hab ich ihn entsorgt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe die PowerPoint fertig – sie besteht nur aus leeren Folien, damit wir endlich Luft zum Atmen haben.“",
       "qwen": "In der Besprechung fragte ich, ob wir das Projekt streichen. Der Chef nickte und schnitt mich mitten im Satz ab.",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-19T02:26:01.900Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich nenne ihr nur die Apotheke, weil ich dort schon das Rezept für Geduld bekommen habe.",
+      "qwen": "Ich sage dem Arzt: „Herr Doktor, ich werde in allen möglichen Tönen pfeifend erkannt.“\nEr antwortet: „Das ist doch wunderbar, Sie sind ein Multitalent.“",
+      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
     }
   ]
 }
