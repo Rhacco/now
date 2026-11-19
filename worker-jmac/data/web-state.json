@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:20:58.288Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige ihm meine leere Kreditkarte.",
-      "qwen": "Der Kurier drückt mir das Paket in die Hand und ruft: „Bitte unterschreiben Sie hier, dass alles in Ordnung ist.“\nIch gehe vor die Tür und werfe es ihm zurück.",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-19T04:26:06.194Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, sie zählt meine Schritte – und nach fünf Minuten zeigt sie: „Kaffee‑Pause, 0 km zurückgelegt.“",
       "qwen": "Ich sagte dem Handy: „Schau mal, wie spät es ist.“\nEs antwortete: „Das tust du selbst.“",
@@ -300,6 +294,12 @@
       "gpt": "Der neue Nachbar klopft, fragt nach einem Stromausfall‑Stecker und meint: „Ich wollte nur kurz die Beleuchtung testen.“ – Er zog den Stecker aus der Steckdose.",
       "qwen": "Ich klopfte laut an die Tür meines Nachbarn, um ihm mein neues Haus anzukündigen. Er öffnete und fragte: „Können Sie leiser sein, ich schlafe?“",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-19T08:25:57.489Z",
+      "gpt": "Im Zug fragt der Schaffner nach meinem Ticket, ich zeige ihm meine Fahrkarte für den Bus – er lächelt: „Dann haben Sie ja wenigstens ein Sitzplatz.“",
+      "qwen": "Ich warte auf den Bus, der Taxi und das Auto stehen längst. Der Bus kommt, aber der Fahrer ist zu spät.",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
