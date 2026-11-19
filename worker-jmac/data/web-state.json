@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:36:06.604Z",
-      "gpt": "Ich habe meiner Nachbarin geholfen, das neue Sofa zu tragen – jetzt liegt ihr Sofa auf meinem Balkon und ich staune, weil ich plötzlich über den Stadtpark blicke.",
-      "qwen": "Mein Nachbar hämmert um Mitternacht. Ich schreie: „Hören Sie auf, ich will schlafen!“ Er ruft: „Ich will nur, dass Sie die Zeit kennen.“",
-      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
-    },
-    {
       "timestamp": "2026-11-19T04:40:59.248Z",
       "gpt": "Ich rief die Nachbarn, weil mein Herd rauchte, und sie schickten mir ein Feuerzeug – zum Grillen, nicht zum Löschen.",
       "qwen": "Der Nachbar kläffe drei Uhr nachts seinen Hund an. Ich rufe zurück: „Dein Hund kläfft dich an!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort gibt’s schon die Tabletten.“",
       "qwen": "Ich sagte: „Ärztin, ich brauch unbedingt ein Rezept.\"\nSie starrte mich an: „Das ist hier keine Apotheke.\"",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-19T08:41:09.339Z",
+      "gpt": "Ich öffne die Wetter‑App, um mich auf Regen vorzubereiten – sie zeigt „Sonnig“, also ziehe ich den Regenschirm aus, weil ich nicht riskieren will, dass das Handy nass wird.",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nDann sterbe ich doch gleich.",
+      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
     }
   ]
 }
