@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:15:58.751Z",
-      "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Regal gefunden.“ Das Personal schüttelt den Kopf – das war das Drehbuch des Films.",
-      "qwen": "Im Museum bin ich stehen geblieben, im Kino saß ich fest, aber in der Bibliothek habe ich mich endlich ein bisschen umgesehen.",
-      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
-    },
-    {
       "timestamp": "2026-11-19T05:21:06.776Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm die PowerPoint‑Folien – die zeigen nur ein leeres Diagramm, weil mein Fortschritt noch in der Cloud ist.",
       "qwen": "Beim Brainstorming schlug ich vor, die Meetings zu streichen.\nDer Chef nicken zustimmend und schickte mich damit in ein neues.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug meine Bücher nach Größe – der Riese steht plötzlich neben dem Taschenbuch. Dann fällt mir ein: Ich habe die Regale vertauscht.",
       "qwen": "Wir haben stundenlang alte Kisten sortiert und die letzten Nieten verpackt. Dann hat der Umzugstransporter gekracht und gesagt: „Ich fahre nur bis zum Container, den Rest schmeißt ihr selbst rein.“",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-19T09:21:04.270Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nie eingelöst wurde.“",
+      "qwen": "Apotheker: „Probieren Sie mal diese neue Pille gegen die Schlaflosigkeit.“\nIch: „Dann kann ich ab morgen endlich wieder normal in die Arztpraxis gehen.“",
+      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
     }
   ]
 }
