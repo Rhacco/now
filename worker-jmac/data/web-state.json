@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:16:05.903Z",
-      "gpt": "Ich gehe in die Bibliothek, um einen Film zu recherchieren, und finde im Museum das Drehbuch – dort steht: „Bitte leise sein.“",
-      "qwen": "Ich fragte, wo das Museum sei. Der Bibliothekar winkte zum Kino: „Dort laufen die alten Meister.“",
-      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
-    },
-    {
       "timestamp": "2026-11-19T01:21:05.533Z",
       "gpt": "Im Zug fragt die Dame neben mir nach dem Weg zum Strand – ich zeige auf das Fenster, weil wir gerade im Meeresspiegel fahren.",
       "qwen": "Wir wollten uns am Strand entspannen. Die Möwen haben uns den Koffer geklaut und sind mit ihm geflogen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm die PowerPoint‑Folien – die zeigen nur ein leeres Diagramm, weil mein Fortschritt noch in der Cloud ist.",
       "qwen": "Beim Brainstorming schlug ich vor, die Meetings zu streichen.\nDer Chef nicken zustimmend und schickte mich damit in ein neues.",
       "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
+    },
+    {
+      "timestamp": "2026-11-19T05:26:02.680Z",
+      "gpt": "Im Zug zum Strand fragt die Mutter ihr Kind: „Warum hast du den Koffer nicht eingepackt?“ – „Ich wollte nur das WLAN mitnehmen.“",
+      "qwen": "Ich habe den Koffer gepackt, damit wir die schönsten Sonnenuntergänge am Strand erleben können. Dann hat die Schwiegermutter gefragt, wo wir wohnen wollen.",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
