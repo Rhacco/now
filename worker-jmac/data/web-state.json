@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:16:07.796Z",
-      "gpt": "Im Zug zum Strand fragt der Tourist: „Gibt es hier WLAN?“ Die Durchsage: „Bitte halten Sie sich an die Küstenlinie, nicht ans Netz.“",
-      "qwen": "Ich frag mein Auto: „Wie lange noch bis zum Strand?“ Es antwortet: „Du hast den Zündschlüssel nicht umgedreht.“",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-19T06:21:06.402Z",
       "gpt": "Im Museum fragt ein Besucher nach dem Film im Nebenraum, die Bibliothekarin flüstert: „Bitte leise, das ist ein Hörbuch.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand. „Dort drin sind wir schon.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung jetzt schon 3 % schneller läuft.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Weiterbildungen. „Diplom gegen Scheidung“, antwortete ich.",
       "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
+    },
+    {
+      "timestamp": "2026-11-19T10:16:11.301Z",
+      "gpt": "Ich habe meiner Nachbarin ein Schild mit „Bitte nicht stören – Arbeit“ in die Tür gehängt. Sie hat es umgedreht: „Bitte nicht arbeiten – Störung“.",
+      "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellen würde. „Nur bei Fremden“, sagte sie. „Dann bin ich doch endlich dort.“",
+      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
     }
   ]
 }
