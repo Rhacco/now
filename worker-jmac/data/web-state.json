@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:16:43.837Z",
-      "gpt": "Ich bestelle beim Bäcker ein frisches Brötchen und sage: „Bitte ohne Körner, ich habe eine Allergie.“  \nEr nickt, legt das Brötchen in die Tüte und fragt: „Möchten Sie dazu noch ein Stück Kuchen?“  \nIch überlege kurz und antworte: „Nur, wenn er keine Nüsse hat.“  \nEr lächelt und gibt mir ein Stück Brot.",
-      "qwen": "Ich stehe am Bäcker und sage: „Machen Sie das Brot bitte nicht so knusprig, ich habe empfindliche Zähne.“\nDer Bäcker nickt, packt es ein und sagt: „Alles klar, aber dann ist es halt auch nicht mehr so gut.“",
-      "archive": "Ich habe ein Kochbuch gekauft, auf dem „Einfach und schnell“ steht. Das erste Rezept beginnt mit „Am Vorabend ...“. Ich bin schon beim Lesen zu spät dran."
-    },
-    {
       "timestamp": "2026-11-18T21:21:00.166Z",
       "gpt": "Ich räume den Schrank aus und finde einen alten Liebesbrief meiner Ex.  \n„Wow, das ist ja echt romantisch!“, staune ich.  \nIch lege ihn behutsam zurück ins Fach „Schulden“.  \nJetzt schulde ich ihr endlich das Geld, das ich ihr damals versprochen habe.",
       "qwen": "Ich räume den Schrank aus und finde eine Kiste mit alten Briefen.\nDarin liegt ein Zettel mit einer Nummer, die ich sofort abtippt.\nIch hoffe, es ist die alte Freundin von damals.\nStatt dessen meldet sich mein Stromanbieter wegen der offenen Rechnung.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage in der Bibliothek nach dem neuesten Kinofilm, die Bibliothekarin reicht mir ein Buch – auf dem Cover steht: „Stummfilm“.",
       "qwen": "Im Kino bin ich eingeschlafen, im Museum habe ich genickt. Der Bibliothekar fragte mich nur: „Müssen wir das Buch zurückgeben?“",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-19T01:51:00.509Z",
+      "gpt": "Mama fragt: „Warum hast du das Frühstück vergraben?“ – Tim: „Ich wollte, dass die Cornflakes endlich mal ein bisschen Erde sehen.“",
+      "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ Ich antworte: „Weil die Katze rauswollte.“ Er seufzt: „Die Katze ist längst tot.“",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
