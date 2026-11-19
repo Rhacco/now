@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:51:07.928Z",
-      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ Ich antworte: „Nur beim Aufstehen – dann bin ich schon im Stretch‑Modus.“",
-      "qwen": "Ich habe meinen Yoga-Lehrer gefragt, wie man den Kopf leer bekommt. Er sagte, er sei schon leer – nur der Körper fehlt noch.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-19T12:56:07.969Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie das Ziel erreicht haben.“ Der Pendler: „Ich sitze im Bus.“",
       "qwen": "Ich stieg aus dem Taxi, winkte dem Bus und rief das Auto. „Mann,“, seufzte der Fahrer, „du fährst ja jeden Weg zweimal.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift „Ich bin jetzt schlank“. Das ist das einzige, was ich jetzt noch tragen kann.",
       "qwen": "Ich wollte die alte Matratze entsorgen, aber sie passte nicht ins Auto. Meine Frau lachte und sagte: „Kauf dir einfach ein größeres Auto.“",
       "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
+    },
+    {
+      "timestamp": "2026-11-19T16:56:05.968Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das falsche Paket erhalten?“ – „Nein, das ist das richtige, ich wollte nur den Kundenservice testen.“",
+      "qwen": "Der Zusteller fragt: „Ist jemand zu Hause?“\nIch: „Ja, ich bin’s.“\nEr: „Dann können Sie ja das Paket selbst einsammeln.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
