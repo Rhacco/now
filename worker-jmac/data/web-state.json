@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:01:11.016Z",
-      "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie dachte, ich wäre stark.  \nSie dankte mir mit einem Kuchen und sagte: „Jetzt hast du endlich mal ein Stück vom Haus.“",
-      "qwen": "Der Nachbar klopft an und fragt eindringlich: „Haben Sie gerade gebohrt?“\nIch sage: „Nein, ich rufe gerade meine Katze.“\nEr seufzt erleichtert: „Dankeschön, ich dachte, Sie renovieren schon wieder.“",
-      "archive": "Unsere Nachbarin bat mich, während ihres Urlaubs ein Auge auf die Wohnung zu haben. Nach dem ersten Foto vom tropfenden Wasserhahn schrieb sie: „Danke, ein bisschen weniger genau wär auch okay.“"
-    },
-    {
       "timestamp": "2026-11-19T00:05:58.877Z",
       "gpt": "Ich mach Yoga, um den Stress abzubauen.  \nNach der ersten Pose ruft mein Sohn: „Mama, das ist ja wie ein Knoten!“  \nIch lächle und sage: „Genau, das ist die neue Entspannungs‑Übung.“  \nEr schaut verwirrt: „Dann warum gibt’s keine Medaille?“",
       "qwen": "Im Kurs „Entspannung durch Yoga“ fragt die Trainerin: „Wer hat zu Hause schon mal Mediation probiert?“\nMein Nachbar hebt die Hand und seufzt: „Ja, das Kissen auf dem Sofa.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo ist der Bahnhof?“ – Der Schaffner lächelt: „Sie sitzen gerade im Zug.“",
       "qwen": "Im Urlaub fragte die Frau: „Warum starrst du so aufs Meer?“\n„Ich warte, bis das Boot kommt, das ich heute Morgen gekauft habe.“",
       "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
+    },
+    {
+      "timestamp": "2026-11-19T04:01:07.948Z",
+      "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der nicht piept, und der Verkäufer reicht mir einen Kopfhörer. „Damit hörst du das Piepen nicht mehr.“",
+      "qwen": "In der Filiale fragt der Kunde: „Haben Sie diesen Rasenroboter auch in Schwarz?“ Der Verkäufer seufzt und antwortet: „Nein, aber er ist definitiv nicht sauber.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
