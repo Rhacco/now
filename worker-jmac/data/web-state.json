@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:55:59.699Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich: „Im nächsten Weiterbildungsseminar – endlich lerne ich, pünktlich zu kommen.“",
-      "qwen": "Ich habe im Vorstellungsgespräch ehrlich zugegeben, dass ich nichts weiß. Der Chef lachte und bot mir sofort einen Kurs-Platz an.",
-      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
-    },
-    {
       "timestamp": "2026-11-19T12:01:05.588Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange brauchen Sie noch?“ Ich: „Bis zur Apotheke, dort gibt’s endlich was zu verschreiben.“",
       "qwen": "Der Arzt sagt: „Trinken Sie viel Wasser.“\nIn der Apotheke fragt der Apotheker: „Wasser? Haben Sie das auf Rezept?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie oft trainieren Sie pro Woche?“ – Ich antworte: „Nur, wenn der Fernseher nicht läuft.“",
       "qwen": "Im Yoga streck ich den Arm zum Himmel. Die Nachbarin ruft: „Und dann? Kletterst du runter?“",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-19T16:05:58.671Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Dokument bereits fertig – auf dem Kaffeetisch, weil es dort am besten „aufgebrüht“ wird.“",
+      "qwen": "Der Chef fragt nach dem Projektstatus. „Es läuft gut, nur die Deadline ist noch nicht da.“",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
