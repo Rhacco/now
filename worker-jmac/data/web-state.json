@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:21:10.427Z",
-      "gpt": "Im Zug fragt die Frau nach dem besten Ausflugsziel – der Schaffner lächelt und zeigt auf das Fenster: „Hier fahren wir gleich nach Hause.“",
-      "qwen": "Ich sagte: „Wir brauchen mehr Zeit für uns.“\nMeine Frau: „Genau, deshalb bin ich jetzt allein verreist.“",
-      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
-    },
-    {
       "timestamp": "2026-11-19T13:26:06.298Z",
       "gpt": "Im Bus drängte ich mich zum Fenster, weil ich frische Luft wollte – dann kam der Fahrer und öffnete die Tür zum Bahnhof.",
       "qwen": "Ich fragte den Taxifahrer: „Zum Bahnhof, bitte.“ Er antwortete: „Dafür brauchen Sie keine Taxizentrale, sondern ein Ticket.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie ein Taxi benötigen.“ Ich steige aus, weil ich keinen Fahrplan mehr lese.",
       "qwen": "„Nächster Halt: Bahnhofsvorplatz“, rief der Busfahrer. Ich sprang aussteigend aus dem Auto.",
       "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
+    },
+    {
+      "timestamp": "2026-11-19T17:26:01.107Z",
+      "gpt": "Ich öffne die Wetter‑App, um mich für den Spaziergang anzuziehen – sie zeigt „Sonnig“, aber draußen regnet es, weil ich den Regenschirm vergessen habe.",
+      "qwen": "Mein Handy zeigt munter an, dass ich in drei Minuten zu Hause bin.\nDie Tür bleibt leider doch noch zuge.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
