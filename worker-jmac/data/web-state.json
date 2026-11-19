@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:26:01.107Z",
-      "gpt": "Ich öffne die Wetter‑App, um mich für den Spaziergang anzuziehen – sie zeigt „Sonnig“, aber draußen regnet es, weil ich den Regenschirm vergessen habe.",
-      "qwen": "Mein Handy zeigt munter an, dass ich in drei Minuten zu Hause bin.\nDie Tür bleibt leider doch noch zuge.",
-      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
-    },
-    {
       "timestamp": "2026-11-19T17:31:00.932Z",
       "gpt": "Ich bestelle online ein neues Sofa, der Lieferant klingelt, ich öffne die Tür – ein Paket mit einer Anleitung zum Zusammenbauen. Kundenservice: „Viel Spaß!“",
       "qwen": "Die Mitarbeiterin lächelt: „Ist das Paket angekommen?“ Ich nickte und fragte: „Ja, aber wo ist der Inhalt?",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe beim Nachbarn an, um den lauten Fernseher zu melden – er öffnet die Tür, wirft die Fernbedienung zurück und sagt: „Ich dachte, du willst leihen.“",
       "qwen": "Der obere Nachbar tippt nervös an der Zimmerdecke. Ich stehle mich an die Küche und scrolle lautstark durch meine Social-Media-Feeds.",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-19T21:36:05.604Z",
+      "gpt": "Ich wollte beim Wochenmarkt frische Äpfel, aber der Stand war leer – im Supermarkt hatte die Kasse ein Sonderangebot: „2 für 1, wenn du das Geld selbst wiegst.“",
+      "qwen": "Der Wochenmarkt hat mehr Auswahl als der Supermarkt, aber die gleiche Kasse.",
+      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
     }
   ]
 }
