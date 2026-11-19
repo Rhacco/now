@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:16:02.740Z",
-      "gpt": "Ich sortiere beim Umzug meine Bücher nach Größe – der Riese steht plötzlich neben dem Taschenbuch. Dann fällt mir ein: Ich habe die Regale vertauscht.",
-      "qwen": "Wir haben stundenlang alte Kisten sortiert und die letzten Nieten verpackt. Dann hat der Umzugstransporter gekracht und gesagt: „Ich fahre nur bis zum Container, den Rest schmeißt ihr selbst rein.“",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-19T09:21:04.270Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Apotheker: „Probieren Sie mal diese neue Pille gegen die Schlaflosigkeit.“\nIch: „Dann kann ich ab morgen endlich wieder normal in die Arztpraxis gehen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier. „Für die Diät“, sagt sie.",
       "qwen": "Der Verkäufer: „Das ist die robusteste Kabeltrommel, die wir haben.“ Ich: „Great, denn die alte hat schon drei Fahrräder überlebt.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-19T13:21:10.427Z",
+      "gpt": "Im Zug fragt die Frau nach dem besten Ausflugsziel – der Schaffner lächelt und zeigt auf das Fenster: „Hier fahren wir gleich nach Hause.“",
+      "qwen": "Ich sagte: „Wir brauchen mehr Zeit für uns.“\nMeine Frau: „Genau, deshalb bin ich jetzt allein verreist.“",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
