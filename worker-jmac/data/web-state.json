@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:30:57.759Z",
-      "gpt": "Ich stehe am Supermarkt und frage nach Bio‑Bananen, die Verkäuferin lächelt und reicht mir einen Katalog – am Wochenmarkt kaufe ich gleich die echten.",
-      "qwen": "„Hier ist alles frisch vom Bauern“, sagt der Verkäufer. „Ja schau, die Tomaten sind so weich, man kann sie durch die Verpackung drücken.“",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-19T03:35:58.147Z",
       "gpt": "Ich gehe ins Vorstellungsgespräch, frage nach Weiterbildungen und bekomme den Hinweis: „Bitte schicken Sie uns Ihren Lebenslauf per Post, wir haben keinen Drucker.“",
       "qwen": "Ich habe zur Weiterbildung „Angst überwinden“ angemeldet. Endlich bin ich bereit, mich zu bewerben.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Glühbirne, und der Verkäufer empfiehlt mir eine Kerze – \"die spart Strom, weil sie nie leuchtet\".",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich: „Ja, rufen Sie bitte die Polizei.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-19T07:41:00.083Z",
+      "gpt": "Im Museum fragt der Bibliothekar: „Darf ich hier leise lesen?“ – Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
+      "qwen": "Im Museum sah ich das Original, im Kino den Film, in der Bibliothek fragte ich: „Wo ist der Rest?\"",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
