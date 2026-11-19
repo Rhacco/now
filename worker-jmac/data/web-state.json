@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:06:12.457Z",
-      "gpt": "Ich sortiere beim Umzug aus und finde meine alte Diät‑App. Sie fragt: „Möchtest du sie jetzt endlich deinstallieren?“",
-      "qwen": "Ich suchte im Keller nach der alten Kaffeemaschine. Da sah ich sie auf dem Boden liegen: Die Kaffeemaschine.",
-      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
-    },
-    {
       "timestamp": "2026-11-19T13:11:08.271Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Problem gelöst?“ – Die Praktikantin meldet sich: „Ich habe das Problem gelöst, indem ich das Meeting abgesagt habe.“",
       "qwen": "Ich frage im Meeting, ob wir effizienter sein können. Der Chef antwortet: „Ja, indem wir die Besprechung beenden.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Weiterbildungs‑Webinar – und Sie?“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich antwortete: „Ich kann mich sehr gut weiterbilden.“",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-19T17:11:01.411Z",
+      "gpt": "Beim Auspacken des Umzugskartons findet er sein altes Handy – und fragt sich, warum er das neue Modell gekauft hat, das er noch nie eingeschaltet hat.",
+      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Macht sie noch?“",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
