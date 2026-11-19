@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:30:58.677Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket selbst zurückschicken soll. Ich antworte: „Nur, wenn Sie es nicht öffnen.“",
-      "qwen": "Die Spedition meldet das Paket als verloren. Als ich nachfrage, antwortet der Bot: „Es ist gerade in Transit.“",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-19T16:36:09.365Z",
       "gpt": "Ich stehe am Supermarktregal, greife nach Bio‑Müsli, doch die Packung riecht nach frischen Äpfeln – ich bin im Wochenmarkt gelandet.",
       "qwen": "Der Wochenmarkt ist voll, der Supermarkt leer.\nIch habe mich vertan: Meine Brille liegt im Einkaufswagen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Der Arzt fragte: „Haben Sie Fieber?“\nIch: „Nein, lieber Herr Doktor, ich bin nur unterkühlt.“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-19T20:35:58.682Z",
+      "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – sie zeigt „Sonnig“. Kurz darauf stolpert mein Handy über den nassen Boden.",
+      "qwen": "Ich fragte Siri nach dem Wetter.\nSie antwortete nur: „Ich bin verwirrt, ich bin Siri.“",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
