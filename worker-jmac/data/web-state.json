@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:26:06.194Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, sie zählt meine Schritte – und nach fünf Minuten zeigt sie: „Kaffee‑Pause, 0 km zurückgelegt.“",
-      "qwen": "Ich sagte dem Handy: „Schau mal, wie spät es ist.“\nEs antwortete: „Das tust du selbst.“",
-      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
-    },
-    {
       "timestamp": "2026-11-19T04:31:10.488Z",
       "gpt": "Mama ruft: „Wer hat meine Brille genommen?“ Papa antwortet: „Ich! Ich wollte nur sehen, ob du noch gut aussiehst.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sah mich fassungslos an und fragte: „Du zahlst die Miete?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Schaffner nach meinem Ticket, ich zeige ihm meine Fahrkarte für den Bus – er lächelt: „Dann haben Sie ja wenigstens ein Sitzplatz.“",
       "qwen": "Ich warte auf den Bus, der Taxi und das Auto stehen längst. Der Bus kommt, aber der Fahrer ist zu spät.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-19T08:30:58.949Z",
+      "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch an der Kasse fragt die Kassiererin: „Möchten Sie die Tomaten auch digitalisieren?“ – Ich sag: „Nein, nur essen.“",
+      "qwen": "Im Supermarkt schimpft er über den Preis. Auf dem Wochenmarkt fragt er: „Haben Sie das auch im Angebot?“",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
