@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:01:08.361Z",
-      "gpt": "Mama fragt: „Warum hast du das ganze Gemüse in die Waschmaschine gesteckt?“  \nWeil ich die Karotten nicht mehr in den Müll, sondern in die Wäsche geben wollte.",
-      "qwen": "Ich frag die Oma, wozu sie die Fassade streicht. Sie sagt: Damit die Risse nicht zu groß werden.",
-      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
-    },
-    {
       "timestamp": "2026-11-19T06:05:59.088Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Da hinten, wo das Meer endet.“",
       "qwen": "Ich habe am Strand eine Taube gesehen. Sie hat mich angetrollt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Dame nach dem Weg zum Strand. Der Schaffner lächelt: „Geben Sie einfach dem Zug eine Pause, dann kommen wir ans Ziel.“",
       "qwen": "Ich packe die Koffer für die Wüste.\nMeine Frau fragt: „Brauchst du Wasser?“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-19T10:06:05.638Z",
+      "gpt": "Im Zug zum Strand fragt der Tourist: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Im Meer, da gibt’s keine Sitzplätze.“",
+      "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnencreme ins Gesicht geblasen.",
+      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
     }
   ]
 }
