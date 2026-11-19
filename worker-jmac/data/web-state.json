@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:15:58.907Z",
-      "gpt": "Nach dem Yoga‑Kurs fragt der Trainer: „Wie war die Entspannung?“ – Ich: „Super, ich habe endlich meine Kniebeuge im Schlaf gefunden.“",
-      "qwen": "Ich habe in der Hängematte Yoga gemacht. Das war sehr entspannend, bis die Matze rutschte.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-19T08:21:04.862Z",
       "gpt": "Der neue Nachbar klopft, fragt nach einem Stromausfall‑Stecker und meint: „Ich wollte nur kurz die Beleuchtung testen.“ – Er zog den Stecker aus der Steckdose.",
       "qwen": "Ich klopfte laut an die Tür meines Nachbarn, um ihm mein neues Haus anzukündigen. Er öffnete und fragte: „Können Sie leiser sein, ich schlafe?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich tippe eifrig in der Wetter‑App, weil ich den Regen nicht verpassen will – mein Handy zeigt plötzlich „Offline: Regen kommt nicht“.",
       "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach der Steckdose. Dann merk ich, dass ich den Ladekabelklemmer schon seit zwei Wochen im Kofferraum vergessen habe.",
       "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
+    },
+    {
+      "timestamp": "2026-11-19T12:21:06.975Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich, aber ich dachte, wir reden heute per Zoom.“",
+      "qwen": "Der Chef fragt: „Haben Sie die Dringlichkeit der Lage verstanden?“\nIch nicke und sage: „Ja, deshalb schlafe ich.“",
+      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
     }
   ]
 }
