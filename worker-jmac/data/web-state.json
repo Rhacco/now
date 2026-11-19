@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:41:07.328Z",
-      "gpt": "Im Yogakurs fragt die Lehrerin: „Wie fühlt sich die Entspannung an?“ – Der Anfänger antwortet: „Wie ein Marathon, nur ohne Ziel.“",
-      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt genug, um zu merken, wie kaputt ich wirklich bin.",
-      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
-    },
-    {
       "timestamp": "2026-11-19T09:46:06.574Z",
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um ans Meer zu kommen?“ Der Schaffner: „Am nächsten Bahnhof – er heißt ‘Küste’.“",
       "qwen": "Ich wollte im Urlaub total entspannen und lesen. Die Fliege auf meinem Buch hat das verhindert.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, aber ich habe das verlorene Formular gefunden.“",
       "qwen": "Ich holte meinen verlorenen Schlüssel im Fundbüro ab. Der Beamte verlangte den Fundbeleg, den ich gerade verloren hatte.",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-19T13:45:59.491Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Zeugen, der den verlorenen Stift bezeugt.",
+      "qwen": "Fundbüro: „Ihr Formular ist unvollständig.“ Ich: „Aber ich habe doch alles ausgefüllt!“",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
