@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:31:00.932Z",
-      "gpt": "Ich bestelle online ein neues Sofa, der Lieferant klingelt, ich öffne die Tür – ein Paket mit einer Anleitung zum Zusammenbauen. Kundenservice: „Viel Spaß!“",
-      "qwen": "Die Mitarbeiterin lächelt: „Ist das Paket angekommen?“ Ich nickte und fragte: „Ja, aber wo ist der Inhalt?",
-      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
-    },
-    {
       "timestamp": "2026-11-19T17:35:59.897Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einem Lautsprecher, der auch als Wecker dient – der Verkäufer gibt mir ein Telefon, weil er „aufwachen“ kann.",
       "qwen": "Die Putzfrau fragt: „Dürfen wir hier auch Musik hören?“\nDer Chef nickt, denn sie wäscht nichts, nur die Fenster.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Wochenmarkt frische Äpfel, aber der Stand war leer – im Supermarkt hatte die Kasse ein Sonderangebot: „2 für 1, wenn du das Geld selbst wiegst.“",
       "qwen": "Der Wochenmarkt hat mehr Auswahl als der Supermarkt, aber die gleiche Kasse.",
       "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
+    },
+    {
+      "timestamp": "2026-11-19T21:41:10.794Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den verlorenen Ausweis ausgefüllt?“ Ich: „Nein, ich warte nur auf den Schein, den ich nie finde.“",
+      "qwen": "Ich gab den Fundbericht ab, doch der Beamte stellte die Frage: „In welcher Stadt haben Sie den Hund verloren?“",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
