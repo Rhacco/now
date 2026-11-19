@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:50:59.753Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy zeigt plötzlich „Sonnenschein“, weil es im Akku‑Sparmodus ist.",
-      "qwen": "Mein Handy zeigt 15 Prozent Akku an. Ich suche frustriert nach dem Ladekabel, während es vor meinen Augen auf 14 Prozent fällt.",
-      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
-    },
-    {
       "timestamp": "2026-11-19T04:56:05.418Z",
       "gpt": "Im Zug verpasst er den Anschluss, steigt ins Taxi, das Stau hat – und merkt, er hätte einfach zu Fuß gehen können.",
       "qwen": "Ich bat den Taxifahrer, schneller zu fahren. Er lachte: „Ich bin Arzt, ich kann nicht bremsen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, ich habe nur das verlorene Handy gefunden.“",
       "qwen": "Ich habe den verlorenen Ausweis im Fundbüro abgegeben. Der Beamte verlangte für die Rückgabe mein Dienstausweis.",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-19T08:56:05.147Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kinobesitzer antwortet: „Nur, wenn du Popcorn mitbringst.“",
+      "qwen": "In der Bibliothek fragte ich nach dem Krimi, doch der Bibliothekar zeigte nur auf das Kino. „Dort ist der Mörder noch lebendig“, erklärte er trocken.",
+      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
     }
   ]
 }
