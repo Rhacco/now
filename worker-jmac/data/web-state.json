@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:46:26.020Z",
-      "gpt": "Mutter fragt: „Warum hast du das ganze Salz in die Suppe geschüttet?“ Vater: „Ich wollte endlich mal die Stimmung würzen.“",
-      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, bis du den Müll rausbringst.“",
-      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
-    },
-    {
       "timestamp": "2026-11-19T07:51:09.819Z",
       "gpt": "In der Bibliothek fragt mich ein Besucher: „Welcher Film läuft heute?“ – Ich zeige auf das Sachbuchregal: „Hier gibt’s nur Dokumentarfilm.“",
       "qwen": "Im Museum zeig ich den Dackel an, im Kino kauf ich Popcorn für ihn. In der Bibliothek fragt die Dame nach der Ausweisnummer: „Dackel, sitzt auf der Nase.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Strandpromenade fragt die Frau: „Wird das Wasser heute warm?“ Der Schaffner lächelt: „Nur, wenn Sie das Ticket für die Sauna gelöst haben.“",
       "qwen": "Sagte ich: „Schön, dass du da bist.“\nEr: „Hab ich gesagt?“",
       "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
+    },
+    {
+      "timestamp": "2026-11-19T11:51:03.149Z",
+      "gpt": "Ich klopfe an den Nachbarn, weil der Fernseher zu laut ist – er öffnet die Tür, wir sehen nur das leere Wohnzimmer. \"Ich dachte, du bist hier.\"",
+      "qwen": "Der Nachbar klopft an und fragt, ob ich noch wach bin. Ich sage: „Ja, weil Sie klopfen.“",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
