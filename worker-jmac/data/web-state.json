@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:11:06.455Z",
-      "gpt": "Im Zug frage ich nach dem nächsten Halt, im Bus nach dem nächsten Stopp, im Taxi nach dem Weg – im Auto frage ich mich, warum ich überhaupt noch fahr.",
-      "qwen": "Ich wechselte vom Taxi in den Bus, weil dort die Klimaanlage funktioniert.",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-19T00:15:57.900Z",
       "gpt": "In der Bibliothek flüsterte ich: „Popcorn!“ – plötzlich kam das Kino um die Ecke und sagte: „Leise, das Museum schaut zu!“",
       "qwen": "Kurz vor der Kinokasse fragt der alte Mann nach: „Entschuldigung, sind wir hier schon im Museum?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen – ich greife zum Notizblock, schreibe „Kaffee nachschlagen“ und merke, dass das die einzige produktive Idee ist.",
       "qwen": "Ich fragte den Chef, ob wir die Besprechung kürzen können. Er nickte und sagte: „Nein, wir brauchen die volle Stunde für den Abschied.\"",
       "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
+    },
+    {
+      "timestamp": "2026-11-19T04:15:58.543Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie die Apotheke – ich warte schon seit Stunden auf das Rezept.“",
+      "qwen": "Ich fragte den Arzt: „Soll ich zum Apotheker?“ Er nickte.",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
