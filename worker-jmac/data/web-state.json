@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:30:59.466Z",
-      "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Belegschaft verlangte meine Unterschrift erst, wenn ich das verlorene Formular gefunden habe.",
-      "qwen": "Ich gab den Fundscheck aus, da die Signatur nicht zu meiner Identität passte.",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-19T11:35:58.667Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Steak medium oder durch?“ Ich antworte: „Durch, ich will, dass es endlich fertig ist.“",
       "qwen": "Im Café fragte ich: „Haben Sie das hier selbst gebacken?“\nDie Kellnerin lachte und sagte: „Nein, das ist der Tisch.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Gemüse in Tüten?“ Auf dem Wochenmarkt antwortet der Kunde: „Nur, wenn's ein Tütenseller ist.“",
       "qwen": "Im Supermarkt fragen sie nach dem Preis.\nBeim Wochenmarkt fragt der Preis nach dir.",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-19T15:41:04.249Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wenigstens wach bleiben.“ Er nickt begeistert – er dachte, ich spreche vom Projekt.",
+      "qwen": "Der Chef fragt, ob ich für die E-Mail-Zeitfenster verfügbar bin. Ich sage, ich bräuchte mehr O2.",
+      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
     }
   ]
 }
