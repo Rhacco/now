@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T04:01:07.948Z",
-      "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der nicht piept, und der Verkäufer reicht mir einen Kopfhörer. „Damit hörst du das Piepen nicht mehr.“",
-      "qwen": "In der Filiale fragt der Kunde: „Haben Sie diesen Rasenroboter auch in Schwarz?“ Der Verkäufer seufzt und antwortet: „Nein, aber er ist definitiv nicht sauber.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-19T04:06:05.026Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Mann antwortet: „Wie ein Rezept, das ich in der Apotheke noch nie abgeholt habe.“",
       "qwen": "„Ich habe Ihnen ein Rezept ausgestellt“, sagt der Arzt.\nDie Apothekerin blinzelt: „Das ist aber mein Zahnarztkartei.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe am Supermarkt, warte auf die Kasse und frage nach dem Preis – die Kassiererin meint, das sei ein Wochenmarkt.",
       "qwen": "Beim Supermarkt finde ich keine Erdbeeren.\nAuf dem Wochenmarkt fallen mir sofort die auf.",
       "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
+    },
+    {
+      "timestamp": "2026-11-19T08:05:58.054Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Der Kunde lächelt: „Nur, wenn Sie mir den Wochenmarkt vorbeibringen.“",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Haben Sie Kundenkarte?“\nIch nicke, sie scannt sie, und ich denke: „Endlich, hier versteht man sich.“",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
