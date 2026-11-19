@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:11:07.230Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf – die Durchsage kam: „Bitte halten Sie die Hände vom Fahrplan.“",
-      "qwen": "Ich setzte im Taxi ab, doch der Fahrer fuhr einfach weiter. Er meinte nur: „Das Auto ist ein Leihwagen, ich bin noch nicht fertig.“",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-19T14:15:59.860Z",
       "gpt": "Ich rufe beim Kundenservice an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter sagt: „Wir schicken es gleich noch einmal – diesmal per Brieftaube.“",
       "qwen": "Der Kurier fragt: „Sind Sie der Empfänger?“ Ich nicke. Er sagt: „Dann unterschreiben Sie hier, dass ich nichts geliefert habe.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, weil er leise Musik hören will – ich schenke ihm Kopfhörer, weil er immer wieder laut schallt.",
       "qwen": "Ich habe die Wand dicker verputzt, damit die Nachbarn mich nicht mehr hören, und der Nachbar hat daraufhin seine Lautsprecher draußen aufgestellt.",
       "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
+    },
+    {
+      "timestamp": "2026-11-19T18:16:12.715Z",
+      "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Ich: „Ich nicht, ich habe nur die leere Schachtel gegessen.“",
+      "qwen": "Die Frage, wer das Fenster schließt, bleibt unbeantwortet. Draußen regnet es seit drei Stunden.",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
