@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:30:58.949Z",
-      "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch an der Kasse fragt die Kassiererin: „Möchten Sie die Tomaten auch digitalisieren?“ – Ich sag: „Nein, nur essen.“",
-      "qwen": "Im Supermarkt schimpft er über den Preis. Auf dem Wochenmarkt fragt er: „Haben Sie das auch im Angebot?“",
-      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
-    },
-    {
       "timestamp": "2026-11-19T08:35:59.513Z",
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort gibt’s schon die Tabletten.“",
       "qwen": "Ich sagte: „Ärztin, ich brauch unbedingt ein Rezept.\"\nSie starrte mich an: „Das ist hier keine Apotheke.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Haben wir noch Sitzplätze?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer mitnehmen.“",
       "qwen": "Ich rufe die Zahl des Strandbuffets an.\n„Hier spricht die Rezeption, bitte wählen Sie eine andere Nummer.“",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-19T12:36:06.980Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Webinar, das Sie gerade ankündigen.“",
+      "qwen": "Der Chef fragt: „Was bringt Ihre Weiterbildung?“\nIch antworte: „Nichts, Sie können mich jetzt feuern.“",
+      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
     }
   ]
 }
