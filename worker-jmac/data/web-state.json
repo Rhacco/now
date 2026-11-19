@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:30:59.473Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Besucher nickt und sagt: „Nur, wenn du Popcorn leihst.“",
-      "qwen": "Ich wollte in die Bibliothek, sah aber ein Kino und ging ins Museum.",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-19T01:36:04.490Z",
       "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also greife ich nach meinem Regenschirm – nur um zu merken, dass ich im Keller stehe.",
       "qwen": "Ich suchte die App „Stille“ und fand nur „Lautsprecher“.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es hat noch 99 % Akku. Jetzt überlege ich, ob ich den Stromzähler ausbuchen soll.",
       "qwen": "Wir haben die alte Küche aussortiert und alles in den Keller geräumt. Jetzt wohnen wir dort und die Küche kocht auf dem Dachboden.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-19T05:40:58.876Z",
+      "gpt": "Ich frage im Elektrofachgeschäft nach einer leisen Waschmaschine, der Verkäufer reicht mir Kopfhörer – damit ich die Lautstärke selbst bestimme.",
+      "qwen": "Ich fragte den Verkäufer nach dem Wi-Fi-Passwort.\nEr nickte und reichte mir die Ware.",
+      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
     }
   ]
 }
