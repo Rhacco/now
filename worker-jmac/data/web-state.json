@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:53:32.919Z",
-      "gpt": "Ich stehe im Treppenhaus, warte auf den Aufzug und sehe den Nachbarn mit seiner neuen, quietschenden Einkaufstasche.  \nEr lächelt, wir fangen an zu plaudern, und ich frage neugierig: „Wie viel wiegt die eigentlich?“  \nEr schaut mich ernst an, drückt die Tasche zusammen und sagt: „Genug, dass ich das Haus nicht mehr runtertragen kann.“  \nIch lache und antworte: „Dann lass uns doch einfach den Aufzug reparieren.“",
-      "qwen": "Ich stehe im Treppenhaus und warte, bis der Nachbar seine Schuhe anzieht.\nEr schaut mich an und sagt: „Entschuldigung, ich bin noch nicht fertig.“\nIch sage: „Doch, Sie sind fertig. Wir warten nur noch auf Ihre Ausrede.“",
-      "archive": "Im Fundbüro fragte man, woran ich meinen schwarzen Regenschirm erkennen würde. Ich sagte: „Daran, dass ich ihn wiedererkenne.“ Wir waren beide nicht besonders überzeugt."
-    },
-    {
       "timestamp": "2026-11-18T20:54:55.560Z",
       "gpt": "Ich stehe beim Bäcker und frage: „Ein Brot, bitte, und ein Stück Kuchen dazu.“  \nDer Bäcker nickt, schneidet das Brot zu und legt den Kuchen daneben.  \n„Wie viel kostet das alles?“ frage ich.  \nEr lächelt: „Nur 5 € – das Brot ist heute im Sonderangebot, weil es schon 2 Tage alt ist.“",
       "qwen": "Ich stehe beim Bäcker und sage: „Geben Sie mir bitte ein kleines Stück vom Blechkuchen.“\nDie Verkäuferin guckt mich an und fragt: „Das haben wir nicht, nur ganze Bleche.“\nIch frustriert: „Aber Sie haben doch vorhin noch die Stückchen verkauft!“\nSie seufzt: „Ja, aber die waren für die Ehefrauen bestimmt, und ich sehe Ihnen an, dass Sie verheiratet sind.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Patientin nach der Wartezeit – die Apothekerin meint: „Nur noch ein Rezept, dann geht’s endlich weiter.“",
       "qwen": "Ich sage dem Arzt, ich habe keine Schmerzen. Er verschreibt mir Tropfen für die Augen.",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-19T00:51:09.031Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
+      "qwen": "Die Verkäuferin fragt: „Möchten Sie dazu noch eine Beratung?“\nIch sage: „Nein, ich will nur stehlen.“",
+      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
     }
   ]
 }
