@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:35:58.587Z",
-      "gpt": "Beim Auspacken findet er die alte Mikrowelle im Karton: „Endlich ein Gerät, das meine Beziehung zu Essen genauso schnell beendet wie mein Ex.“",
-      "qwen": "Ich warf die uralte Fernbedienung weg. Jetzt habe ich sie bitter nötig.",
-      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
-    },
-    {
       "timestamp": "2026-11-19T02:40:56.917Z",
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort warten die Rezepte.“",
       "qwen": "Der Arzt sagt: „Ruhe bewahren, Sie haben nur eine Erkältung.“\nIch: „Dann warum hat die Apotheke schon mein Testament vorbereitet?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sitze im Wartezimmer, die Ärztin ruft: „Sie sind dran, bitte folgen Sie dem Schild zur Apotheke.“ Ich dachte, das ist mein Rezept.",
       "qwen": "„Haben Sie Angst vor der Nadel?“\n„Nein, ich bin nur Allergiker.“",
       "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
+    },
+    {
+      "timestamp": "2026-11-19T06:46:04.016Z",
+      "gpt": "Mama fragt: „Warum hast du den Staubsauger im Bad stehen lassen?“ Ich: „Er wollte endlich mal ein Bad nehmen.“",
+      "qwen": "Mama, warum hat Oma keine Zähne? Weil sie sich alles bei uns geliehen hat.",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
