@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:29:39.959Z",
-      "gpt": "Ich will beim Kochen das Rezept per App aufrufen, tippe den Namen ein –  \ndie App fragt, ob ich das Rezept per Sprachsteuerung starten will.  \nIch sage: „Ja, bitte!“ und das Handy sagt: „Entschuldigung, ich verstehe nur ‘Siri’.“",
-      "qwen": "Ich wollte nur schnell die Uhrzeit checken.\nDann hat mein Handy gefragt, ob ich ein Konzert buchen möchte.\nIch sagte: „Nein danke, ich hab keine Zeit.“\nJetzt hat es mir drei Restaurants vorgeschlagen, für die ich wohl auch keine Zeit habe.",
-      "archive": "Mein Handy setzte das Wort „morgen“ automatisch als Termin. Unter den Gästen stand niemand. Wenigstens hat es inzwischen verstanden, dass ich da keine Zeit habe."
-    },
-    {
       "timestamp": "2026-11-18T23:30:59.651Z",
       "gpt": "Ich stehe in der Bibliothek, frage nach dem neuesten Krimi,  \nder Bibliothekar lächelt und sagt: „Im Kino läuft er gerade.“  \nIch gehe zum Kino, kaufe Popcorn, setze mich und warte –  \nim Museum hängt das Buch dann doch nur als Ausstellung.",
       "qwen": "Ich steh im Museum, im Kino und in der Bibliothek gleichzeitig.\nDie Leute gucken mich komisch an, weil ich laut bin.\nTatsächlich: Ich bin die Bibliothekarin, die gerade ihre Pause macht.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Mann und fragt nach dem nächsten Halt. Der Schaffner lächelt: „Nur noch ein Stopp – die nächste Haltestelle ist Ihr Parkplatz.“",
       "qwen": "Allein im Taxi, ich sage: „Bitte schnell, ich muss zur Bahn.“ Der Fahrer lacht und stellt die Uhr auf null.",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-19T03:26:07.847Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt: „Entschuldigung, ist das hier das Kundenservice‑Büro? Ich habe Ihre Rücksendung verlegt.“",
+      "qwen": "Der Paketbote fragt: „Können Sie kurz unterschreiben?“\nIch zeige ihm meinen gestohlenen Führerschein.",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
