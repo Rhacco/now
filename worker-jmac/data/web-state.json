@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:11:05.452Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung jetzt schon 3 % schneller läuft.“",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Weiterbildungen. „Diplom gegen Scheidung“, antwortete ich.",
-      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
-    },
-    {
       "timestamp": "2026-11-19T10:16:11.301Z",
       "gpt": "Ich habe meiner Nachbarin ein Schild mit „Bitte nicht stören – Arbeit“ in die Tür gehängt. Sie hat es umgedreht: „Bitte nicht arbeiten – Störung“.",
       "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellen würde. „Nur bei Fremden“, sagte sie. „Dann bin ich doch endlich dort.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundenservice an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter sagt: „Wir schicken es gleich noch einmal – diesmal per Brieftaube.“",
       "qwen": "Der Kurier fragt: „Sind Sie der Empfänger?“ Ich nicke. Er sagt: „Dann unterschreiben Sie hier, dass ich nichts geliefert habe.“",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-19T14:21:11.022Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Bär steht auf, streckt sich und ruft: „Ich bin doch kein Kater!“",
+      "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat sich auf meinen Bauch gelegt.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
