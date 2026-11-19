@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:00:59.069Z",
-      "gpt": "Ich stehe am Supermarkt, warte auf die Kasse und frage nach dem Preis – die Kassiererin meint, das sei ein Wochenmarkt.",
-      "qwen": "Beim Supermarkt finde ich keine Erdbeeren.\nAuf dem Wochenmarkt fallen mir sofort die auf.",
-      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
-    },
-    {
       "timestamp": "2026-11-19T08:05:58.054Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Der Kunde lächelt: „Nur, wenn Sie mir den Wochenmarkt vorbeibringen.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Haben Sie Kundenkarte?“\nIch nicke, sie scannt sie, und ich denke: „Endlich, hier versteht man sich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange brauchen Sie noch?“ Ich: „Bis zur Apotheke, dort gibt’s endlich was zu verschreiben.“",
       "qwen": "Der Arzt sagt: „Trinken Sie viel Wasser.“\nIn der Apotheke fragt der Apotheker: „Wasser? Haben Sie das auf Rezept?“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-19T12:05:57.729Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein Blatt Papier und sagt: „Hier steht das Rezept.“",
+      "qwen": "„Schnell, ich muss zur Arbeit.“ – „Dann gibt’s den Kaffee extra.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
