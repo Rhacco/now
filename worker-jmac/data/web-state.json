@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T11:06:07.737Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Blatt war bereits im Fach „Verloren“. So war das Fundbüro doch nur ein Fundort.",
-      "qwen": "Ich habe meinen Verlust beim Fundbüro gemeldet. Sie meinten, ich müsste erst das Formular „Kein Verlust“ ausfüllen.",
-      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
-    },
-    {
       "timestamp": "2026-11-19T11:11:08.538Z",
       "gpt": "Ich stehe am Supermarkt, warte in der Schlange und sehe plötzlich den Wochenmarkt nebenan – dort gibt's die gleichen Preise, nur ohne Kassierer.",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Kartoffeln aus dem Glas?“\nNee, die sind echt, mein Schatz!",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht plötzlich ein Plakat: „Bitte nicht die Notbremse benutzen – wir wollen ja nicht, dass der Busfahrer aussteigt.“",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich zähle die Löcher in meiner Löcherjacke und sage: „Nur die, in die man nicht sieht.“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-19T15:15:58.534Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken klaut.",
+      "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich.“",
+      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
     }
   ]
 }
