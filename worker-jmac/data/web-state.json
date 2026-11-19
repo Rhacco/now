@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:35:59.336Z",
-      "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder offen gelassen?“ Sohn: „Ich wollte, dass die Socken endlich mal Luft holen.“",
-      "qwen": "Mutter ruft: „Komm, wir essen gleich.“\nIch antworte: „Ich bin schon da, ich bin dein Teller.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-19T09:41:07.328Z",
       "gpt": "Im Yogakurs fragt die Lehrerin: „Wie fühlt sich die Entspannung an?“ – Der Anfänger antwortet: „Wie ein Marathon, nur ohne Ziel.“",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt genug, um zu merken, wie kaputt ich wirklich bin.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich den Schaffner nach dem nächsten Halt – er zeigt auf das Schild „Badeparadies“ und meint: „Hier gibt's nur Wasser, nicht Strand.“",
       "qwen": "Im Urlaub fragte ich die Frau, ob sie Deutsch spricht. Sie nickte und sagte: „Ja, aber nur, wenn Sie es nicht hören.\"",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-19T13:41:07.773Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich antworte: „Nein, aber ich habe das verlorene Formular gefunden.“",
+      "qwen": "Ich holte meinen verlorenen Schlüssel im Fundbüro ab. Der Beamte verlangte den Fundbeleg, den ich gerade verloren hatte.",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
