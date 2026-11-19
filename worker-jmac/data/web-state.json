@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:40:56.917Z",
-      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort warten die Rezepte.“",
-      "qwen": "Der Arzt sagt: „Ruhe bewahren, Sie haben nur eine Erkältung.“\nIch: „Dann warum hat die Apotheke schon mein Testament vorbereitet?“",
-      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
-    },
-    {
       "timestamp": "2026-11-19T02:46:07.257Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminar, das Sie gerade ankündigen.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef lachte: „Die kommt, wenn Sie gekündigt sind.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du den Staubsauger im Bad stehen lassen?“ Ich: „Er wollte endlich mal ein Bad nehmen.“",
       "qwen": "Mama, warum hat Oma keine Zähne? Weil sie sich alles bei uns geliehen hat.",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-19T06:50:57.538Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich noch nie eingelöst habe.“",
+      "qwen": "Ich fragte den Arzt, ob ich trotz Schwangerschaft noch Sport machen kann. Er meinte: „Ja, solange Sie nicht stolpern.“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
