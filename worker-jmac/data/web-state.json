@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:10:59.014Z",
-      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch geklaut?“ Der kleine Tim sagt: „Ich – ich wollte sie zum Frühstück für dich aufwärmen.“",
-      "qwen": "Meine Frau fragt: „Hast du mich heute geliebt?“ Ich antworte wahrheitsgemäß: „Nur, wenn du mir die fernbedienung gibst.“",
-      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
-    },
-    {
       "timestamp": "2026-11-19T19:15:57.953Z",
       "gpt": "Im Zug fragt die Frau: „Entschuldigung, ist das hier der Weg zum Strand?“ Der Schaffner lächelt: „Nur, wenn Sie im Schwimmbad bleiben.“",
       "qwen": "Im Urlaub fragte ich den Kellner nach dem besten Schnäppchen. Er zeigte auf die Minibar: „Die ist leer.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich frage den Arzt: „Herr Doktor, wie gehen Sie?“\n„Nicht gut. Ich habe Ihren Namen auf dem Rezept vergessen.“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-19T23:18:04.078Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Bild ausleihen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
+      "qwen": "Ich habe im Museum ein Gemälde gestohlen, im Kino einen Popcorn-Teller geklaut und in der Bibliothek ein Buch entwendet. Der Beamte meinte nur: „Das ist alles nur Leihgabe, nicht Diebstahl.“",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
