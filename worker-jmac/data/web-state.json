@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:21:04.862Z",
-      "gpt": "Der neue Nachbar klopft, fragt nach einem Stromausfall‑Stecker und meint: „Ich wollte nur kurz die Beleuchtung testen.“ – Er zog den Stecker aus der Steckdose.",
-      "qwen": "Ich klopfte laut an die Tür meines Nachbarn, um ihm mein neues Haus anzukündigen. Er öffnete und fragte: „Können Sie leiser sein, ich schlafe?“",
-      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
-    },
-    {
       "timestamp": "2026-11-19T08:25:57.489Z",
       "gpt": "Im Zug fragt der Schaffner nach meinem Ticket, ich zeige ihm meine Fahrkarte für den Bus – er lächelt: „Dann haben Sie ja wenigstens ein Sitzplatz.“",
       "qwen": "Ich warte auf den Bus, der Taxi und das Auto stehen längst. Der Bus kommt, aber der Fahrer ist zu spät.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich, aber ich dachte, wir reden heute per Zoom.“",
       "qwen": "Der Chef fragt: „Haben Sie die Dringlichkeit der Lage verstanden?“\nIch nicke und sage: „Ja, deshalb schlafe ich.“",
       "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
+    },
+    {
+      "timestamp": "2026-11-19T12:25:59.164Z",
+      "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet, und sehe: „Sonnenschein in 5 Minuten.“ – Meine Kaffeemaschine macht daraufhin sofort einen Espresso.",
+      "qwen": "Ich habe mein Handy auf laut geschalten und warte seit Stunden auf die Anrufe.",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
