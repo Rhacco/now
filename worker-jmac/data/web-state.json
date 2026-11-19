@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:21:08.649Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe die PowerPoint fertig – sie besteht nur aus leeren Folien, damit wir endlich Luft zum Atmen haben.“",
-      "qwen": "In der Besprechung fragte ich, ob wir das Projekt streichen. Der Chef nickte und schnitt mich mitten im Satz ab.",
-      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
-    },
-    {
       "timestamp": "2026-11-19T02:26:01.900Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich nenne ihr nur die Apotheke, weil ich dort schon das Rezept für Geduld bekommen habe.",
       "qwen": "Ich sage dem Arzt: „Herr Doktor, ich werde in allen möglichen Tönen pfeifend erkannt.“\nEr antwortet: „Das ist doch wunderbar, Sie sind ein Multitalent.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Antrag auf Rückgabe meines Schlüssels.“",
       "qwen": "Ich gab den Fundbericht ab, doch der Beamte winkte ab: „Ohne Formular 217b geht nichts.“",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-19T06:31:06.436Z",
+      "gpt": "Ich warte im Wartezimmer, die Ärztin ruft: „Sie haben ein Rezept.“ Ich antworte: „Super, ich habe noch nie ein Rezept für Wartezeit bekommen.“",
+      "qwen": "Ich fragte den Apotheker, ob der Arzt mich operieren will. Er winkte ab: „Kommen Sie lieber morgen, dann bin ich wieder da.“",
+      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
     }
   ]
 }
