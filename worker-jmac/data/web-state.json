@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:26:08.422Z",
-      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Antrag auf Rückgabe meines Schlüssels.“",
-      "qwen": "Ich gab den Fundbericht ab, doch der Beamte winkte ab: „Ohne Formular 217b geht nichts.“",
-      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
-    },
-    {
       "timestamp": "2026-11-19T06:31:06.436Z",
       "gpt": "Ich warte im Wartezimmer, die Ärztin ruft: „Sie haben ein Rezept.“ Ich antworte: „Super, ich habe noch nie ein Rezept für Wartezeit bekommen.“",
       "qwen": "Ich fragte den Apotheker, ob der Arzt mich operieren will. Er winkte ab: „Kommen Sie lieber morgen, dann bin ich wieder da.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, ich habe schon das Formular für das verlorene Formular ausgefüllt.“",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular fragte, warum ich die Scheckkarte verloren habe.",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-19T10:25:59.395Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen und packe sofort den Regenschirm ein – mein Handy zeigt mir dann, dass ich heute keinen Regenschirm habe.",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch nehme es aus der Steckdose und es stirbt sofort.",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
