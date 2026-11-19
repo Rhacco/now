@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:10:57.074Z",
-      "gpt": "Im Zug steht plötzlich ein Plakat: „Bitte nicht die Notbremse benutzen – wir wollen ja nicht, dass der Busfahrer aussteigt.“",
-      "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich zähle die Löcher in meiner Löcherjacke und sage: „Nur die, in die man nicht sieht.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-19T15:15:58.534Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken klaut.",
       "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch geklaut?“ Der kleine Tim sagt: „Ich – ich wollte sie zum Frühstück für dich aufwärmen.“",
       "qwen": "Meine Frau fragt: „Hast du mich heute geliebt?“ Ich antworte wahrheitsgemäß: „Nur, wenn du mir die fernbedienung gibst.“",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-19T19:15:57.953Z",
+      "gpt": "Im Zug fragt die Frau: „Entschuldigung, ist das hier der Weg zum Strand?“ Der Schaffner lächelt: „Nur, wenn Sie im Schwimmbad bleiben.“",
+      "qwen": "Im Urlaub fragte ich den Kellner nach dem besten Schnäppchen. Er zeigte auf die Minibar: „Die ist leer.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
