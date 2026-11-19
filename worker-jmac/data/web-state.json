@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:34:43.741Z",
-      "gpt": "Ich stehe am Kiosk, das Paket ist da, der Verkäufer lächelt und fragt:  \n„Möchten Sie das Paket jetzt öffnen?“  \nIch nicke, reiche ihm die Hand und sag: „Ja, bitte.“  \nEr wirft das Paket zurück: „Ich dachte, Sie wollen es erst mal auspacken.“",
-      "qwen": "Sehr geehrter Paket,\nich habe Sie heute am Kiosk abgeholt.\nBitte geben Sie das Geld direkt dem Postboten,\nder steht gerade hinter mir.",
-      "archive": "Mein Vater hat mich angerufen, weil sein Handy gefragt hat: „Sind Sie sicher?“ Ich fragte, wobei. „Weiß ich nicht“, sagte er, „deshalb rufe ich ja an.“"
-    },
-    {
       "timestamp": "2026-11-18T20:36:56.152Z",
       "gpt": "Ich klingel beim Nachbarn, weil ich mir die Milch vergessen habe.  \nEr öffnet, schaut mich an und sagt: „Kurz warten, ich hol das WLAN.“  \nIch nicke, weil ich gerade erst den Router ausgetauscht habe.  \nDann merkt er: „Ups, das war das falsche Haus.“",
       "qwen": "Wir stehen im Treppenhaus und warten auf den Aufzug.\nMein Nachbar fragt: „Können Sie kurz die Tür halten?“\nIch sage: „Klar, machen wir schon die ganze Zeit.“\nEr seufzt: „Nein, ich mein die Wohnungstür. Ich hab den Schlüssel vergessen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mach Yoga, um den Stress abzubauen.  \nNach der ersten Pose ruft mein Sohn: „Mama, das ist ja wie ein Knoten!“  \nIch lächle und sage: „Genau, das ist die neue Entspannungs‑Übung.“  \nEr schaut verwirrt: „Dann warum gibt’s keine Medaille?“",
       "qwen": "Im Kurs „Entspannung durch Yoga“ fragt die Trainerin: „Wer hat zu Hause schon mal Mediation probiert?“\nMein Nachbar hebt die Hand und seufzt: „Ja, das Kissen auf dem Sofa.“",
       "archive": "Der Trainer im Fitnessstudio rief: „Noch zehn Wiederholungen!“ Ich fragte: „Von welcher Übung?“ Er sagte: „Von Ihrem Gemecker.“"
+    },
+    {
+      "timestamp": "2026-11-19T00:06:20.052Z",
+      "gpt": "Der neue Nachbar klopft, fragt nach dem WLAN-Passwort und bekommt: „Sorry, hier gibt's nur die Hausnummer, das reicht für jede Verbindung.“",
+      "qwen": "Der Nachbar klagte über meine laute Musik. Ich ließ leiser. Er kam zurück und sagte: „Und jetzt höre ich endlich deinen schlechten Geschmack.“",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
