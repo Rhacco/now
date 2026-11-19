@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:36:09.365Z",
-      "gpt": "Ich stehe am Supermarktregal, greife nach Bio‑Müsli, doch die Packung riecht nach frischen Äpfeln – ich bin im Wochenmarkt gelandet.",
-      "qwen": "Der Wochenmarkt ist voll, der Supermarkt leer.\nIch habe mich vertan: Meine Brille liegt im Einkaufswagen.",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-19T16:40:57.003Z",
       "gpt": "Ich packe beim Ausmisten die leere Kartonbox ein – dann merke ich, dass ich das Haus ohne Möbel umziehe.",
       "qwen": "Ich habe den letzten Karton verpackt und den Schlüssel eingeworfen. Draußen wartet der Mülleimer auf den Möbelwagen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – sie zeigt „Sonnig“. Kurz darauf stolpert mein Handy über den nassen Boden.",
       "qwen": "Ich fragte Siri nach dem Wetter.\nSie antwortete nur: „Ich bin verwirrt, ich bin Siri.“",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-19T20:40:56.490Z",
+      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
+      "qwen": "Mein Vater fragte: „Wie geht’s dir?“ Ich sagte: „Gut, Papa.“ Er antwortete: „Dann koch selbst.“",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
