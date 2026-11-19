@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:21:05.533Z",
-      "gpt": "Im Zug fragt die Dame neben mir nach dem Weg zum Strand – ich zeige auf das Fenster, weil wir gerade im Meeresspiegel fahren.",
-      "qwen": "Wir wollten uns am Strand entspannen. Die Möwen haben uns den Koffer geklaut und sind mit ihm geflogen.",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-19T01:26:04.323Z",
       "gpt": "Mama sagt: „Wir machen heute Familienfoto.“ Papa fragt: „Mit welchem Handy?“ – „Mit dem, das du immer an die Wand hängst.“",
       "qwen": "Ich fragte meinen Vater: „Wie war die Welt vor dem Strom?“ Er antwortete: „Dunkel, kalt und ohne WLAN.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Mutter ihr Kind: „Warum hast du den Koffer nicht eingepackt?“ – „Ich wollte nur das WLAN mitnehmen.“",
       "qwen": "Ich habe den Koffer gepackt, damit wir die schönsten Sonnenuntergänge am Strand erleben können. Dann hat die Schwiegermutter gefragt, wo wir wohnen wollen.",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-19T05:31:06.528Z",
+      "gpt": "Ich rufe beim Kundendienst an, weil mein Paket nie ankommt – die Stimme sagt: „Ihr Paket ist schon im Büro, wir haben es gerade erst aus dem Drucker genommen.“",
+      "qwen": "Der Bot fragt, wer das Paket für mich unterschreibt. Ich sage: „Mein Schatten“, er nickt und geht.",
+      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
     }
   ]
 }
