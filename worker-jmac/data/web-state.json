@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:06:11.940Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie süß oder salzig?“ Ich antworte: „Beides – ich esse ja gerade das Menü des Restaurants.“",
-      "qwen": "Der Kellner bringt den Salat. „Oh, Entschuldigung, das ist schon gegessen“, sage ich und bestelle eine Pizza.",
-      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
-    },
-    {
       "timestamp": "2026-11-19T19:10:59.014Z",
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch geklaut?“ Der kleine Tim sagt: „Ich – ich wollte sie zum Frühstück für dich aufwärmen.“",
       "qwen": "Meine Frau fragt: „Hast du mich heute geliebt?“ Ich antworte wahrheitsgemäß: „Nur, wenn du mir die fernbedienung gibst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann man hier laut lesen?“ Der Kinobetreiber antwortet: „Nur, wenn der Film ein Hörbuch ist.“",
       "qwen": "Im Museum fragte ich: „Was ist das?“\nDie Führerin antwortete: „Das ist der Ausgang.“",
       "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
+    },
+    {
+      "timestamp": "2026-11-19T23:15:57.421Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Ich frage den Arzt: „Herr Doktor, wie gehen Sie?“\n„Nicht gut. Ich habe Ihren Namen auf dem Rezept vergessen.“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
