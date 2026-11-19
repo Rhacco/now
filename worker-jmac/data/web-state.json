@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:06:29.310Z",
-      "gpt": "Beim Ausmisten packte ich das leere Glas, das ich nie benutzt hatte, und fragte mich, warum ich das Chaos immer erst beim Umzug finde.",
-      "qwen": "Wir haben beim Ausmisten eine alte Briefmarke gefunden. Die klebt an einem 50-Euro-Schein.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-19T10:11:05.452Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung jetzt schon 3 % schneller läuft.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Weiterbildungen. „Diplom gegen Scheidung“, antwortete ich.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf – die Durchsage kam: „Bitte halten Sie die Hände vom Fahrplan.“",
       "qwen": "Ich setzte im Taxi ab, doch der Fahrer fuhr einfach weiter. Er meinte nur: „Das Auto ist ein Leihwagen, ich bin noch nicht fertig.“",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-19T14:15:59.860Z",
+      "gpt": "Ich rufe beim Kundenservice an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter sagt: „Wir schicken es gleich noch einmal – diesmal per Brieftaube.“",
+      "qwen": "Der Kurier fragt: „Sind Sie der Empfänger?“ Ich nicke. Er sagt: „Dann unterschreiben Sie hier, dass ich nichts geliefert habe.“",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
