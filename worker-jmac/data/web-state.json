@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:31:00.460Z",
-      "gpt": "Im Café fragt die Kundin, ob das Omelett „leicht“ sei; die Kellnerin lächelt: „Nur, wenn Sie es nicht selbst schütteln.“",
-      "qwen": "Ich bat im Café um eine Espressomaschine. Die Kellnerin lächelt: „Die steht in der Küche.“",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-19T09:35:59.336Z",
       "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder offen gelassen?“ Sohn: „Ich wollte, dass die Socken endlich mal Luft holen.“",
       "qwen": "Mutter ruft: „Komm, wir essen gleich.“\nIch antworte: „Ich bin schon da, ich bin dein Teller.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Fortbildungen?“ Ich antworte: „Ich habe schon einen Kurs belegt – wie man das Wort „Absage“ richtig schreibt.“",
       "qwen": "Ich erkläre im Vorstellungsgespräch, dass ich nach der Weiterbildung jetzt KI programmieren kann. Der Chef fragt: „Und wie läuft das genau?“",
       "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
+    },
+    {
+      "timestamp": "2026-11-19T13:36:08.791Z",
+      "gpt": "Im Zug zum Strand fragt ich den Schaffner nach dem nächsten Halt – er zeigt auf das Schild „Badeparadies“ und meint: „Hier gibt's nur Wasser, nicht Strand.“",
+      "qwen": "Im Urlaub fragte ich die Frau, ob sie Deutsch spricht. Sie nickte und sagte: „Ja, aber nur, wenn Sie es nicht hören.\"",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
