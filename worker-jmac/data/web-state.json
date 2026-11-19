@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:41:09.339Z",
-      "gpt": "Ich öffne die Wetter‑App, um mich auf Regen vorzubereiten – sie zeigt „Sonnig“, also ziehe ich den Regenschirm aus, weil ich nicht riskieren will, dass das Handy nass wird.",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nDann sterbe ich doch gleich.",
-      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
-    },
-    {
       "timestamp": "2026-11-19T08:45:57.370Z",
       "gpt": "Der Paketbote fragt: „Unterschrift?“ – Ich zeige auf das leere Feld und sage: „Ich habe doch gerade angerufen, dass ich das Paket selbst abhole.“",
       "qwen": "Der Kurier drückt mir das Paket in die Hand: „Bitte unterschreiben Sie hier.“\nIch sage: „Zahlen muss ich doch nur bei Amazon, oder?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten die Kaffeemaschine gespendet – jetzt trinkt mein Nachbar morgens nur noch Wasser, weil er keinen Strom mehr hat.",
       "qwen": "Ich habe beim Ausmisten die alte Deko-Kerze „Blauer Ozean“ gefunden. Die nahm ich, denn ich muss ja bald meinen Aquarium-Neuwagen abholen.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-19T12:45:59.186Z",
+      "gpt": "Ich mache Yoga im Park, um zu entspannen, und plötzlich fragt mich ein Hund: „Kannst du mir zeigen, wie man den herabschauenden Hund macht?“",
+      "qwen": "Ich habe eine Stunde Yoga gemacht. Jetzt kann ich mich nicht mehr anziehen, aber dafür atme ich optimal.",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
