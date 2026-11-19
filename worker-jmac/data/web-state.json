@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:31:10.308Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, und mein Hund legt sich mitten in die „herabschauende Katze“. Jetzt übe ich nur noch den „herabschauenden Hund“.",
-      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er nickte und sagte: „Ja, bis du es nicht mehr bist.“",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-19T18:35:59.566Z",
       "gpt": "Im Zug zur Berge-Entdeckungspause fragt der Tourist: „Gibt es hier WLAN?“ – Der Schaffner lächelt: „Nur wenn Sie den Gipfel erreichen.“",
       "qwen": "An der Kasse fragt die Kassiererin: „Haben Sie Ihren Gutschein dabei?“\nIch zücke meine Zahnbürste und sage: „Hier, für die Zahnfee?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe im Supermarkt einen Bio‑Apfel, doch am Kassenband sagt die Kassiererin: „Entschuldigung, das ist unser Wochenmarkt‑Special.“",
       "qwen": "Ich wollte beim Wochenmarkt die Tomaten schmecken, aber der Händler meinte: „Die sind noch grün.“ Das ist der einzige Ort, wo das ein Kompliment ist.",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-19T22:41:09.175Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann meint: „Nur, wenn ich das gefundene Portemonnaie zurückhaben will.“",
+      "qwen": "Ich gab der Mitarbeiterin im Fundbüro eine Kopie meines Personalausweises. Sie gab mir den gefundenen Ausweis zurück.",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
