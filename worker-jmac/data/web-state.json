@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:26:06.298Z",
-      "gpt": "Im Bus drängte ich mich zum Fenster, weil ich frische Luft wollte – dann kam der Fahrer und öffnete die Tür zum Bahnhof.",
-      "qwen": "Ich fragte den Taxifahrer: „Zum Bahnhof, bitte.“ Er antwortete: „Dafür brauchen Sie keine Taxizentrale, sondern ein Ticket.“",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-19T13:31:02.538Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Fortbildungen?“ Ich antworte: „Ich habe schon einen Kurs belegt – wie man das Wort „Absage“ richtig schreibt.“",
       "qwen": "Ich erkläre im Vorstellungsgespräch, dass ich nach der Weiterbildung jetzt KI programmieren kann. Der Chef fragt: „Und wie läuft das genau?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, um mich für den Spaziergang anzuziehen – sie zeigt „Sonnig“, aber draußen regnet es, weil ich den Regenschirm vergessen habe.",
       "qwen": "Mein Handy zeigt munter an, dass ich in drei Minuten zu Hause bin.\nDie Tür bleibt leider doch noch zuge.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-19T17:31:00.932Z",
+      "gpt": "Ich bestelle online ein neues Sofa, der Lieferant klingelt, ich öffne die Tür – ein Paket mit einer Anleitung zum Zusammenbauen. Kundenservice: „Viel Spaß!“",
+      "qwen": "Die Mitarbeiterin lächelt: „Ist das Paket angekommen?“ Ich nickte und fragte: „Ja, aber wo ist der Inhalt?",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
