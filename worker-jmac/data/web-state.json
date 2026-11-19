@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:31:06.528Z",
-      "gpt": "Ich rufe beim Kundendienst an, weil mein Paket nie ankommt – die Stimme sagt: „Ihr Paket ist schon im Büro, wir haben es gerade erst aus dem Drucker genommen.“",
-      "qwen": "Der Bot fragt, wer das Paket für mich unterschreibt. Ich sage: „Mein Schatten“, er nickt und geht.",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-19T05:36:12.156Z",
       "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es hat noch 99 % Akku. Jetzt überlege ich, ob ich den Stromzähler ausbuchen soll.",
       "qwen": "Wir haben die alte Küche aussortiert und alles in den Keller geräumt. Jetzt wohnen wir dort und die Küche kocht auf dem Dachboden.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kundin, ob das Omelett „leicht“ sei; die Kellnerin lächelt: „Nur, wenn Sie es nicht selbst schütteln.“",
       "qwen": "Ich bat im Café um eine Espressomaschine. Die Kellnerin lächelt: „Die steht in der Küche.“",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-19T09:35:59.336Z",
+      "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder offen gelassen?“ Sohn: „Ich wollte, dass die Socken endlich mal Luft holen.“",
+      "qwen": "Mutter ruft: „Komm, wir essen gleich.“\nIch antworte: „Ich bin schon da, ich bin dein Teller.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
