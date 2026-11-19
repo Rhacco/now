@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:56:00.154Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Glühbirne, und der Verkäufer meint: „Hier gibt's nur LED – das spart schon beim Stromzählen.“",
-      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich denke: „Endlich, ich brauche dringend eine Beratung.“",
-      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
-    },
-    {
       "timestamp": "2026-11-19T15:01:05.476Z",
       "gpt": "Ich frage beim Wochenmarkt nach Bio‑Erdbeeren, die Verkäuferin meint: „Hier gibt's nur Bio‑Preis‑vergleiche.“",
       "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Im Supermarkt sind sie es auch, nur künstlich.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie Zucker?“ – Ich: „Nein, ich habe heute schon genug „Kaffee“ im Büro.“",
       "qwen": "Ich bat den Kellner, den Wein leer zu trinken. Er entgegnete: „Den holen wir an der Tür wieder ab.“",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-19T19:01:02.412Z",
+      "gpt": "Mama fragt: „Warum hast du das ganze Brot gegessen?“ Sohn: „Ich wollte das Familienbudget nicht mehr teilen.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber bitte leg das Besteck richtig hin.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
