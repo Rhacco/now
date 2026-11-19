@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:31:24.810Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin zeigt stolz ihr leeres Whiteboard: „Ich habe das Projekt bereits abgeschlossen – es hat nie begonnen.“",
-      "qwen": "In der Besprechung fragte der Chef: „Gibt es noch jemanden, der nicht weiß, was er tun soll?“\nHände gingen hoch.",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-19T15:35:58.950Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Gemüse in Tüten?“ Auf dem Wochenmarkt antwortet der Kunde: „Nur, wenn's ein Tütenseller ist.“",
       "qwen": "Im Supermarkt fragen sie nach dem Preis.\nBeim Wochenmarkt fragt der Preis nach dir.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sie zeigt Regen, also greife ich zum Regenschirm – mein Handy piept: „Akkustand 1 %“.",
       "qwen": "Ich stellte das Handy auf lautlos, damit es nicht klingelt. Ein Sekündchen später vibrierte es trotzdem.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-19T19:36:12.930Z",
+      "gpt": "Im Zug drückte ich den Notruf, weil der WLAN-Ausfall mich in die Steinzeit zurückversetzte – der Schaffner kam, bot mir ein Buch an.",
+      "qwen": "Ich fragte den Taxifahrer nach dem schnellsten Weg. Er lachte und fuhr einfach weiter.",
+      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
     }
   ]
 }
