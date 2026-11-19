@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:46:07.257Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminar, das Sie gerade ankündigen.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef lachte: „Die kommt, wenn Sie gekündigt sind.“",
-      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
-    },
-    {
       "timestamp": "2026-11-19T02:51:04.297Z",
       "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Bibliotheksregal gefunden.“ Der Bibliothekar im Kino ruft: „Leise, das ist kein Trailer!​",
       "qwen": "Bibliothek, Kino und Museum: Ich wollte nur ein Buch ausleihen. Der Bibliothekar sagte: „Heute nur im Museum.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich noch nie eingelöst habe.“",
       "qwen": "Ich fragte den Arzt, ob ich trotz Schwangerschaft noch Sport machen kann. Er meinte: „Ja, solange Sie nicht stolpern.“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-19T06:56:08.842Z",
+      "gpt": "Ich habe meinem Nachbarn ein Schild mit \"Bitte nicht klingeln, ich bin im Home‑Office\" aufgehängt. Er hat es gelesen und jetzt ruft er: \"Bewerbung für den Job?\"",
+      "qwen": "Ich habe den Nachbarn gefragt, ob er mein Auto parkt. Er schüttelte den Kopf, denn er wohnt in der Etage darüber.",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
