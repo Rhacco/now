@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:46:04.016Z",
-      "gpt": "Mama fragt: „Warum hast du den Staubsauger im Bad stehen lassen?“ Ich: „Er wollte endlich mal ein Bad nehmen.“",
-      "qwen": "Mama, warum hat Oma keine Zähne? Weil sie sich alles bei uns geliehen hat.",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-19T06:50:57.538Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich noch nie eingelöst habe.“",
       "qwen": "Ich fragte den Arzt, ob ich trotz Schwangerschaft noch Sport machen kann. Er meinte: „Ja, solange Sie nicht stolpern.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige auf die Packung: „Hier steht doch schon ‚Unterschrift hier‘.“",
       "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Nur mein Paket, das sitzt schon drin.“",
       "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
+    },
+    {
+      "timestamp": "2026-11-19T10:45:59.891Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine aus dem Fenster geworfen?“  \nTim: „Ich wollte den Trockner endlich mal sehen, wie er fliegt.“",
+      "qwen": "Ich frage mein Kind, was es mit dem alten Opa macht. „Nichts, er schaut fern.“ „Und du?“ „Ich schau zu, wie er schaut.“",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
