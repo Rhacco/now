@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:05:58.671Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Dokument bereits fertig – auf dem Kaffeetisch, weil es dort am besten „aufgebrüht“ wird.“",
-      "qwen": "Der Chef fragt nach dem Projektstatus. „Es läuft gut, nur die Deadline ist noch nicht da.“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-19T16:11:07.333Z",
       "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel, doch die Verkäuferin reichte mir einen Supermarkt‑Schnäppchen‑Preis‑Aufkleber. So billig, dass ich die Äpfel gleich wieder zurück ins Regal schob.",
       "qwen": "Ich fluche über die Supermarktpreise und laufe zum Markt. Dort schwört der Bauer, dass er alles billiger gibt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin zeigt auf die Regale. Auf dem Wochenmarkt verkauft der Bauer dieselben Eier – mit „Frischegarantie“ drauf.",
       "qwen": "Ich kaufte auf dem Wochenmarkt frische Erdbeeren, die im Supermarkt leider schon vergammelt waren.",
       "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
+    },
+    {
+      "timestamp": "2026-11-19T20:11:12.629Z",
+      "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet. Dort steht: „Sonnenschein in 5 Minuten – bitte öffnen Sie das Fenster.“",
+      "qwen": "Mama fragt, wie man das Handy entsperren muss. Ich sage: „Mit dem Finger.“ Sie drückt die Stirn dagegen.",
+      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
     }
   ]
 }
