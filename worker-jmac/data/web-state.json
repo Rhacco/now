@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T16:15:57.741Z",
-      "gpt": "Ich habe beim Ausmisten den Toaster mit dem Fernbedienung verwechselt – jetzt schaltet das Brot das TV ein.",
-      "qwen": "Am Umzugstag packt die Frau die letzte Kiste. „Das ist alles, was wir noch haben“, sagt sie. „Kein Wunder“, antwortet der Mann, „du hast doch den Rest der Wohnung verkauft.“",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-19T16:20:59.012Z",
       "gpt": "Im Zug nach Italien vergaß ich das Ticket – der Schaffner lächelte: „Kein Problem, das ist ja nur ein Kurztrip ins Nachbarland.“",
       "qwen": "Ich wollte im Urlaub nur relaxen, nicht arbeiten.\nDeshalb habe ich meinen Laptop im Pool ertränkt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er ein veganes Omelett – die Kellnerin fragt verwirrt: „Wie soll das denn aussehen?“ Er lächelt: „Wie ein Ei‑weißes Blatt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Im Glas oder im Teller?“",
       "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
+    },
+    {
+      "timestamp": "2026-11-19T20:20:58.487Z",
+      "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst nach dem Telefonat mit dem Kundendienst?“ Der Lieferant: „Wir wollen erst sicherstellen, dass Sie es wirklich öffnen wollen.“",
+      "qwen": "Der Kurier fragt: „Ist jemand da?“ Ich rufe: „Ja, ich bin’s.“ Er legt auf.",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
