@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:16:04.042Z",
-      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier. „Für die Diät“, sagt sie.",
-      "qwen": "Der Verkäufer: „Das ist die robusteste Kabeltrommel, die wir haben.“ Ich: „Great, denn die alte hat schon drei Fahrräder überlebt.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-19T13:21:10.427Z",
       "gpt": "Im Zug fragt die Frau nach dem besten Ausflugsziel – der Schaffner lächelt und zeigt auf das Fenster: „Hier fahren wir gleich nach Hause.“",
       "qwen": "Ich sagte: „Wir brauchen mehr Zeit für uns.“\nMeine Frau: „Genau, deshalb bin ich jetzt allein verreist.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, natürlich.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte: „Haben Sie Weiterbildungen abgeschlossen?“, worauf ich antwortete: „Ja, ich habe meinen eigenen Abschiedsvermerk selbst geschrieben.“",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-19T17:21:13.761Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie ein Taxi benötigen.“ Ich steige aus, weil ich keinen Fahrplan mehr lese.",
+      "qwen": "„Nächster Halt: Bahnhofsvorplatz“, rief der Busfahrer. Ich sprang aussteigend aus dem Auto.",
+      "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
     }
   ]
 }
