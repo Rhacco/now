@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T01:56:04.571Z",
-      "gpt": "Im Zug zum Strand vergaß ich die Sonnencreme – aber immerhin war das Wetter im Fahrstuhl angenehm kühl.",
-      "qwen": "Ich komme aus dem Urlaub zurück und sage: „Endlich Ruhe.“\nMeine Frau erwidert: „Endlich allein.“",
-      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
-    },
-    {
       "timestamp": "2026-11-19T02:00:59.436Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für den Wochenmarkt?“ – Ich antworte: „Nur, wenn Sie mir das Gemüse aus dem Sonderangebot geben.“",
       "qwen": "Frau Müller fragt nach dem Preis der Erdbeeren. „Zehn Euro das Kilo“, antwortet der Mann. Sie starrt ihn an: „Und das sind keine Tomaten.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das ganze Gemüse in die Waschmaschine gesteckt?“  \nWeil ich die Karotten nicht mehr in den Müll, sondern in die Wäsche geben wollte.",
       "qwen": "Ich frag die Oma, wozu sie die Fassade streicht. Sie sagt: Damit die Risse nicht zu groß werden.",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-19T06:05:59.088Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wo ist der Ausgang?“ Der Schaffner lächelt: „Da hinten, wo das Meer endet.“",
+      "qwen": "Ich habe am Strand eine Taube gesehen. Sie hat mich angetrollt.",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
