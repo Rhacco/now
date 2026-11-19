@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:35:58.147Z",
-      "gpt": "Ich gehe ins Vorstellungsgespräch, frage nach Weiterbildungen und bekomme den Hinweis: „Bitte schicken Sie uns Ihren Lebenslauf per Post, wir haben keinen Drucker.“",
-      "qwen": "Ich habe zur Weiterbildung „Angst überwinden“ angemeldet. Endlich bin ich bereit, mich zu bewerben.",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-19T03:40:58.521Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Entschuldigung?“",
       "qwen": "Der Bot fragt: „Ist jemand zu Hause?“ Ich rufe: „Ja, ich bin’s.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Bibliothekar: „Darf ich hier leise lesen?“ – Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
       "qwen": "Im Museum sah ich das Original, im Kino den Film, in der Bibliothek fragte ich: „Wo ist der Rest?\"",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:46:07.447Z",
+      "gpt": "Im Café bestellt er einen Espresso, doch der Barista fragt: „Möchten Sie ihn mit Milch?“, und schenkt ihm einen Milchschnitzer.",
+      "qwen": "Ich bestellte im Café einen Kaffee, der so teuer war, dass ich ihn trank, während ich weinte.",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
