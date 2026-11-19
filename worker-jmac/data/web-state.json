@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:26:07.847Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt: „Entschuldigung, ist das hier das Kundenservice‑Büro? Ich habe Ihre Rücksendung verlegt.“",
-      "qwen": "Der Paketbote fragt: „Können Sie kurz unterschreiben?“\nIch zeige ihm meinen gestohlenen Führerschein.",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-19T03:30:57.759Z",
       "gpt": "Ich stehe am Supermarkt und frage nach Bio‑Bananen, die Verkäuferin lächelt und reicht mir einen Katalog – am Wochenmarkt kaufe ich gleich die echten.",
       "qwen": "„Hier ist alles frisch vom Bauern“, sagt der Verkäufer. „Ja schau, die Tomaten sind so weich, man kann sie durch die Verpackung drücken.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ticket – ich zeige ihm meine U‑Bahn‑Karte. Er meint: „Dann fahren wir halt weiter.“",
       "qwen": "Ich bin mit Bahn, Bus, Taxi und Auto unterwegs. Der Taxifahrer ruft mich an.",
       "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
+    },
+    {
+      "timestamp": "2026-11-19T07:36:06.309Z",
+      "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Glühbirne, und der Verkäufer empfiehlt mir eine Kerze – \"die spart Strom, weil sie nie leuchtet\".",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich: „Ja, rufen Sie bitte die Polizei.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
