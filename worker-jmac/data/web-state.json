@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:51:06.640Z",
-      "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Ich: „Ich nicht.“ Papa grinst: „Ich habe ihn erst nach dem Aufräumen versteckt.“",
-      "qwen": "Ich frage, warum das Essen kalt ist. Meine Frau sagt, sie wartet auf mich, um anzufangen zu essen.",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-19T19:55:58.634Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista schenkt mir nur heißen Kaffee. „Ich wollte doch nur wach werden“, sage ich und trinke den Espresso.",
       "qwen": "Wir bestellen ein Schnitzel. Der Kellner bringt es mit Pommes, aber das Schnitzel fehlt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder schwach?“ Ich antworte: „Stark, damit ich das Restaurant später überstehe.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zum Mitnehmen?“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-19T23:55:57.763Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich das WLAN nicht fand – die Durchsage kam: „Bitte halten Sie den Knopf nicht fest, er ist nur ein Snack.“",
+      "qwen": "Auf der Insel wollten wir die einheimische Kuh bestaunen.\n„Die kommt gleich“, sagte der Fischer, „ist aber erst seit heute Abend da.“",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
