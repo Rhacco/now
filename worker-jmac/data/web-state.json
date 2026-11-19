@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T15:06:11.824Z",
-      "gpt": "Mama ruft: „Wer hat die letzte Banane gegessen?“ Papa grinst: „Ich, weil ich sie im Obstkorb versteckt habe.“",
-      "qwen": "Ich rief: „Mama, wer hat das hier ausgedacht?“\nDie Antwort: „Dein Bruder, er wollte dich ärgern.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-19T15:10:57.074Z",
       "gpt": "Im Zug steht plötzlich ein Plakat: „Bitte nicht die Notbremse benutzen – wir wollen ja nicht, dass der Busfahrer aussteigt.“",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“ Ich zähle die Löcher in meiner Löcherjacke und sage: „Nur die, in die man nicht sieht.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie süß oder salzig?“ Ich antworte: „Beides – ich esse ja gerade das Menü des Restaurants.“",
       "qwen": "Der Kellner bringt den Salat. „Oh, Entschuldigung, das ist schon gegessen“, sage ich und bestelle eine Pizza.",
       "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
+    },
+    {
+      "timestamp": "2026-11-19T19:10:59.014Z",
+      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch geklaut?“ Der kleine Tim sagt: „Ich – ich wollte sie zum Frühstück für dich aufwärmen.“",
+      "qwen": "Meine Frau fragt: „Hast du mich heute geliebt?“ Ich antworte wahrheitsgemäß: „Nur, wenn du mir die fernbedienung gibst.“",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
