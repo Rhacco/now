@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:06:43.944Z",
-      "gpt": "Mama: „Kinder, ich hab im Supermarkt 5 € gefunden, wer will das Geld?“  \nLena: „Ich! Ich habe gerade meine Hausaufgaben nicht gemacht.“  \nTim: „Ich nehme das Geld, ich muss jetzt das Handy für den Chat aufladen.“  \nOpa: „Ich nehme das Geld – endlich kann ich wieder den Familienchat leiser stellen.“",
-      "qwen": "Mama schreibt im Familienchat: „Kommt ihr heute auf den Grillabend?“\nIch schreibe: „Sehr gerne, wir kommen um 18 Uhr.“\nGanz oben im Chat leuchtet das Lade-Symbol noch.",
-      "archive": "Beim Optiker fragte man, ob ich meine alte Brille dabeihätte. Ich sagte: „Wenn ich wüsste, wo sie ist, wäre ich vielleicht gar nicht hier.“"
-    },
-    {
       "timestamp": "2026-11-18T21:08:43.229Z",
       "gpt": "Mama: „Kinder, heute gibt’s Pizza!“  \nLukas: „Super, ich bestell gleich die Hälfte.“  \nAnna: „Ich bringe den Salat mit.“  \nOma: „Ich dachte, das war der neue Familien‑Chat‑Bot.“",
       "qwen": "Im Familienchat fragt Oma: „Wer hat das Foto von mir gemacht?“\nIch antworte: „Ich, Omi, ich hab dich beim Gänseblümchen-Pflücken fotografiert.“\nSie schreibt: „Danke, aber ich war doch heute im Krankenhaus.“\nIch: „Ja, aber die Gänseblümchen standen auf dem Zimmer.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Dame neben mir nach dem Weg zum Strand – ich zeige auf das Fenster, weil wir gerade im Meeresspiegel fahren.",
       "qwen": "Wir wollten uns am Strand entspannen. Die Möwen haben uns den Koffer geklaut und sind mit ihm geflogen.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-19T01:26:04.323Z",
+      "gpt": "Mama sagt: „Wir machen heute Familienfoto.“ Papa fragt: „Mit welchem Handy?“ – „Mit dem, das du immer an die Wand hängst.“",
+      "qwen": "Ich fragte meinen Vater: „Wie war die Welt vor dem Strom?“ Er antwortete: „Dunkel, kalt und ohne WLAN.“",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
