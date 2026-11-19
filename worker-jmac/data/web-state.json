@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:20:57.981Z",
-      "gpt": "Im Zug steht ein Mann und fragt nach dem nächsten Halt. Der Schaffner lächelt: „Nur noch ein Stopp – die nächste Haltestelle ist Ihr Parkplatz.“",
-      "qwen": "Allein im Taxi, ich sage: „Bitte schnell, ich muss zur Bahn.“ Der Fahrer lacht und stellt die Uhr auf null.",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-19T03:26:07.847Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt: „Entschuldigung, ist das hier das Kundenservice‑Büro? Ich habe Ihre Rücksendung verlegt.“",
       "qwen": "Der Paketbote fragt: „Können Sie kurz unterschreiben?“\nIch zeige ihm meinen gestohlenen Führerschein.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat den Kuchen gegessen?“ Ich: „Ich nicht.“ Papa: „Dann musst du das Stück haben, das du nie gegessen hast.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nicht genug, um eine Diät zu starten.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-19T07:31:07.019Z",
+      "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ticket – ich zeige ihm meine U‑Bahn‑Karte. Er meint: „Dann fahren wir halt weiter.“",
+      "qwen": "Ich bin mit Bahn, Bus, Taxi und Auto unterwegs. Der Taxifahrer ruft mich an.",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
