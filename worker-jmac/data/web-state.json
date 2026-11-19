@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:00:45.438Z",
-      "gpt": "Ich stehe beim Kiosk, das Paket liegt bereit,  \nder Verkäufer lächelt und fragt: „Wie möchten Sie bezahlen?“  \nIch greife nach meiner Geldbörse, doch sie ist leer.  \nEr wirft das Paket zurück: „Dann nehmen wir's eben per Post.“",
-      "qwen": "Ich frage den Kioskbesitzer, ob ich mein Paket abholen kann.\nEr schaut mich an und sagt: „Ja, aber das ist kein Kiosk-Paket.“\nIch zücke meine Abholnummer, er tippt sie ein und sagt: „Oh, da steht nur: ‚Pizza, kalt‘.“",
-      "archive": "Beim Yoga sagte die Lehrerin: „Jetzt spüren Sie mal Ihren Körper.“ Vorher hatten wir ein eher distanziertes Verhältnis. Das gefiel mir besser."
-    },
-    {
       "timestamp": "2026-11-18T21:02:50.588Z",
       "gpt": "Mama: „Kinder, bitte keine Süßigkeiten mehr, wir haben gerade das neue Diät‑Programm gestartet!“  \nLukas: „Okay, dann nehme ich das Wasser.“  \nAnna: „Ich auch.“  \nOma: „Ich hab das Rezept für die Diät‑Kekse schon im Anhang geschickt.“",
       "qwen": "Mama schreibt im Familienchat: „Böse Zungen behaupten, ich habe den Kuchen allein gegessen.“\nNur ich tippe: „Die bösen Zungen haben recht.“\nDrei Sekunden Stille.\nDann: „Wer hat das geschrieben?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ Ich antworte: „Nur, wenn er mit Espresso süß ist.“",
       "qwen": "Ich fragte im Café: „Gibt’s auch süßes?“\nDie Bedienung lächelte: „Ja, der Zucker ist hier drin.“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-19T01:11:12.970Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn sie aus Stoff ist.“",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“ Ich zeige auf die Tomate.",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
