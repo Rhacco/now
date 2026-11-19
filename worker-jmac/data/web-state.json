@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:26:01.900Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich nenne ihr nur die Apotheke, weil ich dort schon das Rezept für Geduld bekommen habe.",
-      "qwen": "Ich sage dem Arzt: „Herr Doktor, ich werde in allen möglichen Tönen pfeifend erkannt.“\nEr antwortet: „Das ist doch wunderbar, Sie sind ein Multitalent.“",
-      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
-    },
-    {
       "timestamp": "2026-11-19T02:31:07.355Z",
       "gpt": "Im Museum fragt der Besucher nach dem neuesten Film, der Bibliothekar reicht ihm Popcorn. Überraschend: Das interaktive Ausstellungsstück heißt „Stummfilm“.",
       "qwen": "In der Bibliothek flüstert man, im Kino klatscht man. Im Museum muss man weder flüstern noch klatschen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich warte im Wartezimmer, die Ärztin ruft: „Sie haben ein Rezept.“ Ich antworte: „Super, ich habe noch nie ein Rezept für Wartezeit bekommen.“",
       "qwen": "Ich fragte den Apotheker, ob der Arzt mich operieren will. Er winkte ab: „Kommen Sie lieber morgen, dann bin ich wieder da.“",
       "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
+    },
+    {
+      "timestamp": "2026-11-19T06:36:02.596Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie in der Apotheke ankommt.“",
+      "qwen": "„Drei Tabletten täglich nach den Mahlzeiten“, sagt der Arzt.\n„Und wenn ich keine Mahlzeiten habe?“, frage ich.",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
