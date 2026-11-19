@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:11:07.731Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
-      "qwen": "Der Arzt sagt: „Sie müssen weniger Stress haben.“ Ich antworte: „Ich bin gerade auf dem Weg zur Apotheke.“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-19T09:16:02.740Z",
       "gpt": "Ich sortiere beim Umzug meine Bücher nach Größe – der Riese steht plötzlich neben dem Taschenbuch. Dann fällt mir ein: Ich habe die Regale vertauscht.",
       "qwen": "Wir haben stundenlang alte Kisten sortiert und die letzten Nieten verpackt. Dann hat der Umzugstransporter gekracht und gesagt: „Ich fahre nur bis zum Container, den Rest schmeißt ihr selbst rein.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Problem gelöst?“ – Die Praktikantin meldet sich: „Ich habe das Problem gelöst, indem ich das Meeting abgesagt habe.“",
       "qwen": "Ich frage im Meeting, ob wir effizienter sein können. Der Chef antwortet: „Ja, indem wir die Besprechung beenden.“",
       "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
+    },
+    {
+      "timestamp": "2026-11-19T13:16:04.042Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier. „Für die Diät“, sagt sie.",
+      "qwen": "Der Verkäufer: „Das ist die robusteste Kabeltrommel, die wir haben.“ Ich: „Great, denn die alte hat schon drei Fahrräder überlebt.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
