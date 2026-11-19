@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:15:58.844Z",
-      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Kurz, Sie können schon morgen in der Apotheke das Rezept abholen.“",
-      "qwen": "Warum die Warteschlange?\nDer Arzt ist gerade in der Apotheke, um sich selbst einen Termin zu besorgen.",
-      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
-    },
-    {
       "timestamp": "2026-11-19T02:21:08.649Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe die PowerPoint fertig – sie besteht nur aus leeren Folien, damit wir endlich Luft zum Atmen haben.“",
       "qwen": "In der Besprechung fragte ich, ob wir das Projekt streichen. Der Chef nickte und schnitt mich mitten im Satz ab.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt ein Besucher nach dem Film im Nebenraum, die Bibliothekarin flüstert: „Bitte leise, das ist ein Hörbuch.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand. „Dort drin sind wir schon.“",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-19T06:26:08.422Z",
+      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Antrag auf Rückgabe meines Schlüssels.“",
+      "qwen": "Ich gab den Fundbericht ab, doch der Beamte winkte ab: „Ohne Formular 217b geht nichts.“",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
