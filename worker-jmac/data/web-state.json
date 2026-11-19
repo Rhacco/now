@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:45:56.689Z",
-      "gpt": "Ich fragte im Vorstellungsgespräch, ob ich für den Job auch gleich die Fortbildung mitbringen darf – der Chef nickte und reichte mir die Bewerbungsunterlagen.",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich zeigte stolz meinen Weiterbildungsnachweis: „Ich habe mich nicht weitergebildet.“",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-19T05:51:07.634Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, das Sie gerade ankündigen.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Personalchef fragte: „Was ist Ihre größte Schwäche?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um ans Meer zu kommen?“ Der Schaffner: „Am nächsten Bahnhof – er heißt ‘Küste’.“",
       "qwen": "Ich wollte im Urlaub total entspannen und lesen. Die Fliege auf meinem Buch hat das verhindert.",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-19T09:51:05.096Z",
+      "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen, damit sie den Rasen kürzer bekommt. Jetzt mäht sie den Rasen, weil er zu kurz ist.",
+      "qwen": "Der neue Nachbar fragt leise, ob ich mit dem Essen fertig bin.\nEr will nur die Gießkanne ausleihen.",
+      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
     }
   ]
 }
