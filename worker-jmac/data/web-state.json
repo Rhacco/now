@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:55:56.020Z",
-      "gpt": "Der Paketbote fragt: „Haben Sie das Paket angenommen?“ – Ich: „Ja, ich habe es gerade erst an die Post zurückgeschickt.“",
-      "qwen": "Der Kurier schüttelt den Kopf: „Dieses Paket ist zu schwer.“ Ich frage: „Wie schwer ist es denn?“ Er antwortet: „Zu schwer für Ihre Geduld.“",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-19T08:00:59.069Z",
       "gpt": "Ich stehe am Supermarkt, warte auf die Kasse und frage nach dem Preis – die Kassiererin meint, das sei ein Wochenmarkt.",
       "qwen": "Beim Supermarkt finde ich keine Erdbeeren.\nAuf dem Wochenmarkt fallen mir sofort die auf.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich: „Im nächsten Weiterbildungsseminar – endlich lerne ich, pünktlich zu kommen.“",
       "qwen": "Ich habe im Vorstellungsgespräch ehrlich zugegeben, dass ich nichts weiß. Der Chef lachte und bot mir sofort einen Kurs-Platz an.",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-19T12:01:05.588Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange brauchen Sie noch?“ Ich: „Bis zur Apotheke, dort gibt’s endlich was zu verschreiben.“",
+      "qwen": "Der Arzt sagt: „Trinken Sie viel Wasser.“\nIn der Apotheke fragt der Apotheker: „Wasser? Haben Sie das auf Rezept?“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
