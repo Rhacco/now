@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:05:58.475Z",
-      "gpt": "Ich mache Yoga, um runterzukommen. Mein Hund legt sich neben mich und macht den herabschauenden Hund – ich falle vom Sofa.",
-      "qwen": "Ich war nach dem Yoga völlig entspannt. Dann habe ich mein Handy gesehen.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-19T09:11:07.731Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
       "qwen": "Der Arzt sagt: „Sie müssen weniger Stress haben.“ Ich antworte: „Ich bin gerade auf dem Weg zur Apotheke.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug aus und finde meine alte Diät‑App. Sie fragt: „Möchtest du sie jetzt endlich deinstallieren?“",
       "qwen": "Ich suchte im Keller nach der alten Kaffeemaschine. Da sah ich sie auf dem Boden liegen: Die Kaffeemaschine.",
       "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
+    },
+    {
+      "timestamp": "2026-11-19T13:11:08.271Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat das Problem gelöst?“ – Die Praktikantin meldet sich: „Ich habe das Problem gelöst, indem ich das Meeting abgesagt habe.“",
+      "qwen": "Ich frage im Meeting, ob wir effizienter sein können. Der Chef antwortet: „Ja, indem wir die Besprechung beenden.“",
+      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
     }
   ]
 }
