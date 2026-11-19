@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:05:59.052Z",
-      "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wie fühlen Sie sich?“ Der Anfänger antwortet: „Wie ein Smartphone im Flugmodus – komplett abgeschaltet.“",
-      "qwen": "Beim Yoga-Entspannungskurs sagte die Trainerin: „Atmen Sie ruhig aus.“\nIch atmete aus, bis ich umkippte.",
-      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
-    },
-    {
       "timestamp": "2026-11-19T03:10:58.041Z",
       "gpt": "Ich rief die Hausverwaltung wegen lauter Musik, doch der Nachbar kam nur, weil er das WLAN-Passwort vergessen hatte.",
       "qwen": "Der Nachbar fragt, ob man ihn nie im Fernsehen gesehen habe. Ich zucke die Achseln: „Nein, aber in der Zeitung waren Sie öfter.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie gibt mir ein Geschenkpapier – „Damit Sie die Preise nicht mehr sehen.“",
       "qwen": "Papi, frag den Verkäufer, ob der Fisch noch lebt. Er sagt: „Das hängt doch davon ab, was Sie damit vorhaben.“",
       "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
+    },
+    {
+      "timestamp": "2026-11-19T07:16:10.999Z",
+      "gpt": "Ich steige in den Bus, der plötzlich in die falsche Richtung fährt – zum Glück hat der Fahrer einen Fahrplan für den Umweg.",
+      "qwen": "Auf dem Parkplatz fragt der Taxifahrer: „Wohin möchten Sie denn?“\nIch zeige auf mein eigenes Auto: „Dorthin.“",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
