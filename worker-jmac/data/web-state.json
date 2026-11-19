@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:36:06.309Z",
-      "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Glühbirne, und der Verkäufer empfiehlt mir eine Kerze – \"die spart Strom, weil sie nie leuchtet\".",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich: „Ja, rufen Sie bitte die Polizei.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-19T07:41:00.083Z",
       "gpt": "Im Museum fragt der Bibliothekar: „Darf ich hier leise lesen?“ – Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
       "qwen": "Im Museum sah ich das Original, im Kino den Film, in der Bibliothek fragte ich: „Wo ist der Rest?\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Belegschaft verlangte meine Unterschrift erst, wenn ich das verlorene Formular gefunden habe.",
       "qwen": "Ich gab den Fundscheck aus, da die Signatur nicht zu meiner Identität passte.",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-19T11:35:58.667Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Steak medium oder durch?“ Ich antworte: „Durch, ich will, dass es endlich fertig ist.“",
+      "qwen": "Im Café fragte ich: „Haben Sie das hier selbst gebacken?“\nDie Kellnerin lachte und sagte: „Nein, das ist der Tisch.“",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
