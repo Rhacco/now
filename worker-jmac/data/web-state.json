@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:01:05.664Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gepäckfach?“ Der Schaffner lächelt: „Nur, wenn Sie den Sand mitnehmen.“",
-      "qwen": "Am Strand rufe ich fröhlich: „Hallo, Nachbar!“ Der daneben antwortet nicht. Ich schaue nach. Es ist ein Schild.",
-      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
-    },
-    {
       "timestamp": "2026-11-19T07:05:58.200Z",
       "gpt": "Mama fragt: „Warum hast du das Glas Wasser auf den Boden gekippt?“  \nWeil ich den Hund von seiner Diät ablenken wollte.",
       "qwen": "Die Kinder fragen: „Warum muss Mama immer schreien?“ Sie antwortet: „Damit der Stau in ihrer Kopfhörer schneller abfließt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil meine Weiterbildung erst nächste Woche beginnt.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef nach meinen Stärken. Ich sagte: „Ich lerne schnell.“ Er nickte und kündigte mich.",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-19T11:00:58.685Z",
+      "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – am Ende musste ich den Schlüssel zurückgeben, weil ich das Formular selbst verlegt hatte.",
+      "qwen": "Ich füllte alle Felder des Fundamts-Formulars aus, bis mir die Tinte auslief. Die Dame winkte ab: „Für die Abtrocknung brauchen wir ein eigenes Formular.“",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
