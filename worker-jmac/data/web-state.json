@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:55:59.273Z",
-      "gpt": "Ich packe den alten Toaster ein, weil ich glaube, er fehlt noch im neuen Haus.  \nMeine Mutter schaut und sagt: „Der war doch schon 1998 kaputt.“  \nIch lege ihn zurück in die Kiste und schreibe daneben: „Für die Zukunft.“  \nAm Umzugstag merkt der Umzugswagenfahrer: „Hier ist ja ein Toaster, der nicht funktioniert.“",
-      "qwen": "Beim Ausmisten finde ich eine Kiste voller alter Briefe.\nMeine Frau starrt mich an: „Wer sind die Leute?\"\nIch antworte ehrlich: „Meine Ex-Freundinnen.\"\nSie sagt: „Dann wirf die Kiste direkt in den Müll.\"",
-      "archive": "Meine Schwester hatte eine praktische Kiste für einzelne Socken. Als ich ihr zwei passende herauslegte, sagte sie: „Die gehören da nicht rein.“ Ich sah, wie das System entstanden war."
-    },
-    {
       "timestamp": "2026-11-19T00:01:11.016Z",
       "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie dachte, ich wäre stark.  \nSie dankte mir mit einem Kuchen und sagte: „Jetzt hast du endlich mal ein Stück vom Haus.“",
       "qwen": "Der Nachbar klopft an und fragt eindringlich: „Haben Sie gerade gebohrt?“\nIch sage: „Nein, ich rufe gerade meine Katze.“\nEr seufzt erleichtert: „Dankeschön, ich dachte, Sie renovieren schon wieder.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Idee, das Projekt zu beschleunigen?“ Darauf meldet sich die Kaffeemaschine: „Ich habe bereits den Turbo‑Modus.“",
       "qwen": "Der Chef fragt, warum ich so spät bin. Ich sage: „Stau.“ Er nickt und sagt: „Gut, dann sitzen wir eben länger im Kreis.“",
       "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
+    },
+    {
+      "timestamp": "2026-11-19T03:56:07.565Z",
+      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo ist der Bahnhof?“ – Der Schaffner lächelt: „Sie sitzen gerade im Zug.“",
+      "qwen": "Im Urlaub fragte die Frau: „Warum starrst du so aufs Meer?“\n„Ich warte, bis das Boot kommt, das ich heute Morgen gekauft habe.“",
+      "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
     }
   ]
 }
