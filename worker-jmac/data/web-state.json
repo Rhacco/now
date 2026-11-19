@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T14:30:58.969Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie das Gemüse einpacken.“",
-      "qwen": "Beim Wochenmarkt frage ich nach dem Preis, beim Supermarkt nach dem Rabatt.",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-19T14:36:02.591Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator schmunzelt: „Nur, wenn du es zurückschreibst.“",
       "qwen": "Die Bibliothek ist lautlos, das Kino dunkel, das Museum still.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, und mein Hund legt sich mitten in die „herabschauende Katze“. Jetzt übe ich nur noch den „herabschauenden Hund“.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er nickte und sagte: „Ja, bis du es nicht mehr bist.“",
       "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
+    },
+    {
+      "timestamp": "2026-11-19T18:35:59.566Z",
+      "gpt": "Im Zug zur Berge-Entdeckungspause fragt der Tourist: „Gibt es hier WLAN?“ – Der Schaffner lächelt: „Nur wenn Sie den Gipfel erreichen.“",
+      "qwen": "An der Kasse fragt die Kassiererin: „Haben Sie Ihren Gutschein dabei?“\nIch zücke meine Zahnbürste und sage: „Hier, für die Zahnfee?“",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
