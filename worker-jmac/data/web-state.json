@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:11:01.411Z",
-      "gpt": "Beim Auspacken des Umzugskartons findet er sein altes Handy – und fragt sich, warum er das neue Modell gekauft hat, das er noch nie eingeschaltet hat.",
-      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Macht sie noch?“",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-19T17:16:06.571Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, natürlich.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte: „Haben Sie Weiterbildungen abgeschlossen?“, worauf ich antwortete: „Ja, ich habe meinen eigenen Abschiedsvermerk selbst geschrieben.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Ich klagte über Migräne. Der Arzt schickte mich zur Apotheke, wo ich eine Flasche Whiskey bekam.",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-19T21:21:01.097Z",
+      "gpt": "Ich gehe zum Wochenmarkt, um frische Eier zu kaufen – der Verkäufer fragt, ob ich sie lieber vom Supermarkt habe, weil dort die Hühner schneller laufen.",
+      "qwen": "Beim Wochenmarkt: „Das ist Bio, da steckt keine Chemie drin!“\nBeim Discounter: „Das ist Bio, da ist extra viel Chemie drin, aber pflanzlich.“",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
