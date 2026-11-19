@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:55:58.592Z",
-      "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie Zucker?“ – Ich: „Nein, ich habe heute schon genug „Kaffee“ im Büro.“",
-      "qwen": "Ich bat den Kellner, den Wein leer zu trinken. Er entgegnete: „Den holen wir an der Tür wieder ab.“",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-19T19:01:02.412Z",
       "gpt": "Mama fragt: „Warum hast du das ganze Brot gegessen?“ Sohn: „Ich wollte das Familienbudget nicht mehr teilen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber bitte leg das Besteck richtig hin.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldschein gefunden.“",
       "qwen": "Im Fundbüro verlangt man nach der Requisite für die abhanden gekommene Wurst.",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-19T23:06:04.147Z",
+      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 12‑B ausgefüllt?“ Ich antworte: „Nein, ich habe nur den Geldbeutel gefunden.“",
+      "qwen": "Ich fragte im Fundbüro: „Woran erkenne ich meine Schlüssel?“ „Das Formular müssen Sie in dreifacher Ausfertigung einreichen.“",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
