@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:16:12.715Z",
-      "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Ich: „Ich nicht, ich habe nur die leere Schachtel gegessen.“",
-      "qwen": "Die Frage, wer das Fenster schließt, bleibt unbeantwortet. Draußen regnet es seit drei Stunden.",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-19T18:21:00.095Z",
       "gpt": "Mama ruft: „Wer hat die Milch gekippt?“ Papa antwortet: „Ich, ich wollte den Hund nicht wecken.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Ich.“\nMama: „Danke, du bist mein Held.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – die verschreibe ich mir gleich in der Apotheke.“",
       "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Sie haben Diabetes.“",
       "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
+    },
+    {
+      "timestamp": "2026-11-19T22:25:57.539Z",
+      "gpt": "Ich packte den Staubsauger ein, weil ich dachte, er sei das schwerste Teil. Zuhause stellte ich fest, dass ich die Möbel vergessen hatte.",
+      "qwen": "Wir haben drei Wochen für den Umzug gebraucht. Das ist aber nicht schlimm, denn wir hatten nur drei Dinge.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
