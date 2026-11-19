@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T23:41:07.023Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Gemüse in Tüten verpacken?“  \nDer Kunde nickt, weil er es gleich zum Wochenmarkt tragen will.  \nEr geht nach Hause, packt das Gemüse aus und stellt es auf den Tisch.  \n„Jetzt haben wir endlich frische Luft zum Atmen“, sagt er.",
-      "qwen": "Im Supermarkt kostet die Tomate 1,99 Euro.\nAuf dem Wochenmarkt sagt der Bauer: „Zwei Stück für zwei Euro, damit die Firma läuft.“\nIch frage: „Läuft die Firma?“\nEr sagt: „Nein, aber die Zinsen sind höher.“",
-      "archive": "An der Supermarktkasse fragte man: „Brauchen Sie den Kassenzettel?“ „Nein, danke.“ Er wurde trotzdem gedruckt. Schön, dass wir beide kurz unsere Meinung sagen konnten."
-    },
-    {
       "timestamp": "2026-11-18T23:46:05.590Z",
       "gpt": "Ich gehe zum Yoga‑Kurs, um endlich flexibel zu werden.  \nDer Lehrer sagt: „Stellt euch vor, ihr seid ein Blatt im Wind.“  \nIch schließe die Augen, atme tief ein…  \nUnd plötzlich weht mir das Handy aus der Hand.",
       "qwen": "Ich wollte endlich zur Ruhe kommen.\nAlso habe ich Yoga probiert.\nJetzt sorge ich mich,\ndass ich mich beim Atmen verknotet habe.",
@@ -300,6 +294,12 @@
       "gpt": "Ich gehe ins Vorstellungsgespräch, frage nach Weiterbildungen und bekomme den Hinweis: „Bitte schicken Sie uns Ihren Lebenslauf per Post, wir haben keinen Drucker.“",
       "qwen": "Ich habe zur Weiterbildung „Angst überwinden“ angemeldet. Endlich bin ich bereit, mich zu bewerben.",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-19T03:40:58.521Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Entschuldigung?“",
+      "qwen": "Der Bot fragt: „Ist jemand zu Hause?“ Ich rufe: „Ja, ich bin’s.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
