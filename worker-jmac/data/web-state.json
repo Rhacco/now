@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:56:50.671Z",
-      "gpt": "Ich stehe beim Bäcker und bestelle ein frisches Brötchen.  \nDer Bäcker fragt: „Möchten Sie es lieber mit Körnern oder ganz normal?“  \nIch überlege kurz und sage: „Egal, Hauptsache es ist nicht mehr das, was ich gestern gegessen habe.“  \nDarauf legt er mir ein Toast‑Brot hin und meint: „Dann ist das ja schon das ‚neue‘ Brötchen.“",
-      "qwen": "Ich stehe an der Theke und sage: „Gibt’s noch Semmeln?“\nDie Bäckerin nickt und legt mir eine frische Brezel hin.\nIch frage perplex: „Warum eine Brezel?“\nSie seufzt: „Weil die Leute immer ‚noch’ sagen, wenn sie wollen, dass alles schnell geht.“",
-      "archive": "In unserer Nachbarschaftsgruppe fragte jemand, ob er sich eine Bohrmaschine leihen könne. Sieben Leute antworteten: „Ich hab eine.“ Keiner schrieb: „Kannst du haben.“ Wir sind gut ausgestattet."
-    },
-    {
       "timestamp": "2026-11-18T20:58:51.365Z",
       "gpt": "Ich stehe in der Schlange, das Regal ist leer,  \nder Kassierer lächelt und sagt: „Heute haben wir nur  \neinen Artikel im Angebot – das ist ein  \n„Kauf‑ein‑für‑zwei‑Kaffee“, weil ich das Geld selbst einstecke.“",
       "qwen": "Ich warte seit zwanzig Minuten in der Schlange,\nder Kassierer tippt langsam,\nich könnte heulen.\n„Kassenbon mitnehmen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund mich für die herabschauende Katze hält und sofort mit dem Ball spielt.",
       "qwen": "Ich mache Yoga, um meine Verspannungen zu lösen. Jetzt sind meine Oberschenkel so verspannt, dass ich nicht mehr in die Hosen passe.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-19T01:01:07.068Z",
+      "gpt": "Ich klopfe an die Nachbarin, um mir den Rasenmäher zu leihen – sie reicht mir stattdessen ihren Staubsauger, weil ihr Rasen jetzt „sauber“ ist.",
+      "qwen": "Der Nachbar fragt, ob seine neue Wandfarbe nicht zu aggressiv wirkt. Ich erwidere: „Die Wand weiß noch nicht, was sie tut.“",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
