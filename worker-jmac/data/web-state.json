@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T03:45:57.042Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte halten Sie Ihre Handys bereit.“ Der Schaffner lächelt und sagt: „Damit wir beim Aussteigen nicht nach dem Ticket suchen.“",
-      "qwen": "Ich bin zwei Stunden im Stau, dann fahre ich um und nehme den Bus. Der bleibt direkt hinter mir stehen.",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-19T03:51:07.725Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Idee, das Projekt zu beschleunigen?“ Darauf meldet sich die Kaffeemaschine: „Ich habe bereits den Turbo‑Modus.“",
       "qwen": "Der Chef fragt, warum ich so spät bin. Ich sage: „Stau.“ Er nickt und sagt: „Gut, dann sitzen wir eben länger im Kreis.“",
@@ -300,6 +294,12 @@
       "gpt": "Mutter fragt: „Warum hast du das ganze Salz in die Suppe geschüttet?“ Vater: „Ich wollte endlich mal die Stimmung würzen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, bis du den Müll rausbringst.“",
       "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
+    },
+    {
+      "timestamp": "2026-11-19T07:51:09.819Z",
+      "gpt": "In der Bibliothek fragt mich ein Besucher: „Welcher Film läuft heute?“ – Ich zeige auf das Sachbuchregal: „Hier gibt’s nur Dokumentarfilm.“",
+      "qwen": "Im Museum zeig ich den Dackel an, im Kino kauf ich Popcorn für ihn. In der Bibliothek fragt die Dame nach der Ausweisnummer: „Dackel, sitzt auf der Nase.“",
+      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
     }
   ]
 }
