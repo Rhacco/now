@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:26:03.559Z",
-      "gpt": "Mama ruft: „Wer hat den Kuchen gegessen?“ Ich: „Ich nicht.“ Papa: „Dann musst du das Stück haben, das du nie gegessen hast.“",
-      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nicht genug, um eine Diät zu starten.“",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-19T07:31:07.019Z",
       "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ticket – ich zeige ihm meine U‑Bahn‑Karte. Er meint: „Dann fahren wir halt weiter.“",
       "qwen": "Ich bin mit Bahn, Bus, Taxi und Auto unterwegs. Der Taxifahrer ruft mich an.",
@@ -300,6 +294,12 @@
       "gpt": "Mutter fragt: „Warum hast du die Waschmaschine wieder aus Versehen in den Garten gestellt?“ Sohn: „Ich wollte ihr endlich mal frische Luft geben.“",
       "qwen": "Die Kinder streiten sich um den letzten Bissen. Die Mutter teilt ihn fair, isst aber selbst den Teller leer.",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-19T11:25:57.857Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Bär aus der Ecke hebt die Pfote und schnarcht weiter.",
+      "qwen": "Ich mache Yoga, bis die Pose „Krieger“ fällig wird.",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
