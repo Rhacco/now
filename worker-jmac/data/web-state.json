@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:01:05.588Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange brauchen Sie noch?“ Ich: „Bis zur Apotheke, dort gibt’s endlich was zu verschreiben.“",
-      "qwen": "Der Arzt sagt: „Trinken Sie viel Wasser.“\nIn der Apotheke fragt der Apotheker: „Wasser? Haben Sie das auf Rezept?“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-19T12:05:57.729Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein Blatt Papier und sagt: „Hier steht das Rezept.“",
       "qwen": "„Schnell, ich muss zur Arbeit.“ – „Dann gibt’s den Kaffee extra.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Dokument bereits fertig – auf dem Kaffeetisch, weil es dort am besten „aufgebrüht“ wird.“",
       "qwen": "Der Chef fragt nach dem Projektstatus. „Es läuft gut, nur die Deadline ist noch nicht da.“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-19T16:11:07.333Z",
+      "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel, doch die Verkäuferin reichte mir einen Supermarkt‑Schnäppchen‑Preis‑Aufkleber. So billig, dass ich die Äpfel gleich wieder zurück ins Regal schob.",
+      "qwen": "Ich fluche über die Supermarktpreise und laufe zum Markt. Dort schwört der Bauer, dass er alles billiger gibt.",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
