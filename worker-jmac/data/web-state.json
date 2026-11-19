@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T06:36:02.596Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie in der Apotheke ankommt.“",
-      "qwen": "„Drei Tabletten täglich nach den Mahlzeiten“, sagt der Arzt.\n„Und wenn ich keine Mahlzeiten habe?“, frage ich.",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-19T06:41:02.308Z",
       "gpt": "Ich sitze im Wartezimmer, die Ärztin ruft: „Sie sind dran, bitte folgen Sie dem Schild zur Apotheke.“ Ich dachte, das ist mein Rezept.",
       "qwen": "„Haben Sie Angst vor der Nadel?“\n„Nein, ich bin nur Allergiker.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst testet neue Lieferzeiten.“ Ich melde mich sofort ab.",
       "qwen": "Der Lieferant fragt: „Ist jemand zu Hause?“ Ich rufe: „Ich bin’s, aber das Paket hat mich überholt.\"",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-19T10:35:58.373Z",
+      "gpt": "Im Café bestellt er einen Kaffee „ohne Milch“, weil er die Kuh im Garten vergessen hat. Die Kellnerin bringt ihm einen leeren Becher.",
+      "qwen": "Im Café fragt der Kellner: „Ist der Kaffee gut?“ Ich sage: „Ja, aber er schmeckt nach verbranntem Gummiband.“",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
