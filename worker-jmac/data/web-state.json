@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T22:41:08.629Z",
-      "gpt": "Im Wartezimmer liegt ein Mann mit riesigem Kaugummi‑Beutel.  \nEr sagt zur Schwester: „Entschuldigung, ich muss jetzt dringend zum Zahnarzt.“  \nSie nickt und fragt: „Wollen Sie vorher noch etwas trinken?“  \nEr seufzt: „Nur, wenn's keine Kaugummischnur ist.“",
-      "qwen": "Drüben liegt ein Typ und stöhnt so laut, als hätte er einen Stein verschluckt.\nÄrztin: „Können Sie bitte leiser sein?“\nDer Typ wird still.\nÄrztin: „Können Sie das bitte noch einmal machen? Wir wollten nur hören, wie es klingt.“",
-      "archive": "Im Blumenladen fragte die Verkäuferin: „Für welchen Anlass?“ „Genau das hoffe ich von Ihnen zu erfahren. Zu Hause ist seit heute Morgen eine merkwürdige Stimmung.“"
-    },
-    {
       "timestamp": "2026-11-18T22:51:06.648Z",
       "gpt": "Ich gehe zum Bäcker und frage: „Haben Sie noch frische Brötchen?“  \nDer Bäcker lächelt: „Klar, gerade aus dem Ofen.“  \nIch greife nach einem, rieche den Duft und sage: „Perfekt, ich brauch nur noch ein bisschen Geduld.“  \nEr wirft mir ein Brötchen zu und ruft: „Hier, das ist das Geduld‑Brötchen, es bleibt ewig warm!“",
       "qwen": "Ich stehe an der Theke und sage: „Gibt’s noch ein Stück vom Zimtschnecke?“\nDie Bäckerin schaut mich an und sagt: „Die ist weg.“\nIch nicke und frage: „Dann halt was anderes.“\nSie: „Nein, ich meine, die Zimtschnecke ist weg.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Auspacken findet er die alte Mikrowelle im Karton: „Endlich ein Gerät, das meine Beziehung zu Essen genauso schnell beendet wie mein Ex.“",
       "qwen": "Ich warf die uralte Fernbedienung weg. Jetzt habe ich sie bitter nötig.",
       "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
+    },
+    {
+      "timestamp": "2026-11-19T02:40:56.917Z",
+      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert die Untersuchung?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort warten die Rezepte.“",
+      "qwen": "Der Arzt sagt: „Ruhe bewahren, Sie haben nur eine Erkältung.“\nIch: „Dann warum hat die Apotheke schon mein Testament vorbereitet?“",
+      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
     }
   ]
 }
