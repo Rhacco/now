@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T02:31:07.355Z",
-      "gpt": "Im Museum fragt der Besucher nach dem neuesten Film, der Bibliothekar reicht ihm Popcorn. Überraschend: Das interaktive Ausstellungsstück heißt „Stummfilm“.",
-      "qwen": "In der Bibliothek flüstert man, im Kino klatscht man. Im Museum muss man weder flüstern noch klatschen.",
-      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
-    },
-    {
       "timestamp": "2026-11-19T02:35:58.587Z",
       "gpt": "Beim Auspacken findet er die alte Mikrowelle im Karton: „Endlich ein Gerät, das meine Beziehung zu Essen genauso schnell beendet wie mein Ex.“",
       "qwen": "Ich warf die uralte Fernbedienung weg. Jetzt habe ich sie bitter nötig.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie in der Apotheke ankommt.“",
       "qwen": "„Drei Tabletten täglich nach den Mahlzeiten“, sagt der Arzt.\n„Und wenn ich keine Mahlzeiten habe?“, frage ich.",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-19T06:41:02.308Z",
+      "gpt": "Ich sitze im Wartezimmer, die Ärztin ruft: „Sie sind dran, bitte folgen Sie dem Schild zur Apotheke.“ Ich dachte, das ist mein Rezept.",
+      "qwen": "„Haben Sie Angst vor der Nadel?“\n„Nein, ich bin nur Allergiker.“",
+      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
     }
   ]
 }
