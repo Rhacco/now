@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T08:56:05.147Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kinobesitzer antwortet: „Nur, wenn du Popcorn mitbringst.“",
-      "qwen": "In der Bibliothek fragte ich nach dem Krimi, doch der Bibliothekar zeigte nur auf das Kino. „Dort ist der Mörder noch lebendig“, erklärte er trocken.",
-      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
-    },
-    {
       "timestamp": "2026-11-19T09:01:05.753Z",
       "gpt": "Ich öffne die Wetter-App, sie sagt Regen, also nehme ich den Regenschirm – mein Handy piept: „Du brauchst keinen Schirm, du bist drinnen.“",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schläft nur noch mein Handy.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie das Ziel erreicht haben.“ Der Pendler: „Ich sitze im Bus.“",
       "qwen": "Ich stieg aus dem Taxi, winkte dem Bus und rief das Auto. „Mann,“, seufzte der Fahrer, „du fährst ja jeden Weg zweimal.“",
       "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
+    },
+    {
+      "timestamp": "2026-11-19T13:01:06.113Z",
+      "gpt": "Im Zug zur Bergewanderung fragt die Frau: „Wie lange dauert die Tour?“ Der Begleiter: „Kurz, wir steigen gleich aus – das ist ein Freizeitpark.“",
+      "qwen": "Auf dem Campingplatz fragte ich: „Haben Sie hier auch ein Bad?“ Der Vermieter zeigte auf den See: „Das ist das Bad.“",
+      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
     }
   ]
 }
