@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T07:05:58.200Z",
-      "gpt": "Mama fragt: „Warum hast du das Glas Wasser auf den Boden gekippt?“  \nWeil ich den Hund von seiner Diät ablenken wollte.",
-      "qwen": "Die Kinder fragen: „Warum muss Mama immer schreien?“ Sie antwortet: „Damit der Stau in ihrer Kopfhörer schneller abfließt.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-19T07:11:08.880Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie gibt mir ein Geschenkpapier – „Damit Sie die Preise nicht mehr sehen.“",
       "qwen": "Papi, frag den Verkäufer, ob der Fisch noch lebt. Er sagt: „Das hängt doch davon ab, was Sie damit vorhaben.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – am Ende musste ich den Schlüssel zurückgeben, weil ich das Formular selbst verlegt hatte.",
       "qwen": "Ich füllte alle Felder des Fundamts-Formulars aus, bis mir die Tinte auslief. Die Dame winkte ab: „Für die Abtrocknung brauchen wir ein eigenes Formular.“",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-19T11:06:07.737Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Blatt war bereits im Fach „Verloren“. So war das Fundbüro doch nur ein Fundort.",
+      "qwen": "Ich habe meinen Verlust beim Fundbüro gemeldet. Sie meinten, ich müsste erst das Formular „Kein Verlust“ ausfüllen.",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
