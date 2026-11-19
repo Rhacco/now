@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T17:21:13.761Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte steigen Sie aus, wenn Sie ein Taxi benötigen.“ Ich steige aus, weil ich keinen Fahrplan mehr lese.",
-      "qwen": "„Nächster Halt: Bahnhofsvorplatz“, rief der Busfahrer. Ich sprang aussteigend aus dem Auto.",
-      "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
-    },
-    {
       "timestamp": "2026-11-19T17:26:01.107Z",
       "gpt": "Ich öffne die Wetter‑App, um mich für den Spaziergang anzuziehen – sie zeigt „Sonnig“, aber draußen regnet es, weil ich den Regenschirm vergessen habe.",
       "qwen": "Mein Handy zeigt munter an, dass ich in drei Minuten zu Hause bin.\nDie Tür bleibt leider doch noch zuge.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket leer war – er meinte, das sei die neue „Zero‑Weight“-Lieferoption. Ich fragte nach einem Rückerstattungsgutschein, er schickte mir ein leeres Kuvert.",
       "qwen": "Paketbote: „Unterschreiben Sie hier.“ Ich: „Ist das ein Vertrag?“ Er: „Nein, aber ohne Unterschrift darf ich nicht gehn.“",
       "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
+    },
+    {
+      "timestamp": "2026-11-19T21:31:08.365Z",
+      "gpt": "Ich klopfe beim Nachbarn an, um den lauten Fernseher zu melden – er öffnet die Tür, wirft die Fernbedienung zurück und sagt: „Ich dachte, du willst leihen.“",
+      "qwen": "Der obere Nachbar tippt nervös an der Zimmerdecke. Ich stehle mich an die Küche und scrolle lautstark durch meine Social-Media-Feeds.",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
