@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T13:45:59.491Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Zeugen, der den verlorenen Stift bezeugt.",
-      "qwen": "Fundbüro: „Ihr Formular ist unvollständig.“ Ich: „Aber ich habe doch alles ausgefüllt!“",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-19T13:50:57.814Z",
       "gpt": "Im Supermarkt fragt ich nach Bio‑Bananen, die Verkäuferin sagt: „Hier gibt’s nur Bio‑Bananen.“ Am Wochenmarkt kaufe ich welche, die Verkäuferin fragt: „Bio?“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für Tomaten. Er zückte eine Waage statt der Kasse.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich dann endlich die PowerPoint‑Fertigkeiten habe, die Sie fordern.“",
       "qwen": "Nach der Weiterbildung frage ich im Vorstellungsgespräch: „Haben Sie auch schon mal eine Bewerbung abgelehnt?“",
       "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
+    },
+    {
+      "timestamp": "2026-11-19T17:51:07.203Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann antwortet: „Nein, ich habe nur das Formular, weil ich mich selbst verloren habe.“",
+      "qwen": "An der Fundbüro-Theke: „Ich habe meinen Schlüssel verloren.“ Der Beamte starrt mich an: „Dann sollten Sie ihn nicht gefunden haben.“",
+      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
     }
   ]
 }
