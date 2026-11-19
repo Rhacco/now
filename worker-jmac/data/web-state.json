@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:58:51.365Z",
-      "gpt": "Ich stehe in der Schlange, das Regal ist leer,  \nder Kassierer lächelt und sagt: „Heute haben wir nur  \neinen Artikel im Angebot – das ist ein  \n„Kauf‑ein‑für‑zwei‑Kaffee“, weil ich das Geld selbst einstecke.“",
-      "qwen": "Ich warte seit zwanzig Minuten in der Schlange,\nder Kassierer tippt langsam,\nich könnte heulen.\n„Kassenbon mitnehmen?“",
-      "archive": "Bei der Bürgerbefragung sollte ich angeben, wie zufrieden ich mit den Öffnungszeiten bin. Das Formular bekam ich nur während der Öffnungszeiten. Ich musste mir extra freinehmen, um „unzufrieden“ anzukreuzen."
-    },
-    {
       "timestamp": "2026-11-18T21:00:45.438Z",
       "gpt": "Ich stehe beim Kiosk, das Paket liegt bereit,  \nder Verkäufer lächelt und fragt: „Wie möchten Sie bezahlen?“  \nIch greife nach meiner Geldbörse, doch sie ist leer.  \nEr wirft das Paket zurück: „Dann nehmen wir's eben per Post.“",
       "qwen": "Ich frage den Kioskbesitzer, ob ich mein Paket abholen kann.\nEr schaut mich an und sagt: „Ja, aber das ist kein Kiosk-Paket.“\nIch zücke meine Abholnummer, er tippt sie ein und sagt: „Oh, da steht nur: ‚Pizza, kalt‘.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarin, um mir den Rasenmäher zu leihen – sie reicht mir stattdessen ihren Staubsauger, weil ihr Rasen jetzt „sauber“ ist.",
       "qwen": "Der Nachbar fragt, ob seine neue Wandfarbe nicht zu aggressiv wirkt. Ich erwidere: „Die Wand weiß noch nicht, was sie tut.“",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-19T01:06:05.990Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ Ich antworte: „Nur, wenn er mit Espresso süß ist.“",
+      "qwen": "Ich fragte im Café: „Gibt’s auch süßes?“\nDie Bedienung lächelte: „Ja, der Zucker ist hier drin.“",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
