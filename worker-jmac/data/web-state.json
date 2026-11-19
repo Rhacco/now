@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:06:05.298Z",
-      "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie geben mir einen Eimer – ich dachte, sie wollen mir beim Gießen helfen.",
-      "qwen": "Ich fragte den Nachbarn, warum er nachts um drei laute Metal-Hammer schlägt. Er antwortete: „Ich übe meinen Abschluss als Schlüsseldiener.“",
-      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
-    },
-    {
       "timestamp": "2026-11-19T05:10:58.606Z",
       "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, wo ist der Ausgang?“ – Ich zeige auf das Fenster: „Da draußen ist unser Ziel.“",
       "qwen": "Ich habe den Koffer gepackt, damit der Urlaub nicht zu kurz kommt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um runterzukommen. Mein Hund legt sich neben mich und macht den herabschauenden Hund – ich falle vom Sofa.",
       "qwen": "Ich war nach dem Yoga völlig entspannt. Dann habe ich mein Handy gesehen.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-19T09:11:07.731Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
+      "qwen": "Der Arzt sagt: „Sie müssen weniger Stress haben.“ Ich antworte: „Ich bin gerade auf dem Weg zur Apotheke.“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
