@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T05:10:58.606Z",
-      "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, wo ist der Ausgang?“ – Ich zeige auf das Fenster: „Da draußen ist unser Ziel.“",
-      "qwen": "Ich habe den Koffer gepackt, damit der Urlaub nicht zu kurz kommt.",
-      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
-    },
-    {
       "timestamp": "2026-11-19T05:15:58.751Z",
       "gpt": "Im Museum flüstert ein Besucher: „Ich habe das Buch im Regal gefunden.“ Das Personal schüttelt den Kopf – das war das Drehbuch des Films.",
       "qwen": "Im Museum bin ich stehen geblieben, im Kino saß ich fest, aber in der Bibliothek habe ich mich endlich ein bisschen umgesehen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
       "qwen": "Der Arzt sagt: „Sie müssen weniger Stress haben.“ Ich antworte: „Ich bin gerade auf dem Weg zur Apotheke.“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-19T09:16:02.740Z",
+      "gpt": "Ich sortiere beim Umzug meine Bücher nach Größe – der Riese steht plötzlich neben dem Taschenbuch. Dann fällt mir ein: Ich habe die Regale vertauscht.",
+      "qwen": "Wir haben stundenlang alte Kisten sortiert und die letzten Nieten verpackt. Dann hat der Umzugstransporter gekracht und gesagt: „Ich fahre nur bis zum Container, den Rest schmeißt ihr selbst rein.“",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
