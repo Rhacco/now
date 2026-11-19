@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:21:00.095Z",
-      "gpt": "Mama ruft: „Wer hat die Milch gekippt?“ Papa antwortet: „Ich, ich wollte den Hund nicht wecken.“",
-      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Ich.“\nMama: „Danke, du bist mein Held.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-19T18:25:59.742Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich zeige auf den leeren Briefkasten und sage: „Hier ist mein Kundenservice.“",
       "qwen": "Der Kurier fragt nach der Signatur für das Paket. Ich zeige ihm meinen nackten Fuß.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packte den Staubsauger ein, weil ich dachte, er sei das schwerste Teil. Zuhause stellte ich fest, dass ich die Möbel vergessen hatte.",
       "qwen": "Wir haben drei Wochen für den Umzug gebraucht. Das ist aber nicht schlimm, denn wir hatten nur drei Dinge.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-19T22:30:59.491Z",
+      "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie ihn mit Milch oder mit Sahne?“ – Ich antworte: „Mit Espresso, danke.“",
+      "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Kellner seufzte: „Nur die Kaffeesatzlesung.“",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
