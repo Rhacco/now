@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:50:42.363Z",
-      "gpt": "„Entschuldigung, ich habe meinen Personalausweis verloren“, sagt ich am Schalter.  \nDer Beamte nickt, tippt und fragt: „Haben Sie denn noch Ihren Reisepass dabei?“  \nIch zucke mit den Schultern: „Der liegt im Safe zu Hause.“  \nEr lächelt: „Dann brauchen Sie ja keinen neuen Ausweis, sondern nur einen neuen Safe.“",
-      "qwen": "Ich sage an der Schütze im Bürgerbüro, ich habe heute leider keinen Termin.\n„Oh, das ist aber schade,“ sagt sie, „dann haben Sie ja auch keinen Anspruch auf Warten.“",
-      "archive": "Im Büro fragte ich, wer für die Kaffeemaschine zuständig sei. Alle zeigten auf denselben Kollegen. Der war seit drei Monaten nicht mehr da. Seine Karriere geht trotzdem weiter."
-    },
-    {
       "timestamp": "2026-11-18T20:52:46.971Z",
       "gpt": "Mama: „Kinder, ich habe die Rechnung vom Stromanbieter bekommen – 200 €!“  \nLukas: „Wow, das ist ja fast so viel wie unser Kinogutschein.“  \nAnna: „Vielleicht haben wir ja doch zu viel Netflix geschaut.“  \nOma: „Keine Sorge, ich habe das Geld schon an die Versicherung geschickt – für den Fall, dass das Licht ausgeht.“",
       "qwen": "Mama schreibt im Familienchat: „Ich habe heute den Arzt besucht.“\nAlle antworten sofort: „Wie geht es dir? Was hat er gesagt?“\nMama: „Er hat nur gesagt, ich bin die Einzige, die noch auf die Gruppe antwortet.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin ein Schild mit „Bitte leise sein – schlafende Babys“ aufgehängt; sie hat daraufhin ihr Baby aus dem Fenster geworfen.",
       "qwen": "Ich habe im Hausflur eine Treppe eingebaut.\nJetzt kann ich endlich von oben zu meinen Nachbarn hinuntersehen.",
       "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
+    },
+    {
+      "timestamp": "2026-11-19T00:40:57.091Z",
+      "gpt": "Im Bus drückte ich den Notrufknopf – die Durchsage: „Bitte nicht schreien, wir fahren nicht zum Flughafen.“",
+      "qwen": "Ich steig aus dem Taxi, rufe den Bus, fang die Bahn, dann das Auto. Der Fahrer warf mir den Schlüssel zackig zu.",
+      "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
     }
   ]
 }
