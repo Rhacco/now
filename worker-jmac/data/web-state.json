@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T00:20:58.503Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meinen Sitzplatz nicht finden konnte – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht zurück.“",
-      "qwen": "Wir wollten am Strand entspannen. Stattdessen legte sich die Gattin zum Sonnenbaden hin, während ich die Luftmatratze aufpumpte.",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-19T00:26:12.425Z",
       "gpt": "Im Supermarkt fragt die Kundin nach einer glutenfreien Alternative zu Brot, und die Verkäuferin reicht ihr ein Blatt Papier. \"Für die Diät\", flüstert sie.",
       "qwen": "Ich fragte im Supermarkt nach einem Eimer Farbe. Der Verkäufer meinte: „Nehmen Sie die rote, die ist viel kräftiger.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt nach meiner Unterschrift – ich zeige ihm meine leere Kreditkarte.",
       "qwen": "Der Kurier drückt mir das Paket in die Hand und ruft: „Bitte unterschreiben Sie hier, dass alles in Ordnung ist.“\nIch gehe vor die Tür und werfe es ihm zurück.",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-19T04:26:06.194Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, sie zählt meine Schritte – und nach fünf Minuten zeigt sie: „Kaffee‑Pause, 0 km zurückgelegt.“",
+      "qwen": "Ich sagte dem Handy: „Schau mal, wie spät es ist.“\nEs antwortete: „Das tust du selbst.“",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
