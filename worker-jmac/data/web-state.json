@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T09:26:10.443Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich gelernt habe, meine Antworten zu planen.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die gibt es, wenn Sie eine haben.“",
-      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
-    },
-    {
       "timestamp": "2026-11-19T09:31:00.460Z",
       "gpt": "Im Café fragt die Kundin, ob das Omelett „leicht“ sei; die Kellnerin lächelt: „Nur, wenn Sie es nicht selbst schütteln.“",
       "qwen": "Ich bat im Café um eine Espressomaschine. Die Kellnerin lächelt: „Die steht in der Küche.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus drängte ich mich zum Fenster, weil ich frische Luft wollte – dann kam der Fahrer und öffnete die Tür zum Bahnhof.",
       "qwen": "Ich fragte den Taxifahrer: „Zum Bahnhof, bitte.“ Er antwortete: „Dafür brauchen Sie keine Taxizentrale, sondern ein Ticket.“",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-19T13:31:02.538Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie stehen Sie zu Fortbildungen?“ Ich antworte: „Ich habe schon einen Kurs belegt – wie man das Wort „Absage“ richtig schreibt.“",
+      "qwen": "Ich erkläre im Vorstellungsgespräch, dass ich nach der Weiterbildung jetzt KI programmieren kann. Der Chef fragt: „Und wie läuft das genau?“",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
