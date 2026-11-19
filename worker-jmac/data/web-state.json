@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T20:25:04.675Z",
-      "gpt": "Ich stehe an der Kasse, ein Kind drängelt sich vor und ruft: „Mama, ich will das Spielzeug!“  \nDie Mutter lächelt, legt das Spielzeug zurück ins Regal und sagt: „Wir zahlen jetzt.“  \nDer Kassierer schaut verwirrt, weil das Kind plötzlich das Portemonnaie zieht.  \n„Ich kaufe mir nur das Spielzeug, weil es im Sonderangebot ist – 2‑für‑1, ich zahle nur einen Euro.“",
-      "qwen": "Ich stehe in der Supermarktwarteschlange und zähle die Leute vor mir.\nDreizehn Personen.\nIch seufze hörbar.\nDie Kassierin lächelt: „Keine Sorge, ich bin die einzige, die noch arbeitet.“",
-      "archive": "Im Wartezimmer hängt ein Schild: „Bitte melden Sie sich, wenn Sie länger als 30 Minuten warten.“ Ich ging zum Empfang. Die Frau sagte: „Sie sind erst seit 29 Minuten hier.“ Beeindruckender Kundenservice."
-    },
-    {
       "timestamp": "2026-11-18T20:32:47.089Z",
       "gpt": "Im Wartezimmer steht ein Mann und starrt nervös auf die Uhr.  \nEine Dame neben ihm fragt: „Ist das lange?“  \nEr seufzt: „Ja, die Ärztin hat heute nur fünf Minuten.“  \nPlötzlich ruft die Rezeption: „Bitte, jetzt ist die Zeit für die Kaffeepause!“",
       "qwen": "Doktor: „Haben Sie Schmerzen?“\nPatient: „Nur hier im Wartezimmer.“\nDoktor: „Dann nehmen Sie doch lieber den Aufzug, der fährt direkt nach oben.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den alten Toaster ein, weil ich glaube, er fehlt noch im neuen Haus.  \nMeine Mutter schaut und sagt: „Der war doch schon 1998 kaputt.“  \nIch lege ihn zurück in die Kiste und schreibe daneben: „Für die Zukunft.“  \nAm Umzugstag merkt der Umzugswagenfahrer: „Hier ist ja ein Toaster, der nicht funktioniert.“",
       "qwen": "Beim Ausmisten finde ich eine Kiste voller alter Briefe.\nMeine Frau starrt mich an: „Wer sind die Leute?\"\nIch antworte ehrlich: „Meine Ex-Freundinnen.\"\nSie sagt: „Dann wirf die Kiste direkt in den Müll.\"",
       "archive": "Meine Schwester hatte eine praktische Kiste für einzelne Socken. Als ich ihr zwei passende herauslegte, sagte sie: „Die gehören da nicht rein.“ Ich sah, wie das System entstanden war."
+    },
+    {
+      "timestamp": "2026-11-19T00:01:11.016Z",
+      "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie dachte, ich wäre stark.  \nSie dankte mir mit einem Kuchen und sagte: „Jetzt hast du endlich mal ein Stück vom Haus.“",
+      "qwen": "Der Nachbar klopft an und fragt eindringlich: „Haben Sie gerade gebohrt?“\nIch sage: „Nein, ich rufe gerade meine Katze.“\nEr seufzt erleichtert: „Dankeschön, ich dachte, Sie renovieren schon wieder.“",
+      "archive": "Unsere Nachbarin bat mich, während ihres Urlaubs ein Auge auf die Wohnung zu haben. Nach dem ersten Foto vom tropfenden Wasserhahn schrieb sie: „Danke, ein bisschen weniger genau wär auch okay.“"
     }
   ]
 }
