@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:25:59.742Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich zeige auf den leeren Briefkasten und sage: „Hier ist mein Kundenservice.“",
-      "qwen": "Der Kurier fragt nach der Signatur für das Paket. Ich zeige ihm meinen nackten Fuß.",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-19T18:31:10.308Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, und mein Hund legt sich mitten in die „herabschauende Katze“. Jetzt übe ich nur noch den „herabschauenden Hund“.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er nickte und sagte: „Ja, bis du es nicht mehr bist.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie ihn mit Milch oder mit Sahne?“ – Ich antworte: „Mit Espresso, danke.“",
       "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Kellner seufzte: „Nur die Kaffeesatzlesung.“",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-19T22:35:59.388Z",
+      "gpt": "Ich kaufe im Supermarkt einen Bio‑Apfel, doch am Kassenband sagt die Kassiererin: „Entschuldigung, das ist unser Wochenmarkt‑Special.“",
+      "qwen": "Ich wollte beim Wochenmarkt die Tomaten schmecken, aber der Händler meinte: „Die sind noch grün.“ Das ist der einzige Ort, wo das ein Kompliment ist.",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
