@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T12:36:06.980Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Webinar, das Sie gerade ankündigen.“",
-      "qwen": "Der Chef fragt: „Was bringt Ihre Weiterbildung?“\nIch antworte: „Nichts, Sie können mich jetzt feuern.“",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-19T12:40:58.125Z",
       "gpt": "Ich habe beim Ausmisten die Kaffeemaschine gespendet – jetzt trinkt mein Nachbar morgens nur noch Wasser, weil er keinen Strom mehr hat.",
       "qwen": "Ich habe beim Ausmisten die alte Deko-Kerze „Blauer Ozean“ gefunden. Die nahm ich, denn ich muss ja bald meinen Aquarium-Neuwagen abholen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe beim Ausmisten die leere Kartonbox ein – dann merke ich, dass ich das Haus ohne Möbel umziehe.",
       "qwen": "Ich habe den letzten Karton verpackt und den Schlüssel eingeworfen. Draußen wartet der Mülleimer auf den Möbelwagen.",
       "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
+    },
+    {
+      "timestamp": "2026-11-19T16:46:07.246Z",
+      "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft endlich die „Stummfilm‑Ausgabe“ des Romans.",
+      "qwen": "Im Museum weigere ich mich, zu flüstern. Die Aufseherin ruft: „Hier dürfen Sie gar nicht schweigen!”",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
