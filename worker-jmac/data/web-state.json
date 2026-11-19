@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-18T21:02:50.588Z",
-      "gpt": "Mama: „Kinder, bitte keine Süßigkeiten mehr, wir haben gerade das neue Diät‑Programm gestartet!“  \nLukas: „Okay, dann nehme ich das Wasser.“  \nAnna: „Ich auch.“  \nOma: „Ich hab das Rezept für die Diät‑Kekse schon im Anhang geschickt.“",
-      "qwen": "Mama schreibt im Familienchat: „Böse Zungen behaupten, ich habe den Kuchen allein gegessen.“\nNur ich tippe: „Die bösen Zungen haben recht.“\nDrei Sekunden Stille.\nDann: „Wer hat das geschrieben?“",
-      "archive": "Ein Kollege sagte, wir sollten das Thema einfach nächste Woche mitnehmen. Wir nehmen inzwischen jede Woche so viel mit, dass wir langsam einen Transporter brauchen."
-    },
-    {
       "timestamp": "2026-11-18T21:04:45.122Z",
       "gpt": "Im Wartezimmer steht ein Mann und liest die Zeitschrift „Gesund & Fit“.  \nEr schaut auf die Uhr, die Zeiger zeigen schon 15 Minuten zu spät.  \nDie Sprechstundenhilfe ruft: „Herr Müller, bitte kommen Sie rein.“  \nEr legt die Zeitschrift weg und sagt: „Endlich, ich dachte, das hier sei das Fitness‑Studio.“",
       "qwen": "Im Wartezimmer grinst mich eine alte Dame an und fragt: „Sagen Sie, hat der Arzt viele Jahre Erfahrung?“\nIch zähle kurz im Kopf nach: „Ja, er ist seit zwanzig Jahren hier.“\nDie Dame seufzt zufrieden: „Und in den letzten fünfzehn Jahren hat er immer schlecht geredet?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn sie aus Stoff ist.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“ Ich zeige auf die Tomate.",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-19T01:16:05.903Z",
+      "gpt": "Ich gehe in die Bibliothek, um einen Film zu recherchieren, und finde im Museum das Drehbuch – dort steht: „Bitte leise sein.“",
+      "qwen": "Ich fragte, wo das Museum sei. Der Bibliothekar winkte zum Kino: „Dort laufen die alten Meister.“",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
