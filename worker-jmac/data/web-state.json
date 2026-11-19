@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T18:35:59.566Z",
-      "gpt": "Im Zug zur Berge-Entdeckungspause fragt der Tourist: „Gibt es hier WLAN?“ – Der Schaffner lächelt: „Nur wenn Sie den Gipfel erreichen.“",
-      "qwen": "An der Kasse fragt die Kassiererin: „Haben Sie Ihren Gutschein dabei?“\nIch zücke meine Zahnbürste und sage: „Hier, für die Zahnfee?“",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-19T18:40:57.399Z",
       "gpt": "Im Fitnessstudio fragt die Yogalehrerin: „Wer will heute entspannen?“ Der Trainer drückt die Hantel und sagt: „Ich schon.“",
       "qwen": "Beim Yoga „Baum“ gehalten, wackelte ich die ganze Zeit. Lehrerin: „Stell dich tiefer in den Boden.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann meint: „Nur, wenn ich das gefundene Portemonnaie zurückhaben will.“",
       "qwen": "Ich gab der Mitarbeiterin im Fundbüro eine Kopie meines Personalausweises. Sie gab mir den gefundenen Ausweis zurück.",
       "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
+    },
+    {
+      "timestamp": "2026-11-19T22:46:11.154Z",
+      "gpt": "Ich war im Café, bestellte einen Cappuccino und fragte nach Zucker. Die Barista lächelte: „Wir servieren nur Espresso – unser Kaffee ist schon süß genug.“",
+      "qwen": "Im Restaurant: „Ist das hier echtes Wildschwein?“ – „Nein, das ist unser Koch.“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
