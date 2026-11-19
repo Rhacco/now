@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T10:25:59.395Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen und packe sofort den Regenschirm ein – mein Handy zeigt mir dann, dass ich heute keinen Regenschirm habe.",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch nehme es aus der Steckdose und es stirbt sofort.",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-19T10:30:58.041Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst testet neue Lieferzeiten.“ Ich melde mich sofort ab.",
       "qwen": "Der Lieferant fragt: „Ist jemand zu Hause?“ Ich rufe: „Ich bin’s, aber das Paket hat mich überholt.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie das Gemüse einpacken.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis, beim Supermarkt nach dem Rabatt.",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-19T14:36:02.591Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator schmunzelt: „Nur, wenn du es zurückschreibst.“",
+      "qwen": "Die Bibliothek ist lautlos, das Kino dunkel, das Museum still.",
+      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
     }
   ]
 }
