@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:26:07.536Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminar, weil ich erst jetzt gelernt habe, wie man Fragen beantwortet.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Personalchef schmunzelte und meinte: „Da fehlt Ihnen wohl die Akte.\"",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-20T18:30:59.235Z",
       "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich sag: „Nein, ich will die Kalorien nicht verdünnen.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn gleich kochen?“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten fand ich meine alte Steuererklärung – ich dachte, das war ein Liebesbrief, aber das Finanzamt hatte mich doch nur gemeldet.",
       "qwen": "Die alte Kiste mit Porzellan? Weg damit.\nDrauf stand: „Nicht öffnen, zerbrechlich“.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-20T22:31:06.372Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gleis für den Urlaub?“ Der Schaffner lächelt: „Nur, wenn Sie mit dem Koffer fahren.“",
+      "qwen": "Am Strand sitzen wir reglos da. Der Kellner fragt: „Ist alles in Ordnung?“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
