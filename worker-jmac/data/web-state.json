@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:26:04.164Z",
-      "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ – Ich: „Ganz gut, ich habe endlich den Koffer gefunden.“",
-      "qwen": "Am Strand kuscheln wir uns eng zusammen. Bis die Möwe landet und uns die Handtuchrolle stiehlt.",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-20T15:31:21.570Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ Auf dem Wochenmarkt schenkt der Händler ihr ein Blatt Papier: „Hier, für Ihren Einkaufszettel.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich zücke genervt die Schultern. „Hier gibt’s nur Tüten.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten wirft er den Staubsauger aus dem Fenster – weil er endlich mal wieder Luft zum Atmen braucht.",
       "qwen": "Nach dem Umzug hat meine Frau alle alten Kalender aussortiert. Wir haben nur noch die für 1984.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-20T19:36:05.785Z",
+      "gpt": "Ich füllte das Formular für verlorene Schlüssel aus – unter \"Vermerk\" stand: \"Bitte bei Fundbüro abgeben, falls jemand den Schlüssel zurückgibt.\"",
+      "qwen": "Ich habe meinen Schlüssel verloren. Das Fundbüro verlangt zwei ausgefüllte Formulare und einen Termin, um ihn mir zurückzugeben.",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
