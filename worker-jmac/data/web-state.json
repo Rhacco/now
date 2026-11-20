@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:36:05.208Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich die PowerPoint‑Skills lerne.“",
-      "qwen": "Der Personaler fragt, was ich neben der Arbeit tue. Ich sage: „Ich lerne gerade, nein zu sagen.“",
-      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
-    },
-    {
       "timestamp": "2026-11-20T04:40:58.021Z",
       "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich den Regenschirm mitnehmen soll – sie zeigt „Sonnig“, doch draußen regnet es wie aus Kübeln.",
       "qwen": "Ich suchte frustriert nach meinem Handy im schwarzen Pullover. Die Kamera-App zeigte nur: „Kein Signal.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Training?“ – „Wie ein Keks: komplett zerbröselt, aber irgendwie süß.“",
       "qwen": "Ich mach Yoga, um den Stress rauszuholen. Heute bin ich nur noch raus, der Stress bleibt.",
       "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
+    },
+    {
+      "timestamp": "2026-11-20T08:45:58.728Z",
+      "gpt": "Im Zug steht ein Mann, der plötzlich aufsteht, weil er den nächsten Halt verpasst hat – er fährt ja nur mit dem Bus.",
+      "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“\nIch sage: „Ja, danke.“\nEr schaltet sie aus.",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
