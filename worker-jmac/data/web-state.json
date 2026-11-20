@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:36:05.604Z",
-      "gpt": "Ich wollte beim Wochenmarkt frische Äpfel, aber der Stand war leer – im Supermarkt hatte die Kasse ein Sonderangebot: „2 für 1, wenn du das Geld selbst wiegst.“",
-      "qwen": "Der Wochenmarkt hat mehr Auswahl als der Supermarkt, aber die gleiche Kasse.",
-      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
-    },
-    {
       "timestamp": "2026-11-19T21:41:10.794Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den verlorenen Ausweis ausgefüllt?“ Ich: „Nein, ich warte nur auf den Schein, den ich nie finde.“",
       "qwen": "Ich gab den Fundbericht ab, doch der Beamte stellte die Frage: „In welcher Stadt haben Sie den Hund verloren?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs „Wie man ehrlich antwortet“.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte, was ich unter „Weiterbildung“ verstehe.",
       "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
+    },
+    {
+      "timestamp": "2026-11-20T01:41:07.992Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“, ich antworte: „Nein, ich kaufe gleich beim Wochenmarkt.“",
+      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für die Tomaten.\nEr sagte: „Einen Euro, aber ich akzeptiere keine Kreditkarte.“",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
