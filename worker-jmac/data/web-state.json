@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:30:57.640Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verheddert sich mein Hund im Seil – er macht jetzt den „Knoten“.",
-      "qwen": "Damit die Entspannung wirkt, zähle ich bis zehn. Einer, zwei, drei – der erste Beineinsatz.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-20T04:36:05.208Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich die PowerPoint‑Skills lerne.“",
       "qwen": "Der Personaler fragt, was ich neben der Arbeit tue. Ich sage: „Ich lerne gerade, nein zu sagen.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne, er fragt: „Ist das hier das Rücksende‑Büro?“ Ich antworte: „Nein, das ist mein Wohnzimmer – ich habe das Paket bestellt.“",
       "qwen": "„Ihr Paket ist unterwegs“, sagte der Bot. „Genau wie Ihr Geduld.“",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-20T08:41:02.815Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Training?“ – „Wie ein Keks: komplett zerbröselt, aber irgendwie süß.“",
+      "qwen": "Ich mach Yoga, um den Stress rauszuholen. Heute bin ich nur noch raus, der Stress bleibt.",
+      "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
     }
   ]
 }
