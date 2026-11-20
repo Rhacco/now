@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:20:57.592Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Schlüssels ausgefüllt?“ – Ich: „Nein, ich habe ihn gerade erst gefunden.“",
-      "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir ein Formular: „Bitte beantragen Sie die Rückgabe schriftlich.“",
-      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
-    },
-    {
       "timestamp": "2026-11-20T00:25:59.041Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Regen. Dann frage ich Siri, ob sie mir einen Regenschirm bestellen kann – sie sagt, ich soll lieber tanzen.",
       "qwen": "Ich suche die Kamera-App. Sie sagt: „Dabei helfen wir dir nicht.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kundin nach glutenfreiem Kuchen, und die Kellnerin reicht ihr ein Blatt Papier. „Hier ist die Rezeptur – null Kalorien.“",
       "qwen": "Der Kellner fragte: „Gibt’s noch was?“ Nur die Gabel, die langsam in der Suppe rührte.",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-20T04:25:57.461Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich den Film ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie ihn leise anschauen.“",
+      "qwen": "Im Museum starrt der Mann stundenlang auf leere Wände. „Gut, dass hier alles verkauft ist“, seufzt die Kassiererin.",
+      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
     }
   ]
 }
