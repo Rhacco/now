@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:21:03.883Z",
-      "gpt": "Im Café bestellt sie einen „Flachmann“ – der Kellner bringt ihr ein leeres Glas. Sie sagt: „Ich wollte nur einen kleinen Schluck.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Möchten Sie dazu einen Teller?“",
-      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
-    },
-    {
       "timestamp": "2026-11-20T03:26:02.895Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das ich noch nicht abgeholt habe.“",
       "qwen": "Im Wartezimmer flüstert die Dame: „Der Arzt ist heute besonders streng.“ Ich drehe mich um: „Kein Wunder, das ist ja der Apotheker.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie einen Kassenbon?“ Der Kunde lächelt: „Nur, wenn er vom Wochenmarkt kommt.“",
       "qwen": "Auf dem Wochenmarkt fragt der Bauer: „Geht’s?“ Ich antworte: „Gut, aber mein Tütchen ist schon voll.“",
       "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
+    },
+    {
+      "timestamp": "2026-11-20T07:26:06.665Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Obst in Tüten verpacken?“ Auf dem Wochenmarkt schnappt sich die Kundin ein Stück Apfel und sagt: „Nur, wenn’s frei ist.“",
+      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für die Tomaten. Er zeigte auf den Supermarkt im Hintergrund und sagte: „Da sind sie gratis, aber auch nur noch frei.\"",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
