@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:31:21.570Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ Auf dem Wochenmarkt schenkt der Händler ihr ein Blatt Papier: „Hier, für Ihren Einkaufszettel.“",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich zücke genervt die Schultern. „Hier gibt’s nur Tüten.“",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-20T15:35:59.035Z",
       "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift: „Bitte nicht waschen – das ist ein Vintage‑Stück.“ Und ich packe es sofort ein.",
       "qwen": "Beim Ausmisten fand ich meine alte Zahnbürste. Die habe ich natürlich behalten.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular für verlorene Schlüssel aus – unter \"Vermerk\" stand: \"Bitte bei Fundbüro abgeben, falls jemand den Schlüssel zurückgibt.\"",
       "qwen": "Ich habe meinen Schlüssel verloren. Das Fundbüro verlangt zwei ausgefüllte Formulare und einen Termin, um ihn mir zurückzugeben.",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-20T19:40:58.024Z",
+      "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, die Durchsage: „Bitte nicht aussteigen, wir fahren gerade ins Hotel.“",
+      "qwen": "Auf dem Berggipfel fragt der Freund: „Warum sind wir gerade hier?“ Ich antworte: „Damit ich dir sage, dass ich morgen zu Hause bleibe.“",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
