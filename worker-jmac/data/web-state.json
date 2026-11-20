@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:36:08.893Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Online‑Kurs, weil ich dann endlich meine Hausaufgaben erledigt habe.“",
-      "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 20 Kursen.\nDer Chef fragte nur: „Können Sie wirklich Excel?“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-20T16:40:58.440Z",
       "gpt": "In der Bibliothek fragt die Lehrerin: „Welches Buch ist im Kino am beliebtesten?“ – Der Bibliothekar antwortet: „„Stummfilm“ – weil er nie ausgeliehen wird.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf eine Tafel: „Hier gibt es keinen.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie halten Sie sich fachlich weiter?“ Ich antworte: „Ich bewerbe mich immer wieder, damit ich neue Fragen lerne.“",
       "qwen": "In der Bewerbung glänzte ich mit 20 Jahren Berufserfahrung, sechs Sprachkursen und 15 Weiterbildungen. Der Chef meinte nur: „Als Praktikant fangen wir morgen an.“",
       "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
+    },
+    {
+      "timestamp": "2026-11-20T20:46:07.911Z",
+      "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich habe ihn nur für den Staubsauger versteckt.“",
+      "qwen": "Die Mama fragt: „Wer hat das Fenster kaputt gemacht?“\nDie Katze schweigt, der Hund wedelt.",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
