@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:45:58.044Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage: „Bitte halten Sie die Verbindung nicht für selbstverständlich.“",
-      "qwen": "Ich dränge mich zwischen Bahn, Bus, Taxi und Auto. Der Taxifahrer lacht: „Da musst du nicht reinkommen, du fährst doch selbst.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-20T03:50:57.626Z",
       "gpt": "Ich vergleiche Preise auf dem Wochenmarkt, dann ruft mich der Supermarkt an: „Wir haben jetzt 20 % Rabatt – aber nur auf die Luft, die Sie gerade einatmen.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Treuekarte?“\nDer Mann antwortet: „Nein, ich bin nur hier, weil der Wochenmarkt heute dicht ist.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Tim: „Ich nicht, ich habe nur den Kühlschrank aus Versehen aufgemacht.“",
       "qwen": "Die Oma fragt, ob ich sie „Mama“ nennen soll.\nIch sage: „Nein, du bist meine Großmutter.“\nSie antwortet: „Dann habe ich dich ja nie geboren.“",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-20T07:50:57.515Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann antwortet: „Ja, ich habe das Formular für den verlorenen Stift gefunden.“",
+      "qwen": "Ich frage beim Fundbüro nach der Verlustanzeige für den verlorenen Schlüssel. Die Beamtin lächelt: „Die liegt seit drei Jahren bei uns, Sie hatten sie damals vergessen.“",
+      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
     }
   ]
 }
