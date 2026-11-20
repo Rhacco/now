@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:55:57.976Z",
-      "gpt": "Ich packe die alten Klamotten ein, doch die Packliste endet mit: „Nur das, was nicht mehr in den Schrank passt, bleibt im Keller.“",
-      "qwen": "Wir räumten die Küche aus, als ich die alte Kaffeemaschine fand. Sie war noch warm.",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-20T13:01:02.044Z",
       "gpt": "Ich öffne die Wetter-App, sie zeigt Sonne – ich ziehe die Jacke an, weil sie „kalt“ anzeigt. Das Handy hat wohl den Thermostat übernommen.",
       "qwen": "Ich habe meine Schritte-App geupdatet. Jetzt zählt sie auch meine Gedanken.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt frage ich nach Bio‑Brot. Die Verkäuferin meint: „Das gibt’s nur vom Wochenmarkt – wir backen hier nur Luft.“",
       "qwen": "Ich frage auf dem Wochenmarkt nach dem Preis für die Tomaten. Der Bauer antwortet: „Die sind heute schmutzig, also teurer.“",
       "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
+    },
+    {
+      "timestamp": "2026-11-20T17:06:09.474Z",
+      "gpt": "Ich habe beim Ausmisten den alten Toaster in die Kiste geworfen – heute steht er im neuen Wohnzimmer und brennt mir die Socke.",
+      "qwen": "Ich räume den Kleiderschrank aus und finde eine Tüte mit 200 Euro Scheinen. Seitdem zahlt meine Frau nicht mehr mit Karte.",
+      "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
     }
   ]
 }
