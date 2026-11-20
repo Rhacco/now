@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:21:12.636Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum für Weiterbildung – ich habe noch nie so viel gelernt.“",
-      "qwen": "Ich gefragt, ob ich mich weiterbilden würde. „Ja“, sage ich, „im Homeoffice.“",
-      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
-    },
-    {
       "timestamp": "2026-11-20T19:26:01.663Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Sonne, ziehe die Jacke an – die App fragt, ob ich das Update für den Regenschirm‑Modus installieren will.",
       "qwen": "Ich habe mein Handy verloren. Jetzt suche ich mit dem anderen Handy.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund schnarcht mein Nachbar laut – anscheinend ist Entspannung ansteckend.",
       "qwen": "Beim Yoga-Unterricht fallen mir die Beine vom Stuhl. Der Trainer sagt: „Gut, das ist aktive Entspannung.“",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-20T23:25:57.555Z",
+      "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie ständig laut trommelt. Sie dankte und sagte: „Endlich ein Rhythmus, den ich essen kann!“",
+      "qwen": "Der Nachbar kettete seinen Bulldogge an die Hauswand. „Er ist so schlank“, sagte er trotzig.",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
