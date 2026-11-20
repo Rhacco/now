@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:31:04.822Z",
-      "gpt": "Ich mache Yoga im Fitnessstudio, weil der Trainer meinte, ich soll entspannen – jetzt liegt er neben mir, weil er beim herabschauenden Hund eingeschlafen ist.",
-      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter, weil ich die Übungen nicht mehr kann.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-19T23:36:04.858Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich lerne, meine Antworten zu planen.“",
       "qwen": "Ich fragte nach Weiterbildung, doch der Chef lächelte nur.\n„Wir schulen Sie in Geduld, während wir Ihre Stelle streichen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um den Stress abzubauen – bis mein Hund versucht, die „herabschauende Katze“ zu fangen.",
       "qwen": "Ich jogge seit Wochen jeden Tag. Heute habe ich gemerkt, dass mein Knie sich endlich entspannt hat.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-20T03:40:57.538Z",
+      "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Lampe, und der Verkäufer meint: „Natürlich, wir haben hier das Licht aus.“",
+      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich: „Ja, ich suche einen Weg aus dem Kreislauf.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
