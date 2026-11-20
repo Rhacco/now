@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:31:06.220Z",
-      "gpt": "Im Meeting fragt der Chef, wer das Projekt leiten will – ich melde mich und sage: „Ich? Dann darf ich ja auch das Essen bestellen.“",
-      "qwen": "Der Chef fragt im Meeting: „Wo ist das Problem?“\nAlle starrt auf die Decke, denn er hatte den Lärmpegel auf „Null“ gestellt.",
-      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
-    },
-    {
       "timestamp": "2026-11-20T06:36:06.040Z",
       "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin schon süß genug.“",
       "qwen": "Ich bestellte einen Kaffee und fragte, ob er extra süß kommt. Der Barista antwortete: „Ja, er ist aus Zucker.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot – sie reicht mir ein Blatt Papier. \"Für die Diät\", sagt sie lächelnd.",
       "qwen": "Im Elektronikmarkt fragt der Kunde: „Haben Sie das W-Lan hier?“ Der Verkäufer nickt und sagt: „Ja, das ist das W-Lan.“",
       "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
+    },
+    {
+      "timestamp": "2026-11-20T10:40:58.236Z",
+      "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, doch der Stand verkaufte nur Ketchup – das war wohl der \"geheime\" Sonderpreis für Tomaten im Glas.",
+      "qwen": "Im Supermarkt glänzt die Gurke, doch auf dem Wochenmarkt murrt sie leise: „Hier riecht es nach echtem Leben.“",
+      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
     }
   ]
 }
