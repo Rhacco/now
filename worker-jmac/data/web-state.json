@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:11:07.025Z",
-      "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, doch als er dankbar die Tür öffnete, stand plötzlich ein Kakerlaken-Club im Flur – und lud zum Tanzen ein.",
-      "qwen": "Mein Nachbar hämmert täglich um sechs. Ich fragte genervt nach dem Grund, worauf er antwortete: „Ich probiere die neue Tür aus.“",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-20T15:15:59.230Z",
       "gpt": "Beim Familienabend fragt Mama: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich wollte nur die Krümel für die Steuererklärung.“",
       "qwen": "Mein Sohn fragt: „Papa, warum heult Opa immer abends?“\n„Weil er sich an die Zeit erinnert, als wir noch normal gegessen haben.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Wanderung fragt der Begleiter: „Haben wir genug Proviant?“ Ich zeige auf das leere Glas: „Ich habe nur meine schlechte Laune eingepackt.“",
       "qwen": "Am Strand: „Hast du den Fisch gesehen?“\n„Nein, aber sein Schatten war riesig.“",
       "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
+    },
+    {
+      "timestamp": "2026-11-20T19:21:12.636Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum für Weiterbildung – ich habe noch nie so viel gelernt.“",
+      "qwen": "Ich gefragt, ob ich mich weiterbilden würde. „Ja“, sage ich, „im Homeoffice.“",
+      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
     }
   ]
 }
