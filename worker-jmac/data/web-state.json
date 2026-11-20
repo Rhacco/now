@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:51:02.789Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin fragt, ob ich ihn lieber mit Espresso‑Milch will – ich antworte: „Nur, wenn er kocht.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zutun oder ohne?“",
-      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
-    },
-    {
       "timestamp": "2026-11-20T05:56:06.905Z",
       "gpt": "Im Meeting fragt der Chef: „Wie steht’s mit dem Projekt?“ Darauf meldet sich die Kollegin: „Projekt? Ich dachte, das ist nur das neue Kaffeekränzchen.“",
       "qwen": "In der Besprechung sagte der Chef: „Wir sind doch ein Team.“\nNiemand widersprach, weil alle schon ihre Koffer packten.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt die Chefin: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum – ich habe gerade erst den ersten Kurs abgeschlossen.“",
       "qwen": "Ich kündigte die Weiterbildung ab, um mich zu bewerben. Der Personalchef rückte die Bewerbung aus, da ich keine Weiterbildung absolviert habe.",
       "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
+    },
+    {
+      "timestamp": "2026-11-20T10:00:57.964Z",
+      "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich heute Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich das Handy im Kühlschrank vergessen habe.",
+      "qwen": "Ich suche die App „Stressfrei“ und finde nur meine eigene Tretaccu-App.",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
