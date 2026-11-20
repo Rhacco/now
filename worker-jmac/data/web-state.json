@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:25:57.539Z",
-      "gpt": "Ich packte den Staubsauger ein, weil ich dachte, er sei das schwerste Teil. Zuhause stellte ich fest, dass ich die Möbel vergessen hatte.",
-      "qwen": "Wir haben drei Wochen für den Umzug gebraucht. Das ist aber nicht schlimm, denn wir hatten nur drei Dinge.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-19T22:30:59.491Z",
       "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie ihn mit Milch oder mit Sahne?“ – Ich antworte: „Mit Espresso, danke.“",
       "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Kellner seufzte: „Nur die Kaffeesatzlesung.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert das Rezept?“ Die Ärztin meint: „Nur, bis Sie die Apotheke verlassen.“",
       "qwen": "Im Wartezimmer fragte ich: „Wie lange noch?“ Ein junger Mann antwortete: „Zwei Stunden.“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-20T02:31:07.901Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ – Ich antworte: „Beides, ich bin hier zum Schwimmen.“",
+      "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Die Barista sah mich fragend an und sagte: „Dann ist es einfach kein Kaffee.“",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
