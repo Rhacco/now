@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:26:01.048Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Preisschild – „Das ist Ihr Preis, nicht das Accessoire.“",
-      "qwen": "Der Verkäufer schiebt mir ein teures Modell unter die Nase. „Das hier hat doch gar keinen Akku“, entgegne ich.",
-      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
-    },
-    {
       "timestamp": "2026-11-20T11:30:59.374Z",
       "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ Ich: „Ich war im Zug, weil das Ticket gekappt war.“",
       "qwen": "Die Kinder schrien „Papa, schau mal, wie schnell!“, während wir gemütlich durch den Tierpark spazierten. Der Zebra-Schild zeigte: „Bitte nicht füttern, wir sind im Stau.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ – Ich: „Ganz gut, ich habe endlich den Koffer gefunden.“",
       "qwen": "Am Strand kuscheln wir uns eng zusammen. Bis die Möwe landet und uns die Handtuchrolle stiehlt.",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-20T15:31:21.570Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ Auf dem Wochenmarkt schenkt der Händler ihr ein Blatt Papier: „Hier, für Ihren Einkaufszettel.“",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich zücke genervt die Schultern. „Hier gibt’s nur Tüten.“",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
