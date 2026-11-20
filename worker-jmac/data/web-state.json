@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:51:08.044Z",
-      "gpt": "In der Bibliothek fragt er leise nach dem Film „Stille“, im Kino flüstert er das Museum an. Beide lachen, weil er nur das Wort „Ausstellung“ hörte.",
-      "qwen": "Im Kino gucke ich gebannt, im Museum staune ich. In der Bibliothek beschwert sich die Leserin, dass mein Handy vibriert.",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-20T10:55:58.536Z",
       "gpt": "Der Paketbote klopft, ich öffne die Tür und frage: „Ist das für mich?“ Er lächelt: „Nein, das ist die Rechnung für Ihre Geduld.“",
       "qwen": "Der Bote fragt: „Ist jemand zu Hause?“\nIch: „Nein, hier wohnt nur ein Paket.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken wegschnappt.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten darf. „Schau“, sagte er und stellte sich neben mich, „ich tu’s dir vor.“",
       "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
+    },
+    {
+      "timestamp": "2026-11-20T14:56:04.106Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die leere PowerPoint – sie heißt „Projekt: Noch nicht angefangen“.",
+      "qwen": "Ich sage im Meeting: „Ich bin nicht zu übertrumpfen.“\nDer Chef nickt: „Deshalb machst du hier alles allein.“",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
