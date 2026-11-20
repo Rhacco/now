@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:26:05.388Z",
-      "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau im Taxi lässt ihn zu Fuß weiterlaufen – und endlich findet er sein Auto im Parkhaus.",
-      "qwen": "Ich steige aus dem Taxi, spring in den Bus, fahre mit der Bahn und habe noch Autoschlüssel in der Hand.",
-      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
-    },
-    {
       "timestamp": "2026-11-20T10:31:02.597Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und er fragt: „Haben Sie das Rückgabeschild schon unterschrieben?“ Ich antworte: „Nur, wenn es ein Geschenk ist.“",
       "qwen": "Der Paketbote fragt: „Haben Sie das Paket erhalten?“ Ich antworte: „Nein, nur die Unschuld des Überbringers.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten die alte Kaffeemaschine in die Kiste geworfen – jetzt hat sie ein neues Zuhause im Keller, wo ich endlich mal wieder Ruhe habe.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte, warum sie so billig ist. „Weil sie nur noch Wäsche knüllt.“",
       "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
+    },
+    {
+      "timestamp": "2026-11-20T14:31:04.351Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient flüstert: „Wie ein Rezept, das ich nie einlösen kann.“",
+      "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich: „Und wenn ich keine Apotheke in der Nähe habe?“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
