@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:15:59.643Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du das Popcorn nicht mitnimmst.“",
-      "qwen": "Nach dem Film fragte ich im Museum nach der Toilette. Die Dame zeigte auf den Ausleihtresen.",
-      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
-    },
-    {
       "timestamp": "2026-11-20T11:21:04.158Z",
       "gpt": "Ich steig in den Bus, der Fahrer fragt, ob ich ein Ticket habe. Ich zeige ihm meine Fahrkarte für das Taxi – er lacht.",
       "qwen": "Ich stieg aus dem Taxi, um den Bus zu nehmen, der mich zur Bahn führt. Der Busfahrer winkte mich ab, weil ich das Auto blockierte.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienabend fragt Mama: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich wollte nur die Krümel für die Steuererklärung.“",
       "qwen": "Mein Sohn fragt: „Papa, warum heult Opa immer abends?“\n„Weil er sich an die Zeit erinnert, als wir noch normal gegessen haben.“",
       "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
+    },
+    {
+      "timestamp": "2026-11-20T15:20:59.345Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast: „Stark, ich will wenigstens beim Aufwachen etwas Durchblick haben.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zucker dazu?“",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
