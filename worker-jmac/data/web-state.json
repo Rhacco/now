@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:56:05.626Z",
-      "gpt": "Ich steig in den Bus, zahle, setze mich und merke, dass ich im Fahrplan meiner Lieblingsserie sitze – kein Halt, nur Werbepausen.",
-      "qwen": "Ich stieg in den Bus, dann ins Taxi, dann ins Auto. Der Kofferraum war schon voll.",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-20T17:01:05.036Z",
       "gpt": "Im Supermarkt frage ich nach Bio‑Brot. Die Verkäuferin meint: „Das gibt’s nur vom Wochenmarkt – wir backen hier nur Luft.“",
       "qwen": "Ich frage auf dem Wochenmarkt nach dem Preis für die Tomaten. Der Bauer antwortet: „Die sind heute schmutzig, also teurer.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie meldete sofort: „Bitte erst das Handy aufladen – sonst wird das Training nie beginnen.“",
       "qwen": "Der Akku zeigt ein Prozent, während ich nach dem Ladekabel suche. Ich falle in Ohnmacht, bevor ich den Stecker finde.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-20T21:01:08.063Z",
+      "gpt": "Ich bestelle im Café einen Espresso, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will nur das Wasser, das ich schon bezahlt habe.“",
+      "qwen": "Im Restaurant fragte ich nach dem „Café de Paris“. Der Kellner schob eine Karte vorbei: „Danke, hier wird nicht gezahlt.“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
