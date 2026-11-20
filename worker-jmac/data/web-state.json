@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:56:08.611Z",
-      "gpt": "Mama ruft: „Zieh die Waschmaschine aus, das ist mein Lieblingsbuch!“ Ich staune – sie meint das Buch, das sie immer im Trockner trocknet.",
-      "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber weniger als den Spülmaschinentabellenautomat.“",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-20T16:00:59.579Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Kassierer nickt und sagt: „Nur, wenn Sie Popcorn mitbringen.“",
       "qwen": "Ich wollte in der Bibliothek stumm sein, im Kino laut, aber im Museum wurde mir von der Aufsichtsperson ein Kopfhörer umgehängt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs 'Wie überlebe ich endlose Bewerbungsrunden“.“",
       "qwen": "Ich habe den Trainer gefragt, was mein größter Defekt ist. „Sie sind zu empfindsam“, sagte er. „Außerdem antworten Sie nie richtig auf Fragen.“",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-20T20:06:07.452Z",
+      "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, die Verkäuferin reicht mir einen Katalog – „Supermarkt‑Preise, aber mit frischer Luft.“",
+      "qwen": "Im Supermarkt wogen wir die Tomaten, auf dem Wochenmarkt schüttelte der Bauer sie nur. Da war der Preis fairer.",
+      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
     }
   ]
 }
