@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:35:59.566Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Praktikantin meldet sich und reicht einen leeren Ordner: „Ich habe ihn in 5 Minuten fertig.“",
-      "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nAlle starrten auf mich, bis ich sagte: „Ich?“",
-      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
-    },
-    {
       "timestamp": "2026-11-20T00:41:04.284Z",
       "gpt": "Ich rufe den Kundendienst, weil mein Paket immer wieder im Aufzug stecken bleibt – der Bote meint, es wolle nur „nach oben“ kommen.",
       "qwen": "Der Paketbote schlägt die Tür ein, weil der Kunde nicht öffnet. „Ihre Ware ist da“, sagt er, während er auf der Couch sitzt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich die PowerPoint‑Skills lerne.“",
       "qwen": "Der Personaler fragt, was ich neben der Arbeit tue. Ich sage: „Ich lerne gerade, nein zu sagen.“",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-20T04:40:58.021Z",
+      "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich den Regenschirm mitnehmen soll – sie zeigt „Sonnig“, doch draußen regnet es wie aus Kübeln.",
+      "qwen": "Ich suchte frustriert nach meinem Handy im schwarzen Pullover. Die Kamera-App zeigte nur: „Kein Signal.“",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
