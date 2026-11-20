@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:26:04.094Z",
-      "gpt": "Ich klopfte an die Nachbarstür, um mich für das laute Klopfen zu entschuldigen – sie öffnete und fragte, ob ich das neue Klingelsystem testen wolle.",
-      "qwen": "Ich fragte den Nachbarn, wo er wohnt. Er zeigte auf sein Haus und sagte: „Da drin, wo die Miete ist.“",
-      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
-    },
-    {
       "timestamp": "2026-11-20T16:30:59.912Z",
       "gpt": "Ich packe die Kisten und finde einen Staubsauger, den ich nie benutzt habe – er saugt jetzt meine Ausrede, warum ich noch nicht ausgezogen bin.",
       "qwen": "Die alte Lampe landete im Sperrmüll.\nSie leuchtete nur im Dunkeln, wenn man sie vergaß.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Der Gast: „Mit Milch, bitte – ich habe gerade das Rezept für Schokoladenkuchen vergessen.“",
       "qwen": "Ich helfe die Spaghetti an und dusche kurz.\nDann esse ich die Nudeln mit Shampoo.",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-20T20:36:07.542Z",
+      "gpt": "Ich rufe den Kundenservice, weil mein Paket nicht ankam – sie sagen, es sei bereits bei mir zu Hause, weil ich es schon aus Versehen aus dem Briefkasten gezogen habe.",
+      "qwen": "Der Kurier fragt nach der Unterschrift. Ich zeige auf den toten Fisch im Aquarium: „Der hat’s schon bestätigt.“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
