@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:25:59.041Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen. Dann frage ich Siri, ob sie mir einen Regenschirm bestellen kann – sie sagt, ich soll lieber tanzen.",
-      "qwen": "Ich suche die Kamera-App. Sie sagt: „Dabei helfen wir dir nicht.“",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-20T00:31:11.773Z",
       "gpt": "Mama fragt: „Warum hast du das Waschmittel im Kühlschrank?“  \nTim: „Damit die Wäsche nicht friert.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch sage: „Ich war es nicht, aber ich hätte es gerne gehabt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich den Film ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie ihn leise anschauen.“",
       "qwen": "Im Museum starrt der Mann stundenlang auf leere Wände. „Gut, dass hier alles verkauft ist“, seufzt die Kassiererin.",
       "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
+    },
+    {
+      "timestamp": "2026-11-20T04:30:57.640Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verheddert sich mein Hund im Seil – er macht jetzt den „Knoten“.",
+      "qwen": "Damit die Entspannung wirkt, zähle ich bis zehn. Einer, zwei, drei – der erste Beineinsatz.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
