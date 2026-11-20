@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:26:02.251Z",
-      "gpt": "Ich wollte beim Umzug die alte Lampe mitnehmen, doch sie war zu schwer – also habe ich sie einfach als neue Türstopper verkauft.",
-      "qwen": "Während des Umzugs werfe ich meine alte Zahnbürste weg.\nDie neue Hausbewohnerin sagt: „Die passte besser zur Wandleuchte.“",
-      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
-    },
-    {
       "timestamp": "2026-11-20T13:31:09.095Z",
       "gpt": "Im Café bestellt er ein „leichtes“ Frühstück, bekommt aber nur einen leeren Teller – das war wohl das „Kalorien‑frei“-Special.",
       "qwen": "Ich bat im Café um einen Latte. Der Barista fragte: „Kurz oder lang?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef, wer das Projekt gestern fertig hatte – die Kaffeemaschine meldet sich und sagt: „Ich hab nur den Filter gewechselt.“",
       "qwen": "Ich habe die Besprechung um drei Stunden verkürzt. Die Kollegen waren sehr dankbar.",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-20T17:36:05.084Z",
+      "gpt": "Ich sortiere beim Umzug alte Tassen aus, finde eine mit „Vorsicht, heiß!“ und stelle sie sofort in den Gefrierschrank – jetzt ist sie wirklich kühl.",
+      "qwen": "Wir haben den Einzug gefeiert, bis die Schwiegermutter fragte, wo ihre Porzellankollektion bliebe. Die Pointe: Der neue Vermieter wollte sie als Kaution.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
