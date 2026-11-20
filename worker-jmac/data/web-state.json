@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:51:03.715Z",
-      "gpt": "Mama fragt: „Warum hast du das Handy im Kühlschrank?“ – Ich wollte, dass es endlich mal kalt bleibt.",
-      "qwen": "Ich fragte, wer das Licht angehat hat.\nMein Sohn zeigte auf seine Katze: „Sie hat es angeknipst.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-20T01:56:06.847Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein leeres Regal und meint: „Hier finden Sie nur Luft, die ist sowieso glutenfrei.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich will nur stöbern.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin fragt, ob ich ihn lieber mit Espresso‑Milch will – ich antworte: „Nur, wenn er kocht.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zutun oder ohne?“",
       "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
+    },
+    {
+      "timestamp": "2026-11-20T05:56:06.905Z",
+      "gpt": "Im Meeting fragt der Chef: „Wie steht’s mit dem Projekt?“ Darauf meldet sich die Kollegin: „Projekt? Ich dachte, das ist nur das neue Kaffeekränzchen.“",
+      "qwen": "In der Besprechung sagte der Chef: „Wir sind doch ein Team.“\nNiemand widersprach, weil alle schon ihre Koffer packten.",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
