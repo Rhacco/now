@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:46:00.731Z",
-      "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Buch über Filme?“ Der Bibliothekar antwortet: „Nur im Kino, das ist ein Pop‑Up‑Read.“",
-      "qwen": "Ich suchte im Museum nach dem Weg ins Kino.\nDie Bibliothekarin zeigte grimmig auf den Stillen Bereich.",
-      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
-    },
-    {
       "timestamp": "2026-11-20T12:51:07.492Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Schlüssel gefunden.“",
       "qwen": "Die Brieftaube flatterte ins Fundbüro, um ihr Formblatt 12b zu holen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt ich einen Espresso, der Kellner fragt: „Möchten Sie ihn mit Zucker?“ – Ich: „Nein, ich will ihn bitter wie mein Gehalt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn kochen?“",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-20T16:56:05.626Z",
+      "gpt": "Ich steig in den Bus, zahle, setze mich und merke, dass ich im Fahrplan meiner Lieblingsserie sitze – kein Halt, nur Werbepausen.",
+      "qwen": "Ich stieg in den Bus, dann ins Taxi, dann ins Auto. Der Kofferraum war schon voll.",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
