@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:21:04.158Z",
-      "gpt": "Ich steig in den Bus, der Fahrer fragt, ob ich ein Ticket habe. Ich zeige ihm meine Fahrkarte für das Taxi – er lacht.",
-      "qwen": "Ich stieg aus dem Taxi, um den Bus zu nehmen, der mich zur Bahn führt. Der Busfahrer winkte mich ab, weil ich das Auto blockierte.",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-20T11:26:01.048Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Preisschild – „Das ist Ihr Preis, nicht das Accessoire.“",
       "qwen": "Der Verkäufer schiebt mir ein teures Modell unter die Nase. „Das hier hat doch gar keinen Akku“, entgegne ich.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast: „Stark, ich will wenigstens beim Aufwachen etwas Durchblick haben.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zucker dazu?“",
       "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
+    },
+    {
+      "timestamp": "2026-11-20T15:26:04.164Z",
+      "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ – Ich: „Ganz gut, ich habe endlich den Koffer gefunden.“",
+      "qwen": "Am Strand kuscheln wir uns eng zusammen. Bis die Möwe landet und uns die Handtuchrolle stiehlt.",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
