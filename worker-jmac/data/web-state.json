@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:10:59.136Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich habe gerade einen Weiterbildungskurs im Prokrastinieren belegt.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die bekommen Sie, wenn Sie entlassen werden.“",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-20T18:16:04.655Z",
       "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie ihn auch gleich mit einem Stück Kuchen bezahlen?“ Ich antworte: „Nur, wenn er mir das Rezept schenkt.“",
       "qwen": "Ich fragte im Café: „Gibt’s das nur als Kaffee?“\nDie Kellnerin antwortete: „Nein, das ist ein Schnitzel.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum flüstert er: „Ich will das Buch aus der Bibliothek ausleihen.“ Der Bibliothekar schaut verwirrt und sagt: „Hier gibt’s nur Stille‑Filme.“",
       "qwen": "Ich wollte ins Museum, sah aber nur Leinen.\nJetzt sitze ich im Kino und schweige.",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-20T22:16:04.920Z",
+      "gpt": "Im Zug vergaß ich meinen Fahrschein, doch der Schaffner lächelte und sagte: „Keine Sorge, ich fahre eh nur im Stau.“",
+      "qwen": "Ich fragte den Taxifahrer: „Können Sie die Zündung ausmachen, bevor Sie mich ablassen?“\nEr lachte: „Womit soll ich Sie dann wieder abholen?“",
+      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
     }
   ]
 }
