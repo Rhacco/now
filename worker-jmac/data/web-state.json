@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:00:57.735Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldschein gefunden.“",
-      "qwen": "Im Fundbüro verlangt man nach der Requisite für die abhanden gekommene Wurst.",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-19T23:06:04.147Z",
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular 12‑B ausgefüllt?“ Ich antworte: „Nein, ich habe nur den Geldbeutel gefunden.“",
       "qwen": "Ich fragte im Fundbüro: „Woran erkenne ich meine Schlüssel?“ „Das Formular müssen Sie in dreifacher Ausfertigung einreichen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage den Kundenberater: „Welches Produkt passt zu mir?“ Er meint: „Unsere Rückgabebedingungen.“",
       "qwen": "Ich fragte den Verkäufer nach dem Preis für den Laptop. Er strahlte: „Nur neunhundert Euro, wenn Sie mir Ihre Seele dafür versprechen.\"",
       "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
+    },
+    {
+      "timestamp": "2026-11-20T03:05:57.086Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur mein Portemonnaie verloren.“",
+      "qwen": "Im Fundbüro: „Ist das Ihr verlorenes Ohr?“\n„Nein, das ist mein neues Formular.“",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
