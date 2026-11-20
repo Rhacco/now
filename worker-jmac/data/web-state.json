@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:16:08.294Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Kassenbon noch?“ – „Nein, aber ich habe das Formular dafür ausgefüllt.“",
-      "qwen": "Ich gebe die Fundsache ab und erhalte ein Formular mit dreihundert Seiten. „Bitte unterschreiben Sie hier, dort und unter dem Datum.“",
-      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
-    },
-    {
       "timestamp": "2026-11-19T22:21:00.158Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – die verschreibe ich mir gleich in der Apotheke.“",
       "qwen": "Ich frage den Arzt nach der Diagnose. Er sagt: „Sie haben Diabetes.“",
@@ -300,6 +294,12 @@
       "gpt": "Nach dem Yoga‑Kurs sagt sie: „Ich bin jetzt so entspannt, dass ich sogar meine Lieblingsübung – das Nichtstun – perfektioniert habe.“",
       "qwen": "Kumpel, ich zieh dir die Daumen, wenn du heute Marathon läufst.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-20T02:21:06.943Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe das Dokument fertig – in 2020.“",
+      "qwen": "Im Meeting fragte ich nach dem Status. „Alles im grünen Bereich“, nickte der Chef. „Dann können wir ja weitermachen.“",
+      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
     }
   ]
 }
