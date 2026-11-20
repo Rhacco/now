@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:21:11.457Z",
-      "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim Versuch, die „Baum“-Pose zu halten, fällt mir mein ganzer Kaktus aus dem Fenster.",
-      "qwen": "Nach einer Stunde Stretching bin ich froh, dass meine Katze auf den Couchtisch klettert. Endlich hat sie genug Platz zum Krallen wetzen.",
-      "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
-    },
-    {
       "timestamp": "2026-11-20T01:26:09.499Z",
       "gpt": "Im Supermarkt fragt der Kunde nach glutenfreiem Brot, und die Verkäuferin reicht ihm ein leeres Regal. „Wir haben nur noch Luft zum Aufgehen.“",
       "qwen": "Ich fragte nach einer Socke in Größe 47. „Die gibt’s nicht,“ sagte er. „Nur Sockenpaare, Mann.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin angeboten, ihr beim Umzug zu helfen – sie hat erst das Sofa getragen, dann die Tür zugeschlagen.",
       "qwen": "Der Nachbar fragt: „Ist das Ihr Vorschlaghammer?“\n„Ja. Was ist?“",
       "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
+    },
+    {
+      "timestamp": "2026-11-20T05:26:04.962Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt bereits beendet – im Kopf, weil die PowerPoint nie geladen hat.“",
+      "qwen": "Ich rufe im Meeting die Stille auf.\nDer Chef fragt, ob ich gerade eine Besprechung mit mir selbst führe.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
