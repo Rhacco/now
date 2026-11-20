@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:21:09.016Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin bringt mir einen Topf Suppe. Ich frage: „War das ein Missverständnis?“ Sie: „Nein, das ist unser Espresso‑Brot.“",
-      "qwen": "Im Café bestellte ich einen Kaffee. „Leider nur mit Löffel“, sagte der Kellner.",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-20T10:26:05.388Z",
       "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau im Taxi lässt ihn zu Fuß weiterlaufen – und endlich findet er sein Auto im Parkhaus.",
       "qwen": "Ich steige aus dem Taxi, spring in den Bus, fahre mit der Bahn und habe noch Autoschlüssel in der Hand.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um den Geist zu beruhigen – bis mein Hund die „herabschauende Katze“ als Einladung zum Spielen missversteht.",
       "qwen": "Ich jogge so schnell, dass mein Herz noch ankommt, während ich längst am Ziel bin.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-20T14:26:07.781Z",
+      "gpt": "Ich habe beim Ausmisten die alte Kaffeemaschine in die Kiste geworfen – jetzt hat sie ein neues Zuhause im Keller, wo ich endlich mal wieder Ruhe habe.",
+      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte, warum sie so billig ist. „Weil sie nur noch Wäsche knüllt.“",
+      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
     }
   ]
 }
