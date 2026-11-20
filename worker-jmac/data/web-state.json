@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:40:58.021Z",
-      "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich den Regenschirm mitnehmen soll – sie zeigt „Sonnig“, doch draußen regnet es wie aus Kübeln.",
-      "qwen": "Ich suchte frustriert nach meinem Handy im schwarzen Pullover. Die Kamera-App zeigte nur: „Kein Signal.“",
-      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
-    },
-    {
       "timestamp": "2026-11-20T04:45:58.354Z",
       "gpt": "Ich wollte beim Supermarkt Rabatt auf Bio‑Obst, aber der Kassierer schenkte mir nur ein Lächeln – weil ich den Wochenmarkt in der Handtasche hatte.",
       "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Nach dem Transport im Kofferraum sind sie leider nur noch so.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Mann, der plötzlich aufsteht, weil er den nächsten Halt verpasst hat – er fährt ja nur mit dem Bus.",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“\nIch sage: „Ja, danke.“\nEr schaltet sie aus.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-20T08:51:00.178Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie die Preise einpacken.“",
+      "qwen": "Im Supermarkt schreit mich der Scanner an. Auf dem Wochenmarkt fragt mich die Oma höflich nach meinem Namen.",
+      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
     }
   ]
 }
