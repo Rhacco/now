@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:10:57.237Z",
-      "gpt": "Ich rief beim Nachbarn an, weil das Wasser aus seiner Leitung tropfte, und er meinte: „Kein Problem, das ist nur das neue Sound‑System für die Dusche.“",
-      "qwen": "Ich zähle die Schlaghölzer am Zaun. Die Nachbarn haben vierzehn neue.",
-      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
-    },
-    {
       "timestamp": "2026-11-20T11:15:59.643Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du das Popcorn nicht mitnimmst.“",
       "qwen": "Nach dem Film fragte ich im Museum nach der Toilette. Die Dame zeigte auf den Ausleihtresen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, doch als er dankbar die Tür öffnete, stand plötzlich ein Kakerlaken-Club im Flur – und lud zum Tanzen ein.",
       "qwen": "Mein Nachbar hämmert täglich um sechs. Ich fragte genervt nach dem Grund, worauf er antwortete: „Ich probiere die neue Tür aus.“",
       "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
+    },
+    {
+      "timestamp": "2026-11-20T15:15:59.230Z",
+      "gpt": "Beim Familienabend fragt Mama: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich wollte nur die Krümel für die Steuererklärung.“",
+      "qwen": "Mein Sohn fragt: „Papa, warum heult Opa immer abends?“\n„Weil er sich an die Zeit erinnert, als wir noch normal gegessen haben.“",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
