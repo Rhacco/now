@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:00:59.528Z",
-      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert es?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort ist das Rezept schon abgelaufen.“",
-      "qwen": "Ich frage den Arzt: „Herr Doktor, wie lange muss ich noch warten?“\nEr antwortet: „Das hängt davon ab, wann Sie aus der Apotheke zurückkommen.“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-20T18:06:06.923Z",
       "gpt": "Mama fragt: „Warum hast du das Handy in die Spülmaschine gesteckt?“ Ich: „Damit es endlich mal wieder klingelt.“",
       "qwen": "Ich frage die Tochter, ob sie den Müll rausbringt. Sie sagt: „Ja, aber nur den digitalen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue „Snooze“-App für mein Handy installiert – jetzt schläft es, sobald ich es ausschalte.",
       "qwen": "Ich rufe die Wecker-App an, um sie zu deaktivieren.\nSie antwortet: „Scheiß drauf, du hast 800 Ungelesene.“",
       "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
+    },
+    {
+      "timestamp": "2026-11-20T22:06:10.366Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Warum haben Sie nur einen Koffer?“ Der Mann lächelt: „Ich nehme das Meer mit.“",
+      "qwen": "Im Urlaub hat er die Kamera einkassiert. „Ich will keine Fotos, ich will Erinnerungen.“",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
