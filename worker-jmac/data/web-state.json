@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:11:03.394Z",
-      "gpt": "Ich öffne die Wetter‑App, sie sagt Regen. Ich schaue aus dem Fenster – Sonne. Dann merke ich, ich habe die Vorhersage für morgen geöffnet.",
-      "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schlafe ich nur noch, wenn mein Akku leer ist.",
-      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
-    },
-    {
       "timestamp": "2026-11-20T06:16:06.075Z",
       "gpt": "Ich komme zum Vorstellungsgespräch, sag: „Ich habe meine Soft Skills auf dem Sofa weiterentwickelt.“ Der Personaler nickt: „Perfekt, wir suchen jemanden im Home‑Office.“",
       "qwen": "Die Personalchefin fragt nach meinen Fortbildungswünschen. Ich sage: „Einen Crashkurs in Höflichkeit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um mich vor Regen zu schützen – die Anzeige sagt: „Sonnig, 25 °C“. Ich gehe nach draußen, und es regnet. Mein Handy hat nur den Tag, nicht den Himmel.",
       "qwen": "Ich schwitze, weil mein Akku bei 1 % liegt.\nDann merke ich, dass ich das Handy gar nicht dabei habe.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-20T10:21:09.016Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin bringt mir einen Topf Suppe. Ich frage: „War das ein Missverständnis?“ Sie: „Nein, das ist unser Espresso‑Brot.“",
+      "qwen": "Im Café bestellte ich einen Kaffee. „Leider nur mit Löffel“, sagte der Kellner.",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
