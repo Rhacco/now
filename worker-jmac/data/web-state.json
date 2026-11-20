@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:36:03.692Z",
-      "gpt": "Ich frage im Baumarkt nach einer passenden Schraube, der Verkäufer reicht mir ein Rezept für Zahnschmerzen – er meinte, ich brauche „etwas zum Festziehen“.",
-      "qwen": "Im Elektronikmarkt fragt der Kunde: „Hat das Handy eine Kamera?“\nDer Verkäufer nickt: „Nein, die ist erst ab dem Mittelklasse-Modell.“",
-      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
-    },
-    {
       "timestamp": "2026-11-20T02:41:04.272Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt erfolgreich abgeschlossen – ich habe es in meinem Kalender gelöscht.“",
       "qwen": "Mein Chef fragte, ob ich die Präsentation fertig habe. Ich sagte ja, und reichte ihm mein Handy mit laufendem Spiel.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin schon süß genug.“",
       "qwen": "Ich bestellte einen Kaffee und fragte, ob er extra süß kommt. Der Barista antwortete: „Ja, er ist aus Zucker.\"",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-20T06:40:59.738Z",
+      "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich habe ja nur das Stück für dich versteckt.“",
+      "qwen": "Der Vater fragt: „Warum hast du die Katze in den Backofen gesteckt?“\n„Ich wollte sie aufwärmen,“ antwortete der Sohn. „Da hat sie aber auch gleich gebräunt.“",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
