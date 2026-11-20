@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:05:58.314Z",
-      "gpt": "Ich rufe den Kundendienst, weil mein Paket seit drei Tagen im Haus steht – dann erfahre ich, dass es mein Nachbar bereits seit einer Woche auspackt.",
-      "qwen": "Paket fehlt, sagt der Lieferant. Ich zeig den Karton im Flur. „Das ist doch nur die Verpackung!“, entgegnet er.",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-20T13:10:57.861Z",
       "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie dazu noch einen Kuchen?“ – Ich antworte: „Nur, wenn er meine Steuererklärung ist.“",
       "qwen": "Im Restaurant bestellte ich „Fisch mit Kartoffeln“. Der Kellner fragte: „Soll ich den Fisch auch mitbringen, oder nur die Kartoffeln?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – deshalb gehe ich gleich zur Apotheke.“",
       "qwen": "Ich erzähle dem Arzt von meinem Husten. Er sagt: „Nehmen Sie die letzte Pille, die ist schon verfallen.“",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-20T17:16:04.536Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Der Gast sagt: „Einen, der mich nicht wieder an die Arbeit erinnert.“",
+      "qwen": "Ich bestellte im Café einen Kaffee mit Milch. Der Kellner fragte: „Und das Eis dazu?“",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
