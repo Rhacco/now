@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:21:06.071Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Anzug, sie reicht mir einen Anzug und sagt: „Der kostet 199 €, inkl. Beratung, weil ich ihn selbst anprobiert habe.“",
-      "qwen": "Der Verkäufer drückt mir die letzte Packung hinein. „Das ist jetzt in Ihrem Eigentum,“ lächelt er, „zahlt aber erst nächsten Monat.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-19T23:26:07.381Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Sonne – doch mein Handy vibriert: „Du hast das Fenster offen.“",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe es vergessen, aufzuladen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das ich noch nicht abgeholt habe.“",
       "qwen": "Im Wartezimmer flüstert die Dame: „Der Arzt ist heute besonders streng.“ Ich drehe mich um: „Kein Wunder, das ist ja der Apotheker.“",
       "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
+    },
+    {
+      "timestamp": "2026-11-20T03:31:07.546Z",
+      "gpt": "Ich rief den Kundenservice, weil das Paket leer war – sie sagten, es sei ein „virtuelles“ Geschenk. Jetzt habe ich nur noch Datenverkehr.",
+      "qwen": "„Sie haben das Paket gestern erhalten“, sagt der Support. Ich schaue betreten auf meine leere Hand. „Meine Hand ist leer.“",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
