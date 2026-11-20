@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:41:04.831Z",
-      "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Arzthelferin meint: „Das ist das neue Selbstzahler‑Modell – Sie zahlen, wenn Sie gehen.“",
-      "qwen": "Ich fragte den Apotheker, ob mein Rezept fertig ist. Er grinste: „Quatsch, dafür war ich doch nur bei der Kasse.\"",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-20T14:46:00.466Z",
       "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Hörbuch?“ Der Bibliothekar schüttelt den Kopf – das ist ein Kino.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Bild, das ich schon sechshundert Jahre nicht verlassen hatte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, aber jedes Mal, wenn ich die „Baum“-Pose halte, ruft mein Hund: „Endlich ein Stock!“",
       "qwen": "Ich leg mich zur Meditation auf die Yogamatte. Der Hund beißt sie an.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-20T18:50:58.173Z",
+      "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil sein Licht flackert – ich sag: „Ich habe gerade den Stecker gezogen, du hast ja keinen Strom mehr.“",
+      "qwen": "Beim Umzug fragte ich den Nachbarn höflich: „Gibt’s hier harte Härchen?“ Er seufzte: „Nee, nur ein harter Kern.“",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
