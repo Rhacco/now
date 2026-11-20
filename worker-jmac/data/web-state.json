@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:46:11.154Z",
-      "gpt": "Ich war im Café, bestellte einen Cappuccino und fragte nach Zucker. Die Barista lächelte: „Wir servieren nur Espresso – unser Kaffee ist schon süß genug.“",
-      "qwen": "Im Restaurant: „Ist das hier echtes Wildschwein?“ – „Nein, das ist unser Koch.“",
-      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
-    },
-    {
       "timestamp": "2026-11-19T22:50:56.893Z",
       "gpt": "Ich habe beim Ausmisten die alte Fernbedienung gefunden – jetzt kann ich endlich das Licht im Keller an- und ausschalten.",
       "qwen": "Wir haben beim Ausmisten die alte Kaffeemaschine gefunden. Seitdem trinken wir nur noch Wasser, weil sie nicht mehr funktioniert.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand; die Durchsage: „Bitte bleiben Sie sitzen, wir fahren jetzt ins Freibad.“",
       "qwen": "Ich fragte das Kind, was es sich im Urlaub wünscht. „Nichts“, sagte es. „Nur dass ihr existiert, ohne aufzutauchen.“",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-20T02:51:04.338Z",
+      "gpt": "Im Zug drängte ich mich zum Fenster, um die Landschaft zu sehen – dann fuhr die Schaffnerin vorbei und sagte: „Bitte nicht fotografieren, das ist unser neuer Innenraum.“",
+      "qwen": "Ich steige aus dem Taxi, spring in den Bus, fange die Bahn und schreibe: „Ich bin zu spät.“",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
