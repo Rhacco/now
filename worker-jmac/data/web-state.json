@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:55:58.917Z",
-      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, das ist mein verlorenes Formular.“",
-      "qwen": "Ich habe den Fundbericht ausgefüllt, doch jetzt fehlt mir das Formular, um den Verlust des Formulars zu melden.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-20T19:01:10.934Z",
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viel Gewicht wollen Sie heben?“ Ich antworte: „Nur das, das mich vom Sofa runterzieht.“",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Körpermitte gelegt. Now I am doing squats.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Rücksendeetikett für das falsche Geschenk?“ – Ich antworte: „Nein, das war das Original.“",
       "qwen": "Der Paketbote zerrt die Kiste unter meine Tür. „Bitte abschreiben“, schreit er. Ich: „Wer?“ „Der, der das Paket verschickt hat.“",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-20T23:00:57.267Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage kam sofort: „Bitte bleiben Sie sitzen, wir suchen jetzt das Signal.“",
+      "qwen": "Ich nahm das Taxi, weil der Bus zu langsam war. Dann ließ mich der Fahrer stehen, weil ich zu laut seufzte.",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
