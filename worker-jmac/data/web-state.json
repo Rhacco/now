@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:51:03.981Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, aber mein Hund legt sich immer genau dort hin, wo ich die Zehen strecke – und nennt das „herabschauender Hund“.",
-      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt gestresst.",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-20T06:56:05.645Z",
       "gpt": "Ich frage die Verkäuferin nach einer günstigen Waschmaschine, sie zeigt mir das Modell „Selbstreinigung“ – ich zahle, weil ich meine Schuldgefühle waschen will.",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, bitte nehmen Sie mich mit.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klopft, ich öffne die Tür und frage: „Ist das für mich?“ Er lächelt: „Nein, das ist die Rechnung für Ihre Geduld.“",
       "qwen": "Der Bote fragt: „Ist jemand zu Hause?“\nIch: „Nein, hier wohnt nur ein Paket.“",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-20T11:00:59.728Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich noch immer die Stellenanzeige nicht gelesen habe.“",
+      "qwen": "Ich habe mich für den Chefsessel beworben. Der Geschäftsleiter fragte nur, ob ich Zeit fürs Nachtschichttraining habe.",
+      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
     }
   ]
 }
