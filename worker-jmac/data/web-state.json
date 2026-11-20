@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:51:13.524Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie noch etwas zu essen?“ – Ich antworte: „Nur das Rezept, das Sie mir gerade gegeben haben.“",
-      "qwen": "Im Wartezimmer klingelt mein Handy. Ich flüstere: „Ich bin gleich da, in der Apotheke.“",
-      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
-    },
-    {
       "timestamp": "2026-11-20T17:56:11.006Z",
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot. Sie reicht mir ein Blatt Papier – \"Für die Diät, die Sie nie halten.\"",
       "qwen": "Im Schuhgeschäft fragt die Verkäuferin: „Soll ich das noch anprobieren?“ Ich antworte: „Nein, ich suche keine Arbeit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch mein Hund legt sich mitten in die „herabschauende Katze“ – jetzt übe ich nur noch „Hundekrieger“.",
       "qwen": "Ich habe beim Joggen eine Pause eingelegt. Jetzt bin ich entspannt, aber auch zwei Kilo schwerer.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-20T21:56:08.547Z",
+      "gpt": "Ich rief beim Kundenservice an, weil mein Paket seit Tagen nicht ankam – sie sagten, es sei bereits im Haus, weil ich es selbst geliefert habe.",
+      "qwen": "Der Kurier fragt, ob ich das Paket einfach vor die Tür legen soll. Ich sage Ja, denn mein Bart trägt genau den Namen „Vor die Tür“.",
+      "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
     }
   ]
 }
