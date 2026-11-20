@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:46:00.466Z",
-      "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Hörbuch?“ Der Bibliothekar schüttelt den Kopf – das ist ein Kino.",
-      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Bild, das ich schon sechshundert Jahre nicht verlassen hatte.",
-      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
-    },
-    {
       "timestamp": "2026-11-20T14:51:05.902Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken wegschnappt.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten darf. „Schau“, sagte er und stellte sich neben mich, „ich tu’s dir vor.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil sein Licht flackert – ich sag: „Ich habe gerade den Stecker gezogen, du hast ja keinen Strom mehr.“",
       "qwen": "Beim Umzug fragte ich den Nachbarn höflich: „Gibt’s hier harte Härchen?“ Er seufzte: „Nee, nur ein harter Kern.“",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-20T18:55:58.917Z",
+      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, das ist mein verlorenes Formular.“",
+      "qwen": "Ich habe den Fundbericht ausgefüllt, doch jetzt fehlt mir das Formular, um den Verlust des Formulars zu melden.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
