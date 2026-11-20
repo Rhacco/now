@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:50:58.177Z",
-      "gpt": "Im Supermarkt fragt ich nach frischen Kräutern, die Verkäuferin reicht mir einen Topf Petersilie. Auf dem Wochenmarkt schenkt mir die Floristin einen Kaktus – „für die Würze“.",
-      "qwen": "Ich wollte auf dem Wochenmarkt frische Tomaten kaufen, doch der Stand war leer. Der Bauer grinste: „Die habe ich in den Supermarkt gebracht, weil sie dort billiger sind.“",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-20T09:55:58.052Z",
       "gpt": "Im Vorstellungsgespräch fragt die Chefin: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum – ich habe gerade erst den ersten Kurs abgeschlossen.“",
       "qwen": "Ich kündigte die Weiterbildung ab, um mich zu bewerben. Der Personalchef rückte die Bewerbung aus, da ich keine Weiterbildung absolviert habe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde mich: „Kaffee.“ Er lächelt: „Endlich ein Vorschlag, der wirklich wach macht.“",
       "qwen": "Die Chefin bittet mich, das Meeting auf zehn Minuten zu verkürzen. Ich sage: „Kein Problem, ich schneide mich einfach auf zwei.“",
       "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
+    },
+    {
+      "timestamp": "2026-11-20T13:56:08.868Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kassierer schüttelt den Kopf: „Im Kino darf man nur flüstern.“",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin meinte: „Der steht noch im Konjunktiv.“",
+      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
     }
   ]
 }
