@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:10:57.861Z",
-      "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie dazu noch einen Kuchen?“ – Ich antworte: „Nur, wenn er meine Steuererklärung ist.“",
-      "qwen": "Im Restaurant bestellte ich „Fisch mit Kartoffeln“. Der Kellner fragte: „Soll ich den Fisch auch mitbringen, oder nur die Kartoffeln?“",
-      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
-    },
-    {
       "timestamp": "2026-11-20T13:15:58.650Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurückgeben, bevor der Film endet.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Schild, das „Ruhezone“ sagte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Der Gast sagt: „Einen, der mich nicht wieder an die Arbeit erinnert.“",
       "qwen": "Ich bestellte im Café einen Kaffee mit Milch. Der Kellner fragte: „Und das Eis dazu?“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-20T17:21:09.598Z",
+      "gpt": "Mama fragt: „Warum hast du die Spülmaschine ausgeräumt?“  \nIch: „Damit du endlich wieder was zu tun hast.“",
+      "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ „Weil du immer so laut schreist, wenn ich es tue.“",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
