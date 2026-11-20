@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:11:01.896Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – deshalb gehe ich gleich zur Apotheke.“",
-      "qwen": "Ich erzähle dem Arzt von meinem Husten. Er sagt: „Nehmen Sie die letzte Pille, die ist schon verfallen.“",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-20T17:16:04.536Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Der Gast sagt: „Einen, der mich nicht wieder an die Arbeit erinnert.“",
       "qwen": "Ich bestellte im Café einen Kaffee mit Milch. Der Kellner fragte: „Und das Eis dazu?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich dachte, wir machen heute nur Kaffee.“",
       "qwen": "Klaus spricht eine Stunde lang über Synergien. Der Chef fragt, ob er noch dabei ist.",
       "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
+    },
+    {
+      "timestamp": "2026-11-20T21:16:09.152Z",
+      "gpt": "Ich mache Yoga, um zu entspannen – bis mein Hund das „Herabschauende Hund“ übernimmt und mir die Decke klaut.",
+      "qwen": "Beim Yoga nehme ich die Froschhaltung ein.\nTatsächlich habe ich mich dabei so richtig entspannt.",
+      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
     }
   ]
 }
