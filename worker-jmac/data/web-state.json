@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:11:02.481Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das die Lieferung, die Sie gestern bestellt haben?“ – „Nein, das ist unser neuer Kunden‑Service‑Roboter.“",
-      "qwen": "Der Kurier fragt: „Können Sie hier gegenzeichnen?“ Ich zeichne.\nEr winkt ab: „Nein, das war die Unterschrift für die Ware.\"",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-20T12:16:09.931Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach auf den nächsten Job.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Personaler fragte, was ich unter Weiterbildung verstehe, und ich antwortete: „Endlich Ruhe vor Ihnen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Nachweis, dass ich den Stift wirklich gefunden habe.",
       "qwen": "Ich versuchte, den Fundantrag zu unterschreiben, doch der Beamte winkte ab. „Leider fehlt hier die Unterschrift des Fundes selbst.“",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-20T16:16:00.800Z",
+      "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze schläft und schnurrt, während er verzweifelt versucht, die Haltung zu halten.",
+      "qwen": "Ich habe heute Yoga probiert. Am Ende lag ich nicht entspannt, sondern in der Hocke.",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
