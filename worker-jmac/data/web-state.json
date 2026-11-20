@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:20:58.290Z",
-      "gpt": "Ich mache Yoga, um den Geist zu beruhigen – bis mein Hund die „herabschauende Katze“ als Einladung zum Spielen missversteht.",
-      "qwen": "Ich jogge so schnell, dass mein Herz noch ankommt, während ich längst am Ziel bin.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-20T14:26:07.781Z",
       "gpt": "Ich habe beim Ausmisten die alte Kaffeemaschine in die Kiste geworfen – jetzt hat sie ein neues Zuhause im Keller, wo ich endlich mal wieder Ruhe habe.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte, warum sie so billig ist. „Weil sie nur noch Wäsche knüllt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminar, weil ich erst jetzt gelernt habe, wie man Fragen beantwortet.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Personalchef schmunzelte und meinte: „Da fehlt Ihnen wohl die Akte.\"",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-20T18:30:59.235Z",
+      "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich sag: „Nein, ich will die Kalorien nicht verdünnen.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn gleich kochen?“",
+      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
     }
   ]
 }
