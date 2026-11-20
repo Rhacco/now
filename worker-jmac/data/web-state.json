@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:06:02.453Z",
-      "gpt": "Der Nachbar klopft, weil sein Wasserhahn tropft, und fragt: „Kannst du mir leihen, bis die Reparatur kommt?“ – Ich reiche ihm nur einen Eimer.",
-      "qwen": "Der Nachbar klopft an und fragt, ob ich abends lauter sein darf, damit er besser schläft.",
-      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
-    },
-    {
       "timestamp": "2026-11-20T02:11:04.149Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt ruft der Kunde: „Nur wenn Sie die Bohnen mitliefern!“",
       "qwen": "Ich suchte nach Bio-Gemüse, doch der Wochenmarkt war leer. Da stand ich still, bis die Polizei kam.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir die Kasse – ich soll doch erst bezahlen, bevor ich mich warm anziehe.",
       "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer fragte: „Haben Sie schon ein Hemd?“ Ja, das habe ich.",
       "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
+    },
+    {
+      "timestamp": "2026-11-20T06:11:03.394Z",
+      "gpt": "Ich öffne die Wetter‑App, sie sagt Regen. Ich schaue aus dem Fenster – Sonne. Dann merke ich, ich habe die Vorhersage für morgen geöffnet.",
+      "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schlafe ich nur noch, wenn mein Akku leer ist.",
+      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
     }
   ]
 }
