@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:45:58.354Z",
-      "gpt": "Ich wollte beim Supermarkt Rabatt auf Bio‑Obst, aber der Kassierer schenkte mir nur ein Lächeln – weil ich den Wochenmarkt in der Handtasche hatte.",
-      "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Nach dem Transport im Kofferraum sind sie leider nur noch so.",
-      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
-    },
-    {
       "timestamp": "2026-11-20T04:51:02.664Z",
       "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy zeigte nur „Kein Signal“ – anscheinend läuft mein Akku schneller als ich.",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nDann finde ich den Ladekabel-Stecker unter dem Sofa.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie die Preise einpacken.“",
       "qwen": "Im Supermarkt schreit mich der Scanner an. Auf dem Wochenmarkt fragt mich die Oma höflich nach meinem Namen.",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-20T08:55:58.437Z",
+      "gpt": "Im Zug zum Strand fragt ich die Dame neben mir, ob sie das Wetter prüfen kann – sie zeigt mir ihr Handy‑Display: „Kein WLAN, aber Sand.“",
+      "qwen": "Ich habe den Koffer gepackt, damit wir im Urlaub weniger tragen müssen.",
+      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
     }
   ]
 }
