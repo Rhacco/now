@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:45:58.013Z",
-      "gpt": "Ich packe beim Ausmisten die Kaffeetasse ein, weil ich beim Umzug keinen Stress haben will – dann fällt mir ein, ich trinke jetzt nur noch Tee.",
-      "qwen": "Mama stapelt die Kisten für den Umzug. „Alles raus, was du nicht mehr brauchst!“, ruft sie. Ich lege die letzten Klamotten zurück: „Brauche ich für die Nachbarn.“",
-      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
-    },
-    {
       "timestamp": "2026-11-20T19:50:57.465Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einem leisen Staubsauger, der Verkäufer lächelt und reicht mir einen Besen.",
       "qwen": "Ich fragte den Verkäufer, ob der Wollpullover kratzt. Er sah mich an und fragte: „Krätze haben Sie nicht?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Brot in Folie einpacken?“ Auf dem Wochenmarkt sagt der Bäcker: „Nur, wenn's ein Picknick‑Brot ist.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis. Der Bauer lacht und sagt: „Den kriegt man hier nicht, nur beim Discounter.“",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-20T23:51:05.344Z",
+      "gpt": "Ich wollte beim Joggen meine Schrittzahl tracken, doch die App meldete plötzlich: „Du hast das Ziel erreicht – du hast das Haus verlassen.“",
+      "qwen": "Ich habe meine Navigations-App gefragt, wie man am schnellsten nach Hause kommt. Sie schlug vor, den Fluss in den Flüssen vor den Dörfern zu nehmen.",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
