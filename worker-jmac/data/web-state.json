@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:55:57.859Z",
-      "gpt": "Im Meeting fragt der Chef nach neuen Ideen – ich ziehe mein Notizbuch hervor, öffne die leere Seite und schreibe: „Ideen? Nicht vergessen, Kaffee!“.",
-      "qwen": "„Bitte fassen Sie die Ergebnisse kurz zusammen.“\nDer Chef nickt zufrieden: „Erledigt. Sie haben gesprochen.“",
-      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
-    },
-    {
       "timestamp": "2026-11-20T01:01:09.777Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Warum ist das Fenster offen?“ Der Schaffner lächelt: „Damit das Meer nicht zu viel Platz einnimmt.“",
       "qwen": "Auf dem Campingplatz kocht die Nachbarin stundenlang ein Kompott. „Schön, dass Sie so viel Zeit haben“, lobe ich. Sie seufzt: „Bin erst in Urlaub.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista gibt mir einen Topf Suppe – sie meinte, das sei ein „Kaffee‑auf‑der‑Wolke“.",
       "qwen": "Der Kellner fragt, ob ich das Steak extra scharf will. Ich streiche die Tomate, damit es mich nicht zu sehr brennt.",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-20T05:01:07.608Z",
+      "gpt": "Ich wollte beim Ausmisten die alte Kaffeemaschine spenden, doch sie war so alt, dass sie jetzt nur noch als Briefbeschwerer diente.",
+      "qwen": "Auf dem Dachboden finde ich meine alte Kiste mit Briefen. Ich öffne sie und entdecke, dass ich sie nie gelesen habe.",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
