@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:20:58.748Z",
-      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht mehr als drei Stationen weiterfahren.“ Der Zug fährt sofort rückwärts.",
-      "qwen": "Ich stieg aus dem Zug, dann dem Bus, dann dem Taxi aus. Der Taxifahrer fragte: „Und jetzt das Auto?“",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-20T18:26:07.536Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminar, weil ich erst jetzt gelernt habe, wie man Fragen beantwortet.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Personalchef schmunzelte und meinte: „Da fehlt Ihnen wohl die Akte.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange haben Sie noch Schmerzen?“ – Ich: „Nur bis zur Apotheke, dort gibt’s Gratis‑Medi‑kissen.“",
       "qwen": "Ich warte seit drei Stunden, weil die Ärztin im Wartezimmer feststeckt. Sie sitzt in der Warteschlange vor ihrer eigenen Praxis.",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-20T22:26:05.970Z",
+      "gpt": "Beim Ausmisten fand ich meine alte Steuererklärung – ich dachte, das war ein Liebesbrief, aber das Finanzamt hatte mich doch nur gemeldet.",
+      "qwen": "Die alte Kiste mit Porzellan? Weg damit.\nDrauf stand: „Nicht öffnen, zerbrechlich“.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
