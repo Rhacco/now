@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:01:02.085Z",
-      "gpt": "Ich mache Yoga im Büro, um Stress abzubauen – und merke erst, wenn mein Chef fragt, warum ich gerade den „Herabschauenden Hund“ an der Kaffeemaschine mache.",
-      "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf der Matte ausgeruht. Jetzt bin ich der, der streckt.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-20T07:06:06.681Z",
       "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Ärztin meint: „Das ist doch Ihre Apotheke, nicht unser WLAN.“",
       "qwen": "Ich bat den Arzt, mich in die Apotheke zu schicken. Er meinte nur: „Fahr doch selbst hin.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um den Stress abzubauen, und plötzlich ruft mein Handy: „Du hast 10.000 Schritte erreicht – im Traum.“",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch steifer und ärgerlicher.",
       "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
+    },
+    {
+      "timestamp": "2026-11-20T11:10:57.237Z",
+      "gpt": "Ich rief beim Nachbarn an, weil das Wasser aus seiner Leitung tropfte, und er meinte: „Kein Problem, das ist nur das neue Sound‑System für die Dusche.“",
+      "qwen": "Ich zähle die Schlaghölzer am Zaun. Die Nachbarn haben vierzehn neue.",
+      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
     }
   ]
 }
