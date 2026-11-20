@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:20:58.017Z",
-      "gpt": "Ich füllte das verlorene Formular im Fundbüro aus, doch das Amt verlangte meine Unterschrift, weil es angeblich „nicht mehr zu finden“ sei.",
-      "qwen": "Ich fragte im Fundbüro nach meinem Schlüssel. Die Dame meinte: „Hier gibt es nur einen Antrag.“",
-      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
-    },
-    {
       "timestamp": "2026-11-20T09:26:01.035Z",
       "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt, im Bus nach dem Ziel, im Taxi nach dem Weg – im Auto fragt er nur, wer das Navi ist.",
       "qwen": "Ich sage: „Nur bis zur nächsten Haltestelle.“\nDer Taxispinner zuckt mit den Schultern: „Die ist in 400 Metern, hier ist keine.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Stimme sagte: „Keine Sorge, wir haben Sie gerade erst eingestiegen.“",
       "qwen": "Ich stieg aus dem Taxi, als der Fahrer fragte: „Noch was zu zahlen?“ Ich zückte die S Bahn Karte.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-20T13:26:02.251Z",
+      "gpt": "Ich wollte beim Umzug die alte Lampe mitnehmen, doch sie war zu schwer – also habe ich sie einfach als neue Türstopper verkauft.",
+      "qwen": "Während des Umzugs werfe ich meine alte Zahnbürste weg.\nDie neue Hausbewohnerin sagt: „Die passte besser zur Wandleuchte.“",
+      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
     }
   ]
 }
