@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:45:57.528Z",
-      "gpt": "Ich packte die Krawatten in die Umzugskiste, dann merkte ich, dass ich seit Jahren keinen Anzug mehr trage – und verkaufte sie als „Vintage‑Schmuck“.",
-      "qwen": "Die Kiste „Wichtiger Kleiderschrank“ ist leer, weil mein Mann sie schon ausgepackt hat. Er starrt sie an und fragt, wo sein Wintermantel steckt.",
-      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
-    },
-    {
       "timestamp": "2026-11-20T06:51:03.981Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, aber mein Hund legt sich immer genau dort hin, wo ich die Zehen strecke – und nennt das „herabschauender Hund“.",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt gestresst.",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt er leise nach dem Film „Stille“, im Kino flüstert er das Museum an. Beide lachen, weil er nur das Wort „Ausstellung“ hörte.",
       "qwen": "Im Kino gucke ich gebannt, im Museum staune ich. In der Bibliothek beschwert sich die Leserin, dass mein Handy vibriert.",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-20T10:55:58.536Z",
+      "gpt": "Der Paketbote klopft, ich öffne die Tür und frage: „Ist das für mich?“ Er lächelt: „Nein, das ist die Rechnung für Ihre Geduld.“",
+      "qwen": "Der Bote fragt: „Ist jemand zu Hause?“\nIch: „Nein, hier wohnt nur ein Paket.“",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
