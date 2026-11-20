@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:25:59.134Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil ich endlich den Aufstieg zum Praktikanten schaffe.“",
-      "qwen": "Mein Chef lobt meine Weiterbildung. „Endlich“, sagt er, „dafür brauchst du diese Stelle gar nicht mehr.“",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-20T12:30:57.637Z",
       "gpt": "Ich kaufe am Wochenmarkt frische Tomaten, doch an der Kasse fragt die Verkäuferin: „Möchten Sie die Tomaten auch gleich auf dem Weg nach Hause pflücken?“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Tüten?“, und ich antworte stolz: „Nein, ich bin vegetarisch.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfte an die Nachbarstür, um mich für das laute Klopfen zu entschuldigen – sie öffnete und fragte, ob ich das neue Klingelsystem testen wolle.",
       "qwen": "Ich fragte den Nachbarn, wo er wohnt. Er zeigte auf sein Haus und sagte: „Da drin, wo die Miete ist.“",
       "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
+    },
+    {
+      "timestamp": "2026-11-20T16:30:59.912Z",
+      "gpt": "Ich packe die Kisten und finde einen Staubsauger, den ich nie benutzt habe – er saugt jetzt meine Ausrede, warum ich noch nicht ausgezogen bin.",
+      "qwen": "Die alte Lampe landete im Sperrmüll.\nSie leuchtete nur im Dunkeln, wenn man sie vergaß.",
+      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
     }
   ]
 }
