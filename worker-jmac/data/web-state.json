@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:10:57.500Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten meldet sie: „Bitte erstelle ein Konto – für dein Sofa.“",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch öffne die Ladebuchse: Dort sitzt ein Müsliriegel.",
-      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
-    },
-    {
       "timestamp": "2026-11-19T22:16:08.294Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Kassenbon noch?“ – „Nein, aber ich habe das Formular dafür ausgefüllt.“",
       "qwen": "Ich gebe die Fundsache ab und erhalte ein Formular mit dreihundert Seiten. „Bitte unterschreiben Sie hier, dort und unter dem Datum.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt ruft der Kunde: „Nur wenn Sie die Bohnen mitliefern!“",
       "qwen": "Ich suchte nach Bio-Gemüse, doch der Wochenmarkt war leer. Da stand ich still, bis die Polizei kam.",
       "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
+    },
+    {
+      "timestamp": "2026-11-20T02:16:05.275Z",
+      "gpt": "Nach dem Yoga‑Kurs sagt sie: „Ich bin jetzt so entspannt, dass ich sogar meine Lieblingsübung – das Nichtstun – perfektioniert habe.“",
+      "qwen": "Kumpel, ich zieh dir die Daumen, wenn du heute Marathon läufst.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
