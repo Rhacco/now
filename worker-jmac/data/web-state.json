@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:56:05.645Z",
-      "gpt": "Ich frage die Verkäuferin nach einer günstigen Waschmaschine, sie zeigt mir das Modell „Selbstreinigung“ – ich zahle, weil ich meine Schuldgefühle waschen will.",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, bitte nehmen Sie mich mit.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-20T07:01:02.085Z",
       "gpt": "Ich mache Yoga im Büro, um Stress abzubauen – und merke erst, wenn mein Chef fragt, warum ich gerade den „Herabschauenden Hund“ an der Kaffeemaschine mache.",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf der Matte ausgeruht. Jetzt bin ich der, der streckt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich noch immer die Stellenanzeige nicht gelesen habe.“",
       "qwen": "Ich habe mich für den Chefsessel beworben. Der Geschäftsleiter fragte nur, ob ich Zeit fürs Nachtschichttraining habe.",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-20T11:06:10.847Z",
+      "gpt": "Ich mache Yoga, um den Stress abzubauen, und plötzlich ruft mein Handy: „Du hast 10.000 Schritte erreicht – im Traum.“",
+      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch steifer und ärgerlicher.",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
