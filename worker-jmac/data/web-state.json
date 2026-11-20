@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:55:58.001Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista gibt mir einen Topf Suppe – sie meinte, das sei ein „Kaffee‑auf‑der‑Wolke“.",
-      "qwen": "Der Kellner fragt, ob ich das Steak extra scharf will. Ich streiche die Tomate, damit es mich nicht zu sehr brennt.",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-20T05:01:07.608Z",
       "gpt": "Ich wollte beim Ausmisten die alte Kaffeemaschine spenden, doch sie war so alt, dass sie jetzt nur noch als Briefbeschwerer diente.",
       "qwen": "Auf dem Dachboden finde ich meine alte Kiste mit Briefen. Ich öffne sie und entdecke, dass ich sie nie gelesen habe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie abgeholt wird.“",
       "qwen": "Der Arzt warf mir den Zettel zu: „Nichts essen, nichts trinken – außer Ihrer Apotheke.“",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-20T09:06:10.616Z",
+      "gpt": "In der Bibliothek flüstere ich leise, im Kino lache ich laut, im Museum frage ich: „Wo ist der Ausgang zum Popcorn?“",
+      "qwen": "Ich fragte die Bibliothekarin, wo das Kino sei. Das Museum ist leider geschlossen.",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
