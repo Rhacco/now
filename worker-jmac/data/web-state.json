@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:36:05.785Z",
-      "gpt": "Ich füllte das Formular für verlorene Schlüssel aus – unter \"Vermerk\" stand: \"Bitte bei Fundbüro abgeben, falls jemand den Schlüssel zurückgibt.\"",
-      "qwen": "Ich habe meinen Schlüssel verloren. Das Fundbüro verlangt zwei ausgefüllte Formulare und einen Termin, um ihn mir zurückzugeben.",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-20T19:40:58.024Z",
       "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, die Durchsage: „Bitte nicht aussteigen, wir fahren gerade ins Hotel.“",
       "qwen": "Auf dem Berggipfel fragt der Freund: „Warum sind wir gerade hier?“ Ich antworte: „Damit ich dir sage, dass ich morgen zu Hause bleibe.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand, der Schaffner zeigt nach hinten – dort liegt das Meer, weil der Zug im Hafen steht.",
       "qwen": "Ich habe den Koffer gepackt. Als ich ihn hob, kippelte er, weil sich der Schmetterling meldete.",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-20T23:41:05.762Z",
+      "gpt": "Der Paketbote klopft, ich frage: „Ist das ein Express‑Lieferung?“ – Er lächelt und sagt: „Nein, das ist unser neuer Kunden‑Service‑Karton.“",
+      "qwen": "„Ihr Paket ist defekt.“\n„Nein, der Paketbote ist es.“",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
