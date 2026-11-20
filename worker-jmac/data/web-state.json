@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:36:04.858Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich lerne, meine Antworten zu planen.“",
-      "qwen": "Ich fragte nach Weiterbildung, doch der Chef lächelte nur.\n„Wir schulen Sie in Geduld, während wir Ihre Stelle streichen.“",
-      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
-    },
-    {
       "timestamp": "2026-11-19T23:40:56.853Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Kassiererin lächelt und reicht ihr das Kassenband. „Das ist doch das, was Sie brauchen.“",
       "qwen": "„Haben Sie das auch in Rot?“ fragte ich zögernd. Der Verkäufer zuckte nur mit den Schultern und sagte: „Na ja, wir sind ja auch keine Hexen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Lampe, und der Verkäufer meint: „Natürlich, wir haben hier das Licht aus.“",
       "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich: „Ja, ich suche einen Weg aus dem Kreislauf.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-20T03:45:58.044Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage: „Bitte halten Sie die Verbindung nicht für selbstverständlich.“",
+      "qwen": "Ich dränge mich zwischen Bahn, Bus, Taxi und Auto. Der Taxifahrer lacht: „Da musst du nicht reinkommen, du fährst doch selbst.“",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
