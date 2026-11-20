@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:50:57.650Z",
-      "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt – ich drücke den Knopf, weil ich das Ziel schon kenne. Der Zug hält, weil er mich nicht versteht.",
-      "qwen": "Ich stelle mich in die Taxireihe, doch der Fahrer winkt mich zu seinem Auto. „Sie sind dran“, sagt er, „aber fahren tut meine Frau.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-19T21:56:08.100Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich warte seit zwei Stunden in der Praxis. Der Arzt ruft mich rein und sagt: „Nehmen Sie die Pille zweimal täglich.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das Handy im Kühlschrank?“ – Ich wollte, dass es endlich mal kalt bleibt.",
       "qwen": "Ich fragte, wer das Licht angehat hat.\nMein Sohn zeigte auf seine Katze: „Sie hat es angeknipst.“",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-20T01:56:06.847Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein leeres Regal und meint: „Hier finden Sie nur Luft, die ist sowieso glutenfrei.“",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich will nur stöbern.“",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
