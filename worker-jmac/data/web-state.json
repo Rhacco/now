@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:01:01.104Z",
-      "gpt": "Im Zug nach Mallorca fragt die Frau: „Gehört das WLAN zum Ticket?“ Der Schaffner lächelt: „Nur, wenn Sie im Kofferraum surfen.“",
-      "qwen": "Kurzurlaub in der Toskana. Der Kellner fragt: „Was gibt’s?“ Ich zähle laut die Euro-Banknoten auf.",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-20T06:05:57.881Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir die Kasse – ich soll doch erst bezahlen, bevor ich mich warm anziehe.",
       "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer fragte: „Haben Sie schon ein Hemd?“ Ja, das habe ich.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Filmkritiker nickt: „Nur wenn du das Drehbuch ausleihst.“",
       "qwen": "Im Kino saß ich neben einem Mann, der lautstark flüsterte.\nEr war im Museum, ich im Kino.",
       "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
+    },
+    {
+      "timestamp": "2026-11-20T10:11:05.533Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, weil ich bis dahin noch keinen Job gefunden habe.“",
+      "qwen": "Ich bin für jede Weiterbildung offen, sagte ich im Vorstellungsgespräch. Der Chef hob an, als ich „sogar zum Rasenmähen“ ergänzte.",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
