@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:36:06.624Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt so gut versteckt, dass sogar ich es nicht mehr finde.“",
-      "qwen": "Endlich ist die Besprechung beendet. Der Chef fragt: „Und, wer von euch hat nichts zu sagen?“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-20T11:41:06.705Z",
       "gpt": "Im Zug steht ein Fahrgast und sagt: „Ich hätte gern ein Ticket nach Hause.“ Der Schaffner antwortet: „Dann steigen Sie einfach aus.“",
       "qwen": "Ich sage dem Taxifahrer: „Bitte zum Bahnhof, ich habe es eilig.“\nEr antwortet: „Zu spät, das Auto ist schon voll.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift: „Bitte nicht waschen – das ist ein Vintage‑Stück.“ Und ich packe es sofort ein.",
       "qwen": "Beim Ausmisten fand ich meine alte Zahnbürste. Die habe ich natürlich behalten.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-20T15:40:58.467Z",
+      "gpt": "Im Yogakurs fragt die Lehrerin: „Wer kann jetzt den herabschauenden Hund?“ – Mein Nachbar meldet sich, weil er gerade das Fernsehprogramm umschaltet.",
+      "qwen": "Ich habe Yoga gemacht, bis mir der Rücken einschnürte. Jetzt bin ich entspannt, aber ich kann mich nicht mehr bücken.",
+      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
     }
   ]
 }
