@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T19:55:58.634Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista schenkt mir nur heißen Kaffee. „Ich wollte doch nur wach werden“, sage ich und trinke den Espresso.",
-      "qwen": "Wir bestellen ein Schnitzel. Der Kellner bringt es mit Pommes, aber das Schnitzel fehlt.",
-      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
-    },
-    {
       "timestamp": "2026-11-19T20:01:11.986Z",
       "gpt": "Ich klopfe beim Nachbarn an, um mir die laute Waschmaschine zu leihen – er schenkt mir stattdessen einen Staubsauger, weil er gerade das Zimmer streicht.",
       "qwen": "Mein Nachbar rasiert sich täglich um drei Uhr früh.\nIch wette, er übt für die Rolle als Geisterjäger.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich das WLAN nicht fand – die Durchsage kam: „Bitte halten Sie den Knopf nicht fest, er ist nur ein Snack.“",
       "qwen": "Auf der Insel wollten wir die einheimische Kuh bestaunen.\n„Die kommt gleich“, sagte der Fischer, „ist aber erst seit heute Abend da.“",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-20T00:00:58.088Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze im Himmel erreichen?“ – Der Anfänger streckt die Hände, aber nur die Katze im Baum schnurrt.",
+      "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Zehen gelegt. Jetzt übe ich nur noch Standhaftigkeit.",
+      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
     }
   ]
 }
