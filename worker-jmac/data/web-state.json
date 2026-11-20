@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:11:04.149Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt ruft der Kunde: „Nur wenn Sie die Bohnen mitliefern!“",
-      "qwen": "Ich suchte nach Bio-Gemüse, doch der Wochenmarkt war leer. Da stand ich still, bis die Polizei kam.",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-20T02:16:05.275Z",
       "gpt": "Nach dem Yoga‑Kurs sagt sie: „Ich bin jetzt so entspannt, dass ich sogar meine Lieblingsübung – das Nichtstun – perfektioniert habe.“",
       "qwen": "Kumpel, ich zieh dir die Daumen, wenn du heute Marathon läufst.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sie sagt Regen. Ich schaue aus dem Fenster – Sonne. Dann merke ich, ich habe die Vorhersage für morgen geöffnet.",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schlafe ich nur noch, wenn mein Akku leer ist.",
       "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
+    },
+    {
+      "timestamp": "2026-11-20T06:16:06.075Z",
+      "gpt": "Ich komme zum Vorstellungsgespräch, sag: „Ich habe meine Soft Skills auf dem Sofa weiterentwickelt.“ Der Personaler nickt: „Perfekt, wir suchen jemanden im Home‑Office.“",
+      "qwen": "Die Personalchefin fragt nach meinen Fortbildungswünschen. Ich sage: „Einen Crashkurs in Höflichkeit.“",
+      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
     }
   ]
 }
