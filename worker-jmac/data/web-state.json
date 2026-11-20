@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:46:01.199Z",
-      "gpt": "Ich mache Yoga im Park, um Stress abzubauen – bis ein Hund meine „Lotus‑Pose“ als neue Decke für sein Nickerchen erklärt.",
-      "qwen": "Ich habe gerade Yoga gemacht, um mich zu entspannen. Jetzt kann ich mich wegen des Kater-Saluts nicht mehr aufrichten.",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-20T11:50:56.850Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie mir das Gemüse einpacken.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich nicke. Sie lacht: „Nein, Obst in Papstkartons?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Kurs für Geduld, weil ich jetzt schon auf Ihre Antwort warte.“",
       "qwen": "Ich habe mich auf eine Führungsposition beworben. Der Chef fragte nur: „Können Sie Excel?“",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-20T15:51:08.829Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach links, sehe den Schaffner mit Krawatte, der sich über das Sicherheitsgurt‑Gesetz wundert.",
+      "qwen": "Im Taxi wollte ich den Gurt anlegen. Der Fahrer lachte: „Sparsam, haben wir hier keine Zeit.\"",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
