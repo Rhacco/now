@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:06:00.666Z",
-      "gpt": "Ich stehe am Supermarkt, prüfe das Angebot und merke: Die Tomaten kosten mehr als mein Gehalt. Auf dem Wochenmarkt kaufe ich dann nur Luft.",
-      "qwen": "Bald ist der Wochenmarkt vorbei, aber der Supermarkt bleibt immer offen.",
-      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
-    },
-    {
       "timestamp": "2026-11-20T12:11:02.481Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das die Lieferung, die Sie gestern bestellt haben?“ – „Nein, das ist unser neuer Kunden‑Service‑Roboter.“",
       "qwen": "Der Kurier fragt: „Können Sie hier gegenzeichnen?“ Ich zeichne.\nEr winkt ab: „Nein, das war die Unterschrift für die Ware.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrogeschäft nach einem energiesparenden Kühlschrank, der automatisch bestellt wird, wenn er leer ist – er lächelt und reicht mir nur den Telefonhörer.",
       "qwen": "„Können Sie das noch kürzer schneiden?“ fragte ich den Friseur. „Ja, ich bin knapp beauftragt, auch das auszusprechen.“",
       "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
+    },
+    {
+      "timestamp": "2026-11-20T16:10:57.792Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Nachweis, dass ich den Stift wirklich gefunden habe.",
+      "qwen": "Ich versuchte, den Fundantrag zu unterschreiben, doch der Beamte winkte ab. „Leider fehlt hier die Unterschrift des Fundes selbst.“",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
