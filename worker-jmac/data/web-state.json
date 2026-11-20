@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:06:06.636Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich gerade erst den ersten Kurs gebucht habe.“",
-      "qwen": "Mein Chef lobt meine Weiterbildung. Er will, dass ich ab morgen auch nachts die E-Mails beantworte.",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-20T14:11:04.441Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber Kaffee oder Tee?“ Der Gast meint: „Egal, ich trinke beides, weil ich hier nur das Menü lese.“",
       "qwen": "Die Köchin fragt: „Ist alles in Ordnung?“\nIch: „Ja, aber der Teller ist noch leer.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich habe gerade einen Weiterbildungskurs im Prokrastinieren belegt.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die bekommen Sie, wenn Sie entlassen werden.“",
       "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
+    },
+    {
+      "timestamp": "2026-11-20T18:16:04.655Z",
+      "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie ihn auch gleich mit einem Stück Kuchen bezahlen?“ Ich antworte: „Nur, wenn er mir das Rezept schenkt.“",
+      "qwen": "Ich fragte im Café: „Gibt’s das nur als Kaffee?“\nDie Kellnerin antwortete: „Nein, das ist ein Schnitzel.“",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
