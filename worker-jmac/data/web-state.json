@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:40:58.440Z",
-      "gpt": "In der Bibliothek fragt die Lehrerin: „Welches Buch ist im Kino am beliebtesten?“ – Der Bibliothekar antwortet: „„Stummfilm“ – weil er nie ausgeliehen wird.",
-      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf eine Tafel: „Hier gibt es keinen.\"",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-20T16:46:05.499Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir eine Tüte. „Damit Sie die Preise nicht mehr sehen.“",
       "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich habe ihn nur für den Staubsauger versteckt.“",
       "qwen": "Die Mama fragt: „Wer hat das Fenster kaputt gemacht?“\nDie Katze schweigt, der Hund wedelt.",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-20T20:46:57.163Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich den Anschluss verpasst hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir fahren weiter.“",
+      "qwen": "Ich steig frustriert aus dem stehenden Bus. Der Taxifahrer ruft: „Hast du noch Fahrkarten?“",
+      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
     }
   ]
 }
