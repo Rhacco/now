@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:21:05.439Z",
-      "gpt": "Ich frage am Supermarkt nach frischen Tomaten, die Verkäuferin zeigt mir die Dose, ich sag: „Ich wollte ja keine Konserve, sondern ein Date!“",
-      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Bauer gab mir eine Tante.",
-      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
-    },
-    {
       "timestamp": "2026-11-20T16:26:04.094Z",
       "gpt": "Ich klopfte an die Nachbarstür, um mich für das laute Klopfen zu entschuldigen – sie öffnete und fragte, ob ich das neue Klingelsystem testen wolle.",
       "qwen": "Ich fragte den Nachbarn, wo er wohnt. Er zeigte auf sein Haus und sagte: „Da drin, wo die Miete ist.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Der kleine Bruder grinst und sagt: „Ich, aber ich habe ihn in die Spülmaschine gelegt, damit er sauber bleibt.“",
       "qwen": "Meine Frau fragt, ob ich sie liebe. Ich sage: „Ja, aber nicht mehr als die Couch.“",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-20T20:31:07.169Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Der Gast: „Mit Milch, bitte – ich habe gerade das Rezept für Schokoladenkuchen vergessen.“",
+      "qwen": "Ich helfe die Spaghetti an und dusche kurz.\nDann esse ich die Nudeln mit Shampoo.",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
