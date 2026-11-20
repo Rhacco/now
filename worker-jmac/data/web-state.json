@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:15:57.284Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Museumsführer nickt und zeigt auf den Kinosaal – dort ist endlich Stummfilm.",
-      "qwen": "Im Museum flüstert die Frau: „Bitte leise, das Bild ist müde.“",
-      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
-    },
-    {
       "timestamp": "2026-11-20T09:20:58.017Z",
       "gpt": "Ich füllte das verlorene Formular im Fundbüro aus, doch das Amt verlangte meine Unterschrift, weil es angeblich „nicht mehr zu finden“ sei.",
       "qwen": "Ich fragte im Fundbüro nach meinem Schlüssel. Die Dame meinte: „Hier gibt es nur einen Antrag.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurückgeben, bevor der Film endet.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Schild, das „Ruhezone“ sagte.",
       "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
+    },
+    {
+      "timestamp": "2026-11-20T13:21:08.314Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Stimme sagte: „Keine Sorge, wir haben Sie gerade erst eingestiegen.“",
+      "qwen": "Ich stieg aus dem Taxi, als der Fahrer fragte: „Noch was zu zahlen?“ Ich zückte die S Bahn Karte.",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
