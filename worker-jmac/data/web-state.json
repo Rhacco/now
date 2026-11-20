@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:00:58.088Z",
-      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze im Himmel erreichen?“ – Der Anfänger streckt die Hände, aber nur die Katze im Baum schnurrt.",
-      "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Zehen gelegt. Jetzt übe ich nur noch Standhaftigkeit.",
-      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
-    },
-    {
       "timestamp": "2026-11-20T00:05:58.535Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich die Stellenanzeige verstehe.“",
       "qwen": "Ich fragte im Vorstellungsgespräch, ob ich eine Weiterbildung braucht. „Nein“, sagte der Chef, „wir brauchen nur Ihre Kündigung.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut flüstern?“ Das Kino nebenan antwortet: „Nur, wenn du Popcorn leihst.“",
       "qwen": "Im Kino saß ich neben einem Mann, der jedes Mal laut „Schnarch!“ rief. Als ich mich wendete, winkte er mir zu: „Entschuldigung, ich bin der Aufsichtsrat.“",
       "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
+    },
+    {
+      "timestamp": "2026-11-20T04:06:03.426Z",
+      "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt – ich steh schon im Taxi und sag: „Bitte nicht aussteigen, wir fahren weiter!“",
+      "qwen": "Ich weiche in der Kurve aus, um das Taxi nicht zu streifen. Es war nicht mein Auto, sondern mein eigenes.",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
