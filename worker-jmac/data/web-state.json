@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:15:57.421Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Ich frage den Arzt: „Herr Doktor, wie gehen Sie?“\n„Nicht gut. Ich habe Ihren Namen auf dem Rezept vergessen.“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-19T23:18:04.078Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Bild ausleihen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "Ich habe im Museum ein Gemälde gestohlen, im Kino einen Popcorn-Teller geklaut und in der Bibliothek ein Buch entwendet. Der Beamte meinte nur: „Das ist alles nur Leihgabe, nicht Diebstahl.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm. „Für den Fall, dass Ihnen das Outfit zu heiß wird.“",
       "qwen": "Der Angestellte empfiehlt mir lautstark die teurere Waschmaschine.\n„Die ist leiser“, flüstert er, „sonst hört man die Mängel.“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-20T03:21:03.883Z",
+      "gpt": "Im Café bestellt sie einen „Flachmann“ – der Kellner bringt ihr ein leeres Glas. Sie sagt: „Ich wollte nur einen kleinen Schluck.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Möchten Sie dazu einen Teller?“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
