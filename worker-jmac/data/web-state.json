@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:10:57.792Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Nachweis, dass ich den Stift wirklich gefunden habe.",
-      "qwen": "Ich versuchte, den Fundantrag zu unterschreiben, doch der Beamte winkte ab. „Leider fehlt hier die Unterschrift des Fundes selbst.“",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-20T16:16:00.800Z",
       "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze schläft und schnurrt, während er verzweifelt versucht, die Haltung zu halten.",
       "qwen": "Ich habe heute Yoga probiert. Am Ende lag ich nicht entspannt, sondern in der Hocke.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Geschenk, sie reicht mir einen Katalog und sagt: „Hier steht, was Sie nicht kaufen können.“",
       "qwen": "Verkäuferin: „Darf ich Ihnen das richtig auftragen?“\nKunde: „Nein, ich brauche nur einen Spiegel, nicht Ihre Meinung.“",
       "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
+    },
+    {
+      "timestamp": "2026-11-20T20:21:01.013Z",
+      "gpt": "Im Zug lese ich, im Bus drücke ich die Klingel, im Taxi gebe ich Trinkgeld. Im Auto frage ich laut: „Wer hat den Fahrplan?“",
+      "qwen": "Fahre ich mit dem Taxi, fragt der Fahrer: „Schnell?\" Ich sage: „Ja.\"",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
