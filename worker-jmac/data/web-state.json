@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:06:06.923Z",
-      "gpt": "Mama fragt: „Warum hast du das Handy in die Spülmaschine gesteckt?“ Ich: „Damit es endlich mal wieder klingelt.“",
-      "qwen": "Ich frage die Tochter, ob sie den Müll rausbringt. Sie sagt: „Ja, aber nur den digitalen.“",
-      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
-    },
-    {
       "timestamp": "2026-11-20T18:10:59.136Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich habe gerade einen Weiterbildungskurs im Prokrastinieren belegt.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die bekommen Sie, wenn Sie entlassen werden.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Warum haben Sie nur einen Koffer?“ Der Mann lächelt: „Ich nehme das Meer mit.“",
       "qwen": "Im Urlaub hat er die Kamera einkassiert. „Ich will keine Fotos, ich will Erinnerungen.“",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-20T22:11:05.282Z",
+      "gpt": "Im Museum flüstert er: „Ich will das Buch aus der Bibliothek ausleihen.“ Der Bibliothekar schaut verwirrt und sagt: „Hier gibt’s nur Stille‑Filme.“",
+      "qwen": "Ich wollte ins Museum, sah aber nur Leinen.\nJetzt sitze ich im Kino und schweige.",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
