@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:10:58.082Z",
-      "gpt": "Beim Auspacken des Umzugskartons findet er ein altes, staubiges Fitnessgerät – und merkt, dass er beim Ausmisten die Hantelbank vergessen hat.",
-      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Funktioniert sie?“ Ja, sie wäscht alles aus.",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-20T00:16:09.597Z",
       "gpt": "Ich wollte beim Spaziergang die neue Fitness‑App starten, aber sie meldete nur: „GPS nicht gefunden – du bist doch schon im Sofa.“",
       "qwen": "Ich suche die App „Stressfrei“ und finde nur „Stress“.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vergessen?“ – Der Praktikant meldet sich und sagt: „Ich, weil ich dachte, das sei ein Brainstorming.“",
       "qwen": "„Sind wir uns einig?“, fragte der Chef. „Ja“, nickten alle.",
       "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
+    },
+    {
+      "timestamp": "2026-11-20T04:16:08.342Z",
+      "gpt": "Mama sagt: „Wir essen nur noch Gemüse!“ – Papa grinst, holt die Pizza‑Schachtel und meint: „Dann ist das ja Salat.“",
+      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“ Ich sage: „Niemand. Ich wollte es nur probieren.“",
+      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
     }
   ]
 }
