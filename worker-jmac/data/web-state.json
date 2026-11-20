@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:55:58.052Z",
-      "gpt": "Im Vorstellungsgespräch fragt die Chefin: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum – ich habe gerade erst den ersten Kurs abgeschlossen.“",
-      "qwen": "Ich kündigte die Weiterbildung ab, um mich zu bewerben. Der Personalchef rückte die Bewerbung aus, da ich keine Weiterbildung absolviert habe.",
-      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
-    },
-    {
       "timestamp": "2026-11-20T10:00:57.964Z",
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich heute Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich das Handy im Kühlschrank vergessen habe.",
       "qwen": "Ich suche die App „Stressfrei“ und finde nur meine eigene Tretaccu-App.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kassierer schüttelt den Kopf: „Im Kino darf man nur flüstern.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin meinte: „Der steht noch im Konjunktiv.“",
       "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
+    },
+    {
+      "timestamp": "2026-11-20T14:00:59.862Z",
+      "gpt": "Ich packe den Staubsauger ein, weil er immer alles mitnimmt – doch beim Umzug bleibt er zu Hause, weil er schon alles eingesaugt hat.",
+      "qwen": "Ich will die alte Couch wegwerfen, aber mein Mann sagt: „Die haben wir doch für 2000 Euro gekauft.“ Da sage ich: „Deshalb darf sie jetzt auch endlich die 2000 Meter Treppe runter.“",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
