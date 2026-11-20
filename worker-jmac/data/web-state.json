@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:26:09.499Z",
-      "gpt": "Im Supermarkt fragt der Kunde nach glutenfreiem Brot, und die Verkäuferin reicht ihm ein leeres Regal. „Wir haben nur noch Luft zum Aufgehen.“",
-      "qwen": "Ich fragte nach einer Socke in Größe 47. „Die gibt’s nicht,“ sagte er. „Nur Sockenpaare, Mann.“",
-      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
-    },
-    {
       "timestamp": "2026-11-20T01:31:00.910Z",
       "gpt": "Im Zug fragt die Durchsage, ob jemand sein Handy vergessen hat – ich melde mich, weil ich im Auto sitze und gerade laut tippe.",
       "qwen": "Ich steig aus dem Taxi, als der Fahrer fragt: „Soll ich Sie noch irgendwo absetzen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt bereits beendet – im Kopf, weil die PowerPoint nie geladen hat.“",
       "qwen": "Ich rufe im Meeting die Stille auf.\nDer Chef fragt, ob ich gerade eine Besprechung mit mir selbst führe.",
       "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
+    },
+    {
+      "timestamp": "2026-11-20T05:31:04.164Z",
+      "gpt": "Mama fragt: „Warum hast du das ganze Brot in die Spülmaschine gelegt?“  \nIch: „Ich wollte es endlich mal durchziehen.“",
+      "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie sagt: „Ja, aber der Hund ist süßer.“",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
