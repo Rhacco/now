@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:50:57.626Z",
-      "gpt": "Ich vergleiche Preise auf dem Wochenmarkt, dann ruft mich der Supermarkt an: „Wir haben jetzt 20 % Rabatt – aber nur auf die Luft, die Sie gerade einatmen.“",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Treuekarte?“\nDer Mann antwortet: „Nein, ich bin nur hier, weil der Wochenmarkt heute dicht ist.“",
-      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
-    },
-    {
       "timestamp": "2026-11-20T03:56:07.357Z",
       "gpt": "Ich packe die Kaffeetassen aus, finde nur leere Schachteln – mein Mitbewohner hat sie zum Umzug verkauft, weil er „weniger Gewicht“ wollte.",
       "qwen": "Wir wollten beim Ausmisten nur die alten T-Shirts wegschmeißen. Doch als wir sie auspackten, zogen wir alle sofort an.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann antwortet: „Ja, ich habe das Formular für den verlorenen Stift gefunden.“",
       "qwen": "Ich frage beim Fundbüro nach der Verlustanzeige für den verlorenen Schlüssel. Die Beamtin lächelt: „Die liegt seit drei Jahren bei uns, Sie hatten sie damals vergessen.“",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-20T07:56:03.573Z",
+      "gpt": "Im Zug klingelt mein Handy, ich antworte: „Entschuldigung, ich sitze im Zug.“ – Der Anrufer sagt: „Ich auch, aber im Taxi.“",
+      "qwen": "Ich nehme das Taxi, weil der Bus zu voll ist. Der Fahrer fragt: „Zu welchem Bahnhof?“",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
