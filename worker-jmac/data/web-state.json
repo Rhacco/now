@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:18:04.078Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Bild ausleihen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
-      "qwen": "Ich habe im Museum ein Gemälde gestohlen, im Kino einen Popcorn-Teller geklaut und in der Bibliothek ein Buch entwendet. Der Beamte meinte nur: „Das ist alles nur Leihgabe, nicht Diebstahl.“",
-      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
-    },
-    {
       "timestamp": "2026-11-19T23:21:06.071Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Anzug, sie reicht mir einen Anzug und sagt: „Der kostet 199 €, inkl. Beratung, weil ich ihn selbst anprobiert habe.“",
       "qwen": "Der Verkäufer drückt mir die letzte Packung hinein. „Das ist jetzt in Ihrem Eigentum,“ lächelt er, „zahlt aber erst nächsten Monat.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt sie einen „Flachmann“ – der Kellner bringt ihr ein leeres Glas. Sie sagt: „Ich wollte nur einen kleinen Schluck.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Möchten Sie dazu einen Teller?“",
       "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
+    },
+    {
+      "timestamp": "2026-11-20T03:26:02.895Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das ich noch nicht abgeholt habe.“",
+      "qwen": "Im Wartezimmer flüstert die Dame: „Der Arzt ist heute besonders streng.“ Ich drehe mich um: „Kein Wunder, das ist ja der Apotheker.“",
+      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
     }
   ]
 }
