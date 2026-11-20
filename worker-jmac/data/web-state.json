@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:56:06.905Z",
-      "gpt": "Im Meeting fragt der Chef: „Wie steht’s mit dem Projekt?“ Darauf meldet sich die Kollegin: „Projekt? Ich dachte, das ist nur das neue Kaffeekränzchen.“",
-      "qwen": "In der Besprechung sagte der Chef: „Wir sind doch ein Team.“\nNiemand widersprach, weil alle schon ihre Koffer packten.",
-      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
-    },
-    {
       "timestamp": "2026-11-20T06:01:01.104Z",
       "gpt": "Im Zug nach Mallorca fragt die Frau: „Gehört das WLAN zum Ticket?“ Der Schaffner lächelt: „Nur, wenn Sie im Kofferraum surfen.“",
       "qwen": "Kurzurlaub in der Toskana. Der Kellner fragt: „Was gibt’s?“ Ich zähle laut die Euro-Banknoten auf.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich heute Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich das Handy im Kühlschrank vergessen habe.",
       "qwen": "Ich suche die App „Stressfrei“ und finde nur meine eigene Tretaccu-App.",
       "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
+    },
+    {
+      "timestamp": "2026-11-20T10:06:10.215Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Filmkritiker nickt: „Nur wenn du das Drehbuch ausleihst.“",
+      "qwen": "Im Kino saß ich neben einem Mann, der lautstark flüsterte.\nEr war im Museum, ich im Kino.",
+      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
     }
   ]
 }
