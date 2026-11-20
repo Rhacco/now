@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:05:58.709Z",
-      "gpt": "Ich habe meinem Nachbarn die Klingel ausgetauscht – jetzt klingelt er jedes Mal, wenn ich die Pizza bestelle.",
-      "qwen": "Der Nachbar klopft an und fragt, ob ich seine Katze habe. Ich zeige auf die Tüte Müll, die er neben meiner Tür stehen lässt.",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-19T21:11:07.413Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und sagt: „Nein, ich habe nur das Formular, das ich gerade verloren habe.“",
       "qwen": "„Ich habe den Fund nicht gemeldet, weil das Formular 40 Seiten hat.“\n„Dann verlieren Sie ihn ja endgültig.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
       "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich suche nur nach dem出口.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-20T01:11:03.699Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb „Verloren“ bei der Frage nach dem Gegenstand – jetzt warten sie auf die Rückgabe meines Stifts.",
+      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt meinen Namen. Das ist doch schon verloren.",
+      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
     }
   ]
 }
