@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:41:04.818Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Abteilung für Sonnencreme?“ Der Schaffner lächelt: „Nein, das ist die Toilette.“",
-      "qwen": "Gefühlt ist der Urlaub schon vorbei, bevor wir die Koffer gepackt haben.",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-20T17:45:58.795Z",
       "gpt": "Ich klopfe an den Nachbarn, um mich für das laute Radio zu entschuldigen – er schenkt mir dankbar seine Kopfhörer.",
       "qwen": "Ich habe den Nachbarn gefragt, ob er den Rasen mäht. Er hat genickt und ist gegangen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einem günstigen Lautsprecher, der gut klingt – die Verkäuferin reicht mir ein Schild „Bitte leise sein“.",
       "qwen": "Im Baumarkt beraten mich drei Leute, ob die Sockelleiste passt. Dann sagt der Verkäufer: „Die 99 Euro sind übrigens nicht im Preis enthalten.“",
       "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
+    },
+    {
+      "timestamp": "2026-11-20T21:46:03.864Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Der Kunde lächelt: „Nur, wenn ich den Wochenmarkt nicht mehr finde.“",
+      "qwen": "Im Supermarkt kosten die Tomaten 99 Cent.\nAuf dem Wochenmarkt schimpft der Bauer: „Die sind reif, aber die Kasse ist leer!“",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
