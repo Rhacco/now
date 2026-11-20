@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:40:58.236Z",
-      "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, doch der Stand verkaufte nur Ketchup – das war wohl der \"geheime\" Sonderpreis für Tomaten im Glas.",
-      "qwen": "Im Supermarkt glänzt die Gurke, doch auf dem Wochenmarkt murrt sie leise: „Hier riecht es nach echtem Leben.“",
-      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
-    },
-    {
       "timestamp": "2026-11-20T10:45:57.502Z",
       "gpt": "Ich komme zum Vorstellungsgespräch, lege meinen Lebenslauf aus und frage: „Gibt’s hier auch einen Kurs, wie man das Ganze überlebt?“",
       "qwen": "„Welche Weiterbildung planen Sie in den ersten fünf Jahren?“ fragte der Chef. „Nicht.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Arzthelferin meint: „Das ist das neue Selbstzahler‑Modell – Sie zahlen, wenn Sie gehen.“",
       "qwen": "Ich fragte den Apotheker, ob mein Rezept fertig ist. Er grinste: „Quatsch, dafür war ich doch nur bei der Kasse.\"",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-20T14:46:00.466Z",
+      "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Hörbuch?“ Der Bibliothekar schüttelt den Kopf – das ist ein Kino.",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Bild, das ich schon sechshundert Jahre nicht verlassen hatte.",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
