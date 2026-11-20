@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:11:03.699Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb „Verloren“ bei der Frage nach dem Gegenstand – jetzt warten sie auf die Rückgabe meines Stifts.",
-      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt meinen Namen. Das ist doch schon verloren.",
-      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
-    },
-    {
       "timestamp": "2026-11-20T01:15:56.625Z",
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Ich antworte: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er antwortete: „Nein, die ist für deine Knie besser, wenn du sie locker lässt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte im Museum ein leises Video schauen, ging aber in die Bibliothek und fand Popcorn zwischen den Sachbüchern – das war Kinogefühl.",
       "qwen": "In der Bibliothek flüstert er: „Psst, hier schreit man nicht.“\nDer Wächter knurrt: „Doch. Hier ist Kino.“",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-20T05:15:57.553Z",
+      "gpt": "Ich habe die neue Fitness‑App installiert, die jedes Mal motiviert, wenn ich sie öffne – heute hat sie mich beim Aufstehen geweckt.",
+      "qwen": "Starte die Putz-App auf dem Smartphone. Der Staubsauger entlädt sich, während er den Teppich saugt.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
