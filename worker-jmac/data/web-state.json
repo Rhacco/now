@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:45:58.795Z",
-      "gpt": "Ich klopfe an den Nachbarn, um mich für das laute Radio zu entschuldigen – er schenkt mir dankbar seine Kopfhörer.",
-      "qwen": "Ich habe den Nachbarn gefragt, ob er den Rasen mäht. Er hat genickt und ist gegangen.",
-      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
-    },
-    {
       "timestamp": "2026-11-20T17:51:13.524Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie noch etwas zu essen?“ – Ich antworte: „Nur das Rezept, das Sie mir gerade gegeben haben.“",
       "qwen": "Im Wartezimmer klingelt mein Handy. Ich flüstere: „Ich bin gleich da, in der Apotheke.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Der Kunde lächelt: „Nur, wenn ich den Wochenmarkt nicht mehr finde.“",
       "qwen": "Im Supermarkt kosten die Tomaten 99 Cent.\nAuf dem Wochenmarkt schimpft der Bauer: „Die sind reif, aber die Kasse ist leer!“",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-20T21:50:59.094Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, doch mein Hund legt sich mitten in die „herabschauende Katze“ – jetzt übe ich nur noch „Hundekrieger“.",
+      "qwen": "Ich habe beim Joggen eine Pause eingelegt. Jetzt bin ich entspannt, aber auch zwei Kilo schwerer.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
