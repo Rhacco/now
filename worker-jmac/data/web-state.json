@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:16:00.800Z",
-      "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze schläft und schnurrt, während er verzweifelt versucht, die Haltung zu halten.",
-      "qwen": "Ich habe heute Yoga probiert. Am Ende lag ich nicht entspannt, sondern in der Hocke.",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-20T16:21:05.439Z",
       "gpt": "Ich frage am Supermarkt nach frischen Tomaten, die Verkäuferin zeigt mir die Dose, ich sag: „Ich wollte ja keine Konserve, sondern ein Date!“",
       "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Bauer gab mir eine Tante.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug lese ich, im Bus drücke ich die Klingel, im Taxi gebe ich Trinkgeld. Im Auto frage ich laut: „Wer hat den Fahrplan?“",
       "qwen": "Fahre ich mit dem Taxi, fragt der Fahrer: „Schnell?\" Ich sage: „Ja.\"",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-20T20:26:07.932Z",
+      "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Der kleine Bruder grinst und sagt: „Ich, aber ich habe ihn in die Spülmaschine gelegt, damit er sauber bleibt.“",
+      "qwen": "Meine Frau fragt, ob ich sie liebe. Ich sage: „Ja, aber nicht mehr als die Couch.“",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
