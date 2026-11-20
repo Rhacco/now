@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:11:05.877Z",
-      "gpt": "Im Meeting fragt der Chef, wer die Deadline verschoben hat – die Kollegin antwortet: „Ich, ich habe sie nur auf die nächste Kaffeepause verschoben.“",
-      "qwen": "Im Meeting fragte der Chef: „Wer hat die Zahlen geprüft?“ Ich hob die Hand. „Ich. Und?“",
-      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
-    },
-    {
       "timestamp": "2026-11-20T03:16:07.667Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm. „Für den Fall, dass Ihnen das Outfit zu heiß wird.“",
       "qwen": "Der Angestellte empfiehlt mir lautstark die teurere Waschmaschine.\n„Die ist leiser“, flüstert er, „sonst hört man die Mängel.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt antwortet die Kundin: „Nur, wenn Sie das Gemüse einpacken.“",
       "qwen": "Ich wollte auf dem Wochenmarkt billiger einkaufen, aber der Bauer hat mir neugierig beim Auspacken zugesehen.",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-20T07:16:06.060Z",
+      "gpt": "Im Fundbüro fragt die Dame: „Haben Sie den Antrag auf Rückgabe ausgefüllt?“ Ich: „Nein, ich wollte nur das Formular zurückgeben.“",
+      "qwen": "Ich lieferte den gefundenen Regenschirm ab. Der Schalterbeamte fragte: „Wo ist die polizeiliche Verlustanzeige?“",
+      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
     }
   ]
 }
