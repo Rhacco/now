@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:21:07.987Z",
-      "gpt": "In der Bibliothek fragt er nach dem neuesten Film, im Kino nach dem lautesten Buch – im Museum schweigt er und schaut sich das Schild „Bitte nicht berühren“ an.",
-      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand.",
-      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
-    },
-    {
       "timestamp": "2026-11-20T08:25:57.424Z",
       "gpt": "Ich wollte beim Wochenmarkt frische Eier kaufen, doch die Verkäuferin meinte: „Die gibt’s nur im Supermarkt, dort sind sie schon ausgebrütet.“",
       "qwen": "Vom Wochenmarkt kommt die Karotte, vom Supermarkt die Lüge.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil ich endlich den Aufstieg zum Praktikanten schaffe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung. „Endlich“, sagt er, „dafür brauchst du diese Stelle gar nicht mehr.“",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-20T12:30:57.637Z",
+      "gpt": "Ich kaufe am Wochenmarkt frische Tomaten, doch an der Kasse fragt die Verkäuferin: „Möchten Sie die Tomaten auch gleich auf dem Weg nach Hause pflücken?“",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Tüten?“, und ich antworte stolz: „Nein, ich bin vegetarisch.“",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
