@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:31:04.351Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient flüstert: „Wie ein Rezept, das ich nie einlösen kann.“",
-      "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich: „Und wenn ich keine Apotheke in der Nähe habe?“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-20T14:36:05.094Z",
       "gpt": "Beim Familienabend fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Bruder meint: „Keine Sorge, ich habe sie nur probiert.“",
       "qwen": "Mama fragt: „Warum schmeckt das Ei nicht mehr nach Ei?“ Ich: „Weil du seit Jahren nur noch Tomaten sauer isst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach rechts – der Fahrer des nebenstehenden Taxis nickt verwirrt.",
       "qwen": "Ich heule im Bus, weil das Taxi so pünktlich war.",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-20T18:41:01.533Z",
+      "gpt": "Der Paketbote klingelt, ich frage, ob das Geschenk schon da ist – er meint, das sei das „Versand‑Feedback“, das ich gerade geschrieben habe.",
+      "qwen": "Der Kurier fragt: „Ist das Ihr Paket?“\nIch lache und sage: „Nein, das ist meine Ex-Frau, die sich verkleidet hat.“",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
