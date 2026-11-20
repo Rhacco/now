@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:26:01.663Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Sonne, ziehe die Jacke an – die App fragt, ob ich das Update für den Regenschirm‑Modus installieren will.",
-      "qwen": "Ich habe mein Handy verloren. Jetzt suche ich mit dem anderen Handy.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-20T19:31:06.305Z",
       "gpt": "Beim Ausmisten wirft er den Staubsauger aus dem Fenster – weil er endlich mal wieder Luft zum Atmen braucht.",
       "qwen": "Nach dem Umzug hat meine Frau alle alten Kalender aussortiert. Wir haben nur noch die für 1984.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie ständig laut trommelt. Sie dankte und sagte: „Endlich ein Rhythmus, den ich essen kann!“",
       "qwen": "Der Nachbar kettete seinen Bulldogge an die Hauswand. „Er ist so schlank“, sagte er trotzig.",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-20T23:31:06.572Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurück in die Stille bringen.“",
+      "qwen": "Im Kino saß ich quer durchs Regal, im Museum starrte ich die Leinwand an.",
+      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
     }
   ]
 }
