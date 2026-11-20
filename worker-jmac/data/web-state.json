@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:36:05.659Z",
-      "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter fragt: „Haben Sie schon nachgesehen, ob es nicht bei Ihnen selbst liegt?“",
-      "qwen": "Der Kurier fragt, ob ich das Paket für mich selbst unterschreibe. Ich zähle bis drei und sage: „Ja, ich bin’s.“",
-      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
-    },
-    {
       "timestamp": "2026-11-20T13:41:04.237Z",
       "gpt": "Ich wollte beim Ausmisten den alten Staubsauger spenden, doch er saugte noch immer meine letzten Ersparnisse auf.",
       "qwen": "Wir räumen die Küche aus, als die Frau ruft: „Kannst du das alte Toaster-Modell mitbringen?“\n„Warum denn?“, frage ich.\n„Weil der neue noch nicht da ist.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Abteilung für Sonnencreme?“ Der Schaffner lächelt: „Nein, das ist die Toilette.“",
       "qwen": "Gefühlt ist der Urlaub schon vorbei, bevor wir die Koffer gepackt haben.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-20T17:45:58.795Z",
+      "gpt": "Ich klopfe an den Nachbarn, um mich für das laute Radio zu entschuldigen – er schenkt mir dankbar seine Kopfhörer.",
+      "qwen": "Ich habe den Nachbarn gefragt, ob er den Rasen mäht. Er hat genickt und ist gegangen.",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
