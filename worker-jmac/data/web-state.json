@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:16:08.342Z",
-      "gpt": "Mama sagt: „Wir essen nur noch Gemüse!“ – Papa grinst, holt die Pizza‑Schachtel und meint: „Dann ist das ja Salat.“",
-      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“ Ich sage: „Niemand. Ich wollte es nur probieren.“",
-      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
-    },
-    {
       "timestamp": "2026-11-20T04:21:07.206Z",
       "gpt": "Im Café fragt die Kundin nach glutenfreiem Kuchen, und die Kellnerin reicht ihr ein Blatt Papier. „Hier ist die Rezeptur – null Kalorien.“",
       "qwen": "Der Kellner fragte: „Gibt’s noch was?“ Nur die Gabel, die langsam in der Suppe rührte.",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt er nach dem neuesten Film, im Kino nach dem lautesten Buch – im Museum schweigt er und schaut sich das Schild „Bitte nicht berühren“ an.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand.",
       "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
+    },
+    {
+      "timestamp": "2026-11-20T08:25:57.424Z",
+      "gpt": "Ich wollte beim Wochenmarkt frische Eier kaufen, doch die Verkäuferin meinte: „Die gibt’s nur im Supermarkt, dort sind sie schon ausgebrütet.“",
+      "qwen": "Vom Wochenmarkt kommt die Karotte, vom Supermarkt die Lüge.",
+      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
     }
   ]
 }
