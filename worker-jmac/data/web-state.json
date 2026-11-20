@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:30:57.637Z",
-      "gpt": "Ich kaufe am Wochenmarkt frische Tomaten, doch an der Kasse fragt die Verkäuferin: „Möchten Sie die Tomaten auch gleich auf dem Weg nach Hause pflücken?“",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Tüten?“, und ich antworte stolz: „Nein, ich bin vegetarisch.“",
-      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
-    },
-    {
       "timestamp": "2026-11-20T12:36:06.125Z",
       "gpt": "Ich jogge jeden Morgen, doch nach dem ersten Kilometer halte ich an, weil mein Handy sagt: „Aufstehen, du hast schon 10 000 Schritte erreicht.“",
       "qwen": "Ich plane eine entspannende Yoga-Einheit. Dann fliegt der Fliegenfänger durchs Zimmer und ich bin wieder fit.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe die Kisten und finde einen Staubsauger, den ich nie benutzt habe – er saugt jetzt meine Ausrede, warum ich noch nicht ausgezogen bin.",
       "qwen": "Die alte Lampe landete im Sperrmüll.\nSie leuchtete nur im Dunkeln, wenn man sie vergaß.",
       "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
+    },
+    {
+      "timestamp": "2026-11-20T16:36:08.893Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Online‑Kurs, weil ich dann endlich meine Hausaufgaben erledigt habe.“",
+      "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 20 Kursen.\nDer Chef fragte nur: „Können Sie wirklich Excel?“",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
