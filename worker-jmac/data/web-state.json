@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:21:05.309Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt bereits abgeschlossen – im Traum, während ich den Kaffee nachgefüllt habe.“",
-      "qwen": "In der Besprechung fragte der Chef: „Was ist das Problem?“\nIch antwortete: „Sie sind es.“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-20T06:26:03.709Z",
       "gpt": "Im Bus sagt die Durchsage: „Bitte halten Sie Ihre Hände vom Handy fern.“ Ich halte mein Handy und frage: „Wie soll ich dann den Fahrplan lesen?“",
       "qwen": "„Können Sie mich mitnehmen?“ fragte ich den Fahrer. „Ich fahre nur nach Hamburg“, sagte er, „aber ich habe Platz für drei Leichen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau im Taxi lässt ihn zu Fuß weiterlaufen – und endlich findet er sein Auto im Parkhaus.",
       "qwen": "Ich steige aus dem Taxi, spring in den Bus, fahre mit der Bahn und habe noch Autoschlüssel in der Hand.",
       "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
+    },
+    {
+      "timestamp": "2026-11-20T10:31:02.597Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und er fragt: „Haben Sie das Rückgabeschild schon unterschrieben?“ Ich antworte: „Nur, wenn es ein Geschenk ist.“",
+      "qwen": "Der Paketbote fragt: „Haben Sie das Paket erhalten?“ Ich antworte: „Nein, nur die Unschuld des Überbringers.“",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
