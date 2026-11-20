@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:06:10.215Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Filmkritiker nickt: „Nur wenn du das Drehbuch ausleihst.“",
-      "qwen": "Im Kino saß ich neben einem Mann, der lautstark flüsterte.\nEr war im Museum, ich im Kino.",
-      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
-    },
-    {
       "timestamp": "2026-11-20T10:11:05.533Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, weil ich bis dahin noch keinen Job gefunden habe.“",
       "qwen": "Ich bin für jede Weiterbildung offen, sagte ich im Vorstellungsgespräch. Der Chef hob an, als ich „sogar zum Rasenmähen“ ergänzte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich gerade erst den ersten Kurs gebucht habe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung. Er will, dass ich ab morgen auch nachts die E-Mails beantworte.",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-20T14:11:04.441Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber Kaffee oder Tee?“ Der Gast meint: „Egal, ich trinke beides, weil ich hier nur das Menü lese.“",
+      "qwen": "Die Köchin fragt: „Ist alles in Ordnung?“\nIch: „Ja, aber der Teller ist noch leer.“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
