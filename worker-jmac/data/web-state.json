@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:40:59.158Z",
-      "gpt": "Ich füllte das Fundbüro‑Formular aus, doch das Büro war leer – anscheinend war das Formular selbst schon verloren.",
-      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt jetzt den Verlust des Fundes.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-20T05:46:05.522Z",
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft wollen Sie pro Woche trainieren?“ Ich antworte: „Nur, wenn das WLAN stabil ist.“",
       "qwen": "Ich mache ab jetzt nur noch Yoga.\nMein Trainer bestätigt: Du bist jetzt entspannter.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt ich einen Cappuccino, doch die Barista fragt: „Möchten Sie auch einen Schuss Espresso?“ – Ich antworte: „Nur, wenn er meine Steuererklärung macht.“",
       "qwen": "Ich fragte im Café: „Gibt’s Kuchen?“ Barista: „Nur, wenn Sie ihn hier backen wollen.“",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-20T09:50:58.177Z",
+      "gpt": "Im Supermarkt fragt ich nach frischen Kräutern, die Verkäuferin reicht mir einen Topf Petersilie. Auf dem Wochenmarkt schenkt mir die Floristin einen Kaktus – „für die Würze“.",
+      "qwen": "Ich wollte auf dem Wochenmarkt frische Tomaten kaufen, doch der Stand war leer. Der Bauer grinste: „Die habe ich in den Supermarkt gebracht, weil sie dort billiger sind.“",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
