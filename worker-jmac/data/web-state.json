@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:11:07.181Z",
-      "gpt": "Im Zug verpasst er den Anschluss, steigt ins Taxi, das Stau hat – im Auto kommt er pünktlich zu seiner eigenen Verabredung.",
-      "qwen": "Ich fragte den Taxifahrer nach dem Weg. Er meinte: „Das sind Sie ja doch nur zu Fuß.\"",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-20T09:15:57.284Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Museumsführer nickt und zeigt auf den Kinosaal – dort ist endlich Stummfilm.",
       "qwen": "Im Museum flüstert die Frau: „Bitte leise, das Bild ist müde.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie dazu noch einen Kuchen?“ – Ich antworte: „Nur, wenn er meine Steuererklärung ist.“",
       "qwen": "Im Restaurant bestellte ich „Fisch mit Kartoffeln“. Der Kellner fragte: „Soll ich den Fisch auch mitbringen, oder nur die Kartoffeln?“",
       "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
+    },
+    {
+      "timestamp": "2026-11-20T13:15:58.650Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurückgeben, bevor der Film endet.“",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Schild, das „Ruhezone“ sagte.",
+      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
     }
   ]
 }
