@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:05:58.535Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich die Stellenanzeige verstehe.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch, ob ich eine Weiterbildung braucht. „Nein“, sagte der Chef, „wir brauchen nur Ihre Kündigung.“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-20T00:10:58.082Z",
       "gpt": "Beim Auspacken des Umzugskartons findet er ein altes, staubiges Fitnessgerät – und merkt, dass er beim Ausmisten die Hantelbank vergessen hat.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Funktioniert sie?“ Ja, sie wäscht alles aus.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt – ich steh schon im Taxi und sag: „Bitte nicht aussteigen, wir fahren weiter!“",
       "qwen": "Ich weiche in der Kurve aus, um das Taxi nicht zu streifen. Es war nicht mein Auto, sondern mein eigenes.",
       "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
+    },
+    {
+      "timestamp": "2026-11-20T04:10:58.828Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vergessen?“ – Der Praktikant meldet sich und sagt: „Ich, weil ich dachte, das sei ein Brainstorming.“",
+      "qwen": "„Sind wir uns einig?“, fragte der Chef. „Ja“, nickten alle.",
+      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
     }
   ]
 }
