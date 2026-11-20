@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:11:04.441Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber Kaffee oder Tee?“ Der Gast meint: „Egal, ich trinke beides, weil ich hier nur das Menü lese.“",
-      "qwen": "Die Köchin fragt: „Ist alles in Ordnung?“\nIch: „Ja, aber der Teller ist noch leer.“",
-      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
-    },
-    {
       "timestamp": "2026-11-20T14:16:00.714Z",
       "gpt": "Im Zug steht plötzlich ein Busfahrer, im Bus ein Taxifahrer, im Taxi ein Autofahrer – und alle fragen: „Wo ist denn jetzt der Fahrplan?“",
       "qwen": "Der Taxifahrer fragte: „Zur nächsten Tankstelle?“ Ich nickte. Er lachte und sagte: „Bratwurst?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie ihn auch gleich mit einem Stück Kuchen bezahlen?“ Ich antworte: „Nur, wenn er mir das Rezept schenkt.“",
       "qwen": "Ich fragte im Café: „Gibt’s das nur als Kaffee?“\nDie Kellnerin antwortete: „Nein, das ist ein Schnitzel.“",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-20T18:20:58.748Z",
+      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht mehr als drei Stationen weiterfahren.“ Der Zug fährt sofort rückwärts.",
+      "qwen": "Ich stieg aus dem Zug, dann dem Bus, dann dem Taxi aus. Der Taxifahrer fragte: „Und jetzt das Auto?“",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
