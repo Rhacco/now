@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:56:05.418Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs „Wie man Bewerbungen schreibt“ – ich lerne gerade, wie ich absage.",
-      "qwen": "Mein Chef meinte, ich bräuchte dringend eine Weiterbildung in Stressmanagement. Ich habe ihm den Kaffeeautomaten gezeigt, der seit Jahren streikt.",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-19T23:00:57.735Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldschein gefunden.“",
       "qwen": "Im Fundbüro verlangt man nach der Requisite für die abhanden gekommene Wurst.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann schaut verwirrt: „Welches? Ich habe doch nur den Geldbeutel gefunden.“",
       "qwen": "Ich meldete den verlorenen Ring im Fundbüro an. Der Beamte sagte: „Danke. Bitte füllen Sie das Formular für Ihre eigene Fundmeldung aus.“",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-20T03:01:04.460Z",
+      "gpt": "Ich frage den Kundenberater: „Welches Produkt passt zu mir?“ Er meint: „Unsere Rückgabebedingungen.“",
+      "qwen": "Ich fragte den Verkäufer nach dem Preis für den Laptop. Er strahlte: „Nur neunhundert Euro, wenn Sie mir Ihre Seele dafür versprechen.\"",
+      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
     }
   ]
 }
