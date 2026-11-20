@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:16:09.931Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich einfach auf den nächsten Job.“",
-      "qwen": "Ich habe mich für den Chefposten beworben. Der Personaler fragte, was ich unter Weiterbildung verstehe, und ich antwortete: „Endlich Ruhe vor Ihnen.“",
-      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
-    },
-    {
       "timestamp": "2026-11-20T12:21:03.008Z",
       "gpt": "Im Bus drückte ich den Halteknopf, doch der Fahrer fuhr weiter – ich hatte das Taxi‑Ticket vergessen.",
       "qwen": "Ich stieg in den Bus, dann ins Taxi und schließlich in mein Auto. Die Ampel blieb rot.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze schläft und schnurrt, während er verzweifelt versucht, die Haltung zu halten.",
       "qwen": "Ich habe heute Yoga probiert. Am Ende lag ich nicht entspannt, sondern in der Hocke.",
       "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
+    },
+    {
+      "timestamp": "2026-11-20T16:21:05.439Z",
+      "gpt": "Ich frage am Supermarkt nach frischen Tomaten, die Verkäuferin zeigt mir die Dose, ich sag: „Ich wollte ja keine Konserve, sondern ein Date!“",
+      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Bauer gab mir eine Tante.",
+      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
     }
   ]
 }
