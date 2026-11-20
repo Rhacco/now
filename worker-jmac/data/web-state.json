@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:00:59.377Z",
-      "gpt": "Ich frage den Verkäufer nach einer Größe, er reicht mir das Kleingeld – anscheinend ist das hier ein „Preis‑Beratung“-Service.",
-      "qwen": "Der Verkäufer hält mir einen Koffer hin und fragt, ob ich ihn mit nach Hause nehmen will. „Nicht nötig“, sage ich, „ich trage ihn schon seit zwei Stunden.“",
-      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
-    },
-    {
       "timestamp": "2026-11-20T04:03:39.474Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut flüstern?“ Das Kino nebenan antwortet: „Nur, wenn du Popcorn leihst.“",
       "qwen": "Im Kino saß ich neben einem Mann, der jedes Mal laut „Schnarch!“ rief. Als ich mich wendete, winkte er mir zu: „Entschuldigung, ich bin der Aufsichtsrat.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie etwas gegen Geduld?“ – Der Patient antwortet: „Ja, die Apotheke nebenan hat’s noch nicht vorrätig.“",
       "qwen": "Dr. Müller fragt: „Haben Sie Schmerzen?“ Ich sage: „Ja, überall.“ Er seufzt: „Dann gehen Sie bitte zur Apotheke, ich bin nur der Zahnarzt.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-20T08:06:04.762Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer nicht streamen.“",
+      "qwen": "Ich wollte im Urlaub nur einen Tag am Strand faulenzen. Die Muschel, die ich fand, war leider ein Ticket für den nächsten Tag.",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
