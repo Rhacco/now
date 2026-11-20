@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:26:02.895Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich: „Wie ein Rezept, das ich noch nicht abgeholt habe.“",
-      "qwen": "Im Wartezimmer flüstert die Dame: „Der Arzt ist heute besonders streng.“ Ich drehe mich um: „Kein Wunder, das ist ja der Apotheker.“",
-      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
-    },
-    {
       "timestamp": "2026-11-20T03:31:07.546Z",
       "gpt": "Ich rief den Kundenservice, weil das Paket leer war – sie sagten, es sei ein „virtuelles“ Geschenk. Jetzt habe ich nur noch Datenverkehr.",
       "qwen": "„Sie haben das Paket gestern erhalten“, sagt der Support. Ich schaue betreten auf meine leere Hand. „Meine Hand ist leer.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Obst in Tüten verpacken?“ Auf dem Wochenmarkt schnappt sich die Kundin ein Stück Apfel und sagt: „Nur, wenn’s frei ist.“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für die Tomaten. Er zeigte auf den Supermarkt im Hintergrund und sagte: „Da sind sie gratis, aber auch nur noch frei.\"",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-20T07:31:02.306Z",
+      "gpt": "Im Bus fragt der Fahrer: „Ausweis bitte!“ – Ich zeige meinen Fahrschein, er nickt: „Entschuldigung, ich dachte, Sie sind der Kontrolleur.“",
+      "qwen": "Ich warte stundenlang auf den Bus, der endlich kommt und fährt sofort wieder los.",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
