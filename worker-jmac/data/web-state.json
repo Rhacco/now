@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:00:59.862Z",
-      "gpt": "Ich packe den Staubsauger ein, weil er immer alles mitnimmt – doch beim Umzug bleibt er zu Hause, weil er schon alles eingesaugt hat.",
-      "qwen": "Ich will die alte Couch wegwerfen, aber mein Mann sagt: „Die haben wir doch für 2000 Euro gekauft.“ Da sage ich: „Deshalb darf sie jetzt auch endlich die 2000 Meter Treppe runter.“",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-20T14:06:06.636Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich gerade erst den ersten Kurs gebucht habe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung. Er will, dass ich ab morgen auch nachts die E-Mails beantworte.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das Handy in die Spülmaschine gesteckt?“ Ich: „Damit es endlich mal wieder klingelt.“",
       "qwen": "Ich frage die Tochter, ob sie den Müll rausbringt. Sie sagt: „Ja, aber nur den digitalen.“",
       "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
+    },
+    {
+      "timestamp": "2026-11-20T18:10:59.136Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich habe gerade einen Weiterbildungskurs im Prokrastinieren belegt.“",
+      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung. Der Chef meinte: „Die bekommen Sie, wenn Sie entlassen werden.“",
+      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
     }
   ]
 }
