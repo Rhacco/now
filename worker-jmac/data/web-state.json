@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:20:59.345Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast: „Stark, ich will wenigstens beim Aufwachen etwas Durchblick haben.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zucker dazu?“",
-      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
-    },
-    {
       "timestamp": "2026-11-20T15:26:04.164Z",
       "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ – Ich: „Ganz gut, ich habe endlich den Koffer gefunden.“",
       "qwen": "Am Strand kuscheln wir uns eng zusammen. Bis die Möwe landet und uns die Handtuchrolle stiehlt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Sonne, ziehe die Jacke an – die App fragt, ob ich das Update für den Regenschirm‑Modus installieren will.",
       "qwen": "Ich habe mein Handy verloren. Jetzt suche ich mit dem anderen Handy.",
       "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
+    },
+    {
+      "timestamp": "2026-11-20T19:31:06.305Z",
+      "gpt": "Beim Ausmisten wirft er den Staubsauger aus dem Fenster – weil er endlich mal wieder Luft zum Atmen braucht.",
+      "qwen": "Nach dem Umzug hat meine Frau alle alten Kalender aussortiert. Wir haben nur noch die für 1984.",
+      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
     }
   ]
 }
