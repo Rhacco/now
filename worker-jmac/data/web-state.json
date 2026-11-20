@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:46:05.499Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir eine Tüte. „Damit Sie die Preise nicht mehr sehen.“",
-      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
-      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
-    },
-    {
       "timestamp": "2026-11-20T16:51:08.611Z",
       "gpt": "Im Café bestellt ich einen Espresso, der Kellner fragt: „Möchten Sie ihn mit Zucker?“ – Ich: „Nein, ich will ihn bitter wie mein Gehalt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn kochen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich den Anschluss verpasst hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir fahren weiter.“",
       "qwen": "Ich steig frustriert aus dem stehenden Bus. Der Taxifahrer ruft: „Hast du noch Fahrkarten?“",
       "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
+    },
+    {
+      "timestamp": "2026-11-20T20:51:04.622Z",
+      "gpt": "Im Museum fragt ein Besucher: „Wo ist die Bibliothek?“ – Die Angestellte zeigt auf das Kino und sagt: „Da läuft heute ein Film über leise Bücher.“",
+      "qwen": "Im Kino schnarche ich laut, im Museum bleibe ich stumm. Die Bibliothekarin winkt mich herein: „Zu spät für beide.“",
+      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
     }
   ]
 }
