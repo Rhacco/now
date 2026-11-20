@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:36:00.648Z",
-      "gpt": "Der Paketbote klingelt, ich öffne, er fragt: „Ist das hier das Rücksende‑Büro?“ Ich antworte: „Nein, das ist mein Wohnzimmer – ich habe das Paket bestellt.“",
-      "qwen": "„Ihr Paket ist unterwegs“, sagte der Bot. „Genau wie Ihr Geduld.“",
-      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
-    },
-    {
       "timestamp": "2026-11-20T08:41:02.815Z",
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Training?“ – „Wie ein Keks: komplett zerbröselt, aber irgendwie süß.“",
       "qwen": "Ich mach Yoga, um den Stress rauszuholen. Heute bin ich nur noch raus, der Stress bleibt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachhandel nach einer energiesparenden Lampe, der Verkäufer meint: „Hier gibt’s nur Glühbirnen, die sparen nur Strom für Ihr Gewissen.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen weiterhelfen?“. Ich antworte: „Nein, ich will nur stören.“",
       "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
+    },
+    {
+      "timestamp": "2026-11-20T12:45:42.998Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs 'Wie man Fragen richtig beantwortet\".",
+      "qwen": "Ich bewarb mich um die Weiterbildung „Stressmanagement“. Der Kursleiter fragte: „Warum möchten Sie das lernen?“ Ich antwortete: „Weil ich gerade hier sitze.“",
+      "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
     }
   ]
 }
