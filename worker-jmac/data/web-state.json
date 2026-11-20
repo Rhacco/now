@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:00:57.289Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie abgeholt wird.“",
-      "qwen": "Der Arzt warf mir den Zettel zu: „Nichts essen, nichts trinken – außer Ihrer Apotheke.“",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-20T09:06:10.616Z",
       "gpt": "In der Bibliothek flüstere ich leise, im Kino lache ich laut, im Museum frage ich: „Wo ist der Ausgang zum Popcorn?“",
       "qwen": "Ich fragte die Bibliothekarin, wo das Kino sei. Das Museum ist leider geschlossen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sie zeigt Sonne – ich ziehe die Jacke an, weil sie „kalt“ anzeigt. Das Handy hat wohl den Thermostat übernommen.",
       "qwen": "Ich habe meine Schritte-App geupdatet. Jetzt zählt sie auch meine Gedanken.",
       "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
+    },
+    {
+      "timestamp": "2026-11-20T13:05:58.314Z",
+      "gpt": "Ich rufe den Kundendienst, weil mein Paket seit drei Tagen im Haus steht – dann erfahre ich, dass es mein Nachbar bereits seit einer Woche auspackt.",
+      "qwen": "Paket fehlt, sagt der Lieferant. Ich zeig den Karton im Flur. „Das ist doch nur die Verpackung!“, entgegnet er.",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
