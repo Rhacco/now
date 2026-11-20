@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:35:58.278Z",
-      "gpt": "Mama fragt: „Warum liegt dein Teller immer noch im Waschbecken?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
-      "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber du bist halt eine Gewohnheit.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-20T05:40:59.158Z",
       "gpt": "Ich füllte das Fundbüro‑Formular aus, doch das Büro war leer – anscheinend war das Formular selbst schon verloren.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt jetzt den Verlust des Fundes.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar, weil ich das aktuelle noch nicht bestanden habe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung in Führungskompetenz. Er meint, ich solle das Gleiche mit dem Team üben.",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-20T09:46:05.174Z",
+      "gpt": "Im Café bestellt ich einen Cappuccino, doch die Barista fragt: „Möchten Sie auch einen Schuss Espresso?“ – Ich antworte: „Nur, wenn er meine Steuererklärung macht.“",
+      "qwen": "Ich fragte im Café: „Gibt’s Kuchen?“ Barista: „Nur, wenn Sie ihn hier backen wollen.“",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
