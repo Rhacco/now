@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:55:57.763Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich das WLAN nicht fand – die Durchsage kam: „Bitte halten Sie den Knopf nicht fest, er ist nur ein Snack.“",
-      "qwen": "Auf der Insel wollten wir die einheimische Kuh bestaunen.\n„Die kommt gleich“, sagte der Fischer, „ist aber erst seit heute Abend da.“",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-20T00:00:58.088Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze im Himmel erreichen?“ – Der Anfänger streckt die Hände, aber nur die Katze im Baum schnurrt.",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Zehen gelegt. Jetzt übe ich nur noch Standhaftigkeit.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage den Verkäufer nach einer Größe, er reicht mir das Kleingeld – anscheinend ist das hier ein „Preis‑Beratung“-Service.",
       "qwen": "Der Verkäufer hält mir einen Koffer hin und fragt, ob ich ihn mit nach Hause nehmen will. „Nicht nötig“, sage ich, „ich trage ihn schon seit zwei Stunden.“",
       "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
+    },
+    {
+      "timestamp": "2026-11-20T04:03:39.474Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut flüstern?“ Das Kino nebenan antwortet: „Nur, wenn du Popcorn leihst.“",
+      "qwen": "Im Kino saß ich neben einem Mann, der jedes Mal laut „Schnarch!“ rief. Als ich mich wendete, winkte er mir zu: „Entschuldigung, ich bin der Aufsichtsrat.“",
+      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
     }
   ]
 }
