@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:51:00.178Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie die Preise einpacken.“",
-      "qwen": "Im Supermarkt schreit mich der Scanner an. Auf dem Wochenmarkt fragt mich die Oma höflich nach meinem Namen.",
-      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
-    },
-    {
       "timestamp": "2026-11-20T08:55:58.437Z",
       "gpt": "Im Zug zum Strand fragt ich die Dame neben mir, ob sie das Wetter prüfen kann – sie zeigt mir ihr Handy‑Display: „Kein WLAN, aber Sand.“",
       "qwen": "Ich habe den Koffer gepackt, damit wir im Urlaub weniger tragen müssen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Schlüssel gefunden.“",
       "qwen": "Die Brieftaube flatterte ins Fundbüro, um ihr Formblatt 12b zu holen.",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-20T12:55:57.976Z",
+      "gpt": "Ich packe die alten Klamotten ein, doch die Packliste endet mit: „Nur das, was nicht mehr in den Schrank passt, bleibt im Keller.“",
+      "qwen": "Wir räumten die Küche aus, als ich die alte Kaffeemaschine fand. Sie war noch warm.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
