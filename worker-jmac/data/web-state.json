@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:06:12.487Z",
-      "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim herabschauenden Hund bellt mein Nachbar und ich muss doch wieder rennen.",
-      "qwen": "Ich übe seit Wochen Yoga. Heute habe ich endlich den perfekten Gleichgewichtshalt erreicht: Ich steh auf dem Kopf.",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-19T22:10:57.500Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten meldet sie: „Bitte erstelle ein Konto – für dein Sofa.“",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch öffne die Ladebuchse: Dort sitzt ein Müsliriegel.",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, weil sein Wasserhahn tropft, und fragt: „Kannst du mir leihen, bis die Reparatur kommt?“ – Ich reiche ihm nur einen Eimer.",
       "qwen": "Der Nachbar klopft an und fragt, ob ich abends lauter sein darf, damit er besser schläft.",
       "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
+    },
+    {
+      "timestamp": "2026-11-20T02:11:04.149Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt ruft der Kunde: „Nur wenn Sie die Bohnen mitliefern!“",
+      "qwen": "Ich suchte nach Bio-Gemüse, doch der Wochenmarkt war leer. Da stand ich still, bis die Polizei kam.",
+      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
     }
   ]
 }
