@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:56:11.006Z",
-      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot. Sie reicht mir ein Blatt Papier – \"Für die Diät, die Sie nie halten.\"",
-      "qwen": "Im Schuhgeschäft fragt die Verkäuferin: „Soll ich das noch anprobieren?“ Ich antworte: „Nein, ich suche keine Arbeit.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-20T18:00:59.528Z",
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert es?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort ist das Rezept schon abgelaufen.“",
       "qwen": "Ich frage den Arzt: „Herr Doktor, wie lange muss ich noch warten?“\nEr antwortet: „Das hängt davon ab, wann Sie aus der Apotheke zurückkommen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief beim Kundenservice an, weil mein Paket seit Tagen nicht ankam – sie sagten, es sei bereits im Haus, weil ich es selbst geliefert habe.",
       "qwen": "Der Kurier fragt, ob ich das Paket einfach vor die Tür legen soll. Ich sage Ja, denn mein Bart trägt genau den Namen „Vor die Tür“.",
       "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
+    },
+    {
+      "timestamp": "2026-11-20T22:00:59.731Z",
+      "gpt": "Ich habe die neue „Snooze“-App für mein Handy installiert – jetzt schläft es, sobald ich es ausschalte.",
+      "qwen": "Ich rufe die Wecker-App an, um sie zu deaktivieren.\nSie antwortet: „Scheiß drauf, du hast 800 Ungelesene.“",
+      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
     }
   ]
 }
