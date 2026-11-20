@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:45:58.962Z",
-      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Tim: „Ich nicht, ich habe nur den Kühlschrank aus Versehen aufgemacht.“",
-      "qwen": "Die Oma fragt, ob ich sie „Mama“ nennen soll.\nIch sage: „Nein, du bist meine Großmutter.“\nSie antwortet: „Dann habe ich dich ja nie geboren.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-20T07:50:57.515Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann antwortet: „Ja, ich habe das Formular für den verlorenen Stift gefunden.“",
       "qwen": "Ich frage beim Fundbüro nach der Verlustanzeige für den verlorenen Schlüssel. Die Beamtin lächelt: „Die liegt seit drei Jahren bei uns, Sie hatten sie damals vergessen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie mir das Gemüse einpacken.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich nicke. Sie lacht: „Nein, Obst in Papstkartons?“",
       "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
+    },
+    {
+      "timestamp": "2026-11-20T11:55:58.483Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Film im Kino nickt: „Nur, wenn du das Popcorn nicht teilst.“",
+      "qwen": "Im Museum deute ich auf ein antikes Schwert. Die Begleiterin flüstert: „Da darf man nicht hin.“",
+      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
     }
   ]
 }
