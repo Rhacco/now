@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:05:57.881Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir die Kasse – ich soll doch erst bezahlen, bevor ich mich warm anziehe.",
-      "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer fragte: „Haben Sie schon ein Hemd?“ Ja, das habe ich.",
-      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
-    },
-    {
       "timestamp": "2026-11-20T06:11:03.394Z",
       "gpt": "Ich öffne die Wetter‑App, sie sagt Regen. Ich schaue aus dem Fenster – Sonne. Dann merke ich, ich habe die Vorhersage für morgen geöffnet.",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt schlafe ich nur noch, wenn mein Akku leer ist.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, weil ich bis dahin noch keinen Job gefunden habe.“",
       "qwen": "Ich bin für jede Weiterbildung offen, sagte ich im Vorstellungsgespräch. Der Chef hob an, als ich „sogar zum Rasenmähen“ ergänzte.",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-20T10:16:08.025Z",
+      "gpt": "Ich öffne die Wetter-App, um mich vor Regen zu schützen – die Anzeige sagt: „Sonnig, 25 °C“. Ich gehe nach draußen, und es regnet. Mein Handy hat nur den Tag, nicht den Himmel.",
+      "qwen": "Ich schwitze, weil mein Akku bei 1 % liegt.\nDann merke ich, dass ich das Handy gar nicht dabei habe.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
