@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:00:57.964Z",
-      "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich heute Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich das Handy im Kühlschrank vergessen habe.",
-      "qwen": "Ich suche die App „Stressfrei“ und finde nur meine eigene Tretaccu-App.",
-      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
-    },
-    {
       "timestamp": "2026-11-20T10:06:10.215Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Filmkritiker nickt: „Nur wenn du das Drehbuch ausleihst.“",
       "qwen": "Im Kino saß ich neben einem Mann, der lautstark flüsterte.\nEr war im Museum, ich im Kino.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den Staubsauger ein, weil er immer alles mitnimmt – doch beim Umzug bleibt er zu Hause, weil er schon alles eingesaugt hat.",
       "qwen": "Ich will die alte Couch wegwerfen, aber mein Mann sagt: „Die haben wir doch für 2000 Euro gekauft.“ Da sage ich: „Deshalb darf sie jetzt auch endlich die 2000 Meter Treppe runter.“",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-20T14:06:06.636Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich gerade erst den ersten Kurs gebucht habe.“",
+      "qwen": "Mein Chef lobt meine Weiterbildung. Er will, dass ich ab morgen auch nachts die E-Mails beantworte.",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
