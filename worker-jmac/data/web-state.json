@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:21:03.008Z",
-      "gpt": "Im Bus drückte ich den Halteknopf, doch der Fahrer fuhr weiter – ich hatte das Taxi‑Ticket vergessen.",
-      "qwen": "Ich stieg in den Bus, dann ins Taxi und schließlich in mein Auto. Die Ampel blieb rot.",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-20T12:25:59.134Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil ich endlich den Aufstieg zum Praktikanten schaffe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung. „Endlich“, sagt er, „dafür brauchst du diese Stelle gar nicht mehr.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage am Supermarkt nach frischen Tomaten, die Verkäuferin zeigt mir die Dose, ich sag: „Ich wollte ja keine Konserve, sondern ein Date!“",
       "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Bauer gab mir eine Tante.",
       "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
+    },
+    {
+      "timestamp": "2026-11-20T16:26:04.094Z",
+      "gpt": "Ich klopfte an die Nachbarstür, um mich für das laute Klopfen zu entschuldigen – sie öffnete und fragte, ob ich das neue Klingelsystem testen wolle.",
+      "qwen": "Ich fragte den Nachbarn, wo er wohnt. Er zeigte auf sein Haus und sagte: „Da drin, wo die Miete ist.“",
+      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
     }
   ]
 }
