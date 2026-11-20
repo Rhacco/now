@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:45:57.739Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich bis dahin endlich meine PowerPoint‑Skills verbessere.“",
-      "qwen": "Der Chef lobt meine Weiterbildung, da ich jetzt auch Englisch spreche. Eigentlich wollte ich nur in Ruhe meinen Kaffee ausschlucken.",
-      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
-    },
-    {
       "timestamp": "2026-11-19T23:51:09.205Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder schwach?“ Ich antworte: „Stark, damit ich das Restaurant später überstehe.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zum Mitnehmen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich vergleiche Preise auf dem Wochenmarkt, dann ruft mich der Supermarkt an: „Wir haben jetzt 20 % Rabatt – aber nur auf die Luft, die Sie gerade einatmen.“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Treuekarte?“\nDer Mann antwortet: „Nein, ich bin nur hier, weil der Wochenmarkt heute dicht ist.“",
       "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
+    },
+    {
+      "timestamp": "2026-11-20T03:56:07.357Z",
+      "gpt": "Ich packe die Kaffeetassen aus, finde nur leere Schachteln – mein Mitbewohner hat sie zum Umzug verkauft, weil er „weniger Gewicht“ wollte.",
+      "qwen": "Wir wollten beim Ausmisten nur die alten T-Shirts wegschmeißen. Doch als wir sie auspackten, zogen wir alle sofort an.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
