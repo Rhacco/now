@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:31:04.164Z",
-      "gpt": "Mama fragt: „Warum hast du das ganze Brot in die Spülmaschine gelegt?“  \nIch: „Ich wollte es endlich mal durchziehen.“",
-      "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie sagt: „Ja, aber der Hund ist süßer.“",
-      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
-    },
-    {
       "timestamp": "2026-11-20T05:35:58.278Z",
       "gpt": "Mama fragt: „Warum liegt dein Teller immer noch im Waschbecken?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber du bist halt eine Gewohnheit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin das Klingeln verlernt, weil sie jedes Mal die Tür öffnet, wenn ich ihr „Guten Morgen“ rufe – sie dachte, ich bestelle Frühstück.",
       "qwen": "Der Nachbar klopft an und fragt, ob ich den Rasen mähen lasse.\nIch zeige auf meine Zimmerpflanze: „Das ist mein ganzer Garten.“",
       "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
+    },
+    {
+      "timestamp": "2026-11-20T09:40:57.647Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar, weil ich das aktuelle noch nicht bestanden habe.“",
+      "qwen": "Mein Chef lobt meine Weiterbildung in Führungskompetenz. Er meint, ich solle das Gleiche mit dem Team üben.",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
