@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:15:58.650Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurückgeben, bevor der Film endet.“",
-      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Schild, das „Ruhezone“ sagte.",
-      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
-    },
-    {
       "timestamp": "2026-11-20T13:21:08.314Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Stimme sagte: „Keine Sorge, wir haben Sie gerade erst eingestiegen.“",
       "qwen": "Ich stieg aus dem Taxi, als der Fahrer fragte: „Noch was zu zahlen?“ Ich zückte die S Bahn Karte.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du die Spülmaschine ausgeräumt?“  \nIch: „Damit du endlich wieder was zu tun hast.“",
       "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ „Weil du immer so laut schreist, wenn ich es tue.“",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-20T17:25:59.367Z",
+      "gpt": "Ich wollte im Museum ein Buch ausleihen, aber die Bibliothekarin schickte mich ins Kino – dort war das einzige freie Plakat „Stummfilm“.",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte nur stur auf die Wand.",
+      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
     }
   ]
 }
