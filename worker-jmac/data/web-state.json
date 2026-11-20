@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:51:02.664Z",
-      "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy zeigte nur „Kein Signal“ – anscheinend läuft mein Akku schneller als ich.",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nDann finde ich den Ladekabel-Stecker unter dem Sofa.",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-20T04:55:58.001Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista gibt mir einen Topf Suppe – sie meinte, das sei ein „Kaffee‑auf‑der‑Wolke“.",
       "qwen": "Der Kellner fragt, ob ich das Steak extra scharf will. Ich streiche die Tomate, damit es mich nicht zu sehr brennt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich die Dame neben mir, ob sie das Wetter prüfen kann – sie zeigt mir ihr Handy‑Display: „Kein WLAN, aber Sand.“",
       "qwen": "Ich habe den Koffer gepackt, damit wir im Urlaub weniger tragen müssen.",
       "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
+    },
+    {
+      "timestamp": "2026-11-20T09:00:57.289Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie abgeholt wird.“",
+      "qwen": "Der Arzt warf mir den Zettel zu: „Nichts essen, nichts trinken – außer Ihrer Apotheke.“",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
