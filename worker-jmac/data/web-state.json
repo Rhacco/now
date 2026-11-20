@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:31:08.877Z",
-      "gpt": "Ich habe meinem Nachbarn einen Kuchen gebracht, weil er ständig über den Lärm meiner Waschmaschine klagt – jetzt hört er nur noch das Klirren des Geschirrs.",
-      "qwen": "Ich fragte den Nachbarn, ob ich sein Auto parken darf. Er sagte: „Ja, aber bitte nicht neben meinem Rasenmäher.“",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-20T08:36:00.648Z",
       "gpt": "Der Paketbote klingelt, ich öffne, er fragt: „Ist das hier das Rücksende‑Büro?“ Ich antworte: „Nein, das ist mein Wohnzimmer – ich habe das Paket bestellt.“",
       "qwen": "„Ihr Paket ist unterwegs“, sagte der Bot. „Genau wie Ihr Geduld.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich jogge jeden Morgen, doch nach dem ersten Kilometer halte ich an, weil mein Handy sagt: „Aufstehen, du hast schon 10 000 Schritte erreicht.“",
       "qwen": "Ich plane eine entspannende Yoga-Einheit. Dann fliegt der Fliegenfänger durchs Zimmer und ich bin wieder fit.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-20T12:41:00.302Z",
+      "gpt": "Ich frage im Elektrofachhandel nach einer energiesparenden Lampe, der Verkäufer meint: „Hier gibt’s nur Glühbirnen, die sparen nur Strom für Ihr Gewissen.“",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen weiterhelfen?“. Ich antworte: „Nein, ich will nur stören.“",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
