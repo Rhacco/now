@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:30:59.912Z",
-      "gpt": "Ich packe die Kisten und finde einen Staubsauger, den ich nie benutzt habe – er saugt jetzt meine Ausrede, warum ich noch nicht ausgezogen bin.",
-      "qwen": "Die alte Lampe landete im Sperrmüll.\nSie leuchtete nur im Dunkeln, wenn man sie vergaß.",
-      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
-    },
-    {
       "timestamp": "2026-11-20T16:36:08.893Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Online‑Kurs, weil ich dann endlich meine Hausaufgaben erledigt habe.“",
       "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 20 Kursen.\nDer Chef fragte nur: „Können Sie wirklich Excel?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe den Kundenservice, weil mein Paket nicht ankam – sie sagen, es sei bereits bei mir zu Hause, weil ich es schon aus Versehen aus dem Briefkasten gezogen habe.",
       "qwen": "Der Kurier fragt nach der Unterschrift. Ich zeige auf den toten Fisch im Aquarium: „Der hat’s schon bestätigt.“",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-20T20:41:08.811Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie halten Sie sich fachlich weiter?“ Ich antworte: „Ich bewerbe mich immer wieder, damit ich neue Fragen lerne.“",
+      "qwen": "In der Bewerbung glänzte ich mit 20 Jahren Berufserfahrung, sechs Sprachkursen und 15 Weiterbildungen. Der Chef meinte nur: „Als Praktikant fangen wir morgen an.“",
+      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
     }
   ]
 }
