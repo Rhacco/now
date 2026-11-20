@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:26:07.781Z",
-      "gpt": "Ich habe beim Ausmisten die alte Kaffeemaschine in die Kiste geworfen – jetzt hat sie ein neues Zuhause im Keller, wo ich endlich mal wieder Ruhe habe.",
-      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte, warum sie so billig ist. „Weil sie nur noch Wäsche knüllt.“",
-      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
-    },
-    {
       "timestamp": "2026-11-20T14:31:04.351Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient flüstert: „Wie ein Rezept, das ich nie einlösen kann.“",
       "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich: „Und wenn ich keine Apotheke in der Nähe habe?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich sag: „Nein, ich will die Kalorien nicht verdünnen.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn gleich kochen?“",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-20T18:35:57.341Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach rechts – der Fahrer des nebenstehenden Taxis nickt verwirrt.",
+      "qwen": "Ich heule im Bus, weil das Taxi so pünktlich war.",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
