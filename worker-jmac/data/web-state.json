@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:41:00.302Z",
-      "gpt": "Ich frage im Elektrofachhandel nach einer energiesparenden Lampe, der Verkäufer meint: „Hier gibt’s nur Glühbirnen, die sparen nur Strom für Ihr Gewissen.“",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen weiterhelfen?“. Ich antworte: „Nein, ich will nur stören.“",
-      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
-    },
-    {
       "timestamp": "2026-11-20T12:45:42.998Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs 'Wie man Fragen richtig beantwortet\".",
       "qwen": "Ich bewarb mich um die Weiterbildung „Stressmanagement“. Der Kursleiter fragte: „Warum möchten Sie das lernen?“ Ich antwortete: „Weil ich gerade hier sitze.“",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt die Lehrerin: „Welches Buch ist im Kino am beliebtesten?“ – Der Bibliothekar antwortet: „„Stummfilm“ – weil er nie ausgeliehen wird.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf eine Tafel: „Hier gibt es keinen.\"",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-20T16:46:05.499Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir eine Tüte. „Damit Sie die Preise nicht mehr sehen.“",
+      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
+      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
     }
   ]
 }
