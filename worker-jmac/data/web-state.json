@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:41:04.237Z",
-      "gpt": "Ich wollte beim Ausmisten den alten Staubsauger spenden, doch er saugte noch immer meine letzten Ersparnisse auf.",
-      "qwen": "Wir räumen die Küche aus, als die Frau ruft: „Kannst du das alte Toaster-Modell mitbringen?“\n„Warum denn?“, frage ich.\n„Weil der neue noch nicht da ist.“",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-20T13:46:03.243Z",
       "gpt": "Ich packe meine Klamotten aus und finde ein altes Sandwich. Das war wohl mein letzter Snack vor dem Umzug.",
       "qwen": "Wir wollten vor dem Umzug den Keller entmüllen. Meine Frau hat nur die Kisten mit den Bücherregalen gerettet, den Rest hat sie als „Auflösungsverkauf“ bezeichnet.",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an den Nachbarn, um mich für das laute Radio zu entschuldigen – er schenkt mir dankbar seine Kopfhörer.",
       "qwen": "Ich habe den Nachbarn gefragt, ob er den Rasen mäht. Er hat genickt und ist gegangen.",
       "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
+    },
+    {
+      "timestamp": "2026-11-20T17:51:13.524Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie noch etwas zu essen?“ – Ich antworte: „Nur das Rezept, das Sie mir gerade gegeben haben.“",
+      "qwen": "Im Wartezimmer klingelt mein Handy. Ich flüstere: „Ich bin gleich da, in der Apotheke.“",
+      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
     }
   ]
 }
