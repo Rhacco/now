@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:36:04.982Z",
-      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot – sie reicht mir ein Blatt Papier. \"Für die Diät\", sagt sie lächelnd.",
-      "qwen": "Im Elektronikmarkt fragt der Kunde: „Haben Sie das W-Lan hier?“ Der Verkäufer nickt und sagt: „Ja, das ist das W-Lan.“",
-      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
-    },
-    {
       "timestamp": "2026-11-20T10:40:58.236Z",
       "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, doch der Stand verkaufte nur Ketchup – das war wohl der \"geheime\" Sonderpreis für Tomaten im Glas.",
       "qwen": "Im Supermarkt glänzt die Gurke, doch auf dem Wochenmarkt murrt sie leise: „Hier riecht es nach echtem Leben.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienabend fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Bruder meint: „Keine Sorge, ich habe sie nur probiert.“",
       "qwen": "Mama fragt: „Warum schmeckt das Ei nicht mehr nach Ei?“ Ich: „Weil du seit Jahren nur noch Tomaten sauer isst.“",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-20T14:41:04.831Z",
+      "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Arzthelferin meint: „Das ist das neue Selbstzahler‑Modell – Sie zahlen, wenn Sie gehen.“",
+      "qwen": "Ich fragte den Apotheker, ob mein Rezept fertig ist. Er grinste: „Quatsch, dafür war ich doch nur bei der Kasse.\"",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
