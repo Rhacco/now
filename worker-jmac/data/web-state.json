@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:56:04.106Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die leere PowerPoint – sie heißt „Projekt: Noch nicht angefangen“.",
-      "qwen": "Ich sage im Meeting: „Ich bin nicht zu übertrumpfen.“\nDer Chef nickt: „Deshalb machst du hier alles allein.“",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-20T15:01:10.682Z",
       "gpt": "Ich mache Yoga, um zu entspannen, doch beim herabschauenden Hund hat mich mein Kater für ein Leckerli gehalten.",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viel Gewicht wollen Sie heben?“ Ich antworte: „Nur das, das mich vom Sofa runterzieht.“",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Körpermitte gelegt. Now I am doing squats.",
       "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
+    },
+    {
+      "timestamp": "2026-11-20T19:06:07.094Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum – dort habe ich noch keinen Termin.“",
+      "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meiner Weiterbildung in kreativer Prosa. Der Personaler fragte nur, ob ich auch in Excel schreiben kann.",
+      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
     }
   ]
 }
