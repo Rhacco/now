@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:45:57.387Z",
-      "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand; die Durchsage: „Bitte bleiben Sie sitzen, wir fahren jetzt ins Freibad.“",
-      "qwen": "Ich fragte das Kind, was es sich im Urlaub wünscht. „Nichts“, sagte es. „Nur dass ihr existiert, ohne aufzutauchen.“",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-20T02:51:04.338Z",
       "gpt": "Im Zug drängte ich mich zum Fenster, um die Landschaft zu sehen – dann fuhr die Schaffnerin vorbei und sagte: „Bitte nicht fotografieren, das ist unser neuer Innenraum.“",
       "qwen": "Ich steige aus dem Taxi, spring in den Bus, fange die Bahn und schreibe: „Ich bin zu spät.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packte die Krawatten in die Umzugskiste, dann merkte ich, dass ich seit Jahren keinen Anzug mehr trage – und verkaufte sie als „Vintage‑Schmuck“.",
       "qwen": "Die Kiste „Wichtiger Kleiderschrank“ ist leer, weil mein Mann sie schon ausgepackt hat. Er starrt sie an und fragt, wo sein Wintermantel steckt.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-20T06:51:03.981Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, aber mein Hund legt sich immer genau dort hin, wo ich die Zehen strecke – und nennt das „herabschauender Hund“.",
+      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannt gestresst.",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
