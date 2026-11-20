@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:06:06.681Z",
-      "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Ärztin meint: „Das ist doch Ihre Apotheke, nicht unser WLAN.“",
-      "qwen": "Ich bat den Arzt, mich in die Apotheke zu schicken. Er meinte nur: „Fahr doch selbst hin.“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-20T07:10:59.792Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt antwortet die Kundin: „Nur, wenn Sie das Gemüse einpacken.“",
       "qwen": "Ich wollte auf dem Wochenmarkt billiger einkaufen, aber der Bauer hat mir neugierig beim Auspacken zugesehen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief beim Nachbarn an, weil das Wasser aus seiner Leitung tropfte, und er meinte: „Kein Problem, das ist nur das neue Sound‑System für die Dusche.“",
       "qwen": "Ich zähle die Schlaghölzer am Zaun. Die Nachbarn haben vierzehn neue.",
       "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
+    },
+    {
+      "timestamp": "2026-11-20T11:15:59.643Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du das Popcorn nicht mitnimmst.“",
+      "qwen": "Nach dem Film fragte ich im Museum nach der Toilette. Die Dame zeigte auf den Ausleihtresen.",
+      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
     }
   ]
 }
