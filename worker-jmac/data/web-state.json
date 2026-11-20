@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:16:04.655Z",
-      "gpt": "Ich bestelle im Café einen Espresso, doch die Barista fragt: „Möchten Sie ihn auch gleich mit einem Stück Kuchen bezahlen?“ Ich antworte: „Nur, wenn er mir das Rezept schenkt.“",
-      "qwen": "Ich fragte im Café: „Gibt’s das nur als Kaffee?“\nDie Kellnerin antwortete: „Nein, das ist ein Schnitzel.“",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-20T18:20:58.748Z",
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht mehr als drei Stationen weiterfahren.“ Der Zug fährt sofort rückwärts.",
       "qwen": "Ich stieg aus dem Zug, dann dem Bus, dann dem Taxi aus. Der Taxifahrer fragte: „Und jetzt das Auto?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug vergaß ich meinen Fahrschein, doch der Schaffner lächelte und sagte: „Keine Sorge, ich fahre eh nur im Stau.“",
       "qwen": "Ich fragte den Taxifahrer: „Können Sie die Zündung ausmachen, bevor Sie mich ablassen?“\nEr lachte: „Womit soll ich Sie dann wieder abholen?“",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-20T22:20:59.743Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange haben Sie noch Schmerzen?“ – Ich: „Nur bis zur Apotheke, dort gibt’s Gratis‑Medi‑kissen.“",
+      "qwen": "Ich warte seit drei Stunden, weil die Ärztin im Wartezimmer feststeckt. Sie sitzt in der Warteschlange vor ihrer eigenen Praxis.",
+      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
     }
   ]
 }
