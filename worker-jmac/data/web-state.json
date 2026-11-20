@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:10:57.177Z",
-      "gpt": "Ich wollte im Museum ein leises Video schauen, ging aber in die Bibliothek und fand Popcorn zwischen den Sachbüchern – das war Kinogefühl.",
-      "qwen": "In der Bibliothek flüstert er: „Psst, hier schreit man nicht.“\nDer Wächter knurrt: „Doch. Hier ist Kino.“",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-20T05:15:57.553Z",
       "gpt": "Ich habe die neue Fitness‑App installiert, die jedes Mal motiviert, wenn ich sie öffne – heute hat sie mich beim Aufstehen geweckt.",
       "qwen": "Starte die Putz-App auf dem Smartphone. Der Staubsauger entlädt sich, während er den Teppich saugt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Museumsführer nickt und zeigt auf den Kinosaal – dort ist endlich Stummfilm.",
       "qwen": "Im Museum flüstert die Frau: „Bitte leise, das Bild ist müde.“",
       "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
+    },
+    {
+      "timestamp": "2026-11-20T09:20:58.017Z",
+      "gpt": "Ich füllte das verlorene Formular im Fundbüro aus, doch das Amt verlangte meine Unterschrift, weil es angeblich „nicht mehr zu finden“ sei.",
+      "qwen": "Ich fragte im Fundbüro nach meinem Schlüssel. Die Dame meinte: „Hier gibt es nur einen Antrag.“",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
