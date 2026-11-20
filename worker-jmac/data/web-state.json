@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:05:59.427Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Gemüse in Folie einpacken?“ Der Wochenmarktverkäufer ruft: „Nur, wenn Sie’s selbst auspacken!“",
-      "qwen": "Die Tomate glänzt im Supermarkt wie ein neonfarbener Kunststoffkloß. Am Markt riecht sie wie Sommer, schmeckt aber wie ein verbrannter Dobermann.",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-20T15:11:07.025Z",
       "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, doch als er dankbar die Tür öffnete, stand plötzlich ein Kakerlaken-Club im Flur – und lud zum Tanzen ein.",
       "qwen": "Mein Nachbar hämmert täglich um sechs. Ich fragte genervt nach dem Grund, worauf er antwortete: „Ich probiere die neue Tür aus.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs „Wie man Bewerbungen schreibt“, weil ich noch keinen Job habe.",
       "qwen": "Nach dem Vorstellungsgespräch fragte ich nach Weiterbildung. Der Chef nickte: „Ja, Sie dürfen hier jede Weiterbildung nutzen – auf eigene Kosten.“",
       "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
+    },
+    {
+      "timestamp": "2026-11-20T19:16:05.717Z",
+      "gpt": "Im Zug zur Wanderung fragt der Begleiter: „Haben wir genug Proviant?“ Ich zeige auf das leere Glas: „Ich habe nur meine schlechte Laune eingepackt.“",
+      "qwen": "Am Strand: „Hast du den Fisch gesehen?“\n„Nein, aber sein Schatten war riesig.“",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
