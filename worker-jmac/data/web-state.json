@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:26:06.665Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Obst in Tüten verpacken?“ Auf dem Wochenmarkt schnappt sich die Kundin ein Stück Apfel und sagt: „Nur, wenn’s frei ist.“",
-      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für die Tomaten. Er zeigte auf den Supermarkt im Hintergrund und sagte: „Da sind sie gratis, aber auch nur noch frei.\"",
-      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
-    },
-    {
       "timestamp": "2026-11-20T07:31:02.306Z",
       "gpt": "Im Bus fragt der Fahrer: „Ausweis bitte!“ – Ich zeige meinen Fahrschein, er nickt: „Entschuldigung, ich dachte, Sie sind der Kontrolleur.“",
       "qwen": "Ich warte stundenlang auf den Bus, der endlich kommt und fährt sofort wieder los.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Reiseführerin: „Wie war Ihr Urlaub?“ Ich: „Ich war im Zug, weil das Ticket gekappt war.“",
       "qwen": "Die Kinder schrien „Papa, schau mal, wie schnell!“, während wir gemütlich durch den Tierpark spazierten. Der Zebra-Schild zeigte: „Bitte nicht füttern, wir sind im Stau.“",
       "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
+    },
+    {
+      "timestamp": "2026-11-20T11:36:06.624Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt so gut versteckt, dass sogar ich es nicht mehr finde.“",
+      "qwen": "Endlich ist die Besprechung beendet. Der Chef fragt: „Und, wer von euch hat nichts zu sagen?“",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
