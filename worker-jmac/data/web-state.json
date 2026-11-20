@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:15:59.493Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient: „Wie ein Rezept, das noch nie eingelöst wurde.“",
-      "qwen": "Ich klagte über Migräne. Der Arzt schickte mich zur Apotheke, wo ich eine Flasche Whiskey bekam.",
-      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
-    },
-    {
       "timestamp": "2026-11-19T21:21:01.097Z",
       "gpt": "Ich gehe zum Wochenmarkt, um frische Eier zu kaufen – der Verkäufer fragt, ob ich sie lieber vom Supermarkt habe, weil dort die Hühner schneller laufen.",
       "qwen": "Beim Wochenmarkt: „Das ist Bio, da steckt keine Chemie drin!“\nBeim Discounter: „Das ist Bio, da ist extra viel Chemie drin, aber pflanzlich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Ich antworte: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er antwortete: „Nein, die ist für deine Knie besser, wenn du sie locker lässt.“",
       "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
+    },
+    {
+      "timestamp": "2026-11-20T01:21:11.457Z",
+      "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim Versuch, die „Baum“-Pose zu halten, fällt mir mein ganzer Kaktus aus dem Fenster.",
+      "qwen": "Nach einer Stunde Stretching bin ich froh, dass meine Katze auf den Couchtisch klettert. Endlich hat sie genug Platz zum Krallen wetzen.",
+      "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
     }
   ]
 }
