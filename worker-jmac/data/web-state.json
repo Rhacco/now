@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:06:05.195Z",
-      "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin zeigt auf die Regale. Auf dem Wochenmarkt verkauft der Bauer dieselben Eier – mit „Frischegarantie“ drauf.",
-      "qwen": "Ich kaufte auf dem Wochenmarkt frische Erdbeeren, die im Supermarkt leider schon vergammelt waren.",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-19T20:11:12.629Z",
       "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet. Dort steht: „Sonnenschein in 5 Minuten – bitte öffnen Sie das Fenster.“",
       "qwen": "Mama fragt, wie man das Handy entsperren muss. Ich sage: „Mit dem Finger.“ Sie drückt die Stirn dagegen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich die Stellenanzeige verstehe.“",
       "qwen": "Ich fragte im Vorstellungsgespräch, ob ich eine Weiterbildung braucht. „Nein“, sagte der Chef, „wir brauchen nur Ihre Kündigung.“",
       "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
+    },
+    {
+      "timestamp": "2026-11-20T00:10:58.082Z",
+      "gpt": "Beim Auspacken des Umzugskartons findet er ein altes, staubiges Fitnessgerät – und merkt, dass er beim Ausmisten die Hantelbank vergessen hat.",
+      "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Funktioniert sie?“ Ja, sie wäscht alles aus.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
