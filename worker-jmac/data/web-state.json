@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:46:03.915Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, aber jedes Mal, wenn ich die „Baum“-Pose halte, ruft mein Hund: „Endlich ein Stock!“",
-      "qwen": "Ich leg mich zur Meditation auf die Yogamatte. Der Hund beißt sie an.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-20T18:50:58.173Z",
       "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil sein Licht flackert – ich sag: „Ich habe gerade den Stecker gezogen, du hast ja keinen Strom mehr.“",
       "qwen": "Beim Umzug fragte ich den Nachbarn höflich: „Gibt’s hier harte Härchen?“ Er seufzte: „Nee, nur ein harter Kern.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular für verlorene Schlüssel aus, doch im Feld „Verlustzeitpunkt“ schrieb ich „seit gestern“. Das Fundbüro meldete: „Wir haben sie nie gefunden.“",
       "qwen": "Ich fand meine Geldbörse im Fundbüro, aber der Finder behauptete, sie sei sein Eigentum.",
       "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
+    },
+    {
+      "timestamp": "2026-11-20T22:50:57.448Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das fehlende Feld war: „Wie oft haben Sie schon verloren?“ – Der Beamte grinste: „Täglich.“",
+      "qwen": "Die Behörde verlangt für den Schlüsselverlust ein Formular, das es nur auf Französisch gibt.",
+      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
     }
   ]
 }
