@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:31:02.597Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und er fragt: „Haben Sie das Rückgabeschild schon unterschrieben?“ Ich antworte: „Nur, wenn es ein Geschenk ist.“",
-      "qwen": "Der Paketbote fragt: „Haben Sie das Paket erhalten?“ Ich antworte: „Nein, nur die Unschuld des Überbringers.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-20T10:36:04.982Z",
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot – sie reicht mir ein Blatt Papier. \"Für die Diät\", sagt sie lächelnd.",
       "qwen": "Im Elektronikmarkt fragt der Kunde: „Haben Sie das W-Lan hier?“ Der Verkäufer nickt und sagt: „Ja, das ist das W-Lan.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient flüstert: „Wie ein Rezept, das ich nie einlösen kann.“",
       "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich: „Und wenn ich keine Apotheke in der Nähe habe?“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-20T14:36:05.094Z",
+      "gpt": "Beim Familienabend fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Bruder meint: „Keine Sorge, ich habe sie nur probiert.“",
+      "qwen": "Mama fragt: „Warum schmeckt das Ei nicht mehr nach Ei?“ Ich: „Weil du seit Jahren nur noch Tomaten sauer isst.“",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
