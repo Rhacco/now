@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:15:56.625Z",
-      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Ich antworte: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
-      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er antwortete: „Nein, die ist für deine Knie besser, wenn du sie locker lässt.“",
-      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
-    },
-    {
       "timestamp": "2026-11-20T01:21:11.457Z",
       "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim Versuch, die „Baum“-Pose zu halten, fällt mir mein ganzer Kaktus aus dem Fenster.",
       "qwen": "Nach einer Stunde Stretching bin ich froh, dass meine Katze auf den Couchtisch klettert. Endlich hat sie genug Platz zum Krallen wetzen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App installiert, die jedes Mal motiviert, wenn ich sie öffne – heute hat sie mich beim Aufstehen geweckt.",
       "qwen": "Starte die Putz-App auf dem Smartphone. Der Staubsauger entlädt sich, während er den Teppich saugt.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-20T05:21:06.114Z",
+      "gpt": "Ich habe meiner Nachbarin angeboten, ihr beim Umzug zu helfen – sie hat erst das Sofa getragen, dann die Tür zugeschlagen.",
+      "qwen": "Der Nachbar fragt: „Ist das Ihr Vorschlaghammer?“\n„Ja. Was ist?“",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
