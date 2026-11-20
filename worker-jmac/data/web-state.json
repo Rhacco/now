@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T10:45:57.502Z",
-      "gpt": "Ich komme zum Vorstellungsgespräch, lege meinen Lebenslauf aus und frage: „Gibt’s hier auch einen Kurs, wie man das Ganze überlebt?“",
-      "qwen": "„Welche Weiterbildung planen Sie in den ersten fünf Jahren?“ fragte der Chef. „Nicht.“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-20T10:51:08.044Z",
       "gpt": "In der Bibliothek fragt er leise nach dem Film „Stille“, im Kino flüstert er das Museum an. Beide lachen, weil er nur das Wort „Ausstellung“ hörte.",
       "qwen": "Im Kino gucke ich gebannt, im Museum staune ich. In der Bibliothek beschwert sich die Leserin, dass mein Handy vibriert.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Hörbuch?“ Der Bibliothekar schüttelt den Kopf – das ist ein Kino.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf ein Bild, das ich schon sechshundert Jahre nicht verlassen hatte.",
       "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
+    },
+    {
+      "timestamp": "2026-11-20T14:51:05.902Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken wegschnappt.",
+      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten darf. „Schau“, sagte er und stellte sich neben mich, „ich tu’s dir vor.“",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
