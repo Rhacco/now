@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:16:04.536Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Der Gast sagt: „Einen, der mich nicht wieder an die Arbeit erinnert.“",
-      "qwen": "Ich bestellte im Café einen Kaffee mit Milch. Der Kellner fragte: „Und das Eis dazu?“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-20T17:21:09.598Z",
       "gpt": "Mama fragt: „Warum hast du die Spülmaschine ausgeräumt?“  \nIch: „Damit du endlich wieder was zu tun hast.“",
       "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ „Weil du immer so laut schreist, wenn ich es tue.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um zu entspannen – bis mein Hund das „Herabschauende Hund“ übernimmt und mir die Decke klaut.",
       "qwen": "Beim Yoga nehme ich die Froschhaltung ein.\nTatsächlich habe ich mich dabei so richtig entspannt.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-20T21:21:08.208Z",
+      "gpt": "Der Nachbar klopft, weil er das laute Staubsaugen hört – und fragt, ob ich endlich das WLAN-Passwort teilen will.",
+      "qwen": "Mein Nachbar hämmert jeden Tag um sieben.\nIch schlage zurück, damit er merkt, dass ich wach bin.",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
