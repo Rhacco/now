@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:46:08.580Z",
-      "gpt": "Im Zug nach Mallorca fragt die Frau: „Ist das hier das Bordrestaurant?“ Der Schaffner lacht: „Nein, das ist die Steuererklärung.“",
-      "qwen": "Ich wollte im Urlaub ganz entspannt am Strand liegen. Der Sandstein hat sich das anders überlegt.",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-20T01:51:03.715Z",
       "gpt": "Mama fragt: „Warum hast du das Handy im Kühlschrank?“ – Ich wollte, dass es endlich mal kalt bleibt.",
       "qwen": "Ich fragte, wer das Licht angehat hat.\nMein Sohn zeigte auf seine Katze: „Sie hat es angeknipst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft wollen Sie pro Woche trainieren?“ Ich antworte: „Nur, wenn das WLAN stabil ist.“",
       "qwen": "Ich mache ab jetzt nur noch Yoga.\nMein Trainer bestätigt: Du bist jetzt entspannter.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-20T05:51:02.789Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin fragt, ob ich ihn lieber mit Espresso‑Milch will – ich antworte: „Nur, wenn er kocht.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zutun oder ohne?“",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
