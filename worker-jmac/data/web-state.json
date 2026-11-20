@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:46:08.232Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Kater das Bein geklaut – jetzt macht er den heraufschauenden Kater.",
-      "qwen": "Der Trainer schrie: „Mehr Muskeln, weniger Schmerzmittel!“\nIch fragte: „Haben Sie das gerade ernst gemeint?“",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-19T20:51:09.497Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Ich: „Nein, ich habe nur meine Schlüssel gefunden.“",
       "qwen": "Ich fand meine Brieftasche im Fundbüro. Die Auszahlung des Gewinns verweigerte man mir jedoch, da ich keine Verlustbescheinigung vorlegte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ – Der Kellner lächelt: „Nein, das ist unser Brot‑nach‑der‑Wurst‑Pause.“",
       "qwen": "Ich bestellte im Café nur einen Kaffee, aber der Barista fragte doch, ob ich das Brot dazu noch frisch backen lassen will.",
       "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
+    },
+    {
+      "timestamp": "2026-11-20T00:51:05.226Z",
+      "gpt": "Im Café bestellt er ein „leichtes“ Gericht – die Kellnerin bringt ihm einen Salat und sagt: „Hier ist das Licht, das Sie wollten.“",
+      "qwen": "Ich frage im Café nach der Speisekarte, die Bedienung antwortet: „Die gibt es nur mit Schnitzel.“",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
