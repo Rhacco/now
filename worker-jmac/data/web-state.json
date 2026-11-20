@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:06:03.143Z",
-      "gpt": "Ich frage im Elektrogeschäft nach einem energiesparenden Kühlschrank, der automatisch bestellt wird, wenn er leer ist – er lächelt und reicht mir nur den Telefonhörer.",
-      "qwen": "„Können Sie das noch kürzer schneiden?“ fragte ich den Friseur. „Ja, ich bin knapp beauftragt, auch das auszusprechen.“",
-      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
-    },
-    {
       "timestamp": "2026-11-20T16:10:57.792Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Amt verlangte einen Nachweis, dass ich den Stift wirklich gefunden habe.",
       "qwen": "Ich versuchte, den Fundantrag zu unterschreiben, doch der Beamte winkte ab. „Leider fehlt hier die Unterschrift des Fundes selbst.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt, ob ich das Geschirr spülen will. Ich sag: „Klar, ich bin schließlich im Wasserfach.“",
       "qwen": "Mein Vater sagt, er hört mir zu, während er fernsieht. Das ist auch gut so, denn er hört mich eh nie.",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-20T20:16:09.880Z",
+      "gpt": "Ich frage die Verkäuferin nach einem passenden Geschenk, sie reicht mir einen Katalog und sagt: „Hier steht, was Sie nicht kaufen können.“",
+      "qwen": "Verkäuferin: „Darf ich Ihnen das richtig auftragen?“\nKunde: „Nein, ich brauche nur einen Spiegel, nicht Ihre Meinung.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
