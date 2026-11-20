@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:01:09.777Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Warum ist das Fenster offen?“ Der Schaffner lächelt: „Damit das Meer nicht zu viel Platz einnimmt.“",
-      "qwen": "Auf dem Campingplatz kocht die Nachbarin stundenlang ein Kompott. „Schön, dass Sie so viel Zeit haben“, lobe ich. Sie seufzt: „Bin erst in Urlaub.“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-20T01:06:05.897Z",
       "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
       "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich suche nur nach dem出口.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Ausmisten die alte Kaffeemaschine spenden, doch sie war so alt, dass sie jetzt nur noch als Briefbeschwerer diente.",
       "qwen": "Auf dem Dachboden finde ich meine alte Kiste mit Briefen. Ich öffne sie und entdecke, dass ich sie nie gelesen habe.",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-20T05:05:58.935Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Haben Sie Allergien?“ Der Patient nickt, weil er gerade in der Apotheke das neue „Pollen‑frei‑Spray“ gekauft hat.",
+      "qwen": "Ich warte seit drei Stunden im Wartezimmer. Der Arzt ruft mich rein und sagt: „Haben Sie einen Termin?“",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
