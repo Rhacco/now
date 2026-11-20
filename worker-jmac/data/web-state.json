@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:45:57.763Z",
-      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft trainieren Sie pro Woche?“ – Ich antworte: „Nur beim Aufstehen, dann bin ich schon ganz entspannt.“",
-      "qwen": "Ich wollte beim Yoga entspannen, bin aber vom Stuhl gefallen. Jetzt übe ich Liegestütze, weil der Rücken nicht mehr gut wird.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-19T21:50:57.650Z",
       "gpt": "Im Zug fragt die Durchsage nach dem nächsten Halt – ich drücke den Knopf, weil ich das Ziel schon kenne. Der Zug hält, weil er mich nicht versteht.",
       "qwen": "Ich stelle mich in die Taxireihe, doch der Fahrer winkt mich zu seinem Auto. „Sie sind dran“, sagt er, „aber fahren tut meine Frau.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug nach Mallorca fragt die Frau: „Ist das hier das Bordrestaurant?“ Der Schaffner lacht: „Nein, das ist die Steuererklärung.“",
       "qwen": "Ich wollte im Urlaub ganz entspannt am Strand liegen. Der Sandstein hat sich das anders überlegt.",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-20T01:51:03.715Z",
+      "gpt": "Mama fragt: „Warum hast du das Handy im Kühlschrank?“ – Ich wollte, dass es endlich mal kalt bleibt.",
+      "qwen": "Ich fragte, wer das Licht angehat hat.\nMein Sohn zeigte auf seine Katze: „Sie hat es angeknipst.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
