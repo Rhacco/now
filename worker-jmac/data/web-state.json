@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:30:59.491Z",
-      "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie ihn mit Milch oder mit Sahne?“ – Ich antworte: „Mit Espresso, danke.“",
-      "qwen": "Ich fragte im Café: „Gibt’s das auch ohne Zucker?“\nDer Kellner seufzte: „Nur die Kaffeesatzlesung.“",
-      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
-    },
-    {
       "timestamp": "2026-11-19T22:35:59.388Z",
       "gpt": "Ich kaufe im Supermarkt einen Bio‑Apfel, doch am Kassenband sagt die Kassiererin: „Entschuldigung, das ist unser Wochenmarkt‑Special.“",
       "qwen": "Ich wollte beim Wochenmarkt die Tomaten schmecken, aber der Händler meinte: „Die sind noch grün.“ Das ist der einzige Ort, wo das ein Kompliment ist.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ – Ich antworte: „Beides, ich bin hier zum Schwimmen.“",
       "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Die Barista sah mich fragend an und sagte: „Dann ist es einfach kein Kaffee.“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-20T02:36:03.692Z",
+      "gpt": "Ich frage im Baumarkt nach einer passenden Schraube, der Verkäufer reicht mir ein Rezept für Zahnschmerzen – er meinte, ich brauche „etwas zum Festziehen“.",
+      "qwen": "Im Elektronikmarkt fragt der Kunde: „Hat das Handy eine Kamera?“\nDer Verkäufer nickt: „Nein, die ist erst ab dem Mittelklasse-Modell.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
