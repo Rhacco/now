@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:36:00.790Z",
-      "gpt": "Ich mache Yoga, um den Stress abzubauen – bis mein Hund versucht, die „herabschauende Katze“ zu fangen.",
-      "qwen": "Ich jogge seit Wochen jeden Tag. Heute habe ich gemerkt, dass mein Knie sich endlich entspannt hat.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-20T03:40:57.538Z",
       "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Lampe, und der Verkäufer meint: „Natürlich, wir haben hier das Licht aus.“",
       "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich: „Ja, ich suche einen Weg aus dem Kreislauf.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm mitnehmen soll, und sie zeigt „Sie haben 99% Chance, den Akku zu verlieren.“",
       "qwen": "Ich tippe „Pizza“ in die Suchleiste. Das Handy antwortet: „Dein Kalorienlimit ist erreicht.“",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-20T07:40:59.177Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Entschuldigung, haben Sie das Rückgabeschein-Set für meine Kündigung?“",
+      "qwen": "Der Mann am Telefon fragt: „Ist das Paket schon da?“ Ich schaue auf den Boden: Es ist da.",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
