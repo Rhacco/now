@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:31:00.910Z",
-      "gpt": "Im Zug fragt die Durchsage, ob jemand sein Handy vergessen hat – ich melde mich, weil ich im Auto sitze und gerade laut tippe.",
-      "qwen": "Ich steig aus dem Taxi, als der Fahrer fragt: „Soll ich Sie noch irgendwo absetzen?“",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-20T01:35:58.845Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs „Wie man ehrlich antwortet“.“",
       "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte, was ich unter „Weiterbildung“ verstehe.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das ganze Brot in die Spülmaschine gelegt?“  \nIch: „Ich wollte es endlich mal durchziehen.“",
       "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie sagt: „Ja, aber der Hund ist süßer.“",
       "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
+    },
+    {
+      "timestamp": "2026-11-20T05:35:58.278Z",
+      "gpt": "Mama fragt: „Warum liegt dein Teller immer noch im Waschbecken?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
+      "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber du bist halt eine Gewohnheit.“",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
