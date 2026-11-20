@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:46:07.428Z",
-      "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ – Der Kellner lächelt: „Nein, das ist unser Brot‑nach‑der‑Wurst‑Pause.“",
-      "qwen": "Ich bestellte im Café nur einen Kaffee, aber der Barista fragte doch, ob ich das Brot dazu noch frisch backen lassen will.",
-      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
-    },
-    {
       "timestamp": "2026-11-20T00:51:05.226Z",
       "gpt": "Im Café bestellt er ein „leichtes“ Gericht – die Kellnerin bringt ihm einen Salat und sagt: „Hier ist das Licht, das Sie wollten.“",
       "qwen": "Ich frage im Café nach der Speisekarte, die Bedienung antwortet: „Die gibt es nur mit Schnitzel.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Supermarkt Rabatt auf Bio‑Obst, aber der Kassierer schenkte mir nur ein Lächeln – weil ich den Wochenmarkt in der Handtasche hatte.",
       "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Nach dem Transport im Kofferraum sind sie leider nur noch so.",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-20T04:51:02.664Z",
+      "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy zeigte nur „Kein Signal“ – anscheinend läuft mein Akku schneller als ich.",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nDann finde ich den Ladekabel-Stecker unter dem Sofa.",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
