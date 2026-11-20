@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:01:04.900Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ Darauf meldet sich die Kaffeemaschine: „Ich habe ihn schon verdampft.“",
-      "qwen": "In der Besprechung fragte der Chef: „Wer hat die Deadline verpasst?“\nIch hob die Hand.",
-      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
-    },
-    {
       "timestamp": "2026-11-20T02:06:02.453Z",
       "gpt": "Der Nachbar klopft, weil sein Wasserhahn tropft, und fragt: „Kannst du mir leihen, bis die Reparatur kommt?“ – Ich reiche ihm nur einen Eimer.",
       "qwen": "Der Nachbar klopft an und fragt, ob ich abends lauter sein darf, damit er besser schläft.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug nach Mallorca fragt die Frau: „Gehört das WLAN zum Ticket?“ Der Schaffner lächelt: „Nur, wenn Sie im Kofferraum surfen.“",
       "qwen": "Kurzurlaub in der Toskana. Der Kellner fragt: „Was gibt’s?“ Ich zähle laut die Euro-Banknoten auf.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-20T06:05:57.881Z",
+      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir die Kasse – ich soll doch erst bezahlen, bevor ich mich warm anziehe.",
+      "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer fragte: „Haben Sie schon ein Hemd?“ Ja, das habe ich.",
+      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
     }
   ]
 }
