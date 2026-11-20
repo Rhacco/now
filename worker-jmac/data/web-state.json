@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:56:07.357Z",
-      "gpt": "Ich packe die Kaffeetassen aus, finde nur leere Schachteln – mein Mitbewohner hat sie zum Umzug verkauft, weil er „weniger Gewicht“ wollte.",
-      "qwen": "Wir wollten beim Ausmisten nur die alten T-Shirts wegschmeißen. Doch als wir sie auspackten, zogen wir alle sofort an.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-20T04:00:59.377Z",
       "gpt": "Ich frage den Verkäufer nach einer Größe, er reicht mir das Kleingeld – anscheinend ist das hier ein „Preis‑Beratung“-Service.",
       "qwen": "Der Verkäufer hält mir einen Koffer hin und fragt, ob ich ihn mit nach Hause nehmen will. „Nicht nötig“, sage ich, „ich trage ihn schon seit zwei Stunden.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug klingelt mein Handy, ich antworte: „Entschuldigung, ich sitze im Zug.“ – Der Anrufer sagt: „Ich auch, aber im Taxi.“",
       "qwen": "Ich nehme das Taxi, weil der Bus zu voll ist. Der Fahrer fragt: „Zu welchem Bahnhof?“",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-20T08:01:07.397Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie etwas gegen Geduld?“ – Der Patient antwortet: „Ja, die Apotheke nebenan hat’s noch nicht vorrätig.“",
+      "qwen": "Dr. Müller fragt: „Haben Sie Schmerzen?“ Ich sage: „Ja, überall.“ Er seufzt: „Dann gehen Sie bitte zur Apotheke, ich bin nur der Zahnarzt.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
