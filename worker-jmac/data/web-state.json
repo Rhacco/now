@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:45:58.728Z",
-      "gpt": "Im Zug steht ein Mann, der plötzlich aufsteht, weil er den nächsten Halt verpasst hat – er fährt ja nur mit dem Bus.",
-      "qwen": "Der Taxifahrer fragt: „Soll ich die Klimaanlage anmachen?“\nIch sage: „Ja, danke.“\nEr schaltet sie aus.",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-20T08:51:00.178Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie die Preise einpacken.“",
       "qwen": "Im Supermarkt schreit mich der Scanner an. Auf dem Wochenmarkt fragt mich die Oma höflich nach meinem Namen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Besucher: „Gibt's hier ein Buch über Filme?“ Der Bibliothekar antwortet: „Nur im Kino, das ist ein Pop‑Up‑Read.“",
       "qwen": "Ich suchte im Museum nach dem Weg ins Kino.\nDie Bibliothekarin zeigte grimmig auf den Stillen Bereich.",
       "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
+    },
+    {
+      "timestamp": "2026-11-20T12:51:07.492Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Schlüssel gefunden.“",
+      "qwen": "Die Brieftaube flatterte ins Fundbüro, um ihr Formblatt 12b zu holen.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
