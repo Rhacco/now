@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:35:58.845Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs „Wie man ehrlich antwortet“.“",
-      "qwen": "Ich habe mich für den Chefposten beworben. Der Chef fragte, was ich unter „Weiterbildung“ verstehe.",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-20T01:41:07.992Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“, ich antworte: „Nein, ich kaufe gleich beim Wochenmarkt.“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis für die Tomaten.\nEr sagte: „Einen Euro, aber ich akzeptiere keine Kreditkarte.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum liegt dein Teller immer noch im Waschbecken?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber du bist halt eine Gewohnheit.“",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-20T05:40:59.158Z",
+      "gpt": "Ich füllte das Fundbüro‑Formular aus, doch das Büro war leer – anscheinend war das Formular selbst schon verloren.",
+      "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt jetzt den Verlust des Fundes.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
