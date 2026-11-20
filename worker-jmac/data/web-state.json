@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:16:06.075Z",
-      "gpt": "Ich komme zum Vorstellungsgespräch, sag: „Ich habe meine Soft Skills auf dem Sofa weiterentwickelt.“ Der Personaler nickt: „Perfekt, wir suchen jemanden im Home‑Office.“",
-      "qwen": "Die Personalchefin fragt nach meinen Fortbildungswünschen. Ich sage: „Einen Crashkurs in Höflichkeit.“",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-20T06:21:05.309Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt bereits abgeschlossen – im Traum, während ich den Kaffee nachgefüllt habe.“",
       "qwen": "In der Besprechung fragte der Chef: „Was ist das Problem?“\nIch antwortete: „Sie sind es.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin bringt mir einen Topf Suppe. Ich frage: „War das ein Missverständnis?“ Sie: „Nein, das ist unser Espresso‑Brot.“",
       "qwen": "Im Café bestellte ich einen Kaffee. „Leider nur mit Löffel“, sagte der Kellner.",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-20T10:26:05.388Z",
+      "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau im Taxi lässt ihn zu Fuß weiterlaufen – und endlich findet er sein Auto im Parkhaus.",
+      "qwen": "Ich steige aus dem Taxi, spring in den Bus, fahre mit der Bahn und habe noch Autoschlüssel in der Hand.",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
