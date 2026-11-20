@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:31:02.306Z",
-      "gpt": "Im Bus fragt der Fahrer: „Ausweis bitte!“ – Ich zeige meinen Fahrschein, er nickt: „Entschuldigung, ich dachte, Sie sind der Kontrolleur.“",
-      "qwen": "Ich warte stundenlang auf den Bus, der endlich kommt und fährt sofort wieder los.",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-20T07:35:59.641Z",
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm mitnehmen soll, und sie zeigt „Sie haben 99% Chance, den Akku zu verlieren.“",
       "qwen": "Ich tippe „Pizza“ in die Suchleiste. Das Handy antwortet: „Dein Kalorienlimit ist erreicht.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt so gut versteckt, dass sogar ich es nicht mehr finde.“",
       "qwen": "Endlich ist die Besprechung beendet. Der Chef fragt: „Und, wer von euch hat nichts zu sagen?“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-20T11:41:06.705Z",
+      "gpt": "Im Zug steht ein Fahrgast und sagt: „Ich hätte gern ein Ticket nach Hause.“ Der Schaffner antwortet: „Dann steigen Sie einfach aus.“",
+      "qwen": "Ich sage dem Taxifahrer: „Bitte zum Bahnhof, ich habe es eilig.“\nEr antwortet: „Zu spät, das Auto ist schon voll.“",
+      "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
     }
   ]
 }
