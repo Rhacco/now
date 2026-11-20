@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:35:59.641Z",
-      "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm mitnehmen soll, und sie zeigt „Sie haben 99% Chance, den Akku zu verlieren.“",
-      "qwen": "Ich tippe „Pizza“ in die Suchleiste. Das Handy antwortet: „Dein Kalorienlimit ist erreicht.“",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-20T07:40:59.177Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Entschuldigung, haben Sie das Rückgabeschein-Set für meine Kündigung?“",
       "qwen": "Der Mann am Telefon fragt: „Ist das Paket schon da?“ Ich schaue auf den Boden: Es ist da.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Fahrgast und sagt: „Ich hätte gern ein Ticket nach Hause.“ Der Schaffner antwortet: „Dann steigen Sie einfach aus.“",
       "qwen": "Ich sage dem Taxifahrer: „Bitte zum Bahnhof, ich habe es eilig.“\nEr antwortet: „Zu spät, das Auto ist schon voll.“",
       "archive": "Im Zug wird die baldige Weiterfahrt angekündigt. Der Mann neben mir fragt, ob „bald“ hier nach Fahrplan oder nach Kalender gemeint ist."
+    },
+    {
+      "timestamp": "2026-11-20T11:46:01.199Z",
+      "gpt": "Ich mache Yoga im Park, um Stress abzubauen – bis ein Hund meine „Lotus‑Pose“ als neue Decke für sein Nickerchen erklärt.",
+      "qwen": "Ich habe gerade Yoga gemacht, um mich zu entspannen. Jetzt kann ich mich wegen des Kater-Saluts nicht mehr aufrichten.",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
