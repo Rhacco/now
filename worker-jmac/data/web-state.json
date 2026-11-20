@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:35:59.035Z",
-      "gpt": "Ich sortiere beim Umzug meine Klamotten und finde ein altes T-Shirt mit Aufschrift: „Bitte nicht waschen – das ist ein Vintage‑Stück.“ Und ich packe es sofort ein.",
-      "qwen": "Beim Ausmisten fand ich meine alte Zahnbürste. Die habe ich natürlich behalten.",
-      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
-    },
-    {
       "timestamp": "2026-11-20T15:40:58.467Z",
       "gpt": "Im Yogakurs fragt die Lehrerin: „Wer kann jetzt den herabschauenden Hund?“ – Mein Nachbar meldet sich, weil er gerade das Fernsehprogramm umschaltet.",
       "qwen": "Ich habe Yoga gemacht, bis mir der Rücken einschnürte. Jetzt bin ich entspannt, aber ich kann mich nicht mehr bücken.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, die Durchsage: „Bitte nicht aussteigen, wir fahren gerade ins Hotel.“",
       "qwen": "Auf dem Berggipfel fragt der Freund: „Warum sind wir gerade hier?“ Ich antworte: „Damit ich dir sage, dass ich morgen zu Hause bleibe.“",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-20T19:45:58.013Z",
+      "gpt": "Ich packe beim Ausmisten die Kaffeetasse ein, weil ich beim Umzug keinen Stress haben will – dann fällt mir ein, ich trinke jetzt nur noch Tee.",
+      "qwen": "Mama stapelt die Kisten für den Umzug. „Alles raus, was du nicht mehr brauchst!“, ruft sie. Ich lege die letzten Klamotten zurück: „Brauche ich für die Nachbarn.“",
+      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
     }
   ]
 }
