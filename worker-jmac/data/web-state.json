@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:51:04.508Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde mich: „Kaffee.“ Er lächelt: „Endlich ein Vorschlag, der wirklich wach macht.“",
-      "qwen": "Die Chefin bittet mich, das Meeting auf zehn Minuten zu verkürzen. Ich sage: „Kein Problem, ich schneide mich einfach auf zwei.“",
-      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
-    },
-    {
       "timestamp": "2026-11-20T13:56:08.868Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kassierer schüttelt den Kopf: „Im Kino darf man nur flüstern.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin meinte: „Der steht noch im Konjunktiv.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot. Sie reicht mir ein Blatt Papier – \"Für die Diät, die Sie nie halten.\"",
       "qwen": "Im Schuhgeschäft fragt die Verkäuferin: „Soll ich das noch anprobieren?“ Ich antworte: „Nein, ich suche keine Arbeit.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-20T18:00:59.528Z",
+      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert es?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort ist das Rezept schon abgelaufen.“",
+      "qwen": "Ich frage den Arzt: „Herr Doktor, wie lange muss ich noch warten?“\nEr antwortet: „Das hängt davon ab, wann Sie aus der Apotheke zurückkommen.“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
