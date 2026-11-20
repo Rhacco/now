@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:41:01.533Z",
-      "gpt": "Der Paketbote klingelt, ich frage, ob das Geschenk schon da ist – er meint, das sei das „Versand‑Feedback“, das ich gerade geschrieben habe.",
-      "qwen": "Der Kurier fragt: „Ist das Ihr Paket?“\nIch lache und sage: „Nein, das ist meine Ex-Frau, die sich verkleidet hat.“",
-      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
-    },
-    {
       "timestamp": "2026-11-20T18:46:03.915Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, aber jedes Mal, wenn ich die „Baum“-Pose halte, ruft mein Hund: „Endlich ein Stock!“",
       "qwen": "Ich leg mich zur Meditation auf die Yogamatte. Der Hund beißt sie an.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten wirft er die alte Waschmaschine raus – die neue Nachbarn freuen sich, jetzt haben sie endlich Platz für den Staubsauger.",
       "qwen": "Die Kiste mit „Wichtiges“ war voll mit alten Zeitschriften. Darin fand ich nur eine Rechnung von 1998.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-20T22:46:05.714Z",
+      "gpt": "Ich füllte das Formular für verlorene Schlüssel aus, doch im Feld „Verlustzeitpunkt“ schrieb ich „seit gestern“. Das Fundbüro meldete: „Wir haben sie nie gefunden.“",
+      "qwen": "Ich fand meine Geldbörse im Fundbüro, aber der Finder behauptete, sie sei sein Eigentum.",
+      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
     }
   ]
 }
