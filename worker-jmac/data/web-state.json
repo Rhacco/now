@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:46:05.868Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Kurs für Geduld, weil ich jetzt schon auf Ihre Antwort warte.“",
-      "qwen": "Ich habe mich auf eine Führungsposition beworben. Der Chef fragte nur: „Können Sie Excel?“",
-      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
-    },
-    {
       "timestamp": "2026-11-20T15:51:08.829Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach links, sehe den Schaffner mit Krawatte, der sich über das Sicherheitsgurt‑Gesetz wundert.",
       "qwen": "Im Taxi wollte ich den Gurt anlegen. Der Fahrer lachte: „Sparsam, haben wir hier keine Zeit.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einem leisen Staubsauger, der Verkäufer lächelt und reicht mir einen Besen.",
       "qwen": "Ich fragte den Verkäufer, ob der Wollpullover kratzt. Er sah mich an und fragte: „Krätze haben Sie nicht?“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-20T19:56:08.204Z",
+      "gpt": "Ich habe meinem Nachbarn den Rasenmäher geliehen – er kam zurück mit einer frisch geschnittenen Hecke. Ich dachte, er hätte den Rasen gemäht.",
+      "qwen": "Der Nachbar poliert sein Auto. Ich frage, ob er endlich Ruhe gibt.",
+      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
     }
   ]
 }
