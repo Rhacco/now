@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:31:07.901Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ – Ich antworte: „Beides, ich bin hier zum Schwimmen.“",
-      "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Die Barista sah mich fragend an und sagte: „Dann ist es einfach kein Kaffee.“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-20T02:36:03.692Z",
       "gpt": "Ich frage im Baumarkt nach einer passenden Schraube, der Verkäufer reicht mir ein Rezept für Zahnschmerzen – er meinte, ich brauche „etwas zum Festziehen“.",
       "qwen": "Im Elektronikmarkt fragt der Kunde: „Hat das Handy eine Kamera?“\nDer Verkäufer nickt: „Nein, die ist erst ab dem Mittelklasse-Modell.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef, wer das Projekt leiten will – ich melde mich und sage: „Ich? Dann darf ich ja auch das Essen bestellen.“",
       "qwen": "Der Chef fragt im Meeting: „Wo ist das Problem?“\nAlle starrt auf die Decke, denn er hatte den Lärmpegel auf „Null“ gestellt.",
       "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
+    },
+    {
+      "timestamp": "2026-11-20T06:36:06.040Z",
+      "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin schon süß genug.“",
+      "qwen": "Ich bestellte einen Kaffee und fragte, ob er extra süß kommt. Der Barista antwortete: „Ja, er ist aus Zucker.\"",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
