@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:05:57.086Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur mein Portemonnaie verloren.“",
-      "qwen": "Im Fundbüro: „Ist das Ihr verlorenes Ohr?“\n„Nein, das ist mein neues Formular.“",
-      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
-    },
-    {
       "timestamp": "2026-11-20T03:11:05.877Z",
       "gpt": "Im Meeting fragt der Chef, wer die Deadline verschoben hat – die Kollegin antwortet: „Ich, ich habe sie nur auf die nächste Kaffeepause verschoben.“",
       "qwen": "Im Meeting fragte der Chef: „Wer hat die Zahlen geprüft?“ Ich hob die Hand. „Ich. Und?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Ärztin meint: „Das ist doch Ihre Apotheke, nicht unser WLAN.“",
       "qwen": "Ich bat den Arzt, mich in die Apotheke zu schicken. Er meinte nur: „Fahr doch selbst hin.“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-20T07:10:59.792Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt antwortet die Kundin: „Nur, wenn Sie das Gemüse einpacken.“",
+      "qwen": "Ich wollte auf dem Wochenmarkt billiger einkaufen, aber der Bauer hat mir neugierig beim Auspacken zugesehen.",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
