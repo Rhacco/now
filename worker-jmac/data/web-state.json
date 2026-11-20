@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:56:03.573Z",
-      "gpt": "Im Zug klingelt mein Handy, ich antworte: „Entschuldigung, ich sitze im Zug.“ – Der Anrufer sagt: „Ich auch, aber im Taxi.“",
-      "qwen": "Ich nehme das Taxi, weil der Bus zu voll ist. Der Fahrer fragt: „Zu welchem Bahnhof?“",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-20T08:01:07.397Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie etwas gegen Geduld?“ – Der Patient antwortet: „Ja, die Apotheke nebenan hat’s noch nicht vorrätig.“",
       "qwen": "Dr. Müller fragt: „Haben Sie Schmerzen?“ Ich sage: „Ja, überall.“ Er seufzt: „Dann gehen Sie bitte zur Apotheke, ich bin nur der Zahnarzt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee mit Zucker?“ Darauf der Gast: „Nur, wenn er vorher im Restaurant gekocht wurde.“",
       "qwen": "Ich wollte nur Kaffee, aber der Barista hat aus Versehen den ganzen Herd angezündet. Jetzt esse ich meinen Aschen-Eiscreme-Sundae.",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-20T12:06:00.666Z",
+      "gpt": "Ich stehe am Supermarkt, prüfe das Angebot und merke: Die Tomaten kosten mehr als mein Gehalt. Auf dem Wochenmarkt kaufe ich dann nur Luft.",
+      "qwen": "Bald ist der Wochenmarkt vorbei, aber der Supermarkt bleibt immer offen.",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
