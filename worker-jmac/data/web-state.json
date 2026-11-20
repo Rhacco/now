@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:51:07.492Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Schlüssel gefunden.“",
-      "qwen": "Die Brieftaube flatterte ins Fundbüro, um ihr Formblatt 12b zu holen.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-20T12:55:57.976Z",
       "gpt": "Ich packe die alten Klamotten ein, doch die Packliste endet mit: „Nur das, was nicht mehr in den Schrank passt, bleibt im Keller.“",
       "qwen": "Wir räumten die Küche aus, als ich die alte Kaffeemaschine fand. Sie war noch warm.",
@@ -300,6 +294,12 @@
       "gpt": "Ich steig in den Bus, zahle, setze mich und merke, dass ich im Fahrplan meiner Lieblingsserie sitze – kein Halt, nur Werbepausen.",
       "qwen": "Ich stieg in den Bus, dann ins Taxi, dann ins Auto. Der Kofferraum war schon voll.",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-20T17:01:05.036Z",
+      "gpt": "Im Supermarkt frage ich nach Bio‑Brot. Die Verkäuferin meint: „Das gibt’s nur vom Wochenmarkt – wir backen hier nur Luft.“",
+      "qwen": "Ich frage auf dem Wochenmarkt nach dem Preis für die Tomaten. Der Bauer antwortet: „Die sind heute schmutzig, also teurer.“",
+      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
     }
   ]
 }
