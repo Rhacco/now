@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:16:07.861Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint, weil ich den Fortschritt erst nach dem Kaffee finde.",
-      "qwen": "Der Chef fragt, ob ich auf dem Laufenden bin. Ich nicke Richtung Fenster: „Ja, ich beobachte die Wolken.“",
-      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
-    },
-    {
       "timestamp": "2026-11-20T08:21:07.987Z",
       "gpt": "In der Bibliothek fragt er nach dem neuesten Film, im Kino nach dem lautesten Buch – im Museum schweigt er und schaut sich das Schild „Bitte nicht berühren“ an.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf die Leinwand.",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus drückte ich den Halteknopf, doch der Fahrer fuhr weiter – ich hatte das Taxi‑Ticket vergessen.",
       "qwen": "Ich stieg in den Bus, dann ins Taxi und schließlich in mein Auto. Die Ampel blieb rot.",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-20T12:25:59.134Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil ich endlich den Aufstieg zum Praktikanten schaffe.“",
+      "qwen": "Mein Chef lobt meine Weiterbildung. „Endlich“, sagt er, „dafür brauchst du diese Stelle gar nicht mehr.“",
+      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
     }
   ]
 }
