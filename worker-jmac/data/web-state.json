@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:06:10.847Z",
-      "gpt": "Ich mache Yoga, um den Stress abzubauen, und plötzlich ruft mein Handy: „Du hast 10.000 Schritte erreicht – im Traum.“",
-      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch steifer und ärgerlicher.",
-      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
-    },
-    {
       "timestamp": "2026-11-20T11:10:57.237Z",
       "gpt": "Ich rief beim Nachbarn an, weil das Wasser aus seiner Leitung tropfte, und er meinte: „Kein Problem, das ist nur das neue Sound‑System für die Dusche.“",
       "qwen": "Ich zähle die Schlaghölzer am Zaun. Die Nachbarn haben vierzehn neue.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Gemüse in Folie einpacken?“ Der Wochenmarktverkäufer ruft: „Nur, wenn Sie’s selbst auspacken!“",
       "qwen": "Die Tomate glänzt im Supermarkt wie ein neonfarbener Kunststoffkloß. Am Markt riecht sie wie Sommer, schmeckt aber wie ein verbrannter Dobermann.",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-20T15:11:07.025Z",
+      "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, doch als er dankbar die Tür öffnete, stand plötzlich ein Kakerlaken-Club im Flur – und lud zum Tanzen ein.",
+      "qwen": "Mein Nachbar hämmert täglich um sechs. Ich fragte genervt nach dem Grund, worauf er antwortete: „Ich probiere die neue Tür aus.“",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
