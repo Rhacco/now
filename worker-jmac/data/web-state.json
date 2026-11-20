@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:51:05.226Z",
-      "gpt": "Im Café bestellt er ein „leichtes“ Gericht – die Kellnerin bringt ihm einen Salat und sagt: „Hier ist das Licht, das Sie wollten.“",
-      "qwen": "Ich frage im Café nach der Speisekarte, die Bedienung antwortet: „Die gibt es nur mit Schnitzel.“",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-20T00:55:57.859Z",
       "gpt": "Im Meeting fragt der Chef nach neuen Ideen – ich ziehe mein Notizbuch hervor, öffne die leere Seite und schreibe: „Ideen? Nicht vergessen, Kaffee!“.",
       "qwen": "„Bitte fassen Sie die Ergebnisse kurz zusammen.“\nDer Chef nickt zufrieden: „Erledigt. Sie haben gesprochen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy zeigte nur „Kein Signal“ – anscheinend läuft mein Akku schneller als ich.",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nDann finde ich den Ladekabel-Stecker unter dem Sofa.",
       "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
+    },
+    {
+      "timestamp": "2026-11-20T04:55:58.001Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista gibt mir einen Topf Suppe – sie meinte, das sei ein „Kaffee‑auf‑der‑Wolke“.",
+      "qwen": "Der Kellner fragt, ob ich das Steak extra scharf will. Ich streiche die Tomate, damit es mich nicht zu sehr brennt.",
+      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
     }
   ]
 }
