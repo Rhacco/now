@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:40:59.177Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Entschuldigung, haben Sie das Rückgabeschein-Set für meine Kündigung?“",
-      "qwen": "Der Mann am Telefon fragt: „Ist das Paket schon da?“ Ich schaue auf den Boden: Es ist da.",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-20T07:45:58.962Z",
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Tim: „Ich nicht, ich habe nur den Kühlschrank aus Versehen aufgemacht.“",
       "qwen": "Die Oma fragt, ob ich sie „Mama“ nennen soll.\nIch sage: „Nein, du bist meine Großmutter.“\nSie antwortet: „Dann habe ich dich ja nie geboren.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga im Park, um Stress abzubauen – bis ein Hund meine „Lotus‑Pose“ als neue Decke für sein Nickerchen erklärt.",
       "qwen": "Ich habe gerade Yoga gemacht, um mich zu entspannen. Jetzt kann ich mich wegen des Kater-Saluts nicht mehr aufrichten.",
       "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
+    },
+    {
+      "timestamp": "2026-11-20T11:50:56.850Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie mir das Gemüse einpacken.“",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich nicke. Sie lacht: „Nein, Obst in Papstkartons?“",
+      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
     }
   ]
 }
