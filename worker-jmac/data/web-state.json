@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:51:05.902Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund die „herabschauende Katze“ übernimmt und mir die Lieblingssocken wegschnappt.",
-      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten darf. „Schau“, sagte er und stellte sich neben mich, „ich tu’s dir vor.“",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-20T14:56:04.106Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die leere PowerPoint – sie heißt „Projekt: Noch nicht angefangen“.",
       "qwen": "Ich sage im Meeting: „Ich bin nicht zu übertrumpfen.“\nDer Chef nickt: „Deshalb machst du hier alles allein.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, das ist mein verlorenes Formular.“",
       "qwen": "Ich habe den Fundbericht ausgefüllt, doch jetzt fehlt mir das Formular, um den Verlust des Formulars zu melden.",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-20T19:01:10.934Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viel Gewicht wollen Sie heben?“ Ich antworte: „Nur das, das mich vom Sofa runterzieht.“",
+      "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Körpermitte gelegt. Now I am doing squats.",
+      "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
     }
   ]
 }
