@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:56:04.941Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann schaut verwirrt: „Welches? Ich habe doch nur den Geldbeutel gefunden.“",
-      "qwen": "Ich meldete den verlorenen Ring im Fundbüro an. Der Beamte sagte: „Danke. Bitte füllen Sie das Formular für Ihre eigene Fundmeldung aus.“",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-20T03:01:04.460Z",
       "gpt": "Ich frage den Kundenberater: „Welches Produkt passt zu mir?“ Er meint: „Unsere Rückgabebedingungen.“",
       "qwen": "Ich fragte den Verkäufer nach dem Preis für den Laptop. Er strahlte: „Nur neunhundert Euro, wenn Sie mir Ihre Seele dafür versprechen.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer günstigen Waschmaschine, sie zeigt mir das Modell „Selbstreinigung“ – ich zahle, weil ich meine Schuldgefühle waschen will.",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, bitte nehmen Sie mich mit.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-20T07:01:02.085Z",
+      "gpt": "Ich mache Yoga im Büro, um Stress abzubauen – und merke erst, wenn mein Chef fragt, warum ich gerade den „Herabschauenden Hund“ an der Kaffeemaschine mache.",
+      "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf der Matte ausgeruht. Jetzt bin ich der, der streckt.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
