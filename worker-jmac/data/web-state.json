@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:31:09.095Z",
-      "gpt": "Im Café bestellt er ein „leichtes“ Frühstück, bekommt aber nur einen leeren Teller – das war wohl das „Kalorien‑frei“-Special.",
-      "qwen": "Ich bat im Café um einen Latte. Der Barista fragte: „Kurz oder lang?“",
-      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
-    },
-    {
       "timestamp": "2026-11-20T13:36:05.659Z",
       "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter fragt: „Haben Sie schon nachgesehen, ob es nicht bei Ihnen selbst liegt?“",
       "qwen": "Der Kurier fragt, ob ich das Paket für mich selbst unterschreibe. Ich zähle bis drei und sage: „Ja, ich bin’s.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug alte Tassen aus, finde eine mit „Vorsicht, heiß!“ und stelle sie sofort in den Gefrierschrank – jetzt ist sie wirklich kühl.",
       "qwen": "Wir haben den Einzug gefeiert, bis die Schwiegermutter fragte, wo ihre Porzellankollektion bliebe. Die Pointe: Der neue Vermieter wollte sie als Kaution.",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-20T17:41:04.818Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Abteilung für Sonnencreme?“ Der Schaffner lächelt: „Nein, das ist die Toilette.“",
+      "qwen": "Gefühlt ist der Urlaub schon vorbei, bevor wir die Koffer gepackt haben.",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
