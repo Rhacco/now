@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T12:36:06.125Z",
-      "gpt": "Ich jogge jeden Morgen, doch nach dem ersten Kilometer halte ich an, weil mein Handy sagt: „Aufstehen, du hast schon 10 000 Schritte erreicht.“",
-      "qwen": "Ich plane eine entspannende Yoga-Einheit. Dann fliegt der Fliegenfänger durchs Zimmer und ich bin wieder fit.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-20T12:41:00.302Z",
       "gpt": "Ich frage im Elektrofachhandel nach einer energiesparenden Lampe, der Verkäufer meint: „Hier gibt’s nur Glühbirnen, die sparen nur Strom für Ihr Gewissen.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen weiterhelfen?“. Ich antworte: „Nein, ich will nur stören.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Online‑Kurs, weil ich dann endlich meine Hausaufgaben erledigt habe.“",
       "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 20 Kursen.\nDer Chef fragte nur: „Können Sie wirklich Excel?“",
       "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
+    },
+    {
+      "timestamp": "2026-11-20T16:40:58.440Z",
+      "gpt": "In der Bibliothek fragt die Lehrerin: „Welches Buch ist im Kino am beliebtesten?“ – Der Bibliothekar antwortet: „„Stummfilm“ – weil er nie ausgeliehen wird.",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte auf eine Tafel: „Hier gibt es keinen.\"",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
