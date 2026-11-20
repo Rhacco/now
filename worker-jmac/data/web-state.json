@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:01:08.895Z",
-      "gpt": "Im Museum fragt ein Besucher: „Wo ist die Toilette?“ – Der Bibliothekar antwortet: „Stöbern Sie erst mal im Katalog, das ist ein Drama.“",
-      "qwen": "In der Bibliothek flüstert man, im Kino klatscht man, im Museum zückt man die Kamera.",
-      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
-    },
-    {
       "timestamp": "2026-11-19T21:05:58.709Z",
       "gpt": "Ich habe meinem Nachbarn die Klingel ausgetauscht – jetzt klingelt er jedes Mal, wenn ich die Pizza bestelle.",
       "qwen": "Der Nachbar klopft an und fragt, ob ich seine Katze habe. Ich zeige auf die Tüte Müll, die er neben meiner Tür stehen lässt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Warum ist das Fenster offen?“ Der Schaffner lächelt: „Damit das Meer nicht zu viel Platz einnimmt.“",
       "qwen": "Auf dem Campingplatz kocht die Nachbarin stundenlang ein Kompott. „Schön, dass Sie so viel Zeit haben“, lobe ich. Sie seufzt: „Bin erst in Urlaub.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-20T01:06:05.897Z",
+      "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
+      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich suche nur nach dem出口.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
