@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:01:07.397Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie etwas gegen Geduld?“ – Der Patient antwortet: „Ja, die Apotheke nebenan hat’s noch nicht vorrätig.“",
-      "qwen": "Dr. Müller fragt: „Haben Sie Schmerzen?“ Ich sage: „Ja, überall.“ Er seufzt: „Dann gehen Sie bitte zur Apotheke, ich bin nur der Zahnarzt.“",
-      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
-    },
-    {
       "timestamp": "2026-11-20T08:06:04.762Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer nicht streamen.“",
       "qwen": "Ich wollte im Urlaub nur einen Tag am Strand faulenzen. Die Muschel, die ich fand, war leider ein Ticket für den nächsten Tag.",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe am Supermarkt, prüfe das Angebot und merke: Die Tomaten kosten mehr als mein Gehalt. Auf dem Wochenmarkt kaufe ich dann nur Luft.",
       "qwen": "Bald ist der Wochenmarkt vorbei, aber der Supermarkt bleibt immer offen.",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-20T12:11:02.481Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das die Lieferung, die Sie gestern bestellt haben?“ – „Nein, das ist unser neuer Kunden‑Service‑Roboter.“",
+      "qwen": "Der Kurier fragt: „Können Sie hier gegenzeichnen?“ Ich zeichne.\nEr winkt ab: „Nein, das war die Unterschrift für die Ware.\"",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
