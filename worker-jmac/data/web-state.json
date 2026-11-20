@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:11:12.629Z",
-      "gpt": "Ich öffne die Wetter‑App, weil es draußen regnet. Dort steht: „Sonnenschein in 5 Minuten – bitte öffnen Sie das Fenster.“",
-      "qwen": "Mama fragt, wie man das Handy entsperren muss. Ich sage: „Mit dem Finger.“ Sie drückt die Stirn dagegen.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-19T20:15:57.464Z",
       "gpt": "Im Café bestellt er ein veganes Omelett – die Kellnerin fragt verwirrt: „Wie soll das denn aussehen?“ Er lächelt: „Wie ein Ei‑weißes Blatt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Im Glas oder im Teller?“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Auspacken des Umzugskartons findet er ein altes, staubiges Fitnessgerät – und merkt, dass er beim Ausmisten die Hantelbank vergessen hat.",
       "qwen": "Ich habe die alte Waschmaschine verkauft. Der Käufer fragte: „Funktioniert sie?“ Ja, sie wäscht alles aus.",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-20T00:16:09.597Z",
+      "gpt": "Ich wollte beim Spaziergang die neue Fitness‑App starten, aber sie meldete nur: „GPS nicht gefunden – du bist doch schon im Sofa.“",
+      "qwen": "Ich suche die App „Stressfrei“ und finde nur „Stress“.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
