@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:51:09.205Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder schwach?“ Ich antworte: „Stark, damit ich das Restaurant später überstehe.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zum Mitnehmen?“",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-19T23:55:57.763Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich das WLAN nicht fand – die Durchsage kam: „Bitte halten Sie den Knopf nicht fest, er ist nur ein Snack.“",
       "qwen": "Auf der Insel wollten wir die einheimische Kuh bestaunen.\n„Die kommt gleich“, sagte der Fischer, „ist aber erst seit heute Abend da.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe die Kaffeetassen aus, finde nur leere Schachteln – mein Mitbewohner hat sie zum Umzug verkauft, weil er „weniger Gewicht“ wollte.",
       "qwen": "Wir wollten beim Ausmisten nur die alten T-Shirts wegschmeißen. Doch als wir sie auspackten, zogen wir alle sofort an.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-20T04:00:59.377Z",
+      "gpt": "Ich frage den Verkäufer nach einer Größe, er reicht mir das Kleingeld – anscheinend ist das hier ein „Preis‑Beratung“-Service.",
+      "qwen": "Der Verkäufer hält mir einen Koffer hin und fragt, ob ich ihn mit nach Hause nehmen will. „Nicht nötig“, sage ich, „ich trage ihn schon seit zwei Stunden.“",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
