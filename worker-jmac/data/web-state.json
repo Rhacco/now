@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:20:58.487Z",
-      "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst nach dem Telefonat mit dem Kundendienst?“ Der Lieferant: „Wir wollen erst sicherstellen, dass Sie es wirklich öffnen wollen.“",
-      "qwen": "Der Kurier fragt: „Ist jemand da?“ Ich rufe: „Ja, ich bin’s.“ Er legt auf.",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-19T20:26:00.094Z",
       "gpt": "In der Bibliothek fragt der Bibliothekar: „Möchten Sie das Buch leihen?“ – Der Besucher: „Nur, wenn es im Kino vorgeführt und im Museum ausgestellt wird.“",
       "qwen": "Im Museum zeigte der Guide das Gemälde: „Das ist ein stiller Moment.“\nKurz darauf flüsterte er dem Besucher zu: „Psst, schrei nicht, wir sind im Bibliotheksbereich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Schlüssels ausgefüllt?“ – Ich: „Nein, ich habe ihn gerade erst gefunden.“",
       "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir ein Formular: „Bitte beantragen Sie die Rückgabe schriftlich.“",
       "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
+    },
+    {
+      "timestamp": "2026-11-20T00:25:59.041Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen. Dann frage ich Siri, ob sie mir einen Regenschirm bestellen kann – sie sagt, ich soll lieber tanzen.",
+      "qwen": "Ich suche die Kamera-App. Sie sagt: „Dabei helfen wir dir nicht.“",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
