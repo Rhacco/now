@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:50:58.173Z",
-      "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil sein Licht flackert – ich sag: „Ich habe gerade den Stecker gezogen, du hast ja keinen Strom mehr.“",
-      "qwen": "Beim Umzug fragte ich den Nachbarn höflich: „Gibt’s hier harte Härchen?“ Er seufzte: „Nee, nur ein harter Kern.“",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-20T18:55:58.917Z",
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, das ist mein verlorenes Formular.“",
       "qwen": "Ich habe den Fundbericht ausgefüllt, doch jetzt fehlt mir das Formular, um den Verlust des Formulars zu melden.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das fehlende Feld war: „Wie oft haben Sie schon verloren?“ – Der Beamte grinste: „Täglich.“",
       "qwen": "Die Behörde verlangt für den Schlüsselverlust ein Formular, das es nur auf Französisch gibt.",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-20T22:56:09.832Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Rücksendeetikett für das falsche Geschenk?“ – Ich antworte: „Nein, das war das Original.“",
+      "qwen": "Der Paketbote zerrt die Kiste unter meine Tür. „Bitte abschreiben“, schreit er. Ich: „Wer?“ „Der, der das Paket verschickt hat.“",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
