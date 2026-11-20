@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:56:08.868Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kassierer schüttelt den Kopf: „Im Kino darf man nur flüstern.“",
-      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin meinte: „Der steht noch im Konjunktiv.“",
-      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
-    },
-    {
       "timestamp": "2026-11-20T14:00:59.862Z",
       "gpt": "Ich packe den Staubsauger ein, weil er immer alles mitnimmt – doch beim Umzug bleibt er zu Hause, weil er schon alles eingesaugt hat.",
       "qwen": "Ich will die alte Couch wegwerfen, aber mein Mann sagt: „Die haben wir doch für 2000 Euro gekauft.“ Da sage ich: „Deshalb darf sie jetzt auch endlich die 2000 Meter Treppe runter.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert es?“ Die Ärztin lächelt: „Nur bis zur Apotheke, dort ist das Rezept schon abgelaufen.“",
       "qwen": "Ich frage den Arzt: „Herr Doktor, wie lange muss ich noch warten?“\nEr antwortet: „Das hängt davon ab, wann Sie aus der Apotheke zurückkommen.“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-20T18:06:06.923Z",
+      "gpt": "Mama fragt: „Warum hast du das Handy in die Spülmaschine gesteckt?“ Ich: „Damit es endlich mal wieder klingelt.“",
+      "qwen": "Ich frage die Tochter, ob sie den Müll rausbringt. Sie sagt: „Ja, aber nur den digitalen.“",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
