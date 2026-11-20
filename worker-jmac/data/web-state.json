@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:31:00.776Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Der Arzt fragte: „Haben Sie Fieber?“\nIch: „Nein, lieber Herr Doktor, ich bin nur unterkühlt.“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-19T20:35:58.682Z",
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – sie zeigt „Sonnig“. Kurz darauf stolpert mein Handy über den nassen Boden.",
       "qwen": "Ich fragte Siri nach dem Wetter.\nSie antwortete nur: „Ich bin verwirrt, ich bin Siri.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das Waschmittel im Kühlschrank?“  \nTim: „Damit die Wäsche nicht friert.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch sage: „Ich war es nicht, aber ich hätte es gerne gehabt.“",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-20T00:35:59.566Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Praktikantin meldet sich und reicht einen leeren Ordner: „Ich habe ihn in 5 Minuten fertig.“",
+      "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nAlle starrten auf mich, bis ich sagte: „Ich?“",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
