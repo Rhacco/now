@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T01:06:05.897Z",
-      "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir einen Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
-      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, ich suche nur nach dem出口.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-20T01:11:03.699Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb „Verloren“ bei der Frage nach dem Gegenstand – jetzt warten sie auf die Rückgabe meines Stifts.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt meinen Namen. Das ist doch schon verloren.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Haben Sie Allergien?“ Der Patient nickt, weil er gerade in der Apotheke das neue „Pollen‑frei‑Spray“ gekauft hat.",
       "qwen": "Ich warte seit drei Stunden im Wartezimmer. Der Arzt ruft mich rein und sagt: „Haben Sie einen Termin?“",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-20T05:10:57.177Z",
+      "gpt": "Ich wollte im Museum ein leises Video schauen, ging aber in die Bibliothek und fand Popcorn zwischen den Sachbüchern – das war Kinogefühl.",
+      "qwen": "In der Bibliothek flüstert er: „Psst, hier schreit man nicht.“\nDer Wächter knurrt: „Doch. Hier ist Kino.“",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
