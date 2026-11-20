@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:00:57.983Z",
-      "gpt": "Ich packe den alten Toaster ein, weil ich ihn nie benutze, und stelle fest, dass er noch immer mehr Toast macht als ich.",
-      "qwen": "Ich habe die alte Waschmaschine zur Spende rausgestellt. Der Nachbar hat sie direkt abgeholt, mich aber gefragt, ob ich den Mülleimer auch gleich mitnehme.",
-      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
-    },
-    {
       "timestamp": "2026-11-19T22:06:12.487Z",
       "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim herabschauenden Hund bellt mein Nachbar und ich muss doch wieder rennen.",
       "qwen": "Ich übe seit Wochen Yoga. Heute habe ich endlich den perfekten Gleichgewichtshalt erreicht: Ich steh auf dem Kopf.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ Darauf meldet sich die Kaffeemaschine: „Ich habe ihn schon verdampft.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat die Deadline verpasst?“\nIch hob die Hand.",
       "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
+    },
+    {
+      "timestamp": "2026-11-20T02:06:02.453Z",
+      "gpt": "Der Nachbar klopft, weil sein Wasserhahn tropft, und fragt: „Kannst du mir leihen, bis die Reparatur kommt?“ – Ich reiche ihm nur einen Eimer.",
+      "qwen": "Der Nachbar klopft an und fragt, ob ich abends lauter sein darf, damit er besser schläft.",
+      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
     }
   ]
 }
