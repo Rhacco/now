@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:15:57.464Z",
-      "gpt": "Im Café bestellt er ein veganes Omelett – die Kellnerin fragt verwirrt: „Wie soll das denn aussehen?“ Er lächelt: „Wie ein Ei‑weißes Blatt.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Im Glas oder im Teller?“",
-      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
-    },
-    {
       "timestamp": "2026-11-19T20:20:58.487Z",
       "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst nach dem Telefonat mit dem Kundendienst?“ Der Lieferant: „Wir wollen erst sicherstellen, dass Sie es wirklich öffnen wollen.“",
       "qwen": "Der Kurier fragt: „Ist jemand da?“ Ich rufe: „Ja, ich bin’s.“ Er legt auf.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Spaziergang die neue Fitness‑App starten, aber sie meldete nur: „GPS nicht gefunden – du bist doch schon im Sofa.“",
       "qwen": "Ich suche die App „Stressfrei“ und finde nur „Stress“.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-20T00:20:57.592Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Schlüssels ausgefüllt?“ – Ich: „Nein, ich habe ihn gerade erst gefunden.“",
+      "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir ein Formular: „Bitte beantragen Sie die Rückgabe schriftlich.“",
+      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
     }
   ]
 }
