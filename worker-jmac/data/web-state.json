@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:55:58.483Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Film im Kino nickt: „Nur, wenn du das Popcorn nicht teilst.“",
-      "qwen": "Im Museum deute ich auf ein antikes Schwert. Die Begleiterin flüstert: „Da darf man nicht hin.“",
-      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
-    },
-    {
       "timestamp": "2026-11-20T12:00:58.540Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee mit Zucker?“ Darauf der Gast: „Nur, wenn er vorher im Restaurant gekocht wurde.“",
       "qwen": "Ich wollte nur Kaffee, aber der Barista hat aus Versehen den ganzen Herd angezündet. Jetzt esse ich meinen Aschen-Eiscreme-Sundae.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Zieh die Waschmaschine aus, das ist mein Lieblingsbuch!“ Ich staune – sie meint das Buch, das sie immer im Trockner trocknet.",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber weniger als den Spülmaschinentabellenautomat.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-20T16:00:59.579Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier laut lesen?“ Der Kassierer nickt und sagt: „Nur, wenn Sie Popcorn mitbringen.“",
+      "qwen": "Ich wollte in der Bibliothek stumm sein, im Kino laut, aber im Museum wurde mir von der Aufsichtsperson ein Kopfhörer umgehängt.",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
