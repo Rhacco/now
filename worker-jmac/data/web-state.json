@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:46:05.174Z",
-      "gpt": "Im Café bestellt ich einen Cappuccino, doch die Barista fragt: „Möchten Sie auch einen Schuss Espresso?“ – Ich antworte: „Nur, wenn er meine Steuererklärung macht.“",
-      "qwen": "Ich fragte im Café: „Gibt’s Kuchen?“ Barista: „Nur, wenn Sie ihn hier backen wollen.“",
-      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
-    },
-    {
       "timestamp": "2026-11-20T09:50:58.177Z",
       "gpt": "Im Supermarkt fragt ich nach frischen Kräutern, die Verkäuferin reicht mir einen Topf Petersilie. Auf dem Wochenmarkt schenkt mir die Floristin einen Kaktus – „für die Würze“.",
       "qwen": "Ich wollte auf dem Wochenmarkt frische Tomaten kaufen, doch der Stand war leer. Der Bauer grinste: „Die habe ich in den Supermarkt gebracht, weil sie dort billiger sind.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe meine Klamotten aus und finde ein altes Sandwich. Das war wohl mein letzter Snack vor dem Umzug.",
       "qwen": "Wir wollten vor dem Umzug den Keller entmüllen. Meine Frau hat nur die Kisten mit den Bücherregalen gerettet, den Rest hat sie als „Auflösungsverkauf“ bezeichnet.",
       "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
+    },
+    {
+      "timestamp": "2026-11-20T13:51:04.508Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde mich: „Kaffee.“ Er lächelt: „Endlich ein Vorschlag, der wirklich wach macht.“",
+      "qwen": "Die Chefin bittet mich, das Meeting auf zehn Minuten zu verkürzen. Ich sage: „Kein Problem, ich schneide mich einfach auf zwei.“",
+      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
     }
   ]
 }
