@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:51:09.497Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Ich: „Nein, ich habe nur meine Schlüssel gefunden.“",
-      "qwen": "Ich fand meine Brieftasche im Fundbüro. Die Auszahlung des Gewinns verweigerte man mir jedoch, da ich keine Verlustbescheinigung vorlegte.",
-      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
-    },
-    {
       "timestamp": "2026-11-19T20:56:06.651Z",
       "gpt": "Mama fragt: „Warum hast du den Kuchen nicht probiert?“ Ich: „Ich wollte nicht, dass er sich noch mehr ausbreitet.“",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt.\nSie schaute mich an und sagte: „Ja, aber nur an guten Tagen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er ein „leichtes“ Gericht – die Kellnerin bringt ihm einen Salat und sagt: „Hier ist das Licht, das Sie wollten.“",
       "qwen": "Ich frage im Café nach der Speisekarte, die Bedienung antwortet: „Die gibt es nur mit Schnitzel.“",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-20T00:55:57.859Z",
+      "gpt": "Im Meeting fragt der Chef nach neuen Ideen – ich ziehe mein Notizbuch hervor, öffne die leere Seite und schreibe: „Ideen? Nicht vergessen, Kaffee!“.",
+      "qwen": "„Bitte fassen Sie die Ergebnisse kurz zusammen.“\nDer Chef nickt zufrieden: „Erledigt. Sie haben gesprochen.“",
+      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
     }
   ]
 }
