@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T09:36:06.439Z",
-      "gpt": "Ich habe meiner Nachbarin das Klingeln verlernt, weil sie jedes Mal die Tür öffnet, wenn ich ihr „Guten Morgen“ rufe – sie dachte, ich bestelle Frühstück.",
-      "qwen": "Der Nachbar klopft an und fragt, ob ich den Rasen mähen lasse.\nIch zeige auf meine Zimmerpflanze: „Das ist mein ganzer Garten.“",
-      "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
-    },
-    {
       "timestamp": "2026-11-20T09:40:57.647Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar, weil ich das aktuelle noch nicht bestanden habe.“",
       "qwen": "Mein Chef lobt meine Weiterbildung in Führungskompetenz. Er meint, ich solle das Gleiche mit dem Team üben.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundendienst an, weil mein Paket seit Tagen nicht ankommt. Der Mitarbeiter fragt: „Haben Sie schon nachgesehen, ob es nicht bei Ihnen selbst liegt?“",
       "qwen": "Der Kurier fragt, ob ich das Paket für mich selbst unterschreibe. Ich zähle bis drei und sage: „Ja, ich bin’s.“",
       "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
+    },
+    {
+      "timestamp": "2026-11-20T13:41:04.237Z",
+      "gpt": "Ich wollte beim Ausmisten den alten Staubsauger spenden, doch er saugte noch immer meine letzten Ersparnisse auf.",
+      "qwen": "Wir räumen die Küche aus, als die Frau ruft: „Kannst du das alte Toaster-Modell mitbringen?“\n„Warum denn?“, frage ich.\n„Weil der neue noch nicht da ist.“",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
