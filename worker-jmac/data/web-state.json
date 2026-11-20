@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:01:05.036Z",
-      "gpt": "Im Supermarkt frage ich nach Bio‑Brot. Die Verkäuferin meint: „Das gibt’s nur vom Wochenmarkt – wir backen hier nur Luft.“",
-      "qwen": "Ich frage auf dem Wochenmarkt nach dem Preis für die Tomaten. Der Bauer antwortet: „Die sind heute schmutzig, also teurer.“",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-20T17:06:09.474Z",
       "gpt": "Ich habe beim Ausmisten den alten Toaster in die Kiste geworfen – heute steht er im neuen Wohnzimmer und brennt mir die Socke.",
       "qwen": "Ich räume den Kleiderschrank aus und finde eine Tüte mit 200 Euro Scheinen. Seitdem zahlt meine Frau nicht mehr mit Karte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Espresso, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will nur das Wasser, das ich schon bezahlt habe.“",
       "qwen": "Im Restaurant fragte ich nach dem „Café de Paris“. Der Kellner schob eine Karte vorbei: „Danke, hier wird nicht gezahlt.“",
       "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
+    },
+    {
+      "timestamp": "2026-11-20T21:06:03.666Z",
+      "gpt": "Ich klopfte an die Tür, um mich für das laute Radio zu entschuldigen – die Nachbarn luden mich ein, das nächste Konzert zu leiten.",
+      "qwen": "Ich beschwere mich lautstark über den Hund. Der Nachbar lacht nur und zeigt auf sein Schild: „Der Hund gehört mir, der Lärm gehört Ihnen.“",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
