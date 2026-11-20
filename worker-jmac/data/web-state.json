@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T23:26:07.381Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Sonne – doch mein Handy vibriert: „Du hast das Fenster offen.“",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe es vergessen, aufzuladen.",
-      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
-    },
-    {
       "timestamp": "2026-11-19T23:31:04.822Z",
       "gpt": "Ich mache Yoga im Fitnessstudio, weil der Trainer meinte, ich soll entspannen – jetzt liegt er neben mir, weil er beim herabschauenden Hund eingeschlafen ist.",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter, weil ich die Übungen nicht mehr kann.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundenservice, weil das Paket leer war – sie sagten, es sei ein „virtuelles“ Geschenk. Jetzt habe ich nur noch Datenverkehr.",
       "qwen": "„Sie haben das Paket gestern erhalten“, sagt der Support. Ich schaue betreten auf meine leere Hand. „Meine Hand ist leer.“",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-20T03:36:00.790Z",
+      "gpt": "Ich mache Yoga, um den Stress abzubauen – bis mein Hund versucht, die „herabschauende Katze“ zu fangen.",
+      "qwen": "Ich jogge seit Wochen jeden Tag. Heute habe ich gemerkt, dass mein Knie sich endlich entspannt hat.",
+      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
     }
   ]
 }
