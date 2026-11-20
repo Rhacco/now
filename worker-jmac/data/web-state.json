@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:31:06.305Z",
-      "gpt": "Beim Ausmisten wirft er den Staubsauger aus dem Fenster – weil er endlich mal wieder Luft zum Atmen braucht.",
-      "qwen": "Nach dem Umzug hat meine Frau alle alten Kalender aussortiert. Wir haben nur noch die für 1984.",
-      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
-    },
-    {
       "timestamp": "2026-11-20T19:36:05.785Z",
       "gpt": "Ich füllte das Formular für verlorene Schlüssel aus – unter \"Vermerk\" stand: \"Bitte bei Fundbüro abgeben, falls jemand den Schlüssel zurückgibt.\"",
       "qwen": "Ich habe meinen Schlüssel verloren. Das Fundbüro verlangt zwei ausgefüllte Formulare und einen Termin, um ihn mir zurückzugeben.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurück in die Stille bringen.“",
       "qwen": "Im Kino saß ich quer durchs Regal, im Museum starrte ich die Leinwand an.",
       "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
+    },
+    {
+      "timestamp": "2026-11-20T23:36:04.528Z",
+      "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand, der Schaffner zeigt nach hinten – dort liegt das Meer, weil der Zug im Hafen steht.",
+      "qwen": "Ich habe den Koffer gepackt. Als ich ihn hob, kippelte er, weil sich der Schmetterling meldete.",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
