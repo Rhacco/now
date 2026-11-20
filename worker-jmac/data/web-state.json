@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:11:07.413Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und sagt: „Nein, ich habe nur das Formular, das ich gerade verloren habe.“",
-      "qwen": "„Ich habe den Fund nicht gemeldet, weil das Formular 40 Seiten hat.“\n„Dann verlieren Sie ihn ja endgültig.“",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-19T21:15:59.493Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Ich klagte über Migräne. Der Arzt schickte mich zur Apotheke, wo ich eine Flasche Whiskey bekam.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb „Verloren“ bei der Frage nach dem Gegenstand – jetzt warten sie auf die Rückgabe meines Stifts.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, aber das Formular verlangt meinen Namen. Das ist doch schon verloren.",
       "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
+    },
+    {
+      "timestamp": "2026-11-20T01:15:56.625Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Ich antworte: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
+      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halten soll. Er antwortete: „Nein, die ist für deine Knie besser, wenn du sie locker lässt.“",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
