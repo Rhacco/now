@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:56:06.651Z",
-      "gpt": "Mama fragt: „Warum hast du den Kuchen nicht probiert?“ Ich: „Ich wollte nicht, dass er sich noch mehr ausbreitet.“",
-      "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt.\nSie schaute mich an und sagte: „Ja, aber nur an guten Tagen.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-19T21:01:08.895Z",
       "gpt": "Im Museum fragt ein Besucher: „Wo ist die Toilette?“ – Der Bibliothekar antwortet: „Stöbern Sie erst mal im Katalog, das ist ein Drama.“",
       "qwen": "In der Bibliothek flüstert man, im Kino klatscht man, im Museum zückt man die Kamera.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach neuen Ideen – ich ziehe mein Notizbuch hervor, öffne die leere Seite und schreibe: „Ideen? Nicht vergessen, Kaffee!“.",
       "qwen": "„Bitte fassen Sie die Ergebnisse kurz zusammen.“\nDer Chef nickt zufrieden: „Erledigt. Sie haben gesprochen.“",
       "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
+    },
+    {
+      "timestamp": "2026-11-20T01:01:09.777Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Warum ist das Fenster offen?“ Der Schaffner lächelt: „Damit das Meer nicht zu viel Platz einnimmt.“",
+      "qwen": "Auf dem Campingplatz kocht die Nachbarin stundenlang ein Kompott. „Schön, dass Sie so viel Zeit haben“, lobe ich. Sie seufzt: „Bin erst in Urlaub.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
