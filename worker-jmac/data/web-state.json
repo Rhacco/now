@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:40:57.538Z",
-      "gpt": "Ich frage im Elektrofachgeschäft nach einer energiesparenden Lampe, und der Verkäufer meint: „Natürlich, wir haben hier das Licht aus.“",
-      "qwen": "Die Verkäuferin fragt: „Können wir Ihnen helfen?“ Ich: „Ja, ich suche einen Weg aus dem Kreislauf.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-20T03:45:58.044Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage: „Bitte halten Sie die Verbindung nicht für selbstverständlich.“",
       "qwen": "Ich dränge mich zwischen Bahn, Bus, Taxi und Auto. Der Taxifahrer lacht: „Da musst du nicht reinkommen, du fährst doch selbst.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Entschuldigung, haben Sie das Rückgabeschein-Set für meine Kündigung?“",
       "qwen": "Der Mann am Telefon fragt: „Ist das Paket schon da?“ Ich schaue auf den Boden: Es ist da.",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-20T07:45:58.962Z",
+      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Tim: „Ich nicht, ich habe nur den Kühlschrank aus Versehen aufgemacht.“",
+      "qwen": "Die Oma fragt, ob ich sie „Mama“ nennen soll.\nIch sage: „Nein, du bist meine Großmutter.“\nSie antwortet: „Dann habe ich dich ja nie geboren.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
