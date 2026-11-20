@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:31:09.077Z",
-      "gpt": "Im Meeting fragt der Chef, wer das Projekt gestern fertig hatte – die Kaffeemaschine meldet sich und sagt: „Ich hab nur den Filter gewechselt.“",
-      "qwen": "Ich habe die Besprechung um drei Stunden verkürzt. Die Kollegen waren sehr dankbar.",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-20T17:36:05.084Z",
       "gpt": "Ich sortiere beim Umzug alte Tassen aus, finde eine mit „Vorsicht, heiß!“ und stelle sie sofort in den Gefrierschrank – jetzt ist sie wirklich kühl.",
       "qwen": "Wir haben den Einzug gefeiert, bis die Schwiegermutter fragte, wo ihre Porzellankollektion bliebe. Die Pointe: Der neue Vermieter wollte sie als Kaution.",
@@ -300,6 +294,12 @@
       "gpt": "Ich räume den Schrank aus und finde ein altes Faxgerät – das einzige Gerät, das ich noch nie aus dem Büro entfernt habe.",
       "qwen": "Ich wollte endlich die alte Kiste ausmisten. Drin lag nur noch das Etikett „Nicht öffnen – Frag nicht“.",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-20T21:35:59.146Z",
+      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Blatt Papier – „Das ist unser neues Diät‑Produkt, Kalorienfrei!“",
+      "qwen": "Ich fragte im Schuhhaus nach einem Schnürsenkel. Die Verkäuferin zwinkerte mir sulpelig zu: „Bei uns sind die Männer doch alle durch.",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
