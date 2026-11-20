@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T07:10:59.792Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt antwortet die Kundin: „Nur, wenn Sie das Gemüse einpacken.“",
-      "qwen": "Ich wollte auf dem Wochenmarkt billiger einkaufen, aber der Bauer hat mir neugierig beim Auspacken zugesehen.",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-20T07:16:06.060Z",
       "gpt": "Im Fundbüro fragt die Dame: „Haben Sie den Antrag auf Rückgabe ausgefüllt?“ Ich: „Nein, ich wollte nur das Formular zurückgeben.“",
       "qwen": "Ich lieferte den gefundenen Regenschirm ab. Der Schalterbeamte fragte: „Wo ist die polizeiliche Verlustanzeige?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du das Popcorn nicht mitnimmst.“",
       "qwen": "Nach dem Film fragte ich im Museum nach der Toilette. Die Dame zeigte auf den Ausleihtresen.",
       "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
+    },
+    {
+      "timestamp": "2026-11-20T11:21:04.158Z",
+      "gpt": "Ich steig in den Bus, der Fahrer fragt, ob ich ein Ticket habe. Ich zeige ihm meine Fahrkarte für das Taxi – er lacht.",
+      "qwen": "Ich stieg aus dem Taxi, um den Bus zu nehmen, der mich zur Bahn führt. Der Busfahrer winkte mich ab, weil ich das Auto blockierte.",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
