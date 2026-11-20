@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:31:07.546Z",
-      "gpt": "Ich rief den Kundenservice, weil das Paket leer war – sie sagten, es sei ein „virtuelles“ Geschenk. Jetzt habe ich nur noch Datenverkehr.",
-      "qwen": "„Sie haben das Paket gestern erhalten“, sagt der Support. Ich schaue betreten auf meine leere Hand. „Meine Hand ist leer.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-20T03:36:00.790Z",
       "gpt": "Ich mache Yoga, um den Stress abzubauen – bis mein Hund versucht, die „herabschauende Katze“ zu fangen.",
       "qwen": "Ich jogge seit Wochen jeden Tag. Heute habe ich gemerkt, dass mein Knie sich endlich entspannt hat.",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus fragt der Fahrer: „Ausweis bitte!“ – Ich zeige meinen Fahrschein, er nickt: „Entschuldigung, ich dachte, Sie sind der Kontrolleur.“",
       "qwen": "Ich warte stundenlang auf den Bus, der endlich kommt und fährt sofort wieder los.",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-20T07:35:59.641Z",
+      "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm mitnehmen soll, und sie zeigt „Sie haben 99% Chance, den Akku zu verlieren.“",
+      "qwen": "Ich tippe „Pizza“ in die Suchleiste. Das Handy antwortet: „Dein Kalorienlimit ist erreicht.“",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
