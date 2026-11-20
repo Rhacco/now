@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:31:11.773Z",
-      "gpt": "Mama fragt: „Warum hast du das Waschmittel im Kühlschrank?“  \nTim: „Damit die Wäsche nicht friert.“",
-      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch sage: „Ich war es nicht, aber ich hätte es gerne gehabt.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-20T00:35:59.566Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Praktikantin meldet sich und reicht einen leeren Ordner: „Ich habe ihn in 5 Minuten fertig.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nAlle starrten auf mich, bis ich sagte: „Ich?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verheddert sich mein Hund im Seil – er macht jetzt den „Knoten“.",
       "qwen": "Damit die Entspannung wirkt, zähle ich bis zehn. Einer, zwei, drei – der erste Beineinsatz.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-20T04:36:05.208Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich endlich die PowerPoint‑Skills lerne.“",
+      "qwen": "Der Personaler fragt, was ich neben der Arbeit tue. Ich sage: „Ich lerne gerade, nein zu sagen.“",
+      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
     }
   ]
 }
