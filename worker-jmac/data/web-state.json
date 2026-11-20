@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T00:41:04.284Z",
-      "gpt": "Ich rufe den Kundendienst, weil mein Paket immer wieder im Aufzug stecken bleibt – der Bote meint, es wolle nur „nach oben“ kommen.",
-      "qwen": "Der Paketbote schlägt die Tür ein, weil der Kunde nicht öffnet. „Ihre Ware ist da“, sagt er, während er auf der Couch sitzt.",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-20T00:46:07.428Z",
       "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ – Der Kellner lächelt: „Nein, das ist unser Brot‑nach‑der‑Wurst‑Pause.“",
       "qwen": "Ich bestellte im Café nur einen Kaffee, aber der Barista fragte doch, ob ich das Brot dazu noch frisch backen lassen will.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, um zu sehen, ob ich den Regenschirm mitnehmen soll – sie zeigt „Sonnig“, doch draußen regnet es wie aus Kübeln.",
       "qwen": "Ich suchte frustriert nach meinem Handy im schwarzen Pullover. Die Kamera-App zeigte nur: „Kein Signal.“",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-20T04:45:58.354Z",
+      "gpt": "Ich wollte beim Supermarkt Rabatt auf Bio‑Obst, aber der Kassierer schenkte mir nur ein Lächeln – weil ich den Wochenmarkt in der Handtasche hatte.",
+      "qwen": "Ich kaufe auf dem Wochenmarkt, weil die Tomaten dort so schön rot sind. Nach dem Transport im Kofferraum sind sie leider nur noch so.",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
