@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T11:50:56.850Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie mir das Gemüse einpacken.“",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Kartons?“ Ich nicke. Sie lacht: „Nein, Obst in Papstkartons?“",
-      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
-    },
-    {
       "timestamp": "2026-11-20T11:55:58.483Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise flüstern?“ Der Film im Kino nickt: „Nur, wenn du das Popcorn nicht teilst.“",
       "qwen": "Im Museum deute ich auf ein antikes Schwert. Die Begleiterin flüstert: „Da darf man nicht hin.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach links, sehe den Schaffner mit Krawatte, der sich über das Sicherheitsgurt‑Gesetz wundert.",
       "qwen": "Im Taxi wollte ich den Gurt anlegen. Der Fahrer lachte: „Sparsam, haben wir hier keine Zeit.\"",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-20T15:56:08.611Z",
+      "gpt": "Mama ruft: „Zieh die Waschmaschine aus, das ist mein Lieblingsbuch!“ Ich staune – sie meint das Buch, das sie immer im Trockner trocknet.",
+      "qwen": "Ich habe meine Frau gefragt, ob sie mich liebt. Sie sagte: „Ja, aber weniger als den Spülmaschinentabellenautomat.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
