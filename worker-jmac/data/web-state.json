@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:21:09.598Z",
-      "gpt": "Mama fragt: „Warum hast du die Spülmaschine ausgeräumt?“  \nIch: „Damit du endlich wieder was zu tun hast.“",
-      "qwen": "Mein Vater fragt: „Warum hast du die Tür nicht zugezogen?“ „Weil du immer so laut schreist, wenn ich es tue.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-20T17:25:59.367Z",
       "gpt": "Ich wollte im Museum ein Buch ausleihen, aber die Bibliothekarin schickte mich ins Kino – dort war das einzige freie Plakat „Stummfilm“.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte nur stur auf die Wand.",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, weil er das laute Staubsaugen hört – und fragt, ob ich endlich das WLAN-Passwort teilen will.",
       "qwen": "Mein Nachbar hämmert jeden Tag um sieben.\nIch schlage zurück, damit er merkt, dass ich wach bin.",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-20T21:25:58.461Z",
+      "gpt": "Ich füllte das Fundbüro‑Formular aus, weil ich meinen verlorenen Schlüssel gefunden hatte – dann stand dort „Verlust melden“.",
+      "qwen": "Ich fragte im Fundbüro: „Gibt es Formulare für verlorene Schlüssel?“\n„Nein, die Schlüssel sind verloren.“",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
