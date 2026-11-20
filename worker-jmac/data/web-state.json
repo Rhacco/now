@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T14:36:05.094Z",
-      "gpt": "Beim Familienabend fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Bruder meint: „Keine Sorge, ich habe sie nur probiert.“",
-      "qwen": "Mama fragt: „Warum schmeckt das Ei nicht mehr nach Ei?“ Ich: „Weil du seit Jahren nur noch Tomaten sauer isst.“",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-20T14:41:04.831Z",
       "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Arzthelferin meint: „Das ist das neue Selbstzahler‑Modell – Sie zahlen, wenn Sie gehen.“",
       "qwen": "Ich fragte den Apotheker, ob mein Rezept fertig ist. Er grinste: „Quatsch, dafür war ich doch nur bei der Kasse.\"",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich frage, ob das Geschenk schon da ist – er meint, das sei das „Versand‑Feedback“, das ich gerade geschrieben habe.",
       "qwen": "Der Kurier fragt: „Ist das Ihr Paket?“\nIch lache und sage: „Nein, das ist meine Ex-Frau, die sich verkleidet hat.“",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-20T18:46:03.915Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, aber jedes Mal, wenn ich die „Baum“-Pose halte, ruft mein Hund: „Endlich ein Stock!“",
+      "qwen": "Ich leg mich zur Meditation auf die Yogamatte. Der Hund beißt sie an.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
