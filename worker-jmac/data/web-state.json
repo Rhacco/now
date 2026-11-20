@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:01:04.460Z",
-      "gpt": "Ich frage den Kundenberater: „Welches Produkt passt zu mir?“ Er meint: „Unsere Rückgabebedingungen.“",
-      "qwen": "Ich fragte den Verkäufer nach dem Preis für den Laptop. Er strahlte: „Nur neunhundert Euro, wenn Sie mir Ihre Seele dafür versprechen.\"",
-      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
-    },
-    {
       "timestamp": "2026-11-20T03:05:57.086Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur mein Portemonnaie verloren.“",
       "qwen": "Im Fundbüro: „Ist das Ihr verlorenes Ohr?“\n„Nein, das ist mein neues Formular.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga im Büro, um Stress abzubauen – und merke erst, wenn mein Chef fragt, warum ich gerade den „Herabschauenden Hund“ an der Kaffeemaschine mache.",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf der Matte ausgeruht. Jetzt bin ich der, der streckt.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-20T07:06:06.681Z",
+      "gpt": "Im Wartezimmer fragt die Patientin nach dem Rezept, die Ärztin meint: „Das ist doch Ihre Apotheke, nicht unser WLAN.“",
+      "qwen": "Ich bat den Arzt, mich in die Apotheke zu schicken. Er meinte nur: „Fahr doch selbst hin.“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
