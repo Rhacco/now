@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:01:11.986Z",
-      "gpt": "Ich klopfe beim Nachbarn an, um mir die laute Waschmaschine zu leihen – er schenkt mir stattdessen einen Staubsauger, weil er gerade das Zimmer streicht.",
-      "qwen": "Mein Nachbar rasiert sich täglich um drei Uhr früh.\nIch wette, er übt für die Rolle als Geisterjäger.",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-19T20:06:05.195Z",
       "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin zeigt auf die Regale. Auf dem Wochenmarkt verkauft der Bauer dieselben Eier – mit „Frischegarantie“ drauf.",
       "qwen": "Ich kaufte auf dem Wochenmarkt frische Erdbeeren, die im Supermarkt leider schon vergammelt waren.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze im Himmel erreichen?“ – Der Anfänger streckt die Hände, aber nur die Katze im Baum schnurrt.",
       "qwen": "Ich wollte beim Yoga entspannen, aber mein Kater hat sich auf meine Zehen gelegt. Jetzt übe ich nur noch Standhaftigkeit.",
       "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
+    },
+    {
+      "timestamp": "2026-11-20T00:05:58.535Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich die Stellenanzeige verstehe.“",
+      "qwen": "Ich fragte im Vorstellungsgespräch, ob ich eine Weiterbildung braucht. „Nein“, sagte der Chef, „wir brauchen nur Ihre Kündigung.“",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
