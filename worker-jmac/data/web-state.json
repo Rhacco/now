@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T03:16:07.667Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm. „Für den Fall, dass Ihnen das Outfit zu heiß wird.“",
-      "qwen": "Der Angestellte empfiehlt mir lautstark die teurere Waschmaschine.\n„Die ist leiser“, flüstert er, „sonst hört man die Mängel.“",
-      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
-    },
-    {
       "timestamp": "2026-11-20T03:21:03.883Z",
       "gpt": "Im Café bestellt sie einen „Flachmann“ – der Kellner bringt ihr ein leeres Glas. Sie sagt: „Ich wollte nur einen kleinen Schluck.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Möchten Sie dazu einen Teller?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Dame: „Haben Sie den Antrag auf Rückgabe ausgefüllt?“ Ich: „Nein, ich wollte nur das Formular zurückgeben.“",
       "qwen": "Ich lieferte den gefundenen Regenschirm ab. Der Schalterbeamte fragte: „Wo ist die polizeiliche Verlustanzeige?“",
       "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
+    },
+    {
+      "timestamp": "2026-11-20T07:20:57.313Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie einen Kassenbon?“ Der Kunde lächelt: „Nur, wenn er vom Wochenmarkt kommt.“",
+      "qwen": "Auf dem Wochenmarkt fragt der Bauer: „Geht’s?“ Ich antworte: „Gut, aber mein Tütchen ist schon voll.“",
+      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
     }
   ]
 }
