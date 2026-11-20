@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:50:57.465Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einem leisen Staubsauger, der Verkäufer lächelt und reicht mir einen Besen.",
-      "qwen": "Ich fragte den Verkäufer, ob der Wollpullover kratzt. Er sah mich an und fragte: „Krätze haben Sie nicht?“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-20T19:56:08.204Z",
       "gpt": "Ich habe meinem Nachbarn den Rasenmäher geliehen – er kam zurück mit einer frisch geschnittenen Hecke. Ich dachte, er hätte den Rasen gemäht.",
       "qwen": "Der Nachbar poliert sein Auto. Ich frage, ob er endlich Ruhe gibt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Joggen meine Schrittzahl tracken, doch die App meldete plötzlich: „Du hast das Ziel erreicht – du hast das Haus verlassen.“",
       "qwen": "Ich habe meine Navigations-App gefragt, wie man am schnellsten nach Hause kommt. Sie schlug vor, den Fluss in den Flüssen vor den Dörfern zu nehmen.",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-20T23:56:04.684Z",
+      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht drängeln, wir kommen erst in 5 Minuten, wenn der Fahrer endlich ankommt.“",
+      "qwen": "Ich dränge mich in den vollen Bus, um schneller zu sein, und der Fahrer sagt: „Bitte nicht betreten!“",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
