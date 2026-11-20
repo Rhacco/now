@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:40:56.490Z",
-      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
-      "qwen": "Mein Vater fragte: „Wie geht’s dir?“ Ich sagte: „Gut, Papa.“ Er antwortete: „Dann koch selbst.“",
-      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
-    },
-    {
       "timestamp": "2026-11-19T20:46:08.232Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Kater das Bein geklaut – jetzt macht er den heraufschauenden Kater.",
       "qwen": "Der Trainer schrie: „Mehr Muskeln, weniger Schmerzmittel!“\nIch fragte: „Haben Sie das gerade ernst gemeint?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe den Kundendienst, weil mein Paket immer wieder im Aufzug stecken bleibt – der Bote meint, es wolle nur „nach oben“ kommen.",
       "qwen": "Der Paketbote schlägt die Tür ein, weil der Kunde nicht öffnet. „Ihre Ware ist da“, sagt er, während er auf der Couch sitzt.",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-20T00:46:07.428Z",
+      "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ – Der Kellner lächelt: „Nein, das ist unser Brot‑nach‑der‑Wurst‑Pause.“",
+      "qwen": "Ich bestellte im Café nur einen Kaffee, aber der Barista fragte doch, ob ich das Brot dazu noch frisch backen lassen will.",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
