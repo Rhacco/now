@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:16:05.275Z",
-      "gpt": "Nach dem Yoga‑Kurs sagt sie: „Ich bin jetzt so entspannt, dass ich sogar meine Lieblingsübung – das Nichtstun – perfektioniert habe.“",
-      "qwen": "Kumpel, ich zieh dir die Daumen, wenn du heute Marathon läufst.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-20T02:21:06.943Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe das Dokument fertig – in 2020.“",
       "qwen": "Im Meeting fragte ich nach dem Status. „Alles im grünen Bereich“, nickte der Chef. „Dann können wir ja weitermachen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich komme zum Vorstellungsgespräch, sag: „Ich habe meine Soft Skills auf dem Sofa weiterentwickelt.“ Der Personaler nickt: „Perfekt, wir suchen jemanden im Home‑Office.“",
       "qwen": "Die Personalchefin fragt nach meinen Fortbildungswünschen. Ich sage: „Einen Crashkurs in Höflichkeit.“",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-20T06:21:05.309Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt bereits abgeschlossen – im Traum, während ich den Kaffee nachgefüllt habe.“",
+      "qwen": "In der Besprechung fragte der Chef: „Was ist das Problem?“\nIch antwortete: „Sie sind es.“",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
