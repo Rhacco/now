@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:16:05.717Z",
-      "gpt": "Im Zug zur Wanderung fragt der Begleiter: „Haben wir genug Proviant?“ Ich zeige auf das leere Glas: „Ich habe nur meine schlechte Laune eingepackt.“",
-      "qwen": "Am Strand: „Hast du den Fisch gesehen?“\n„Nein, aber sein Schatten war riesig.“",
-      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
-    },
-    {
       "timestamp": "2026-11-20T19:21:12.636Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum für Weiterbildung – ich habe noch nie so viel gelernt.“",
       "qwen": "Ich gefragt, ob ich mich weiterbilden würde. „Ja“, sage ich, „im Homeoffice.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer Größe, sie misst meine Hand, lächelt und sagt: „Dann passen Sie jetzt perfekt zu unserem Rückgaberecht.“",
       "qwen": "Ich fragte im Supermarkt nach dem Weg zur Kasse. „Gegenüber links“, meinte der Sohn und zeigte auf den toten Vater im Regal.",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-20T23:20:58.548Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund schnarcht mein Nachbar laut – anscheinend ist Entspannung ansteckend.",
+      "qwen": "Beim Yoga-Unterricht fallen mir die Beine vom Stuhl. Der Trainer sagt: „Gut, das ist aktive Entspannung.“",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
