@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T13:01:02.044Z",
-      "gpt": "Ich öffne die Wetter-App, sie zeigt Sonne – ich ziehe die Jacke an, weil sie „kalt“ anzeigt. Das Handy hat wohl den Thermostat übernommen.",
-      "qwen": "Ich habe meine Schritte-App geupdatet. Jetzt zählt sie auch meine Gedanken.",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-20T13:05:58.314Z",
       "gpt": "Ich rufe den Kundendienst, weil mein Paket seit drei Tagen im Haus steht – dann erfahre ich, dass es mein Nachbar bereits seit einer Woche auspackt.",
       "qwen": "Paket fehlt, sagt der Lieferant. Ich zeig den Karton im Flur. „Das ist doch nur die Verpackung!“, entgegnet er.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten den alten Toaster in die Kiste geworfen – heute steht er im neuen Wohnzimmer und brennt mir die Socke.",
       "qwen": "Ich räume den Kleiderschrank aus und finde eine Tüte mit 200 Euro Scheinen. Seitdem zahlt meine Frau nicht mehr mit Karte.",
       "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
+    },
+    {
+      "timestamp": "2026-11-20T17:11:01.896Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeiten – deshalb gehe ich gleich zur Apotheke.“",
+      "qwen": "Ich erzähle dem Arzt von meinem Husten. Er sagt: „Nehmen Sie die letzte Pille, die ist schon verfallen.“",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
