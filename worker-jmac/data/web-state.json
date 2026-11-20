@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T08:25:57.424Z",
-      "gpt": "Ich wollte beim Wochenmarkt frische Eier kaufen, doch die Verkäuferin meinte: „Die gibt’s nur im Supermarkt, dort sind sie schon ausgebrütet.“",
-      "qwen": "Vom Wochenmarkt kommt die Karotte, vom Supermarkt die Lüge.",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-20T08:31:08.877Z",
       "gpt": "Ich habe meinem Nachbarn einen Kuchen gebracht, weil er ständig über den Lärm meiner Waschmaschine klagt – jetzt hört er nur noch das Klirren des Geschirrs.",
       "qwen": "Ich fragte den Nachbarn, ob ich sein Auto parken darf. Er sagte: „Ja, aber bitte nicht neben meinem Rasenmäher.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe am Wochenmarkt frische Tomaten, doch an der Kasse fragt die Verkäuferin: „Möchten Sie die Tomaten auch gleich auf dem Weg nach Hause pflücken?“",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Tüten?“, und ich antworte stolz: „Nein, ich bin vegetarisch.“",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-20T12:36:06.125Z",
+      "gpt": "Ich jogge jeden Morgen, doch nach dem ersten Kilometer halte ich an, weil mein Handy sagt: „Aufstehen, du hast schon 10 000 Schritte erreicht.“",
+      "qwen": "Ich plane eine entspannende Yoga-Einheit. Dann fliegt der Fliegenfänger durchs Zimmer und ich bin wieder fit.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
