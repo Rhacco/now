@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T18:30:59.235Z",
-      "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich sag: „Nein, ich will die Kalorien nicht verdünnen.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn gleich kochen?“",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-20T18:35:57.341Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schau nach rechts – der Fahrer des nebenstehenden Taxis nickt verwirrt.",
       "qwen": "Ich heule im Bus, weil das Taxi so pünktlich war.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gleis für den Urlaub?“ Der Schaffner lächelt: „Nur, wenn Sie mit dem Koffer fahren.“",
       "qwen": "Am Strand sitzen wir reglos da. Der Kellner fragt: „Ist alles in Ordnung?“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-20T22:36:06.764Z",
+      "gpt": "Ich frage im Vorstellungsgespräch, ob es Weiterbildungen gibt – der Chef nickt, reicht mir die Stellenanzeige und sagt: „Wir bilden Sie hier selbst ein.“",
+      "qwen": "Ich fragte nach einem Weiterbildungsbudget. Der Chef nickte nur und drückte mir den ganzen Aktenturm in die Hände.",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
