@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T20:35:58.682Z",
-      "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – sie zeigt „Sonnig“. Kurz darauf stolpert mein Handy über den nassen Boden.",
-      "qwen": "Ich fragte Siri nach dem Wetter.\nSie antwortete nur: „Ich bin verwirrt, ich bin Siri.“",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-19T20:40:56.490Z",
       "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich wollte nur das Geräusch hören.“",
       "qwen": "Mein Vater fragte: „Wie geht’s dir?“ Ich sagte: „Gut, Papa.“ Er antwortete: „Dann koch selbst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Praktikantin meldet sich und reicht einen leeren Ordner: „Ich habe ihn in 5 Minuten fertig.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nAlle starrten auf mich, bis ich sagte: „Ich?“",
       "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
+    },
+    {
+      "timestamp": "2026-11-20T00:41:04.284Z",
+      "gpt": "Ich rufe den Kundendienst, weil mein Paket immer wieder im Aufzug stecken bleibt – der Bote meint, es wolle nur „nach oben“ kommen.",
+      "qwen": "Der Paketbote schlägt die Tür ein, weil der Kunde nicht öffnet. „Ihre Ware ist da“, sagt er, während er auf der Couch sitzt.",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
