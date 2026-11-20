@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T02:26:10.575Z",
-      "gpt": "Im Wartezimmer fragt der Patient: „Wie lange dauert das Rezept?“ Die Ärztin meint: „Nur, bis Sie die Apotheke verlassen.“",
-      "qwen": "Im Wartezimmer fragte ich: „Wie lange noch?“ Ein junger Mann antwortete: „Zwei Stunden.“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-20T02:31:07.901Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ – Ich antworte: „Beides, ich bin hier zum Schwimmen.“",
       "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Die Barista sah mich fragend an und sagte: „Dann ist es einfach kein Kaffee.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus sagt die Durchsage: „Bitte halten Sie Ihre Hände vom Handy fern.“ Ich halte mein Handy und frage: „Wie soll ich dann den Fahrplan lesen?“",
       "qwen": "„Können Sie mich mitnehmen?“ fragte ich den Fahrer. „Ich fahre nur nach Hamburg“, sagte er, „aber ich habe Platz für drei Leichen.“",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-20T06:31:06.220Z",
+      "gpt": "Im Meeting fragt der Chef, wer das Projekt leiten will – ich melde mich und sage: „Ich? Dann darf ich ja auch das Essen bestellen.“",
+      "qwen": "Der Chef fragt im Meeting: „Wo ist das Problem?“\nAlle starrt auf die Decke, denn er hatte den Lärmpegel auf „Null“ gestellt.",
+      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
     }
   ]
 }
