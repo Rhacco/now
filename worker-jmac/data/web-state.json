@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T22:41:09.175Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Mann meint: „Nur, wenn ich das gefundene Portemonnaie zurückhaben will.“",
-      "qwen": "Ich gab der Mitarbeiterin im Fundbüro eine Kopie meines Personalausweises. Sie gab mir den gefundenen Ausweis zurück.",
-      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
-    },
-    {
       "timestamp": "2026-11-19T22:46:11.154Z",
       "gpt": "Ich war im Café, bestellte einen Cappuccino und fragte nach Zucker. Die Barista lächelte: „Wir servieren nur Espresso – unser Kaffee ist schon süß genug.“",
       "qwen": "Im Restaurant: „Ist das hier echtes Wildschwein?“ – „Nein, das ist unser Koch.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich antworte: „Ich habe das Projekt erfolgreich abgeschlossen – ich habe es in meinem Kalender gelöscht.“",
       "qwen": "Mein Chef fragte, ob ich die Präsentation fertig habe. Ich sagte ja, und reichte ihm mein Handy mit laufendem Spiel.",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-20T02:45:57.387Z",
+      "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand; die Durchsage: „Bitte bleiben Sie sitzen, wir fahren jetzt ins Freibad.“",
+      "qwen": "Ich fragte das Kind, was es sich im Urlaub wünscht. „Nichts“, sagte es. „Nur dass ihr existiert, ohne aufzutauchen.“",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
