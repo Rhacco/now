@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T06:26:03.709Z",
-      "gpt": "Im Bus sagt die Durchsage: „Bitte halten Sie Ihre Hände vom Handy fern.“ Ich halte mein Handy und frage: „Wie soll ich dann den Fahrplan lesen?“",
-      "qwen": "„Können Sie mich mitnehmen?“ fragte ich den Fahrer. „Ich fahre nur nach Hamburg“, sagte er, „aber ich habe Platz für drei Leichen.“",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-20T06:31:06.220Z",
       "gpt": "Im Meeting fragt der Chef, wer das Projekt leiten will – ich melde mich und sage: „Ich? Dann darf ich ja auch das Essen bestellen.“",
       "qwen": "Der Chef fragt im Meeting: „Wo ist das Problem?“\nAlle starrt auf die Decke, denn er hatte den Lärmpegel auf „Null“ gestellt.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und er fragt: „Haben Sie das Rückgabeschild schon unterschrieben?“ Ich antworte: „Nur, wenn es ein Geschenk ist.“",
       "qwen": "Der Paketbote fragt: „Haben Sie das Paket erhalten?“ Ich antworte: „Nein, nur die Unschuld des Überbringers.“",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-20T10:36:04.982Z",
+      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot – sie reicht mir ein Blatt Papier. \"Für die Diät\", sagt sie lächelnd.",
+      "qwen": "Im Elektronikmarkt fragt der Kunde: „Haben Sie das W-Lan hier?“ Der Verkäufer nickt und sagt: „Ja, das ist das W-Lan.“",
+      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
     }
   ]
 }
