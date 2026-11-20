@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:25:58.108Z",
-      "gpt": "Ich rief den Kundendienst, weil das Paket leer war – er meinte, das sei die neue „Zero‑Weight“-Lieferoption. Ich fragte nach einem Rückerstattungsgutschein, er schickte mir ein leeres Kuvert.",
-      "qwen": "Paketbote: „Unterschreiben Sie hier.“ Ich: „Ist das ein Vertrag?“ Er: „Nein, aber ohne Unterschrift darf ich nicht gehn.“",
-      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
-    },
-    {
       "timestamp": "2026-11-19T21:31:08.365Z",
       "gpt": "Ich klopfe beim Nachbarn an, um den lauten Fernseher zu melden – er öffnet die Tür, wirft die Fernbedienung zurück und sagt: „Ich dachte, du willst leihen.“",
       "qwen": "Der obere Nachbar tippt nervös an der Zimmerdecke. Ich stehle mich an die Küche und scrolle lautstark durch meine Social-Media-Feeds.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt der Kunde nach glutenfreiem Brot, und die Verkäuferin reicht ihm ein leeres Regal. „Wir haben nur noch Luft zum Aufgehen.“",
       "qwen": "Ich fragte nach einer Socke in Größe 47. „Die gibt’s nicht,“ sagte er. „Nur Sockenpaare, Mann.“",
       "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
+    },
+    {
+      "timestamp": "2026-11-20T01:31:00.910Z",
+      "gpt": "Im Zug fragt die Durchsage, ob jemand sein Handy vergessen hat – ich melde mich, weil ich im Auto sitze und gerade laut tippe.",
+      "qwen": "Ich steig aus dem Taxi, als der Fahrer fragt: „Soll ich Sie noch irgendwo absetzen?“",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
