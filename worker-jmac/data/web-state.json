@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-19T21:21:01.097Z",
-      "gpt": "Ich gehe zum Wochenmarkt, um frische Eier zu kaufen – der Verkäufer fragt, ob ich sie lieber vom Supermarkt habe, weil dort die Hühner schneller laufen.",
-      "qwen": "Beim Wochenmarkt: „Das ist Bio, da steckt keine Chemie drin!“\nBeim Discounter: „Das ist Bio, da ist extra viel Chemie drin, aber pflanzlich.“",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-19T21:25:58.108Z",
       "gpt": "Ich rief den Kundendienst, weil das Paket leer war – er meinte, das sei die neue „Zero‑Weight“-Lieferoption. Ich fragte nach einem Rückerstattungsgutschein, er schickte mir ein leeres Kuvert.",
       "qwen": "Paketbote: „Unterschreiben Sie hier.“ Ich: „Ist das ein Vertrag?“ Er: „Nein, aber ohne Unterschrift darf ich nicht gehn.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um den Stress abzubauen, doch beim Versuch, die „Baum“-Pose zu halten, fällt mir mein ganzer Kaktus aus dem Fenster.",
       "qwen": "Nach einer Stunde Stretching bin ich froh, dass meine Katze auf den Couchtisch klettert. Endlich hat sie genug Platz zum Krallen wetzen.",
       "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
+    },
+    {
+      "timestamp": "2026-11-20T01:26:09.499Z",
+      "gpt": "Im Supermarkt fragt der Kunde nach glutenfreiem Brot, und die Verkäuferin reicht ihm ein leeres Regal. „Wir haben nur noch Luft zum Aufgehen.“",
+      "qwen": "Ich fragte nach einer Socke in Größe 47. „Die gibt’s nicht,“ sagte er. „Nur Sockenpaare, Mann.“",
+      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
     }
   ]
 }
