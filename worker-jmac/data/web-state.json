@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T15:40:58.467Z",
-      "gpt": "Im Yogakurs fragt die Lehrerin: „Wer kann jetzt den herabschauenden Hund?“ – Mein Nachbar meldet sich, weil er gerade das Fernsehprogramm umschaltet.",
-      "qwen": "Ich habe Yoga gemacht, bis mir der Rücken einschnürte. Jetzt bin ich entspannt, aber ich kann mich nicht mehr bücken.",
-      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
-    },
-    {
       "timestamp": "2026-11-20T15:46:05.868Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Kurs für Geduld, weil ich jetzt schon auf Ihre Antwort warte.“",
       "qwen": "Ich habe mich auf eine Führungsposition beworben. Der Chef fragte nur: „Können Sie Excel?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe beim Ausmisten die Kaffeetasse ein, weil ich beim Umzug keinen Stress haben will – dann fällt mir ein, ich trinke jetzt nur noch Tee.",
       "qwen": "Mama stapelt die Kisten für den Umzug. „Alles raus, was du nicht mehr brauchst!“, ruft sie. Ich lege die letzten Klamotten zurück: „Brauche ich für die Nachbarn.“",
       "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
+    },
+    {
+      "timestamp": "2026-11-20T19:50:57.465Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einem leisen Staubsauger, der Verkäufer lächelt und reicht mir einen Besen.",
+      "qwen": "Ich fragte den Verkäufer, ob der Wollpullover kratzt. Er sah mich an und fragte: „Krätze haben Sie nicht?“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
