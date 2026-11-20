@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T17:36:05.084Z",
-      "gpt": "Ich sortiere beim Umzug alte Tassen aus, finde eine mit „Vorsicht, heiß!“ und stelle sie sofort in den Gefrierschrank – jetzt ist sie wirklich kühl.",
-      "qwen": "Wir haben den Einzug gefeiert, bis die Schwiegermutter fragte, wo ihre Porzellankollektion bliebe. Die Pointe: Der neue Vermieter wollte sie als Kaution.",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-20T17:41:04.818Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Abteilung für Sonnencreme?“ Der Schaffner lächelt: „Nein, das ist die Toilette.“",
       "qwen": "Gefühlt ist der Urlaub schon vorbei, bevor wir die Koffer gepackt haben.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Blatt Papier – „Das ist unser neues Diät‑Produkt, Kalorienfrei!“",
       "qwen": "Ich fragte im Schuhhaus nach einem Schnürsenkel. Die Verkäuferin zwinkerte mir sulpelig zu: „Bei uns sind die Männer doch alle durch.",
       "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
+    },
+    {
+      "timestamp": "2026-11-20T21:40:57.454Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einem günstigen Lautsprecher, der gut klingt – die Verkäuferin reicht mir ein Schild „Bitte leise sein“.",
+      "qwen": "Im Baumarkt beraten mich drei Leute, ob die Sockelleiste passt. Dann sagt der Verkäufer: „Die 99 Euro sind übrigens nicht im Preis enthalten.“",
+      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
     }
   ]
 }
