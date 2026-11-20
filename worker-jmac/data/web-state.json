@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T04:25:57.461Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich den Film ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie ihn leise anschauen.“",
-      "qwen": "Im Museum starrt der Mann stundenlang auf leere Wände. „Gut, dass hier alles verkauft ist“, seufzt die Kassiererin.",
-      "archive": "Beim Zurückgeben eines Buchs sagt die Bibliothekarin, ich sei drei Wochen zu spät. Ich sage: „Das Ende hat sich wirklich gezogen.“"
-    },
-    {
       "timestamp": "2026-11-20T04:30:57.640Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verheddert sich mein Hund im Seil – er macht jetzt den „Knoten“.",
       "qwen": "Damit die Entspannung wirkt, zähle ich bis zehn. Einer, zwei, drei – der erste Beineinsatz.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn einen Kuchen gebracht, weil er ständig über den Lärm meiner Waschmaschine klagt – jetzt hört er nur noch das Klirren des Geschirrs.",
       "qwen": "Ich fragte den Nachbarn, ob ich sein Auto parken darf. Er sagte: „Ja, aber bitte nicht neben meinem Rasenmäher.“",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-20T08:36:00.648Z",
+      "gpt": "Der Paketbote klingelt, ich öffne, er fragt: „Ist das hier das Rücksende‑Büro?“ Ich antworte: „Nein, das ist mein Wohnzimmer – ich habe das Paket bestellt.“",
+      "qwen": "„Ihr Paket ist unterwegs“, sagte der Bot. „Genau wie Ihr Geduld.“",
+      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
     }
   ]
 }
