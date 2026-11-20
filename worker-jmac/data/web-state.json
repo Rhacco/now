@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T16:51:08.611Z",
-      "gpt": "Im Café bestellt ich einen Espresso, der Kellner fragt: „Möchten Sie ihn mit Zucker?“ – Ich: „Nein, ich will ihn bitter wie mein Gehalt.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Soll ich ihn kochen?“",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-20T16:56:05.626Z",
       "gpt": "Ich steig in den Bus, zahle, setze mich und merke, dass ich im Fahrplan meiner Lieblingsserie sitze – kein Halt, nur Werbepausen.",
       "qwen": "Ich stieg in den Bus, dann ins Taxi, dann ins Auto. Der Kofferraum war schon voll.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt ein Besucher: „Wo ist die Bibliothek?“ – Die Angestellte zeigt auf das Kino und sagt: „Da läuft heute ein Film über leise Bücher.“",
       "qwen": "Im Kino schnarche ich laut, im Museum bleibe ich stumm. Die Bibliothekarin winkt mich herein: „Zu spät für beide.“",
       "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
+    },
+    {
+      "timestamp": "2026-11-20T20:56:06.678Z",
+      "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie meldete sofort: „Bitte erst das Handy aufladen – sonst wird das Training nie beginnen.“",
+      "qwen": "Der Akku zeigt ein Prozent, während ich nach dem Ladekabel suche. Ich falle in Ohnmacht, bevor ich den Stecker finde.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
