@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T05:46:05.522Z",
-      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie oft wollen Sie pro Woche trainieren?“ Ich antworte: „Nur, wenn das WLAN stabil ist.“",
-      "qwen": "Ich mache ab jetzt nur noch Yoga.\nMein Trainer bestätigt: Du bist jetzt entspannter.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-20T05:51:02.789Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Kellnerin fragt, ob ich ihn lieber mit Espresso‑Milch will – ich antworte: „Nur, wenn er kocht.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte: „Zutun oder ohne?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach frischen Kräutern, die Verkäuferin reicht mir einen Topf Petersilie. Auf dem Wochenmarkt schenkt mir die Floristin einen Kaktus – „für die Würze“.",
       "qwen": "Ich wollte auf dem Wochenmarkt frische Tomaten kaufen, doch der Stand war leer. Der Bauer grinste: „Die habe ich in den Supermarkt gebracht, weil sie dort billiger sind.“",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-20T09:55:58.052Z",
+      "gpt": "Im Vorstellungsgespräch fragt die Chefin: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum – ich habe gerade erst den ersten Kurs abgeschlossen.“",
+      "qwen": "Ich kündigte die Weiterbildung ab, um mich zu bewerben. Der Personalchef rückte die Bewerbung aus, da ich keine Weiterbildung absolviert habe.",
+      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
     }
   ]
 }
