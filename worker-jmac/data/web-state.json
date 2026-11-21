@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:41:06.999Z",
-      "gpt": "Im Yoga‑Kurs fragt der Trainer: „Wer kann die Spannung lösen?“ – Der Kater vom Nachbarn springt auf die Matte und macht den herabschauenden Hund.",
-      "qwen": "Beim Yoga fragte ich den Trainer: „Früher war ich so starr wie ein Brett.“ Er antwortete: „Genau deshalb sitzen Sie heute noch hier.“",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-21T08:46:07.368Z",
       "gpt": "In der Bibliothek fragt der Bibliothekar, ob ich leise bin. Im Kino flüstert er: „Bitte nicht laut, ich schreibe das Museumsexponat.“",
       "qwen": "Ich stellte im Kino mein Jackett ab. Der Pförtner schaute verwirrt: „Das ist doch das Museum für moderne Kunst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich die Mitfahrerin, ob sie das Wetter checken kann – sie zieht die Fahrkarte raus und sagt: „Hier steht 'Sonnenschein'.“",
       "qwen": "Sag ich: „Ich muss dringend erholen.“\nSie zuckt die Achseln: „Dann lass das Handy aus.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-21T12:45:58.407Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, um mehr Schritte zu machen – sie zählt jetzt meine Telefonate als „Laufstrecken“.",
+      "qwen": "Ich habe die Fehlermeldung ignoriert und wollte schon den Neustart starten. Da hat das Handy geantwortet: „Nein, ich bin nur müde.“",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
