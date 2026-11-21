@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:26:05.416Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel mitnehmen?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn sie noch reden können.“",
-      "qwen": "Im Supermarkt fragt man nach dem Preis der Tomate.\nAuf dem Wochenmarkt fragt man nach dem Namen des Tomatenbauern.",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-21T09:30:57.702Z",
       "gpt": "Ich stehe am Supermarkt, prüfe das Angebot, dann geht ein Verkäufer vom Wochenmarkt vorbei und ruft: „Frisches Gemüse, aber nur im Sonderangebot – für mich!“",
       "qwen": "Ich frage im Supermarkt nach frischen Erdbeeren. Die Verkäuferin zeigt auf die Tiefkühltruhe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Haben Sie einen Platz für mein Handtuch?“ Der Schaffner lächelt: „Nur, wenn Sie es ausklappen.“",
       "qwen": "Während des Kletterns wird es eng. Ich rufe nach unten: „Sag mal, bin ich schon fertig?“",
       "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
+    },
+    {
+      "timestamp": "2026-11-21T13:36:06.013Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand nur: „Bitte geben Sie Ihren verlorenen Humor zurück.“",
+      "qwen": "Finde ich den Schlüssel im Fundbüro, wird unter „Beschreibung“ ein Fragezeichen verlangt.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
