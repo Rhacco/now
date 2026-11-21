@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:01:07.016Z",
-      "gpt": "Ich habe beim Ausmisten den Staubsauger gefunden, der noch nie geleert wurde – jetzt habe ich endlich ein Gerät, das wirklich alles aufsaugt.",
-      "qwen": "Die Kiste mit den „Wichtigmachen“ wog so schwer, dass ich sie kaum tragen konnte. Darin steckten nur leere Vorratsdosen von 1998.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-21T03:06:06.121Z",
       "gpt": "Ich wollte schnell die Wetter‑App öffnen, doch das Handy zeigte nur \"Kein Netz\". Offenbar hat der Regen beschlossen, offline zu bleiben.",
       "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach dem Ladekabel. Dann fällt mir auf: Ich habe es gerade in der Jackentasche.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Gibt es hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer aus‑ und wieder einstecken.“",
       "qwen": "Am Strand: „Hast du meine Sonnenbrille gesehen?“\n„Nein, aber ich habe deine Sonnenallergie.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-21T07:11:05.095Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach veganer Mayonnaise, die Verkäuferin lächelt und reicht ihr die Butter. „Für die vegane Diät“, sagt sie.",
+      "qwen": "Der Verkäufer starrte mich an: „Ist das jetzt ein Wunsch oder eine Bestellung?“",
+      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
     }
   ]
 }
