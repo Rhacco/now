@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:26:00.855Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wie lange dauert die Fahrt?“ Der Schaffner: „Bis zum Strand, etwa 3 Stunden, dann geht’s zu Fuß.“",
-      "qwen": "Am Strand sah ich eine Frau, die einen Eimer Wasser trank. Ich fragte: „Darf ich das?“ Sie antwortete: „Ja, aber die Miete für das Badetuch ist extra.“",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-21T19:31:03.945Z",
       "gpt": "Mama fragt: „Warum hast du das ganze Gemüse im Bad versteckt?“ Ich antworte: „Damit es endlich mal im Dampfbad entspannen kann.“",
       "qwen": "Ich sage meiner Frau: „Ich hasse diese Familie wegen ihres Lärms.“ Sie antwortet: „Schau, wir haben keine Kinder.“",
@@ -300,6 +294,12 @@
       "gpt": "Der neue Nachbar klingelt jeden Morgen, weil er den Müll rausbringen will – und fragt, ob wir noch Staub für seine Besen haben.",
       "qwen": "Der neue Nachbar fragt, ob ich nachts laut lerne.\nIch erkläre ihm, dass ich nur die Heizung teste.",
       "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
+    },
+    {
+      "timestamp": "2026-11-21T23:31:05.764Z",
+      "gpt": "Im Café bestellt er ein „leichtes“ Mittagessen – die Kellnerin bringt ihm einen Teller Luft. „Kalorienfrei“, sagt sie, „und das ist das neue Sauerstoff‑Special.“",
+      "qwen": "Ich bestellte die Pizza, die ich mir selbst zu Hause backe. Der Kellner sah mich an, als hätte ich ein Verbrechen begangen.",
+      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
     }
   ]
 }
