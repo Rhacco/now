@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:01:05.700Z",
-      "gpt": "Ich rief den Kundendienst, weil mein Paket schon drei Tage zu spät war – sie sagten, es sei auf dem Weg zu mir, weil es sich verlaufen hat.",
-      "qwen": "Der Kurier legt das Paket vor die Tür und drückt die Klingel. Ich fluche laut, weil er das Ding ausgerechnet neben den Mülleimer stellt.",
-      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
-    },
-    {
       "timestamp": "2026-11-21T19:05:57.676Z",
       "gpt": "Mama sagt: „Wir sparen, also gibt’s heute nur Wasser.“ Papa lacht und holt die Flasche – es ist Mineralwasser aus der Sprudelmaschine.",
       "qwen": "Die Oma fragt, ob ich sie in die Arme nehmen kann. Ich sage, das geht nur über den Leichenberg.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ Der Kellner lächelt: „Nein, das ist unser neues Gluten‑frei‑Brot, das nur aus Luft besteht.“",
       "qwen": "„Sehr geehrter Herr, ich bin Vegetarier.“ – „Kein Problem, hier ist Ihr Teller mit Erde.“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-21T23:05:58.276Z",
+      "gpt": "Ich steige in den Bus, der Fahrer sagt: „Wir fahren gerade durch die Stadt.“ Ich schau nach rechts – wir sind im Kreisverkehr.",
+      "qwen": "Ich sage dem Taxifahrer: „Fahren Sie wie ein Wahnsinniger!“\nEr bremst abrupt: „Angst?",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
