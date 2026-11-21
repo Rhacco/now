@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:16:00.257Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich Ihre Weiterbildung endlich verstehe.“",
-      "qwen": "Im Vorstellungsgespräch frage ich nach Weiterbildung. Der Chef schweigt, dann lächelt er: „Die machen wir nach der Stelle weg.\"",
-      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
-    },
-    {
       "timestamp": "2026-11-21T19:20:56.964Z",
       "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau hält ihn, also ruft er ein Taxi – das fährt gerade rückwärts.",
       "qwen": "Ich bin mit Bahn, Bus und Taxi gefahren, bis ich endlich mein eigenes Auto fand. Es war voll, aber immerhin war es meins.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten den alten Toaster gefunden und ihn gleich mit in den Umzugswagen geladen – er war schließlich das einzige Gerät, das noch „aufheizt“.",
       "qwen": "Wir haben beim Ausmisten die letzte Matratze gefunden.\nSie war unter dem Sofa klebend festgewachsen.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-21T23:21:03.878Z",
+      "gpt": "Nach dem Yoga‑Kurs fragt die Lehrerin: „Wie fühlst du dich?“ – „Entspannt, bis meine Socken plötzlich anfangen zu joggen.“",
+      "qwen": "Ich will nur kurz entspannen und mache eine Yoga-Pause. Dann verliere ich im Lotus-Asan mein Handy.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
