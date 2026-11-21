@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:40:57.891Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er sagt: „Ihr Kundenservice hat mich gebeten, die Rücksendung persönlich zu überbringen.“",
-      "qwen": "Der Paketbote ruft: „Zu Ihrer Unterschrift?“\nIch weise auf den ausgefüllten Gutschein: „Doch, hier ist sie schon.“",
-      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
-    },
-    {
       "timestamp": "2026-11-21T11:45:59.985Z",
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich gerade im Keller stehe.",
       "qwen": "Ich habe die Taschenlampe-App gestartet. Sie leuchtet nur, wenn ich blinken kann.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüten?“ Auf dem Wochenmarkt ruft ein Kunde: „Nur, wenn sie wieder nach Hause gehen!“",
       "qwen": "Ich kaufe auf dem Wochenmarkt frische Tomaten, im Supermarkt die gleiche.\nZu Hause schmeckt die vom Markt wie Plastik, die vom Markt wie Erde.",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-21T15:51:02.540Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine mit ins Bett genommen?“ Papa antwortet: „Ich wollte endlich mal was zum Aufdrehen haben.“",
+      "qwen": "Mama fragt: „Wer hat die Jalousien zugezogen?“\nIch antworte: „Die Sonne, weil sie heute frei hat.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
