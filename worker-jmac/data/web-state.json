@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:40:57.486Z",
-      "gpt": "Im Zug zum Strand fragt ich die Mitfahrerin, ob sie das Wetter checken kann – sie zieht die Fahrkarte raus und sagt: „Hier steht 'Sonnenschein'.“",
-      "qwen": "Sag ich: „Ich muss dringend erholen.“\nSie zuckt die Achseln: „Dann lass das Handy aus.“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-21T12:45:58.407Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, um mehr Schritte zu machen – sie zählt jetzt meine Telefonate als „Laufstrecken“.",
       "qwen": "Ich habe die Fehlermeldung ignoriert und wollte schon den Neustart starten. Da hat das Handy geantwortet: „Nein, ich bin nur müde.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie zu schwer war – dann stellte sie fest, dass sie das Möbelstück selbst gebaut hat.",
       "qwen": "Ich fragte den Nachbarn, ob er laut boxt. Er nickte schweigend und zeigte auf seinen Freund.",
       "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
+    },
+    {
+      "timestamp": "2026-11-21T16:45:57.396Z",
+      "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, ist das hier der Sondertarif für Familien?“ – Ich zeige auf ihr Ticket: „Nein, das ist Ihr Rückfahrtticket.“",
+      "qwen": "Endlich frei von der Arbeit, denk ich mir. Doch dann fällt mir auf, dass der Kofferraum noch voll mit Akten ist.",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
