@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:16:06.694Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wach bleiben – und die PowerPoint, damit wir nicht einschlafen.“",
-      "qwen": "In der Besprechung fragt der Chef: „Wer hat die Daten gelöscht?“\nStillkeit. Dann meldet sich der Praktikant: „Ich?“",
-      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
-    },
-    {
       "timestamp": "2026-11-21T01:21:07.415Z",
       "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, der Schaffner zeigt nach vorne – „Wir fahren ja gerade nach Hamburg.“",
       "qwen": "In der Wüste fragte ich meinen Begleiter, ob er Durst hat. Er nickte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Ich antworte: „Mit Zucker, sonst wird er zu bitter.“",
       "qwen": "Ich fragte den Kellner nach der Tagesempfehlung. Er löffelte seinen Kaffee und meinte: „Die ist leider schon weg.\"",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-21T05:21:06.612Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Geduld – Sie haben ja noch viel zu lernen.“",
+      "qwen": "Der Chef lobt mein neues Zertifikat zur Selbstführung. Ich frage, ob das Gehalt jetzt auch selbst ankommt.",
+      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
     }
   ]
 }
