@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:25:57.555Z",
-      "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie ständig laut trommelt. Sie dankte und sagte: „Endlich ein Rhythmus, den ich essen kann!“",
-      "qwen": "Der Nachbar kettete seinen Bulldogge an die Hauswand. „Er ist so schlank“, sagte er trotzig.",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-20T23:31:06.572Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurück in die Stille bringen.“",
       "qwen": "Im Kino saß ich quer durchs Regal, im Museum starrte ich die Leinwand an.",
@@ -300,6 +294,12 @@
       "gpt": "Ich steig in den Bus, die Anzeige sagt „Nächster Halt: Hauptbahnhof“. Ich steige aus, weil ich schon am Ziel bin – ich sitze im Bahnhof.",
       "qwen": "Ich sage dem Taxifahrer: „Nicht weit fahren, nur bis zur nächsten Haltestelle.“ Er bremst scharf ab und murmelt: „Da fällt das Taxi aus.“",
       "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
+    },
+    {
+      "timestamp": "2026-11-21T03:31:07.123Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket schon bezahlt habe. Ich sag: „Nein, ich habe nur den Kundenservice angerufen.“",
+      "qwen": "Der Paketbote fragt: „Ist jemand zu Hause?“ Ich rufe: „Nein!“ Er ruft zurück: „Dann signieren Sie hier.“",
+      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
     }
   ]
 }
