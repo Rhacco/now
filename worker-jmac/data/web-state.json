@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:46:03.089Z",
-      "gpt": "Im Zug fragt die Oma, ob wir noch einen Halt einlegen, weil ihr Koffer noch nicht aus dem Fenster gefallen ist.",
-      "qwen": "Im Urlaub bestellte ich ein Steak medium gebraten. Der Kellner fragte, ob das für die Gabel oder für die Erinnerung gedacht sei.",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-21T05:51:07.312Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Stressbewältigung – dank Ihrer Fragen.“",
       "qwen": "Ich fragte im Vorstellungsgespräch, was mit Weiterbildung gemeint ist. Er griff zum Messer und sagte: „Wo man Sie besser schneidet.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten wirft er die alte Kaffeemaschine weg – weil er endlich merkt, dass er seit Jahren keinen Kaffee mehr trinkt.",
       "qwen": "Wir haben alte Bücher aussortiert. Die Kiste wog noch immer so schwer wie vor dem Ausmisten.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-21T09:51:04.922Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, ich habe die Schlüssel schon gefunden.“",
+      "qwen": "Ich gab den verlegten Schlüssel im Fundbüro ab. Der Beamte druckte mir dafür eine Quittung aus, die größer war als der Schlüssel.",
+      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
     }
   ]
 }
