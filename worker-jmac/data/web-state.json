@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:21:10.992Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe: „Ihr Kunde hat angerufen, er wollte das Paket zurück – er hat es selbst bestellt.“",
-      "qwen": "Der Bot liefert das Paket an die falsche Tür. Ich rufe an, der Support erklärt: „Entschuldigung, aber Ihr Nachbar hat Ihnen den Code geschickt.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-21T10:26:04.628Z",
       "gpt": "Ich frage im Elektrofachgeschäft nach einem Lautsprecher, der „laut aber leise“ klingt – die Verkäuferin reicht mir Kopfhörer.",
       "qwen": "Der Texter fragt: „Soll ich das hier kürzen, damit es nach Werbung klingt?“ Ich sage: „Nein, es klingt schon wie eins.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfte an die Nachbarn, weil mein Wasserrohr geplatzt war. Sie schickten mir ein Schwimmzeug – aus dem Keller.",
       "qwen": "Die neue Nachbarin lächelt freundlich und fragt, wie es mir geht. Ich sage: „Schrecklich, seit Sie mein Gartenzwerg mitgenommen haben.“",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-21T14:30:59.427Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
+      "qwen": "Ich frage den Arzt: „Doktor, dauert das noch lange?“\nEr zeigt auf die Apotheke: „Da sitzen Sie schon seit einer Stunde.“",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
