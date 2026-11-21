@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:40:57.720Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm den leeren Kaffeebecher – er meint, das sei unser „Produktivitäts‑Boost“.",
-      "qwen": "Ich fragte im Meeting, ob jemand Zweifel an dem Plan hat. Stille. Dann meinte der Chef: „Nein, ich wollte nur kurz durchatmen.“",
-      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
-    },
-    {
       "timestamp": "2026-11-21T01:45:57.538Z",
       "gpt": "Ich reiche das ausgefüllte Formular im Fundbüro ein – die Angestellte fragt, ob ich das „Verloren‑oder‑Gefunden‑Kästchen“ angekreuzt habe.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, doch das Formular verlangt über 20 Seiten für den Fund. Ich habe den Uhrenarmband einfach in den Mülleimer geworfen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund lande ich plötzlich im Klo – anscheinend war das die wahre “Tiefe”.",
       "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat auf meinem Rücken geschlafen.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-21T05:46:03.089Z",
+      "gpt": "Im Zug fragt die Oma, ob wir noch einen Halt einlegen, weil ihr Koffer noch nicht aus dem Fenster gefallen ist.",
+      "qwen": "Im Urlaub bestellte ich ein Steak medium gebraten. Der Kellner fragte, ob das für die Gabel oder für die Erinnerung gedacht sei.",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
