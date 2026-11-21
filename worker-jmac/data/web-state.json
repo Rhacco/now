@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:31:02.876Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie die Preise einpacken.“",
-      "qwen": "Im Supermarkt ist der Apfel glatt.\nBeim Bauern hat er einen Kater.",
-      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
-    },
-    {
       "timestamp": "2026-11-21T17:35:57.348Z",
       "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie öffnen die Tür mit einem Eimer – sie haben das Leck schon seit Wochen selbst repariert.",
       "qwen": "Der Nachbar klopft wütend an die Tür: „Hören Sie auf zu bohren!“ Ich erwidere ruhig: „Ich bohre gar nicht.“ Er schweigt, hört weiter und klopft noch lauter.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer Größe, sie reicht mir ein Lineal – „Damit Sie wenigstens wissen, wie klein Ihre Erwartungen sind.“",
       "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer hat mir vier Stunden lang über Stoffdichte referiert, bis ich aus Zeitmangel die Rechnung übernahm.",
       "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
+    },
+    {
+      "timestamp": "2026-11-21T21:41:05.911Z",
+      "gpt": "Mutter fragt: „Warum ist dein Zimmer immer so unordentlich?“ Sohn: „Weil ich hier meine kreativen Ideen verstaue – und die liegen überall.“",
+      "qwen": "Ich fragte meine Frau: „Hast du den Müll rausgebracht?“ Sie antwortete: „Ja, ich habe ihn rausgebracht und dann wieder rein.“",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
