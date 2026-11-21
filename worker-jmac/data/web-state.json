@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:11:05.095Z",
-      "gpt": "Im Supermarkt fragt die Kundin nach veganer Mayonnaise, die Verkäuferin lächelt und reicht ihr die Butter. „Für die vegane Diät“, sagt sie.",
-      "qwen": "Der Verkäufer starrte mich an: „Ist das jetzt ein Wunsch oder eine Bestellung?“",
-      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
-    },
-    {
       "timestamp": "2026-11-21T07:15:58.479Z",
       "gpt": "Mutter fragt: „Warum hast du die ganze Pizza gegessen?“ – Sohn: „Weil du gesagt hast, wir teilen das Glück, nicht das Essen.“",
       "qwen": "Die Tante fragt besorgt: „Hast du schon ein Kind?“ Ich antworte: „Ja, ich habe einen Hund.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich bis dahin endlich den Kurs „Selbstmarketing“ abgeschlossen habe.“",
       "qwen": "Ich sage im Vorstellungsgespräch, ich bin „fortbildungsoffen“. Der Chef nickt und reicht mir einen Stapel alter Steuerbescheide.",
       "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
+    },
+    {
+      "timestamp": "2026-11-21T11:15:58.197Z",
+      "gpt": "Ich klopfe bei meinem Nachbarn an, um nach dem Stromausfall zu fragen – er meint, er habe gerade das Licht aus der Steckdose gezogen.",
+      "qwen": "Ich habe meinen Nachbarn gefragt, ob er meinen Rasenmäher entleihen kann. Er sagte: „Nein, der gehört dir ja schon.“",
+      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
     }
   ]
 }
