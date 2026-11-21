@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:36:04.809Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm – „Für den Fall, dass Ihnen das Wetter kalt wird.“",
-      "qwen": "„Sind Sie sicher, dass das passt?“ fragte ich. „Ja, das ist der Sonderpreis“, antwortete der Verkäufer.",
-      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
-    },
-    {
       "timestamp": "2026-11-21T02:41:04.285Z",
       "gpt": "Ich wollte beim Ausmisten den Staubsauger verkaufen – er hat mir dankbar zugestimmt, weil er endlich mal wieder frei durchatmen kann.",
       "qwen": "Emma packt den letzten Kasten. Der Umzugstruck ist längst abgefahren, sie steht aber immer noch da.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug meine Socken und finde einen alten Geldschein – er ist jedoch nur ein abgelaufener Gutschein für die Waschmaschine.",
       "qwen": "Ich habe meine alte Kaffeevollautomat vom Dachboden geholt. Der füllt nun leider die gesamte Garage.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-21T06:45:57.928Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Tüte oder aus der Werbung?“ Ich nehme die, die ich am Wochenmarkt gerochen habe.",
+      "qwen": "Ich wollte auf dem Wochenmarkt die Tomaten mit dem Finger drücken. Der Bauer hat mich angeschaut, als hätte ich sein Baby angefasst.",
+      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
     }
   ]
 }
