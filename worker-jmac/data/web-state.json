@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:31:03.945Z",
-      "gpt": "Mama fragt: „Warum hast du das ganze Gemüse im Bad versteckt?“ Ich antworte: „Damit es endlich mal im Dampfbad entspannen kann.“",
-      "qwen": "Ich sage meiner Frau: „Ich hasse diese Familie wegen ihres Lärms.“ Sie antwortet: „Schau, wir haben keine Kinder.“",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-21T19:35:58.353Z",
       "gpt": "Der Paketbote klingelt, ich öffne und finde ein Rücksendeformular – er hat mein Paket zurückgeschickt, weil ich es nie bestellt habe.",
       "qwen": "Der Bot drückt das Paket beim Neffen ab. Der Neffe unterschreibt und fragt: „Gibt’s was zurück?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er ein „leichtes“ Mittagessen – die Kellnerin bringt ihm einen Teller Luft. „Kalorienfrei“, sagt sie, „und das ist das neue Sauerstoff‑Special.“",
       "qwen": "Ich bestellte die Pizza, die ich mir selbst zu Hause backe. Der Kellner sah mich an, als hätte ich ein Verbrechen begangen.",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-21T23:35:57.387Z",
+      "gpt": "Ich öffne die Wetter-App, sehe Regen und frage: „Braucht die Stadt jetzt einen Regenschirm‑Verleih?“ Die App antwortet: „Nur, wenn du den Akku hast.“",
+      "qwen": "Mein Handy zeigt 100 % Akku an, während es längst tot ist.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
