@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:16:04.407Z",
-      "gpt": "Ich wollte im Museum laut flüstern, doch die Bibliothekarin schickte mich ins Kino. Dort war wenigstens Popcorn leiser.",
-      "qwen": "Ich muss im Museum laut sein, im Kino still. In der Bibliothek bin ich einfach nur dort.",
-      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
-    },
-    {
       "timestamp": "2026-11-21T17:21:07.255Z",
       "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe sofort nach draußen – das Handy zeigt „Sonnenschein“, weil ich im Keller bin.",
       "qwen": "Ich habe die Smart-Lampe per App gedimmt.\nJetzt stehe ich im Dunkeln und suche die Wand.",
@@ -300,6 +294,12 @@
       "gpt": "Ich fülle beim Fundbüro das Formular aus, das ich gerade im Fundbüro gefunden habe.",
       "qwen": "Im Fundbüro fragte ich nach meinem gestohlenen Fahrrad. Die Dame meinte höflich: „Dafür brauchen Sie dieses Formular zu unterschreiben.“",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-21T21:26:04.105Z",
+      "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam sofort: „Bitte halten Sie das Handy vom Fahrplan fern.“",
+      "qwen": "Der Taxifahrer fragt: „Zahlen Sie bar oder mit Karte?“ Ich antworte: „Mit Karte, aber bitte nicht auf die harte Tour.“",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
