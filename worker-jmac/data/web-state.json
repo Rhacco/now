@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:56:03.503Z",
-      "gpt": "Mama ruft: „Zieh dir die Schuhe aus, wir haben Gäste!“ Ich ziehe sie aus – und die Gäste sind meine Socken.",
-      "qwen": "Mama fragt: „Wer hat das letzte Stück Pizza?“\nAlle vier Finger auf mich zeigen.",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-21T10:01:03.704Z",
       "gpt": "Ich klopfe bei der neuen Nachbarin an, um mich vorzustellen, und sie öffnet mit einem Schild: „Bitte nicht stören – ich bin gerade im Home‑Office.“",
       "qwen": "Der Nachbar klagt über unsere Party. Ich schau in den Keller: Dort tanzen wir schon seit drei Stunden.",
@@ -300,6 +294,12 @@
       "gpt": "Ich war im Café und bestellte einen Cappuccino, der Kellner fragte: „Mit Milch oder mit Schaum?“ – Ich sagte, „Nur mit Geld, ich bin pleite.“",
       "qwen": "Im Restaurant fragte ich nach der Rechnung. Der Kellner legte nur sein Handy auf den Tisch.",
       "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
+    },
+    {
+      "timestamp": "2026-11-21T14:06:05.537Z",
+      "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy fiel ins Wasser – jetzt läuft sie endlich, nur nicht mehr mit mir.",
+      "qwen": "Mein Handy zeigt 99 % Akku an.\nDann fällt es mir aus der Hand.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
