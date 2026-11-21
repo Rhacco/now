@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:36:03.430Z",
-      "gpt": "Im Meeting fragt der Chef: „Wie steht's mit dem Projekt?“ Darauf die Kollegin: „Wie beim Kopierer – läuft, aber wir brauchen dringend einen Neustart.“",
-      "qwen": "Chef: „Wir brauchen hier mehr Teamgeist!“\nIch: „Okay, ich bringe morgen Joghurt mit.“",
-      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
-    },
-    {
       "timestamp": "2026-11-21T06:41:05.503Z",
       "gpt": "Ich sortiere beim Umzug meine Socken und finde einen alten Geldschein – er ist jedoch nur ein abgelaufener Gutschein für die Waschmaschine.",
       "qwen": "Ich habe meine alte Kaffeevollautomat vom Dachboden geholt. Der füllt nun leider die gesamte Garage.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrgast nach einem Fensterplatz, das Personal gibt ihm einen, doch er sitzt im Bus.",
       "qwen": "Ich fragte den Taxifahrer nach dem günstigsten Weg zum Bahnhof. Er lachte: „Da fahren Sie doch einfach mit dem Taxi.\"",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-21T10:40:57.250Z",
+      "gpt": "Beim Familienabend fragt Mama: „Wer hat den letzten Keks genommen?“ Papa grinst und sagt: „Ich, aber ich dachte, das wäre ein Stück Kuchen.“",
+      "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht und says: „Streitet nicht, ich hacke euch ab.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
