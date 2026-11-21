@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:16:06.601Z",
-      "gpt": "Im Café bestellt er ein „leichtes“ Omelett, doch die Kellnerin brachte ihm ein Fitnessstudio‑Plan. „Ich wollte Kalorien sparen, nicht Training!“",
-      "qwen": "Im Restaurant bestellte ich „Tee mit Anis“. Der Kellner servierte mir ein Glas klares Wasser.",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-21T13:21:04.016Z",
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie fühlen Sie sich nach dem Yoga?“ – „Entspannt, bis ich merke, dass ich noch 20 kg auf der Hantelbank liege.“",
       "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter gestresst.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte im Museum laut flüstern, doch die Bibliothekarin schickte mich ins Kino. Dort war wenigstens Popcorn leiser.",
       "qwen": "Ich muss im Museum laut sein, im Kino still. In der Bibliothek bin ich einfach nur dort.",
       "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
+    },
+    {
+      "timestamp": "2026-11-21T17:21:07.255Z",
+      "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe sofort nach draußen – das Handy zeigt „Sonnenschein“, weil ich im Keller bin.",
+      "qwen": "Ich habe die Smart-Lampe per App gedimmt.\nJetzt stehe ich im Dunkeln und suche die Wand.",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
