@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:06:05.537Z",
-      "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy fiel ins Wasser – jetzt läuft sie endlich, nur nicht mehr mit mir.",
-      "qwen": "Mein Handy zeigt 99 % Akku an.\nDann fällt es mir aus der Hand.",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-21T14:10:59.800Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Paket schon unterschrieben?“ – „Nein, ich habe es gerade erst bestellt.“",
       "qwen": "Der Kurier drückte mir das Paket in die Hand und sagte: „Das hier ist für Sie.“ Ich fragte: „Aber ich habe doch nichts bestellt.“ Er antwortete: „Genau deshalb ist es so günstig.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten fand ich meine alte Fernbedienung – sie hatte endlich einen eigenen Umzugsplan: „Ich geh in den Schrank, du bleibst im Wohnzimmer.“",
       "qwen": "Mein Mann sagt, wir hätten noch drei Kisten für den Umzug. Er meinte die drei, die wir heute weggeworfen haben.",
       "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
+    },
+    {
+      "timestamp": "2026-11-21T18:11:10.288Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe den Bericht fertig – als PDF, weil ich ihn nicht mehr lesen kann.“",
+      "qwen": "Ich bat den Chef um Gehaltserhöhung. Er nickte und sagte: „Gern, holt mal zwei Kaffee.“",
+      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
     }
   ]
 }
