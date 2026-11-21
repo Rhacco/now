@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:15:58.574Z",
-      "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, aber die Kasse war besetzt – im Supermarkt nebenan. Dort bekam ich dann doch Tomatensauce.",
-      "qwen": "Ich fragte im Supermarkt nach frischem Brot, da zeigte man mir einen Tiefkühlschrank.",
-      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
-    },
-    {
       "timestamp": "2026-11-21T14:20:58.292Z",
       "gpt": "Ich rief den Kundendienst, weil mein Paket seit Tagen nicht ankam. Sie sagten, es sei „auf dem Weg zu Ihnen“, und schickten mir die Lieferadresse.",
       "qwen": "Der Kurier sagte: „Paket ist oben. – Nein, ich meine, ich bin es nicht, das ist die Treppe.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich warte im Wartezimmer, die Krankenschwester ruft: „Nur noch ein Medikament.“ Ich antworte: „Dann nehme ich gleich die Apotheke.“",
       "qwen": "„Warten Sie in der Wartehalle.“\n„Ich sitze doch schon in der Praxis.“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-21T18:21:05.903Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
+      "qwen": "Im Kino flüstert er: „Tiefer. Stille. Bitte.“ Die Garderobierin im Museum schaut ihn an: „Hier schmeißen Sie nicht.“",
+      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
     }
   ]
 }
