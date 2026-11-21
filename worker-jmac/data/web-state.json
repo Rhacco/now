@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:31:05.810Z",
-      "gpt": "Ich klopfe laut an die Nachbarstür, weil mein Wasserhahn tropft – sie öffnen und fragen, ob ich das neue Geräusch‑System testen will.",
-      "qwen": "Ich fragte den Nachbarn, ob er die Party hört. Er zuckte die Schultern. „Doch, aber ich bin der Gastgeber.“",
-      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
-    },
-    {
       "timestamp": "2026-11-21T02:36:04.809Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm – „Für den Fall, dass Ihnen das Wetter kalt wird.“",
       "qwen": "„Sind Sie sicher, dass das passt?“ fragte ich. „Ja, das ist der Sonderpreis“, antwortete der Verkäufer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wie steht's mit dem Projekt?“ Darauf die Kollegin: „Wie beim Kopierer – läuft, aber wir brauchen dringend einen Neustart.“",
       "qwen": "Chef: „Wir brauchen hier mehr Teamgeist!“\nIch: „Okay, ich bringe morgen Joghurt mit.“",
       "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
+    },
+    {
+      "timestamp": "2026-11-21T06:41:05.503Z",
+      "gpt": "Ich sortiere beim Umzug meine Socken und finde einen alten Geldschein – er ist jedoch nur ein abgelaufener Gutschein für die Waschmaschine.",
+      "qwen": "Ich habe meine alte Kaffeevollautomat vom Dachboden geholt. Der füllt nun leider die gesamte Garage.",
+      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
     }
   ]
 }
