@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:00:57.235Z",
-      "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich habe meine eigene Bohne mitgebracht.“",
-      "qwen": "Der Kellner bringt das Schnitzel. „Entschuldigung, das ist ja ganz roh“, sage ich. „Gar nicht“, antwortet er. „Das ist ein Steak.“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-21T05:06:05.346Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einer Weiterbildung an.“",
       "qwen": "Der Chef fragte: „Welche Weiterbildung planen Sie?“ Ich antwortete: „Ich will lernen, wie man hier überlebt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei bereits bei mir zu Hause, weil ich es aus Versehen im Kühlschrank gefunden habe.",
       "qwen": "Der Lieferbote fragt: „Sind Sie für die Übergabe da?“, worauf ich nickte. Er sagte: „Dann packen Sie bitte die Ware ein.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-21T09:06:05.632Z",
+      "gpt": "Im Zug steht ein Mann und fragt: „Entschuldigung, wo ist das Gleis für den Bus?“ Der Schaffner lächelt: „Hier fährt nur die Linie 1.“",
+      "qwen": "Ich fragte den Taxifahrer: „Können Sie mich zur U-Bahn fahren?“ Er entgegnete: „Doch, aber nur bis zum nächsten Bus.“",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
