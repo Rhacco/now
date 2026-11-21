@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:20:58.292Z",
-      "gpt": "Ich rief den Kundendienst, weil mein Paket seit Tagen nicht ankam. Sie sagten, es sei „auf dem Weg zu Ihnen“, und schickten mir die Lieferadresse.",
-      "qwen": "Der Kurier sagte: „Paket ist oben. – Nein, ich meine, ich bin es nicht, das ist die Treppe.“",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-21T14:26:04.874Z",
       "gpt": "Ich klopfte an die Nachbarn, weil mein Wasserrohr geplatzt war. Sie schickten mir ein Schwimmzeug – aus dem Keller.",
       "qwen": "Die neue Nachbarin lächelt freundlich und fragt, wie es mir geht. Ich sage: „Schrecklich, seit Sie mein Gartenzwerg mitgenommen haben.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
       "qwen": "Im Kino flüstert er: „Tiefer. Stille. Bitte.“ Die Garderobierin im Museum schaut ihn an: „Hier schmeißen Sie nicht.“",
       "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
+    },
+    {
+      "timestamp": "2026-11-21T18:26:05.985Z",
+      "gpt": "Im Zug fragt die Frau neben mir: „Entschuldigung, wo liegt das Ziel?“ – Ich zeige auf den Fahrplan: „Hier, zwischen „Nächste Haltestelle“ und „Ende der Geduld“.",
+      "qwen": "Ich habe im Urlaub extra eine Wanderung geplant. Der Hund ist seit drei Stunden nur noch auf der Couch.",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
