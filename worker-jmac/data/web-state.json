@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:11:09.730Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient flüstert: „Wie ein Rezept, das noch nie eingelöst wurde.“",
-      "qwen": "Ich fragte den Apotheker: „Hilft das gegen alles?“\n„Nein, nur gegen Ihre Arroganz.“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-21T00:16:06.656Z",
       "gpt": "Ich sortiere den Keller aus und finde meine alte Fernbedienung – sie steuert jetzt nur noch den Staubsauger, weil ich nie mehr fernsehe.",
       "qwen": "Die alte Schallplatte im Karton war nur Plastikmüll, das Vinyl aber ein Meisterwerk.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – und beim herabschauenden Hund merke ich, dass mein Hund mich beim Vorbeigehen schon längst geküsst hat.",
       "qwen": "Ich legte mich in die Sauna, bis der Schwitzkasten nachgab.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-21T04:15:58.582Z",
+      "gpt": "Ich öffne die Wetter‑App, weil ich Regen vermeiden will, und sehe sofort: „Achtung, Sturmwarnung – dein Akku ist bei 1 %.“",
+      "qwen": "Ich wollte die Kamera-App löschen, damit mein Handy schneller wird. Jetzt fotografiert es nur noch meine eigenen Fehler.",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
