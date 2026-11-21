@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:31:10.573Z",
-      "gpt": "Im Zug drückte ich den Notruf, weil das WLAN ausfiel. Der Schaffner lächelte: „Keine Sorge, das ist unser Offline‑Modus.“",
-      "qwen": "Ich fragte den Taxifahrer, warum er den Bus überholt. Er lachte: „Die fahren auch nur nach Fahrplan.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-21T00:35:58.301Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur meinen verlorenen Kugelschreiber gefunden.“",
       "qwen": "Ich gab beim Fundbüro an, dass der verlorene Kuschelhase kein Vermögen ist. Die Dame zuckte nur die Schultern: „Dafür bräuchten wir die Eheschließungsurkunde.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich den Verkäufer: „Welches Produkt ist hier das gesündeste?“ Er reicht mir die Einkaufsliste meiner Frau.",
       "qwen": "Ich fragte im Supermarkt nach dem besten Käse. Der Verkäufer schrie: „Dann kauf keinen!“",
       "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
+    },
+    {
+      "timestamp": "2026-11-21T04:36:05.981Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich nie einlösen will.“",
+      "qwen": "Der Arzt sagte, ich müsse auf die Apotheke warten. Ich rief die Apotheke an.",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
