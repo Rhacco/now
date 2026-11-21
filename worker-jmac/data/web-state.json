@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:05:57.676Z",
-      "gpt": "Mama sagt: „Wir sparen, also gibt’s heute nur Wasser.“ Papa lacht und holt die Flasche – es ist Mineralwasser aus der Sprudelmaschine.",
-      "qwen": "Die Oma fragt, ob ich sie in die Arme nehmen kann. Ich sage, das geht nur über den Leichenberg.",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-21T19:10:58.609Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Quartal?“ Die Buchhalterin meldet sich: „Ich habe sie, aber sie haben schon Urlaub.“",
       "qwen": "Ich schlug vor, die Besprechung zu kürzen. Der Chef nickte und fragte, ob ich jetzt mitreiße.",
@@ -300,6 +294,12 @@
       "gpt": "Ich steige in den Bus, der Fahrer sagt: „Wir fahren gerade durch die Stadt.“ Ich schau nach rechts – wir sind im Kreisverkehr.",
       "qwen": "Ich sage dem Taxifahrer: „Fahren Sie wie ein Wahnsinniger!“\nEr bremst abrupt: „Angst?",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-21T23:10:58.280Z",
+      "gpt": "Im Zug vergaß ich mein Ticket, doch die Kontrolleure gaben mir ein Upgrade – ans Fenster, weil ich dort am besten \"aussteigen\" kann.",
+      "qwen": "Auf dem Campingplatz lern ich den Nachbarn kennen. Er fragt, ob ich auch im Urlaub noch arbeite.",
+      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
     }
   ]
 }
