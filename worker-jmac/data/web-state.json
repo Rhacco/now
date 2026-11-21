@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:06:07.086Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Kuchen oder Kaffee?“ Ich antworte: „Beides, ich will schließlich nicht nur süß, sondern auch wach bleiben.“",
-      "qwen": "Ich fragte den Chef nach dem Geheimnis seines Rindsbratens.\nEr seufzte: „Geduld, Liebe und ein sehr dicker Topfboden.“",
-      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
-    },
-    {
       "timestamp": "2026-11-20T23:10:58.183Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich gleich für einen Kurs in ‚Entspannung für Bewerber‘.“",
       "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 50 Kursen. Der Chef seufzte: „Dann wissen Sie sicher, dass wir hier nicht mehr einstellen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte schnell die Wetter‑App öffnen, doch das Handy zeigte nur \"Kein Netz\". Offenbar hat der Regen beschlossen, offline zu bleiben.",
       "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach dem Ladekabel. Dann fällt mir auf: Ich habe es gerade in der Jackentasche.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-21T03:11:03.532Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gesuchte Portemonnaie war schon im Antragsfenster.",
+      "qwen": "Ich gab beim Fundbüro die Schlüssel zurück. Die Mitarbeiterin erklärte mir, wie man den Verlust meldet.",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
