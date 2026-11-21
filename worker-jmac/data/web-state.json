@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:21:04.016Z",
-      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie fühlen Sie sich nach dem Yoga?“ – „Entspannt, bis ich merke, dass ich noch 20 kg auf der Hantelbank liege.“",
-      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter gestresst.",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-21T13:26:05.664Z",
       "gpt": "Im Bus fragt der Fahrer: „Bitte anschnallen, wir fahren jetzt gerade im Stau.“ Die Fahrgäste nicken, weil das Taxi nebenan ebenfalls feststeckt.",
       "qwen": "Ich fluche über jede Bahn- und Autobahnstauminute. Das Taxi wird mir dann am Ende doch zu teuer.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe sofort nach draußen – das Handy zeigt „Sonnenschein“, weil ich im Keller bin.",
       "qwen": "Ich habe die Smart-Lampe per App gedimmt.\nJetzt stehe ich im Dunkeln und suche die Wand.",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-21T17:26:05.390Z",
+      "gpt": "Mama fragt: „Warum hast du den Kuchen aus dem Ofen genommen?“ Ich: „Weil das WLAN wieder schneller war.“",
+      "qwen": "Ich fragte meinen Vater, wie man ein Haus baut. Er sagte: „Erst die Familie, dann die Wände.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
