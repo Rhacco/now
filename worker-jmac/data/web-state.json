@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:01:05.330Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich nie einlösen kann.“",
-      "qwen": "Ich warte seit drei Stunden im Wartezimmer. Der Arzt ruft mich rein, schaut mich an und sagt: „Sie kommen morgen wieder.“",
-      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
-    },
-    {
       "timestamp": "2026-11-21T01:05:58.675Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich endlich meine Fortbildung bezahlt bekomme.“",
       "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung, doch der Chef schlug nur die nächste Stelle vor.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich habe meine eigene Bohne mitgebracht.“",
       "qwen": "Der Kellner bringt das Schnitzel. „Entschuldigung, das ist ja ganz roh“, sage ich. „Gar nicht“, antwortet er. „Das ist ein Steak.“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-21T05:06:05.346Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einer Weiterbildung an.“",
+      "qwen": "Der Chef fragte: „Welche Weiterbildung planen Sie?“ Ich antwortete: „Ich will lernen, wie man hier überlebt.“",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
