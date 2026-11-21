@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:11:02.150Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo mein verlorener Stift ist – die Beamtin schrieb: „Bitte unterschreiben Sie hier.“",
-      "qwen": "Ich habe meinen Schlüssel im Fundbüro gemeldet. Die haben geantwortet, das Formular dafür haben sie leider noch nicht verloren.",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-21T13:16:06.601Z",
       "gpt": "Im Café bestellt er ein „leichtes“ Omelett, doch die Kellnerin brachte ihm ein Fitnessstudio‑Plan. „Ich wollte Kalorien sparen, nicht Training!“",
       "qwen": "Im Restaurant bestellte ich „Tee mit Anis“. Der Kellner servierte mir ein Glas klares Wasser.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Das ist mein Konzept für mehr Leere im Kopf.“",
       "qwen": "Im Meeting fragte der Chef: „Haben wir alle Stakeholder abgehakt?“\nNur der Praktikant nickte.",
       "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
+    },
+    {
+      "timestamp": "2026-11-21T17:16:04.407Z",
+      "gpt": "Ich wollte im Museum laut flüstern, doch die Bibliothekarin schickte mich ins Kino. Dort war wenigstens Popcorn leiser.",
+      "qwen": "Ich muss im Museum laut sein, im Kino still. In der Bibliothek bin ich einfach nur dort.",
+      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
     }
   ]
 }
