@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:41:04.285Z",
-      "gpt": "Ich wollte beim Ausmisten den Staubsauger verkaufen – er hat mir dankbar zugestimmt, weil er endlich mal wieder frei durchatmen kann.",
-      "qwen": "Emma packt den letzten Kasten. Der Umzugstruck ist längst abgefahren, sie steht aber immer noch da.",
-      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
-    },
-    {
       "timestamp": "2026-11-21T02:46:09.370Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Der Besucher schüttelt den Kopf: „Hier gibt’s nur Stummfilm.“",
       "qwen": "Im Museum fragt er: „Ist das echt?“\nDie Archivarin antwortet: „Ja, nur leider ohne Ton.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Tüte oder aus der Werbung?“ Ich nehme die, die ich am Wochenmarkt gerochen habe.",
       "qwen": "Ich wollte auf dem Wochenmarkt die Tomaten mit dem Finger drücken. Der Bauer hat mich angeschaut, als hätte ich sein Baby angefasst.",
       "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
+    },
+    {
+      "timestamp": "2026-11-21T06:51:01.347Z",
+      "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht und sie fragte, ob ich noch etwas mitbringe – ich sagte, das WLAN.",
+      "qwen": "Der Nachbar klopft: „Entschuldigung, mein Rasenmäher läuft falsch.“\nIch sage: „Nein, Sie gehören einfach nicht dazu.“",
+      "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
     }
   ]
 }
