@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:11:04.937Z",
-      "gpt": "Ich wollte beim Joggen meine Schrittzahl erhöhen, also installierte ich die neue „Treppe‑Auf‑dem‑Balkon“-App – jetzt bin ich im dritten Stock.",
-      "qwen": "Frage mein Handy nach dem Wetter, es antwortet nur: „Regen.“\nEndlich mal eine ehrliche App.",
-      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
-    },
-    {
       "timestamp": "2026-11-21T02:15:58.148Z",
       "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, der Verkäufer meint: „Die sind im Supermarkt, dort gibt’s keine Bienen.“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis. Er zuckte nur die Schultern und sagte: „Das hängt davon ab, wie gut du verhandeln kannst.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, doch die Verkäuferin meinte: „Hier gibt’s nur Obst, das sich selbst verpackt.“",
       "qwen": "Ich kaufe auf dem Wochenmarkt frische Bio-Tomaten, weil sie im Supermarkt so künstlich glänzen.",
       "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
+    },
+    {
+      "timestamp": "2026-11-21T06:20:59.310Z",
+      "gpt": "Mama fragt: „Warum hast du das Sofa in den Garten gestellt?“ – „Ich wollte endlich mal draußen sitzen, wo das WLAN nicht streikt.“",
+      "qwen": "Mein Vater sagt, ich solle nicht so viel Zeit auf dem Handy verschwenden. Er spricht seit zwanzig Minuten ununterbrochen über die Ernte.",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
