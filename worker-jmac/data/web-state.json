@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:21:07.255Z",
-      "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe sofort nach draußen – das Handy zeigt „Sonnenschein“, weil ich im Keller bin.",
-      "qwen": "Ich habe die Smart-Lampe per App gedimmt.\nJetzt stehe ich im Dunkeln und suche die Wand.",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-21T17:26:05.390Z",
       "gpt": "Mama fragt: „Warum hast du den Kuchen aus dem Ofen genommen?“ Ich: „Weil das WLAN wieder schneller war.“",
       "qwen": "Ich fragte meinen Vater, wie man ein Haus baut. Er sagte: „Erst die Familie, dann die Wände.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam sofort: „Bitte halten Sie das Handy vom Fahrplan fern.“",
       "qwen": "Der Taxifahrer fragt: „Zahlen Sie bar oder mit Karte?“ Ich antworte: „Mit Karte, aber bitte nicht auf die harte Tour.“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-21T21:30:56.000Z",
+      "gpt": "Ich rufe beim Kundenservice: „Mein Paket ist verloren.“ Der Mitarbeiter fragt: „Haben Sie schon nachgeschaut, ob es nicht im Kühlschrank liegt?“",
+      "qwen": "Der Kurier rief an: „Ihr Paket ist beschädigt.“\nIch fragte: „Wie denn?“\nEr: „Mit Stempel und Klebeband.“",
+      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
     }
   ]
 }
