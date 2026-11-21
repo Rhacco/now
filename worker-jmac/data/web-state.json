@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:11:05.998Z",
-      "gpt": "Im Café fragt die Kundin nach einem leichten Mittagessen, der Kellner bringt ihr einen Salat und sagt: „Hier ist unser neues „Koch‑Stir‑Fry“ – nur gemischt, nicht gekocht.“",
-      "qwen": "Ich bestellte zart rosa Lachs im Restaurant. Der Wirt servierte einen Kühlschrank.",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-21T16:16:07.886Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Geldschein mit Ihrem Namen unterschrieben?“ – „Nein, ich war doch nur kurz im Lotto.“",
       "qwen": "Beim Fundbüro nach dem vermissten Schlüsselfund gefragt, heißt es: „Das Formular finden Sie in der Datenbank.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Chef fragt nach einem Update, ich zeige ihm den leeren Screenshot – “Hier ist das Ergebnis unserer produktiven Brainstorming‑Session.“",
       "qwen": "Im Meeting fragte der Chef: „Wer hat die Zahlen geprüft?“ Alle schwiegen, bis mir der Stift fiel.",
       "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
+    },
+    {
+      "timestamp": "2026-11-21T20:16:03.138Z",
+      "gpt": "Im Zug sitzt er neben einem Pendler, im Bus neben einer Rentnerin, im Taxi neben einem Touristen – im Auto fährt er endlich allein, weil er den Führerschein vergessen hat.",
+      "qwen": "Ich tanke voll und fahre los. Der Tankwart ruft: „Nur drei Euro, bitte!“",
+      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
     }
   ]
 }
