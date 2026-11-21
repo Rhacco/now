@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:26:05.970Z",
-      "gpt": "Beim Ausmisten fand ich meine alte Steuererklärung – ich dachte, das war ein Liebesbrief, aber das Finanzamt hatte mich doch nur gemeldet.",
-      "qwen": "Die alte Kiste mit Porzellan? Weg damit.\nDrauf stand: „Nicht öffnen, zerbrechlich“.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-20T22:31:06.372Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gleis für den Urlaub?“ Der Schaffner lächelt: „Nur, wenn Sie mit dem Koffer fahren.“",
       "qwen": "Am Strand sitzen wir reglos da. Der Kellner fragt: „Ist alles in Ordnung?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Seminarraum, weil ich bis dahin endlich meine Präsentationsangst abgehakt habe.“",
       "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen fünf Weiterbildungen. Der Chef fragte nur: „Und die Fahrstunden?“",
       "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
+    },
+    {
+      "timestamp": "2026-11-21T02:31:05.810Z",
+      "gpt": "Ich klopfe laut an die Nachbarstür, weil mein Wasserhahn tropft – sie öffnen und fragen, ob ich das neue Geräusch‑System testen will.",
+      "qwen": "Ich fragte den Nachbarn, ob er die Party hört. Er zuckte die Schultern. „Doch, aber ich bin der Gastgeber.“",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
