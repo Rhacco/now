@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:15:58.582Z",
-      "gpt": "Ich öffne die Wetter‑App, weil ich Regen vermeiden will, und sehe sofort: „Achtung, Sturmwarnung – dein Akku ist bei 1 %.“",
-      "qwen": "Ich wollte die Kamera-App löschen, damit mein Handy schneller wird. Jetzt fotografiert es nur noch meine eigenen Fehler.",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-21T04:20:57.928Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Projekt?“ – Die Kollegin meldet sich: „Ich, ich habe die Zahlen, aber das Projekt ist noch nicht gestartet.“",
       "qwen": "Ich habe dem Chef meine Vier-Augen-Runden mitgebracht. Er hat sie nur kurz betrachtet und mir die Brille verordnet.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier. „Das ist unser neues Diät‑Konzept – null Kalorien.“",
       "qwen": "Ich fragte die Verkäuferin, ob das Kleid auch in klein verfügbar ist. Sie schaute mich an und meinte: „Ja, aber das ist Ihre Größe.“",
       "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
+    },
+    {
+      "timestamp": "2026-11-21T08:25:58.110Z",
+      "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin lacht: „Hier gibt’s nur Bio‑Preise, die Eier sind ja schon im Sonderangebot.“",
+      "qwen": "Ich suchte nur Tomaten, doch im Supermarkt lagen sie in Plastikfolie.\nAuf dem Wochenmarkt rochen sie nach Erde und Sonnenlicht.",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
