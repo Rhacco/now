@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:30:57.702Z",
-      "gpt": "Ich stehe am Supermarkt, prüfe das Angebot, dann geht ein Verkäufer vom Wochenmarkt vorbei und ruft: „Frisches Gemüse, aber nur im Sonderangebot – für mich!“",
-      "qwen": "Ich frage im Supermarkt nach frischen Erdbeeren. Die Verkäuferin zeigt auf die Tiefkühltruhe.",
-      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
-    },
-    {
       "timestamp": "2026-11-21T09:35:57.199Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich fragte den Apotheker nach meinem Rezept. Er sagte: „Das kenne ich nicht, aber ich sehe Sie hier doch ständig im Wartezimmer sitzen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand nur: „Bitte geben Sie Ihren verlorenen Humor zurück.“",
       "qwen": "Finde ich den Schlüssel im Fundbüro, wird unter „Beschreibung“ ein Fragezeichen verlangt.",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-21T13:41:04.304Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Ich habe die Idee, das Projekt zu visualisieren.“",
+      "qwen": "Kollege fragt: „Bringst du den Kaffee?“ Ich: „Nein, ich bringe nur die Ruhe.“",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
