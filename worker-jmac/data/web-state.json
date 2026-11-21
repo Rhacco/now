@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:41:06.921Z",
-      "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt für den Strand, der Schaffner lächelt und sagt: „Sorry, hier fährt nur der „Bahn“-Strand.“",
-      "qwen": "Auf der Skipiste rutscht der Freund aus und brüllt vor Schmerz. „Hast du dir was gebrochen, hab ich mich gefragt.“",
-      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
-    },
-    {
       "timestamp": "2026-11-21T03:45:59.459Z",
       "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft ja endlich mal ein Film über das Ausleihen.",
       "qwen": "Im Museum fragte ich: „Darf ich diese Vitrine berühren?“ Der Wächter nickte. „Ja, sie ist aus Glas.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich reiche das verlorene Portemonnaie beim Fundbüro ein und bekomme sofort ein Formular, das ich erst unterschreiben muss, bevor ich es zurückbekomme.",
       "qwen": "Ich verlor meinen Ausweis und meldete ihn beim Fundbüro ab. Der Beamte fragte: „Haben Sie ihn schon gefunden?“",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-21T07:50:58.449Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verhedderte ich mich in meiner eigenen Yogamatte – jetzt ist das der neue „Knoten“.",
+      "qwen": "Ich will nur kurz ein bisschen Dehnung machen. Mein Rücken bricht lautstark entzwei.",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
