@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:51:05.466Z",
-      "gpt": "Im Zug fragt der Tourist nach dem besten Ausflugsziel, die Durchsage verkündet: „Nächster Halt – Parkplatz, weil das Wetter heute nur im Auto gut ist.“",
-      "qwen": "Im Urlaub fragt sie: „Gefällt dir das Meer?“ Ich sage: „Ja, aber der Sand ist zu grau.“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-21T16:55:58.565Z",
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Wie wäre es, wenn wir einfach das nächste Meeting absagen? Dann haben wir endlich etwas erledigt.“",
       "qwen": "In der Besprechung fragte der Chef: „Haben Sie die Präsentation fertig?“\n„Ja, aber ich habe das Power-Point-Programm noch nicht installiert.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Praktikantin meldet sich und sagt: „Ich habe das Wort ‚abgeschlossen‘ gerade erst im Wörterbuch gefunden.“",
       "qwen": "Ich habe die Besprechung gestrichen, weil keiner eine Ahnung hatte. So sparen wir alle Zeit und Nerven.",
       "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
+    },
+    {
+      "timestamp": "2026-11-21T21:00:58.226Z",
+      "gpt": "Ich packe das halbe Haus in Kisten, dann frage ich den Umzugswagen: „Wie viel kostet das, wenn ich nur noch Luft verschicke?“",
+      "qwen": "Wir haben beim Ausmisten eine Kiste mit Briefen aus 1985 gefunden. Darin wünschte ich mir sehnlichst, dass mein Umzug endlich vorbei ist.",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
