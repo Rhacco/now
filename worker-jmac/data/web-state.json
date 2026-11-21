@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:31:04.195Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für das Sonderangebot?“ Ich antworte: „Nur, wenn Sie mir das Gemüse vom Wochenmarkt bringen.“",
-      "qwen": "Ich kaufe die Tomate hier, weil sie so schön glänzt. Auf dem Markt hat sie schon zu mir „Willst du in den Saft?“ gesagt.",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-21T10:35:58.369Z",
       "gpt": "Im Zug fragt der Fahrgast nach einem Fensterplatz, das Personal gibt ihm einen, doch er sitzt im Bus.",
       "qwen": "Ich fragte den Taxifahrer nach dem günstigsten Weg zum Bahnhof. Er lachte: „Da fahren Sie doch einfach mit dem Taxi.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich mache sofort einen Online‑Kurs – dann weiß ich, wie ich mich bewerbe.“",
       "qwen": "Nach dem Vorstellungsgespräch fragt der Chef: „Haben Sie noch offene Fragen?“\nIch: „Ja, warum nehmen Sie mich?“",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-21T14:41:07.649Z",
+      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular zum Verlust Ihres Gedächtnisses ausgefüllt?“ – Ich nenne das mal ein Selbst‑Ausweis‑Problem.",
+      "qwen": "Ich fragte im Fundbüro nach dem verlorenen Kugelschreiber. Die Antwort: „Den müssen wir leider erst finden.“",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
