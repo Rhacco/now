@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:06:03.666Z",
-      "gpt": "Ich klopfte an die Tür, um mich für das laute Radio zu entschuldigen – die Nachbarn luden mich ein, das nächste Konzert zu leiten.",
-      "qwen": "Ich beschwere mich lautstark über den Hund. Der Nachbar lacht nur und zeigt auf sein Schild: „Der Hund gehört mir, der Lärm gehört Ihnen.“",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-20T21:10:58.521Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich dachte, wir machen heute nur Kaffee.“",
       "qwen": "Klaus spricht eine Stunde lang über Synergien. Der Chef fragt, ob er noch dabei ist.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich fragte den Apotheker nach der Dosierung. Er sagte: „Zweimal täglich – einmal morgens, einmal abends.“",
       "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
+    },
+    {
+      "timestamp": "2026-11-21T01:16:06.694Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wach bleiben – und die PowerPoint, damit wir nicht einschlafen.“",
+      "qwen": "In der Besprechung fragt der Chef: „Wer hat die Daten gelöscht?“\nStillkeit. Dann meldet sich der Praktikant: „Ich?“",
+      "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
     }
   ]
 }
