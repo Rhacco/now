@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:40:58.427Z",
-      "gpt": "Beim Ausmisten wirft er die alte Waschmaschine raus – die neue Nachbarn freuen sich, jetzt haben sie endlich Platz für den Staubsauger.",
-      "qwen": "Die Kiste mit „Wichtiges“ war voll mit alten Zeitschriften. Darin fand ich nur eine Rechnung von 1998.",
-      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
-    },
-    {
       "timestamp": "2026-11-20T22:46:05.714Z",
       "gpt": "Ich füllte das Formular für verlorene Schlüssel aus, doch im Feld „Verlustzeitpunkt“ schrieb ich „seit gestern“. Das Fundbüro meldete: „Wir haben sie nie gefunden.“",
       "qwen": "Ich fand meine Geldbörse im Fundbüro, aber der Finder behauptete, sie sei sein Eigentum.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Ausmisten den Staubsauger verkaufen – er hat mir dankbar zugestimmt, weil er endlich mal wieder frei durchatmen kann.",
       "qwen": "Emma packt den letzten Kasten. Der Umzugstruck ist längst abgefahren, sie steht aber immer noch da.",
       "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
+    },
+    {
+      "timestamp": "2026-11-21T02:46:09.370Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Der Besucher schüttelt den Kopf: „Hier gibt’s nur Stummfilm.“",
+      "qwen": "Im Museum fragt er: „Ist das echt?“\nDie Archivarin antwortet: „Ja, nur leider ohne Ton.“",
+      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
     }
   ]
 }
