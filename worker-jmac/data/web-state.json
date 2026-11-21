@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:50:59.289Z",
-      "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil seine Lampe nicht geht – ich gebe ihm meine Steckdose, weil er gerade das Licht ausmacht.",
-      "qwen": "Ich fragte den Nachbarn, wo das Parkhaus sei. Er deutete auf sein nacktes Sofa: „Das ist mein Beifahrersitz.“",
-      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
-    },
-    {
       "timestamp": "2026-11-21T03:55:58.744Z",
       "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin bringt ihm eine Pfanne – er meint: „Ich wollte nur wach werden, nicht braten!“",
       "qwen": "Ich bestellte im Café einen Kaffee.\n„Das gibt’s nur im Restaurant“, seufzte die Bedienung.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt sie ein „leichtes“ Omelett, doch der Kellner servierte ihr nur ein Ei‑weiß‑bisschen.",
       "qwen": "Die Kellnerin bringt das Schnitzel. „Das ist der letzte,“ sagt sie. „Der erste ist ja noch in der Küche.“",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-21T08:01:07.490Z",
+      "gpt": "Ich mache Yoga im Park, strecke mich nach dem Mond und merke, dass ich die ganze Zeit im Kreis um den Springbrunnen gelaufen bin.",
+      "qwen": "Ich mache Yoga, um den Stress loszuwerden. Beim Herabschauenden Hund fragt mich der Trainer: „Wie geht’s dir?“ – „Mir geht’s gut, aber meine Arme sind entnervt.“",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
