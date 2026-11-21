@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:56:06.678Z",
-      "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie meldete sofort: „Bitte erst das Handy aufladen – sonst wird das Training nie beginnen.“",
-      "qwen": "Der Akku zeigt ein Prozent, während ich nach dem Ladekabel suche. Ich falle in Ohnmacht, bevor ich den Stecker finde.",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-20T21:01:08.063Z",
       "gpt": "Ich bestelle im Café einen Espresso, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will nur das Wasser, das ich schon bezahlt habe.“",
       "qwen": "Im Restaurant fragte ich nach dem „Café de Paris“. Der Kellner schob eine Karte vorbei: „Danke, hier wird nicht gezahlt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich nie einlösen kann.“",
       "qwen": "Ich warte seit drei Stunden im Wartezimmer. Der Arzt ruft mich rein, schaut mich an und sagt: „Sie kommen morgen wieder.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-21T01:05:58.675Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich endlich meine Fortbildung bezahlt bekomme.“",
+      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung, doch der Chef schlug nur die nächste Stelle vor.",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
