@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:56:04.942Z",
-      "gpt": "Der Paketbote klingelt, ich frage nach dem Kundenservice‑Ticket, er legt das Paket hin und sagt: „Hier, das ist die Rücksendung Ihrer Beschwerde.“",
-      "qwen": "Paketbote: „Wo ist Ihre Unterschrift?“\nIch: „In der Lieferung.“",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-21T02:00:57.420Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein Blatt Papier – „Hier steht: „Nur für die Augen“.“",
       "qwen": "Der Verkäufer fragt: „Welche Farbe für Ihr Auto?“\nIch: „Keine Ahnung, ich will ja nur eine Bürste kaufen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende fragte mich die Behörde, ob ich das gefundene Portemonnaie selbst gemeldet habe.",
       "qwen": "Selbst das Fundbüro verlangt für die Verlustanzeige ein Formular. Man sucht also ein Formular, um ein Formular zu finden.",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-21T06:06:08.337Z",
+      "gpt": "Ich packte den Staubsauger aus, um ihn zu spenden, und fand darin meinen alten Hausschlüssel – jetzt staubt er nur noch im Keller.",
+      "qwen": "Wir haben beim Ausmisten eine Festplatte gefunden. Darin lag die Eifersucht der letzten zwanzig Jahre.",
+      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
     }
   ]
 }
