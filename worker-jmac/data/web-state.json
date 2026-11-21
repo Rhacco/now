@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:06:03.576Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Ich wartete stundenlang in der Praxis, bis der Arzt sagte: „Nächster Patient.“\nDraußen in der Apotheke wurde mir die Rezeptgebühr direkt vom Gehalt abgezogen.",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-21T10:11:02.466Z",
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine auf den Balkon gestellt?“ – „Damit ich beim Aufräumen endlich frische Luft habe.“",
       "qwen": "Die Frage „Wer hat das?“ bleibt in unserer Familie immer unbeantwortet. Jeder schaut brav auf den Boden.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Paket schon unterschrieben?“ – „Nein, ich habe es gerade erst bestellt.“",
       "qwen": "Der Kurier drückte mir das Paket in die Hand und sagte: „Das hier ist für Sie.“ Ich fragte: „Aber ich habe doch nichts bestellt.“ Er antwortete: „Genau deshalb ist es so günstig.“",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-21T14:15:58.574Z",
+      "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, aber die Kasse war besetzt – im Supermarkt nebenan. Dort bekam ich dann doch Tomatensauce.",
+      "qwen": "Ich fragte im Supermarkt nach frischem Brot, da zeigte man mir einen Tiefkühlschrank.",
+      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
     }
   ]
 }
