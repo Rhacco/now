@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:30:58.212Z",
-      "gpt": "Der Nachbar klopft, weil die Heizung wieder streikt, und fragt: „Kannst du mir kurz deine Wärme leihen?“ Ich reiche ihm den Toaster.",
-      "qwen": "Der Nachbar mahlt täglich um sechs, ich drohe ihm. Er meldet: „Das ist die Hausmusik.“",
-      "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
-    },
-    {
       "timestamp": "2026-11-21T12:36:04.783Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Apotheker: „Rezept gefällig?“\nIch: „Eher ein Rezept für einen Therapeuten.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint, weil meine Ideen noch im „Entwurfs‑Modus“ feststecken.",
       "qwen": "Der Chef fragt: „Haben Sie die Präsentation geschickt?“\nIch: „Ja, an das falsche Meeting.“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-21T16:36:05.991Z",
+      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Buch über Brotbacken – ich dachte, sie meint das fertige Produkt.",
+      "qwen": "Der Verkäufer drückt mir das teuerste Modell in die Hand. „Das hier ist die beste Beratung, die Sie kriegen können.“",
+      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
     }
   ]
 }
