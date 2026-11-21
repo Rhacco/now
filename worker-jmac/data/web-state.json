@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:30:59.427Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
-      "qwen": "Ich frage den Arzt: „Doktor, dauert das noch lange?“\nEr zeigt auf die Apotheke: „Da sitzen Sie schon seit einer Stunde.“",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-21T14:35:59.545Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich mache sofort einen Online‑Kurs – dann weiß ich, wie ich mich bewerbe.“",
       "qwen": "Nach dem Vorstellungsgespräch fragt der Chef: „Haben Sie noch offene Fragen?“\nIch: „Ja, warum nehmen Sie mich?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich warte im Praxis‑Wartezimmer, die Ärztin ruft mich: „Bitte nehmen Sie das Rezept mit, Sie brauchen es im Nebenraum.“ Dort steht nur ein Spiegel.",
       "qwen": "„Ich bin hier zum Kaffeesaufen“, sagte der Patient.\nDer Arzt seufzte: „Dann gehen Sie bitte zur Apotheke.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-21T18:36:03.030Z",
+      "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir ein Regenschirm – „Damit Sie nicht im Regen stehen, wenn die Ware ausverkauft ist.“",
+      "qwen": "Der Verkäufer fragt: „Können wir Sie beraten?“ Ich sage: „Nein, ich bin nur zum Staunen da.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
