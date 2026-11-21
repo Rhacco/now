@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:45:56.880Z",
-      "gpt": "Ich klopfe an die Nachbarin, weil das Waschbecken überläuft – sie öffnet die Tür, wirft mir einen Besen und sagt: „Hier wohnen wir jetzt zusammen.“",
-      "qwen": "Der neue Nachbar fragt, ob ich die Sauna benutze. Ich antworte: „Nein, ich brannte meinen Ausweis, als ich einzog.“",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-21T18:51:07.319Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort den Regenschirm aus der Schublade – die App fragt, ob ich den Schirm schon gekauft habe.",
       "qwen": "Stell dir vor, ich würde dir ein „Nein“ senden. Du hast es gerade erst in den Papierkorb geworfen.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den Salat gegessen?“ Der Hund bellt: „Ich! Ich wollte nur die Tomaten‑Deko probieren.“",
       "qwen": "Der Vater erklärt dem Sohn die Herkunft von „Nesthocker“. Der Sohn fragt, ob er das mit dem Umzug in die WG machen muss.",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-21T22:50:58.197Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum – ich habe gerade erst die Weiterbildung gebucht.“",
+      "qwen": "Ich wollte mich für den Chefposten bewerben, doch der Personaler fragte nur: „Machen Sie noch Weiterbildung?“\n„Nein“, sagte ich, „ich bin schon Chef.“",
+      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
     }
   ]
 }
