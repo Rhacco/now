@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:20:59.310Z",
-      "gpt": "Mama fragt: „Warum hast du das Sofa in den Garten gestellt?“ – „Ich wollte endlich mal draußen sitzen, wo das WLAN nicht streikt.“",
-      "qwen": "Mein Vater sagt, ich solle nicht so viel Zeit auf dem Handy verschwenden. Er spricht seit zwanzig Minuten ununterbrochen über die Ernte.",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-21T06:25:59.175Z",
       "gpt": "Ich wollte am Supermarkt die frischen Tomaten holen, doch am Wochenmarkt stand schon ein Schild: „Selbstpflücken verboten – wir verkaufen nur das Bild.“",
       "qwen": "Der Wochenmarkt ist so authentisch, dass die Tomaten mit Dialekt sprechen.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe: „Ihr Kunde hat angerufen, er wollte das Paket zurück – er hat es selbst bestellt.“",
       "qwen": "Der Bot liefert das Paket an die falsche Tür. Ich rufe an, der Support erklärt: „Entschuldigung, aber Ihr Nachbar hat Ihnen den Code geschickt.“",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-21T10:26:04.628Z",
+      "gpt": "Ich frage im Elektrofachgeschäft nach einem Lautsprecher, der „laut aber leise“ klingt – die Verkäuferin reicht mir Kopfhörer.",
+      "qwen": "Der Texter fragt: „Soll ich das hier kürzen, damit es nach Werbung klingt?“ Ich sage: „Nein, es klingt schon wie eins.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
