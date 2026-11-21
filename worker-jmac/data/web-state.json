@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:55:58.565Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Wie wäre es, wenn wir einfach das nächste Meeting absagen? Dann haben wir endlich etwas erledigt.“",
-      "qwen": "In der Besprechung fragte der Chef: „Haben Sie die Präsentation fertig?“\n„Ja, aber ich habe das Power-Point-Programm noch nicht installiert.“",
-      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
-    },
-    {
       "timestamp": "2026-11-21T17:00:57.799Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich erst noch die Weiterbildung über Ihre Fragen brauche.“",
       "qwen": "Der Personaler fragt nach meinen Fortbildungen. Ich sage: „Ich nehme gerade Deutsch 101.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe das halbe Haus in Kisten, dann frage ich den Umzugswagen: „Wie viel kostet das, wenn ich nur noch Luft verschicke?“",
       "qwen": "Wir haben beim Ausmisten eine Kiste mit Briefen aus 1985 gefunden. Darin wünschte ich mir sehnlichst, dass mein Umzug endlich vorbei ist.",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-21T21:06:04.033Z",
+      "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie zeigte nur „Bitte legen Sie das Handy weg – Sie sind bereits in Bewegung.“",
+      "qwen": "Ich habe versehentlich den Wecker um 3 Uhr an.\n\nMein Handy wollte mich nicht wach, sondern mein Facebook-Feed.",
+      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
     }
   ]
 }
