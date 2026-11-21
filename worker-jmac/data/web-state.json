@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:00:58.453Z",
-      "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze springt sofort auf den Rücken und macht die tiefste Entspannung seines Lebens.",
-      "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mein Gleichgewicht komplett zerstört.",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-21T07:06:01.113Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Gibt es hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer aus‑ und wieder einstecken.“",
       "qwen": "Am Strand: „Hast du meine Sonnenbrille gesehen?“\n„Nein, aber ich habe deine Sonnenallergie.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, um Schritte zu zählen – nach zehn Minuten lag ich im Bett, weil sie mir sagte, ich hätte bereits das Ziel erreicht.",
       "qwen": "Ich suchte die App, um den Herd zu steuern.\nDer Herd zeigte mir an, dass er das WLAN nicht findet.",
       "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
+    },
+    {
+      "timestamp": "2026-11-21T11:06:05.545Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn Sie mir den Preis sagen.“",
+      "qwen": "Beim Wochenmarkt frage ich: „Sind die Äpfel noch frisch?“ Der Bauer entgegnet: „Frisch? Die sind gerade erst vom Baum gefallen!“",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
