@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:00:57.267Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage kam sofort: „Bitte bleiben Sie sitzen, wir suchen jetzt das Signal.“",
-      "qwen": "Ich nahm das Taxi, weil der Bus zu langsam war. Dann ließ mich der Fahrer stehen, weil ich zu laut seufzte.",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-20T23:06:07.086Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Kuchen oder Kaffee?“ Ich antworte: „Beides, ich will schließlich nicht nur süß, sondern auch wach bleiben.“",
       "qwen": "Ich fragte den Chef nach dem Geheimnis seines Rindsbratens.\nEr seufzte: „Geduld, Liebe und ein sehr dicker Topfboden.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten den Staubsauger gefunden, der noch nie geleert wurde – jetzt habe ich endlich ein Gerät, das wirklich alles aufsaugt.",
       "qwen": "Die Kiste mit den „Wichtigmachen“ wog so schwer, dass ich sie kaum tragen konnte. Darin steckten nur leere Vorratsdosen von 1998.",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-21T03:06:06.121Z",
+      "gpt": "Ich wollte schnell die Wetter‑App öffnen, doch das Handy zeigte nur \"Kein Netz\". Offenbar hat der Regen beschlossen, offline zu bleiben.",
+      "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach dem Ladekabel. Dann fällt mir auf: Ich habe es gerade in der Jackentasche.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
