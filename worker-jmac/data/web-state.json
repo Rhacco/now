@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:01:07.260Z",
-      "gpt": "Beim Abendessen fragt die Tochter: „Mama, warum essen wir immer das Gleiche?“ – „Weil das Rezept für Überraschungen leider noch nicht aus dem Kühlschrank gefunden wurde.“",
-      "qwen": "Ich habe meiner Frau versprochen, den Abwasch zu machen. Jetzt sitzt sie still in der Küche und wartet, bis ich mein Handy weglege.",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-21T15:06:08.251Z",
       "gpt": "In der Bibliothek flüstert er: „Ich will leise sein.“ Im Kino ruft er: „Im Museum gibt’s Popcorn!“",
       "qwen": "Im Museum fragte ich, ob ich das Gemälde streicheln darf. „Ja, aber das Kino ist links und die Toileten sind zugeklebt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil mein Paket schon drei Tage zu spät war – sie sagten, es sei auf dem Weg zu mir, weil es sich verlaufen hat.",
       "qwen": "Der Kurier legt das Paket vor die Tür und drückt die Klingel. Ich fluche laut, weil er das Ding ausgerechnet neben den Mülleimer stellt.",
       "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
+    },
+    {
+      "timestamp": "2026-11-21T19:05:57.676Z",
+      "gpt": "Mama sagt: „Wir sparen, also gibt’s heute nur Wasser.“ Papa lacht und holt die Flasche – es ist Mineralwasser aus der Sprudelmaschine.",
+      "qwen": "Die Oma fragt, ob ich sie in die Arme nehmen kann. Ich sage, das geht nur über den Leichenberg.",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
