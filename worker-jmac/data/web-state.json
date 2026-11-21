@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:50:57.847Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar – endlich lerne ich, pünktlich zu kommen.“",
-      "qwen": "Im Vorstellungsgespräch fragte er nach meinen Stärken. Ich sagte: „Ich bin extrem lernfähig.“",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-21T14:56:05.783Z",
       "gpt": "Ich jogge im Park, hör ein lautes Quietschen – ein Fahrrad liegt im Matsch. Ich steige ab, ziehe die Pedale aus und mache Yoga.",
       "qwen": "Ich wollte beim Yoga nur die Spannung lösen. Jetzt bin ich neben der Yogamatte eingeschlafen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort den Regenschirm aus der Schublade – die App fragt, ob ich den Schirm schon gekauft habe.",
       "qwen": "Stell dir vor, ich würde dir ein „Nein“ senden. Du hast es gerade erst in den Papierkorb geworfen.",
       "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
+    },
+    {
+      "timestamp": "2026-11-21T18:56:06.278Z",
+      "gpt": "Im Café bestellt er ein Ei‑Benedikt, bekommt aber nur ein rohes Ei und die Bedienung: „Wir kochen hier nur Frühstück, nicht Frühstücks‑Logik.“",
+      "qwen": "Ich fragte im Café: „Wie schmeckt der Espresso?“\n„Das ist doch die Frage, die ich mir täglich stelle.“",
+      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
     }
   ]
 }
