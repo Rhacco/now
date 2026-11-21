@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:46:05.762Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Brot in Folie einpacken?“ Auf dem Wochenmarkt sagt der Bäcker: „Nur, wenn's ein Picknick‑Brot ist.“",
-      "qwen": "Beim Wochenmarkt frage ich nach dem Preis. Der Bauer lacht und sagt: „Den kriegt man hier nicht, nur beim Discounter.“",
-      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
-    },
-    {
       "timestamp": "2026-11-20T23:51:05.344Z",
       "gpt": "Ich wollte beim Joggen meine Schrittzahl tracken, doch die App meldete plötzlich: „Du hast das Ziel erreicht – du hast das Haus verlassen.“",
       "qwen": "Ich habe meine Navigations-App gefragt, wie man am schnellsten nach Hause kommt. Sie schlug vor, den Fluss in den Flüssen vor den Dörfern zu nehmen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft ja endlich mal ein Film über das Ausleihen.",
       "qwen": "Im Museum fragte ich: „Darf ich diese Vitrine berühren?“ Der Wächter nickte. „Ja, sie ist aus Glas.“",
       "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
+    },
+    {
+      "timestamp": "2026-11-21T03:50:59.289Z",
+      "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil seine Lampe nicht geht – ich gebe ihm meine Steckdose, weil er gerade das Licht ausmacht.",
+      "qwen": "Ich fragte den Nachbarn, wo das Parkhaus sei. Er deutete auf sein nacktes Sofa: „Das ist mein Beifahrersitz.“",
+      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
     }
   ]
 }
