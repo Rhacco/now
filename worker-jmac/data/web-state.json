@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:06:01.113Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Gibt es hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer aus‑ und wieder einstecken.“",
-      "qwen": "Am Strand: „Hast du meine Sonnenbrille gesehen?“\n„Nein, aber ich habe deine Sonnenallergie.“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-21T07:11:05.095Z",
       "gpt": "Im Supermarkt fragt die Kundin nach veganer Mayonnaise, die Verkäuferin lächelt und reicht ihr die Butter. „Für die vegane Diät“, sagt sie.",
       "qwen": "Der Verkäufer starrte mich an: „Ist das jetzt ein Wunsch oder eine Bestellung?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn Sie mir den Preis sagen.“",
       "qwen": "Beim Wochenmarkt frage ich: „Sind die Äpfel noch frisch?“ Der Bauer entgegnet: „Frisch? Die sind gerade erst vom Baum gefallen!“",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-21T11:11:02.413Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich bis dahin endlich den Kurs „Selbstmarketing“ abgeschlossen habe.“",
+      "qwen": "Ich sage im Vorstellungsgespräch, ich bin „fortbildungsoffen“. Der Chef nickt und reicht mir einen Stapel alter Steuerbescheide.",
+      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
     }
   ]
 }
