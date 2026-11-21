@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:06:08.251Z",
-      "gpt": "In der Bibliothek flüstert er: „Ich will leise sein.“ Im Kino ruft er: „Im Museum gibt’s Popcorn!“",
-      "qwen": "Im Museum fragte ich, ob ich das Gemälde streicheln darf. „Ja, aber das Kino ist links und die Toileten sind zugeklebt.“",
-      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
-    },
-    {
       "timestamp": "2026-11-21T15:11:07.321Z",
       "gpt": "Mama sagt: „Wir brauchen mehr Ordnung.“ Papa legt das Chaos in den Schrank – jetzt ist das Haus endlich aufgeräumt.",
       "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht: „Der ist für den Enkel, der nicht weint.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama sagt: „Wir sparen, also gibt’s heute nur Wasser.“ Papa lacht und holt die Flasche – es ist Mineralwasser aus der Sprudelmaschine.",
       "qwen": "Die Oma fragt, ob ich sie in die Arme nehmen kann. Ich sage, das geht nur über den Leichenberg.",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-21T19:10:58.609Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Quartal?“ Die Buchhalterin meldet sich: „Ich habe sie, aber sie haben schon Urlaub.“",
+      "qwen": "Ich schlug vor, die Besprechung zu kürzen. Der Chef nickte und fragte, ob ich jetzt mitreiße.",
+      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
     }
   ]
 }
