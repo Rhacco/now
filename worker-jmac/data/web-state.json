@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:56:05.295Z",
-      "gpt": "Im Café bestellt sie ein „leichtes“ Omelett, doch der Kellner servierte ihr nur ein Ei‑weiß‑bisschen.",
-      "qwen": "Die Kellnerin bringt das Schnitzel. „Das ist der letzte,“ sagt sie. „Der erste ist ja noch in der Küche.“",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-21T08:01:07.490Z",
       "gpt": "Ich mache Yoga im Park, strecke mich nach dem Mond und merke, dass ich die ganze Zeit im Kreis um den Springbrunnen gelaufen bin.",
       "qwen": "Ich mache Yoga, um den Stress loszuwerden. Beim Herabschauenden Hund fragt mich der Trainer: „Wie geht’s dir?“ – „Mir geht’s gut, aber meine Arme sind entnervt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachgeschäft nach einer Energiesparlampe, der Verkäufer meint: „Klar, hier ist ein Stromsparschwein, das füttern Sie mit Strom.“",
       "qwen": "Der Verkäufer riet mir dringend zur teureren Lampe. Sie war auch die günstigere.",
       "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
+    },
+    {
+      "timestamp": "2026-11-21T12:01:05.198Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine aus dem Fenster geworfen?“  \nTim: „Sie hat mir gesagt, sie braucht frische Luft.“",
+      "qwen": "Ich fragte den Hund, ob er die Brötchen für die Familie backen kann. Er nickte und fragte: „Mit Marmelade?“",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
