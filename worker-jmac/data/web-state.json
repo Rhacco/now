@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:36:05.981Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich nie einlösen will.“",
-      "qwen": "Der Arzt sagte, ich müsse auf die Apotheke warten. Ich rief die Apotheke an.",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-21T04:40:57.226Z",
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Bitte geben Sie Ihre Unterschrift unter das nächste Formular, das Sie finden.“",
       "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir einen leeren Beleg.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt der Trainer: „Wer kann die Spannung lösen?“ – Der Kater vom Nachbarn springt auf die Matte und macht den herabschauenden Hund.",
       "qwen": "Beim Yoga fragte ich den Trainer: „Früher war ich so starr wie ein Brett.“ Er antwortete: „Genau deshalb sitzen Sie heute noch hier.“",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-21T08:46:07.368Z",
+      "gpt": "In der Bibliothek fragt der Bibliothekar, ob ich leise bin. Im Kino flüstert er: „Bitte nicht laut, ich schreibe das Museumsexponat.“",
+      "qwen": "Ich stellte im Kino mein Jackett ab. Der Pförtner schaute verwirrt: „Das ist doch das Museum für moderne Kunst.“",
+      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
     }
   ]
 }
