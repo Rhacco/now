@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:35:57.204Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich zeige ihr mein Portemonnaie – es ist das Formular.",
-      "qwen": "Ich gab den Fund im Amt ab. Die Beamtin fragte bloß: „Warum?“",
-      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
-    },
-    {
       "timestamp": "2026-11-21T15:41:05.723Z",
       "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie Milch dazu?“ – Ich antworte: „Nur, wenn er auch das Frühstück serviert.“",
       "qwen": "Ich frag den Kellner: „Ist das hier auch schon gegessen?“\nEr nickt: „Ja, genau deshalb steht's im Kühlfach.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne und finde ein Rücksendeformular – er hat mein Paket zurückgeschickt, weil ich es nie bestellt habe.",
       "qwen": "Der Bot drückt das Paket beim Neffen ab. Der Neffe unterschreibt und fragt: „Gibt’s was zurück?“",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-21T19:40:57.037Z",
+      "gpt": "Ich habe die neue Fitness‑App aktiviert, aber mein Handy zeigt nur „Standby“ – weil ich die ganze Zeit nur im Sofa‑Marathon sitze.",
+      "qwen": "Ich fragte Siri nach dem Weg, doch das Handy zeigte nur meinen eigenen Anruf an.",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
