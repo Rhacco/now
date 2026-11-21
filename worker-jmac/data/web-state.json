@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:51:01.347Z",
-      "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht und sie fragte, ob ich noch etwas mitbringe – ich sagte, das WLAN.",
-      "qwen": "Der Nachbar klopft: „Entschuldigung, mein Rasenmäher läuft falsch.“\nIch sage: „Nein, Sie gehören einfach nicht dazu.“",
-      "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
-    },
-    {
       "timestamp": "2026-11-21T06:56:04.422Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du Popcorn leihst.“",
       "qwen": "Ich fragte im Museum: „Wie teuer ist das Ticket?“\nDer Wächter antwortete: „Das hier ist kein Kino, das ist Geschichte.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich fluchte: „Ich bin doch schon in der Apotheque!“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-21T10:55:58.461Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie ihn mit extra Schaum oder mit extra Arbeit?“",
+      "qwen": "Der Kellner fragte: „Noch Fragen zum Menü?“\n„Ja, warum riecht die Luft so nach Glühwein?“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
