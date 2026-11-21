@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:46:05.328Z",
-      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Ich hebe die Hand, weil ich gerade den Kater vom letzten Abend nicht mehr finde.",
-      "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich!“, und ich denke: „Endlich Ruhe.“",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-21T10:50:59.329Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich fluchte: „Ich bin doch schon in der Apotheque!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar – endlich lerne ich, pünktlich zu kommen.“",
       "qwen": "Im Vorstellungsgespräch fragte er nach meinen Stärken. Ich sagte: „Ich bin extrem lernfähig.“",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-21T14:56:05.783Z",
+      "gpt": "Ich jogge im Park, hör ein lautes Quietschen – ein Fahrrad liegt im Matsch. Ich steige ab, ziehe die Pedale aus und mache Yoga.",
+      "qwen": "Ich wollte beim Yoga nur die Spannung lösen. Jetzt bin ich neben der Yogamatte eingeschlafen.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
