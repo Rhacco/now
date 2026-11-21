@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:31:07.169Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Der Gast: „Mit Milch, bitte – ich habe gerade das Rezept für Schokoladenkuchen vergessen.“",
-      "qwen": "Ich helfe die Spaghetti an und dusche kurz.\nDann esse ich die Nudeln mit Shampoo.",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-20T20:36:07.542Z",
       "gpt": "Ich rufe den Kundenservice, weil mein Paket nicht ankam – sie sagen, es sei bereits bei mir zu Hause, weil ich es schon aus Versehen aus dem Briefkasten gezogen habe.",
       "qwen": "Der Kurier fragt nach der Unterschrift. Ich zeige auf den toten Fisch im Aquarium: „Der hat’s schon bestätigt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notruf, weil das WLAN ausfiel. Der Schaffner lächelte: „Keine Sorge, das ist unser Offline‑Modus.“",
       "qwen": "Ich fragte den Taxifahrer, warum er den Bus überholt. Er lachte: „Die fahren auch nur nach Fahrplan.“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-21T00:35:58.301Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur meinen verlorenen Kugelschreiber gefunden.“",
+      "qwen": "Ich gab beim Fundbüro an, dass der verlorene Kuschelhase kein Vermögen ist. Die Dame zuckte nur die Schultern: „Dafür bräuchten wir die Eheschließungsurkunde.“",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
