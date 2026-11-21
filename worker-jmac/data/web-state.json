@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:31:03.975Z",
-      "gpt": "Ich packe beim Ausmisten die Kaffeemaschine ein, weil ich ohne Kaffee nicht umziehen kann – und merke, dass ich sie gar nicht mehr brauche.",
-      "qwen": "Ich habe beim Ausmisten den alten CD-Player verkauft. Neue Musik gibt’s jetzt nur noch aus dem Radio oder vom Nachbarn.",
-      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
-    },
-    {
       "timestamp": "2026-11-21T05:36:05.609Z",
       "gpt": "Ich öffne die Wetter‑App, weil ich nach Regen frage, und sie zeigt mir nur den Lade‑Bildschirm – anscheinend hat sie auch schlechtes Wetter.",
       "qwen": "Ich habe versehentlich das E-Mail-Konto auf dem Smart-Fridge gelöscht.\nDer Kühlschrank warf einen Fehler: „Kein Sender gefunden.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe am Supermarkt, prüfe das Angebot, dann geht ein Verkäufer vom Wochenmarkt vorbei und ruft: „Frisches Gemüse, aber nur im Sonderangebot – für mich!“",
       "qwen": "Ich frage im Supermarkt nach frischen Erdbeeren. Die Verkäuferin zeigt auf die Tiefkühltruhe.",
       "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
+    },
+    {
+      "timestamp": "2026-11-21T09:35:57.199Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Ich fragte den Apotheker nach meinem Rezept. Er sagte: „Das kenne ich nicht, aber ich sehe Sie hier doch ständig im Wartezimmer sitzen.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
