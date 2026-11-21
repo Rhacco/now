@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:40:57.454Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einem günstigen Lautsprecher, der gut klingt – die Verkäuferin reicht mir ein Schild „Bitte leise sein“.",
-      "qwen": "Im Baumarkt beraten mich drei Leute, ob die Sockelleiste passt. Dann sagt der Verkäufer: „Die 99 Euro sind übrigens nicht im Preis enthalten.“",
-      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
-    },
-    {
       "timestamp": "2026-11-20T21:46:03.864Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Der Kunde lächelt: „Nur, wenn ich den Wochenmarkt nicht mehr finde.“",
       "qwen": "Im Supermarkt kosten die Tomaten 99 Cent.\nAuf dem Wochenmarkt schimpft der Bauer: „Die sind reif, aber die Kasse ist leer!“",
@@ -300,6 +294,12 @@
       "gpt": "Ich reiche das ausgefüllte Formular im Fundbüro ein – die Angestellte fragt, ob ich das „Verloren‑oder‑Gefunden‑Kästchen“ angekreuzt habe.",
       "qwen": "Ich habe den Fundbericht ausgefüllt, doch das Formular verlangt über 20 Seiten für den Fund. Ich habe den Uhrenarmband einfach in den Mülleimer geworfen.",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-21T01:49:06.812Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Die Kaffeemaschine piept: „Ich habe das Kaffeebohnen‑Diagramm.“",
+      "qwen": "Der Chef fragte nach dem Projektstand. Ich winkte ab: „Alles im grünen Bereich.“ – „Dann haben wir ja alles im grünen Bereich.“",
+      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
     }
   ]
 }
