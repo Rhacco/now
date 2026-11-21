@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:35:58.301Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur meinen verlorenen Kugelschreiber gefunden.“",
-      "qwen": "Ich gab beim Fundbüro an, dass der verlorene Kuschelhase kein Vermögen ist. Die Dame zuckte nur die Schultern: „Dafür bräuchten wir die Eheschließungsurkunde.“",
-      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
-    },
-    {
       "timestamp": "2026-11-21T00:41:06.135Z",
       "gpt": "Im Museum fragt ein Besucher: „Welches Bild ist das Lieblingswerk der Bibliothek?“ Die Wächterin meint: „Das mit den leisen Filmrollen.“",
       "qwen": "Im Museum flüstert die Frau: „Die展 sind so ruhig wie im Kino.“\nIch antworte: „Hier gibt’s aber auch keine Popcorn-Kein-Flüstern-Schilder.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das ich nie einlösen will.“",
       "qwen": "Der Arzt sagte, ich müsse auf die Apotheke warten. Ich rief die Apotheke an.",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-21T04:40:57.226Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Bitte geben Sie Ihre Unterschrift unter das nächste Formular, das Sie finden.“",
+      "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir einen leeren Beleg.",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
