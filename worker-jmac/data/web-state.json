@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:01:08.015Z",
-      "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel, der Schaffner lächelt und sagt: „Mein Lieblingsplatz – das Ende der Zugfahrt.“",
-      "qwen": "Ich buchte eine einsame kleine Hütte in den Bergen. Draußen stand: „WLAN inklusive, aber bitte leise, die Rentiere sind empfindlich.“",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-21T13:06:04.277Z",
       "gpt": "Ich wollte mit der Sprachsteuerung das Licht anmachen, aber das Handy verstand „Licht an“ als „Licht‑App öffnen“ – jetzt leuchtet mein Bildschirm.",
       "qwen": "Ich fragte Siri nach dem Weg, sie schlug vor, den Fluss zu überqueren. Logisch, Wasser fließt ja auch.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich erst noch die Weiterbildung über Ihre Fragen brauche.“",
       "qwen": "Der Personaler fragt nach meinen Fortbildungen. Ich sage: „Ich nehme gerade Deutsch 101.“",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-21T17:06:04.887Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich antworte: „Nur, wenn Sie mir den Kundenservice zeigen.“",
+      "qwen": "Der Bot bittet mich, das Paket am Fenster vor der Tür liegen zu lassen. Ich fragte: „Warum müssen Sie es dann durch das Fenster werfen?“",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
