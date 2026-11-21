@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:41:05.503Z",
-      "gpt": "Ich sortiere beim Umzug meine Socken und finde einen alten Geldschein – er ist jedoch nur ein abgelaufener Gutschein für die Waschmaschine.",
-      "qwen": "Ich habe meine alte Kaffeevollautomat vom Dachboden geholt. Der füllt nun leider die gesamte Garage.",
-      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
-    },
-    {
       "timestamp": "2026-11-21T06:45:57.928Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Tüte oder aus der Werbung?“ Ich nehme die, die ich am Wochenmarkt gerochen habe.",
       "qwen": "Ich wollte auf dem Wochenmarkt die Tomaten mit dem Finger drücken. Der Bauer hat mich angeschaut, als hätte ich sein Baby angefasst.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienabend fragt Mama: „Wer hat den letzten Keks genommen?“ Papa grinst und sagt: „Ich, aber ich dachte, das wäre ein Stück Kuchen.“",
       "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht und says: „Streitet nicht, ich hacke euch ab.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-21T10:46:05.328Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Ich hebe die Hand, weil ich gerade den Kater vom letzten Abend nicht mehr finde.",
+      "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich!“, und ich denke: „Endlich Ruhe.“",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
