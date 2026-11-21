@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:41:06.302Z",
-      "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei im „virtuellen Lager“ und habe sich verlaufen, weil es keinen GPS‑Signal hat.",
-      "qwen": "Der Paketbote ließ die Sendung vor der Tür liegen. Ich rief den Kundendienst an: „Wo ist mein Paket?“",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-21T09:45:58.558Z",
       "gpt": "Beim Ausmisten wirft er die alte Kaffeemaschine weg – weil er endlich merkt, dass er seit Jahren keinen Kaffee mehr trinkt.",
       "qwen": "Wir haben alte Bücher aussortiert. Die Kiste wog noch immer so schwer wie vor dem Ausmisten.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe den Kundendienst, weil das Paket leer ist – die Lieferung kam pünktlich, nur der Inhalt hatte einen früheren Termin.",
       "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Ja, ich bin’s!“\nEr sagt: „Dann holen Sie es ab.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-21T13:50:58.186Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“.Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“",
+      "qwen": "Der Kurier fragt: „Müssen Sie das Paket hier unterschreiben?“ Ich sage: „Ja, ich bin es ja schon.“",
+      "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
     }
   ]
 }
