@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:00:57.420Z",
-      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein Blatt Papier – „Hier steht: „Nur für die Augen“.“",
-      "qwen": "Der Verkäufer fragt: „Welche Farbe für Ihr Auto?“\nIch: „Keine Ahnung, ich will ja nur eine Bürste kaufen.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-21T02:06:06.537Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer fühlt sich heute besonders flexibel?“ Der Anfänger hebt die Hand: „Ich, weil ich gerade den Weg zur Kaffeemaschine nicht mehr finde.“",
       "qwen": "Ich versuche beim Yoga, den Drachen zu balancieren. Mein Knie knackt so laut, dass die Trainerin mich für einen Knoster hält.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packte den Staubsauger aus, um ihn zu spenden, und fand darin meinen alten Hausschlüssel – jetzt staubt er nur noch im Keller.",
       "qwen": "Wir haben beim Ausmisten eine Festplatte gefunden. Darin lag die Eifersucht der letzten zwanzig Jahre.",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-21T06:11:04.414Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie zählt nur Schritte, wenn ich zum Kühlschrank gehe. Jetzt bin ich Marathonläufer beim Snack‑Hol‑und‑Lauf.",
+      "qwen": "Ich rufe die Autopilot-App an und sage „Losfahren“.\nMein Auto antwortet: „Nur mit mir.“",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
