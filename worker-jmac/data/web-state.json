@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:06:06.121Z",
-      "gpt": "Ich wollte schnell die Wetter‑App öffnen, doch das Handy zeigte nur \"Kein Netz\". Offenbar hat der Regen beschlossen, offline zu bleiben.",
-      "qwen": "Der Akku ist bei 1 % und ich suche verzweifelt nach dem Ladekabel. Dann fällt mir auf: Ich habe es gerade in der Jackentasche.",
-      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
-    },
-    {
       "timestamp": "2026-11-21T03:11:03.532Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gesuchte Portemonnaie war schon im Antragsfenster.",
       "qwen": "Ich gab beim Fundbüro die Schlüssel zurück. Die Mitarbeiterin erklärte mir, wie man den Verlust meldet.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach veganer Mayonnaise, die Verkäuferin lächelt und reicht ihr die Butter. „Für die vegane Diät“, sagt sie.",
       "qwen": "Der Verkäufer starrte mich an: „Ist das jetzt ein Wunsch oder eine Bestellung?“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-21T07:15:58.479Z",
+      "gpt": "Mutter fragt: „Warum hast du die ganze Pizza gegessen?“ – Sohn: „Weil du gesagt hast, wir teilen das Glück, nicht das Essen.“",
+      "qwen": "Die Tante fragt besorgt: „Hast du schon ein Kind?“ Ich antworte: „Ja, ich habe einen Hund.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
