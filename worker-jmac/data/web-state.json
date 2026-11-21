@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:46:09.370Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Der Besucher schüttelt den Kopf: „Hier gibt’s nur Stummfilm.“",
-      "qwen": "Im Museum fragt er: „Ist das echt?“\nDie Archivarin antwortet: „Ja, nur leider ohne Ton.“",
-      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
-    },
-    {
       "timestamp": "2026-11-21T02:51:04.431Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, um Schritte zu zählen – nach zehn Minuten zeigte sie 0 km, weil ich im Aufzug stand.",
       "qwen": "Ich habe das Handy auf Flugmodus gestellt, damit es mich in Ruhe lässt. Jetzt antwortet es gar nicht mehr.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht und sie fragte, ob ich noch etwas mitbringe – ich sagte, das WLAN.",
       "qwen": "Der Nachbar klopft: „Entschuldigung, mein Rasenmäher läuft falsch.“\nIch sage: „Nein, Sie gehören einfach nicht dazu.“",
       "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
+    },
+    {
+      "timestamp": "2026-11-21T06:56:04.422Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du Popcorn leihst.“",
+      "qwen": "Ich fragte im Museum: „Wie teuer ist das Ticket?“\nDer Wächter antwortete: „Das hier ist kein Kino, das ist Geschichte.“",
+      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
     }
   ]
 }
