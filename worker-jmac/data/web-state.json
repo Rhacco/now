@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:25:57.248Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Schild: „Bitte ziehen Sie selbst an.“",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, nur meine Ex.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-21T15:30:57.946Z",
       "gpt": "Ich habe die neue Fitness‑App aktiviert, doch sie meldet nur: „Du hast bereits genug Schritte gemacht – du hast das Handy gerade fallen lassen.“",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe vergessen, dass ich es seit Dienstag am Ladekabel hänge.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wie lange dauert die Fahrt?“ Der Schaffner: „Bis zum Strand, etwa 3 Stunden, dann geht’s zu Fuß.“",
       "qwen": "Am Strand sah ich eine Frau, die einen Eimer Wasser trank. Ich fragte: „Darf ich das?“ Sie antwortete: „Ja, aber die Miete für das Badetuch ist extra.“",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-21T19:31:03.945Z",
+      "gpt": "Mama fragt: „Warum hast du das ganze Gemüse im Bad versteckt?“ Ich antworte: „Damit es endlich mal im Dampfbad entspannen kann.“",
+      "qwen": "Ich sage meiner Frau: „Ich hasse diese Familie wegen ihres Lärms.“ Sie antwortet: „Schau, wir haben keine Kinder.“",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
