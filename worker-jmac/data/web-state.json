@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:21:08.778Z",
-      "gpt": "Mama fragt: „Warum liegt das Geschirr immer noch in der Spülmaschine?“ Papa antwortet: „Weil es dort schon einen guten Job hat – es bleibt sauber.“",
-      "qwen": "Ich rufe aus der Haustür: „Fertig zum Hinausgehen?“ Meine Frau ruft zurück: „Ja, ich bin schon draußen!“",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-21T09:26:05.416Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel mitnehmen?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn sie noch reden können.“",
       "qwen": "Im Supermarkt fragt man nach dem Preis der Tomate.\nAuf dem Wochenmarkt fragt man nach dem Namen des Tomatenbauern.",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus fragt der Fahrer: „Bitte anschnallen, wir fahren jetzt gerade im Stau.“ Die Fahrgäste nicken, weil das Taxi nebenan ebenfalls feststeckt.",
       "qwen": "Ich fluche über jede Bahn- und Autobahnstauminute. Das Taxi wird mir dann am Ende doch zu teuer.",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-21T13:30:58.851Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Haben Sie einen Platz für mein Handtuch?“ Der Schaffner lächelt: „Nur, wenn Sie es ausklappen.“",
+      "qwen": "Während des Kletterns wird es eng. Ich rufe nach unten: „Sag mal, bin ich schon fertig?“",
+      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
     }
   ]
 }
