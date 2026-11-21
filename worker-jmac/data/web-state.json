@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:16:06.001Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Besucher nickt: „Nur, wenn Sie es im Kino zurückbringen.“",
-      "qwen": "Im Museum flüstert sie: „Hier darf man nicht essen.“\nDraußen im Kino schreit er: „Ich habe dir doch gesagt: Nicht reden!“",
-      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
-    },
-    {
       "timestamp": "2026-11-21T12:20:56.880Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "Im Museum flüsterte sie: „Seh ich hier aus, als wüsste ich was?“\nEr nickte: „Wer den Einlassschlupf kennt, ist ein Insider.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – dann kam die Beamtin und fragte, ob ich das Original nicht gleich im Tresor lassen will.",
       "qwen": "Ich habe beim Fundbüro nach meinem Schlüssel gefragt. „Ohne Verlustanzeige keine Auskunft.“",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-21T16:26:03.587Z",
+      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um zum Strand zu kommen?“ Der Schaffner lächelt: „Am nächsten Halt – zum Schwimmbad.“",
+      "qwen": "Ich fragte die Kassiererin, ob der Strand hier frei zugänglich sei. Sie meinte, nur wenn man die Flossen zurücklässt.",
+      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
     }
   ]
 }
