@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:20:59.743Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange haben Sie noch Schmerzen?“ – Ich: „Nur bis zur Apotheke, dort gibt’s Gratis‑Medi‑kissen.“",
-      "qwen": "Ich warte seit drei Stunden, weil die Ärztin im Wartezimmer feststeckt. Sie sitzt in der Warteschlange vor ihrer eigenen Praxis.",
-      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
-    },
-    {
       "timestamp": "2026-11-20T22:26:05.970Z",
       "gpt": "Beim Ausmisten fand ich meine alte Steuererklärung – ich dachte, das war ein Liebesbrief, aber das Finanzamt hatte mich doch nur gemeldet.",
       "qwen": "Die alte Kiste mit Porzellan? Weg damit.\nDrauf stand: „Nicht öffnen, zerbrechlich“.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Yoga fragt die Lehrerin: „Spüren Sie die Ruhe in Ihrem Körper?“ Der Schüler antwortet: „Ja, aber mein Handy vibriert vor lauter Benachrichtigungen.“",
       "qwen": "Ich hab Yoga probiert, weil’s entspannen soll. Jetzt hab ich nur noch Schmerzen und eine Frisur wie ein Döner.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-21T02:26:05.375Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Seminarraum, weil ich bis dahin endlich meine Präsentationsangst abgehakt habe.“",
+      "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen fünf Weiterbildungen. Der Chef fragte nur: „Und die Fahrstunden?“",
+      "archive": "Bei der Bewerbung soll ich meine Gehaltsvorstellung nennen. Der Personaler nickt langsam, als würde ich eine ziemlich fantastische Geschichte erzählen."
     }
   ]
 }
