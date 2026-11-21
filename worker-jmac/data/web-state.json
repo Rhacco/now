@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:35:58.353Z",
-      "gpt": "Der Paketbote klingelt, ich öffne und finde ein Rücksendeformular – er hat mein Paket zurückgeschickt, weil ich es nie bestellt habe.",
-      "qwen": "Der Bot drückt das Paket beim Neffen ab. Der Neffe unterschreibt und fragt: „Gibt’s was zurück?“",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-21T19:40:57.037Z",
       "gpt": "Ich habe die neue Fitness‑App aktiviert, aber mein Handy zeigt nur „Standby“ – weil ich die ganze Zeit nur im Sofa‑Marathon sitze.",
       "qwen": "Ich fragte Siri nach dem Weg, doch das Handy zeigte nur meinen eigenen Anruf an.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sehe Regen und frage: „Braucht die Stadt jetzt einen Regenschirm‑Verleih?“ Die App antwortet: „Nur, wenn du den Akku hast.“",
       "qwen": "Mein Handy zeigt 100 % Akku an, während es längst tot ist.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-21T23:41:05.623Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Größe, sie misst mich, nickt und sagt: „Perfekt, das passt genau zu Ihrem Wunschgewicht.“",
+      "qwen": "Ich: „Haben Sie das in Blau?“ Verkäufer: „Nein, aber ich bin jetzt blau angelaufen.“",
+      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
     }
   ]
 }
