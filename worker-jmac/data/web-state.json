@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:56:06.476Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund meine Matte als neue Liegefläche entdeckt und ich im herabschauenden Hund einschlafe.",
-      "qwen": "Ich habe eine Stunde lang meditativ mit den Beinen geschwungen. Jetzt habe ich es tatsächlich geschafft.",
-      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
-    },
-    {
       "timestamp": "2026-11-21T13:01:08.015Z",
       "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel, der Schaffner lächelt und sagt: „Mein Lieblingsplatz – das Ende der Zugfahrt.“",
       "qwen": "Ich buchte eine einsame kleine Hütte in den Bergen. Draußen stand: „WLAN inklusive, aber bitte leise, die Rentiere sind empfindlich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Wie wäre es, wenn wir einfach das nächste Meeting absagen? Dann haben wir endlich etwas erledigt.“",
       "qwen": "In der Besprechung fragte der Chef: „Haben Sie die Präsentation fertig?“\n„Ja, aber ich habe das Power-Point-Programm noch nicht installiert.“",
       "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
+    },
+    {
+      "timestamp": "2026-11-21T17:00:57.799Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich erst noch die Weiterbildung über Ihre Fragen brauche.“",
+      "qwen": "Der Personaler fragt nach meinen Fortbildungen. Ich sage: „Ich nehme gerade Deutsch 101.“",
+      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
     }
   ]
 }
