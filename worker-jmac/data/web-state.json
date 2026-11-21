@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:15:58.479Z",
-      "gpt": "Mutter fragt: „Warum hast du die ganze Pizza gegessen?“ – Sohn: „Weil du gesagt hast, wir teilen das Glück, nicht das Essen.“",
-      "qwen": "Die Tante fragt besorgt: „Hast du schon ein Kind?“ Ich antworte: „Ja, ich habe einen Hund.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-21T07:21:06.154Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nein, ich bringe meine eigene.“",
       "qwen": "Beim Wochenmarkt fragt der Bauer: „Frisch genug, oder soll ich noch eine Banane dazutun?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe bei meinem Nachbarn an, um nach dem Stromausfall zu fragen – er meint, er habe gerade das Licht aus der Steckdose gezogen.",
       "qwen": "Ich habe meinen Nachbarn gefragt, ob er meinen Rasenmäher entleihen kann. Er sagte: „Nein, der gehört dir ja schon.“",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-21T11:21:06.824Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt mein Sofa zusammen – jetzt entspanne ich mich im freien Raum.",
+      "qwen": "Ich wollte beim Yoga nur kurz durchatmen, hab aber beim Ausatmen versehentlich den Kater erwischt.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
