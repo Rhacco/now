@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:50:58.187Z",
-      "gpt": "Ich stehe im Museum, rufe nach Popcorn. Die Bibliothekarin reicht mir leise ein Hörbuch.",
-      "qwen": "Im Museum starrt er auf die Mumie, bis sie blinzelt. „Eintritt nur für Erwachsene“, schmunzelt der Wächter.",
-      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
-    },
-    {
       "timestamp": "2026-11-21T11:56:02.794Z",
       "gpt": "Ich frage im Elektrofachgeschäft nach einer Energiesparlampe, der Verkäufer meint: „Klar, hier ist ein Stromsparschwein, das füttern Sie mit Strom.“",
       "qwen": "Der Verkäufer riet mir dringend zur teureren Lampe. Sie war auch die günstigere.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir suchen noch den Fahrer.“",
       "qwen": "Ich fluche über den Stau, bis mein Handy summt. Der Taxifahrer fragt, ob ich den Zettel unterschreiben soll.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-21T16:00:59.299Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur das Wort „Pause“ enthält. Er nickt: „Endlich ein klarer Zeitplan.“",
+      "qwen": "Im Meeting fragte der Chef: „Hat jemand eine Idee, wie wir Kosten senken?“\nNur ich nickte und schlug vor, die Kaffeemaschine auszuschalten.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
