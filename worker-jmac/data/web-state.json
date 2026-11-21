@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:11:07.321Z",
-      "gpt": "Mama sagt: „Wir brauchen mehr Ordnung.“ Papa legt das Chaos in den Schrank – jetzt ist das Haus endlich aufgeräumt.",
-      "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht: „Der ist für den Enkel, der nicht weint.“",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-21T15:16:00.341Z",
       "gpt": "Im Zug stolpert ich über mein Ticket, während der Schaffner lächelt und fragt: „Brauchen Sie noch einen Sitzplatz für die nächste Verspätung?“",
       "qwen": "Ich stieg vom Taxi in einen Bus ein.\nDer Fahrer fragte: „Fahren wir weiter?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Quartal?“ Die Buchhalterin meldet sich: „Ich habe sie, aber sie haben schon Urlaub.“",
       "qwen": "Ich schlug vor, die Besprechung zu kürzen. Der Chef nickte und fragte, ob ich jetzt mitreiße.",
       "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
+    },
+    {
+      "timestamp": "2026-11-21T19:16:00.257Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich Ihre Weiterbildung endlich verstehe.“",
+      "qwen": "Im Vorstellungsgespräch frage ich nach Weiterbildung. Der Chef schweigt, dann lächelt er: „Die machen wir nach der Stelle weg.\"",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
