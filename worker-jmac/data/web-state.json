@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:01:12.097Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich blicke verwirrt, weil ich gerade erst eingestiegen bin – und merke, dass ich im Taxi sitze.",
-      "qwen": "Ich springe in den Bus, das Taxi, die Bahn und mein Auto.\nNur das Auto fährt.",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-21T00:06:00.491Z",
       "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder beim Nachbarn landete – er meinte, das sei ein „Nachbarschafts‑Upgrade“.",
       "qwen": "Ich rufe den Kundendienst an: „Wo ist mein Paket?“\n„Es ist unterwegs“, sagt er.\n„Seit drei Wochen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte die neue Fitness‑App starten, doch das Handy zeigte nur \"Akku zu schwach\". Jetzt trainiere ich täglich das Ladegerät.",
       "qwen": "Ich habe mich in die neue Dating-App verliebt.\nLeider trennte uns die Akkulaufzeit nach fünf Minuten.",
       "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
+    },
+    {
+      "timestamp": "2026-11-21T04:06:01.596Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch statt meiner Adresse stand dort „Bitte geben Sie Ihren Humor an“ – das war das einzige, was noch nicht verloren war.",
+      "qwen": "Im Fundbüro wird der Schlüssel als „Verlust“ gemeldet. Die Aussage: „Den habe ich doch verloren.“",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
