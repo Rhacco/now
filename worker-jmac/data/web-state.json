@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:20:58.328Z",
-      "gpt": "Beim Yoga fragt die Lehrerin: „Spüren Sie die Ruhe in Ihrem Körper?“ Der Schüler antwortet: „Ja, aber mein Handy vibriert vor lauter Benachrichtigungen.“",
-      "qwen": "Ich hab Yoga probiert, weil’s entspannen soll. Jetzt hab ich nur noch Schmerzen und eine Frisur wie ein Döner.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-21T02:26:05.375Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Seminarraum, weil ich bis dahin endlich meine Präsentationsangst abgehakt habe.“",
       "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen fünf Weiterbildungen. Der Chef fragte nur: „Und die Fahrstunden?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte am Supermarkt die frischen Tomaten holen, doch am Wochenmarkt stand schon ein Schild: „Selbstpflücken verboten – wir verkaufen nur das Bild.“",
       "qwen": "Der Wochenmarkt ist so authentisch, dass die Tomaten mit Dialekt sprechen.",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-21T06:30:57.242Z",
+      "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie das Radio anmachen?“ Ich nicke. Er dreht das Fenster auf und ruft: „Hier kommt die nächste Haltestelle!“",
+      "qwen": "Ich trolle im Taxi, der Fahrer schweigt nur. Als ich aussteige, sagt er: „Geld, bitte. Ich bin auch nur ein Passagier.“",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
