@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:20:56.964Z",
-      "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau hält ihn, also ruft er ein Taxi – das fährt gerade rückwärts.",
-      "qwen": "Ich bin mit Bahn, Bus und Taxi gefahren, bis ich endlich mein eigenes Auto fand. Es war voll, aber immerhin war es meins.",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-21T19:26:00.855Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wie lange dauert die Fahrt?“ Der Schaffner: „Bis zum Strand, etwa 3 Stunden, dann geht’s zu Fuß.“",
       "qwen": "Am Strand sah ich eine Frau, die einen Eimer Wasser trank. Ich fragte: „Darf ich das?“ Sie antwortete: „Ja, aber die Miete für das Badetuch ist extra.“",
@@ -300,6 +294,12 @@
       "gpt": "Nach dem Yoga‑Kurs fragt die Lehrerin: „Wie fühlst du dich?“ – „Entspannt, bis meine Socken plötzlich anfangen zu joggen.“",
       "qwen": "Ich will nur kurz entspannen und mache eine Yoga-Pause. Dann verliere ich im Lotus-Asan mein Handy.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-21T23:26:00.183Z",
+      "gpt": "Der neue Nachbar klingelt jeden Morgen, weil er den Müll rausbringen will – und fragt, ob wir noch Staub für seine Besen haben.",
+      "qwen": "Der neue Nachbar fragt, ob ich nachts laut lerne.\nIch erkläre ihm, dass ich nur die Heizung teste.",
+      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
     }
   ]
 }
