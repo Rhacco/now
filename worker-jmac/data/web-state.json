@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:52:39.838Z",
-      "gpt": "Ich wollte die neue Fitness‑App starten, doch das Handy vibrierte: „Du hast 10 000 Schritte erreicht.“ – Ich lag noch im Bett.",
-      "qwen": "„Suche: Schlüssel.“\nDer Keller schweigt, das Handy findet nur meine Handynummer.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-21T08:56:03.791Z",
       "gpt": "Ich habe die neue „Schlaf‑Modus“-App auf meinem Handy aktiviert – jetzt geht es erst wieder an, wenn ich den Wecker ausversehen drückte.",
       "qwen": "Der Akku zeigt noch 1%, doch ich erlebe gerade eine Selbsterfahrung.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund meine Matte als neue Liegefläche entdeckt und ich im herabschauenden Hund einschlafe.",
       "qwen": "Ich habe eine Stunde lang meditativ mit den Beinen geschwungen. Jetzt habe ich es tatsächlich geschafft.",
       "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
+    },
+    {
+      "timestamp": "2026-11-21T13:01:08.015Z",
+      "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel, der Schaffner lächelt und sagt: „Mein Lieblingsplatz – das Ende der Zugfahrt.“",
+      "qwen": "Ich buchte eine einsame kleine Hütte in den Bergen. Draußen stand: „WLAN inklusive, aber bitte leise, die Rentiere sind empfindlich.“",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
