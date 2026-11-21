@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:41:05.125Z",
-      "gpt": "Im Zug zum Strand frage ich nach dem Weg zur Sonne, der Schaffner lacht und sagt: „Nur geradeaus, bis das Meer uns überholt.“",
-      "qwen": "Ich wollte an der Küste Freiheit spüren, aber der Wind hat mir nur den Hut vom Kopf geblasen.",
-      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
-    },
-    {
       "timestamp": "2026-11-21T18:45:56.880Z",
       "gpt": "Ich klopfe an die Nachbarin, weil das Waschbecken überläuft – sie öffnet die Tür, wirft mir einen Besen und sagt: „Hier wohnen wir jetzt zusammen.“",
       "qwen": "Der neue Nachbar fragt, ob ich die Sauna benutze. Ich antworte: „Nein, ich brannte meinen Ausweis, als ich einzog.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Doktor: „Nehmen Sie das dreimal täglich vor dem Essen.“\nPatient: „Dann esse ich einfach nie wieder.“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-21T22:46:03.864Z",
+      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den Salat gegessen?“ Der Hund bellt: „Ich! Ich wollte nur die Tomaten‑Deko probieren.“",
+      "qwen": "Der Vater erklärt dem Sohn die Herkunft von „Nesthocker“. Der Sohn fragt, ob er das mit dem Umzug in die WG machen muss.",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
