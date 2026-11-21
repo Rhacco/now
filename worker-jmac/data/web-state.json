@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:11:02.413Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich bis dahin endlich den Kurs „Selbstmarketing“ abgeschlossen habe.“",
-      "qwen": "Ich sage im Vorstellungsgespräch, ich bin „fortbildungsoffen“. Der Chef nickt und reicht mir einen Stapel alter Steuerbescheide.",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-21T11:15:58.197Z",
       "gpt": "Ich klopfe bei meinem Nachbarn an, um nach dem Stromausfall zu fragen – er meint, er habe gerade das Licht aus der Steckdose gezogen.",
       "qwen": "Ich habe meinen Nachbarn gefragt, ob er meinen Rasenmäher entleihen kann. Er sagte: „Nein, der gehört dir ja schon.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug stolpert ich über mein Ticket, während der Schaffner lächelt und fragt: „Brauchen Sie noch einen Sitzplatz für die nächste Verspätung?“",
       "qwen": "Ich stieg vom Taxi in einen Bus ein.\nDer Fahrer fragte: „Fahren wir weiter?“",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-21T15:21:02.365Z",
+      "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch im Supermarkt finde ich sie im Sonderangebot – „Tomaten, die nicht vom Feld, sondern vom Regal gefallen sind“.",
+      "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“\nIch entgegne: „Nein, ich bin auf dem Wochenmarkt.“",
+      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
     }
   ]
 }
