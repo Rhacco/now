@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:50:58.209Z",
-      "gpt": "Im Museum fragt der Bibliothekar: „Darf ich den Film hier ausleihen?“ Die Kuratorin meint: „Nur, wenn du ihn leise zurückbringst.“",
-      "qwen": "Im Museum zähle ich Ausstellungsstücke, im Kino Popcorn. In der Bibliothek blättere ich nur die Seiten um, damit sie sich bewegt fühlen.",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-21T19:55:57.654Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie abgeholt wird.“",
       "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Ja, hier.“",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt er nach dem neuesten Film, die Kassiererin reicht ihm einen Band; im Museum schaut er sich die Leinwand an – alles still.",
       "qwen": "Museum, Kino und Bibliothek: Der Mann fragt, wo die Kasse. Der Mann antwortet: „Hier gibt’s keine.“ Der Mann kauft ein Ticket.",
       "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
+    },
+    {
+      "timestamp": "2026-11-21T23:55:56.954Z",
+      "gpt": "Mutter ruft: „Wer hat den Kuchen gegessen?“ Der Hund bellt: „Ich habe nur den Staubsauger gefressen.“",
+      "qwen": "Ich fragte meine Mutter, ob ich den Müll rausbringen soll. Sie nickte und sagte: „Klar, und denk dran, die Tür zuzumachen.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
