@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:06:03.684Z",
-      "gpt": "Beim Ausmisten fand ich meine alte Fernbedienung – sie hatte endlich einen eigenen Umzugsplan: „Ich geh in den Schrank, du bleibst im Wohnzimmer.“",
-      "qwen": "Mein Mann sagt, wir hätten noch drei Kisten für den Umzug. Er meinte die drei, die wir heute weggeworfen haben.",
-      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
-    },
-    {
       "timestamp": "2026-11-21T18:11:10.288Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe den Bericht fertig – als PDF, weil ich ihn nicht mehr lesen kann.“",
       "qwen": "Ich bat den Chef um Gehaltserhöhung. Er nickte und sagte: „Gern, holt mal zwei Kaffee.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Espresso und frage nach Zucker; die Barista schüttelt den Kopf: „Wir servieren nur Bohnen, kein Süßes.“",
       "qwen": "Der Kellner: „Oma, das Schnitzel ist fertig.“\nOma: „Gut, dann bring mir jetzt die Gabel, ohne die koche ich nicht.“",
       "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:11:03.546Z",
+      "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil das WLAN ausfiel – die Durchsage: „Bitte nicht panisch, das ist nur das Bordrestaurant.“",
+      "qwen": "Ich stieg aus dem Taxi und winkte dem Fahrer zu. Er sah mich nur entsetzt an: „Das ist ja meine Frau.“",
+      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
     }
   ]
 }
