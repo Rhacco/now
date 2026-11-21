@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:16:09.152Z",
-      "gpt": "Ich mache Yoga, um zu entspannen – bis mein Hund das „Herabschauende Hund“ übernimmt und mir die Decke klaut.",
-      "qwen": "Beim Yoga nehme ich die Froschhaltung ein.\nTatsächlich habe ich mich dabei so richtig entspannt.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-20T21:21:08.208Z",
       "gpt": "Der Nachbar klopft, weil er das laute Staubsaugen hört – und fragt, ob ich endlich das WLAN-Passwort teilen will.",
       "qwen": "Mein Nachbar hämmert jeden Tag um sieben.\nIch schlage zurück, damit er merkt, dass ich wach bin.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, der Schaffner zeigt nach vorne – „Wir fahren ja gerade nach Hamburg.“",
       "qwen": "In der Wüste fragte ich meinen Begleiter, ob er Durst hat. Er nickte.",
       "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
+    },
+    {
+      "timestamp": "2026-11-21T01:26:08.020Z",
+      "gpt": "Ich habe meiner Nachbarin das Klingeln geübt – jetzt ruft sie jedes Mal, wenn ich die Tür öffne, „Willkommen im Fitnessstudio!“",
+      "qwen": "Der neue Nachbar fragt, ob ich sein Auto parken soll. Ich zeig ihm den Briefkasten.",
+      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
     }
   ]
 }
