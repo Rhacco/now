@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:51:07.312Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Stressbewältigung – dank Ihrer Fragen.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch, was mit Weiterbildung gemeint ist. Er griff zum Messer und sagte: „Wo man Sie besser schneidet.“",
-      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
-    },
-    {
       "timestamp": "2026-11-21T05:56:04.525Z",
       "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder im Aufzug stecken blieb. Sie schickten einen Techniker – er brachte den Aufzug, nicht das Paket.",
       "qwen": "Der Paketbote fragt: „Wo soll ich den Zettel ablegen?“\nIch zeige auf die Leiche: „Unter der Zunge.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, ich habe die Schlüssel schon gefunden.“",
       "qwen": "Ich gab den verlegten Schlüssel im Fundbüro ab. Der Beamte druckte mir dafür eine Quittung aus, die größer war als der Schlüssel.",
       "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
+    },
+    {
+      "timestamp": "2026-11-21T09:56:03.503Z",
+      "gpt": "Mama ruft: „Zieh dir die Schuhe aus, wir haben Gäste!“ Ich ziehe sie aus – und die Gäste sind meine Socken.",
+      "qwen": "Mama fragt: „Wer hat das letzte Stück Pizza?“\nAlle vier Finger auf mich zeigen.",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
