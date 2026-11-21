@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:21:02.365Z",
-      "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch im Supermarkt finde ich sie im Sonderangebot – „Tomaten, die nicht vom Feld, sondern vom Regal gefallen sind“.",
-      "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“\nIch entgegne: „Nein, ich bin auf dem Wochenmarkt.“",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-21T15:25:57.248Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Schild: „Bitte ziehen Sie selbst an.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, nur meine Ex.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau hält ihn, also ruft er ein Taxi – das fährt gerade rückwärts.",
       "qwen": "Ich bin mit Bahn, Bus und Taxi gefahren, bis ich endlich mein eigenes Auto fand. Es war voll, aber immerhin war es meins.",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-21T19:26:00.855Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Entschuldigung, wie lange dauert die Fahrt?“ Der Schaffner: „Bis zum Strand, etwa 3 Stunden, dann geht’s zu Fuß.“",
+      "qwen": "Am Strand sah ich eine Frau, die einen Eimer Wasser trank. Ich fragte: „Darf ich das?“ Sie antwortete: „Ja, aber die Miete für das Badetuch ist extra.“",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
