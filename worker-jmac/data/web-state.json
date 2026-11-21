@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:36:07.542Z",
-      "gpt": "Ich rufe den Kundenservice, weil mein Paket nicht ankam – sie sagen, es sei bereits bei mir zu Hause, weil ich es schon aus Versehen aus dem Briefkasten gezogen habe.",
-      "qwen": "Der Kurier fragt nach der Unterschrift. Ich zeige auf den toten Fisch im Aquarium: „Der hat’s schon bestätigt.“",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-20T20:41:08.811Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie halten Sie sich fachlich weiter?“ Ich antworte: „Ich bewerbe mich immer wieder, damit ich neue Fragen lerne.“",
       "qwen": "In der Bewerbung glänzte ich mit 20 Jahren Berufserfahrung, sechs Sprachkursen und 15 Weiterbildungen. Der Chef meinte nur: „Als Praktikant fangen wir morgen an.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur meinen verlorenen Kugelschreiber gefunden.“",
       "qwen": "Ich gab beim Fundbüro an, dass der verlorene Kuschelhase kein Vermögen ist. Die Dame zuckte nur die Schultern: „Dafür bräuchten wir die Eheschließungsurkunde.“",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-21T00:41:06.135Z",
+      "gpt": "Im Museum fragt ein Besucher: „Welches Bild ist das Lieblingswerk der Bibliothek?“ Die Wächterin meint: „Das mit den leisen Filmrollen.“",
+      "qwen": "Im Museum flüstert die Frau: „Die展 sind so ruhig wie im Kino.“\nIch antworte: „Hier gibt’s aber auch keine Popcorn-Kein-Flüstern-Schilder.“",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
