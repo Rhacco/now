@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:25:58.559Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich mein Handy vergessen hatte – die Durchsage kam: „Bitte nicht schreien, wir haben kein Mikrofon.“",
-      "qwen": "Ich stieg aus dem verletzten Taxi, um den Bus zu nehmen. Der Busfahrer winkte mich ab: „Ich fahre nur mit Bahn.\"",
-      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
-    },
-    {
       "timestamp": "2026-11-21T00:31:10.573Z",
       "gpt": "Im Zug drückte ich den Notruf, weil das WLAN ausfiel. Der Schaffner lächelte: „Keine Sorge, das ist unser Offline‑Modus.“",
       "qwen": "Ich fragte den Taxifahrer, warum er den Bus überholt. Er lachte: „Die fahren auch nur nach Fahrplan.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ – Der Finder nickt: „Ja, ich habe es gleich im Kasten gefunden.“",
       "qwen": "Ich fragte im Fundbüro nach der verlorene Brief. Dort hieß es: „Bitte erst das Verlustformular ausfüllen.",
       "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
+    },
+    {
+      "timestamp": "2026-11-21T04:30:56.870Z",
+      "gpt": "Im Supermarkt fragt ich den Verkäufer: „Welches Produkt ist hier das gesündeste?“ Er reicht mir die Einkaufsliste meiner Frau.",
+      "qwen": "Ich fragte im Supermarkt nach dem besten Käse. Der Verkäufer schrie: „Dann kauf keinen!“",
+      "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
     }
   ]
 }
