@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:11:03.493Z",
-      "gpt": "Der Nachbar klopft, weil sein Wasserhahn leckt – ich reiche ihm ein Glas und sage: „Jetzt hast du wenigstens was zum Trinken.“",
-      "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellt. Sie sagte, das sei Katze Mia.",
-      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
-    },
-    {
       "timestamp": "2026-11-21T08:16:06.498Z",
       "gpt": "Der Paketbote fragt: „Unterschreiben Sie bitte?“ – Ich unterschreibe und schreibe daneben: „Bitte liefern Sie das nächste Mal an meine Couch.“",
       "qwen": "Der Kurier fragt: „Wo soll ich unterschreiben?“ Ich zeige auf das Paket: „Dort.“ Er grinst: „Nein, ich meine, ich bin der Kunde.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der „immer leise bleibt“. Der Verkäufer lächelt und reicht mir ein Stück Klebeband.",
       "qwen": "Der Verkäufer fragt, ob ich ein Geschenk packen lasse.\nIch sage, das Paket sei schon fertig geschockt.",
       "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
+    },
+    {
+      "timestamp": "2026-11-21T12:16:06.001Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Besucher nickt: „Nur, wenn Sie es im Kino zurückbringen.“",
+      "qwen": "Im Museum flüstert sie: „Hier darf man nicht essen.“\nDraußen im Kino schreit er: „Ich habe dir doch gesagt: Nicht reden!“",
+      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
     }
   ]
 }
