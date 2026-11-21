@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:36:06.764Z",
-      "gpt": "Ich frage im Vorstellungsgespräch, ob es Weiterbildungen gibt – der Chef nickt, reicht mir die Stellenanzeige und sagt: „Wir bilden Sie hier selbst ein.“",
-      "qwen": "Ich fragte nach einem Weiterbildungsbudget. Der Chef nickte nur und drückte mir den ganzen Aktenturm in die Hände.",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-20T22:40:58.427Z",
       "gpt": "Beim Ausmisten wirft er die alte Waschmaschine raus – die neue Nachbarn freuen sich, jetzt haben sie endlich Platz für den Staubsauger.",
       "qwen": "Die Kiste mit „Wichtiges“ war voll mit alten Zeitschriften. Darin fand ich nur eine Rechnung von 1998.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm – „Für den Fall, dass Ihnen das Wetter kalt wird.“",
       "qwen": "„Sind Sie sicher, dass das passt?“ fragte ich. „Ja, das ist der Sonderpreis“, antwortete der Verkäufer.",
       "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
+    },
+    {
+      "timestamp": "2026-11-21T02:41:04.285Z",
+      "gpt": "Ich wollte beim Ausmisten den Staubsauger verkaufen – er hat mir dankbar zugestimmt, weil er endlich mal wieder frei durchatmen kann.",
+      "qwen": "Emma packt den letzten Kasten. Der Umzugstruck ist längst abgefahren, sie steht aber immer noch da.",
+      "archive": "Beim Umzug trägt mein Bruder vorsichtig den Spiegel. In der neuen Wohnung sehe ich darin, wie ich allein das Sofa schleppe."
     }
   ]
 }
