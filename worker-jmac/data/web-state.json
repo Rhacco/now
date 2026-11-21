@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:16:09.880Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Geschenk, sie reicht mir einen Katalog und sagt: „Hier steht, was Sie nicht kaufen können.“",
-      "qwen": "Verkäuferin: „Darf ich Ihnen das richtig auftragen?“\nKunde: „Nein, ich brauche nur einen Spiegel, nicht Ihre Meinung.“",
-      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
-    },
-    {
       "timestamp": "2026-11-20T20:21:01.013Z",
       "gpt": "Im Zug lese ich, im Bus drücke ich die Klingel, im Taxi gebe ich Trinkgeld. Im Auto frage ich laut: „Wer hat den Fahrplan?“",
       "qwen": "Fahre ich mit dem Taxi, fragt der Fahrer: „Schnell?\" Ich sage: „Ja.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere den Keller aus und finde meine alte Fernbedienung – sie steuert jetzt nur noch den Staubsauger, weil ich nie mehr fernsehe.",
       "qwen": "Die alte Schallplatte im Karton war nur Plastikmüll, das Vinyl aber ein Meisterwerk.",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-21T00:20:58.201Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur ein Bild von meinem Kaffeebecher ist. „Strategie“, sag ich, „ist jetzt wach.“",
+      "qwen": "Ich frage im Meeting: „Wir brauchen mehr Kanban-Boards oder weniger Meetings?“\nDer Chef antwortet: „Sag ich nicht, du machst beides.“",
+      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
     }
   ]
 }
