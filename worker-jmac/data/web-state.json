@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:45:57.928Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Tüte oder aus der Werbung?“ Ich nehme die, die ich am Wochenmarkt gerochen habe.",
-      "qwen": "Ich wollte auf dem Wochenmarkt die Tomaten mit dem Finger drücken. Der Bauer hat mich angeschaut, als hätte ich sein Baby angefasst.",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-21T06:51:01.347Z",
       "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht und sie fragte, ob ich noch etwas mitbringe – ich sagte, das WLAN.",
       "qwen": "Der Nachbar klopft: „Entschuldigung, mein Rasenmäher läuft falsch.“\nIch sage: „Nein, Sie gehören einfach nicht dazu.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Ich hebe die Hand, weil ich gerade den Kater vom letzten Abend nicht mehr finde.",
       "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich!“, und ich denke: „Endlich Ruhe.“",
       "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
+    },
+    {
+      "timestamp": "2026-11-21T10:50:59.329Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich fluchte: „Ich bin doch schon in der Apotheque!“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
