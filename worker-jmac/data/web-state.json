@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:15:58.148Z",
-      "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, der Verkäufer meint: „Die sind im Supermarkt, dort gibt’s keine Bienen.“",
-      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis. Er zuckte nur die Schultern und sagte: „Das hängt davon ab, wie gut du verhandeln kannst.“",
-      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
-    },
-    {
       "timestamp": "2026-11-21T02:20:58.328Z",
       "gpt": "Beim Yoga fragt die Lehrerin: „Spüren Sie die Ruhe in Ihrem Körper?“ Der Schüler antwortet: „Ja, aber mein Handy vibriert vor lauter Benachrichtigungen.“",
       "qwen": "Ich hab Yoga probiert, weil’s entspannen soll. Jetzt hab ich nur noch Schmerzen und eine Frisur wie ein Döner.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das Sofa in den Garten gestellt?“ – „Ich wollte endlich mal draußen sitzen, wo das WLAN nicht streikt.“",
       "qwen": "Mein Vater sagt, ich solle nicht so viel Zeit auf dem Handy verschwenden. Er spricht seit zwanzig Minuten ununterbrochen über die Ernte.",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-21T06:25:59.175Z",
+      "gpt": "Ich wollte am Supermarkt die frischen Tomaten holen, doch am Wochenmarkt stand schon ein Schild: „Selbstpflücken verboten – wir verkaufen nur das Bild.“",
+      "qwen": "Der Wochenmarkt ist so authentisch, dass die Tomaten mit Dialekt sprechen.",
+      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
     }
   ]
 }
