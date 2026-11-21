@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:06:00.491Z",
-      "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder beim Nachbarn landete – er meinte, das sei ein „Nachbarschafts‑Upgrade“.",
-      "qwen": "Ich rufe den Kundendienst an: „Wo ist mein Paket?“\n„Es ist unterwegs“, sagt er.\n„Seit drei Wochen.“",
-      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
-    },
-    {
       "timestamp": "2026-11-21T00:11:09.730Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient flüstert: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Ich fragte den Apotheker: „Hilft das gegen alles?“\n„Nein, nur gegen Ihre Arroganz.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch statt meiner Adresse stand dort „Bitte geben Sie Ihren Humor an“ – das war das einzige, was noch nicht verloren war.",
       "qwen": "Im Fundbüro wird der Schlüssel als „Verlust“ gemeldet. Die Aussage: „Den habe ich doch verloren.“",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-21T04:10:57.431Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen – und beim herabschauenden Hund merke ich, dass mein Hund mich beim Vorbeigehen schon längst geküsst hat.",
+      "qwen": "Ich legte mich in die Sauna, bis der Schwitzkasten nachgab.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
