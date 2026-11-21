@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:46:03.864Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Der Kunde lächelt: „Nur, wenn ich den Wochenmarkt nicht mehr finde.“",
-      "qwen": "Im Supermarkt kosten die Tomaten 99 Cent.\nAuf dem Wochenmarkt schimpft der Bauer: „Die sind reif, aber die Kasse ist leer!“",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-20T21:50:59.094Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch mein Hund legt sich mitten in die „herabschauende Katze“ – jetzt übe ich nur noch „Hundekrieger“.",
       "qwen": "Ich habe beim Joggen eine Pause eingelegt. Jetzt bin ich entspannt, aber auch zwei Kilo schwerer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Die Kaffeemaschine piept: „Ich habe das Kaffeebohnen‑Diagramm.“",
       "qwen": "Der Chef fragte nach dem Projektstand. Ich winkte ab: „Alles im grünen Bereich.“ – „Dann haben wir ja alles im grünen Bereich.“",
       "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
+    },
+    {
+      "timestamp": "2026-11-21T01:51:07.640Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt schenkt ihr die Kundin eine Tüte voller Äpfel.",
+      "qwen": "Ich suche auf dem Wochenmarkt nach bio, aber mein Warenkorb ist schon viermal voller als der der Verkäuferin. Als sie fragt, ob ich die Kirschen habe, zeige ich verlegen auf meine volle Jacke.",
+      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
     }
   ]
 }
