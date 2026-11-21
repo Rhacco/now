@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:16:05.819Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Ich antworte: „Mit Zucker, sonst wird er zu bitter.“",
-      "qwen": "Ich fragte den Kellner nach der Tagesempfehlung. Er löffelte seinen Kaffee und meinte: „Die ist leider schon weg.\"",
-      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
-    },
-    {
       "timestamp": "2026-11-21T05:21:06.612Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Geduld – Sie haben ja noch viel zu lernen.“",
       "qwen": "Der Chef lobt mein neues Zertifikat zur Selbstführung. Ich frage, ob das Gehalt jetzt auch selbst ankommt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy vibriert: „Du hast das Fenster offen.“",
       "qwen": "Ich fragte mein Handy nach dem Weg zur Bäckerei. Es antwortete: „Ich bin offline.“",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-21T09:21:08.778Z",
+      "gpt": "Mama fragt: „Warum liegt das Geschirr immer noch in der Spülmaschine?“ Papa antwortet: „Weil es dort schon einen guten Job hat – es bleibt sauber.“",
+      "qwen": "Ich rufe aus der Haustür: „Fertig zum Hinausgehen?“ Meine Frau ruft zurück: „Ja, ich bin schon draußen!“",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
