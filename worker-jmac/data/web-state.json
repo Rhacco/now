@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:00:57.799Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich erst noch die Weiterbildung über Ihre Fragen brauche.“",
-      "qwen": "Der Personaler fragt nach meinen Fortbildungen. Ich sage: „Ich nehme gerade Deutsch 101.“",
-      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
-    },
-    {
       "timestamp": "2026-11-21T17:06:04.887Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich antworte: „Nur, wenn Sie mir den Kundenservice zeigen.“",
       "qwen": "Der Bot bittet mich, das Paket am Fenster vor der Tür liegen zu lassen. Ich fragte: „Warum müssen Sie es dann durch das Fenster werfen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie zeigte nur „Bitte legen Sie das Handy weg – Sie sind bereits in Bewegung.“",
       "qwen": "Ich habe versehentlich den Wecker um 3 Uhr an.\n\nMein Handy wollte mich nicht wach, sondern mein Facebook-Feed.",
       "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
+    },
+    {
+      "timestamp": "2026-11-21T21:11:03.483Z",
+      "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, damit er endlich die Wohnung bekommt – und jetzt klopft er täglich an, weil er das Möbelstück vermisst.",
+      "qwen": "Ich habe dem Nachbarn die Bohrnadel abgenommen. Er wohnt nun in einem dreistufigen Alkomaten.",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
