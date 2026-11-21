@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:30:57.946Z",
-      "gpt": "Ich habe die neue Fitness‑App aktiviert, doch sie meldet nur: „Du hast bereits genug Schritte gemacht – du hast das Handy gerade fallen lassen.“",
-      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe vergessen, dass ich es seit Dienstag am Ladekabel hänge.",
-      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
-    },
-    {
       "timestamp": "2026-11-21T15:35:57.204Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich zeige ihr mein Portemonnaie – es ist das Formular.",
       "qwen": "Ich gab den Fund im Amt ab. Die Beamtin fragte bloß: „Warum?“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du das ganze Gemüse im Bad versteckt?“ Ich antworte: „Damit es endlich mal im Dampfbad entspannen kann.“",
       "qwen": "Ich sage meiner Frau: „Ich hasse diese Familie wegen ihres Lärms.“ Sie antwortet: „Schau, wir haben keine Kinder.“",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-21T19:35:58.353Z",
+      "gpt": "Der Paketbote klingelt, ich öffne und finde ein Rücksendeformular – er hat mein Paket zurückgeschickt, weil ich es nie bestellt habe.",
+      "qwen": "Der Bot drückt das Paket beim Neffen ab. Der Neffe unterschreibt und fragt: „Gibt’s was zurück?“",
+      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
     }
   ]
 }
