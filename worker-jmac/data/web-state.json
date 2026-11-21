@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:26:03.587Z",
-      "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um zum Strand zu kommen?“ Der Schaffner lächelt: „Am nächsten Halt – zum Schwimmbad.“",
-      "qwen": "Ich fragte die Kassiererin, ob der Strand hier frei zugänglich sei. Sie meinte, nur wenn man die Flossen zurücklässt.",
-      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
-    },
-    {
       "timestamp": "2026-11-21T16:30:57.785Z",
       "gpt": "Im Café bestellt er einen Kaffee „ohne Zucker“, doch die Kellnerin fragt: „Möchten Sie ihn dann bitte mit Sahne?“ – Er sagt: „Nur, wenn er süß bleibt.“",
       "qwen": "Der Kellner serviert mir eine Suppe.\n„Das ist die letzte Kelle“, sagt er, „weil ich sie selbst aufgespeichert habe“.",
@@ -300,6 +294,12 @@
       "gpt": "Ich betrete die Bibliothek, finde Popcorn und ein rotes Vorhang‑Schild. Das Museum hat das Kino übernommen und ich habe das falsche Ticket.",
       "qwen": "Bibliothek, Kino und Museum sind voll.\nIch war nur im Wartezimmer.",
       "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
+    },
+    {
+      "timestamp": "2026-11-21T20:31:04.192Z",
+      "gpt": "Im Zug zur Bergewanderung fragt der Tourist: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur wenn du den Gipfel erreichst.“",
+      "qwen": "Er wollte im Urlaub Ruhe finden, aber die Wellen haben ihn geweckt.",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
