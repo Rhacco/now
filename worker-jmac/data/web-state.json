@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:06:07.452Z",
-      "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, die Verkäuferin reicht mir einen Katalog – „Supermarkt‑Preise, aber mit frischer Luft.“",
-      "qwen": "Im Supermarkt wogen wir die Tomaten, auf dem Wochenmarkt schüttelte der Bauer sie nur. Da war der Preis fairer.",
-      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
-    },
-    {
       "timestamp": "2026-11-20T20:11:06.459Z",
       "gpt": "Mama fragt, ob ich das Geschirr spülen will. Ich sag: „Klar, ich bin schließlich im Wasserfach.“",
       "qwen": "Mein Vater sagt, er hört mir zu, während er fernsieht. Das ist auch gut so, denn er hört mich eh nie.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder beim Nachbarn landete – er meinte, das sei ein „Nachbarschafts‑Upgrade“.",
       "qwen": "Ich rufe den Kundendienst an: „Wo ist mein Paket?“\n„Es ist unterwegs“, sagt er.\n„Seit drei Wochen.“",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-21T00:11:09.730Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient flüstert: „Wie ein Rezept, das noch nie eingelöst wurde.“",
+      "qwen": "Ich fragte den Apotheker: „Hilft das gegen alles?“\n„Nein, nur gegen Ihre Arroganz.“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
