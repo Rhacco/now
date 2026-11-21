@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:06:01.596Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch statt meiner Adresse stand dort „Bitte geben Sie Ihren Humor an“ – das war das einzige, was noch nicht verloren war.",
-      "qwen": "Im Fundbüro wird der Schlüssel als „Verlust“ gemeldet. Die Aussage: „Den habe ich doch verloren.“",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-21T04:10:57.431Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen – und beim herabschauenden Hund merke ich, dass mein Hund mich beim Vorbeigehen schon längst geküsst hat.",
       "qwen": "Ich legte mich in die Sauna, bis der Schwitzkasten nachgab.",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, weil sein Wasserhahn leckt – ich reiche ihm ein Glas und sage: „Jetzt hast du wenigstens was zum Trinken.“",
       "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellt. Sie sagte, das sei Katze Mia.",
       "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
+    },
+    {
+      "timestamp": "2026-11-21T08:16:06.498Z",
+      "gpt": "Der Paketbote fragt: „Unterschreiben Sie bitte?“ – Ich unterschreibe und schreibe daneben: „Bitte liefern Sie das nächste Mal an meine Couch.“",
+      "qwen": "Der Kurier fragt: „Wo soll ich unterschreiben?“ Ich zeige auf das Paket: „Dort.“ Er grinst: „Nein, ich meine, ich bin der Kunde.“",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
