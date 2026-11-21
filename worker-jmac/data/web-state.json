@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:46:05.714Z",
-      "gpt": "Ich füllte das Formular für verlorene Schlüssel aus, doch im Feld „Verlustzeitpunkt“ schrieb ich „seit gestern“. Das Fundbüro meldete: „Wir haben sie nie gefunden.“",
-      "qwen": "Ich fand meine Geldbörse im Fundbüro, aber der Finder behauptete, sie sei sein Eigentum.",
-      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
-    },
-    {
       "timestamp": "2026-11-20T22:50:57.448Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das fehlende Feld war: „Wie oft haben Sie schon verloren?“ – Der Beamte grinste: „Täglich.“",
       "qwen": "Die Behörde verlangt für den Schlüsselverlust ein Formular, das es nur auf Französisch gibt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Der Besucher schüttelt den Kopf: „Hier gibt’s nur Stummfilm.“",
       "qwen": "Im Museum fragt er: „Ist das echt?“\nDie Archivarin antwortet: „Ja, nur leider ohne Ton.“",
       "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
+    },
+    {
+      "timestamp": "2026-11-21T02:51:04.431Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, um Schritte zu zählen – nach zehn Minuten zeigte sie 0 km, weil ich im Aufzug stand.",
+      "qwen": "Ich habe das Handy auf Flugmodus gestellt, damit es mich in Ruhe lässt. Jetzt antwortet es gar nicht mehr.",
+      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
     }
   ]
 }
