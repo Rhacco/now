@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:16:07.886Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Geldschein mit Ihrem Namen unterschrieben?“ – „Nein, ich war doch nur kurz im Lotto.“",
-      "qwen": "Beim Fundbüro nach dem vermissten Schlüsselfund gefragt, heißt es: „Das Formular finden Sie in der Datenbank.“",
-      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
-    },
-    {
       "timestamp": "2026-11-21T16:20:57.449Z",
       "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – dann kam die Beamtin und fragte, ob ich das Original nicht gleich im Tresor lassen will.",
       "qwen": "Ich habe beim Fundbüro nach meinem Schlüssel gefragt. „Ohne Verlustanzeige keine Auskunft.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug sitzt er neben einem Pendler, im Bus neben einer Rentnerin, im Taxi neben einem Touristen – im Auto fährt er endlich allein, weil er den Führerschein vergessen hat.",
       "qwen": "Ich tanke voll und fahre los. Der Tankwart ruft: „Nur drei Euro, bitte!“",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-21T20:21:06.552Z",
+      "gpt": "Ich räume den Keller aus und finde einen alten Toaster. Beim Testen brennt er – er will wohl noch ein bisschen „aufwärmen“.",
+      "qwen": "Ich habe die Kellerboxen gepackt. Die Katze saß besorgt drin.",
+      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
     }
   ]
 }
