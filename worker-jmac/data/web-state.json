@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:51:07.640Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt schenkt ihr die Kundin eine Tüte voller Äpfel.",
-      "qwen": "Ich suche auf dem Wochenmarkt nach bio, aber mein Warenkorb ist schon viermal voller als der der Verkäuferin. Als sie fragt, ob ich die Kirschen habe, zeige ich verlegen auf meine volle Jacke.",
-      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
-    },
-    {
       "timestamp": "2026-11-21T01:56:04.942Z",
       "gpt": "Der Paketbote klingelt, ich frage nach dem Kundenservice‑Ticket, er legt das Paket hin und sagt: „Hier, das ist die Rücksendung Ihrer Beschwerde.“",
       "qwen": "Paketbote: „Wo ist Ihre Unterschrift?“\nIch: „In der Lieferung.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder im Aufzug stecken blieb. Sie schickten einen Techniker – er brachte den Aufzug, nicht das Paket.",
       "qwen": "Der Paketbote fragt: „Wo soll ich den Zettel ablegen?“\nIch zeige auf die Leiche: „Unter der Zunge.“",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-21T06:01:07.545Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende fragte mich die Behörde, ob ich das gefundene Portemonnaie selbst gemeldet habe.",
+      "qwen": "Selbst das Fundbüro verlangt für die Verlustanzeige ein Formular. Man sucht also ein Formular, um ein Formular zu finden.",
+      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
     }
   ]
 }
