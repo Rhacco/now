@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:06:10.366Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Warum haben Sie nur einen Koffer?“ Der Mann lächelt: „Ich nehme das Meer mit.“",
-      "qwen": "Im Urlaub hat er die Kamera einkassiert. „Ich will keine Fotos, ich will Erinnerungen.“",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-20T22:11:05.282Z",
       "gpt": "Im Museum flüstert er: „Ich will das Buch aus der Bibliothek ausleihen.“ Der Bibliothekar schaut verwirrt und sagt: „Hier gibt’s nur Stille‑Filme.“",
       "qwen": "Ich wollte ins Museum, sah aber nur Leinen.\nJetzt sitze ich im Kino und schweige.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer fühlt sich heute besonders flexibel?“ Der Anfänger hebt die Hand: „Ich, weil ich gerade den Weg zur Kaffeemaschine nicht mehr finde.“",
       "qwen": "Ich versuche beim Yoga, den Drachen zu balancieren. Mein Knie knackt so laut, dass die Trainerin mich für einen Knoster hält.",
       "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
+    },
+    {
+      "timestamp": "2026-11-21T02:11:04.937Z",
+      "gpt": "Ich wollte beim Joggen meine Schrittzahl erhöhen, also installierte ich die neue „Treppe‑Auf‑dem‑Balkon“-App – jetzt bin ich im dritten Stock.",
+      "qwen": "Frage mein Handy nach dem Wetter, es antwortet nur: „Regen.“\nEndlich mal eine ehrliche App.",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
