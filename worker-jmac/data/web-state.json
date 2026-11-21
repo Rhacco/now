@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:56:10.014Z",
-      "gpt": "Ich klopfte an die Nachbarstür, um mich zu entschuldigen, dass ich zu laut trommelte – er öffnete und reichte mir ein Staubsauger.",
-      "qwen": "Mein Nachbar hat lautstark gegen meine Wand getrommelt. Ich trommelte zurück, bis er fröhlich lachte.",
-      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
-    },
-    {
       "timestamp": "2026-11-21T03:01:07.016Z",
       "gpt": "Ich habe beim Ausmisten den Staubsauger gefunden, der noch nie geleert wurde – jetzt habe ich endlich ein Gerät, das wirklich alles aufsaugt.",
       "qwen": "Die Kiste mit den „Wichtigmachen“ wog so schwer, dass ich sie kaum tragen konnte. Darin steckten nur leere Vorratsdosen von 1998.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze springt sofort auf den Rücken und macht die tiefste Entspannung seines Lebens.",
       "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mein Gleichgewicht komplett zerstört.",
       "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
+    },
+    {
+      "timestamp": "2026-11-21T07:06:01.113Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Gibt es hier WLAN?“ Der Schaffner lächelt: „Nur, wenn Sie das Meer aus‑ und wieder einstecken.“",
+      "qwen": "Am Strand: „Hast du meine Sonnenbrille gesehen?“\n„Nein, aber ich habe deine Sonnenallergie.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
