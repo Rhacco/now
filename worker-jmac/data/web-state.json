@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:15:58.197Z",
-      "gpt": "Ich klopfe bei meinem Nachbarn an, um nach dem Stromausfall zu fragen – er meint, er habe gerade das Licht aus der Steckdose gezogen.",
-      "qwen": "Ich habe meinen Nachbarn gefragt, ob er meinen Rasenmäher entleihen kann. Er sagte: „Nein, der gehört dir ja schon.“",
-      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
-    },
-    {
       "timestamp": "2026-11-21T11:21:06.824Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt mein Sofa zusammen – jetzt entspanne ich mich im freien Raum.",
       "qwen": "Ich wollte beim Yoga nur kurz durchatmen, hab aber beim Ausatmen versehentlich den Kater erwischt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch im Supermarkt finde ich sie im Sonderangebot – „Tomaten, die nicht vom Feld, sondern vom Regal gefallen sind“.",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“\nIch entgegne: „Nein, ich bin auf dem Wochenmarkt.“",
       "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
+    },
+    {
+      "timestamp": "2026-11-21T15:25:57.248Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Schild: „Bitte ziehen Sie selbst an.“",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, nur meine Ex.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
