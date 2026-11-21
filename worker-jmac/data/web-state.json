@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:36:04.528Z",
-      "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand, der Schaffner zeigt nach hinten – dort liegt das Meer, weil der Zug im Hafen steht.",
-      "qwen": "Ich habe den Koffer gepackt. Als ich ihn hob, kippelte er, weil sich der Schmetterling meldete.",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-20T23:41:05.762Z",
       "gpt": "Der Paketbote klopft, ich frage: „Ist das ein Express‑Lieferung?“ – Er lächelt und sagt: „Nein, das ist unser neuer Kunden‑Service‑Karton.“",
       "qwen": "„Ihr Paket ist defekt.“\n„Nein, der Paketbote ist es.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einem Weiterbildungsseminar – das ist doch Stressmanagement, oder?“",
       "qwen": "Ich kün­dig­te, um mich wei­ter­zu­bil­den. Der Chef lachte: „Machen wir das in der Probezeit.\"",
       "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
+    },
+    {
+      "timestamp": "2026-11-21T03:41:06.921Z",
+      "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt für den Strand, der Schaffner lächelt und sagt: „Sorry, hier fährt nur der „Bahn“-Strand.“",
+      "qwen": "Auf der Skipiste rutscht der Freund aus und brüllt vor Schmerz. „Hast du dir was gebrochen, hab ich mich gefragt.“",
+      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
     }
   ]
 }
