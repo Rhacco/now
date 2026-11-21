@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:11:05.282Z",
-      "gpt": "Im Museum flüstert er: „Ich will das Buch aus der Bibliothek ausleihen.“ Der Bibliothekar schaut verwirrt und sagt: „Hier gibt’s nur Stille‑Filme.“",
-      "qwen": "Ich wollte ins Museum, sah aber nur Leinen.\nJetzt sitze ich im Kino und schweige.",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-20T22:16:04.920Z",
       "gpt": "Im Zug vergaß ich meinen Fahrschein, doch der Schaffner lächelte und sagte: „Keine Sorge, ich fahre eh nur im Stau.“",
       "qwen": "Ich fragte den Taxifahrer: „Können Sie die Zündung ausmachen, bevor Sie mich ablassen?“\nEr lachte: „Womit soll ich Sie dann wieder abholen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Joggen meine Schrittzahl erhöhen, also installierte ich die neue „Treppe‑Auf‑dem‑Balkon“-App – jetzt bin ich im dritten Stock.",
       "qwen": "Frage mein Handy nach dem Wetter, es antwortet nur: „Regen.“\nEndlich mal eine ehrliche App.",
       "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
+    },
+    {
+      "timestamp": "2026-11-21T02:15:58.148Z",
+      "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, der Verkäufer meint: „Die sind im Supermarkt, dort gibt’s keine Bienen.“",
+      "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis. Er zuckte nur die Schultern und sagte: „Das hängt davon ab, wie gut du verhandeln kannst.“",
+      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
     }
   ]
 }
