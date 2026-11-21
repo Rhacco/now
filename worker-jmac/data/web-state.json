@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:15:57.732Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie sie selbst tragen.“",
-      "qwen": "Beim Wochenmarkt hebt die Bäuerin den Preis an. Im Supermarkt ist der Preis an der Ware klebend.",
-      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
-    },
-    {
       "timestamp": "2026-11-21T10:21:10.992Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe: „Ihr Kunde hat angerufen, er wollte das Paket zurück – er hat es selbst bestellt.“",
       "qwen": "Der Bot liefert das Paket an die falsche Tür. Ich rufe an, der Support erklärt: „Entschuldigung, aber Ihr Nachbar hat Ihnen den Code geschickt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil mein Paket seit Tagen nicht ankam. Sie sagten, es sei „auf dem Weg zu Ihnen“, und schickten mir die Lieferadresse.",
       "qwen": "Der Kurier sagte: „Paket ist oben. – Nein, ich meine, ich bin es nicht, das ist die Treppe.“",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-21T14:26:04.874Z",
+      "gpt": "Ich klopfte an die Nachbarn, weil mein Wasserrohr geplatzt war. Sie schickten mir ein Schwimmzeug – aus dem Keller.",
+      "qwen": "Die neue Nachbarin lächelt freundlich und fragt, wie es mir geht. Ich sage: „Schrecklich, seit Sie mein Gartenzwerg mitgenommen haben.“",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
