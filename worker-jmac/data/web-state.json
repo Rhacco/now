@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:31:06.572Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Gemälde ausleihen?“ Der Kurator antwortet: „Nur, wenn Sie es zurück in die Stille bringen.“",
-      "qwen": "Im Kino saß ich quer durchs Regal, im Museum starrte ich die Leinwand an.",
-      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
-    },
-    {
       "timestamp": "2026-11-20T23:36:04.528Z",
       "gpt": "Im Zug fragt der Tourist nach dem Weg zum Strand, der Schaffner zeigt nach hinten – dort liegt das Meer, weil der Zug im Hafen steht.",
       "qwen": "Ich habe den Koffer gepackt. Als ich ihn hob, kippelte er, weil sich der Schmetterling meldete.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket schon bezahlt habe. Ich sag: „Nein, ich habe nur den Kundenservice angerufen.“",
       "qwen": "Der Paketbote fragt: „Ist jemand zu Hause?“ Ich rufe: „Nein!“ Er ruft zurück: „Dann signieren Sie hier.“",
       "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
+    },
+    {
+      "timestamp": "2026-11-21T03:36:06.920Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einem Weiterbildungsseminar – das ist doch Stressmanagement, oder?“",
+      "qwen": "Ich kün­dig­te, um mich wei­ter­zu­bil­den. Der Chef lachte: „Machen wir das in der Probezeit.\"",
+      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
     }
   ]
 }
