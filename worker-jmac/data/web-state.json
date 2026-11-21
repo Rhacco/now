@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:51:07.319Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort den Regenschirm aus der Schublade – die App fragt, ob ich den Schirm schon gekauft habe.",
-      "qwen": "Stell dir vor, ich würde dir ein „Nein“ senden. Du hast es gerade erst in den Papierkorb geworfen.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-21T18:56:06.278Z",
       "gpt": "Im Café bestellt er ein Ei‑Benedikt, bekommt aber nur ein rohes Ei und die Bedienung: „Wir kochen hier nur Frühstück, nicht Frühstücks‑Logik.“",
       "qwen": "Ich fragte im Café: „Wie schmeckt der Espresso?“\n„Das ist doch die Frage, die ich mir täglich stelle.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum – ich habe gerade erst die Weiterbildung gebucht.“",
       "qwen": "Ich wollte mich für den Chefposten bewerben, doch der Personaler fragte nur: „Machen Sie noch Weiterbildung?“\n„Nein“, sagte ich, „ich bin schon Chef.“",
       "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:55:58.356Z",
+      "gpt": "Ich bestelle im Café einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin hier zum Aufwachen, nicht zum Süßen.“",
+      "qwen": "Wir bestellen im Café einen Cappuccino. Die Kellnerin fragt: „Mit Schuss?“",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
