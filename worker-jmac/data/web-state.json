@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:26:04.527Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte leise sein, sonst hören wir das nächste Gespräch im Taxi.“ Und plötzlich hupt das Fenster.",
-      "qwen": "Ich dränge mich im vollen Bus durch und sage: „Ich bin hier!“. Der Fahrer brüllt zurück: „Ja, und?“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-21T12:30:58.212Z",
       "gpt": "Der Nachbar klopft, weil die Heizung wieder streikt, und fragt: „Kannst du mir kurz deine Wärme leihen?“ Ich reiche ihm den Toaster.",
       "qwen": "Der Nachbar mahlt täglich um sechs, ich drohe ihm. Er meldet: „Das ist die Hausmusik.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Kaffee „ohne Zucker“, doch die Kellnerin fragt: „Möchten Sie ihn dann bitte mit Sahne?“ – Er sagt: „Nur, wenn er süß bleibt.“",
       "qwen": "Der Kellner serviert mir eine Suppe.\n„Das ist die letzte Kelle“, sagt er, „weil ich sie selbst aufgespeichert habe“.",
       "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
+    },
+    {
+      "timestamp": "2026-11-21T16:31:40.737Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint, weil meine Ideen noch im „Entwurfs‑Modus“ feststecken.",
+      "qwen": "Der Chef fragt: „Haben Sie die Präsentation geschickt?“\nIch: „Ja, an das falsche Meeting.“",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
