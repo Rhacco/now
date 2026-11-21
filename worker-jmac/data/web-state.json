@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:16:04.920Z",
-      "gpt": "Im Zug vergaß ich meinen Fahrschein, doch der Schaffner lächelte und sagte: „Keine Sorge, ich fahre eh nur im Stau.“",
-      "qwen": "Ich fragte den Taxifahrer: „Können Sie die Zündung ausmachen, bevor Sie mich ablassen?“\nEr lachte: „Womit soll ich Sie dann wieder abholen?“",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-20T22:20:59.743Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie lange haben Sie noch Schmerzen?“ – Ich: „Nur bis zur Apotheke, dort gibt’s Gratis‑Medi‑kissen.“",
       "qwen": "Ich warte seit drei Stunden, weil die Ärztin im Wartezimmer feststeckt. Sie sitzt in der Warteschlange vor ihrer eigenen Praxis.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage beim Wochenmarkt nach Bio‑Äpfeln, der Verkäufer meint: „Die sind im Supermarkt, dort gibt’s keine Bienen.“",
       "qwen": "Ich fragte den Wochenmarktverkäufer nach dem Preis. Er zuckte nur die Schultern und sagte: „Das hängt davon ab, wie gut du verhandeln kannst.“",
       "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
+    },
+    {
+      "timestamp": "2026-11-21T02:20:58.328Z",
+      "gpt": "Beim Yoga fragt die Lehrerin: „Spüren Sie die Ruhe in Ihrem Körper?“ Der Schüler antwortet: „Ja, aber mein Handy vibriert vor lauter Benachrichtigungen.“",
+      "qwen": "Ich hab Yoga probiert, weil’s entspannen soll. Jetzt hab ich nur noch Schmerzen und eine Frisur wie ein Döner.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
