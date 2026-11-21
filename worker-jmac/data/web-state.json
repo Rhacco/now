@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:16:06.604Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeit.“ Sie schickt mich zur Apotheke – dort gibt’s nur Geduld.",
-      "qwen": "Im Wartezimmer fragt eine Frau: „Trifft der Doktor gleich ein?“\nDer Apotheker antwortet: „Nein, er ist erst seit drei Wochen tot.“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-21T03:21:05.998Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vorbereitet?“ – Der Praktikant meldet sich und sagt: „Ich habe das PowerPoint‑Template aus der Power‑Point‑App gezogen.“",
       "qwen": "Ich fragte den Chef: „Können wir die Besprechung kürzen?“ Er nickte und sagte: „Dann bis später.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nein, ich bringe meine eigene.“",
       "qwen": "Beim Wochenmarkt fragt der Bauer: „Frisch genug, oder soll ich noch eine Banane dazutun?“",
       "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
+    },
+    {
+      "timestamp": "2026-11-21T07:25:56.516Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rückgabeschein‑Formular schon unterschrieben?“ – ich: „Nur, wenn es ein Geschenk ist.“",
+      "qwen": "Der Paketbote drückt mir den Lieferschein entgegen: „Bitte unterschreiben Sie hier und hier.“\nIch frage: „Und wo soll ich das Paket abstellen?“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
