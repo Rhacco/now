@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:11:06.947Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs 'Wie man Bewerbungen schreibt\".",
-      "qwen": "Der Chef fragt nach meinem Interesse an Weiterbildung. Ich sage: „Sehr, ich will nur weg, nicht weiter.“",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-21T05:16:05.819Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Ich antworte: „Mit Zucker, sonst wird er zu bitter.“",
       "qwen": "Ich fragte den Kellner nach der Tagesempfehlung. Er löffelte seinen Kaffee und meinte: „Die ist leider schon weg.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Stewardess nach einem Wunschgetränk; ich bestelle „ein Glas Wasser, bitte.“ Sie lächelt und sagt: „Kommt sofort, wir haben gerade den Wasserdampf‑Auslauf.",
       "qwen": "Wir wollten den Sonnenuntergang am Strand genießen. Stattdessen sahen wir nur, wie die Sonne unterging.",
       "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
+    },
+    {
+      "timestamp": "2026-11-21T09:16:08.499Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy vibriert: „Du hast das Fenster offen.“",
+      "qwen": "Ich fragte mein Handy nach dem Weg zur Bäckerei. Es antwortete: „Ich bin offline.“",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
