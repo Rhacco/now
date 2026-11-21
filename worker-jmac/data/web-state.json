@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:35:58.369Z",
-      "gpt": "Im Zug fragt der Fahrgast nach einem Fensterplatz, das Personal gibt ihm einen, doch er sitzt im Bus.",
-      "qwen": "Ich fragte den Taxifahrer nach dem günstigsten Weg zum Bahnhof. Er lachte: „Da fahren Sie doch einfach mit dem Taxi.\"",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-21T10:40:57.250Z",
       "gpt": "Beim Familienabend fragt Mama: „Wer hat den letzten Keks genommen?“ Papa grinst und sagt: „Ich, aber ich dachte, das wäre ein Stück Kuchen.“",
       "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht und says: „Streitet nicht, ich hacke euch ab.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular zum Verlust Ihres Gedächtnisses ausgefüllt?“ – Ich nenne das mal ein Selbst‑Ausweis‑Problem.",
       "qwen": "Ich fragte im Fundbüro nach dem verlorenen Kugelschreiber. Die Antwort: „Den müssen wir leider erst finden.“",
       "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
+    },
+    {
+      "timestamp": "2026-11-21T14:46:04.118Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, bitte.“ Er nickt: „Genau, das ist die einzige produktive Idee, die wir heute brauchen.“",
+      "qwen": "In der Besprechung fragte ich: „Wer ist der neue Praktikant?“\nMein Chef seufzte: „Das bist du.“",
+      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
     }
   ]
 }
