@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:00:57.563Z",
-      "gpt": "Ich wollte die neue Fitness‑App starten, doch das Handy zeigte nur \"Akku zu schwach\". Jetzt trainiere ich täglich das Ladegerät.",
-      "qwen": "Ich habe mich in die neue Dating-App verliebt.\nLeider trennte uns die Akkulaufzeit nach fünf Minuten.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-21T04:06:01.596Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch statt meiner Adresse stand dort „Bitte geben Sie Ihren Humor an“ – das war das einzige, was noch nicht verloren war.",
       "qwen": "Im Fundbüro wird der Schlüssel als „Verlust“ gemeldet. Die Aussage: „Den habe ich doch verloren.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach zehn Minuten meldete sie: „Sie haben bereits genug Schritte gemacht – zum Kühlschrank.“",
       "qwen": "Ich habe der Chatbot-App gestanden, ich sei ein Hund.\nSie hat mir freundlich empfohlen, Leckerlis zu kaufen.",
       "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
+    },
+    {
+      "timestamp": "2026-11-21T08:11:03.493Z",
+      "gpt": "Der Nachbar klopft, weil sein Wasserhahn leckt – ich reiche ihm ein Glas und sage: „Jetzt hast du wenigstens was zum Trinken.“",
+      "qwen": "Ich fragte die Nachbarin, ob ihr Hund bellt. Sie sagte, das sei Katze Mia.",
+      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
     }
   ]
 }
