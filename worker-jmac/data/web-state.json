@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:56:04.684Z",
-      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht drängeln, wir kommen erst in 5 Minuten, wenn der Fahrer endlich ankommt.“",
-      "qwen": "Ich dränge mich in den vollen Bus, um schneller zu sein, und der Fahrer sagt: „Bitte nicht betreten!“",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-21T00:01:12.097Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich blicke verwirrt, weil ich gerade erst eingestiegen bin – und merke, dass ich im Taxi sitze.",
       "qwen": "Ich springe in den Bus, das Taxi, die Bahn und mein Auto.\nNur das Auto fährt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin bringt ihm eine Pfanne – er meint: „Ich wollte nur wach werden, nicht braten!“",
       "qwen": "Ich bestellte im Café einen Kaffee.\n„Das gibt’s nur im Restaurant“, seufzte die Bedienung.",
       "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
+    },
+    {
+      "timestamp": "2026-11-21T04:00:57.563Z",
+      "gpt": "Ich wollte die neue Fitness‑App starten, doch das Handy zeigte nur \"Akku zu schwach\". Jetzt trainiere ich täglich das Ladegerät.",
+      "qwen": "Ich habe mich in die neue Dating-App verliebt.\nLeider trennte uns die Akkulaufzeit nach fünf Minuten.",
+      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
     }
   ]
 }
