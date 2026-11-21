@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:31:01.166Z",
-      "gpt": "Ich warte im Praxis‑Wartezimmer, die Ärztin ruft mich: „Bitte nehmen Sie das Rezept mit, Sie brauchen es im Nebenraum.“ Dort steht nur ein Spiegel.",
-      "qwen": "„Ich bin hier zum Kaffeesaufen“, sagte der Patient.\nDer Arzt seufzte: „Dann gehen Sie bitte zur Apotheke.“",
-      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
-    },
-    {
       "timestamp": "2026-11-21T18:36:03.030Z",
       "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir ein Regenschirm – „Damit Sie nicht im Regen stehen, wenn die Ware ausverkauft ist.“",
       "qwen": "Der Verkäufer fragt: „Können wir Sie beraten?“ Ich sage: „Nein, ich bin nur zum Staunen da.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Kaffeebecher, den ich gerade gefunden habe.“",
       "qwen": "Ich habe den Fund-Briefkasten im Rathaus drei Wochen lang ignoriert. Heute hole ich ihn ab, er ist voll.",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:36:02.886Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldbeutel gefunden.“",
+      "qwen": "Für den verlorenen Pass brauchte ich Formular 7b in dreifacher Ausfertigung.\nDas Fundbüro schloss um 12 Uhr, weil die Mittagspause durch ein Formular geregelt wird.",
+      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
     }
   ]
 }
