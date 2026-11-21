@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T02:06:06.537Z",
-      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer fühlt sich heute besonders flexibel?“ Der Anfänger hebt die Hand: „Ich, weil ich gerade den Weg zur Kaffeemaschine nicht mehr finde.“",
-      "qwen": "Ich versuche beim Yoga, den Drachen zu balancieren. Mein Knie knackt so laut, dass die Trainerin mich für einen Knoster hält.",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-21T02:11:04.937Z",
       "gpt": "Ich wollte beim Joggen meine Schrittzahl erhöhen, also installierte ich die neue „Treppe‑Auf‑dem‑Balkon“-App – jetzt bin ich im dritten Stock.",
       "qwen": "Frage mein Handy nach dem Wetter, es antwortet nur: „Regen.“\nEndlich mal eine ehrliche App.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie zählt nur Schritte, wenn ich zum Kühlschrank gehe. Jetzt bin ich Marathonläufer beim Snack‑Hol‑und‑Lauf.",
       "qwen": "Ich rufe die Autopilot-App an und sage „Losfahren“.\nMein Auto antwortet: „Nur mit mir.“",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-21T06:16:00.232Z",
+      "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, doch die Verkäuferin meinte: „Hier gibt’s nur Obst, das sich selbst verpackt.“",
+      "qwen": "Ich kaufe auf dem Wochenmarkt frische Bio-Tomaten, weil sie im Supermarkt so künstlich glänzen.",
+      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
     }
   ]
 }
