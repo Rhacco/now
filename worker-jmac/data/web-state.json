@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:11:03.532Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gesuchte Portemonnaie war schon im Antragsfenster.",
-      "qwen": "Ich gab beim Fundbüro die Schlüssel zurück. Die Mitarbeiterin erklärte mir, wie man den Verlust meldet.",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-21T03:16:06.604Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeit.“ Sie schickt mich zur Apotheke – dort gibt’s nur Geduld.",
       "qwen": "Im Wartezimmer fragt eine Frau: „Trifft der Doktor gleich ein?“\nDer Apotheker antwortet: „Nein, er ist erst seit drei Wochen tot.“",
@@ -300,6 +294,12 @@
       "gpt": "Mutter fragt: „Warum hast du die ganze Pizza gegessen?“ – Sohn: „Weil du gesagt hast, wir teilen das Glück, nicht das Essen.“",
       "qwen": "Die Tante fragt besorgt: „Hast du schon ein Kind?“ Ich antworte: „Ja, ich habe einen Hund.“",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-21T07:21:06.154Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nein, ich bringe meine eigene.“",
+      "qwen": "Beim Wochenmarkt fragt der Bauer: „Frisch genug, oder soll ich noch eine Banane dazutun?“",
+      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
     }
   ]
 }
