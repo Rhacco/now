@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:20:58.201Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur ein Bild von meinem Kaffeebecher ist. „Strategie“, sag ich, „ist jetzt wach.“",
-      "qwen": "Ich frage im Meeting: „Wir brauchen mehr Kanban-Boards oder weniger Meetings?“\nDer Chef antwortet: „Sag ich nicht, du machst beides.“",
-      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
-    },
-    {
       "timestamp": "2026-11-21T00:25:58.559Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich mein Handy vergessen hatte – die Durchsage kam: „Bitte nicht schreien, wir haben kein Mikrofon.“",
       "qwen": "Ich stieg aus dem verletzten Taxi, um den Bus zu nehmen. Der Busfahrer winkte mich ab: „Ich fahre nur mit Bahn.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Projekt?“ – Die Kollegin meldet sich: „Ich, ich habe die Zahlen, aber das Projekt ist noch nicht gestartet.“",
       "qwen": "Ich habe dem Chef meine Vier-Augen-Runden mitgebracht. Er hat sie nur kurz betrachtet und mir die Brille verordnet.",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-21T04:25:56.820Z",
+      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ – Der Finder nickt: „Ja, ich habe es gleich im Kasten gefunden.“",
+      "qwen": "Ich fragte im Fundbüro nach der verlorene Brief. Dort hieß es: „Bitte erst das Verlustformular ausfüllen.",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
