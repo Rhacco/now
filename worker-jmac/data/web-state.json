@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:21:08.208Z",
-      "gpt": "Der Nachbar klopft, weil er das laute Staubsaugen hört – und fragt, ob ich endlich das WLAN-Passwort teilen will.",
-      "qwen": "Mein Nachbar hämmert jeden Tag um sieben.\nIch schlage zurück, damit er merkt, dass ich wach bin.",
-      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
-    },
-    {
       "timestamp": "2026-11-20T21:25:58.461Z",
       "gpt": "Ich füllte das Fundbüro‑Formular aus, weil ich meinen verlorenen Schlüssel gefunden hatte – dann stand dort „Verlust melden“.",
       "qwen": "Ich fragte im Fundbüro: „Gibt es Formulare für verlorene Schlüssel?“\n„Nein, die Schlüssel sind verloren.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin das Klingeln geübt – jetzt ruft sie jedes Mal, wenn ich die Tür öffne, „Willkommen im Fitnessstudio!“",
       "qwen": "Der neue Nachbar fragt, ob ich sein Auto parken soll. Ich zeig ihm den Briefkasten.",
       "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
+    },
+    {
+      "timestamp": "2026-11-21T01:31:06.494Z",
+      "gpt": "Im Café bestellt er einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ Er antwortet: „Beides, ich will ja nur den Preis sparen.“",
+      "qwen": "Im Café bestellt der Mann: „Ein Espresso, bitte.“ Die Barista erwidert: „Das gibt’s hier nur als Cappuccino.“",
+      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
     }
   ]
 }
