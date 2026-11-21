@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:31:01.129Z",
-      "gpt": "Ich rufe den Kundendienst, weil das Paket schon wieder zu spät ist – sie sagen, es sei im Urlaub, weil es den Rückweg verpasst hat.",
-      "qwen": "Der Paketbote lächelt und fragt: „Alles korrekt?“\n„Ja“, sage ich, „nur die Lieferung für Frau Müller fehlt?“",
-      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
-    },
-    {
       "timestamp": "2026-11-21T08:35:57.415Z",
       "gpt": "Im Café fragt die Kellnerin: „Wie möchten Sie Ihr Steak?“ – „Als Cappuccino, bitte.“ Sie serviert ihn mit Schaum und einem Augenzwinkern.",
       "qwen": "Ich fragte im Café: „Gibt’s auch Kaffee ohne Koffein?“\nDer Barista starrte mich an: „Dann ist das kein Kaffee mehr.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, weil die Heizung wieder streikt, und fragt: „Kannst du mir kurz deine Wärme leihen?“ Ich reiche ihm den Toaster.",
       "qwen": "Der Nachbar mahlt täglich um sechs, ich drohe ihm. Er meldet: „Das ist die Hausmusik.“",
       "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
+    },
+    {
+      "timestamp": "2026-11-21T12:36:04.783Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Apotheker: „Rezept gefällig?“\nIch: „Eher ein Rezept für einen Therapeuten.“",
+      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
     }
   ]
 }
