@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:21:06.612Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Geduld – Sie haben ja noch viel zu lernen.“",
-      "qwen": "Der Chef lobt mein neues Zertifikat zur Selbstführung. Ich frage, ob das Gehalt jetzt auch selbst ankommt.",
-      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
-    },
-    {
       "timestamp": "2026-11-21T05:25:57.936Z",
       "gpt": "Im Meeting fragt der Chef nach Ideen, und der Praktikant flüstert: „Wie wäre es, wenn wir das Protokoll einfach weglassen?“ – Alle nicken begeistert.",
       "qwen": "In der Besprechung fragt der Chef: „Wer hat das Leck gedichtet?“\nStille. Dann meldet sich der Praktikant: „Ich, Chef. Das war ein Vorschlag.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum liegt das Geschirr immer noch in der Spülmaschine?“ Papa antwortet: „Weil es dort schon einen guten Job hat – es bleibt sauber.“",
       "qwen": "Ich rufe aus der Haustür: „Fertig zum Hinausgehen?“ Meine Frau ruft zurück: „Ja, ich bin schon draußen!“",
       "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
+    },
+    {
+      "timestamp": "2026-11-21T09:26:05.416Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel mitnehmen?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn sie noch reden können.“",
+      "qwen": "Im Supermarkt fragt man nach dem Preis der Tomate.\nAuf dem Wochenmarkt fragt man nach dem Namen des Tomatenbauern.",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
