@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:06:08.337Z",
-      "gpt": "Ich packte den Staubsauger aus, um ihn zu spenden, und fand darin meinen alten Hausschlüssel – jetzt staubt er nur noch im Keller.",
-      "qwen": "Wir haben beim Ausmisten eine Festplatte gefunden. Darin lag die Eifersucht der letzten zwanzig Jahre.",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-21T06:11:04.414Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie zählt nur Schritte, wenn ich zum Kühlschrank gehe. Jetzt bin ich Marathonläufer beim Snack‑Hol‑und‑Lauf.",
       "qwen": "Ich rufe die Autopilot-App an und sage „Losfahren“.\nMein Auto antwortet: „Nur mit mir.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich wartete stundenlang in der Praxis, bis der Arzt sagte: „Nächster Patient.“\nDraußen in der Apotheke wurde mir die Rezeptgebühr direkt vom Gehalt abgezogen.",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-21T10:11:02.466Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine auf den Balkon gestellt?“ – „Damit ich beim Aufräumen endlich frische Luft habe.“",
+      "qwen": "Die Frage „Wer hat das?“ bleibt in unserer Familie immer unbeantwortet. Jeder schaut brav auf den Boden.",
+      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
     }
   ]
 }
