@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:26:05.985Z",
-      "gpt": "Im Zug fragt die Frau neben mir: „Entschuldigung, wo liegt das Ziel?“ – Ich zeige auf den Fahrplan: „Hier, zwischen „Nächste Haltestelle“ und „Ende der Geduld“.",
-      "qwen": "Ich habe im Urlaub extra eine Wanderung geplant. Der Hund ist seit drei Stunden nur noch auf der Couch.",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-21T18:31:01.166Z",
       "gpt": "Ich warte im Praxis‑Wartezimmer, die Ärztin ruft mich: „Bitte nehmen Sie das Rezept mit, Sie brauchen es im Nebenraum.“ Dort steht nur ein Spiegel.",
       "qwen": "„Ich bin hier zum Kaffeesaufen“, sagte der Patient.\nDer Arzt seufzte: „Dann gehen Sie bitte zur Apotheke.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn ein Schild mit „Bitte leise sein“ an die Tür gehängt – er hat es mit „Bitte leise bleiben“ zurückgeschrieben.",
       "qwen": "Ich fragte die Nachbarin, ob ich ihr Gartentor mit einem Wackelkontakt öffnen dürfe. Sie nickte, bis die Tür ins Schloss fiel.",
       "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:30:58.184Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Kaffeebecher, den ich gerade gefunden habe.“",
+      "qwen": "Ich habe den Fund-Briefkasten im Rathaus drei Wochen lang ignoriert. Heute hole ich ihn ab, er ist voll.",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
