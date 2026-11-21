@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:36:06.013Z",
-      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand nur: „Bitte geben Sie Ihren verlorenen Humor zurück.“",
-      "qwen": "Finde ich den Schlüssel im Fundbüro, wird unter „Beschreibung“ ein Fragezeichen verlangt.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-21T13:41:04.304Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Ich habe die Idee, das Projekt zu visualisieren.“",
       "qwen": "Kollege fragt: „Bringst du den Kaffee?“ Ich: „Nein, ich bringe nur die Ruhe.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie öffnen die Tür mit einem Eimer – sie haben das Leck schon seit Wochen selbst repariert.",
       "qwen": "Der Nachbar klopft wütend an die Tür: „Hören Sie auf zu bohren!“ Ich erwidere ruhig: „Ich bohre gar nicht.“ Er schweigt, hört weiter und klopft noch lauter.",
       "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
+    },
+    {
+      "timestamp": "2026-11-21T17:40:57.943Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Bio‑Abteilung?“ Der Kunde lächelt: „Nur wenn sie vom Wochenmarkt kommen.“",
+      "qwen": "Beim Wochenhändler murmelte er: „Die Tomaten sehen müde aus.“\n\nDer Verkäufer nickte: „Die haben gestern drei Wochenenden hinterhergejagt.“",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
