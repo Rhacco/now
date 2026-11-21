@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:45:57.470Z",
-      "gpt": "Ich reiche das verlorene Portemonnaie beim Fundbüro ein und bekomme sofort ein Formular, das ich erst unterschreiben muss, bevor ich es zurückbekomme.",
-      "qwen": "Ich verlor meinen Ausweis und meldete ihn beim Fundbüro ab. Der Beamte fragte: „Haben Sie ihn schon gefunden?“",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-21T07:50:58.449Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verhedderte ich mich in meiner eigenen Yogamatte – jetzt ist das der neue „Knoten“.",
       "qwen": "Ich will nur kurz ein bisschen Dehnung machen. Mein Rücken bricht lautstark entzwei.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich gerade im Keller stehe.",
       "qwen": "Ich habe die Taschenlampe-App gestartet. Sie leuchtet nur, wenn ich blinken kann.",
       "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
+    },
+    {
+      "timestamp": "2026-11-21T11:50:58.187Z",
+      "gpt": "Ich stehe im Museum, rufe nach Popcorn. Die Bibliothekarin reicht mir leise ein Hörbuch.",
+      "qwen": "Im Museum starrt er auf die Mumie, bis sie blinzelt. „Eintritt nur für Erwachsene“, schmunzelt der Wächter.",
+      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
     }
   ]
 }
