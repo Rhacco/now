@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:36:03.030Z",
-      "gpt": "Ich frage den Verkäufer nach einer passenden Jacke, er reicht mir ein Regenschirm – „Damit Sie nicht im Regen stehen, wenn die Ware ausverkauft ist.“",
-      "qwen": "Der Verkäufer fragt: „Können wir Sie beraten?“ Ich sage: „Nein, ich bin nur zum Staunen da.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-21T18:41:05.125Z",
       "gpt": "Im Zug zum Strand frage ich nach dem Weg zur Sonne, der Schaffner lacht und sagt: „Nur geradeaus, bis das Meer uns überholt.“",
       "qwen": "Ich wollte an der Küste Freiheit spüren, aber der Wind hat mir nur den Hut vom Kopf geblasen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldbeutel gefunden.“",
       "qwen": "Für den verlorenen Pass brauchte ich Formular 7b in dreifacher Ausfertigung.\nDas Fundbüro schloss um 12 Uhr, weil die Mittagspause durch ein Formular geregelt wird.",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:40:58.402Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
+      "qwen": "Doktor: „Nehmen Sie das dreimal täglich vor dem Essen.“\nPatient: „Dann esse ich einfach nie wieder.“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
