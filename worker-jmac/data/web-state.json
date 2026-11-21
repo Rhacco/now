@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:40:59.161Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund lande ich plötzlich im Klo – anscheinend war das die wahre “Tiefe”.",
-      "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat auf meinem Rücken geschlafen.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-21T05:46:03.089Z",
       "gpt": "Im Zug fragt die Oma, ob wir noch einen Halt einlegen, weil ihr Koffer noch nicht aus dem Fenster gefallen ist.",
       "qwen": "Im Urlaub bestellte ich ein Steak medium gebraten. Der Kellner fragte, ob das für die Gabel oder für die Erinnerung gedacht sei.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei im „virtuellen Lager“ und habe sich verlaufen, weil es keinen GPS‑Signal hat.",
       "qwen": "Der Paketbote ließ die Sendung vor der Tür liegen. Ich rief den Kundendienst an: „Wo ist mein Paket?“",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-21T09:45:58.558Z",
+      "gpt": "Beim Ausmisten wirft er die alte Kaffeemaschine weg – weil er endlich merkt, dass er seit Jahren keinen Kaffee mehr trinkt.",
+      "qwen": "Wir haben alte Bücher aussortiert. Die Kiste wog noch immer so schwer wie vor dem Ausmisten.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
