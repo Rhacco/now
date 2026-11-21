@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:50:59.094Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, doch mein Hund legt sich mitten in die „herabschauende Katze“ – jetzt übe ich nur noch „Hundekrieger“.",
-      "qwen": "Ich habe beim Joggen eine Pause eingelegt. Jetzt bin ich entspannt, aber auch zwei Kilo schwerer.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-20T21:56:08.547Z",
       "gpt": "Ich rief beim Kundenservice an, weil mein Paket seit Tagen nicht ankam – sie sagten, es sei bereits im Haus, weil ich es selbst geliefert habe.",
       "qwen": "Der Kurier fragt, ob ich das Paket einfach vor die Tür legen soll. Ich sage Ja, denn mein Bart trägt genau den Namen „Vor die Tür“.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt schenkt ihr die Kundin eine Tüte voller Äpfel.",
       "qwen": "Ich suche auf dem Wochenmarkt nach bio, aber mein Warenkorb ist schon viermal voller als der der Verkäuferin. Als sie fragt, ob ich die Kirschen habe, zeige ich verlegen auf meine volle Jacke.",
       "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
+    },
+    {
+      "timestamp": "2026-11-21T01:56:04.942Z",
+      "gpt": "Der Paketbote klingelt, ich frage nach dem Kundenservice‑Ticket, er legt das Paket hin und sagt: „Hier, das ist die Rücksendung Ihrer Beschwerde.“",
+      "qwen": "Paketbote: „Wo ist Ihre Unterschrift?“\nIch: „In der Lieferung.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
