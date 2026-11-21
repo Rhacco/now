@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:56:04.525Z",
-      "gpt": "Ich rief den Kundendienst, weil das Paket immer wieder im Aufzug stecken blieb. Sie schickten einen Techniker – er brachte den Aufzug, nicht das Paket.",
-      "qwen": "Der Paketbote fragt: „Wo soll ich den Zettel ablegen?“\nIch zeige auf die Leiche: „Unter der Zunge.“",
-      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
-    },
-    {
       "timestamp": "2026-11-21T06:01:07.545Z",
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende fragte mich die Behörde, ob ich das gefundene Portemonnaie selbst gemeldet habe.",
       "qwen": "Selbst das Fundbüro verlangt für die Verlustanzeige ein Formular. Man sucht also ein Formular, um ein Formular zu finden.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Zieh dir die Schuhe aus, wir haben Gäste!“ Ich ziehe sie aus – und die Gäste sind meine Socken.",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Pizza?“\nAlle vier Finger auf mich zeigen.",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-21T10:01:03.704Z",
+      "gpt": "Ich klopfe bei der neuen Nachbarin an, um mich vorzustellen, und sie öffnet mit einem Schild: „Bitte nicht stören – ich bin gerade im Home‑Office.“",
+      "qwen": "Der Nachbar klagt über unsere Party. Ich schau in den Keller: Dort tanzen wir schon seit drei Stunden.",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
