@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:56:03.791Z",
-      "gpt": "Ich habe die neue „Schlaf‑Modus“-App auf meinem Handy aktiviert – jetzt geht es erst wieder an, wenn ich den Wecker ausversehen drückte.",
-      "qwen": "Der Akku zeigt noch 1%, doch ich erlebe gerade eine Selbsterfahrung.",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-21T09:01:02.897Z",
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei bereits bei mir zu Hause, weil ich es aus Versehen im Kühlschrank gefunden habe.",
       "qwen": "Der Lieferbote fragt: „Sind Sie für die Übergabe da?“, worauf ich nickte. Er sagte: „Dann packen Sie bitte die Ware ein.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel, der Schaffner lächelt und sagt: „Mein Lieblingsplatz – das Ende der Zugfahrt.“",
       "qwen": "Ich buchte eine einsame kleine Hütte in den Bergen. Draußen stand: „WLAN inklusive, aber bitte leise, die Rentiere sind empfindlich.“",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-21T13:06:04.277Z",
+      "gpt": "Ich wollte mit der Sprachsteuerung das Licht anmachen, aber das Handy verstand „Licht an“ als „Licht‑App öffnen“ – jetzt leuchtet mein Bildschirm.",
+      "qwen": "Ich fragte Siri nach dem Weg, sie schlug vor, den Fluss zu überqueren. Logisch, Wasser fließt ja auch.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
