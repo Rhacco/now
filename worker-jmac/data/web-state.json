@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:50:58.186Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“.Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“",
-      "qwen": "Der Kurier fragt: „Müssen Sie das Paket hier unterschreiben?“ Ich sage: „Ja, ich bin es ja schon.“",
-      "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
-    },
-    {
       "timestamp": "2026-11-21T13:56:07.567Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
       "qwen": "Ich fragte den Arzt: „Zwei Schnupfen, drei Husten, wie geht’s?“\nEr seufzte: „Sie kommen zur Apotheke, nicht zur Praxis.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will die Bohnen noch erleben.“",
       "qwen": "Ich bestellte einen Kaffee ohne Zucker, nur um zu sehen, ob sie ihn mir mit Löffel servieren.",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-21T17:55:57.514Z",
+      "gpt": "Der Paketbote klingelt, ich frage, ob das Paket schon bezahlt ist – er meint: „Nein, das ist mein Gehalt.“",
+      "qwen": "Der Lieferant grinste: „Ich bin schon da, das Paket ist aber noch unterwegs.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
