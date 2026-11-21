@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T19:56:08.204Z",
-      "gpt": "Ich habe meinem Nachbarn den Rasenmäher geliehen – er kam zurück mit einer frisch geschnittenen Hecke. Ich dachte, er hätte den Rasen gemäht.",
-      "qwen": "Der Nachbar poliert sein Auto. Ich frage, ob er endlich Ruhe gibt.",
-      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
-    },
-    {
       "timestamp": "2026-11-20T20:01:06.502Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs 'Wie überlebe ich endlose Bewerbungsrunden“.“",
       "qwen": "Ich habe den Trainer gefragt, was mein größter Defekt ist. „Sie sind zu empfindsam“, sagte er. „Außerdem antworten Sie nie richtig auf Fragen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht drängeln, wir kommen erst in 5 Minuten, wenn der Fahrer endlich ankommt.“",
       "qwen": "Ich dränge mich in den vollen Bus, um schneller zu sein, und der Fahrer sagt: „Bitte nicht betreten!“",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-21T00:01:12.097Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich blicke verwirrt, weil ich gerade erst eingestiegen bin – und merke, dass ich im Taxi sitze.",
+      "qwen": "Ich springe in den Bus, das Taxi, die Bahn und mein Auto.\nNur das Auto fährt.",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
