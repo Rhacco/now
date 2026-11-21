@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:10:59.800Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Paket schon unterschrieben?“ – „Nein, ich habe es gerade erst bestellt.“",
-      "qwen": "Der Kurier drückte mir das Paket in die Hand und sagte: „Das hier ist für Sie.“ Ich fragte: „Aber ich habe doch nichts bestellt.“ Er antwortete: „Genau deshalb ist es so günstig.“",
-      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
-    },
-    {
       "timestamp": "2026-11-21T14:15:58.574Z",
       "gpt": "Ich wollte beim Wochenmarkt frische Tomaten, aber die Kasse war besetzt – im Supermarkt nebenan. Dort bekam ich dann doch Tomatensauce.",
       "qwen": "Ich fragte im Supermarkt nach frischem Brot, da zeigte man mir einen Tiefkühlschrank.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe den Bericht fertig – als PDF, weil ich ihn nicht mehr lesen kann.“",
       "qwen": "Ich bat den Chef um Gehaltserhöhung. Er nickte und sagte: „Gern, holt mal zwei Kaffee.“",
       "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
+    },
+    {
+      "timestamp": "2026-11-21T18:16:07.529Z",
+      "gpt": "Ich warte im Wartezimmer, die Krankenschwester ruft: „Nur noch ein Medikament.“ Ich antworte: „Dann nehme ich gleich die Apotheke.“",
+      "qwen": "„Warten Sie in der Wartehalle.“\n„Ich sitze doch schon in der Praxis.“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
