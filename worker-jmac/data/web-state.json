@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T08:35:57.415Z",
-      "gpt": "Im Café fragt die Kellnerin: „Wie möchten Sie Ihr Steak?“ – „Als Cappuccino, bitte.“ Sie serviert ihn mit Schaum und einem Augenzwinkern.",
-      "qwen": "Ich fragte im Café: „Gibt’s auch Kaffee ohne Koffein?“\nDer Barista starrte mich an: „Dann ist das kein Kaffee mehr.“",
-      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
-    },
-    {
       "timestamp": "2026-11-21T08:41:06.999Z",
       "gpt": "Im Yoga‑Kurs fragt der Trainer: „Wer kann die Spannung lösen?“ – Der Kater vom Nachbarn springt auf die Matte und macht den herabschauenden Hund.",
       "qwen": "Beim Yoga fragte ich den Trainer: „Früher war ich so starr wie ein Brett.“ Er antwortete: „Genau deshalb sitzen Sie heute noch hier.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Apotheker: „Rezept gefällig?“\nIch: „Eher ein Rezept für einen Therapeuten.“",
       "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
+    },
+    {
+      "timestamp": "2026-11-21T12:40:57.486Z",
+      "gpt": "Im Zug zum Strand fragt ich die Mitfahrerin, ob sie das Wetter checken kann – sie zieht die Fahrkarte raus und sagt: „Hier steht 'Sonnenschein'.“",
+      "qwen": "Sag ich: „Ich muss dringend erholen.“\nSie zuckt die Achseln: „Dann lass das Handy aus.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
