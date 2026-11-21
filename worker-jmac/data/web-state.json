@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:56:02.794Z",
-      "gpt": "Ich frage im Elektrofachgeschäft nach einer Energiesparlampe, der Verkäufer meint: „Klar, hier ist ein Stromsparschwein, das füttern Sie mit Strom.“",
-      "qwen": "Der Verkäufer riet mir dringend zur teureren Lampe. Sie war auch die günstigere.",
-      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
-    },
-    {
       "timestamp": "2026-11-21T12:01:05.198Z",
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine aus dem Fenster geworfen?“  \nTim: „Sie hat mir gesagt, sie braucht frische Luft.“",
       "qwen": "Ich fragte den Hund, ob er die Brötchen für die Familie backen kann. Er nickte und fragte: „Mit Marmelade?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur das Wort „Pause“ enthält. Er nickt: „Endlich ein klarer Zeitplan.“",
       "qwen": "Im Meeting fragte der Chef: „Hat jemand eine Idee, wie wir Kosten senken?“\nNur ich nickte und schlug vor, die Kaffeemaschine auszuschalten.",
       "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
+    },
+    {
+      "timestamp": "2026-11-21T16:05:56.858Z",
+      "gpt": "Im Zug stolpert ein Pendler über sein Handy und ruft: „Entschuldigung, ich wollte nur kurz den Fahrplan checken!“",
+      "qwen": "Ich stelle den Koffer auf die Rücksitzbank. „Sicher?“, fragt der Taxifahrer.",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
