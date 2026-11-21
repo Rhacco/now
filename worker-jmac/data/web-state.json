@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:10:58.183Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich bewerbe mich gleich für einen Kurs in ‚Entspannung für Bewerber‘.“",
-      "qwen": "Ich erzählte im Vorstellungsgespräch stolz von meinen 50 Kursen. Der Chef seufzte: „Dann wissen Sie sicher, dass wir hier nicht mehr einstellen.“",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-20T23:15:59.699Z",
       "gpt": "Ich frage die Verkäuferin nach einer Größe, sie misst meine Hand, lächelt und sagt: „Dann passen Sie jetzt perfekt zu unserem Rückgaberecht.“",
       "qwen": "Ich fragte im Supermarkt nach dem Weg zur Kasse. „Gegenüber links“, meinte der Sohn und zeigte auf den toten Vater im Regal.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gesuchte Portemonnaie war schon im Antragsfenster.",
       "qwen": "Ich gab beim Fundbüro die Schlüssel zurück. Die Mitarbeiterin erklärte mir, wie man den Verlust meldet.",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-21T03:16:06.604Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Haben Sie Allergien?“ Ich antworte: „Nur gegen Wartezeit.“ Sie schickt mich zur Apotheke – dort gibt’s nur Geduld.",
+      "qwen": "Im Wartezimmer fragt eine Frau: „Trifft der Doktor gleich ein?“\nDer Apotheker antwortet: „Nein, er ist erst seit drei Wochen tot.“",
+      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
     }
   ]
 }
