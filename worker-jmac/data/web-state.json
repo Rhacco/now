@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:11:04.414Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie zählt nur Schritte, wenn ich zum Kühlschrank gehe. Jetzt bin ich Marathonläufer beim Snack‑Hol‑und‑Lauf.",
-      "qwen": "Ich rufe die Autopilot-App an und sage „Losfahren“.\nMein Auto antwortet: „Nur mit mir.“",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-21T06:16:00.232Z",
       "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, doch die Verkäuferin meinte: „Hier gibt’s nur Obst, das sich selbst verpackt.“",
       "qwen": "Ich kaufe auf dem Wochenmarkt frische Bio-Tomaten, weil sie im Supermarkt so künstlich glänzen.",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine auf den Balkon gestellt?“ – „Damit ich beim Aufräumen endlich frische Luft habe.“",
       "qwen": "Die Frage „Wer hat das?“ bleibt in unserer Familie immer unbeantwortet. Jeder schaut brav auf den Boden.",
       "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
+    },
+    {
+      "timestamp": "2026-11-21T10:15:57.732Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie sie selbst tragen.“",
+      "qwen": "Beim Wochenmarkt hebt die Bäuerin den Preis an. Im Supermarkt ist der Preis an der Ware klebend.",
+      "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
     }
   ]
 }
