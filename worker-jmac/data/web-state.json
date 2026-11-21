@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:31:07.123Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket schon bezahlt habe. Ich sag: „Nein, ich habe nur den Kundenservice angerufen.“",
-      "qwen": "Der Paketbote fragt: „Ist jemand zu Hause?“ Ich rufe: „Nein!“ Er ruft zurück: „Dann signieren Sie hier.“",
-      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
-    },
-    {
       "timestamp": "2026-11-21T03:36:06.920Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einem Weiterbildungsseminar – das ist doch Stressmanagement, oder?“",
       "qwen": "Ich kün­dig­te, um mich wei­ter­zu­bil­den. Der Chef lachte: „Machen wir das in der Probezeit.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin, ob ich etwas zum Trinken will; ich antworte: „Nur Wasser, ich koche gleich – das ist mein neues Restaurant.“",
       "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Der Kellner lief hektisch aus der Tür: „Sofort kommen alle Milchkühe zurück!“",
       "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
+    },
+    {
+      "timestamp": "2026-11-21T07:41:00.518Z",
+      "gpt": "Ich sortiere beim Umzug alte Socken aus, finde einen Geldschein und denke, das ist ein Glücks‑Fund – bis ich merke, es ist das Rückgeld vom Packservice.",
+      "qwen": "Bei der Trennung packte ich die ersten Kisten. Die Ex-Frau zählte mit: „Das sind schon hundert Dinge, die du nicht mehr brauchst.“",
+      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
     }
   ]
 }
