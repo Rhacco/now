@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:11:03.820Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Ich fragte den Apotheker nach der Dosierung. Er sagte: „Zweimal täglich – einmal morgens, einmal abends.“",
-      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
-    },
-    {
       "timestamp": "2026-11-21T01:16:06.694Z",
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wach bleiben – und die PowerPoint, damit wir nicht einschlafen.“",
       "qwen": "In der Besprechung fragt der Chef: „Wer hat die Daten gelöscht?“\nStillkeit. Dann meldet sich der Praktikant: „Ich?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs 'Wie man Bewerbungen schreibt\".",
       "qwen": "Der Chef fragt nach meinem Interesse an Weiterbildung. Ich sage: „Sehr, ich will nur weg, nicht weiter.“",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-21T05:16:05.819Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee schwarz oder mit Milch?“ Ich antworte: „Mit Zucker, sonst wird er zu bitter.“",
+      "qwen": "Ich fragte den Kellner nach der Tagesempfehlung. Er löffelte seinen Kaffee und meinte: „Die ist leider schon weg.\"",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
