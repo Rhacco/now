@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:00:59.299Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur das Wort „Pause“ enthält. Er nickt: „Endlich ein klarer Zeitplan.“",
-      "qwen": "Im Meeting fragte der Chef: „Hat jemand eine Idee, wie wir Kosten senken?“\nNur ich nickte und schlug vor, die Kaffeemaschine auszuschalten.",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-21T16:05:56.858Z",
       "gpt": "Im Zug stolpert ein Pendler über sein Handy und ruft: „Entschuldigung, ich wollte nur kurz den Fahrplan checken!“",
       "qwen": "Ich stelle den Koffer auf die Rücksitzbank. „Sicher?“, fragt der Taxifahrer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier – „Für die Diät, nicht für das Essen.“",
       "qwen": "Ich fragte im Baumarkt, wo die Dübel sind. Der Verkäufer wies auf die Wand.",
       "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
+    },
+    {
+      "timestamp": "2026-11-21T20:06:06.046Z",
+      "gpt": "Im Supermarkt fragt ich die Kassiererin, ob das Brot glutenfrei sei – sie lächelt und sagt: „Nur, wenn Sie es nicht essen.“",
+      "qwen": "„Gibt’s das auch in Blau?“\n„Nein, aber ich kann Ihnen das Blaue aus dem Auge nehmen.“",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
