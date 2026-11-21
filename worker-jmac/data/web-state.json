@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:11:05.722Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Das ist mein Konzept für mehr Leere im Kopf.“",
-      "qwen": "Im Meeting fragte der Chef: „Haben wir alle Stakeholder abgehakt?“\nNur der Praktikant nickte.",
-      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
-    },
-    {
       "timestamp": "2026-11-21T17:16:04.407Z",
       "gpt": "Ich wollte im Museum laut flüstern, doch die Bibliothekarin schickte mich ins Kino. Dort war wenigstens Popcorn leiser.",
       "qwen": "Ich muss im Museum laut sein, im Kino still. In der Bibliothek bin ich einfach nur dort.",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek fragt er nach dem Film „Stille“, die Bibliothekarin reicht ihm ein Buch; im Kino bestellt er Popcorn, bekommt ein Ausstellungsführer.",
       "qwen": "Im Museum schwieg das Bild. Im Kino schrie der Film. In der Bibliothek flüsterte der Mann, der nur zum Wasserholen kam.",
       "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
+    },
+    {
+      "timestamp": "2026-11-21T21:21:04.274Z",
+      "gpt": "Ich fülle beim Fundbüro das Formular aus, das ich gerade im Fundbüro gefunden habe.",
+      "qwen": "Im Fundbüro fragte ich nach meinem gestohlenen Fahrrad. Die Dame meinte höflich: „Dafür brauchen Sie dieses Formular zu unterschreiben.“",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
