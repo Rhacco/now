@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:50:57.410Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht ausgegeben wurde.“",
-      "qwen": "„Muss ich hier noch warten?“, fragte ich.\nDer Apotheker nickte: „Na ja, der Doktor hängt schon seit zwei Stunden im Wartezimmer fest.“",
-      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
-    },
-    {
       "timestamp": "2026-11-21T04:56:05.083Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Praktikantin zeigt stolz den leeren Fortschrittsbalken – er ist gerade erst „geladen“.",
       "qwen": "In der Besprechung fragte der Chef: „Haben wir noch Luft nach oben?“\nDer Praktikant nickte und öffnete das Fenster.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte die neue Fitness‑App starten, doch das Handy vibrierte: „Du hast 10 000 Schritte erreicht.“ – Ich lag noch im Bett.",
       "qwen": "„Suche: Schlüssel.“\nDer Keller schweigt, das Handy findet nur meine Handynummer.",
       "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
+    },
+    {
+      "timestamp": "2026-11-21T08:56:03.791Z",
+      "gpt": "Ich habe die neue „Schlaf‑Modus“-App auf meinem Handy aktiviert – jetzt geht es erst wieder an, wenn ich den Wecker ausversehen drückte.",
+      "qwen": "Der Akku zeigt noch 1%, doch ich erlebe gerade eine Selbsterfahrung.",
+      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
     }
   ]
 }
