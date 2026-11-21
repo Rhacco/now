@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:11:06.459Z",
-      "gpt": "Mama fragt, ob ich das Geschirr spülen will. Ich sag: „Klar, ich bin schließlich im Wasserfach.“",
-      "qwen": "Mein Vater sagt, er hört mir zu, während er fernsieht. Das ist auch gut so, denn er hört mich eh nie.",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-20T20:16:09.880Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Geschenk, sie reicht mir einen Katalog und sagt: „Hier steht, was Sie nicht kaufen können.“",
       "qwen": "Verkäuferin: „Darf ich Ihnen das richtig auftragen?“\nKunde: „Nein, ich brauche nur einen Spiegel, nicht Ihre Meinung.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Der Patient flüstert: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Ich fragte den Apotheker: „Hilft das gegen alles?“\n„Nein, nur gegen Ihre Arroganz.“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-21T00:16:06.656Z",
+      "gpt": "Ich sortiere den Keller aus und finde meine alte Fernbedienung – sie steuert jetzt nur noch den Staubsauger, weil ich nie mehr fernsehe.",
+      "qwen": "Die alte Schallplatte im Karton war nur Plastikmüll, das Vinyl aber ein Meisterwerk.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
