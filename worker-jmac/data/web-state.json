@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:40:57.037Z",
-      "gpt": "Ich habe die neue Fitness‑App aktiviert, aber mein Handy zeigt nur „Standby“ – weil ich die ganze Zeit nur im Sofa‑Marathon sitze.",
-      "qwen": "Ich fragte Siri nach dem Weg, doch das Handy zeigte nur meinen eigenen Anruf an.",
-      "archive": "Mein Staubsaugerroboter meldet „Stecke fest“. Ich finde ihn unter dem Sofa, wo er seit gestern so tut, als wäre er ein Möbelstück."
-    },
-    {
       "timestamp": "2026-11-21T19:46:02.868Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb als Kontaktadresse: „Bei mir zu Hause“. Die Dame nickte und fragte: „Wie lautet Ihre Wohnungsnummer?“",
       "qwen": "Ich ging ins Fundbüro, um meinen verlorenen Schlüssel zu melden. Der Beamte gab mir ein Formular für die „Meldepflicht von Fundsachen“.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Größe, sie misst mich, nickt und sagt: „Perfekt, das passt genau zu Ihrem Wunschgewicht.“",
       "qwen": "Ich: „Haben Sie das in Blau?“ Verkäufer: „Nein, aber ich bin jetzt blau angelaufen.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-21T23:46:00.503Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Der Kunde antwortet: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
+      "qwen": "Ich wollte heute beim Joggen mal richtig abschalten. Mein Kopf hat auch gekippt – direkt in den Boden.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
