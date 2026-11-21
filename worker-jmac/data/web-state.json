@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:45:57.104Z",
-      "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm brauche – sie zeigt „Verbindung verloren“, weil ich gerade im Regen nach WLAN suche.",
-      "qwen": "Das Handy zeigt 100 Prozent Akku an. Haha, natürlich lügt es.",
-      "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
-    },
-    {
       "timestamp": "2026-11-21T00:50:57.500Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept für Ihre Diät.“",
       "qwen": "Ich fragte den Verkäufer nach einem günstigeren Ersatz. Er sagte: „Den haben wir nicht, aber den sehr teuren.\"",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er ein veganes Omelett – die Kellnerin bringt ihm ein leeres Blatt Papier. „Sie wollten ja nur ein Rezept, nicht zum Essen.“",
       "qwen": "Ich fragte im Café: „Hat das hier Koffein?“\nDie Kellnerin zeigte auf die Kaffeetasse: „Ja, das ist sogar der stärkste.“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-21T04:50:57.410Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht ausgegeben wurde.“",
+      "qwen": "„Muss ich hier noch warten?“, fragte ich.\nDer Apotheker nickte: „Na ja, der Doktor hängt schon seit zwei Stunden im Wartezimmer fest.“",
+      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
     }
   ]
 }
