@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:25:57.936Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und der Praktikant flüstert: „Wie wäre es, wenn wir das Protokoll einfach weglassen?“ – Alle nicken begeistert.",
-      "qwen": "In der Besprechung fragt der Chef: „Wer hat das Leck gedichtet?“\nStille. Dann meldet sich der Praktikant: „Ich, Chef. Das war ein Vorschlag.“",
-      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
-    },
-    {
       "timestamp": "2026-11-21T05:31:03.975Z",
       "gpt": "Ich packe beim Ausmisten die Kaffeemaschine ein, weil ich ohne Kaffee nicht umziehen kann – und merke, dass ich sie gar nicht mehr brauche.",
       "qwen": "Ich habe beim Ausmisten den alten CD-Player verkauft. Neue Musik gibt’s jetzt nur noch aus dem Radio oder vom Nachbarn.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel mitnehmen?“ Auf dem Wochenmarkt erwidert der Kunde: „Nur, wenn sie noch reden können.“",
       "qwen": "Im Supermarkt fragt man nach dem Preis der Tomate.\nAuf dem Wochenmarkt fragt man nach dem Namen des Tomatenbauern.",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-21T09:30:57.702Z",
+      "gpt": "Ich stehe am Supermarkt, prüfe das Angebot, dann geht ein Verkäufer vom Wochenmarkt vorbei und ruft: „Frisches Gemüse, aber nur im Sonderangebot – für mich!“",
+      "qwen": "Ich frage im Supermarkt nach frischen Erdbeeren. Die Verkäuferin zeigt auf die Tiefkühltruhe.",
+      "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
     }
   ]
 }
