@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:31:06.248Z",
-      "gpt": "Ich räume den Schrank aus und finde ein altes Faxgerät – das einzige Gerät, das ich noch nie aus dem Büro entfernt habe.",
-      "qwen": "Ich wollte endlich die alte Kiste ausmisten. Drin lag nur noch das Etikett „Nicht öffnen – Frag nicht“.",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-20T21:35:59.146Z",
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Blatt Papier – „Das ist unser neues Diät‑Produkt, Kalorienfrei!“",
       "qwen": "Ich fragte im Schuhhaus nach einem Schnürsenkel. Die Verkäuferin zwinkerte mir sulpelig zu: „Bei uns sind die Männer doch alle durch.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin das Fenster geöffnet, damit frische Luft reinkommt – sie dankte und zog gleich den Vorhang zu.",
       "qwen": "Der Nachbar feierte heftig bis in den Morgen. Ich fragte ihn: „Warum so laut?“ Er antwortete: „Ich bin der Hausmeister.“",
       "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
+    },
+    {
+      "timestamp": "2026-11-21T01:40:57.720Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm den leeren Kaffeebecher – er meint, das sei unser „Produktivitäts‑Boost“.",
+      "qwen": "Ich fragte im Meeting, ob jemand Zweifel an dem Plan hat. Stille. Dann meinte der Chef: „Nein, ich wollte nur kurz durchatmen.“",
+      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
     }
   ]
 }
