@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:21:06.824Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt mein Sofa zusammen – jetzt entspanne ich mich im freien Raum.",
-      "qwen": "Ich wollte beim Yoga nur kurz durchatmen, hab aber beim Ausatmen versehentlich den Kater erwischt.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-21T11:25:58.738Z",
       "gpt": "Beim Abendessen fragt die Mutter: „Wer hat die letzte Pizza gegessen?“ Der Hund bellt: „Ich hab sie nicht, ich bin Vegetarier.“",
       "qwen": "Oma fragt, ob ich sie heute wieder abhole. Ich sage ja, sie stirbt aber, bevor ich ankomme.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Schild: „Bitte ziehen Sie selbst an.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Nein, nur meine Ex.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-21T15:30:57.946Z",
+      "gpt": "Ich habe die neue Fitness‑App aktiviert, doch sie meldet nur: „Du hast bereits genug Schritte gemacht – du hast das Handy gerade fallen lassen.“",
+      "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe vergessen, dass ich es seit Dienstag am Ladekabel hänge.",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
