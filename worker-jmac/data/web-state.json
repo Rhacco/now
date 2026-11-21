@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:55:58.494Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir suchen noch den Fahrer.“",
-      "qwen": "Ich fluche über den Stau, bis mein Handy summt. Der Taxifahrer fragt, ob ich den Zettel unterschreiben soll.",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-21T16:00:59.299Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur das Wort „Pause“ enthält. Er nickt: „Endlich ein klarer Zeitplan.“",
       "qwen": "Im Meeting fragte der Chef: „Hat jemand eine Idee, wie wir Kosten senken?“\nNur ich nickte und schlug vor, die Kaffeemaschine auszuschalten.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie abgeholt wird.“",
       "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Ja, hier.“",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-21T20:01:06.100Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier – „Für die Diät, nicht für das Essen.“",
+      "qwen": "Ich fragte im Baumarkt, wo die Dübel sind. Der Verkäufer wies auf die Wand.",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
