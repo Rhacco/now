@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:06:05.346Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einer Weiterbildung an.“",
-      "qwen": "Der Chef fragte: „Welche Weiterbildung planen Sie?“ Ich antwortete: „Ich will lernen, wie man hier überlebt.“",
-      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
-    },
-    {
       "timestamp": "2026-11-21T05:11:06.947Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs 'Wie man Bewerbungen schreibt\".",
       "qwen": "Der Chef fragt nach meinem Interesse an Weiterbildung. Ich sage: „Sehr, ich will nur weg, nicht weiter.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Mann und fragt: „Entschuldigung, wo ist das Gleis für den Bus?“ Der Schaffner lächelt: „Hier fährt nur die Linie 1.“",
       "qwen": "Ich fragte den Taxifahrer: „Können Sie mich zur U-Bahn fahren?“ Er entgegnete: „Doch, aber nur bis zum nächsten Bus.“",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-21T09:11:05.271Z",
+      "gpt": "Im Zug fragt die Stewardess nach einem Wunschgetränk; ich bestelle „ein Glas Wasser, bitte.“ Sie lächelt und sagt: „Kommt sofort, wir haben gerade den Wasserdampf‑Auslauf.",
+      "qwen": "Wir wollten den Sonnenuntergang am Strand genießen. Stattdessen sahen wir nur, wie die Sonne unterging.",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
