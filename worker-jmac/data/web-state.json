@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:45:57.062Z",
-      "gpt": "Ich rufe den Kundendienst, weil das Paket leer ist – die Lieferung kam pünktlich, nur der Inhalt hatte einen früheren Termin.",
-      "qwen": "Der Kurier fragt: „Ist jemand zu Hause?“\nIch rufe: „Ja, ich bin’s!“\nEr sagt: „Dann holen Sie es ab.“",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-21T13:50:58.186Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“.Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“",
       "qwen": "Der Kurier fragt: „Müssen Sie das Paket hier unterschreiben?“ Ich sage: „Ja, ich bin es ja schon.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, weil ich dann endlich den Lebenslauf auswendig kann.“",
       "qwen": "Nach dem Vorstellungsgespräch fragt mich die Chefin: „Welche Weiterbildung wünschen Sie sich?“\n„Eine in Gelassenheit“, sage ich, „denn Sie haben mich gerade eingestellt.“",
       "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
+    },
+    {
+      "timestamp": "2026-11-21T17:51:00.246Z",
+      "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will die Bohnen noch erleben.“",
+      "qwen": "Ich bestellte einen Kaffee ohne Zucker, nur um zu sehen, ob sie ihn mir mit Löffel servieren.",
+      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
     }
   ]
 }
