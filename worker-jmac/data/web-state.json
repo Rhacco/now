@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:26:05.664Z",
-      "gpt": "Im Bus fragt der Fahrer: „Bitte anschnallen, wir fahren jetzt gerade im Stau.“ Die Fahrgäste nicken, weil das Taxi nebenan ebenfalls feststeckt.",
-      "qwen": "Ich fluche über jede Bahn- und Autobahnstauminute. Das Taxi wird mir dann am Ende doch zu teuer.",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-21T13:30:58.851Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Haben Sie einen Platz für mein Handtuch?“ Der Schaffner lächelt: „Nur, wenn Sie es ausklappen.“",
       "qwen": "Während des Kletterns wird es eng. Ich rufe nach unten: „Sag mal, bin ich schon fertig?“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du den Kuchen aus dem Ofen genommen?“ Ich: „Weil das WLAN wieder schneller war.“",
       "qwen": "Ich fragte meinen Vater, wie man ein Haus baut. Er sagte: „Erst die Familie, dann die Wände.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-21T17:31:02.876Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie die Preise einpacken.“",
+      "qwen": "Im Supermarkt ist der Apfel glatt.\nBeim Bauern hat er einen Kater.",
+      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
     }
   ]
 }
