@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:26:04.628Z",
-      "gpt": "Ich frage im Elektrofachgeschäft nach einem Lautsprecher, der „laut aber leise“ klingt – die Verkäuferin reicht mir Kopfhörer.",
-      "qwen": "Der Texter fragt: „Soll ich das hier kürzen, damit es nach Werbung klingt?“ Ich sage: „Nein, es klingt schon wie eins.“",
-      "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
-    },
-    {
       "timestamp": "2026-11-21T10:31:04.195Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für das Sonderangebot?“ Ich antworte: „Nur, wenn Sie mir das Gemüse vom Wochenmarkt bringen.“",
       "qwen": "Ich kaufe die Tomate hier, weil sie so schön glänzt. Auf dem Markt hat sie schon zu mir „Willst du in den Saft?“ gesagt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
       "qwen": "Ich frage den Arzt: „Doktor, dauert das noch lange?“\nEr zeigt auf die Apotheke: „Da sitzen Sie schon seit einer Stunde.“",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-21T14:35:59.545Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich mache sofort einen Online‑Kurs – dann weiß ich, wie ich mich bewerbe.“",
+      "qwen": "Nach dem Vorstellungsgespräch fragt der Chef: „Haben Sie noch offene Fragen?“\nIch: „Ja, warum nehmen Sie mich?“",
+      "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
     }
   ]
 }
