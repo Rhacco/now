@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:21:06.154Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“ – Auf dem Wochenmarkt sagt der Kunde: „Nein, ich bringe meine eigene.“",
-      "qwen": "Beim Wochenmarkt fragt der Bauer: „Frisch genug, oder soll ich noch eine Banane dazutun?“",
-      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
-    },
-    {
       "timestamp": "2026-11-21T07:25:56.516Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rückgabeschein‑Formular schon unterschrieben?“ – ich: „Nur, wenn es ein Geschenk ist.“",
       "qwen": "Der Paketbote drückt mir den Lieferschein entgegen: „Bitte unterschreiben Sie hier und hier.“\nIch frage: „Und wo soll ich das Paket abstellen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt mein Sofa zusammen – jetzt entspanne ich mich im freien Raum.",
       "qwen": "Ich wollte beim Yoga nur kurz durchatmen, hab aber beim Ausatmen versehentlich den Kater erwischt.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-21T11:25:58.738Z",
+      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat die letzte Pizza gegessen?“ Der Hund bellt: „Ich hab sie nicht, ich bin Vegetarier.“",
+      "qwen": "Oma fragt, ob ich sie heute wieder abhole. Ich sage ja, sie stirbt aber, bevor ich ankomme.",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
