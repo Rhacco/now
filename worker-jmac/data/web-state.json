@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:51:02.540Z",
-      "gpt": "Mama fragt: „Warum hast du die Waschmaschine mit ins Bett genommen?“ Papa antwortet: „Ich wollte endlich mal was zum Aufdrehen haben.“",
-      "qwen": "Mama fragt: „Wer hat die Jalousien zugezogen?“\nIch antworte: „Die Sonne, weil sie heute frei hat.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-21T15:55:58.494Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich meine Fahrkarte vergessen hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir suchen noch den Fahrer.“",
       "qwen": "Ich fluche über den Stau, bis mein Handy summt. Der Taxifahrer fragt, ob ich den Zettel unterschreiben soll.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Bibliothekar: „Darf ich den Film hier ausleihen?“ Die Kuratorin meint: „Nur, wenn du ihn leise zurückbringst.“",
       "qwen": "Im Museum zähle ich Ausstellungsstücke, im Kino Popcorn. In der Bibliothek blättere ich nur die Seiten um, damit sie sich bewegt fühlen.",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-21T19:55:57.654Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie abgeholt wird.“",
+      "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Ja, hier.“",
+      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
     }
   ]
 }
