@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:36:06.920Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einem Weiterbildungsseminar – das ist doch Stressmanagement, oder?“",
-      "qwen": "Ich kün­dig­te, um mich wei­ter­zu­bil­den. Der Chef lachte: „Machen wir das in der Probezeit.\"",
-      "archive": "Im Vorstellungsgespräch fragt man, warum ich den Arbeitsplatz wechseln möchte. Ich sage: „Wegen der Entwicklungsmöglichkeiten“, und hoffe, es fragt niemand, wessen."
-    },
-    {
       "timestamp": "2026-11-21T03:41:06.921Z",
       "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt für den Strand, der Schaffner lächelt und sagt: „Sorry, hier fährt nur der „Bahn“-Strand.“",
       "qwen": "Auf der Skipiste rutscht der Freund aus und brüllt vor Schmerz. „Hast du dir was gebrochen, hab ich mich gefragt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug alte Socken aus, finde einen Geldschein und denke, das ist ein Glücks‑Fund – bis ich merke, es ist das Rückgeld vom Packservice.",
       "qwen": "Bei der Trennung packte ich die ersten Kisten. Die Ex-Frau zählte mit: „Das sind schon hundert Dinge, die du nicht mehr brauchst.“",
       "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
+    },
+    {
+      "timestamp": "2026-11-21T07:45:57.470Z",
+      "gpt": "Ich reiche das verlorene Portemonnaie beim Fundbüro ein und bekomme sofort ein Formular, das ich erst unterschreiben muss, bevor ich es zurückbekomme.",
+      "qwen": "Ich verlor meinen Ausweis und meldete ihn beim Fundbüro ab. Der Beamte fragte: „Haben Sie ihn schon gefunden?“",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
