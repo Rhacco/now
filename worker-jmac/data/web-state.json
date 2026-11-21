@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:51:08.359Z",
-      "gpt": "Ich bestelle im Café einen Espresso, doch die Kellnerin fragt, ob ich ihn „schwarz wie meine Steuererklärung“ will – ich antworte: „Nur, wenn er erstattet wird.“",
-      "qwen": "Die Kellnerin bringt mir heißen Tee, den ich als Kaffee bestellte. Ich frage sie, ob der Fehler schon bezahlt ist.",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-21T12:56:06.476Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund meine Matte als neue Liegefläche entdeckt und ich im herabschauenden Hund einschlafe.",
       "qwen": "Ich habe eine Stunde lang meditativ mit den Beinen geschwungen. Jetzt habe ich es tatsächlich geschafft.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist nach dem besten Ausflugsziel, die Durchsage verkündet: „Nächster Halt – Parkplatz, weil das Wetter heute nur im Auto gut ist.“",
       "qwen": "Im Urlaub fragt sie: „Gefällt dir das Meer?“ Ich sage: „Ja, aber der Sand ist zu grau.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-21T16:55:58.565Z",
+      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Wie wäre es, wenn wir einfach das nächste Meeting absagen? Dann haben wir endlich etwas erledigt.“",
+      "qwen": "In der Besprechung fragte der Chef: „Haben Sie die Präsentation fertig?“\n„Ja, aber ich habe das Power-Point-Programm noch nicht installiert.“",
+      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
     }
   ]
 }
