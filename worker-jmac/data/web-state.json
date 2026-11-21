@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:20:56.880Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du Popcorn mitbringst.“",
-      "qwen": "Im Museum flüsterte sie: „Seh ich hier aus, als wüsste ich was?“\nEr nickte: „Wer den Einlassschlupf kennt, ist ein Insider.“",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-21T12:26:04.527Z",
       "gpt": "Im Zug fragt die Durchsage: „Bitte leise sein, sonst hören wir das nächste Gespräch im Taxi.“ Und plötzlich hupt das Fenster.",
       "qwen": "Ich dränge mich im vollen Bus durch und sage: „Ich bin hier!“. Der Fahrer brüllt zurück: „Ja, und?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um zum Strand zu kommen?“ Der Schaffner lächelt: „Am nächsten Halt – zum Schwimmbad.“",
       "qwen": "Ich fragte die Kassiererin, ob der Strand hier frei zugänglich sei. Sie meinte, nur wenn man die Flossen zurücklässt.",
       "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
+    },
+    {
+      "timestamp": "2026-11-21T16:30:57.785Z",
+      "gpt": "Im Café bestellt er einen Kaffee „ohne Zucker“, doch die Kellnerin fragt: „Möchten Sie ihn dann bitte mit Sahne?“ – Er sagt: „Nur, wenn er süß bleibt.“",
+      "qwen": "Der Kellner serviert mir eine Suppe.\n„Das ist die letzte Kelle“, sagt er, „weil ich sie selbst aufgespeichert habe“.",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
