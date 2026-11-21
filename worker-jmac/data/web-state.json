@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:00:59.731Z",
-      "gpt": "Ich habe die neue „Snooze“-App für mein Handy installiert – jetzt schläft es, sobald ich es ausschalte.",
-      "qwen": "Ich rufe die Wecker-App an, um sie zu deaktivieren.\nSie antwortet: „Scheiß drauf, du hast 800 Ungelesene.“",
-      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
-    },
-    {
       "timestamp": "2026-11-20T22:06:10.366Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Warum haben Sie nur einen Koffer?“ Der Mann lächelt: „Ich nehme das Meer mit.“",
       "qwen": "Im Urlaub hat er die Kamera einkassiert. „Ich will keine Fotos, ich will Erinnerungen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin reicht ihr ein Blatt Papier – „Hier steht: „Nur für die Augen“.“",
       "qwen": "Der Verkäufer fragt: „Welche Farbe für Ihr Auto?“\nIch: „Keine Ahnung, ich will ja nur eine Bürste kaufen.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-21T02:06:06.537Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer fühlt sich heute besonders flexibel?“ Der Anfänger hebt die Hand: „Ich, weil ich gerade den Weg zur Kaffeemaschine nicht mehr finde.“",
+      "qwen": "Ich versuche beim Yoga, den Drachen zu balancieren. Mein Knie knackt so laut, dass die Trainerin mich für einen Knoster hält.",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
