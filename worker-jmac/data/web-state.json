@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:06:04.887Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich antworte: „Nur, wenn Sie mir den Kundenservice zeigen.“",
-      "qwen": "Der Bot bittet mich, das Paket am Fenster vor der Tür liegen zu lassen. Ich fragte: „Warum müssen Sie es dann durch das Fenster werfen?“",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-21T17:11:05.722Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Das ist mein Konzept für mehr Leere im Kopf.“",
       "qwen": "Im Meeting fragte der Chef: „Haben wir alle Stakeholder abgehakt?“\nNur der Praktikant nickte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, damit er endlich die Wohnung bekommt – und jetzt klopft er täglich an, weil er das Möbelstück vermisst.",
       "qwen": "Ich habe dem Nachbarn die Bohrnadel abgenommen. Er wohnt nun in einem dreistufigen Alkomaten.",
       "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
+    },
+    {
+      "timestamp": "2026-11-21T21:16:05.708Z",
+      "gpt": "In der Bibliothek fragt er nach dem Film „Stille“, die Bibliothekarin reicht ihm ein Buch; im Kino bestellt er Popcorn, bekommt ein Ausstellungsführer.",
+      "qwen": "Im Museum schwieg das Bild. Im Kino schrie der Film. In der Bibliothek flüsterte der Mann, der nur zum Wasserholen kam.",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
