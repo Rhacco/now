@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:06:05.632Z",
-      "gpt": "Im Zug steht ein Mann und fragt: „Entschuldigung, wo ist das Gleis für den Bus?“ Der Schaffner lächelt: „Hier fährt nur die Linie 1.“",
-      "qwen": "Ich fragte den Taxifahrer: „Können Sie mich zur U-Bahn fahren?“ Er entgegnete: „Doch, aber nur bis zum nächsten Bus.“",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-21T09:11:05.271Z",
       "gpt": "Im Zug fragt die Stewardess nach einem Wunschgetränk; ich bestelle „ein Glas Wasser, bitte.“ Sie lächelt und sagt: „Kommt sofort, wir haben gerade den Wasserdampf‑Auslauf.",
       "qwen": "Wir wollten den Sonnenuntergang am Strand genießen. Stattdessen sahen wir nur, wie die Sonne unterging.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo mein verlorener Stift ist – die Beamtin schrieb: „Bitte unterschreiben Sie hier.“",
       "qwen": "Ich habe meinen Schlüssel im Fundbüro gemeldet. Die haben geantwortet, das Formular dafür haben sie leider noch nicht verloren.",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-21T13:16:06.601Z",
+      "gpt": "Im Café bestellt er ein „leichtes“ Omelett, doch die Kellnerin brachte ihm ein Fitnessstudio‑Plan. „Ich wollte Kalorien sparen, nicht Training!“",
+      "qwen": "Im Restaurant bestellte ich „Tee mit Anis“. Der Kellner servierte mir ein Glas klares Wasser.",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
