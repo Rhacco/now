@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:40:58.443Z",
-      "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie zu schwer war – dann stellte sie fest, dass sie das Möbelstück selbst gebaut hat.",
-      "qwen": "Ich fragte den Nachbarn, ob er laut boxt. Er nickte schweigend und zeigte auf seinen Freund.",
-      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
-    },
-    {
       "timestamp": "2026-11-21T16:45:57.396Z",
       "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, ist das hier der Sondertarif für Familien?“ – Ich zeige auf ihr Ticket: „Nein, das ist Ihr Rückfahrtticket.“",
       "qwen": "Endlich frei von der Arbeit, denk ich mir. Doch dann fällt mir auf, dass der Kofferraum noch voll mit Akten ist.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Glühbirne, und der Verkäufer meint: „Klar, die kostet nur 0 € – Sie sparen ja schon beim Bezahlen.“",
       "qwen": "Ich fragte im Elektronikgeschäft nach dem besten Preis, und der Verkäufer grinste: „Der beste Preis ist, wenn Sie gar nichts kaufen.“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-21T20:50:57.079Z",
+      "gpt": "Mama fragt: „Warum hast du die ganze Pizza gegessen?“ – Ich: „Weil ich das Familienbudget nicht teilen wollte.“",
+      "qwen": "Meine Eltern wohnen über uns und das Baby schreit. Ich schlage die Buchseiten auf.",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
