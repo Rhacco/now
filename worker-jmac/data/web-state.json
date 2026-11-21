@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:46:04.118Z",
-      "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, bitte.“ Er nickt: „Genau, das ist die einzige produktive Idee, die wir heute brauchen.“",
-      "qwen": "In der Besprechung fragte ich: „Wer ist der neue Praktikant?“\nMein Chef seufzte: „Das bist du.“",
-      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
-    },
-    {
       "timestamp": "2026-11-21T14:50:57.847Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar – endlich lerne ich, pünktlich zu kommen.“",
       "qwen": "Im Vorstellungsgespräch fragte er nach meinen Stärken. Ich sagte: „Ich bin extrem lernfähig.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarin, weil das Waschbecken überläuft – sie öffnet die Tür, wirft mir einen Besen und sagt: „Hier wohnen wir jetzt zusammen.“",
       "qwen": "Der neue Nachbar fragt, ob ich die Sauna benutze. Ich antworte: „Nein, ich brannte meinen Ausweis, als ich einzog.“",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-21T18:51:07.319Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort den Regenschirm aus der Schublade – die App fragt, ob ich den Schirm schon gekauft habe.",
+      "qwen": "Stell dir vor, ich würde dir ein „Nein“ senden. Du hast es gerade erst in den Papierkorb geworfen.",
+      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
     }
   ]
 }
