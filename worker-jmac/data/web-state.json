@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T15:16:00.341Z",
-      "gpt": "Im Zug stolpert ich über mein Ticket, während der Schaffner lächelt und fragt: „Brauchen Sie noch einen Sitzplatz für die nächste Verspätung?“",
-      "qwen": "Ich stieg vom Taxi in einen Bus ein.\nDer Fahrer fragte: „Fahren wir weiter?“",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-21T15:21:02.365Z",
       "gpt": "Ich kaufe beim Wochenmarkt frische Tomaten, doch im Supermarkt finde ich sie im Sonderangebot – „Tomaten, die nicht vom Feld, sondern vom Regal gefallen sind“.",
       "qwen": "Im Supermarkt fragt die Kassiererin: „Beutel?“\nIch entgegne: „Nein, ich bin auf dem Wochenmarkt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich Ihre Weiterbildung endlich verstehe.“",
       "qwen": "Im Vorstellungsgespräch frage ich nach Weiterbildung. Der Chef schweigt, dann lächelt er: „Die machen wir nach der Stelle weg.\"",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-21T19:20:56.964Z",
+      "gpt": "Im Zug verpasst er den Anschluss, steigt in den Bus, der Stau hält ihn, also ruft er ein Taxi – das fährt gerade rückwärts.",
+      "qwen": "Ich bin mit Bahn, Bus und Taxi gefahren, bis ich endlich mein eigenes Auto fand. Es war voll, aber immerhin war es meins.",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
