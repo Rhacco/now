@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:45:58.558Z",
-      "gpt": "Beim Ausmisten wirft er die alte Kaffeemaschine weg – weil er endlich merkt, dass er seit Jahren keinen Kaffee mehr trinkt.",
-      "qwen": "Wir haben alte Bücher aussortiert. Die Kiste wog noch immer so schwer wie vor dem Ausmisten.",
-      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
-    },
-    {
       "timestamp": "2026-11-21T09:51:04.922Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, ich habe die Schlüssel schon gefunden.“",
       "qwen": "Ich gab den verlegten Schlüssel im Fundbüro ab. Der Beamte druckte mir dafür eine Quittung aus, die größer war als der Schlüssel.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“.Der Paketbote klingelt, ich öffne die Tür und sehe ein Schild: „Bitte nicht stören – Kundendienst macht heute Home‑Office.“",
       "qwen": "Der Kurier fragt: „Müssen Sie das Paket hier unterschreiben?“ Ich sage: „Ja, ich bin es ja schon.“",
       "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
+    },
+    {
+      "timestamp": "2026-11-21T13:56:07.567Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
+      "qwen": "Ich fragte den Arzt: „Zwei Schnupfen, drei Husten, wie geht’s?“\nEr seufzte: „Sie kommen zur Apotheke, nicht zur Praxis.“",
+      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
     }
   ]
 }
