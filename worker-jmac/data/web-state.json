@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:06:04.277Z",
-      "gpt": "Ich wollte mit der Sprachsteuerung das Licht anmachen, aber das Handy verstand „Licht an“ als „Licht‑App öffnen“ – jetzt leuchtet mein Bildschirm.",
-      "qwen": "Ich fragte Siri nach dem Weg, sie schlug vor, den Fluss zu überqueren. Logisch, Wasser fließt ja auch.",
-      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
-    },
-    {
       "timestamp": "2026-11-21T13:11:02.150Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo mein verlorener Stift ist – die Beamtin schrieb: „Bitte unterschreiben Sie hier.“",
       "qwen": "Ich habe meinen Schlüssel im Fundbüro gemeldet. Die haben geantwortet, das Formular dafür haben sie leider noch nicht verloren.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Unterschrift?“ – Ich antworte: „Nur, wenn Sie mir den Kundenservice zeigen.“",
       "qwen": "Der Bot bittet mich, das Paket am Fenster vor der Tür liegen zu lassen. Ich fragte: „Warum müssen Sie es dann durch das Fenster werfen?“",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-21T17:11:05.722Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Das ist mein Konzept für mehr Leere im Kopf.“",
+      "qwen": "Im Meeting fragte der Chef: „Haben wir alle Stakeholder abgehakt?“\nNur der Praktikant nickte.",
+      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
     }
   ]
 }
