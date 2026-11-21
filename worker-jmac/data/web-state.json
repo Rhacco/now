@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:36:04.783Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Apotheker: „Rezept gefällig?“\nIch: „Eher ein Rezept für einen Therapeuten.“",
-      "archive": "Im Wartezimmer frage ich nach dem WLAN. Die Mitarbeiterin sagt, wir sollen es uns hier nicht zu gemütlich machen."
-    },
-    {
       "timestamp": "2026-11-21T12:40:57.486Z",
       "gpt": "Im Zug zum Strand fragt ich die Mitfahrerin, ob sie das Wetter checken kann – sie zieht die Fahrkarte raus und sagt: „Hier steht 'Sonnenschein'.“",
       "qwen": "Sag ich: „Ich muss dringend erholen.“\nSie zuckt die Achseln: „Dann lass das Handy aus.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Buch über Brotbacken – ich dachte, sie meint das fertige Produkt.",
       "qwen": "Der Verkäufer drückt mir das teuerste Modell in die Hand. „Das hier ist die beste Beratung, die Sie kriegen können.“",
       "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
+    },
+    {
+      "timestamp": "2026-11-21T16:40:58.443Z",
+      "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie zu schwer war – dann stellte sie fest, dass sie das Möbelstück selbst gebaut hat.",
+      "qwen": "Ich fragte den Nachbarn, ob er laut boxt. Er nickte schweigend und zeigte auf seinen Freund.",
+      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
     }
   ]
 }
