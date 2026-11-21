@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:25:58.461Z",
-      "gpt": "Ich füllte das Fundbüro‑Formular aus, weil ich meinen verlorenen Schlüssel gefunden hatte – dann stand dort „Verlust melden“.",
-      "qwen": "Ich fragte im Fundbüro: „Gibt es Formulare für verlorene Schlüssel?“\n„Nein, die Schlüssel sind verloren.“",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-20T21:31:06.248Z",
       "gpt": "Ich räume den Schrank aus und finde ein altes Faxgerät – das einzige Gerät, das ich noch nie aus dem Büro entfernt habe.",
       "qwen": "Ich wollte endlich die alte Kiste ausmisten. Drin lag nur noch das Etikett „Nicht öffnen – Frag nicht“.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ Er antwortet: „Beides, ich will ja nur den Preis sparen.“",
       "qwen": "Im Café bestellt der Mann: „Ein Espresso, bitte.“ Die Barista erwidert: „Das gibt’s hier nur als Cappuccino.“",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-21T01:36:06.469Z",
+      "gpt": "Ich habe meiner Nachbarin das Fenster geöffnet, damit frische Luft reinkommt – sie dankte und zog gleich den Vorhang zu.",
+      "qwen": "Der Nachbar feierte heftig bis in den Morgen. Ich fragte ihn: „Warum so laut?“ Er antwortete: „Ich bin der Hausmeister.“",
+      "archive": "Im Hof haben wir eine neue Sitzbank aufgestellt. Seitdem beschweren sich die Nachbarn darüber, dass dort ständig jemand sitzt."
     }
   ]
 }
