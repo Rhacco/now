@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:10:58.521Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Der Praktikant meldet sich: „Ich dachte, wir machen heute nur Kaffee.“",
-      "qwen": "Klaus spricht eine Stunde lang über Synergien. Der Chef fragt, ob er noch dabei ist.",
-      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
-    },
-    {
       "timestamp": "2026-11-20T21:16:09.152Z",
       "gpt": "Ich mache Yoga, um zu entspannen – bis mein Hund das „Herabschauende Hund“ übernimmt und mir die Decke klaut.",
       "qwen": "Beim Yoga nehme ich die Froschhaltung ein.\nTatsächlich habe ich mich dabei so richtig entspannt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, damit wir wach bleiben – und die PowerPoint, damit wir nicht einschlafen.“",
       "qwen": "In der Besprechung fragt der Chef: „Wer hat die Daten gelöscht?“\nStillkeit. Dann meldet sich der Praktikant: „Ich?“",
       "archive": "Im Meeting fragt der Chef, ob alle das Protokoll gelesen haben. Alle nicken, bis er sagt: „Gut, dann erkläre ich jetzt den Tippfehler.“"
+    },
+    {
+      "timestamp": "2026-11-21T01:21:07.415Z",
+      "gpt": "Im Zug fragt die Touristin nach dem Weg zum Strand, der Schaffner zeigt nach vorne – „Wir fahren ja gerade nach Hamburg.“",
+      "qwen": "In der Wüste fragte ich meinen Begleiter, ob er Durst hat. Er nickte.",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
