@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:46:05.534Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, weil ich dann endlich den Lebenslauf auswendig kann.“",
-      "qwen": "Nach dem Vorstellungsgespräch fragt mich die Chefin: „Welche Weiterbildung wünschen Sie sich?“\n„Eine in Gelassenheit“, sage ich, „denn Sie haben mich gerade eingestellt.“",
-      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
-    },
-    {
       "timestamp": "2026-11-21T17:51:00.246Z",
       "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will die Bohnen noch erleben.“",
       "qwen": "Ich bestellte einen Kaffee ohne Zucker, nur um zu sehen, ob sie ihn mir mit Löffel servieren.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, aber der Stand verkaufte nur „Super‑Markt‑Preise“. Da meinte die Verkäuferin: „Hier gibt’s nur Frische, nicht Rabatt.“",
       "qwen": "Ich kaufte auf dem Wochenmarkt Tomaten, weil sie so frisch schmeckten. Im Supermarkt roch sie dann auch so, nur leider nach Plastik.",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-21T21:50:57.103Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und überreicht ihr sein leeres Formular.",
+      "qwen": "Ich gab den Fundbericht ab, doch der Beamte sagte: „Das Formular ist aus.“",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
