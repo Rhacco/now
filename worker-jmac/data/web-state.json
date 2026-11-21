@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:30:59.147Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort die Regenschirm‑App auf – sie zeigt mir nur, wie trocken ich im Büro sitze.",
-      "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt bin ich wirklich bettet.",
-      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
-    },
-    {
       "timestamp": "2026-11-21T07:36:05.300Z",
       "gpt": "Im Café fragt die Kellnerin, ob ich etwas zum Trinken will; ich antworte: „Nur Wasser, ich koche gleich – das ist mein neues Restaurant.“",
       "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Der Kellner lief hektisch aus der Tür: „Sofort kommen alle Milchkühe zurück!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Tagesgericht?“ Ich antworte: „Ja, aber nur, wenn es nicht wieder das Tagesgericht vom Nachbarrestaurant ist.“",
       "qwen": "Der Kellner fragt: „Sind Sie mit dem Steak zufrieden?“\nIch nicke: „Ja, aber es fehlt mir die Transparenz bei der Herkunft.“",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-21T11:36:05.348Z",
+      "gpt": "Im Bus drängte ein Tourist nach dem Fahrplan: „Wann kommt die nächste Haltestelle?“ – Der Fahrer: „Gleich, wenn Sie aussteigen.“",
+      "qwen": "Ich sagte dem Taxifahrer, er solle den Bus nehmen, wenn er nicht so schnell sein muss.",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
