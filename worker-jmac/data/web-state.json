@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:50:58.449Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund verhedderte ich mich in meiner eigenen Yogamatte – jetzt ist das der neue „Knoten“.",
-      "qwen": "Ich will nur kurz ein bisschen Dehnung machen. Mein Rücken bricht lautstark entzwei.",
-      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
-    },
-    {
       "timestamp": "2026-11-21T07:56:05.295Z",
       "gpt": "Im Café bestellt sie ein „leichtes“ Omelett, doch der Kellner servierte ihr nur ein Ei‑weiß‑bisschen.",
       "qwen": "Die Kellnerin bringt das Schnitzel. „Das ist der letzte,“ sagt sie. „Der erste ist ja noch in der Küche.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich stehe im Museum, rufe nach Popcorn. Die Bibliothekarin reicht mir leise ein Hörbuch.",
       "qwen": "Im Museum starrt er auf die Mumie, bis sie blinzelt. „Eintritt nur für Erwachsene“, schmunzelt der Wächter.",
       "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
+    },
+    {
+      "timestamp": "2026-11-21T11:56:02.794Z",
+      "gpt": "Ich frage im Elektrofachgeschäft nach einer Energiesparlampe, der Verkäufer meint: „Klar, hier ist ein Stromsparschwein, das füttern Sie mit Strom.“",
+      "qwen": "Der Verkäufer riet mir dringend zur teureren Lampe. Sie war auch die günstigere.",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
