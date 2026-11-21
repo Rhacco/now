@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:05:57.312Z",
-      "gpt": "Ich klopfe an den Nachbarn, weil das Wasser aus meinem Badezimmer leckt – er öffnet die Tür, wir trinken zusammen und diskutieren, wer die Rechnung übernimmt.",
-      "qwen": "Der Nachbar klopft an und fragt, ob ich die Musik leiser stelle. Ich erkläre ihm, dass das nicht Musik, sondern mein Husten ist.",
-      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
-    },
-    {
       "timestamp": "2026-11-21T12:11:04.785Z",
       "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der „immer leise bleibt“. Der Verkäufer lächelt und reicht mir ein Stück Klebeband.",
       "qwen": "Der Verkäufer fragt, ob ich ein Geschenk packen lasse.\nIch sage, das Paket sei schon fertig geschockt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kundin nach einem leichten Mittagessen, der Kellner bringt ihr einen Salat und sagt: „Hier ist unser neues „Koch‑Stir‑Fry“ – nur gemischt, nicht gekocht.“",
       "qwen": "Ich bestellte zart rosa Lachs im Restaurant. Der Wirt servierte einen Kühlschrank.",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-21T16:16:07.886Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Geldschein mit Ihrem Namen unterschrieben?“ – „Nein, ich war doch nur kurz im Lotto.“",
+      "qwen": "Beim Fundbüro nach dem vermissten Schlüsselfund gefragt, heißt es: „Das Formular finden Sie in der Datenbank.“",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
