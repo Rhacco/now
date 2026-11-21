@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:30:58.851Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Haben Sie einen Platz für mein Handtuch?“ Der Schaffner lächelt: „Nur, wenn Sie es ausklappen.“",
-      "qwen": "Während des Kletterns wird es eng. Ich rufe nach unten: „Sag mal, bin ich schon fertig?“",
-      "archive": "Am Strand reserviert jemand eine Liege mit seinem Handtuch. Abends hatte das Handtuch deutlich mehr Urlaub als sein Besitzer."
-    },
-    {
       "timestamp": "2026-11-21T13:36:06.013Z",
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand nur: „Bitte geben Sie Ihren verlorenen Humor zurück.“",
       "qwen": "Finde ich den Schlüssel im Fundbüro, wird unter „Beschreibung“ ein Fragezeichen verlangt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie die Preise einpacken.“",
       "qwen": "Im Supermarkt ist der Apfel glatt.\nBeim Bauern hat er einen Kater.",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-21T17:35:57.348Z",
+      "gpt": "Ich klopfe an die Nachbarn, weil mein Wasserhahn tropft, und sie öffnen die Tür mit einem Eimer – sie haben das Leck schon seit Wochen selbst repariert.",
+      "qwen": "Der Nachbar klopft wütend an die Tür: „Hören Sie auf zu bohren!“ Ich erwidere ruhig: „Ich bohre gar nicht.“ Er schweigt, hört weiter und klopft noch lauter.",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
