@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:45:57.538Z",
-      "gpt": "Ich reiche das ausgefüllte Formular im Fundbüro ein – die Angestellte fragt, ob ich das „Verloren‑oder‑Gefunden‑Kästchen“ angekreuzt habe.",
-      "qwen": "Ich habe den Fundbericht ausgefüllt, doch das Formular verlangt über 20 Seiten für den Fund. Ich habe den Uhrenarmband einfach in den Mülleimer geworfen.",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-21T01:49:06.812Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die PowerPoint vergessen?“ – Die Kaffeemaschine piept: „Ich habe das Kaffeebohnen‑Diagramm.“",
       "qwen": "Der Chef fragte nach dem Projektstand. Ich winkte ab: „Alles im grünen Bereich.“ – „Dann haben wir ja alles im grünen Bereich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Oma, ob wir noch einen Halt einlegen, weil ihr Koffer noch nicht aus dem Fenster gefallen ist.",
       "qwen": "Im Urlaub bestellte ich ein Steak medium gebraten. Der Kellner fragte, ob das für die Gabel oder für die Erinnerung gedacht sei.",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-21T05:51:07.312Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kurs für Stressbewältigung – dank Ihrer Fragen.“",
+      "qwen": "Ich fragte im Vorstellungsgespräch, was mit Weiterbildung gemeint ist. Er griff zum Messer und sagte: „Wo man Sie besser schneidet.“",
+      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
     }
   ]
 }
