@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:25:58.738Z",
-      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat die letzte Pizza gegessen?“ Der Hund bellt: „Ich hab sie nicht, ich bin Vegetarier.“",
-      "qwen": "Oma fragt, ob ich sie heute wieder abhole. Ich sage ja, sie stirbt aber, bevor ich ankomme.",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-21T11:31:00.896Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Tagesgericht?“ Ich antworte: „Ja, aber nur, wenn es nicht wieder das Tagesgericht vom Nachbarrestaurant ist.“",
       "qwen": "Der Kellner fragt: „Sind Sie mit dem Steak zufrieden?“\nIch nicke: „Ja, aber es fehlt mir die Transparenz bei der Herkunft.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App aktiviert, doch sie meldet nur: „Du hast bereits genug Schritte gemacht – du hast das Handy gerade fallen lassen.“",
       "qwen": "Mein Handy zeigt 100 % Akku an.\nIch habe vergessen, dass ich es seit Dienstag am Ladekabel hänge.",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-21T15:35:57.204Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich zeige ihr mein Portemonnaie – es ist das Formular.",
+      "qwen": "Ich gab den Fund im Amt ab. Die Beamtin fragte bloß: „Warum?“",
+      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
     }
   ]
 }
