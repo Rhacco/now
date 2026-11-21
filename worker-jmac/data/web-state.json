@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:46:02.868Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus und schrieb als Kontaktadresse: „Bei mir zu Hause“. Die Dame nickte und fragte: „Wie lautet Ihre Wohnungsnummer?“",
-      "qwen": "Ich ging ins Fundbüro, um meinen verlorenen Schlüssel zu melden. Der Beamte gab mir ein Formular für die „Meldepflicht von Fundsachen“.",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-21T19:50:58.209Z",
       "gpt": "Im Museum fragt der Bibliothekar: „Darf ich den Film hier ausleihen?“ Die Kuratorin meint: „Nur, wenn du ihn leise zurückbringst.“",
       "qwen": "Im Museum zähle ich Ausstellungsstücke, im Kino Popcorn. In der Bibliothek blättere ich nur die Seiten um, damit sie sich bewegt fühlen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Der Kunde antwortet: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
       "qwen": "Ich wollte heute beim Joggen mal richtig abschalten. Mein Kopf hat auch gekippt – direkt in den Boden.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-21T23:51:04.947Z",
+      "gpt": "In der Bibliothek fragt er nach dem neuesten Film, die Kassiererin reicht ihm einen Band; im Museum schaut er sich die Leinwand an – alles still.",
+      "qwen": "Museum, Kino und Bibliothek: Der Mann fragt, wo die Kasse. Der Mann antwortet: „Hier gibt’s keine.“ Der Mann kauft ein Ticket.",
+      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
     }
   ]
 }
