@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:45:57.396Z",
-      "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, ist das hier der Sondertarif für Familien?“ – Ich zeige auf ihr Ticket: „Nein, das ist Ihr Rückfahrtticket.“",
-      "qwen": "Endlich frei von der Arbeit, denk ich mir. Doch dann fällt mir auf, dass der Kofferraum noch voll mit Akten ist.",
-      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
-    },
-    {
       "timestamp": "2026-11-21T16:51:05.466Z",
       "gpt": "Im Zug fragt der Tourist nach dem besten Ausflugsziel, die Durchsage verkündet: „Nächster Halt – Parkplatz, weil das Wetter heute nur im Auto gut ist.“",
       "qwen": "Im Urlaub fragt sie: „Gefällt dir das Meer?“ Ich sage: „Ja, aber der Sand ist zu grau.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du die ganze Pizza gegessen?“ – Ich: „Weil ich das Familienbudget nicht teilen wollte.“",
       "qwen": "Meine Eltern wohnen über uns und das Baby schreit. Ich schlage die Buchseiten auf.",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-21T20:56:04.532Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Praktikantin meldet sich und sagt: „Ich habe das Wort ‚abgeschlossen‘ gerade erst im Wörterbuch gefunden.“",
+      "qwen": "Ich habe die Besprechung gestrichen, weil keiner eine Ahnung hatte. So sparen wir alle Zeit und Nerven.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
