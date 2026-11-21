@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T07:41:00.518Z",
-      "gpt": "Ich sortiere beim Umzug alte Socken aus, finde einen Geldschein und denke, das ist ein Glücks‑Fund – bis ich merke, es ist das Rückgeld vom Packservice.",
-      "qwen": "Bei der Trennung packte ich die ersten Kisten. Die Ex-Frau zählte mit: „Das sind schon hundert Dinge, die du nicht mehr brauchst.“",
-      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
-    },
-    {
       "timestamp": "2026-11-21T07:45:57.470Z",
       "gpt": "Ich reiche das verlorene Portemonnaie beim Fundbüro ein und bekomme sofort ein Formular, das ich erst unterschreiben muss, bevor ich es zurückbekomme.",
       "qwen": "Ich verlor meinen Ausweis und meldete ihn beim Fundbüro ab. Der Beamte fragte: „Haben Sie ihn schon gefunden?“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er sagt: „Ihr Kundenservice hat mich gebeten, die Rücksendung persönlich zu überbringen.“",
       "qwen": "Der Paketbote ruft: „Zu Ihrer Unterschrift?“\nIch weise auf den ausgefüllten Gutschein: „Doch, hier ist sie schon.“",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-21T11:45:59.985Z",
+      "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – die Anzeige sagt „Sonnig“. Dann fällt mir ein, dass ich gerade im Keller stehe.",
+      "qwen": "Ich habe die Taschenlampe-App gestartet. Sie leuchtet nur, wenn ich blinken kann.",
+      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
     }
   ]
 }
