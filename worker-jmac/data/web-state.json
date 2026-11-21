@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:51:00.246Z",
-      "gpt": "Im Café bestellt ich einen Cappuccino, der Barista fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich will die Bohnen noch erleben.“",
-      "qwen": "Ich bestellte einen Kaffee ohne Zucker, nur um zu sehen, ob sie ihn mir mit Löffel servieren.",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-21T17:55:57.514Z",
       "gpt": "Der Paketbote klingelt, ich frage, ob das Paket schon bezahlt ist – er meint: „Nein, das ist mein Gehalt.“",
       "qwen": "Der Lieferant grinste: „Ich bin schon da, das Paket ist aber noch unterwegs.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und überreicht ihr sein leeres Formular.",
       "qwen": "Ich gab den Fundbericht ab, doch der Beamte sagte: „Das Formular ist aus.“",
       "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
+    },
+    {
+      "timestamp": "2026-11-21T21:56:06.117Z",
+      "gpt": "Ich rufe beim Kundendienst: „Mein Paket ist im Aufzug stecken geblieben.“ Der Mitarbeiter: „Dann drücken Sie einfach den Knopf für die 2‑kg‑Tür.“",
+      "qwen": "Die Paketfrau fragt: „Ist jemand da?“\nIch: „Ja, ich bin’s.“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
