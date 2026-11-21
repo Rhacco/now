@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:45:58.407Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, um mehr Schritte zu machen – sie zählt jetzt meine Telefonate als „Laufstrecken“.",
-      "qwen": "Ich habe die Fehlermeldung ignoriert und wollte schon den Neustart starten. Da hat das Handy geantwortet: „Nein, ich bin nur müde.“",
-      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
-    },
-    {
       "timestamp": "2026-11-21T12:51:08.359Z",
       "gpt": "Ich bestelle im Café einen Espresso, doch die Kellnerin fragt, ob ich ihn „schwarz wie meine Steuererklärung“ will – ich antworte: „Nur, wenn er erstattet wird.“",
       "qwen": "Die Kellnerin bringt mir heißen Tee, den ich als Kaffee bestellte. Ich frage sie, ob der Fehler schon bezahlt ist.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Dame neben mir: „Entschuldigung, ist das hier der Sondertarif für Familien?“ – Ich zeige auf ihr Ticket: „Nein, das ist Ihr Rückfahrtticket.“",
       "qwen": "Endlich frei von der Arbeit, denk ich mir. Doch dann fällt mir auf, dass der Kofferraum noch voll mit Akten ist.",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-21T16:51:05.466Z",
+      "gpt": "Im Zug fragt der Tourist nach dem besten Ausflugsziel, die Durchsage verkündet: „Nächster Halt – Parkplatz, weil das Wetter heute nur im Auto gut ist.“",
+      "qwen": "Im Urlaub fragt sie: „Gefällt dir das Meer?“ Ich sage: „Ja, aber der Sand ist zu grau.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
