@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T22:31:06.372Z",
-      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier das Gleis für den Urlaub?“ Der Schaffner lächelt: „Nur, wenn Sie mit dem Koffer fahren.“",
-      "qwen": "Am Strand sitzen wir reglos da. Der Kellner fragt: „Ist alles in Ordnung?“",
-      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
-    },
-    {
       "timestamp": "2026-11-20T22:36:06.764Z",
       "gpt": "Ich frage im Vorstellungsgespräch, ob es Weiterbildungen gibt – der Chef nickt, reicht mir die Stellenanzeige und sagt: „Wir bilden Sie hier selbst ein.“",
       "qwen": "Ich fragte nach einem Weiterbildungsbudget. Der Chef nickte nur und drückte mir den ganzen Aktenturm in die Hände.",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe laut an die Nachbarstür, weil mein Wasserhahn tropft – sie öffnen und fragen, ob ich das neue Geräusch‑System testen will.",
       "qwen": "Ich fragte den Nachbarn, ob er die Party hört. Er zuckte die Schultern. „Doch, aber ich bin der Gastgeber.“",
       "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
+    },
+    {
+      "timestamp": "2026-11-21T02:36:04.809Z",
+      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir einen Regenschirm – „Für den Fall, dass Ihnen das Wetter kalt wird.“",
+      "qwen": "„Sind Sie sicher, dass das passt?“ fragte ich. „Ja, das ist der Sonderpreis“, antwortete der Verkäufer.",
+      "archive": "Beim Schuhkauf macht die Verkäuferin einen Schritt zurück und betrachtet mich. „Sie gehen noch ein bisschen unsicher“, sagt sie; ich trage zum ersten Mal Schuhe mit diesem Preis."
     }
   ]
 }
