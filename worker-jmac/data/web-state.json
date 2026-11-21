@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:01:03.704Z",
-      "gpt": "Ich klopfe bei der neuen Nachbarin an, um mich vorzustellen, und sie öffnet mit einem Schild: „Bitte nicht stören – ich bin gerade im Home‑Office.“",
-      "qwen": "Der Nachbar klagt über unsere Party. Ich schau in den Keller: Dort tanzen wir schon seit drei Stunden.",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-21T10:06:03.576Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich wartete stundenlang in der Praxis, bis der Arzt sagte: „Nächster Patient.“\nDraußen in der Apotheke wurde mir die Rezeptgebühr direkt vom Gehalt abgezogen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Joggen meine Lauf-App starten, doch das Handy fiel ins Wasser – jetzt läuft sie endlich, nur nicht mehr mit mir.",
       "qwen": "Mein Handy zeigt 99 % Akku an.\nDann fällt es mir aus der Hand.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-21T14:10:59.800Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, er fragt: „Haben Sie das Paket schon unterschrieben?“ – „Nein, ich habe es gerade erst bestellt.“",
+      "qwen": "Der Kurier drückte mir das Paket in die Hand und sagte: „Das hier ist für Sie.“ Ich fragte: „Aber ich habe doch nichts bestellt.“ Er antwortete: „Genau deshalb ist es so günstig.“",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
