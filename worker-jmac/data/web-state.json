@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:46:07.911Z",
-      "gpt": "Mama ruft: „Wer hat den letzten Keks genommen?“ Der Hund bellt: „Ich habe ihn nur für den Staubsauger versteckt.“",
-      "qwen": "Die Mama fragt: „Wer hat das Fenster kaputt gemacht?“\nDie Katze schweigt, der Hund wedelt.",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-20T20:46:57.163Z",
       "gpt": "Im Zug drückte ich den Notrufknopf, weil ich den Anschluss verpasst hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir fahren weiter.“",
       "qwen": "Ich steig frustriert aus dem stehenden Bus. Der Taxifahrer ruft: „Hast du noch Fahrkarten?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm brauche – sie zeigt „Verbindung verloren“, weil ich gerade im Regen nach WLAN suche.",
       "qwen": "Das Handy zeigt 100 Prozent Akku an. Haha, natürlich lügt es.",
       "archive": "Der Sprachassistent versteht meine Frage nicht. Mein Partner ruft die Antwort aus der Küche; der läuft sogar ohne WLAN."
+    },
+    {
+      "timestamp": "2026-11-21T00:50:57.500Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept für Ihre Diät.“",
+      "qwen": "Ich fragte den Verkäufer nach einem günstigeren Ersatz. Er sagte: „Den haben wir nicht, aber den sehr teuren.\"",
+      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
     }
   ]
 }
