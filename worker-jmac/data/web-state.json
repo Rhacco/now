@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:51:04.622Z",
-      "gpt": "Im Museum fragt ein Besucher: „Wo ist die Bibliothek?“ – Die Angestellte zeigt auf das Kino und sagt: „Da läuft heute ein Film über leise Bücher.“",
-      "qwen": "Im Kino schnarche ich laut, im Museum bleibe ich stumm. Die Bibliothekarin winkt mich herein: „Zu spät für beide.“",
-      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
-    },
-    {
       "timestamp": "2026-11-20T20:56:06.678Z",
       "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie meldete sofort: „Bitte erst das Handy aufladen – sonst wird das Training nie beginnen.“",
       "qwen": "Der Akku zeigt ein Prozent, während ich nach dem Ladekabel suche. Ich falle in Ohnmacht, bevor ich den Stecker finde.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir einen Regenschirm – „Damit Sie bei der Auswahl nicht nass werden.“",
       "qwen": "Gefällter Baum vor dem Baumarkt. Der Verkäufer streichelt ihn tröstlich: „Macht nix, wir haben auch noch viele andere Arten.“",
       "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
+    },
+    {
+      "timestamp": "2026-11-21T01:01:05.330Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich nie einlösen kann.“",
+      "qwen": "Ich warte seit drei Stunden im Wartezimmer. Der Arzt ruft mich rein, schaut mich an und sagt: „Sie kommen morgen wieder.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
