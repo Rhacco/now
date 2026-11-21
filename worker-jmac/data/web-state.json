@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T03:26:08.360Z",
-      "gpt": "Ich steig in den Bus, die Anzeige sagt „Nächster Halt: Hauptbahnhof“. Ich steige aus, weil ich schon am Ziel bin – ich sitze im Bahnhof.",
-      "qwen": "Ich sage dem Taxifahrer: „Nicht weit fahren, nur bis zur nächsten Haltestelle.“ Er bremst scharf ab und murmelt: „Da fällt das Taxi aus.“",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-21T03:31:07.123Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür – er fragt, ob ich das Paket schon bezahlt habe. Ich sag: „Nein, ich habe nur den Kundenservice angerufen.“",
       "qwen": "Der Paketbote fragt: „Ist jemand zu Hause?“ Ich rufe: „Nein!“ Er ruft zurück: „Dann signieren Sie hier.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und ziehe sofort die Regenschirm‑App auf – sie zeigt mir nur, wie trocken ich im Büro sitze.",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt bin ich wirklich bettet.",
       "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
+    },
+    {
+      "timestamp": "2026-11-21T07:36:05.300Z",
+      "gpt": "Im Café fragt die Kellnerin, ob ich etwas zum Trinken will; ich antworte: „Nur Wasser, ich koche gleich – das ist mein neues Restaurant.“",
+      "qwen": "Ich bat im Café um einen Kaffee ohne Milch. Der Kellner lief hektisch aus der Tür: „Sofort kommen alle Milchkühe zurück!“",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
