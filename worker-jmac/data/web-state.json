@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:20:58.548Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund schnarcht mein Nachbar laut – anscheinend ist Entspannung ansteckend.",
-      "qwen": "Beim Yoga-Unterricht fallen mir die Beine vom Stuhl. Der Trainer sagt: „Gut, das ist aktive Entspannung.“",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-20T23:25:57.555Z",
       "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie ständig laut trommelt. Sie dankte und sagte: „Endlich ein Rhythmus, den ich essen kann!“",
       "qwen": "Der Nachbar kettete seinen Bulldogge an die Hauswand. „Er ist so schlank“, sagte er trotzig.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vorbereitet?“ – Der Praktikant meldet sich und sagt: „Ich habe das PowerPoint‑Template aus der Power‑Point‑App gezogen.“",
       "qwen": "Ich fragte den Chef: „Können wir die Besprechung kürzen?“ Er nickte und sagte: „Dann bis später.“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-21T03:26:08.360Z",
+      "gpt": "Ich steig in den Bus, die Anzeige sagt „Nächster Halt: Hauptbahnhof“. Ich steige aus, weil ich schon am Ziel bin – ich sitze im Bahnhof.",
+      "qwen": "Ich sage dem Taxifahrer: „Nicht weit fahren, nur bis zur nächsten Haltestelle.“ Er bremst scharf ab und murmelt: „Da fällt das Taxi aus.“",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
