@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T14:26:04.874Z",
-      "gpt": "Ich klopfte an die Nachbarn, weil mein Wasserrohr geplatzt war. Sie schickten mir ein Schwimmzeug – aus dem Keller.",
-      "qwen": "Die neue Nachbarin lächelt freundlich und fragt, wie es mir geht. Ich sage: „Schrecklich, seit Sie mein Gartenzwerg mitgenommen haben.“",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-21T14:30:59.427Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das erst in der Apotheke wirkt.“",
       "qwen": "Ich frage den Arzt: „Doktor, dauert das noch lange?“\nEr zeigt auf die Apotheke: „Da sitzen Sie schon seit einer Stunde.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Frau neben mir: „Entschuldigung, wo liegt das Ziel?“ – Ich zeige auf den Fahrplan: „Hier, zwischen „Nächste Haltestelle“ und „Ende der Geduld“.",
       "qwen": "Ich habe im Urlaub extra eine Wanderung geplant. Der Hund ist seit drei Stunden nur noch auf der Couch.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-21T18:31:01.166Z",
+      "gpt": "Ich warte im Praxis‑Wartezimmer, die Ärztin ruft mich: „Bitte nehmen Sie das Rezept mit, Sie brauchen es im Nebenraum.“ Dort steht nur ein Spiegel.",
+      "qwen": "„Ich bin hier zum Kaffeesaufen“, sagte der Patient.\nDer Arzt seufzte: „Dann gehen Sie bitte zur Apotheke.“",
+      "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
     }
   ]
 }
