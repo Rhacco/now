@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:16:07.529Z",
-      "gpt": "Ich warte im Wartezimmer, die Krankenschwester ruft: „Nur noch ein Medikament.“ Ich antworte: „Dann nehme ich gleich die Apotheke.“",
-      "qwen": "„Warten Sie in der Wartehalle.“\n„Ich sitze doch schon in der Praxis.“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-21T18:21:05.903Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
       "qwen": "Im Kino flüstert er: „Tiefer. Stille. Bitte.“ Die Garderobierin im Museum schaut ihn an: „Hier schmeißen Sie nicht.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Angestellte fragte: „Haben Sie das Formular auch gefunden?“",
       "qwen": "Fundbüro: „Ohne Eigentumsnachweis können wir nichts ausgeben.“ Ich: „Aber die Katze ist ja eigentümlich.\"",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:21:05.085Z",
+      "gpt": "Mama sagt: „Räum dein Zimmer auf!“ – Tim legt den Staubsauger an, schaltet das Licht aus und schläft weiter.",
+      "qwen": "Ich fragte meine Frau, ob sie mein Egoismus-Foto sehen will.\nSie antwortete: „Darauf bin ich nicht eifersüchtig.“",
+      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
     }
   ]
 }
