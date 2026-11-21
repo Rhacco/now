@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:21:05.903Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Das Kino nebenan ruft: „Nur wenn du Popcorn mitbringst!“",
-      "qwen": "Im Kino flüstert er: „Tiefer. Stille. Bitte.“ Die Garderobierin im Museum schaut ihn an: „Hier schmeißen Sie nicht.“",
-      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
-    },
-    {
       "timestamp": "2026-11-21T18:26:05.985Z",
       "gpt": "Im Zug fragt die Frau neben mir: „Entschuldigung, wo liegt das Ziel?“ – Ich zeige auf den Fahrplan: „Hier, zwischen „Nächste Haltestelle“ und „Ende der Geduld“.",
       "qwen": "Ich habe im Urlaub extra eine Wanderung geplant. Der Hund ist seit drei Stunden nur noch auf der Couch.",
@@ -300,6 +294,12 @@
       "gpt": "Mama sagt: „Räum dein Zimmer auf!“ – Tim legt den Staubsauger an, schaltet das Licht aus und schläft weiter.",
       "qwen": "Ich fragte meine Frau, ob sie mein Egoismus-Foto sehen will.\nSie antwortete: „Darauf bin ich nicht eifersüchtig.“",
       "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
+    },
+    {
+      "timestamp": "2026-11-21T22:26:03.212Z",
+      "gpt": "Ich habe meinem Nachbarn ein Schild mit „Bitte leise sein“ an die Tür gehängt – er hat es mit „Bitte leise bleiben“ zurückgeschrieben.",
+      "qwen": "Ich fragte die Nachbarin, ob ich ihr Gartentor mit einem Wackelkontakt öffnen dürfe. Sie nickte, bis die Tür ins Schloss fiel.",
+      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
     }
   ]
 }
