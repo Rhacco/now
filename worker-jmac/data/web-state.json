@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:36:05.991Z",
-      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Buch über Brotbacken – ich dachte, sie meint das fertige Produkt.",
-      "qwen": "Der Verkäufer drückt mir das teuerste Modell in die Hand. „Das hier ist die beste Beratung, die Sie kriegen können.“",
-      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
-    },
-    {
       "timestamp": "2026-11-21T16:40:58.443Z",
       "gpt": "Ich habe meiner Nachbarin beim Umzug geholfen, weil sie zu schwer war – dann stellte sie fest, dass sie das Möbelstück selbst gebaut hat.",
       "qwen": "Ich fragte den Nachbarn, ob er laut boxt. Er nickte schweigend und zeigte auf seinen Freund.",
@@ -300,6 +294,12 @@
       "gpt": "Ich warte im Praxis-Wartezimmer, die Ärztin ruft: „Bitte kommen Sie sofort zur Apotheke, dort gibt’s endlich ein Rezept, das nicht abläuft.“",
       "qwen": "Ich sage dem Arzt: „Herr Doktor, ich bin mir selbst!“",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-21T20:46:05.462Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Glühbirne, und der Verkäufer meint: „Klar, die kostet nur 0 € – Sie sparen ja schon beim Bezahlen.“",
+      "qwen": "Ich fragte im Elektronikgeschäft nach dem besten Preis, und der Verkäufer grinste: „Der beste Preis ist, wenn Sie gar nichts kaufen.“",
+      "archive": "Beim Friseur sagt der Mann nach dem Schneiden: „Das wächst wieder.“ Genau den Satz hätte ich lieber vorher gehört."
     }
   ]
 }
