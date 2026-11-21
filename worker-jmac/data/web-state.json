@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:16:06.656Z",
-      "gpt": "Ich sortiere den Keller aus und finde meine alte Fernbedienung – sie steuert jetzt nur noch den Staubsauger, weil ich nie mehr fernsehe.",
-      "qwen": "Die alte Schallplatte im Karton war nur Plastikmüll, das Vinyl aber ein Meisterwerk.",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-21T00:20:58.201Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur ein Bild von meinem Kaffeebecher ist. „Strategie“, sag ich, „ist jetzt wach.“",
       "qwen": "Ich frage im Meeting: „Wir brauchen mehr Kanban-Boards oder weniger Meetings?“\nDer Chef antwortet: „Sag ich nicht, du machst beides.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, weil ich Regen vermeiden will, und sehe sofort: „Achtung, Sturmwarnung – dein Akku ist bei 1 %.“",
       "qwen": "Ich wollte die Kamera-App löschen, damit mein Handy schneller wird. Jetzt fotografiert es nur noch meine eigenen Fehler.",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-21T04:20:57.928Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Projekt?“ – Die Kollegin meldet sich: „Ich, ich habe die Zahlen, aber das Projekt ist noch nicht gestartet.“",
+      "qwen": "Ich habe dem Chef meine Vier-Augen-Runden mitgebracht. Er hat sie nur kurz betrachtet und mir die Brille verordnet.",
+      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
     }
   ]
 }
