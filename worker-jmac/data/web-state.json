@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T00:41:06.135Z",
-      "gpt": "Im Museum fragt ein Besucher: „Welches Bild ist das Lieblingswerk der Bibliothek?“ Die Wächterin meint: „Das mit den leisen Filmrollen.“",
-      "qwen": "Im Museum flüstert die Frau: „Die展 sind so ruhig wie im Kino.“\nIch antworte: „Hier gibt’s aber auch keine Popcorn-Kein-Flüstern-Schilder.“",
-      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
-    },
-    {
       "timestamp": "2026-11-21T00:45:57.104Z",
       "gpt": "Ich öffne die Wetter-App, um zu sehen, ob ich Regenschirm brauche – sie zeigt „Verbindung verloren“, weil ich gerade im Regen nach WLAN suche.",
       "qwen": "Das Handy zeigt 100 Prozent Akku an. Haha, natürlich lügt es.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Bitte geben Sie Ihre Unterschrift unter das nächste Formular, das Sie finden.“",
       "qwen": "Im Fundbüro fragte ich nach meinem verlorenen Schlüsselbund. Die Dame reichte mir einen leeren Beleg.",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-21T04:46:03.683Z",
+      "gpt": "Im Café bestellt er ein veganes Omelett – die Kellnerin bringt ihm ein leeres Blatt Papier. „Sie wollten ja nur ein Rezept, nicht zum Essen.“",
+      "qwen": "Ich fragte im Café: „Hat das hier Koffein?“\nDie Kellnerin zeigte auf die Kaffeetasse: „Ja, das ist sogar der stärkste.“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
