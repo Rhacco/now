@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T21:35:59.146Z",
-      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Blatt Papier – „Das ist unser neues Diät‑Produkt, Kalorienfrei!“",
-      "qwen": "Ich fragte im Schuhhaus nach einem Schnürsenkel. Die Verkäuferin zwinkerte mir sulpelig zu: „Bei uns sind die Männer doch alle durch.",
-      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
-    },
-    {
       "timestamp": "2026-11-20T21:40:57.454Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einem günstigen Lautsprecher, der gut klingt – die Verkäuferin reicht mir ein Schild „Bitte leise sein“.",
       "qwen": "Im Baumarkt beraten mich drei Leute, ob die Sockelleiste passt. Dann sagt der Verkäufer: „Die 99 Euro sind übrigens nicht im Preis enthalten.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, und ich zeige ihm den leeren Kaffeebecher – er meint, das sei unser „Produktivitäts‑Boost“.",
       "qwen": "Ich fragte im Meeting, ob jemand Zweifel an dem Plan hat. Stille. Dann meinte der Chef: „Nein, ich wollte nur kurz durchatmen.“",
       "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
+    },
+    {
+      "timestamp": "2026-11-21T01:45:57.538Z",
+      "gpt": "Ich reiche das ausgefüllte Formular im Fundbüro ein – die Angestellte fragt, ob ich das „Verloren‑oder‑Gefunden‑Kästchen“ angekreuzt habe.",
+      "qwen": "Ich habe den Fundbericht ausgefüllt, doch das Formular verlangt über 20 Seiten für den Fund. Ich habe den Uhrenarmband einfach in den Mülleimer geworfen.",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
