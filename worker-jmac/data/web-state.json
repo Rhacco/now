@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T11:31:00.896Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie das Tagesgericht?“ Ich antworte: „Ja, aber nur, wenn es nicht wieder das Tagesgericht vom Nachbarrestaurant ist.“",
-      "qwen": "Der Kellner fragt: „Sind Sie mit dem Steak zufrieden?“\nIch nicke: „Ja, aber es fehlt mir die Transparenz bei der Herkunft.“",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-21T11:36:05.348Z",
       "gpt": "Im Bus drängte ein Tourist nach dem Fahrplan: „Wann kommt die nächste Haltestelle?“ – Der Fahrer: „Gleich, wenn Sie aussteigen.“",
       "qwen": "Ich sagte dem Taxifahrer, er solle den Bus nehmen, wenn er nicht so schnell sein muss.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 7‑B ausgefüllt?“ Ich zeige ihr mein Portemonnaie – es ist das Formular.",
       "qwen": "Ich gab den Fund im Amt ab. Die Beamtin fragte bloß: „Warum?“",
       "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
+    },
+    {
+      "timestamp": "2026-11-21T15:41:05.723Z",
+      "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie Milch dazu?“ – Ich antworte: „Nur, wenn er auch das Frühstück serviert.“",
+      "qwen": "Ich frag den Kellner: „Ist das hier auch schon gegessen?“\nEr nickt: „Ja, genau deshalb steht's im Kühlfach.“",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
