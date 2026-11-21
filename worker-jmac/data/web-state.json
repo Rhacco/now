@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:26:05.390Z",
-      "gpt": "Mama fragt: „Warum hast du den Kuchen aus dem Ofen genommen?“ Ich: „Weil das WLAN wieder schneller war.“",
-      "qwen": "Ich fragte meinen Vater, wie man ein Haus baut. Er sagte: „Erst die Familie, dann die Wände.“",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-21T17:31:02.876Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Auf dem Wochenmarkt sagt die Kundin: „Nur wenn Sie die Preise einpacken.“",
       "qwen": "Im Supermarkt ist der Apfel glatt.\nBeim Bauern hat er einen Kater.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundenservice: „Mein Paket ist verloren.“ Der Mitarbeiter fragt: „Haben Sie schon nachgeschaut, ob es nicht im Kühlschrank liegt?“",
       "qwen": "Der Kurier rief an: „Ihr Paket ist beschädigt.“\nIch fragte: „Wie denn?“\nEr: „Mit Stempel und Klebeband.“",
       "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
+    },
+    {
+      "timestamp": "2026-11-21T21:36:02.349Z",
+      "gpt": "Ich frage die Verkäuferin nach einer Größe, sie reicht mir ein Lineal – „Damit Sie wenigstens wissen, wie klein Ihre Erwartungen sind.“",
+      "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer hat mir vier Stunden lang über Stoffdichte referiert, bis ich aus Zeitmangel die Rechnung übernahm.",
+      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
     }
   ]
 }
