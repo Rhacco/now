@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:31:40.737Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint, weil meine Ideen noch im „Entwurfs‑Modus“ feststecken.",
-      "qwen": "Der Chef fragt: „Haben Sie die Präsentation geschickt?“\nIch: „Ja, an das falsche Meeting.“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-21T16:36:05.991Z",
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach glutenfreiem Brot, sie reicht mir ein Buch über Brotbacken – ich dachte, sie meint das fertige Produkt.",
       "qwen": "Der Verkäufer drückt mir das teuerste Modell in die Hand. „Das hier ist die beste Beratung, die Sie kriegen können.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Der Mann nickt: „Ja, aber ich habe den Stift im Fund.“",
       "qwen": "Im Fundbüro flüsterte ich: „Ich habe den Schirm verloren.“ Die Dame zuckte nur mit den Schultern und murmelte: „Dafür brauchen Sie Formular 42-B, Form 7 und eine Meldebescheinigung.“",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-21T20:41:02.863Z",
+      "gpt": "Ich warte im Praxis-Wartezimmer, die Ärztin ruft: „Bitte kommen Sie sofort zur Apotheke, dort gibt’s endlich ein Rezept, das nicht abläuft.“",
+      "qwen": "Ich sage dem Arzt: „Herr Doktor, ich bin mir selbst!“",
+      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
     }
   ]
 }
