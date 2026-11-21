@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T05:36:05.609Z",
-      "gpt": "Ich öffne die Wetter‑App, weil ich nach Regen frage, und sie zeigt mir nur den Lade‑Bildschirm – anscheinend hat sie auch schlechtes Wetter.",
-      "qwen": "Ich habe versehentlich das E-Mail-Konto auf dem Smart-Fridge gelöscht.\nDer Kühlschrank warf einen Fehler: „Kein Sender gefunden.“",
-      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
-    },
-    {
       "timestamp": "2026-11-21T05:40:59.161Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, und beim herabschauenden Hund lande ich plötzlich im Klo – anscheinend war das die wahre “Tiefe”.",
       "qwen": "Ich wollte beim Yoga entspannen, aber meine Katze hat auf meinem Rücken geschlafen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich fragte den Apotheker nach meinem Rezept. Er sagte: „Das kenne ich nicht, aber ich sehe Sie hier doch ständig im Wartezimmer sitzen.“",
       "archive": "In der Apotheke fragt die Mitarbeiterin, ob ich das Mittel schon kenne. „Nur die Werbung“, sage ich, „die klang deutlich gesünder.“"
+    },
+    {
+      "timestamp": "2026-11-21T09:41:06.302Z",
+      "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei im „virtuellen Lager“ und habe sich verlaufen, weil es keinen GPS‑Signal hat.",
+      "qwen": "Der Paketbote ließ die Sendung vor der Tür liegen. Ich rief den Kundendienst an: „Wo ist mein Paket?“",
+      "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
     }
   ]
 }
