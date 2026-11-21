@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:56:05.083Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Praktikantin zeigt stolz den leeren Fortschrittsbalken – er ist gerade erst „geladen“.",
-      "qwen": "In der Besprechung fragte der Chef: „Haben wir noch Luft nach oben?“\nDer Praktikant nickte und öffnete das Fenster.",
-      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
-    },
-    {
       "timestamp": "2026-11-21T05:00:57.235Z",
       "gpt": "Im Café bestelle ich einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich habe meine eigene Bohne mitgebracht.“",
       "qwen": "Der Kellner bringt das Schnitzel. „Entschuldigung, das ist ja ganz roh“, sage ich. „Gar nicht“, antwortet er. „Das ist ein Steak.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue „Schlaf‑Modus“-App auf meinem Handy aktiviert – jetzt geht es erst wieder an, wenn ich den Wecker ausversehen drückte.",
       "qwen": "Der Akku zeigt noch 1%, doch ich erlebe gerade eine Selbsterfahrung.",
       "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
+    },
+    {
+      "timestamp": "2026-11-21T09:01:02.897Z",
+      "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei bereits bei mir zu Hause, weil ich es aus Versehen im Kühlschrank gefunden habe.",
+      "qwen": "Der Lieferbote fragt: „Sind Sie für die Übergabe da?“, worauf ich nickte. Er sagte: „Dann packen Sie bitte die Ware ein.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
