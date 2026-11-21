@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T12:11:04.785Z",
-      "gpt": "Ich frage im Elektronikmarkt nach einem Lautsprecher, der „immer leise bleibt“. Der Verkäufer lächelt und reicht mir ein Stück Klebeband.",
-      "qwen": "Der Verkäufer fragt, ob ich ein Geschenk packen lasse.\nIch sage, das Paket sei schon fertig geschockt.",
-      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
-    },
-    {
       "timestamp": "2026-11-21T12:16:06.001Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Bild leihen?“ Der Besucher nickt: „Nur, wenn Sie es im Kino zurückbringen.“",
       "qwen": "Im Museum flüstert sie: „Hier darf man nicht essen.“\nDraußen im Kino schreit er: „Ich habe dir doch gesagt: Nicht reden!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Geldschein mit Ihrem Namen unterschrieben?“ – „Nein, ich war doch nur kurz im Lotto.“",
       "qwen": "Beim Fundbüro nach dem vermissten Schlüsselfund gefragt, heißt es: „Das Formular finden Sie in der Datenbank.“",
       "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
+    },
+    {
+      "timestamp": "2026-11-21T16:20:57.449Z",
+      "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – dann kam die Beamtin und fragte, ob ich das Original nicht gleich im Tresor lassen will.",
+      "qwen": "Ich habe beim Fundbüro nach meinem Schlüssel gefragt. „Ohne Verlustanzeige keine Auskunft.“",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
