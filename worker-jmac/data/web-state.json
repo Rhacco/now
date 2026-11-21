@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:40:57.250Z",
-      "gpt": "Beim Familienabend fragt Mama: „Wer hat den letzten Keks genommen?“ Papa grinst und sagt: „Ich, aber ich dachte, das wäre ein Stück Kuchen.“",
-      "qwen": "Die Kinder streiten um den letzten Bissen. Oma lacht und says: „Streitet nicht, ich hacke euch ab.“",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-21T10:46:05.328Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Ich hebe die Hand, weil ich gerade den Kater vom letzten Abend nicht mehr finde.",
       "qwen": "Ich mache Yoga, um Stress abzubauen. Der Trainer sagt: „Entspann dich!“, und ich denke: „Endlich Ruhe.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Ideen, und ich melde: „Kaffee, bitte.“ Er nickt: „Genau, das ist die einzige produktive Idee, die wir heute brauchen.“",
       "qwen": "In der Besprechung fragte ich: „Wer ist der neue Praktikant?“\nMein Chef seufzte: „Das bist du.“",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-21T14:50:57.847Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im nächsten Seminar – endlich lerne ich, pünktlich zu kommen.“",
+      "qwen": "Im Vorstellungsgespräch fragte er nach meinen Stärken. Ich sagte: „Ich bin extrem lernfähig.“",
+      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
     }
   ]
 }
