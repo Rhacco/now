@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:46:57.163Z",
-      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich den Anschluss verpasst hatte – die Durchsage kam: „Bitte bleiben Sie sitzen, wir fahren weiter.“",
-      "qwen": "Ich steig frustriert aus dem stehenden Bus. Der Taxifahrer ruft: „Hast du noch Fahrkarten?“",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-20T20:51:04.622Z",
       "gpt": "Im Museum fragt ein Besucher: „Wo ist die Bibliothek?“ – Die Angestellte zeigt auf das Kino und sagt: „Da läuft heute ein Film über leise Bücher.“",
       "qwen": "Im Kino schnarche ich laut, im Museum bleibe ich stumm. Die Bibliothekarin winkt mich herein: „Zu spät für beide.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, die Verkäuferin lächelt und reicht ihr ein Blatt Papier – „Hier ist das Rezept für Ihre Diät.“",
       "qwen": "Ich fragte den Verkäufer nach einem günstigeren Ersatz. Er sagte: „Den haben wir nicht, aber den sehr teuren.\"",
       "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
+    },
+    {
+      "timestamp": "2026-11-21T00:55:58.713Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir einen Regenschirm – „Damit Sie bei der Auswahl nicht nass werden.“",
+      "qwen": "Gefällter Baum vor dem Baumarkt. Der Verkäufer streichelt ihn tröstlich: „Macht nix, wir haben auch noch viele andere Arten.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
