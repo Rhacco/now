@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:31:06.494Z",
-      "gpt": "Im Café bestellt er einen Cappuccino, doch die Barista fragt: „Möchten Sie Milch oder Schaum?“ Er antwortet: „Beides, ich will ja nur den Preis sparen.“",
-      "qwen": "Im Café bestellt der Mann: „Ein Espresso, bitte.“ Die Barista erwidert: „Das gibt’s hier nur als Cappuccino.“",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-21T01:36:06.469Z",
       "gpt": "Ich habe meiner Nachbarin das Fenster geöffnet, damit frische Luft reinkommt – sie dankte und zog gleich den Vorhang zu.",
       "qwen": "Der Nachbar feierte heftig bis in den Morgen. Ich fragte ihn: „Warum so laut?“ Er antwortete: „Ich bin der Hausmeister.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe beim Ausmisten die Kaffeemaschine ein, weil ich ohne Kaffee nicht umziehen kann – und merke, dass ich sie gar nicht mehr brauche.",
       "qwen": "Ich habe beim Ausmisten den alten CD-Player verkauft. Neue Musik gibt’s jetzt nur noch aus dem Radio oder vom Nachbarn.",
       "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
+    },
+    {
+      "timestamp": "2026-11-21T05:36:05.609Z",
+      "gpt": "Ich öffne die Wetter‑App, weil ich nach Regen frage, und sie zeigt mir nur den Lade‑Bildschirm – anscheinend hat sie auch schlechtes Wetter.",
+      "qwen": "Ich habe versehentlich das E-Mail-Konto auf dem Smart-Fridge gelöscht.\nDer Kühlschrank warf einen Fehler: „Kein Sender gefunden.“",
+      "archive": "Beim Videoanruf sagt meine Mutter: „Ich kann dich nicht sehen.“ Sie hält das Handy am Ohr und sucht dabei die Kamera."
     }
   ]
 }
