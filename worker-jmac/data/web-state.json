@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T10:50:59.329Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Der Arzt sagt: „Nehmen Sie die Pille zweimal täglich.“ Ich fluchte: „Ich bin doch schon in der Apotheque!“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-21T10:55:58.461Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie ihn mit extra Schaum oder mit extra Arbeit?“",
       "qwen": "Der Kellner fragte: „Noch Fragen zum Menü?“\n„Ja, warum riecht die Luft so nach Glühwein?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich jogge im Park, hör ein lautes Quietschen – ein Fahrrad liegt im Matsch. Ich steige ab, ziehe die Pedale aus und mache Yoga.",
       "qwen": "Ich wollte beim Yoga nur die Spannung lösen. Jetzt bin ich neben der Yogamatte eingeschlafen.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-21T15:01:07.260Z",
+      "gpt": "Beim Abendessen fragt die Tochter: „Mama, warum essen wir immer das Gleiche?“ – „Weil das Rezept für Überraschungen leider noch nicht aus dem Kühlschrank gefunden wurde.“",
+      "qwen": "Ich habe meiner Frau versprochen, den Abwasch zu machen. Jetzt sitzt sie still in der Küche und wartet, bis ich mein Handy weglege.",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
