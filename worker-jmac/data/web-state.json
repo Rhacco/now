@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:51:05.344Z",
-      "gpt": "Ich wollte beim Joggen meine Schrittzahl tracken, doch die App meldete plötzlich: „Du hast das Ziel erreicht – du hast das Haus verlassen.“",
-      "qwen": "Ich habe meine Navigations-App gefragt, wie man am schnellsten nach Hause kommt. Sie schlug vor, den Fluss in den Flüssen vor den Dörfern zu nehmen.",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-20T23:56:04.684Z",
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte nicht drängeln, wir kommen erst in 5 Minuten, wenn der Fahrer endlich ankommt.“",
       "qwen": "Ich dränge mich in den vollen Bus, um schneller zu sein, und der Fahrer sagt: „Bitte nicht betreten!“",
@@ -300,6 +294,12 @@
       "gpt": "Der Nachbar klopft, fragt nach dem Strom, weil seine Lampe nicht geht – ich gebe ihm meine Steckdose, weil er gerade das Licht ausmacht.",
       "qwen": "Ich fragte den Nachbarn, wo das Parkhaus sei. Er deutete auf sein nacktes Sofa: „Das ist mein Beifahrersitz.“",
       "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
+    },
+    {
+      "timestamp": "2026-11-21T03:55:58.744Z",
+      "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin bringt ihm eine Pfanne – er meint: „Ich wollte nur wach werden, nicht braten!“",
+      "qwen": "Ich bestellte im Café einen Kaffee.\n„Das gibt’s nur im Restaurant“, seufzte die Bedienung.",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
