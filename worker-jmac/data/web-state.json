@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T16:20:57.449Z",
-      "gpt": "Ich füllte beim Fundbüro das Formular für meinen verlorenen Schlüssel aus – dann kam die Beamtin und fragte, ob ich das Original nicht gleich im Tresor lassen will.",
-      "qwen": "Ich habe beim Fundbüro nach meinem Schlüssel gefragt. „Ohne Verlustanzeige keine Auskunft.“",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-21T16:26:03.587Z",
       "gpt": "Im Zug fragt der Tourist: „Entschuldigung, wo steigt man aus, um zum Strand zu kommen?“ Der Schaffner lächelt: „Am nächsten Halt – zum Schwimmbad.“",
       "qwen": "Ich fragte die Kassiererin, ob der Strand hier frei zugänglich sei. Sie meinte, nur wenn man die Flossen zurücklässt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich räume den Keller aus und finde einen alten Toaster. Beim Testen brennt er – er will wohl noch ein bisschen „aufwärmen“.",
       "qwen": "Ich habe die Kellerboxen gepackt. Die Katze saß besorgt drin.",
       "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
+    },
+    {
+      "timestamp": "2026-11-21T20:26:07.636Z",
+      "gpt": "Ich betrete die Bibliothek, finde Popcorn und ein rotes Vorhang‑Schild. Das Museum hat das Kino übernommen und ich habe das falsche Ticket.",
+      "qwen": "Bibliothek, Kino und Museum sind voll.\nIch war nur im Wartezimmer.",
+      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
     }
   ]
 }
