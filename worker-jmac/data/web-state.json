@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:10:57.431Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen – und beim herabschauenden Hund merke ich, dass mein Hund mich beim Vorbeigehen schon längst geküsst hat.",
-      "qwen": "Ich legte mich in die Sauna, bis der Schwitzkasten nachgab.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-21T04:15:58.582Z",
       "gpt": "Ich öffne die Wetter‑App, weil ich Regen vermeiden will, und sehe sofort: „Achtung, Sturmwarnung – dein Akku ist bei 1 %.“",
       "qwen": "Ich wollte die Kamera-App löschen, damit mein Handy schneller wird. Jetzt fotografiert es nur noch meine eigenen Fehler.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote fragt: „Unterschreiben Sie bitte?“ – Ich unterschreibe und schreibe daneben: „Bitte liefern Sie das nächste Mal an meine Couch.“",
       "qwen": "Der Kurier fragt: „Wo soll ich unterschreiben?“ Ich zeige auf das Paket: „Dort.“ Er grinst: „Nein, ich meine, ich bin der Kunde.“",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-21T08:20:57.464Z",
+      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier. „Das ist unser neues Diät‑Konzept – null Kalorien.“",
+      "qwen": "Ich fragte die Verkäuferin, ob das Kleid auch in klein verfügbar ist. Sie schaute mich an und meinte: „Ja, aber das ist Ihre Größe.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
