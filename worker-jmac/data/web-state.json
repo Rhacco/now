@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T09:11:05.271Z",
-      "gpt": "Im Zug fragt die Stewardess nach einem Wunschgetränk; ich bestelle „ein Glas Wasser, bitte.“ Sie lächelt und sagt: „Kommt sofort, wir haben gerade den Wasserdampf‑Auslauf.",
-      "qwen": "Wir wollten den Sonnenuntergang am Strand genießen. Stattdessen sahen wir nur, wie die Sonne unterging.",
-      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
-    },
-    {
       "timestamp": "2026-11-21T09:16:08.499Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und gehe nach draußen – mein Handy vibriert: „Du hast das Fenster offen.“",
       "qwen": "Ich fragte mein Handy nach dem Weg zur Bäckerei. Es antwortete: „Ich bin offline.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er ein „leichtes“ Omelett, doch die Kellnerin brachte ihm ein Fitnessstudio‑Plan. „Ich wollte Kalorien sparen, nicht Training!“",
       "qwen": "Im Restaurant bestellte ich „Tee mit Anis“. Der Kellner servierte mir ein Glas klares Wasser.",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-21T13:21:04.016Z",
+      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie fühlen Sie sich nach dem Yoga?“ – „Entspannt, bis ich merke, dass ich noch 20 kg auf der Hantelbank liege.“",
+      "qwen": "Ich habe Yoga gelernt, um Stress abzubauen. Jetzt bin ich nur noch entspannter gestresst.",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
