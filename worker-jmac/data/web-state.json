@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T20:21:01.013Z",
-      "gpt": "Im Zug lese ich, im Bus drücke ich die Klingel, im Taxi gebe ich Trinkgeld. Im Auto frage ich laut: „Wer hat den Fahrplan?“",
-      "qwen": "Fahre ich mit dem Taxi, fragt der Fahrer: „Schnell?\" Ich sage: „Ja.\"",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-20T20:26:07.932Z",
       "gpt": "Mama ruft: „Wer hat den letzten Keks gegessen?“ Der kleine Bruder grinst und sagt: „Ich, aber ich habe ihn in die Spülmaschine gelegt, damit er sauber bleibt.“",
       "qwen": "Meine Frau fragt, ob ich sie liebe. Ich sage: „Ja, aber nicht mehr als die Couch.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die PowerPoint, die nur ein Bild von meinem Kaffeebecher ist. „Strategie“, sag ich, „ist jetzt wach.“",
       "qwen": "Ich frage im Meeting: „Wir brauchen mehr Kanban-Boards oder weniger Meetings?“\nDer Chef antwortet: „Sag ich nicht, du machst beides.“",
       "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
+    },
+    {
+      "timestamp": "2026-11-21T00:25:58.559Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil ich mein Handy vergessen hatte – die Durchsage kam: „Bitte nicht schreien, wir haben kein Mikrofon.“",
+      "qwen": "Ich stieg aus dem verletzten Taxi, um den Bus zu nehmen. Der Busfahrer winkte mich ab: „Ich fahre nur mit Bahn.\"",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
