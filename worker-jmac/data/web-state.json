@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:55:57.514Z",
-      "gpt": "Der Paketbote klingelt, ich frage, ob das Paket schon bezahlt ist – er meint: „Nein, das ist mein Gehalt.“",
-      "qwen": "Der Lieferant grinste: „Ich bin schon da, das Paket ist aber noch unterwegs.“",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-21T18:01:03.008Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“, ich antworte: „Nur, wenn ich sie auf dem Wochenmarkt zurückgeben kann.“",
       "qwen": "Im Supermarkt zahlt der Kaktus 19,99 Euro. Auf dem Wochenmarkt sagt der Händler: „Der kostet nix, nur ein Stich.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundendienst: „Mein Paket ist im Aufzug stecken geblieben.“ Der Mitarbeiter: „Dann drücken Sie einfach den Knopf für die 2‑kg‑Tür.“",
       "qwen": "Die Paketfrau fragt: „Ist jemand da?“\nIch: „Ja, ich bin’s.“",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-21T22:00:58.364Z",
+      "gpt": "Mama fragt: „Warum hast du das letzte Stück Kuchen genommen?“ Sohn: „Weil ich beim Aufräumen immer die Krümel finde.“",
+      "qwen": "Die Gäste lobten das Essen. Die Schwiegermutter sagte: „Na, endlich mal jemand, der nicht nur schweigt!“",
+      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
     }
   ]
 }
