@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T17:40:57.943Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Äpfel aus der Bio‑Abteilung?“ Der Kunde lächelt: „Nur wenn sie vom Wochenmarkt kommen.“",
-      "qwen": "Beim Wochenhändler murmelte er: „Die Tomaten sehen müde aus.“\n\nDer Verkäufer nickte: „Die haben gestern drei Wochenenden hinterhergejagt.“",
-      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
-    },
-    {
       "timestamp": "2026-11-21T17:46:05.534Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im nächsten Weiterbildungsseminar, weil ich dann endlich den Lebenslauf auswendig kann.“",
       "qwen": "Nach dem Vorstellungsgespräch fragt mich die Chefin: „Welche Weiterbildung wünschen Sie sich?“\n„Eine in Gelassenheit“, sage ich, „denn Sie haben mich gerade eingestellt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe bei meinem Nachbarn, weil er ständig laute Partys feiert, und er öffnet: „Willkommen im Fitnessstudio, hier trainieren wir nur deine Geduld.“",
       "qwen": "Mein Nachbar stört tagsüber mit lauter Musik. Ich schlag ihm auf die Faust, er wird leiser.",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-21T21:50:41.805Z",
+      "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, aber der Stand verkaufte nur „Super‑Markt‑Preise“. Da meinte die Verkäuferin: „Hier gibt’s nur Frische, nicht Rabatt.“",
+      "qwen": "Ich kaufte auf dem Wochenmarkt Tomaten, weil sie so frisch schmeckten. Im Supermarkt roch sie dann auch so, nur leider nach Plastik.",
+      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
     }
   ]
 }
