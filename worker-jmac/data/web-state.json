@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:25:59.175Z",
-      "gpt": "Ich wollte am Supermarkt die frischen Tomaten holen, doch am Wochenmarkt stand schon ein Schild: „Selbstpflücken verboten – wir verkaufen nur das Bild.“",
-      "qwen": "Der Wochenmarkt ist so authentisch, dass die Tomaten mit Dialekt sprechen.",
-      "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
-    },
-    {
       "timestamp": "2026-11-21T06:30:57.242Z",
       "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie das Radio anmachen?“ Ich nicke. Er dreht das Fenster auf und ruft: „Hier kommt die nächste Haltestelle!“",
       "qwen": "Ich trolle im Taxi, der Fahrer schweigt nur. Als ich aussteige, sagt er: „Geld, bitte. Ich bin auch nur ein Passagier.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachgeschäft nach einem Lautsprecher, der „laut aber leise“ klingt – die Verkäuferin reicht mir Kopfhörer.",
       "qwen": "Der Texter fragt: „Soll ich das hier kürzen, damit es nach Werbung klingt?“ Ich sage: „Nein, es klingt schon wie eins.“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-21T10:31:04.195Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie den Rabatt für das Sonderangebot?“ Ich antworte: „Nur, wenn Sie mir das Gemüse vom Wochenmarkt bringen.“",
+      "qwen": "Ich kaufe die Tomate hier, weil sie so schön glänzt. Auf dem Markt hat sie schon zu mir „Willst du in den Saft?“ gesagt.",
+      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
     }
   ]
 }
