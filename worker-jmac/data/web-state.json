@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T13:56:07.567Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nicht abgeholt wurde.“",
-      "qwen": "Ich fragte den Arzt: „Zwei Schnupfen, drei Husten, wie geht’s?“\nEr seufzte: „Sie kommen zur Apotheke, nicht zur Praxis.“",
-      "archive": "An der Anmeldung fragt man, ob ich meinen Fragebogen vollständig ausgefüllt habe. Ich sage: „Ja, bis auf die Frage, warum ich so nervös bin.“"
-    },
-    {
       "timestamp": "2026-11-21T14:01:01.683Z",
       "gpt": "Ich war im Café und bestellte einen Cappuccino, der Kellner fragte: „Mit Milch oder mit Schaum?“ – Ich sagte, „Nur mit Geld, ich bin pleite.“",
       "qwen": "Im Restaurant fragte ich nach der Rechnung. Der Kellner legte nur sein Handy auf den Tisch.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich frage, ob das Paket schon bezahlt ist – er meint: „Nein, das ist mein Gehalt.“",
       "qwen": "Der Lieferant grinste: „Ich bin schon da, das Paket ist aber noch unterwegs.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-21T18:01:03.008Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie die Tüte?“, ich antworte: „Nur, wenn ich sie auf dem Wochenmarkt zurückgeben kann.“",
+      "qwen": "Im Supermarkt zahlt der Kaktus 19,99 Euro. Auf dem Wochenmarkt sagt der Händler: „Der kostet nix, nur ein Stich.“",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
