@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:56:04.422Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher flüstert: „Nur, wenn du Popcorn leihst.“",
-      "qwen": "Ich fragte im Museum: „Wie teuer ist das Ticket?“\nDer Wächter antwortete: „Das hier ist kein Kino, das ist Geschichte.“",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-21T07:00:58.453Z",
       "gpt": "Beim Yoga versucht er, die Katze zu strecken – die Katze springt sofort auf den Rücken und macht die tiefste Entspannung seines Lebens.",
       "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mein Gleichgewicht komplett zerstört.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Cappuccino, doch die Barista fragt: „Möchten Sie ihn mit extra Schaum oder mit extra Arbeit?“",
       "qwen": "Der Kellner fragte: „Noch Fragen zum Menü?“\n„Ja, warum riecht die Luft so nach Glühwein?“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-21T11:01:02.117Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, um Schritte zu zählen – nach zehn Minuten lag ich im Bett, weil sie mir sagte, ich hätte bereits das Ziel erreicht.",
+      "qwen": "Ich suchte die App, um den Herd zu steuern.\nDer Herd zeigte mir an, dass er das WLAN nicht findet.",
+      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
     }
   ]
 }
