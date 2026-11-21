@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T18:11:10.288Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, und die Kollegin meldet: „Ich habe den Bericht fertig – als PDF, weil ich ihn nicht mehr lesen kann.“",
-      "qwen": "Ich bat den Chef um Gehaltserhöhung. Er nickte und sagte: „Gern, holt mal zwei Kaffee.“",
-      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
-    },
-    {
       "timestamp": "2026-11-21T18:16:07.529Z",
       "gpt": "Ich warte im Wartezimmer, die Krankenschwester ruft: „Nur noch ein Medikament.“ Ich antworte: „Dann nehme ich gleich die Apotheke.“",
       "qwen": "„Warten Sie in der Wartehalle.“\n„Ich sitze doch schon in der Praxis.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil das WLAN ausfiel – die Durchsage: „Bitte nicht panisch, das ist nur das Bordrestaurant.“",
       "qwen": "Ich stieg aus dem Taxi und winkte dem Fahrer zu. Er sah mich nur entsetzt an: „Das ist ja meine Frau.“",
       "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
+    },
+    {
+      "timestamp": "2026-11-21T22:15:56.654Z",
+      "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Angestellte fragte: „Haben Sie das Formular auch gefunden?“",
+      "qwen": "Fundbüro: „Ohne Eigentumsnachweis können wir nichts ausgeben.“ Ich: „Aber die Katze ist ja eigentümlich.\"",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
