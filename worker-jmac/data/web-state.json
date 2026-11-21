@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T01:05:58.675Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich endlich meine Fortbildung bezahlt bekomme.“",
-      "qwen": "Ich fragte im Vorstellungsgespräch nach Weiterbildung, doch der Chef schlug nur die nächste Stelle vor.",
-      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
-    },
-    {
       "timestamp": "2026-11-21T01:11:03.820Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Ich fragte den Apotheker nach der Dosierung. Er sagte: „Zweimal täglich – einmal morgens, einmal abends.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wie gehen Sie mit Stress um?“ Ich antworte: „Ich melde mich gleich zu einer Weiterbildung an.“",
       "qwen": "Der Chef fragte: „Welche Weiterbildung planen Sie?“ Ich antwortete: „Ich will lernen, wie man hier überlebt.“",
       "archive": "Der Kursleiter fragt, ob wir Vorkenntnisse mitbringen. Ich sage: „Den Weg hierher kenne ich schon; der Rest steht hoffentlich auf Ihrem Programm.“"
+    },
+    {
+      "timestamp": "2026-11-21T05:11:06.947Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs 'Wie man Bewerbungen schreibt\".",
+      "qwen": "Der Chef fragt nach meinem Interesse an Weiterbildung. Ich sage: „Sehr, ich will nur weg, nicht weiter.“",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
