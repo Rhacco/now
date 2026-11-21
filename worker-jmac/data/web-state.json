@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T04:20:57.928Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das Projekt?“ – Die Kollegin meldet sich: „Ich, ich habe die Zahlen, aber das Projekt ist noch nicht gestartet.“",
-      "qwen": "Ich habe dem Chef meine Vier-Augen-Runden mitgebracht. Er hat sie nur kurz betrachtet und mir die Brille verordnet.",
-      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
-    },
-    {
       "timestamp": "2026-11-21T04:25:56.820Z",
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular ausgefüllt?“ – Der Finder nickt: „Ja, ich habe es gleich im Kasten gefunden.“",
       "qwen": "Ich fragte im Fundbüro nach der verlorene Brief. Dort hieß es: „Bitte erst das Verlustformular ausfüllen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin lacht: „Hier gibt’s nur Bio‑Preise, die Eier sind ja schon im Sonderangebot.“",
       "qwen": "Ich suchte nur Tomaten, doch im Supermarkt lagen sie in Plastikfolie.\nAuf dem Wochenmarkt rochen sie nach Erde und Sonnenlicht.",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-21T08:31:01.129Z",
+      "gpt": "Ich rufe den Kundendienst, weil das Paket schon wieder zu spät ist – sie sagen, es sei im Urlaub, weil es den Rückweg verpasst hat.",
+      "qwen": "Der Paketbote lächelt und fragt: „Alles korrekt?“\n„Ja“, sage ich, „nur die Lieferung für Frau Müller fehlt?“",
+      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
     }
   ]
 }
