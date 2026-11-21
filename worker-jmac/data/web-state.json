@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-20T23:41:05.762Z",
-      "gpt": "Der Paketbote klopft, ich frage: „Ist das ein Express‑Lieferung?“ – Er lächelt und sagt: „Nein, das ist unser neuer Kunden‑Service‑Karton.“",
-      "qwen": "„Ihr Paket ist defekt.“\n„Nein, der Paketbote ist es.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-20T23:46:05.762Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie das Brot in Folie einpacken?“ Auf dem Wochenmarkt sagt der Bäcker: „Nur, wenn's ein Picknick‑Brot ist.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis. Der Bauer lacht und sagt: „Den kriegt man hier nicht, nur beim Discounter.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt für den Strand, der Schaffner lächelt und sagt: „Sorry, hier fährt nur der „Bahn“-Strand.“",
       "qwen": "Auf der Skipiste rutscht der Freund aus und brüllt vor Schmerz. „Hast du dir was gebrochen, hab ich mich gefragt.“",
       "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
+    },
+    {
+      "timestamp": "2026-11-21T03:45:59.459Z",
+      "gpt": "Ich wollte im Museum ein Buch ausleihen, doch die Bibliothekarin schickte mich ins Kino – dort läuft ja endlich mal ein Film über das Ausleihen.",
+      "qwen": "Im Museum fragte ich: „Darf ich diese Vitrine berühren?“ Der Wächter nickte. „Ja, sie ist aus Glas.“",
+      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
     }
   ]
 }
