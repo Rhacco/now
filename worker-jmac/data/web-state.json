@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T06:16:00.232Z",
-      "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, doch die Verkäuferin meinte: „Hier gibt’s nur Obst, das sich selbst verpackt.“",
-      "qwen": "Ich kaufe auf dem Wochenmarkt frische Bio-Tomaten, weil sie im Supermarkt so künstlich glänzen.",
-      "archive": "Am Schokoladenregal überrede ich mich, nur eine Tafel zu kaufen. An der Kasse ist es ein Dreierpack; offenbar kann ich überzeugend sein."
-    },
-    {
       "timestamp": "2026-11-21T06:20:59.310Z",
       "gpt": "Mama fragt: „Warum hast du das Sofa in den Garten gestellt?“ – „Ich wollte endlich mal draußen sitzen, wo das WLAN nicht streikt.“",
       "qwen": "Mein Vater sagt, ich solle nicht so viel Zeit auf dem Handy verschwenden. Er spricht seit zwanzig Minuten ununterbrochen über die Ernte.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Kunde: „Nur, wenn Sie sie selbst tragen.“",
       "qwen": "Beim Wochenmarkt hebt die Bäuerin den Preis an. Im Supermarkt ist der Preis an der Ware klebend.",
       "archive": "Am Wochenmarkt will ich nur ein paar Kartoffeln. Der Händler hält mir eine Tüte hin und fragt: „Für wie viele Leute kochen Sie oder für wie viele Winter?“"
+    },
+    {
+      "timestamp": "2026-11-21T10:21:10.992Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe: „Ihr Kunde hat angerufen, er wollte das Paket zurück – er hat es selbst bestellt.“",
+      "qwen": "Der Bot liefert das Paket an die falsche Tür. Ich rufe an, der Support erklärt: „Entschuldigung, aber Ihr Nachbar hat Ihnen den Code geschickt.“",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
