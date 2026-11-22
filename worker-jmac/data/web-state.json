@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:31:03.631Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und finde ein leeres Päckchen – der Kundendienst hat es bereits als „nicht zustellbar“ zurückgesendet.",
-      "qwen": "Ihr Paket wurde heute zugestellt, teilt der Kurier. „Genau auf Ihren Kopf“, fügt er lächelnd hinzu.",
-      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
-    },
-    {
       "timestamp": "2026-11-22T04:35:57.344Z",
       "gpt": "Beim Sonntagsbrunch fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich – ich wollte nur den Krümel‑Zähler testen.“",
       "qwen": "Der Papa fragt: „Wie war die Schule?“\nDie Tochter antwortet: „Gut, ich habe den Lehrer geküsst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug sitzt ein Mann und liest, plötzlich ruft die Durchsage: „Nächster Halt: Parkplatz.“ Der Zug hält – weil er im Stau steht.",
       "qwen": "Ich dränge mich in die volle U-Bahn, um pünktlich zu sein.\nMein Kaffeebecher explodiert und ich stehe nun in einem braunen Meer.",
       "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
+    },
+    {
+      "timestamp": "2026-11-22T08:46:08.016Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gefundene Portemonnaie war schon mit meinem Namen beschriftet – das war wohl mein eigenes.",
+      "qwen": "Ich gab den verlorenen Regenschirm beim Fundbüro ab. Sie gaben mir ein Formular für den Verlust des Regenschirms.",
+      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
     }
   ]
 }
