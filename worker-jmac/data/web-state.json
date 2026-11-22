@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:00:58.341Z",
-      "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ziel – ich nenne „Zuhause“. Er lächelt: „Dann fahren Sie besser weiter, wir sind schon da.“",
-      "qwen": "Der Taxifahrer fragt, ob wir direkt die Autobahn nehmen. „Nee“, sagt meine Oma, „ich will erst mal in den Supermarkt.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-22T08:05:57.201Z",
       "gpt": "Ich stehe in der Bibliothek, das Schild „Bitte leise sein“ liest, und flüstere: „Endlich ein Film, der nicht laut ist.“",
       "qwen": "Im Museum las ich „Bitte berühren“, doch die Hinweisschilder waren längst verblasst.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Besucher nach einem Film über die Ausstellung, die Bibliothekarin reicht ihm ein Buch – das ist der Trailer.",
       "qwen": "Wir sind in der Bibliothek, im Kino und im Museum.\nMein Sohn fragt: „Warum schauen wir hier nur zu?“",
       "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
+    },
+    {
+      "timestamp": "2026-11-22T12:05:57.442Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, doch sie meldet nur „Ziel erreicht“, weil ich den Akku leer gelassen habe.",
+      "qwen": "Mein Handy zeigt 100 % Akku an. Jetzt habe ich die Ruhe, um das Ladegerät zu finden.",
+      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
     }
   ]
 }
