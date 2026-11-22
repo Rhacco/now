@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:11:02.152Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, und der Verkäufer meint: „Klar, wir haben jetzt LED‑Glühbirnen – die leuchten, aber kosten nichts.“",
-      "qwen": "Ich frage im Supermarkt nach dem Brot, doch der Verkäufer erklärt mir stundenlang die Philosophie des Getreides.",
-      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
-    },
-    {
       "timestamp": "2026-11-22T11:15:58.397Z",
       "gpt": "Ich rief beim Kundenservice an, weil mein Paket immer wieder „auf dem Weg zum Mond“ stand – dann stellte sich heraus, ich hatte die Raumfahrt‑Abteilung gewählt.",
       "qwen": "Der Kurier fragt: „Haben Sie das Paket erhalten?“ Ich: „Ja, aber der Kunde fehlt noch.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Home‑Office, weil ich dann endlich die Weiterbildung „Kaffeemaschine bedienen“ abgeschlossen habe.“",
       "qwen": "Ich fragte nach Weiterbildungsmöglichkeiten.\n\nDer Chef meinte: „Du lernen heute Kasse abräumen.“",
       "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
+    },
+    {
+      "timestamp": "2026-11-22T15:20:56.860Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann: „Nein, ich habe nur das Geldbeutel‑Formular gefunden.“",
+      "qwen": "Fundbüro: „Hinweis: Fundbüro am Dienstag geschlossen.“\nIch: „Aber das Schild sagt, heute ist Freitag!“",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
