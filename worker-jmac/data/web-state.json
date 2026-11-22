@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:50:57.103Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie den Ausweis dabei?“ Der Mann nickt und überreicht ihr sein leeres Formular.",
-      "qwen": "Ich gab den Fundbericht ab, doch der Beamte sagte: „Das Formular ist aus.“",
-      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
-    },
-    {
       "timestamp": "2026-11-21T21:56:06.117Z",
       "gpt": "Ich rufe beim Kundendienst: „Mein Paket ist im Aufzug stecken geblieben.“ Der Mitarbeiter: „Dann drücken Sie einfach den Knopf für die 2‑kg‑Tür.“",
       "qwen": "Die Paketfrau fragt: „Ist jemand da?“\nIch: „Ja, ich bin’s.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wie fühlt sich die Balance an?“ – „Wie mein Kontostand nach dem Black‑Friday‑Sale.“",
       "qwen": "Ich wollte nur kurz Dehnen, aber jetzt liege ich da und starre auf die Decke.",
       "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
+    },
+    {
+      "timestamp": "2026-11-22T01:56:06.498Z",
+      "gpt": "Beim Ausmisten findet er die Fernbedienung im Kühlschrank. Jetzt hat er endlich Kontrolle über die Temperatur.",
+      "qwen": "Ich fragte die Spedition: „Habt ihr Platz für mein Aquarium?“ Der Chef nickte. „Ja, aber der Fisch zahlt die Lieferspa`",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
