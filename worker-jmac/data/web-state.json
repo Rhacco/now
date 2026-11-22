@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:36:06.416Z",
-      "gpt": "Ich öffne die Wetter-App, weil ich den Regen vermeiden will, und sehe sofort: „Achtung, starker Regen – bitte nimm deinen Regenschirm mit.“ Ich schalte das Handy aus – das war mein Regenschirm.",
-      "qwen": "Ich wollte nur die Uhrzeit prüfen, aber mein Handy hat zwanzig neue Benachrichtigungen. Es bestand auf einem Update, bevor es mich wieder gehen ließ.",
-      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
-    },
-    {
       "timestamp": "2026-11-22T06:41:01.556Z",
       "gpt": "Im Fundbüro fragt die Dame: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, das war das, was ich gesucht habe.“",
       "qwen": "Im Fundbüro fragt man, ob ein Schlüssel verloren ging. Die Antwort: Nein, er ist nur neu registriert.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Ich: „Nein, ich habe nur den Geldschein gefunden.“",
       "qwen": "Verlorenes Handy gefunden, Anmeldeformular ausgefüllt.\nDas Formular war schwerer als das Handy.",
       "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
+    },
+    {
+      "timestamp": "2026-11-22T10:40:57.875Z",
+      "gpt": "Im Zug zur Ostsee fragt der Tourist: „Gibt’s hier WLAN?“ – Der Schaffner lächelt: „Nur, wenn Sie das Fenster öffnen.“",
+      "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnenbrille vom Kopf gerissen. Jetzt schauen wir nur noch traurig auf die See.",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
