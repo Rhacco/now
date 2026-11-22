@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:11:01.651Z",
-      "gpt": "Ich kaufe im Supermarkt Bio‑Eier, dann auf dem Wochenmarkt: „Frische Eier, bitte.“ Verkäuferin: „Gern, die liegen noch im Kühlregal.“",
-      "qwen": "Beim Wochenmarkt frag ich: „Ist das noch frisch?“ Der Bauer antwortet: „Ja, der Bauer hat ihn gestern selbst geschlachtet.“",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-22T02:16:06.970Z",
       "gpt": "In der Bibliothek flüstert ein Besucher: „Leise, ich will das Buch nicht stören.“ Im Kino lacht er, weil das Buch Popcorn knuspert.",
       "qwen": "Im Museum stand: „Bitte nicht berühren“. Ich dachte, das gilt für die Bilder.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du das Popcorn nicht knisterst.“",
       "qwen": "In der Bibliothek blieb ich stehen, weil jemand laut lachte. Es war der Mann, der gerade den Film „Schweigen ist Gold“ sah.",
       "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
+    },
+    {
+      "timestamp": "2026-11-22T06:26:03.932Z",
+      "gpt": "Im Taxi ruft der Fahrer: „Wir haben Verspätung, die Straße ist gesperrt.“ Der Fahrgast: „Kein Problem, ich sitze im Zug.“",
+      "qwen": "Ich lehne mich um und sage: „Taxi, halten Sie bitte.“\nDer Busfahrer seufzt: „Wir haben hier keine Taxis.“",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
