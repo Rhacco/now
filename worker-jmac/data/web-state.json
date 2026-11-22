@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:01:04.082Z",
-      "gpt": "Beim Abendessen fragt Mama: „Wer hat den Keks geklaut?“ Papa grinst und sagt: „Ich, weil er im Kühlschrank war.“",
-      "qwen": "Mama fragt: „Hast du das Haus sauber gemacht?“\nIch: „Ja, es ist jetzt komplett leer.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-22T09:05:57.610Z",
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und nehme den Regenschirm. Beim nächsten Mal frage ich die App, ob sie das Wetter auch für meine Laune vorhersagen kann.",
       "qwen": "Ich suche nach einer App, die mir beim Abschalten hilft. Die einzige, die das kann, heißt „Handy aus“.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten zeigte sie nur: „Bitte erst den Akku aufladen.“",
       "qwen": "Ich schiele zum Handy, um die Uhrzeit zu prüfen. Es zeigt an: „Du schaust gerade zu oft auf dein Handy.“",
       "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
+    },
+    {
+      "timestamp": "2026-11-22T13:10:59.716Z",
+      "gpt": "Im Café bestellt er „ein Wasser, bitte“, doch die Kellnerin bringt ihm einen Eimer – er wollte ja nur etwas zum Kochen.",
+      "qwen": "Im Café bestellte ich einen Kaffee. „Schwarzen?“, fragte die Bedienung. „Ja, ich muss arbeiten.“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
