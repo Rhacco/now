@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:15:56.654Z",
-      "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Angestellte fragte: „Haben Sie das Formular auch gefunden?“",
-      "qwen": "Fundbüro: „Ohne Eigentumsnachweis können wir nichts ausgeben.“ Ich: „Aber die Katze ist ja eigentümlich.\"",
-      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
-    },
-    {
       "timestamp": "2026-11-21T22:21:05.085Z",
       "gpt": "Mama sagt: „Räum dein Zimmer auf!“ – Tim legt den Staubsauger an, schaltet das Licht aus und schläft weiter.",
       "qwen": "Ich fragte meine Frau, ob sie mein Egoismus-Foto sehen will.\nSie antwortete: „Darauf bin ich nicht eifersüchtig.“",
@@ -300,6 +294,12 @@
       "gpt": "In der Bibliothek flüstert ein Besucher: „Leise, ich will das Buch nicht stören.“ Im Kino lacht er, weil das Buch Popcorn knuspert.",
       "qwen": "Im Museum stand: „Bitte nicht berühren“. Ich dachte, das gilt für die Bilder.",
       "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
+    },
+    {
+      "timestamp": "2026-11-22T02:20:57.111Z",
+      "gpt": "Ich packte die leere Kiste ein, weil ich dachte, sie sei voll – beim Ausmisten stellte sich heraus, dass ich sie schon seit drei Monaten nicht mehr geöffnet hatte.",
+      "qwen": "Ich habe alles ausgemistet, was ich nicht brauche. Jetzt fehlt mir der Schlüssel zum Koffer.",
+      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
     }
   ]
 }
