@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:05:57.610Z",
-      "gpt": "Ich öffne die Wetter‑App, sehe Regen und nehme den Regenschirm. Beim nächsten Mal frage ich die App, ob sie das Wetter auch für meine Laune vorhersagen kann.",
-      "qwen": "Ich suche nach einer App, die mir beim Abschalten hilft. Die einzige, die das kann, heißt „Handy aus“.",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-22T09:10:59.368Z",
       "gpt": "Ich wollte beim Joggen meine Schrittzahl prüfen, aber die Fitness‑App meldete: „Kein Signal – bitte gehen Sie zurück ins Wohnzimmer.“",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt weckt mich mein Handy um sechs, um mir vorzuschlagen, noch schärfer einzuschlafen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er „ein Wasser, bitte“, doch die Kellnerin bringt ihm einen Eimer – er wollte ja nur etwas zum Kochen.",
       "qwen": "Im Café bestellte ich einen Kaffee. „Schwarzen?“, fragte die Bedienung. „Ja, ich muss arbeiten.“",
       "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
+    },
+    {
+      "timestamp": "2026-11-22T13:16:06.623Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie misst mich, sagt: „Für Sie passt nur die Umkleide.“",
+      "qwen": "Der Verkäufer riet, das Hemd vorher zu waschen. Ich fragte: „Ist das schon im Preis enthalten?“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
