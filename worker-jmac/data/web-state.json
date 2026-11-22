@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:51:04.947Z",
-      "gpt": "In der Bibliothek fragt er nach dem neuesten Film, die Kassiererin reicht ihm einen Band; im Museum schaut er sich die Leinwand an – alles still.",
-      "qwen": "Museum, Kino und Bibliothek: Der Mann fragt, wo die Kasse. Der Mann antwortet: „Hier gibt’s keine.“ Der Mann kauft ein Ticket.",
-      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
-    },
-    {
       "timestamp": "2026-11-21T23:55:56.954Z",
       "gpt": "Mutter ruft: „Wer hat den Kuchen gegessen?“ Der Hund bellt: „Ich habe nur den Staubsauger gefressen.“",
       "qwen": "Ich fragte meine Mutter, ob ich den Müll rausbringen soll. Sie nickte und sagte: „Klar, und denk dran, die Tür zuzumachen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt der Besucher: „Warum steht hier ein Buch über Stille?“ Der Bibliothekar im Kino flüstert: „Weil das Popcorn leise ist.“",
       "qwen": "Ich fragte im Kino nach dem Museum. Der Kassenmitarbeiter zeigte auf die Ausgänge und meinte: „Bibliothek links, Kino geradeaus, Museum ist geschlossen.“",
       "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
+    },
+    {
+      "timestamp": "2026-11-22T03:55:58.427Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast antwortet: „Stark, ich will ihn gleich mit dem Kochlöffel rühren.“",
+      "qwen": "Ich fragte im Café: „Gibt es vegetarisch?“ „Nein, aber der Kellner ist es.“",
+      "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
     }
   ]
 }
