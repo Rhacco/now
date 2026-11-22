@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:40:58.743Z",
-      "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil ich meine Fahrkarte vergessen hatte – die Anzeige zeigte sofort „Ticket gefunden“.",
-      "qwen": "Ich sage „Bus“, er fährt aber.",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-22T07:46:02.645Z",
       "gpt": "Im Zug vergaß ich mein Ticket, beim Bus vergaß ich den Fahrschein, im Taxi vergaß ich das Geld – im Auto vergaß ich, dass ich keinen Fahrschein brauche.",
       "qwen": "Ich dränge mich im überfüllten Bus nach vorn.\n„Entschuldigung, hier ist noch Platz“, sage ich zum Mann, der neben mir steht.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den Keks geklaut?“ Der Hund bellt: „Ich wollte nur das Rezept teilen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Klar, du zahlst ja die Miete.“",
       "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
+    },
+    {
+      "timestamp": "2026-11-22T11:46:07.816Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das letzte Quartal?“ – Die Praktikantin meldet: „Ich habe das Quartal, Chef, aber keine Zahlen.“",
+      "qwen": "„Dann sind wir uns einig?“, fragte der Chef. Ich nickte, um endlich rauszukommen.",
+      "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
     }
   ]
 }
