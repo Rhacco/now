@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:05:57.442Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, doch sie meldet nur „Ziel erreicht“, weil ich den Akku leer gelassen habe.",
-      "qwen": "Mein Handy zeigt 100 % Akku an. Jetzt habe ich die Ruhe, um das Ladegerät zu finden.",
-      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
-    },
-    {
       "timestamp": "2026-11-22T12:10:57.281Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo ich meinen verlorenen Stift abgeben soll – er liegt schon im Antragsfach.",
       "qwen": "Ich fragte im Fundbüro nach der verlegten Brille.\nDie Dame schob mir ein 42-seitiges Formular zur Antragstellung zu.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef, wer das Projekt endlich abschließen will. Ich melde mich – und bekomme sofort den Auftrag, das Protokoll zu schreiben.",
       "qwen": "Der Chef fragt, wo ich heute bleibe, obwohl ich seit Oktober im Homeoffice bin.",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-22T16:15:58.836Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine ausgeräumt?“ – Ich wollte endlich mal sehen, ob sie auch ohne meine Socken läuft.",
+      "qwen": "Mama fragt: „Wer hat das Erdbeerbrot gegessen?“ Die Stille im Haus ist gnadenlos.",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
