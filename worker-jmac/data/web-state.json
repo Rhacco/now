@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:30:58.247Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann schüttelt den Kopf: „Nein, ich habe nur den Geldschein gefunden.“",
-      "qwen": "Beim Fundbüro: „Dürfte das Formular bitte ausfüllen?“ Ich zücke den Stift. „Nein, das Formular ist das Fundstück.“",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-22T06:36:06.416Z",
       "gpt": "Ich öffne die Wetter-App, weil ich den Regen vermeiden will, und sehe sofort: „Achtung, starker Regen – bitte nimm deinen Regenschirm mit.“ Ich schalte das Handy aus – das war mein Regenschirm.",
       "qwen": "Ich wollte nur die Uhrzeit prüfen, aber mein Handy hat zwanzig neue Benachrichtigungen. Es bestand auf einem Update, bevor es mich wieder gehen ließ.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam: „Bitte nicht schreien, wir sind schon im Tunnel.“",
       "qwen": "Ich bin mit Bahn, Bus, Taxi und Auto unterwegs. Die Strecke dauert genau eine Minute.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-22T10:36:06.938Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Ich: „Nein, ich habe nur den Geldschein gefunden.“",
+      "qwen": "Verlorenes Handy gefunden, Anmeldeformular ausgefüllt.\nDas Formular war schwerer als das Handy.",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
