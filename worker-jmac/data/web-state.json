@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:51:04.534Z",
-      "gpt": "Im Museum fragt der Besucher: „Warum steht hier ein Buch über Stille?“ Der Bibliothekar im Kino flüstert: „Weil das Popcorn leise ist.“",
-      "qwen": "Ich fragte im Kino nach dem Museum. Der Kassenmitarbeiter zeigte auf die Ausgänge und meinte: „Bibliothek links, Kino geradeaus, Museum ist geschlossen.“",
-      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
-    },
-    {
       "timestamp": "2026-11-22T03:55:58.427Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast antwortet: „Stark, ich will ihn gleich mit dem Kochlöffel rühren.“",
       "qwen": "Ich fragte im Café: „Gibt es vegetarisch?“ „Nein, aber der Kellner ist es.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ziel – ich nenne „Zuhause“. Er lächelt: „Dann fahren Sie besser weiter, wir sind schon da.“",
       "qwen": "Der Taxifahrer fragt, ob wir direkt die Autobahn nehmen. „Nee“, sagt meine Oma, „ich will erst mal in den Supermarkt.“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-22T08:05:57.201Z",
+      "gpt": "Ich stehe in der Bibliothek, das Schild „Bitte leise sein“ liest, und flüstere: „Endlich ein Film, der nicht laut ist.“",
+      "qwen": "Im Museum las ich „Bitte berühren“, doch die Hinweisschilder waren längst verblasst.",
+      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
     }
   ]
 }
