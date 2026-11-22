@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:21:03.706Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die leere PowerPoint – das ist mein Beitrag zur „Klarheit“.",
-      "qwen": "Chef fragt: „Und wie geht’s der Frau Müller?“ Ich antworte: „Sie ist seit gestern im Urlaub.“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-22T00:25:58.407Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Ich: „Nein, ich habe schon genug Probleme, die ich nicht tragen kann.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Karton. Kundendienst ruft: „Herzlichen Glückwunsch, Sie haben ein Upgrade auf Luftpost erhalten!“",
       "qwen": "Die Zustellerin fragt lächelnd: „Und wie geht es Ihnen heute?“\nIch schweige, während sie das Paket langsam zerdrückt.",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-22T04:25:57.698Z",
+      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht.“",
+      "qwen": "Ich stellte das Auto ab, stieg in den Bus, dann in die Bahn und ins Taxi. Der Taxifahrer fragte: „Zu Hause vergessen?“",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
