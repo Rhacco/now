@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:56:04.247Z",
-      "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also nehme ich den Regenschirm – und stolpere über den Stromschlag‑Alarm, weil ich vergessen habe, das Handy zu laden.",
-      "qwen": "Ich sprach laut „Hey Siri\", um die Heizung zu starten.\nDie App öffnete stattdessen den Online-Shop für Winterreifen.",
-      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
-    },
-    {
       "timestamp": "2026-11-22T06:01:06.556Z",
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Sitzreihe mit Meerblick?“ Der Schaffner lächelt: „Nein, das ist die Reihe mit WLAN.“",
       "qwen": "Ich buche ein Zelt für den Campingurlaub. Der Verkäufer fragt: „Brauchen Sie auch Stöcke?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es zeigt 1999 an, obwohl ich erst 2024 eingezogen bin.",
       "qwen": "„Das ist doch nur ein altes Fotoalbum“, sagte ich. „Doch, das ist mein ganzer Hausrat.“",
       "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
+    },
+    {
+      "timestamp": "2026-11-22T10:01:05.299Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie den Kaffee stark oder mild?“ Ich antworte: „Stark, ich habe heute ein Date mit meinem Herd.“",
+      "qwen": "Ich fragte im Café nach dem Kaffeebecher.\n„Den können Sie behalten“, sagte die Bedienung.",
+      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
     }
   ]
 }
