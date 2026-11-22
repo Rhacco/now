@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:26:04.105Z",
-      "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam sofort: „Bitte halten Sie das Handy vom Fahrplan fern.“",
-      "qwen": "Der Taxifahrer fragt: „Zahlen Sie bar oder mit Karte?“ Ich antworte: „Mit Karte, aber bitte nicht auf die harte Tour.“",
-      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
-    },
-    {
       "timestamp": "2026-11-21T21:30:56.000Z",
       "gpt": "Ich rufe beim Kundenservice: „Mein Paket ist verloren.“ Der Mitarbeiter fragt: „Haben Sie schon nachgeschaut, ob es nicht im Kühlschrank liegt?“",
       "qwen": "Der Kurier rief an: „Ihr Paket ist beschädigt.“\nIch fragte: „Wie denn?“\nEr: „Mit Stempel und Klebeband.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienabend fragt die Mutter: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich nur, weil ich die Diät meiner Schwester verteidige.“",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt. Sie meinte: „Ich hab dich nur geheiratet, weil du der Einzige warst, der nicht vor mir weggerannt ist.“",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-22T01:31:00.305Z",
+      "gpt": "Ich sortiere beim Umzug die alten Kissenbezüge aus, finde einen Geldschein und frage mich, warum ich das ganze Haus ausmistet, nicht das Portemonnaie.",
+      "qwen": "Ich habe den alten Toaster ausgemistet.\nMeine Frau fand ihn heute früh auf dem Müllberg.",
+      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
     }
   ]
 }
