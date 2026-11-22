@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:45:59.274Z",
-      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Sohn grinst: „Ich, ich wollte nur den Tisch sauber halten.“",
-      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen aufgegessen?“\nIch: „Ich.“ Papa: „Dann bist du jetzt das letzte Stück.“",
-      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
-    },
-    {
       "timestamp": "2026-11-22T10:51:02.158Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Kuchen?“ Der Gast antwortet: „Beides, ich will einfach nur einen Grund, nicht zu kochen.“",
       "qwen": "Der Kellner bringt den Salat.\nIch bitte: „Noch mehr Dressing, bitte.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wie steht es mit den Deadlines?“ – Der Praktikant zeigt auf den Kalender: „Hier steht ‚Deadline‘, aber das ist nur das Wort für das Mittagessen.“",
       "qwen": "Der Chef fragte, warum ich heute schon gehe. Ich erklärte, dass ich um acht Uhr Besprechung habe.",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-22T14:56:07.429Z",
+      "gpt": "Ich packte den Staubsauger ein, weil ich dachte, er braucht eine Reise – jetzt hat er nur noch Staub im Koffer.",
+      "qwen": "Wir haben beim Umzug drei Kisten mit unleserlichem Klebeband gefunden. Ich frage mich nur, wer das von uns ist.",
+      "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
     }
   ]
 }
