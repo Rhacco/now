@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:21:03.342Z",
-      "gpt": "Ich sortiere beim Umzug alte Socken aus und finde ein Geldschein – dann merke ich, dass ich die Socken eigentlich nur für das Geld wasche.",
-      "qwen": "Der Umzugskarton ist voll, aber die Katze passt nicht mehr rein. Also bleibt sie jetzt für immer an der Stelle.",
-      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
-    },
-    {
       "timestamp": "2026-11-22T05:25:58.506Z",
       "gpt": "Im Zug steht ein Schild: „Bitte nicht telefonieren.“ Ich rufe an – die Durchsage fragt, ob ich das schon gehört habe.",
       "qwen": "Ich bremse im Stau scharf ab, um die Bahn nicht zu verpassen.\nDer Busfahrer schreit: „Das ist doch mein Wagen!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs, weil ich gerade erst die Bewerbungs‑PowerPoint erstelle.“",
       "qwen": "Nach dem Vorstellungsgespräch schickte ich den fiktiven Lebenslauf. Der Recruiter antwortete: „Wir laden Sie ein, um die KI-Lücke persönlich zu schließen.“",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-22T09:25:58.178Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich jetzt endlich meine Weiterbildung bewerbe.“",
+      "qwen": "Ich habe die Weiterbildung abgeschlossen und im Vorstellungsgespräch gefragt: „Haben Sie jetzt mehr Zeit für mich?“",
+      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
     }
   ]
 }
