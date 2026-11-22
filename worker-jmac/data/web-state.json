@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:40:58.703Z",
-      "gpt": "Im Zug sitzt ein Mann und liest, plötzlich ruft die Durchsage: „Nächster Halt: Parkplatz.“ Der Zug hält – weil er im Stau steht.",
-      "qwen": "Ich dränge mich in die volle U-Bahn, um pünktlich zu sein.\nMein Kaffeebecher explodiert und ich stehe nun in einem braunen Meer.",
-      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
-    },
-    {
       "timestamp": "2026-11-22T08:46:08.016Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gefundene Portemonnaie war schon mit meinem Namen beschriftet – das war wohl mein eigenes.",
       "qwen": "Ich gab den verlorenen Regenschirm beim Fundbüro ab. Sie gaben mir ein Formular für den Verlust des Regenschirms.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Ich: „Ich nicht, die Katze hat es geklaut – sie hat ja schließlich einen eigenen Napf.“",
       "qwen": "Ich fahre mit der Familie in einen Streikwagen.\nDa brüllt der Opa: „Halt! Hier wohnt meine Ex!\"",
       "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
+    },
+    {
+      "timestamp": "2026-11-22T12:45:57.332Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt: „Wir sind fast fertig.“ – Der Praktikant zeigt die leere PowerPoint und sagt: „Hier ist unser Konzept.“",
+      "qwen": "Der Chef fragt im Meeting nach meiner Meinung, und ich sage nein. Alle starren mich an, weil ich die Frage überhört habe.",
+      "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
     }
   ]
 }
