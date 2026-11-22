@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:50:57.079Z",
-      "gpt": "Mama fragt: „Warum hast du die ganze Pizza gegessen?“ – Ich: „Weil ich das Familienbudget nicht teilen wollte.“",
-      "qwen": "Meine Eltern wohnen über uns und das Baby schreit. Ich schlage die Buchseiten auf.",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-21T20:56:04.532Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Praktikantin meldet sich und sagt: „Ich habe das Wort ‚abgeschlossen‘ gerade erst im Wörterbuch gefunden.“",
       "qwen": "Ich habe die Besprechung gestrichen, weil keiner eine Ahnung hatte. So sparen wir alle Zeit und Nerven.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient: „Wie ein Rezept – noch nicht eingelöst.“",
       "qwen": "Ich warte in der Praxis und frage die Apothekerin, wo der Arzt sei. Sie sagt: „Der ist gerade im Wartezimmer.“",
       "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
+    },
+    {
+      "timestamp": "2026-11-22T00:56:04.261Z",
+      "gpt": "Ich klopfe an den Nachbarn, weil die Heizung im Flur ausfällt, und er gibt mir ein Handtuch – er dachte, ich will das Wasser abtrocknen.",
+      "qwen": "Der Nachbohrer hämmert seit drei Stunden an meinem Regal. Ich schreie „Hilfe“, er antwortet: „Muss noch schnell vor der Arbeit fertig sein.“",
+      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
     }
   ]
 }
