@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:21:03.477Z",
-      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie viele Wiederholungen wollen Sie heute?“ Ich antworte: „Nur eine, ich entspanne mich gleich danach.“",
-      "qwen": "Ich mache entspanntes Dehnen. Der Physiotherapeut bricht mir die Hand.",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-22T01:25:58.379Z",
       "gpt": "Beim Familienabend fragt die Mutter: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich nur, weil ich die Diät meiner Schwester verteidige.“",
       "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt. Sie meinte: „Ich hab dich nur geheiratet, weil du der Einzige warst, der nicht vor mir weggerannt ist.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Schild: „Bitte nicht telefonieren.“ Ich rufe an – die Durchsage fragt, ob ich das schon gehört habe.",
       "qwen": "Ich bremse im Stau scharf ab, um die Bahn nicht zu verpassen.\nDer Busfahrer schreit: „Das ist doch mein Wagen!“",
       "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
+    },
+    {
+      "timestamp": "2026-11-22T05:31:06.380Z",
+      "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Papa antwortet: „Ich, weil du immer sagst, ich soll mir nichts wegnehmen.“",
+      "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie schaut mich an und sagt: „Ja, aber du bist nicht mein Favorit.“",
+      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
     }
   ]
 }
