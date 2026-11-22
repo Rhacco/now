@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:01:04.976Z",
-      "gpt": "Im Museum fragt der Besucher nach einem Film über die Ausstellung, die Bibliothekarin reicht ihm ein Buch – das ist der Trailer.",
-      "qwen": "Wir sind in der Bibliothek, im Kino und im Museum.\nMein Sohn fragt: „Warum schauen wir hier nur zu?“",
-      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
-    },
-    {
       "timestamp": "2026-11-22T12:05:57.442Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch sie meldet nur „Ziel erreicht“, weil ich den Akku leer gelassen habe.",
       "qwen": "Mein Handy zeigt 100 % Akku an. Jetzt habe ich die Ruhe, um das Ladegerät zu finden.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich Ihre E‑Mails verstehen kann.“",
       "qwen": "Nur weil ich mich für den Kurs „Kommunikation“ angemeldet habe, heißt das noch lange nicht, dass ich jetzt auch zuhören kann.",
       "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
+    },
+    {
+      "timestamp": "2026-11-22T16:11:05.798Z",
+      "gpt": "Im Meeting fragt der Chef, wer das Projekt endlich abschließen will. Ich melde mich – und bekomme sofort den Auftrag, das Protokoll zu schreiben.",
+      "qwen": "Der Chef fragt, wo ich heute bleibe, obwohl ich seit Oktober im Homeoffice bin.",
+      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
     }
   ]
 }
