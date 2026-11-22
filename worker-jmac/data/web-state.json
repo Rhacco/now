@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:36:05.363Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Der Mann nickt: „Ja, aber ich habe den Stift im Fund.“",
-      "qwen": "Im Fundbüro flüsterte ich: „Ich habe den Schirm verloren.“ Die Dame zuckte nur mit den Schultern und murmelte: „Dafür brauchen Sie Formular 42-B, Form 7 und eine Meldebescheinigung.“",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-21T20:41:02.863Z",
       "gpt": "Ich warte im Praxis-Wartezimmer, die Ärztin ruft: „Bitte kommen Sie sofort zur Apotheke, dort gibt’s endlich ein Rezept, das nicht abläuft.“",
       "qwen": "Ich sage dem Arzt: „Herr Doktor, ich bin mir selbst!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach regionalen Äpfeln – die Verkäuferin zeigt auf den Bio‑Bereich. Auf dem Wochenmarkt kostet derselbe Apfel doppelt, weil er „frisch“ ist.",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis, beim Supermarkt gleich nach dem Rabatt.",
       "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
+    },
+    {
+      "timestamp": "2026-11-22T00:41:05.940Z",
+      "gpt": "Im Zug fragt die Stewardess, ob ich ein Getränk möchte. Ich antworte: „Nur wenn es nicht wieder das Wasser aus dem Bordrestaurant ist.“",
+      "qwen": "Im Urlaub fragte ich laut nach dem Zimmer, das Fenster war aber nur ein Gemälde. Der Zimmermädchen sagte: „Hier gibt es kein Fenster, nur Kunst.“",
+      "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
     }
   ]
 }
