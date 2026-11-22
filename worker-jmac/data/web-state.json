@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:05:58.724Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Medikament, das noch nicht abgegeben wurde.“",
-      "qwen": "Ich frage die Ärztin: „Wird sich das von selbst geben?“ Sie nickt. Ich warte zwei Wochen, dann geht es von selbst.",
-      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
-    },
-    {
       "timestamp": "2026-11-22T00:11:06.983Z",
       "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie lieber die schnellste Route?“ Ich nicke, er fährt sofort in die nächste Haltestelle.",
       "qwen": "Der Taxifahrer fragte: „Steigen Sie gleich ein?“ Ich nickte und blieb stehen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin fragt: „Möchten Sie dazu einen Löffel?“ Er antwortet: „Nur, wenn er mit Milch kommt.“",
       "qwen": "Im Restaurant: „Ist das Schnitzel aus Putenbrust?“ „Nein, aus Rinderbrust.“ „Aber der Preis…“",
       "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
+    },
+    {
+      "timestamp": "2026-11-22T04:11:05.679Z",
+      "gpt": "Ich mache Yoga im Park, als plötzlich ein Hund meine Matte klaut – jetzt strecke ich mich nach vorne, um ihn zu fangen.",
+      "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halte. „Nein“, sagte er, „sonst klappt die Hantel ab.“",
+      "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
     }
   ]
 }
