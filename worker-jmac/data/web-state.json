@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:56:04.718Z",
-      "gpt": "Im Café bestellt ich einen Espresso, der Kellner schenkt mir ein Kochbuch. „Für den perfekten Aufguss“, sagt er, „braucht man nur ein bisschen Hitze.“",
-      "qwen": "Ich fragte im Café: „Haben Sie auch vegetarisch?“\nDie Bedienung meinte: „Nur wenn der Fisch tot ist.“",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-22T03:01:05.184Z",
       "gpt": "Ich packe meine Socken in Kisten, weil ich beim Ausmisten endlich mal etwas Ordnung in meinem Leben haben will – dann finde ich die Fernbedienung.",
       "qwen": "Die alte Stehlampe geht zu Bruch. „Glück gehabt, die war eh kaputt“, nickt meine Frau.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Anprobieren nicht nass werden.“",
       "qwen": "Ich fragte nach einer Beratung für den Wäschetrockner. Der Verkäufer streifte sich einen Handwagen über und fragte: „Soll ich Ihnen die Wäsche auch gleich aufhängen?“",
       "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
+    },
+    {
+      "timestamp": "2026-11-22T07:11:03.600Z",
+      "gpt": "Ich mache Yoga im Park, um zu entspannen – plötzlich ruft ein Hund: „Endlich jemand, der meine Dehnübungen nachmacht!“",
+      "qwen": "Beim Yoga sage ich: „Einatmen, ausatmen, loslassen.“\nMein Knie knallt laut gegen den Boden.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
