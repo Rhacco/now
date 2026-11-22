@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:00:58.604Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das das Ersatzteil für mein defektes Telefon?“ Er lächelt: „Nein, das ist meine Gehaltserhöhung.“",
-      "qwen": "Der Kurier winkt ab: „Paket fehlt.“ Ich erwidere: „Dann liefern Sie das Fehlen bitte persönlich aus.“",
-      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
-    },
-    {
       "timestamp": "2026-11-22T00:05:58.724Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Medikament, das noch nicht abgegeben wurde.“",
       "qwen": "Ich frage die Ärztin: „Wird sich das von selbst geben?“ Sie nickt. Ich warte zwei Wochen, dann geht es von selbst.",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe beim Supermarkt ein Pfund Äpfel, doch am Wochenmarkt kostet das Gleiche nur ein Stück. Der Kassierer sagt: „Wir verkaufen jetzt nur noch Luft.“",
       "qwen": "Ich fragte den Wochenhändler: „Gibt es hier auch Parfüm?“\nEr nickte: „Ja, die Tomaten riechen auch gut.“",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-22T04:06:06.141Z",
+      "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin fragt: „Möchten Sie dazu einen Löffel?“ Er antwortet: „Nur, wenn er mit Milch kommt.“",
+      "qwen": "Im Restaurant: „Ist das Schnitzel aus Putenbrust?“ „Nein, aus Rinderbrust.“ „Aber der Preis…“",
+      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
     }
   ]
 }
