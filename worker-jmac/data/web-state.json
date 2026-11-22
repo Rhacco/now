@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:06:06.141Z",
-      "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin fragt: „Möchten Sie dazu einen Löffel?“ Er antwortet: „Nur, wenn er mit Milch kommt.“",
-      "qwen": "Im Restaurant: „Ist das Schnitzel aus Putenbrust?“ „Nein, aus Rinderbrust.“ „Aber der Preis…“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-22T04:11:05.679Z",
       "gpt": "Ich mache Yoga im Park, als plötzlich ein Hund meine Matte klaut – jetzt strecke ich mich nach vorne, um ihn zu fangen.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halte. „Nein“, sagte er, „sonst klappt die Hantel ab.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe meine Klamotten aus, finde ein altes T-Shirt und frage mich, warum ich es noch nie getragen habe – dann sehe ich das Preisschild: „Nur noch 0 €.“",
       "qwen": "Ich habe beim Ausmisten nicht nur die alten Socken weggeschmissen, sondern auch die Begeisterung für Räumaktionen.",
       "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
+    },
+    {
+      "timestamp": "2026-11-22T08:21:04.539Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze dehnen?“ – Der Kater legt sich zufrieden hin und schnurrt: „Ich schon.“",
+      "qwen": "Nach zwei Stunden Yoga ruft die Frau erleichtert: „Endlich mal Zeit, den Rasen zu mähen!“",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
