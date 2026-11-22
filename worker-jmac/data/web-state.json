@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:06:03.333Z",
-      "gpt": "Ich rief den Kundendienst, weil mein Paket nie ankam – sie sagten, es sei bereits im nächsten Leben zugestellt worden.",
-      "qwen": "„Ihr Paket wurde zugestellt!“ rief der Botenfahrer. „Von Ihnen auf sich selbst.“",
-      "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
-    },
-    {
       "timestamp": "2026-11-22T01:11:07.313Z",
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – er meinte, es sei schon im Urlaub, weil ich es nicht abgeholt habe.",
       "qwen": "Man muss den Absender angeben. Der Paketbote hat sich schon beschwert.",
@@ -300,6 +294,12 @@
       "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst, wenn ich nicht zu Hause bin?“ Der Zusteller: „Ich wollte Ihnen nur zeigen, wie schnell Sie es selbst holen können.“",
       "qwen": "Der Paketbote fragt, ob ich ein Ersatzteil benötige. Ich verneine, woraufhin er kurz nickt und die Tür zu seiner Kiste zusperrt.",
       "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
+    },
+    {
+      "timestamp": "2026-11-22T05:16:05.597Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann zeigt ihr sein Handy: „Ich habe das Formular per App verloren.“",
+      "qwen": "Beim Fundbüro angekommen, gab ich die Brieftasche zurück. Ich musste erst das Formular „Ich habe das meiste davon verloren“ abhaken.",
+      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
     }
   ]
 }
