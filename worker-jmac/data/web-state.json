@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:06:05.572Z",
-      "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Ich antworte: „Nein, ich sitze im Bus.“",
-      "qwen": "Ich winkte dem Taxi winkend und fuhr ihm direkt vor die Radstange.",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-22T11:11:02.152Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, und der Verkäufer meint: „Klar, wir haben jetzt LED‑Glühbirnen – die leuchten, aber kosten nichts.“",
       "qwen": "Ich frage im Supermarkt nach dem Brot, doch der Verkäufer erklärt mir stundenlang die Philosophie des Getreides.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte im Museum ein Buch ausleihen, aber der Bibliothekar meinte, das sei ein Film, und das Kino schickte mich zurück.",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte streng auf die Wand: „Hier nur staunen, nicht gehen.“",
       "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
+    },
+    {
+      "timestamp": "2026-11-22T15:16:05.036Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Home‑Office, weil ich dann endlich die Weiterbildung „Kaffeemaschine bedienen“ abgeschlossen habe.“",
+      "qwen": "Ich fragte nach Weiterbildungsmöglichkeiten.\n\nDer Chef meinte: „Du lernen heute Kasse abräumen.“",
+      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
     }
   ]
 }
