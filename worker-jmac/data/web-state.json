@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:26:04.712Z",
-      "gpt": "Im Supermarkt fragt ich nach Bio‑Äpfeln, die Verkäuferin meint, sie kämen vom Wochenmarkt. Ich antworte: „Dann bitte gleich die Kasse, ich zahl bar.“",
-      "qwen": "Beim Wochenmarkt frage ich nach dem Preis für die Tomaten. Die Bäuerin zückt die Waage und fragt: „Sollen wir die halbe Ernte wiegen?“",
-      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
-    },
-    {
       "timestamp": "2026-11-22T11:30:58.831Z",
       "gpt": "Mutter fragt: „Warum hast du die Waschmaschine angerufen?“  \nIch: „Sie hat mich gefragt, ob sie noch einen Freund braucht.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Die Katze.“\nSie: „Wo ist sie?“\nIch: „Im Gefrierfach.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage kam: „Bitte bleiben Sie sitzen, wir suchen das Signal.“",
       "qwen": "Ich fahre Bahn, Bus, Taxi und Auto. Der Kofferraum ist voll.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-22T15:36:07.163Z",
+      "gpt": "Mama fragt: „Warum hast du die Socke im Kühlschrank?“  \nIch: „Sie wollte endlich mal kaltgestellt werden.“",
+      "qwen": "„Vater, warum bist du so laut?“\n„Weil dein Großvater noch im Ohr liegt.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
