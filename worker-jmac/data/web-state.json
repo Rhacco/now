@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:16:06.350Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt meine Katze ein und behauptet, das sei ihr neuer Lieblingsplatz.",
-      "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mir auf die Zehen getreten.",
-      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
-    },
-    {
       "timestamp": "2026-11-22T10:21:04.309Z",
       "gpt": "Im Meeting fragt der Chef: „Wie stehen wir zum Projekt?“ – Ich: „Wie bei meinem Schreibtisch: Chaos, aber immerhin liegt alles da.“",
       "qwen": "Ich fragte im Meeting, ob man aufhören kann. Alle nicken, nur der Chef schüttelt den Kopf.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
       "qwen": "Der Verkäufer drückt mir das Handy in die Hand: „Hier, testen Sie ruhig, hiermit fliegt’s!“",
       "archive": "Beim Schneider heißt es, die Hose sitze perfekt. Ich frage, ob das auch gilt, wenn ich mich bewege."
+    },
+    {
+      "timestamp": "2026-11-22T14:26:03.062Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Geldbeutels ausgefüllt?“ Ich antworte: „Nein, das habe ich gleich im Portemonnaie gefunden.“",
+      "qwen": "Ich habe den Fundbericht ausgefüllt. Der Beamte sagte: „Das Formular benötigen Sie für die Verlustanzeige.“",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
