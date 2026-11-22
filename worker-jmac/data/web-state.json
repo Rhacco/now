@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:20:56.965Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Karton. Kundendienst ruft: „Herzlichen Glückwunsch, Sie haben ein Upgrade auf Luftpost erhalten!“",
-      "qwen": "Die Zustellerin fragt lächelnd: „Und wie geht es Ihnen heute?“\nIch schweige, während sie das Paket langsam zerdrückt.",
-      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
-    },
-    {
       "timestamp": "2026-11-22T04:25:57.698Z",
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht.“",
       "qwen": "Ich stellte das Auto ab, stieg in den Bus, dann in die Bahn und ins Taxi. Der Taxifahrer fragte: „Zu Hause vergessen?“",
@@ -300,6 +294,12 @@
       "gpt": "Der Lieferant klopft, ich frage nach dem Paket, er zeigt auf den leeren Karton – „Ihr Paket ist schon da, nur leider schon auspackt.“",
       "qwen": "Der Bote fragt: „Ist jemand da?“ Ich rufe: „Ja, aber nur der Hund!“ Er: „Der hat kein Paket.“",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-22T08:35:58.113Z",
+      "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen; sie meinte, sie wolle ihn nur kurz testen. Jetzt steht er im Wohnzimmer und frisst meine Zimmerpflanzen.",
+      "qwen": "Der Nachbar trommelt die Nacht durch. Ich klopfe an und rufe: „Haben Sie ein Mikro? Das tut so weh.\"",
+      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
     }
   ]
 }
