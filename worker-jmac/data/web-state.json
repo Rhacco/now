@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:31:05.764Z",
-      "gpt": "Im Café bestellt er ein „leichtes“ Mittagessen – die Kellnerin bringt ihm einen Teller Luft. „Kalorienfrei“, sagt sie, „und das ist das neue Sauerstoff‑Special.“",
-      "qwen": "Ich bestellte die Pizza, die ich mir selbst zu Hause backe. Der Kellner sah mich an, als hätte ich ein Verbrechen begangen.",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-21T23:35:57.387Z",
       "gpt": "Ich öffne die Wetter-App, sehe Regen und frage: „Braucht die Stadt jetzt einen Regenschirm‑Verleih?“ Die App antwortet: „Nur, wenn du den Akku hast.“",
       "qwen": "Mein Handy zeigt 100 % Akku an, während es längst tot ist.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe die Kiste mit alten Zeitschriften, doch beim Schließen fällt ein Geldschein heraus – mein Geldbeutel war seit Jahren im Kühlschrank.",
       "qwen": "Die alte Vase wanderte in die Schublade.\nDrauf stand: „Nicht öffnen, bis zum 1. Januar 1999.“",
       "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
+    },
+    {
+      "timestamp": "2026-11-22T03:36:05.387Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch im Feld „Ort des Fundes“ stand nur: „Im Internet, weil ich das Formular nie abschicke.“",
+      "qwen": "Beim Fundbüro: „Müssen Sie das Formular zweifach ausfüllen?“\n„Dreifach, denn der erste Satz reicht selten zum Verständnis.“",
+      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
     }
   ]
 }
