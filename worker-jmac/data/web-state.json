@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:00:57.585Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die PowerPoint – sie besteht nur aus leeren Folien. Fortschritt ist, dass wir jetzt nichts mehr sehen.",
-      "qwen": "Der Chef fragt: „Haben Sie die Präsentation fertig?“\n„Ja, Herr Schmidt, ich bin fertig mit der Arbeit.“",
-      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
-    },
-    {
       "timestamp": "2026-11-22T07:06:01.870Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Anprobieren nicht nass werden.“",
       "qwen": "Ich fragte nach einer Beratung für den Wäschetrockner. Der Verkäufer streifte sich einen Handwagen über und fragte: „Soll ich Ihnen die Wäsche auch gleich aufhängen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die PowerPoint‑Folien – sie zeigen nur „Bitte warten…“, weil das Projekt noch im Ladenladen ist.",
       "qwen": "Der Chef fragt: „Haben Sie die Zahlen geprüft?“\nIch: „Ja, es sind noch drei Stück.“",
       "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
+    },
+    {
+      "timestamp": "2026-11-22T11:06:05.572Z",
+      "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Ich antworte: „Nein, ich sitze im Bus.“",
+      "qwen": "Ich winkte dem Taxi winkend und fuhr ihm direkt vor die Radstange.",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
