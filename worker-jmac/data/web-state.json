@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:26:03.212Z",
-      "gpt": "Ich habe meinem Nachbarn ein Schild mit „Bitte leise sein“ an die Tür gehängt – er hat es mit „Bitte leise bleiben“ zurückgeschrieben.",
-      "qwen": "Ich fragte die Nachbarin, ob ich ihr Gartentor mit einem Wackelkontakt öffnen dürfe. Sie nickte, bis die Tür ins Schloss fiel.",
-      "archive": "Der Nachbar fragt, ob seine Musik bei mir ankommt. Ich sage: „Das Lied schon, deine Töne leider nicht.“"
-    },
-    {
       "timestamp": "2026-11-21T22:30:58.184Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Kaffeebecher, den ich gerade gefunden habe.“",
       "qwen": "Ich habe den Fund-Briefkasten im Rathaus drei Wochen lang ignoriert. Heute hole ich ihn ab, er ist voll.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – und bekomme eine Benachrichtigung, dass mein Akku in 5 % stirbt.",
       "qwen": "Ich wollte per App den Herd einschalten, doch die app hat gerade ein Update.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-22T02:31:07.109Z",
+      "gpt": "Der Kunde fragt beim Paketdienst: „Warum ist mein Liefertermin immer erst morgen?“ Der Fahrer lächelt: „Weil wir erst nach dem Wochenende auspacken.“",
+      "qwen": "Das Paket ist da, der Karton aber leer. Der Kurier meint nur: „Die Ware ist auf dem Weg.“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
