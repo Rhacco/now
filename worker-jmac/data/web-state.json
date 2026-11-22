@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:31:06.380Z",
-      "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Papa antwortet: „Ich, weil du immer sagst, ich soll mir nichts wegnehmen.“",
-      "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie schaut mich an und sagt: „Ja, aber du bist nicht mein Favorit.“",
-      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
-    },
-    {
       "timestamp": "2026-11-22T05:36:01.065Z",
       "gpt": "Im Zug neben mir schläft ein Tourist laut schnarchend – ich wecke ihn, weil er mein Ticket gestohlen hat. Er sagt: „Ich dachte, das wäre ein Souvenir.“",
       "qwen": "Ich will im Urlaub nur ausruhen. Die Katze hat den Reiseführer gefressen.",
@@ -300,6 +294,12 @@
       "gpt": "Nach dem Yoga‑Kurs fragt er: „Wie lange dauert die Entspannung?“ – „Nur bis die nächste Sirene zum Sprinten ruft.“",
       "qwen": "Ich bin seit einer Woche im Yoga. Mein Körper ist entspannt, mein Ego ist noch nicht.",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-22T09:36:05.055Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Ich antworte: „Nein, ich habe sie gerade erst gefunden.“",
+      "qwen": "Ich habe den Fundbericht für meine Brille ausgefüllt. Jetzt muss der Finder nur noch meine Augen beschreiben.",
+      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
     }
   ]
 }
