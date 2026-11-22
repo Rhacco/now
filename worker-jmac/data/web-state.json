@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:01:05.595Z",
-      "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ Der Kellner lächelt: „Nein, das ist unser neues Gluten‑frei‑Brot, das nur aus Luft besteht.“",
-      "qwen": "„Sehr geehrter Herr, ich bin Vegetarier.“ – „Kein Problem, hier ist Ihr Teller mit Erde.“",
-      "archive": "Beim Frühstücksbuffet steht „Bitte nur so viel nehmen, wie Sie essen“. Mein Teller hat offenbar ein wesentlich besseres Bild von mir."
-    },
-    {
       "timestamp": "2026-11-21T23:05:58.276Z",
       "gpt": "Ich steige in den Bus, der Fahrer sagt: „Wir fahren gerade durch die Stadt.“ Ich schau nach rechts – wir sind im Kreisverkehr.",
       "qwen": "Ich sage dem Taxifahrer: „Fahren Sie wie ein Wahnsinniger!“\nEr bremst abrupt: „Angst?",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe meine Socken in Kisten, weil ich beim Ausmisten endlich mal etwas Ordnung in meinem Leben haben will – dann finde ich die Fernbedienung.",
       "qwen": "Die alte Stehlampe geht zu Bruch. „Glück gehabt, die war eh kaputt“, nickt meine Frau.",
       "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
+    },
+    {
+      "timestamp": "2026-11-22T03:06:04.168Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, damit ich die Frage endlich richtig beantworten kann.“",
+      "qwen": "„In der Weiterbildung lernte ich, wie man souverän auftritt. Beim Vorstellungsgespräch fragte ich den Chef: ‚Sind Sie das?‘“",
+      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
     }
   ]
 }
