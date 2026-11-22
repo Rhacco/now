@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:06:04.742Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Geldbeutels ausgefüllt?“ Ich: „Nein, ich habe das Geld noch nicht verloren.“",
-      "qwen": "Ich gab den gefundenen Regenschirm im Fundbüro ab. Der Beamte fragte mich nur, ob ich den erwischt habe.",
-      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
-    },
-    {
       "timestamp": "2026-11-22T02:11:01.651Z",
       "gpt": "Ich kaufe im Supermarkt Bio‑Eier, dann auf dem Wochenmarkt: „Frische Eier, bitte.“ Verkäuferin: „Gern, die liegen noch im Kühlregal.“",
       "qwen": "Beim Wochenmarkt frag ich: „Ist das noch frisch?“ Der Bauer antwortet: „Ja, der Bauer hat ihn gestern selbst geschlachtet.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Handtuch – „für den Fall, dass Ihnen beim Anprobieren warm wird.“",
       "qwen": "Ich fragte im Supermarkt nach dem Kassenbon. Die Kassiererin gab mir den gesuchten Kugelschreiber.",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-22T06:20:57.497Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du das Popcorn nicht knisterst.“",
+      "qwen": "In der Bibliothek blieb ich stehen, weil jemand laut lachte. Es war der Mann, der gerade den Film „Schweigen ist Gold“ sah.",
+      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
     }
   ]
 }
