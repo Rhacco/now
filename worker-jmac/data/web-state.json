@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:11:03.580Z",
-      "gpt": "Der Chef fragt nach einem Update, ich zeige ihm den leeren Screenshot – “Hier ist das Ergebnis unserer produktiven Brainstorming‑Session.“",
-      "qwen": "Im Meeting fragte der Chef: „Wer hat die Zahlen geprüft?“ Alle schwiegen, bis mir der Stift fiel.",
-      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
-    },
-    {
       "timestamp": "2026-11-21T20:16:03.138Z",
       "gpt": "Im Zug sitzt er neben einem Pendler, im Bus neben einer Rentnerin, im Taxi neben einem Touristen – im Auto fährt er endlich allein, weil er den Führerschein vergessen hat.",
       "qwen": "Ich tanke voll und fahre los. Der Tankwart ruft: „Nur drei Euro, bitte!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie lieber die schnellste Route?“ Ich nicke, er fährt sofort in die nächste Haltestelle.",
       "qwen": "Der Taxifahrer fragte: „Steigen Sie gleich ein?“ Ich nickte und blieb stehen.",
       "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
+    },
+    {
+      "timestamp": "2026-11-22T00:16:02.054Z",
+      "gpt": "Im Café bestelle ich einen Cappuccino, doch die Kellnerin fragt: „Möchten Sie ihn lieber mit Milch oder mit Espresso?“ Ich sag: „Beides, ich bin verwirrt.“",
+      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte, ob ich ihn auch kochen soll.",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
