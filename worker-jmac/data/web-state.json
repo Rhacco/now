@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:55:58.356Z",
-      "gpt": "Ich bestelle im Café einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin hier zum Aufwachen, nicht zum Süßen.“",
-      "qwen": "Wir bestellen im Café einen Cappuccino. Die Kellnerin fragt: „Mit Schuss?“",
-      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
-    },
-    {
       "timestamp": "2026-11-21T23:01:05.595Z",
       "gpt": "Im Café fragt die Kundin: „Ist das hier veganes Brot?“ Der Kellner lächelt: „Nein, das ist unser neues Gluten‑frei‑Brot, das nur aus Luft besteht.“",
       "qwen": "„Sehr geehrter Herr, ich bin Vegetarier.“ – „Kein Problem, hier ist Ihr Teller mit Erde.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt ich einen Espresso, der Kellner schenkt mir ein Kochbuch. „Für den perfekten Aufguss“, sagt er, „braucht man nur ein bisschen Hitze.“",
       "qwen": "Ich fragte im Café: „Haben Sie auch vegetarisch?“\nDie Bedienung meinte: „Nur wenn der Fisch tot ist.“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-22T03:01:05.184Z",
+      "gpt": "Ich packe meine Socken in Kisten, weil ich beim Ausmisten endlich mal etwas Ordnung in meinem Leben haben will – dann finde ich die Fernbedienung.",
+      "qwen": "Die alte Stehlampe geht zu Bruch. „Glück gehabt, die war eh kaputt“, nickt meine Frau.",
+      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
     }
   ]
 }
