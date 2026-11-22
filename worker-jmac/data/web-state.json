@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:11:03.546Z",
-      "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil das WLAN ausfiel – die Durchsage: „Bitte nicht panisch, das ist nur das Bordrestaurant.“",
-      "qwen": "Ich stieg aus dem Taxi und winkte dem Fahrer zu. Er sah mich nur entsetzt an: „Das ist ja meine Frau.“",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-21T22:15:56.654Z",
       "gpt": "Ich füllte das Fundbüro‑Formular aus, doch die Angestellte fragte: „Haben Sie das Formular auch gefunden?“",
       "qwen": "Fundbüro: „Ohne Eigentumsnachweis können wir nichts ausgeben.“ Ich: „Aber die Katze ist ja eigentümlich.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich kaufe im Supermarkt Bio‑Eier, dann auf dem Wochenmarkt: „Frische Eier, bitte.“ Verkäuferin: „Gern, die liegen noch im Kühlregal.“",
       "qwen": "Beim Wochenmarkt frag ich: „Ist das noch frisch?“ Der Bauer antwortet: „Ja, der Bauer hat ihn gestern selbst geschlachtet.“",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-22T02:16:06.970Z",
+      "gpt": "In der Bibliothek flüstert ein Besucher: „Leise, ich will das Buch nicht stören.“ Im Kino lacht er, weil das Buch Popcorn knuspert.",
+      "qwen": "Im Museum stand: „Bitte nicht berühren“. Ich dachte, das gilt für die Bilder.",
+      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
     }
   ]
 }
