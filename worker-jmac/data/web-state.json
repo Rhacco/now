@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:11:06.482Z",
-      "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst, wenn ich nicht zu Hause bin?“ Der Zusteller: „Ich wollte Ihnen nur zeigen, wie schnell Sie es selbst holen können.“",
-      "qwen": "Der Paketbote fragt, ob ich ein Ersatzteil benötige. Ich verneine, woraufhin er kurz nickt und die Tür zu seiner Kiste zusperrt.",
-      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
-    },
-    {
       "timestamp": "2026-11-22T05:16:05.597Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann zeigt ihr sein Handy: „Ich habe das Formular per App verloren.“",
       "qwen": "Beim Fundbüro angekommen, gab ich die Brieftasche zurück. Ich musste erst das Formular „Ich habe das meiste davon verloren“ abhaken.",
@@ -300,6 +294,12 @@
       "gpt": "Ich wollte beim Joggen meine Schrittzahl prüfen, aber die Fitness‑App meldete: „Kein Signal – bitte gehen Sie zurück ins Wohnzimmer.“",
       "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt weckt mich mein Handy um sechs, um mir vorzuschlagen, noch schärfer einzuschlafen.",
       "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
+    },
+    {
+      "timestamp": "2026-11-22T09:15:58.003Z",
+      "gpt": "Im Café bestellt er „ein Stück Kuchen zum Mitnehmen“ – die Kellnerin reicht ihm ein Tablett mit dem gesamten Kuchen und sagt: „Bitte, Ihr Paket.“",
+      "qwen": "Im Restaurant fragte ich nach dem Geheimnis des Gerichts. Der Koch grinste: „Das Salz, das ich weggelassen habe.“",
+      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
     }
   ]
 }
