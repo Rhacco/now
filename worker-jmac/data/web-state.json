@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:51:00.376Z",
-      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, er empfiehlt mir ein Licht‑Thermostat – ich will doch nur lesen, nicht das Haus heizen.",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen bei der Wahl der Farbe helfen?“ Ich zeige auf mein kaltes Bier: „Nur wenn’s auch in Blau gibt.“",
-      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
-    },
-    {
       "timestamp": "2026-11-22T07:56:03.995Z",
       "gpt": "Ich stehe am Supermarkt-Eingang, warte auf den Kundenservice‑Schalter und höre: „Entschuldigung, hier gibt’s nur Selbstbedienung.“",
       "qwen": "Ich frage den Verkäufer: „Ist der Fisch frisch?“ Er sagt: „Ja, der war gestern noch am Leben.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich steig in den Bus, setze mich, die Durchsage: „Nächster Halt: Parkplatz.“ Ich dachte, das sei die Haltestelle.",
       "qwen": "Der Taxifahrer fragt: „Soll ich die Tür für Sie halten?“ Ich sage: „Nein, ich fahre selbst.“",
       "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
+    },
+    {
+      "timestamp": "2026-11-22T11:55:59.400Z",
+      "gpt": "Ich klopfte an die Nachbarin, weil mein Wasserhahn tropfte, und sie öffnete die Tür mit einem Eimer voll Kaffee – sie dachte, ich hätte das Leck gemeldet.",
+      "qwen": "Ich fragte den Nachbarn, warum er nachts um drei die Wäsche aufhängt. Er lachte und sagte: „Damit die Nachbarn sehen, wie sauber ich bin.“",
+      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
     }
   ]
 }
