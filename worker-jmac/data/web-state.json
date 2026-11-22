@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:51:06.435Z",
-      "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wer kann mir das Wort ‘Entspannung’ buchstabieren?“ – Der Anfänger flüstert: „A‑T‑M‑O‑S‑FÄ‑R‑E.“",
-      "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mich gekratzt.",
-      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
-    },
-    {
       "timestamp": "2026-11-22T06:56:05.883Z",
       "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie dazu Zucker?“ – Ich antworte: „Nein, ich will nur die Rechnung süß sehen.“",
       "qwen": "Ich wollte nur einen Kaffee, aber der Kellner fragte nach der Weinliste.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Kuchen?“ Der Gast antwortet: „Beides, ich will einfach nur einen Grund, nicht zu kochen.“",
       "qwen": "Der Kellner bringt den Salat.\nIch bitte: „Noch mehr Dressing, bitte.“",
       "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
+    },
+    {
+      "timestamp": "2026-11-22T10:56:04.673Z",
+      "gpt": "Ich habe beim Ausmisten den Toaster in die Kisten geworfen – jetzt ist er wirklich nur noch ein „Brot‑Löser“.",
+      "qwen": "Ich habe die alte Matratze aus dem Keller geholt. Sie ist jetzt das bequemste Möbelstück in unserem neuen Zuhause.",
+      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
     }
   ]
 }
