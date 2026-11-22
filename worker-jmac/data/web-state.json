@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:15:58.915Z",
-      "gpt": "Im Café bestelle ich einen Cappuccino, der Barista fragt: „Möchten Sie ihn mit Milch oder Espresso?“ Ich antworte: „Beides, ich will ein Doppel‑Ich.“",
-      "qwen": "Ich bestellte im Restaurant: „Zwei Schnitzel, bitte.“ Der Kellner fragte: „Zu zweit?“ Ich nickte.",
-      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
-    },
-    {
       "timestamp": "2026-11-22T07:20:59.800Z",
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Verloren: meine Geduld“.",
       "qwen": "Ich finde meine Brille im Fundbüro. Sie tragen sie schon seit drei Wochen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief beim Kundenservice an, weil mein Paket immer wieder „auf dem Weg zum Mond“ stand – dann stellte sich heraus, ich hatte die Raumfahrt‑Abteilung gewählt.",
       "qwen": "Der Kurier fragt: „Haben Sie das Paket erhalten?“ Ich: „Ja, aber der Kunde fehlt noch.“",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-22T11:21:04.429Z",
+      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Yoga?“ – „Wie ein Smartphone mit 100 % Akku, das gerade ein Nickerchen macht.“",
+      "qwen": "Ich wollte beim Yoga entspannen, aber die Stille war so laut, dass mein eigenes Herzschlag mich fast erschreckt hat.",
+      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
     }
   ]
 }
