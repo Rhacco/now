@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:41:02.863Z",
-      "gpt": "Ich warte im Praxis-Wartezimmer, die Ärztin ruft: „Bitte kommen Sie sofort zur Apotheke, dort gibt’s endlich ein Rezept, das nicht abläuft.“",
-      "qwen": "Ich sage dem Arzt: „Herr Doktor, ich bin mir selbst!“",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-21T20:46:05.462Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Glühbirne, und der Verkäufer meint: „Klar, die kostet nur 0 € – Sie sparen ja schon beim Bezahlen.“",
       "qwen": "Ich fragte im Elektronikgeschäft nach dem besten Preis, und der Verkäufer grinste: „Der beste Preis ist, wenn Sie gar nichts kaufen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Stewardess, ob ich ein Getränk möchte. Ich antworte: „Nur wenn es nicht wieder das Wasser aus dem Bordrestaurant ist.“",
       "qwen": "Im Urlaub fragte ich laut nach dem Zimmer, das Fenster war aber nur ein Gemälde. Der Zimmermädchen sagte: „Hier gibt es kein Fenster, nur Kunst.“",
       "archive": "Beim Picknick sollte jeder eine Kleinigkeit mitbringen. Einer kommt mit einem Grill, und auf einmal wirkt mein Glas Gurken sehr bescheiden."
+    },
+    {
+      "timestamp": "2026-11-22T00:46:04.154Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“, ich: „Nein, ich will nur die Beratung, nicht das Verpacken.“",
+      "qwen": "Der Verkäufer fragt, ob ich Hilfe brauche. Ich sage ja, weil ich den Preis nicht lese kann.",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
