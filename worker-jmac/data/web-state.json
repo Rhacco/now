@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:50:58.456Z",
-      "gpt": "Im Zug zum Strand frage ich den Schaffner, ob wir bald ankommen. Er lächelt: „Nur, wenn Sie das Wasser nicht vergessen haben.“",
-      "qwen": "Ich wollte im Urlaub nur relaxen, aber die Sonne hat mich gezwungen, den ganzen Tag zu arbeiten.",
-      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
-    },
-    {
       "timestamp": "2026-11-22T08:53:12.068Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Ich antworte: „Einen, der mir das Essen bezahlt.“",
       "qwen": "Die Karte verspricht „Hausmannskost“, doch der Löffel verliert gegen die Wand des Teller-Bodens.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage beim Wochenmarkt nach dem besten Preis für Äpfel – die Verkäuferin sagt: „Im Supermarkt, dort gibt’s Sonderangebot.“ Ich kaufe dort.",
       "qwen": "Ich fragte die Oma: „Kostet mehr?“ Sie lachte: „Nein, hier ist alles zweimal so teuer.“",
       "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
+    },
+    {
+      "timestamp": "2026-11-22T12:56:06.322Z",
+      "gpt": "Im Zug steht die Durchsage: „Bitte nicht aus dem Fenster springen.“ Im Bus hört man das gleiche: „Bitte nicht aus dem Taxi aussteigen.“",
+      "qwen": "Ich warte eine Stunde auf die Bahn. Dann schreibe ich den Busfahrer an. „Da geht doch kein Taxi durch“, sagt der Fahrer und hält an.",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
