@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:06:03.539Z",
-      "gpt": "Ich bestelle im Café einen Espresso und frage nach Zucker; die Barista schüttelt den Kopf: „Wir servieren nur Bohnen, kein Süßes.“",
-      "qwen": "Der Kellner: „Oma, das Schnitzel ist fertig.“\nOma: „Gut, dann bring mir jetzt die Gabel, ohne die koche ich nicht.“",
-      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
-    },
-    {
       "timestamp": "2026-11-21T22:11:03.546Z",
       "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil das WLAN ausfiel – die Durchsage: „Bitte nicht panisch, das ist nur das Bordrestaurant.“",
       "qwen": "Ich stieg aus dem Taxi und winkte dem Fahrer zu. Er sah mich nur entsetzt an: „Das ist ja meine Frau.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Geldbeutels ausgefüllt?“ Ich: „Nein, ich habe das Geld noch nicht verloren.“",
       "qwen": "Ich gab den gefundenen Regenschirm im Fundbüro ab. Der Beamte fragte mich nur, ob ich den erwischt habe.",
       "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
+    },
+    {
+      "timestamp": "2026-11-22T02:11:01.651Z",
+      "gpt": "Ich kaufe im Supermarkt Bio‑Eier, dann auf dem Wochenmarkt: „Frische Eier, bitte.“ Verkäuferin: „Gern, die liegen noch im Kühlregal.“",
+      "qwen": "Beim Wochenmarkt frag ich: „Ist das noch frisch?“ Der Bauer antwortet: „Ja, der Bauer hat ihn gestern selbst geschlachtet.“",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
