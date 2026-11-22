@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:50:57.180Z",
-      "gpt": "Ich steig in den Bus, setze mich, die Durchsage: „Nächster Halt: Parkplatz.“ Ich dachte, das sei die Haltestelle.",
-      "qwen": "Der Taxifahrer fragt: „Soll ich die Tür für Sie halten?“ Ich sage: „Nein, ich fahre selbst.“",
-      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
-    },
-    {
       "timestamp": "2026-11-22T11:55:59.400Z",
       "gpt": "Ich klopfte an die Nachbarin, weil mein Wasserhahn tropfte, und sie öffnete die Tür mit einem Eimer voll Kaffee – sie dachte, ich hätte das Leck gemeldet.",
       "qwen": "Ich fragte den Nachbarn, warum er nachts um drei die Wäsche aufhängt. Er lachte und sagte: „Damit die Nachbarn sehen, wie sauber ich bin.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Kann ich das Bild ausleihen?“ Der Besucher lächelt: „Nur, wenn du Popcorn dafür mitbringst.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Aufseherin deutete auf die Wand: „Und wieder sind Sie hier.“",
       "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
+    },
+    {
+      "timestamp": "2026-11-22T16:01:03.736Z",
+      "gpt": "Mama ruft: „Wer hat die Milch verschüttet?“ – Der Hund schaut schuldbewusst, weil er gerade das neue Wasserfilter‑Abonnement abonniert hat.",
+      "qwen": "Mein Vater fragt: „Warum schreist du nachts?“\nIch: „Weil du jeden Morgen um drei Uhr die Fenster öffnest.“",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
