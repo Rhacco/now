@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:30:57.115Z",
-      "gpt": "Nach dem Yoga‑Kurs fragt er: „Wie lange dauert die Entspannung?“ – „Nur bis die nächste Sirene zum Sprinten ruft.“",
-      "qwen": "Ich bin seit einer Woche im Yoga. Mein Körper ist entspannt, mein Ego ist noch nicht.",
-      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
-    },
-    {
       "timestamp": "2026-11-22T09:36:05.055Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Ich antworte: „Nein, ich habe sie gerade erst gefunden.“",
       "qwen": "Ich habe den Fundbericht für meine Brille ausgefüllt. Jetzt muss der Finder nur noch meine Augen beschreiben.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Mutter: „Warum hast du das Handtuch eingepackt?“ – Ich: „Damit ich das Essen nicht vom Sonnenbrand ablenken muss.“",
       "qwen": "Wir wollten am Strand entspannen. Dann hat mich die Sonne gebrannt und ich musste ins Wasser.",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-22T13:41:03.351Z",
+      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nicht eingelöst ist.“",
+      "qwen": "Im Wartezimmer flüstert die Frau neben mir: „Der Doktor ist heute brutal streng.“\nIch antworte erleichtert: „Gut, denn ich habe eine Rechnung mitgebracht.“",
+      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
     }
   ]
 }
