@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:10:57.313Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie die Suppe warm oder kalt?“ Der Kunde meint: „Warm, bitte – ich habe gerade erst das Eis gegessen.“",
-      "qwen": "Im Café bestellte ich einen Kaffee. Der Kellner fragte: „Zu trinken oder zum Kochen?“",
-      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
-    },
-    {
       "timestamp": "2026-11-22T03:15:57.886Z",
       "gpt": "Im Zug zum Strand frage ich den Platzhirsch, ob wir bald ankommen. Er zeigt auf die Karte – wir fahren im Kreis.",
       "qwen": "Auf der Alm fragt der Wirt: „Haben Sie schon Hunger?“\n„Noch nicht, aber ich bin bereit, ihn zu fressen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Verloren: meine Geduld“.",
       "qwen": "Ich finde meine Brille im Fundbüro. Sie tragen sie schon seit drei Wochen.",
       "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
+    },
+    {
+      "timestamp": "2026-11-22T07:25:57.461Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie meldet nur: „Bitte bewegen Sie sich – das Handy liegt schon auf dem Sofa.“",
+      "qwen": "Ich suchte die App fürs Wetter.\nSie hat mir die Sonne abgeschaltet.",
+      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
     }
   ]
 }
