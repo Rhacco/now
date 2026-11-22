@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:00:58.074Z",
-      "gpt": "Ich kaufe beim Supermarkt ein Pfund Äpfel, doch am Wochenmarkt kostet das Gleiche nur ein Stück. Der Kassierer sagt: „Wir verkaufen jetzt nur noch Luft.“",
-      "qwen": "Ich fragte den Wochenhändler: „Gibt es hier auch Parfüm?“\nEr nickte: „Ja, die Tomaten riechen auch gut.“",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-22T04:06:06.141Z",
       "gpt": "Im Café bestellt er einen Espresso, doch die Kellnerin fragt: „Möchten Sie dazu einen Löffel?“ Er antwortet: „Nur, wenn er mit Milch kommt.“",
       "qwen": "Im Restaurant: „Ist das Schnitzel aus Putenbrust?“ „Nein, aus Rinderbrust.“ „Aber der Preis…“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klingelte beim Nachbarn, um die laute Party zu melden – er öffnete und bot mir ein Stück Kuchen an.",
       "qwen": "Der Nachbar klopft: „Können Sie leiser sein?“ Ich sage: „Nein, ich bin nur in den ersten Stock gezogen.“",
       "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
+    },
+    {
+      "timestamp": "2026-11-22T08:16:05.773Z",
+      "gpt": "Ich packe meine Klamotten aus, finde ein altes T-Shirt und frage mich, warum ich es noch nie getragen habe – dann sehe ich das Preisschild: „Nur noch 0 €.“",
+      "qwen": "Ich habe beim Ausmisten nicht nur die alten Socken weggeschmissen, sondern auch die Begeisterung für Räumaktionen.",
+      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
     }
   ]
 }
