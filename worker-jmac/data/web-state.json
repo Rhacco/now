@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:56:02.362Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Hier ist das Ergebnis meiner kreativen Denkpause.“",
-      "qwen": "Im Meeting fragte der Chef nach Rückfragen, und ich nickte stumm. Er lächelte zufrieden und sagte: „Dann sind wir also einverstanden.“",
-      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
-    },
-    {
       "timestamp": "2026-11-22T09:01:04.082Z",
       "gpt": "Beim Abendessen fragt Mama: „Wer hat den Keks geklaut?“ Papa grinst und sagt: „Ich, weil er im Kühlschrank war.“",
       "qwen": "Mama fragt: „Hast du das Haus sauber gemacht?“\nIch: „Ja, es ist jetzt komplett leer.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rufe beim Kundendienst an, weil mein Paket nicht kommt – die Stimme sagt: „Ihr Paket ist schon im nächsten Leben, bitte warten Sie 5 Jahre.“",
       "qwen": "Der Kurier fragt, ob ich das Päckchen für mich oder die Nachbarin habe. Ich zeige auf die Treppe: „Die nimmt es selbst mit nach oben.“",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-22T13:05:57.189Z",
+      "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten zeigte sie nur: „Bitte erst den Akku aufladen.“",
+      "qwen": "Ich schiele zum Handy, um die Uhrzeit zu prüfen. Es zeigt an: „Du schaust gerade zu oft auf dein Handy.“",
+      "archive": "Der Drucker meldet „Papier fehlt“. Ich fülle Papier nach, und er meldet „Abdeckung offen“; er sucht offenbar nur Gesellschaft."
     }
   ]
 }
