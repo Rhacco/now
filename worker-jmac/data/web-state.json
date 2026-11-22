@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:01:04.337Z",
-      "gpt": "Ich rufe beim Kundendienst an, weil mein Paket nicht kommt – die Stimme sagt: „Ihr Paket ist schon im nächsten Leben, bitte warten Sie 5 Jahre.“",
-      "qwen": "Der Kurier fragt, ob ich das Päckchen für mich oder die Nachbarin habe. Ich zeige auf die Treppe: „Die nimmt es selbst mit nach oben.“",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-22T13:05:57.189Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch nach fünf Minuten zeigte sie nur: „Bitte erst den Akku aufladen.“",
       "qwen": "Ich schiele zum Handy, um die Uhrzeit zu prüfen. Es zeigt an: „Du schaust gerade zu oft auf dein Handy.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt antwortet der Kunde: „Nur, wenn Sie mir das Gemüse einpacken.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Fäustling, die Bäuerin lächelt: „Den gibt's nur im Supermarkt, hier verkaufen wir echte Kartoffeln.“",
       "archive": "Beim Bäcker frage ich, welches Brot besonders lange frisch bleibt. Die Verkäuferin schaut auf meine Einkaufstasche und empfiehlt mir kleinere Portionen."
+    },
+    {
+      "timestamp": "2026-11-22T22:11:08.335Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich antworte: „Im Kurs ‚Wie überlebe ich endlose Bewerbungsrunden‘.“",
+      "qwen": "Ich fragte nach Weiterbildung, aber der Chef meinte: „Dafür gibt’s kein Budget.“",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
