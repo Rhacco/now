@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:25:58.506Z",
-      "gpt": "Im Zug steht ein Schild: „Bitte nicht telefonieren.“ Ich rufe an – die Durchsage fragt, ob ich das schon gehört habe.",
-      "qwen": "Ich bremse im Stau scharf ab, um die Bahn nicht zu verpassen.\nDer Busfahrer schreit: „Das ist doch mein Wagen!“",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-22T05:31:06.380Z",
       "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Papa antwortet: „Ich, weil du immer sagst, ich soll mir nichts wegnehmen.“",
       "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie schaut mich an und sagt: „Ja, aber du bist nicht mein Favorit.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich jetzt endlich meine Weiterbildung bewerbe.“",
       "qwen": "Ich habe die Weiterbildung abgeschlossen und im Vorstellungsgespräch gefragt: „Haben Sie jetzt mehr Zeit für mich?“",
       "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
+    },
+    {
+      "timestamp": "2026-11-22T09:30:57.115Z",
+      "gpt": "Nach dem Yoga‑Kurs fragt er: „Wie lange dauert die Entspannung?“ – „Nur bis die nächste Sirene zum Sprinten ruft.“",
+      "qwen": "Ich bin seit einer Woche im Yoga. Mein Körper ist entspannt, mein Ego ist noch nicht.",
+      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
     }
   ]
 }
