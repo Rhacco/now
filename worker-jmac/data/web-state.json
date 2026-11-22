@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:55:58.083Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie ein Rezept – noch nicht eingelöst.“",
-      "qwen": "Ich fragte den Arzt, wie lange ich noch warten muss. Er sagte: „Oh, die Apotheke ist zu, nehmen Sie doch kurz den Pflasterstreifen.“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-22T05:01:04.604Z",
       "gpt": "Im Supermarkt kaufe ich Bio‑Äpfel, dann gehe ich zum Wochenmarkt und frage: „Haben Sie die gleichen Preise wie online?“ Verkäufer: „Nur, wenn Sie den Lieferservice nutzen.“",
       "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Stand der Bio-Erdbeeren hat mich das ganze Geld kosten lassen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Hier ist das Ergebnis meiner kreativen Denkpause.“",
       "qwen": "Im Meeting fragte der Chef nach Rückfragen, und ich nickte stumm. Er lächelte zufrieden und sagte: „Dann sind wir also einverstanden.“",
       "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
+    },
+    {
+      "timestamp": "2026-11-22T09:01:04.082Z",
+      "gpt": "Beim Abendessen fragt Mama: „Wer hat den Keks geklaut?“ Papa grinst und sagt: „Ich, weil er im Kühlschrank war.“",
+      "qwen": "Mama fragt: „Hast du das Haus sauber gemacht?“\nIch: „Ja, es ist jetzt komplett leer.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
