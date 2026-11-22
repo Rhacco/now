@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:46:00.503Z",
-      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie viele Wiederholungen wollen Sie?“ – Der Kunde antwortet: „Nur bis zum nächsten Kaffee, dann entspanne ich mich.“",
-      "qwen": "Ich wollte heute beim Joggen mal richtig abschalten. Mein Kopf hat auch gekippt – direkt in den Boden.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-21T23:51:04.947Z",
       "gpt": "In der Bibliothek fragt er nach dem neuesten Film, die Kassiererin reicht ihm einen Band; im Museum schaut er sich die Leinwand an – alles still.",
       "qwen": "Museum, Kino und Bibliothek: Der Mann fragt, wo die Kasse. Der Mann antwortet: „Hier gibt’s keine.“ Der Mann kauft ein Ticket.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einem passenden Anzug, sie misst mich und sagt: „Für Sie passt nur unser Sonderangebot – ein Spiegel.“",
       "qwen": "In der Filiale fragt der Kunde: „Haben Sie auch Beratung?“ „Ja, aber nur für die, die nicht kaufen müssen.“",
       "archive": "Im Blumenladen frage ich nach einer Pflanze für jemanden ohne grünen Daumen. Die Verkäuferin zeigt auf eine künstliche und sagt: „Bei der können Sie ehrlich sein.“"
+    },
+    {
+      "timestamp": "2026-11-22T03:51:04.534Z",
+      "gpt": "Im Museum fragt der Besucher: „Warum steht hier ein Buch über Stille?“ Der Bibliothekar im Kino flüstert: „Weil das Popcorn leise ist.“",
+      "qwen": "Ich fragte im Kino nach dem Museum. Der Kassenmitarbeiter zeigte auf die Ausgänge und meinte: „Bibliothek links, Kino geradeaus, Museum ist geschlossen.“",
+      "archive": "In der Bibliothek fragt mich eine Frau, ob der Stuhl neben mir frei ist. Ich nicke, und sie trägt ihn weg."
     }
   ]
 }
