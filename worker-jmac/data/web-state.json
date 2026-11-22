@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:46:04.154Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“, ich: „Nein, ich will nur die Beratung, nicht das Verpacken.“",
-      "qwen": "Der Verkäufer fragt, ob ich Hilfe brauche. Ich sage ja, weil ich den Preis nicht lese kann.",
-      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
-    },
-    {
       "timestamp": "2026-11-22T00:50:58.388Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient: „Wie ein Rezept – noch nicht eingelöst.“",
       "qwen": "Ich warte in der Praxis und frage die Apothekerin, wo der Arzt sei. Sie sagt: „Der ist gerade im Wartezimmer.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular zum Verlust von Schlüsseln?“ Ich: „Nein, ich habe den Schlüssel verloren.“",
       "qwen": "Ich habe mein verlorenes Portemonnaie beim Fundbüro abgegeben. Jetzt muss ich dort das Formblatt F-386 ausfüllen, um es zurückzuholen.",
       "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
+    },
+    {
+      "timestamp": "2026-11-22T04:55:58.083Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie ein Rezept – noch nicht eingelöst.“",
+      "qwen": "Ich fragte den Arzt, wie lange ich noch warten muss. Er sagte: „Oh, die Apotheke ist zu, nehmen Sie doch kurz den Pflasterstreifen.“",
+      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
     }
   ]
 }
