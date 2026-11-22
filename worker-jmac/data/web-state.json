@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:00:58.364Z",
-      "gpt": "Mama fragt: „Warum hast du das letzte Stück Kuchen genommen?“ Sohn: „Weil ich beim Aufräumen immer die Krümel finde.“",
-      "qwen": "Die Gäste lobten das Essen. Die Schwiegermutter sagte: „Na, endlich mal jemand, der nicht nur schweigt!“",
-      "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
-    },
-    {
       "timestamp": "2026-11-21T22:06:03.539Z",
       "gpt": "Ich bestelle im Café einen Espresso und frage nach Zucker; die Barista schüttelt den Kopf: „Wir servieren nur Bohnen, kein Süßes.“",
       "qwen": "Der Kellner: „Oma, das Schnitzel ist fertig.“\nOma: „Gut, dann bring mir jetzt die Gabel, ohne die koche ich nicht.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Hund mich plötzlich angeknabbert – er wollte wohl auch mitmachen.",
       "qwen": "Im Kurs „Entspannung durch Yoga“ flüstert die Trainerin: „Und jetzt strecke die Arme ganz fest in die Luft.“\nAlle starren verblüfft, bis sie ergänzt: „…so wie ein Hamster, der gerade in die Falle getappt ist.“",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-22T02:06:04.742Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Geldbeutels ausgefüllt?“ Ich: „Nein, ich habe das Geld noch nicht verloren.“",
+      "qwen": "Ich gab den gefundenen Regenschirm im Fundbüro ab. Der Beamte fragte mich nur, ob ich den erwischt habe.",
+      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
     }
   ]
 }
