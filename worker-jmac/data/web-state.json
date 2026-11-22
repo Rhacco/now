@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:06:04.168Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, damit ich die Frage endlich richtig beantworten kann.“",
-      "qwen": "„In der Weiterbildung lernte ich, wie man souverän auftritt. Beim Vorstellungsgespräch fragte ich den Chef: ‚Sind Sie das?‘“",
-      "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
-    },
-    {
       "timestamp": "2026-11-22T03:10:57.313Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie die Suppe warm oder kalt?“ Der Kunde meint: „Warm, bitte – ich habe gerade erst das Eis gegessen.“",
       "qwen": "Im Café bestellte ich einen Kaffee. Der Kellner fragte: „Zu trinken oder zum Kochen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestelle ich einen Cappuccino, der Barista fragt: „Möchten Sie ihn mit Milch oder Espresso?“ Ich antworte: „Beides, ich will ein Doppel‑Ich.“",
       "qwen": "Ich bestellte im Restaurant: „Zwei Schnitzel, bitte.“ Der Kellner fragte: „Zu zweit?“ Ich nickte.",
       "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
+    },
+    {
+      "timestamp": "2026-11-22T07:20:59.800Z",
+      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Verloren: meine Geduld“.",
+      "qwen": "Ich finde meine Brille im Fundbüro. Sie tragen sie schon seit drei Wochen.",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
