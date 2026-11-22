@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:41:05.440Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich erst noch abholen muss.“",
-      "qwen": "Ich warte seit drei Stunden in der Wartezimmer-Ecke, um mein Rezept abzuholen. Das Rezept liegt aber in der Apotheke, die erst mit der Praxis schließt.",
-      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
-    },
-    {
       "timestamp": "2026-11-22T05:46:01.324Z",
       "gpt": "Ich stand im Fundbüro, füllte das Formular aus und fragte: „Wo ist das Feld für das verlorene Gedächtnis?“ – Die Angestellte schrieb: „Sie haben es schon eingereicht.“",
       "qwen": "Im Fundbüro fragt man mich nach der Farbe des verlorensen Schirmes. Ich sage, er war rosarot. Der Beamte stempelt das Formular ab und sagt, das gilt als nicht beantragt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie Milch dazu?“ – Ich sag: „Nein, ich will nur das Geräusch von „Kaffee, fertig!“ hören.",
       "qwen": "Im Restaurant fragte ich: „Ist das Steak durch?“\nDer Kellner antwortete: „Ja, es ist sogar gebraten.“",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-22T09:46:04.615Z",
+      "gpt": "Im Zug verpasste ich den Anschluss, stieg in den Bus, verpasste die Haltestelle und fuhr weiter – mein Navi sagte: „Sie sind jetzt im Taxi.“",
+      "qwen": "Ich tanke voll, weil das Auto leert. Der Tankwart fragt: „Benzin oder Diesel?“",
+      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
     }
   ]
 }
