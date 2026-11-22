@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:35:57.935Z",
-      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich ziehe den Sicherheitsgurt an, weil ich im Taxi sitze.",
-      "qwen": "Ich nehme das Taxi, um vor dem Bus nicht durch eine Ampel zu stehen.",
-      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
-    },
-    {
       "timestamp": "2026-11-22T12:41:04.994Z",
       "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Ich: „Ich nicht, die Katze hat es geklaut – sie hat ja schließlich einen eigenen Napf.“",
       "qwen": "Ich fahre mit der Familie in einen Streikwagen.\nDa brüllt der Opa: „Halt! Hier wohnt meine Ex!\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – dann stolpere ich über meine Yogamatte und finde endlich Ruhe, weil ich nicht mehr laufen muss.",
       "qwen": "Ich bin gerade beim Yoga so tief in die Meditation versunken, dass ich mein Handy mit dem Kopf zerschlagen habe.",
       "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
+    },
+    {
+      "timestamp": "2026-11-22T16:44:36.061Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs „Wie man den Chef überlistet“.“",
+      "qwen": "Der Chef ruft mich nach dem Vorstellungsgespräch. „Fangen Sie morgen an“, sagt er, „Sie brauchen den Kurs erst ab nächster Woche.“",
+      "archive": "Beim Bewerbungstraining sollen wir uns in drei Worten beschreiben. Ich sage: „Pünktlich, vorbereitet, hungrig“, und plötzlich gibt es eine Pause."
     }
   ]
 }
