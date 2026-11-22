@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:31:05.767Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund hat mich die Katze geküsst – jetzt bin ich entspannt und gleichzeitig allergisch.",
-      "qwen": "Ich schnüre die Laufschuhe für die morgendliche Joggingrunde. Mein Hund bellt fröhlich, aber ich bleibe sitzen.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-22T07:36:06.524Z",
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Zucker?“ – Der Koch nickt und sagt: „Nur, wenn er noch nicht im Restaurant war.“",
       "qwen": "Ich fragte im Café: „Gibt es hier auch einen Tisch?“\nDie Kellnerin seufzte: „Nein, hier gibt es nur Kaffee und Kuchen.“",
@@ -300,6 +294,12 @@
       "gpt": "Mutter fragt: „Warum hast du die Waschmaschine angerufen?“  \nIch: „Sie hat mich gefragt, ob sie noch einen Freund braucht.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Die Katze.“\nSie: „Wo ist sie?“\nIch: „Im Gefrierfach.“",
       "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
+    },
+    {
+      "timestamp": "2026-11-22T11:36:04.642Z",
+      "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wer kann die Katze nachahmen?“ Der Hund legt sich zufrieden hin und schnurrt.",
+      "qwen": "Ich wollte beim Joggen entspannen. Jetzt bin ich nur noch echt fertig.",
+      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
     }
   ]
 }
