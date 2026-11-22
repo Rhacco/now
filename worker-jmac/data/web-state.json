@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:51:03.600Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, doch als ich die Katze in die „herabschauende Hund“-Position ziehe, schnurrt sie nur und schläft ein.",
-      "qwen": "Der Physiotherapeut drückt mir den Fuß.\n„Gut so“, sagt er, „jetzt entspannen Sie sich.“",
-      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
-    },
-    {
       "timestamp": "2026-11-22T05:56:04.247Z",
       "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also nehme ich den Regenschirm – und stolpere über den Stromschlag‑Alarm, weil ich vergessen habe, das Handy zu laden.",
       "qwen": "Ich sprach laut „Hey Siri\", um die Heizung zu starten.\nDie App öffnete stattdessen den Online-Shop für Winterreifen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug drückte ich den Notruf, weil ich den Anschluss verpasst habe – die Stimme sagte: „Bitte bleiben Sie sitzen, wir fahren jetzt weiter.“",
       "qwen": "Der Taxifahrer brüllte: „Haben Sie ein Kurzschusstück?“\nIch zückte meine S-Bahn-Karte und lächelte.",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-22T09:55:56.935Z",
+      "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es zeigt 1999 an, obwohl ich erst 2024 eingezogen bin.",
+      "qwen": "„Das ist doch nur ein altes Fotoalbum“, sagte ich. „Doch, das ist mein ganzer Hausrat.“",
+      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
     }
   ]
 }
