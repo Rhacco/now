@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:56:04.261Z",
-      "gpt": "Ich klopfe an den Nachbarn, weil die Heizung im Flur ausfällt, und er gibt mir ein Handtuch – er dachte, ich will das Wasser abtrocknen.",
-      "qwen": "Der Nachbohrer hämmert seit drei Stunden an meinem Regal. Ich schreie „Hilfe“, er antwortet: „Muss noch schnell vor der Arbeit fertig sein.“",
-      "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
-    },
-    {
       "timestamp": "2026-11-22T01:00:59.062Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich erst noch den Kurs „Selbstmarketing für Anfänger“ belegen muss.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef: „Was erwartet Sie von der Weiterbildung?“\nIch: „Dass Sie mir endlich sagen, was ich hier eigentlich machen soll.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt kaufe ich Bio‑Äpfel, dann gehe ich zum Wochenmarkt und frage: „Haben Sie die gleichen Preise wie online?“ Verkäufer: „Nur, wenn Sie den Lieferservice nutzen.“",
       "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Stand der Bio-Erdbeeren hat mich das ganze Geld kosten lassen.",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-22T05:06:04.527Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie das Rezept, das ich gleich in der Apotheke abhole.“",
+      "qwen": "Ich fragte den Apotheker: „Können Sie mir ein Rezept verschreiben?“ Er sagte: „Nein, das macht mein Kollege im Wartezimmer.“",
+      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
     }
   ]
 }
