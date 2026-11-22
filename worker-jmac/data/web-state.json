@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:05:57.201Z",
-      "gpt": "Ich stehe in der Bibliothek, das Schild „Bitte leise sein“ liest, und flüstere: „Endlich ein Film, der nicht laut ist.“",
-      "qwen": "Im Museum las ich „Bitte berühren“, doch die Hinweisschilder waren längst verblasst.",
-      "archive": "In der Bibliothek lasse ich aus Versehen ein Buch fallen. So viel Aufmerksamkeit habe ich mit Literatur noch nie bekommen."
-    },
-    {
       "timestamp": "2026-11-22T08:11:06.165Z",
       "gpt": "Ich klingelte beim Nachbarn, um die laute Party zu melden – er öffnete und bot mir ein Stück Kuchen an.",
       "qwen": "Der Nachbar klopft: „Können Sie leiser sein?“ Ich sage: „Nein, ich bin nur in den ersten Stock gezogen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, doch sie meldet nur „Ziel erreicht“, weil ich den Akku leer gelassen habe.",
       "qwen": "Mein Handy zeigt 100 % Akku an. Jetzt habe ich die Ruhe, um das Ladegerät zu finden.",
       "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
+    },
+    {
+      "timestamp": "2026-11-22T12:10:57.281Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo ich meinen verlorenen Stift abgeben soll – er liegt schon im Antragsfach.",
+      "qwen": "Ich fragte im Fundbüro nach der verlegten Brille.\nDie Dame schob mir ein 42-seitiges Formular zur Antragstellung zu.",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
