@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:21:05.085Z",
-      "gpt": "Mama sagt: „Räum dein Zimmer auf!“ – Tim legt den Staubsauger an, schaltet das Licht aus und schläft weiter.",
-      "qwen": "Ich fragte meine Frau, ob sie mein Egoismus-Foto sehen will.\nSie antwortete: „Darauf bin ich nicht eifersüchtig.“",
-      "archive": "Beim Spieleabend erklärt meine Schwester die Regeln. Sobald sie verliert, kommt eine Regel dazu, die sie leider vergessen hatte."
-    },
-    {
       "timestamp": "2026-11-21T22:26:03.212Z",
       "gpt": "Ich habe meinem Nachbarn ein Schild mit „Bitte leise sein“ an die Tür gehängt – er hat es mit „Bitte leise bleiben“ zurückgeschrieben.",
       "qwen": "Ich fragte die Nachbarin, ob ich ihr Gartentor mit einem Wackelkontakt öffnen dürfe. Sie nickte, bis die Tür ins Schloss fiel.",
@@ -300,6 +294,12 @@
       "gpt": "Ich packte die leere Kiste ein, weil ich dachte, sie sei voll – beim Ausmisten stellte sich heraus, dass ich sie schon seit drei Monaten nicht mehr geöffnet hatte.",
       "qwen": "Ich habe alles ausgemistet, was ich nicht brauche. Jetzt fehlt mir der Schlüssel zum Koffer.",
       "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
+    },
+    {
+      "timestamp": "2026-11-22T02:26:04.197Z",
+      "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – und bekomme eine Benachrichtigung, dass mein Akku in 5 % stirbt.",
+      "qwen": "Ich wollte per App den Herd einschalten, doch die app hat gerade ein Update.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
