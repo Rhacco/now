@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:01:05.299Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie den Kaffee stark oder mild?“ Ich antworte: „Stark, ich habe heute ein Date mit meinem Herd.“",
-      "qwen": "Ich fragte im Café nach dem Kaffeebecher.\n„Den können Sie behalten“, sagte die Bedienung.",
-      "archive": "Beim Kochen soll ich die Zwiebel ganz fein schneiden. Mein Besuch sieht aufs Brett und fragt, ob wir die Suppe danach noch sieben müssen."
-    },
-    {
       "timestamp": "2026-11-22T10:06:10.351Z",
       "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe trotzdem joggen – mein Fitness‑Tracker meldet: „Gut gemacht, du hast den Regen überlistet.“",
       "qwen": "Ich gebe meine PIN ein.\nMein Handy antwortet: „Falsch. Haben Sie zu viel Weizen gegessen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Berge-Exkursion fragt die Durchsage: „Bitte halten Sie Ihre Koffer fest.“ – Ich halte meinen Rucksack, weil ich keinen Koffer habe.",
       "qwen": "In der Hängematte fragt die Frau: „Soll ich dir einen Tee machen?“\n„Nein“, sagt der Mann, „hier bin ich ja gerade im Urlaub.“",
       "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
+    },
+    {
+      "timestamp": "2026-11-22T14:11:04.675Z",
+      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich, weil ich jetzt schon beim Aufräumen die Diät starte.“",
+      "qwen": "Ich sagte zu meiner Frau: „Ich liebe es, wenn wir Zeit für uns zwei haben.“\nSie schlug vor: „Wie wäre es mit dem nächsten Kindergartenfest?“",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
