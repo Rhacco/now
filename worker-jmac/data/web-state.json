@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:21:04.429Z",
-      "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Yoga?“ – „Wie ein Smartphone mit 100 % Akku, das gerade ein Nickerchen macht.“",
-      "qwen": "Ich wollte beim Yoga entspannen, aber die Stille war so laut, dass mein eigenes Herzschlag mich fast erschreckt hat.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-22T11:26:04.712Z",
       "gpt": "Im Supermarkt fragt ich nach Bio‑Äpfeln, die Verkäuferin meint, sie kämen vom Wochenmarkt. Ich antworte: „Dann bitte gleich die Kasse, ich zahl bar.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis für die Tomaten. Die Bäuerin zückt die Waage und fragt: „Sollen wir die halbe Ernte wiegen?“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage den Verkäufer nach einem passenden Kissen, er reicht mir einen Keks – „Für die süße Träume, die Sie heute Nacht haben.“",
       "qwen": "„Haben Sie das in Grau?“\n„Nein, aber wir haben es in Verzweiflung.“",
       "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
+    },
+    {
+      "timestamp": "2026-11-22T15:31:06.790Z",
+      "gpt": "Im Zug drückte ich den Notrufknopf, weil das WLAN ausfiel – die Durchsage kam: „Bitte bleiben Sie sitzen, wir suchen das Signal.“",
+      "qwen": "Ich fahre Bahn, Bus, Taxi und Auto. Der Kofferraum ist voll.",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
