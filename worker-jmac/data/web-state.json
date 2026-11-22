@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:21:03.878Z",
-      "gpt": "Nach dem Yoga‑Kurs fragt die Lehrerin: „Wie fühlst du dich?“ – „Entspannt, bis meine Socken plötzlich anfangen zu joggen.“",
-      "qwen": "Ich will nur kurz entspannen und mache eine Yoga-Pause. Dann verliere ich im Lotus-Asan mein Handy.",
-      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
-    },
-    {
       "timestamp": "2026-11-21T23:26:00.183Z",
       "gpt": "Der neue Nachbar klingelt jeden Morgen, weil er den Müll rausbringen will – und fragt, ob wir noch Staub für seine Besen haben.",
       "qwen": "Der neue Nachbar fragt, ob ich nachts laut lerne.\nIch erkläre ihm, dass ich nur die Heizung teste.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher nickt: „Nur, wenn du das Popcorn nicht knisterst.“",
       "qwen": "Im Museum warte ich auf den Aufzug. Die Museumsführerin lacht: „Der ist längst in der Ruhezeit.“",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-22T03:26:03.408Z",
+      "gpt": "Ich habe meiner Nachbarin angeboten, ihr beim Umzug zu helfen – sie meinte, sie braucht nur einen Kasten Bier. Ich kam mit Kartons.",
+      "qwen": "Ich hab den Nachbarn gefragt, ob mein Mofa sein ist. Er sagt: „Nein, aber mein Fahrrad sieht genauso aus.“",
+      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
     }
   ]
 }
