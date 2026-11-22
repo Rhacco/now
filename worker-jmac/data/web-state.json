@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:15:57.505Z",
-      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Handtuch – „für den Fall, dass Ihnen beim Anprobieren warm wird.“",
-      "qwen": "Ich fragte im Supermarkt nach dem Kassenbon. Die Kassiererin gab mir den gesuchten Kugelschreiber.",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-22T06:20:57.497Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du das Popcorn nicht knisterst.“",
       "qwen": "In der Bibliothek blieb ich stehen, weil jemand laut lachte. Es war der Mann, der gerade den Film „Schweigen ist Gold“ sah.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt meine Katze ein und behauptet, das sei ihr neuer Lieblingsplatz.",
       "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mir auf die Zehen getreten.",
       "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
+    },
+    {
+      "timestamp": "2026-11-22T10:21:04.309Z",
+      "gpt": "Im Meeting fragt der Chef: „Wie stehen wir zum Projekt?“ – Ich: „Wie bei meinem Schreibtisch: Chaos, aber immerhin liegt alles da.“",
+      "qwen": "Ich fragte im Meeting, ob man aufhören kann. Alle nicken, nur der Chef schüttelt den Kopf.",
+      "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
     }
   ]
 }
