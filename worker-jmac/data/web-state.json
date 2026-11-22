@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:30:59.188Z",
-      "gpt": "Der Lieferant klopft, ich frage nach dem Paket, er zeigt auf den leeren Karton – „Ihr Paket ist schon da, nur leider schon auspackt.“",
-      "qwen": "Der Bote fragt: „Ist jemand da?“ Ich rufe: „Ja, aber nur der Hund!“ Er: „Der hat kein Paket.“",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-22T08:35:58.113Z",
       "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen; sie meinte, sie wolle ihn nur kurz testen. Jetzt steht er im Wohnzimmer und frisst meine Zimmerpflanzen.",
       "qwen": "Der Nachbar trommelt die Nacht durch. Ich klopfe an und rufe: „Haben Sie ein Mikro? Das tut so weh.\"",
@@ -300,6 +294,12 @@
       "gpt": "Ich sitze im Vorstellungsgespräch, der Chef fragt: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich jetzt endlich den Kurs „Durchhaltevermögen“ belege.“",
       "qwen": "Nach dem Vorstellungsgespräch frage ich: „Haben Sie noch Fragen?“ Der Chef nickt: „Ja, warum bewerben Sie sich noch, wenn Sie doch schon hier arbeiten?“",
       "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
+    },
+    {
+      "timestamp": "2026-11-22T12:35:57.935Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich ziehe den Sicherheitsgurt an, weil ich im Taxi sitze.",
+      "qwen": "Ich nehme das Taxi, um vor dem Bus nicht durch eine Ampel zu stehen.",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
