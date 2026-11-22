@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:16:06.087Z",
-      "gpt": "Mama fragt: „Warum hast du die Waschmaschine wieder aufgemacht?“ – „Ich wollte sehen, ob das Wasser noch weint, wenn ich sie ausschalte.“",
-      "qwen": "Ich frag die Oma, ob es reicht, wenn ich das Geschirr nur spüle. Sie schnipst mit dem Finger: „Du spülst, ich räume ab. Das ist Arbeitsteilung.“",
-      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
-    },
-    {
       "timestamp": "2026-11-22T01:21:03.477Z",
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie viele Wiederholungen wollen Sie heute?“ Ich antworte: „Nur eine, ich entspanne mich gleich danach.“",
       "qwen": "Ich mache entspanntes Dehnen. Der Physiotherapeut bricht mir die Hand.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug alte Socken aus und finde ein Geldschein – dann merke ich, dass ich die Socken eigentlich nur für das Geld wasche.",
       "qwen": "Der Umzugskarton ist voll, aber die Katze passt nicht mehr rein. Also bleibt sie jetzt für immer an der Stelle.",
       "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
+    },
+    {
+      "timestamp": "2026-11-22T05:25:58.506Z",
+      "gpt": "Im Zug steht ein Schild: „Bitte nicht telefonieren.“ Ich rufe an – die Durchsage fragt, ob ich das schon gehört habe.",
+      "qwen": "Ich bremse im Stau scharf ab, um die Bahn nicht zu verpassen.\nDer Busfahrer schreit: „Das ist doch mein Wagen!“",
+      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
     }
   ]
 }
