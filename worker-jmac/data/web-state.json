@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:56:03.995Z",
-      "gpt": "Ich stehe am Supermarkt-Eingang, warte auf den Kundenservice‑Schalter und höre: „Entschuldigung, hier gibt’s nur Selbstbedienung.“",
-      "qwen": "Ich frage den Verkäufer: „Ist der Fisch frisch?“ Er sagt: „Ja, der war gestern noch am Leben.“",
-      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
-    },
-    {
       "timestamp": "2026-11-22T08:00:58.341Z",
       "gpt": "Ich steig in den Bus, der Fahrer fragt nach meinem Ziel – ich nenne „Zuhause“. Er lächelt: „Dann fahren Sie besser weiter, wir sind schon da.“",
       "qwen": "Der Taxifahrer fragt, ob wir direkt die Autobahn nehmen. „Nee“, sagt meine Oma, „ich will erst mal in den Supermarkt.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfte an die Nachbarin, weil mein Wasserhahn tropfte, und sie öffnete die Tür mit einem Eimer voll Kaffee – sie dachte, ich hätte das Leck gemeldet.",
       "qwen": "Ich fragte den Nachbarn, warum er nachts um drei die Wäsche aufhängt. Er lachte und sagte: „Damit die Nachbarn sehen, wie sauber ich bin.“",
       "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
+    },
+    {
+      "timestamp": "2026-11-22T12:01:04.976Z",
+      "gpt": "Im Museum fragt der Besucher nach einem Film über die Ausstellung, die Bibliothekarin reicht ihm ein Buch – das ist der Trailer.",
+      "qwen": "Wir sind in der Bibliothek, im Kino und im Museum.\nMein Sohn fragt: „Warum schauen wir hier nur zu?“",
+      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
     }
   ]
 }
