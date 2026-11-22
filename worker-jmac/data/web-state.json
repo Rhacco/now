@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:36:05.387Z",
-      "gpt": "Ich füllte das Fundbüro-Formular aus, doch im Feld „Ort des Fundes“ stand nur: „Im Internet, weil ich das Formular nie abschicke.“",
-      "qwen": "Beim Fundbüro: „Müssen Sie das Formular zweifach ausfüllen?“\n„Dreifach, denn der erste Satz reicht selten zum Verständnis.“",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-22T03:41:03.932Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich in der Apotheke schon vergessen habe.“",
       "qwen": "Der Arzt sagt: „Nehmen Sie dreimal täglich eine Pille.“ Ich gehe zur Apotheke, der Apotheker nickt: „Alles klar, für die Praxis gleich mitbringen?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug vergaß ich mein Ticket, beim Bus vergaß ich den Fahrschein, im Taxi vergaß ich das Geld – im Auto vergaß ich, dass ich keinen Fahrschein brauche.",
       "qwen": "Ich dränge mich im überfüllten Bus nach vorn.\n„Entschuldigung, hier ist noch Platz“, sage ich zum Mann, der neben mir steht.",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-22T07:51:00.376Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, er empfiehlt mir ein Licht‑Thermostat – ich will doch nur lesen, nicht das Haus heizen.",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen bei der Wahl der Farbe helfen?“ Ich zeige auf mein kaltes Bier: „Nur wenn’s auch in Blau gibt.“",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
