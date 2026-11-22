@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:15:58.003Z",
-      "gpt": "Im Café bestellt er „ein Stück Kuchen zum Mitnehmen“ – die Kellnerin reicht ihm ein Tablett mit dem gesamten Kuchen und sagt: „Bitte, Ihr Paket.“",
-      "qwen": "Im Restaurant fragte ich nach dem Geheimnis des Gerichts. Der Koch grinste: „Das Salz, das ich weggelassen habe.“",
-      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
-    },
-    {
       "timestamp": "2026-11-22T09:21:05.632Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs, weil ich gerade erst die Bewerbungs‑PowerPoint erstelle.“",
       "qwen": "Nach dem Vorstellungsgespräch schickte ich den fiktiven Lebenslauf. Der Recruiter antwortete: „Wir laden Sie ein, um die KI-Lücke persönlich zu schließen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Verkäufer: „Nur, wenn Sie das Gemüse selbst einpacken.“",
       "qwen": "Ich frage den Wochenhändler nach dem Preis für Tomaten. Er schmeckt eine an und sagt: „Zwei Euro, wenn Sie sie jetzt essen.“",
       "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
+    },
+    {
+      "timestamp": "2026-11-22T13:25:58.813Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
+      "qwen": "„Ich habe den Fundantrag korrekt ausgefüllt.“\n„Dann ist er falsch, denn das Formular verlangt einen Fehler.“",
+      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
     }
   ]
 }
