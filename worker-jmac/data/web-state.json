@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:41:05.911Z",
-      "gpt": "Mutter fragt: „Warum ist dein Zimmer immer so unordentlich?“ Sohn: „Weil ich hier meine kreativen Ideen verstaue – und die liegen überall.“",
-      "qwen": "Ich fragte meine Frau: „Hast du den Müll rausgebracht?“ Sie antwortete: „Ja, ich habe ihn rausgebracht und dann wieder rein.“",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-21T21:46:04.049Z",
       "gpt": "Ich klopfe bei meinem Nachbarn, weil er ständig laute Partys feiert, und er öffnet: „Willkommen im Fitnessstudio, hier trainieren wir nur deine Geduld.“",
       "qwen": "Mein Nachbar stört tagsüber mit lauter Musik. Ich schlag ihm auf die Faust, er wird leiser.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach veganem Aufschnitt, sie reicht mir eine Packung Tofu und meint: „Da ist schon alles, was Sie nicht essen können.“",
       "qwen": "Ich frag im Supermarkt: „Gibt’s Beratung zur Bäckerei?“ Der Mann schaut verwirrt: „Da hinten, links.“",
       "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
+    },
+    {
+      "timestamp": "2026-11-22T01:43:19.343Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Kästchen „Unterschrift“ war bereits mit meinem Namen vorgedruckt – das war das verlorene Dokument.",
+      "qwen": "Ich frage das Fundbüro, ob mein Schlüssel dort ist. „Nein, er liegt hier“, sagt der Beamte und zeigt auf einen leeren Tisch.",
+      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
     }
   ]
 }
