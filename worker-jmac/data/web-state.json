@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:55:59.400Z",
-      "gpt": "Ich klopfte an die Nachbarin, weil mein Wasserhahn tropfte, und sie öffnete die Tür mit einem Eimer voll Kaffee – sie dachte, ich hätte das Leck gemeldet.",
-      "qwen": "Ich fragte den Nachbarn, warum er nachts um drei die Wäsche aufhängt. Er lachte und sagte: „Damit die Nachbarn sehen, wie sauber ich bin.“",
-      "archive": "Im Treppenhaus grüßt mich der neue Nachbar schon mit Namen. Offenbar hört man tatsächlich jedes Telefonat durch die Wand."
-    },
-    {
       "timestamp": "2026-11-22T12:01:04.976Z",
       "gpt": "Im Museum fragt der Besucher nach einem Film über die Ausstellung, die Bibliothekarin reicht ihm ein Buch – das ist der Trailer.",
       "qwen": "Wir sind in der Bibliothek, im Kino und im Museum.\nMein Sohn fragt: „Warum schauen wir hier nur zu?“",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat die Milch verschüttet?“ – Der Hund schaut schuldbewusst, weil er gerade das neue Wasserfilter‑Abonnement abonniert hat.",
       "qwen": "Mein Vater fragt: „Warum schreist du nachts?“\nIch: „Weil du jeden Morgen um drei Uhr die Fenster öffnest.“",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-22T16:05:58.119Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Weiterbildungsraum, weil ich dann endlich Ihre E‑Mails verstehen kann.“",
+      "qwen": "Nur weil ich mich für den Kurs „Kommunikation“ angemeldet habe, heißt das noch lange nicht, dass ich jetzt auch zuhören kann.",
+      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
     }
   ]
 }
