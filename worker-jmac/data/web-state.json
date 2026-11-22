@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:36:01.065Z",
-      "gpt": "Im Zug neben mir schläft ein Tourist laut schnarchend – ich wecke ihn, weil er mein Ticket gestohlen hat. Er sagt: „Ich dachte, das wäre ein Souvenir.“",
-      "qwen": "Ich will im Urlaub nur ausruhen. Die Katze hat den Reiseführer gefressen.",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-22T05:41:05.440Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich erst noch abholen muss.“",
       "qwen": "Ich warte seit drei Stunden in der Wartezimmer-Ecke, um mein Rezept abzuholen. Das Rezept liegt aber in der Apotheke, die erst mit der Praxis schließt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Ich antworte: „Nein, ich habe sie gerade erst gefunden.“",
       "qwen": "Ich habe den Fundbericht für meine Brille ausgefüllt. Jetzt muss der Finder nur noch meine Augen beschreiben.",
       "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
+    },
+    {
+      "timestamp": "2026-11-22T09:41:05.212Z",
+      "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie Milch dazu?“ – Ich sag: „Nein, ich will nur das Geräusch von „Kaffee, fertig!“ hören.",
+      "qwen": "Im Restaurant fragte ich: „Ist das Steak durch?“\nDer Kellner antwortete: „Ja, es ist sogar gebraten.“",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
