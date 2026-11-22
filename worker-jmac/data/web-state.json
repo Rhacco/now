@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:16:05.708Z",
-      "gpt": "In der Bibliothek fragt er nach dem Film „Stille“, die Bibliothekarin reicht ihm ein Buch; im Kino bestellt er Popcorn, bekommt ein Ausstellungsführer.",
-      "qwen": "Im Museum schwieg das Bild. Im Kino schrie der Film. In der Bibliothek flüsterte der Mann, der nur zum Wasserholen kam.",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-21T21:21:04.274Z",
       "gpt": "Ich fülle beim Fundbüro das Formular aus, das ich gerade im Fundbüro gefunden habe.",
       "qwen": "Im Fundbüro fragte ich nach meinem gestohlenen Fahrrad. Die Dame meinte höflich: „Dafür brauchen Sie dieses Formular zu unterschreiben.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine wieder aufgemacht?“ – „Ich wollte sehen, ob das Wasser noch weint, wenn ich sie ausschalte.“",
       "qwen": "Ich frag die Oma, ob es reicht, wenn ich das Geschirr nur spüle. Sie schnipst mit dem Finger: „Du spülst, ich räume ab. Das ist Arbeitsteilung.“",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-22T01:21:03.477Z",
+      "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie viele Wiederholungen wollen Sie heute?“ Ich antworte: „Nur eine, ich entspanne mich gleich danach.“",
+      "qwen": "Ich mache entspanntes Dehnen. Der Physiotherapeut bricht mir die Hand.",
+      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
     }
   ]
 }
