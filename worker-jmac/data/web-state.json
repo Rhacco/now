@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:46:03.864Z",
-      "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den Salat gegessen?“ Der Hund bellt: „Ich! Ich wollte nur die Tomaten‑Deko probieren.“",
-      "qwen": "Der Vater erklärt dem Sohn die Herkunft von „Nesthocker“. Der Sohn fragt, ob er das mit dem Umzug in die WG machen muss.",
-      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
-    },
-    {
       "timestamp": "2026-11-21T22:50:58.197Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum – ich habe gerade erst die Weiterbildung gebucht.“",
       "qwen": "Ich wollte mich für den Chefposten bewerben, doch der Personaler fragte nur: „Machen Sie noch Weiterbildung?“\n„Nein“, sagte ich, „ich bin schon Chef.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarin, weil mein Wasserhahn leckt, und sie sagt: „Kein Problem, ich habe schon immer ein Bad im Flur geplant.“",
       "qwen": "Ich fragte den Nachbarn, ob mein Rasenmäher zu laut wäre.\nEr sagte, es sei egal, er habe das Haus längst versteigert.",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-22T02:50:58.452Z",
+      "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel: „Der nächste Halt ist das Büro, ich habe doch den Urlaub zu Hause vergessen.“",
+      "qwen": "Auf dem Gipfel brüllte der Mann: „Hier kann man die ganze Welt sehen!“ Seine Frau zitierte prompt den Kellner: „Und hier gibt’s nur Wurst.“",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
