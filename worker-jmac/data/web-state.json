@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:21:06.552Z",
-      "gpt": "Ich räume den Keller aus und finde einen alten Toaster. Beim Testen brennt er – er will wohl noch ein bisschen „aufwärmen“.",
-      "qwen": "Ich habe die Kellerboxen gepackt. Die Katze saß besorgt drin.",
-      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
-    },
-    {
       "timestamp": "2026-11-21T20:26:07.636Z",
       "gpt": "Ich betrete die Bibliothek, finde Popcorn und ein rotes Vorhang‑Schild. Das Museum hat das Kino übernommen und ich habe das falsche Ticket.",
       "qwen": "Bibliothek, Kino und Museum sind voll.\nIch war nur im Wartezimmer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die leere PowerPoint – das ist mein Beitrag zur „Klarheit“.",
       "qwen": "Chef fragt: „Und wie geht’s der Frau Müller?“ Ich antworte: „Sie ist seit gestern im Urlaub.“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-22T00:25:58.407Z",
+      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Ich: „Nein, ich habe schon genug Probleme, die ich nicht tragen kann.“",
+      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
