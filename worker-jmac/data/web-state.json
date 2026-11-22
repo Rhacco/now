@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:11:05.881Z",
-      "gpt": "Im Zug steht ein Tourist und fragt: „Welcher Wagen fährt zum Flughafen?“ Der Schaffner lächelt: „Der, in dem Sie gerade sitzen – wir haben nur ein Ziel.“",
-      "qwen": "Ich fahre Bahn, Bus, Taxi und Auto gleichzeitig.\nNämlich in einem Kinderbuch.",
-      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
-    },
-    {
       "timestamp": "2026-11-22T06:15:57.505Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Handtuch – „für den Fall, dass Ihnen beim Anprobieren warm wird.“",
       "qwen": "Ich fragte im Supermarkt nach dem Kassenbon. Die Kassiererin gab mir den gesuchten Kugelschreiber.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie abgeholt wird.“",
       "qwen": "Ich frage den Arzt nach der Überweisung, er gibt mir nur einen Zettel. „Das ist kein Rezept“, lache ich, „dafür muss ich in die Apotheke.“",
       "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
+    },
+    {
+      "timestamp": "2026-11-22T10:16:06.350Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund knickt meine Katze ein und behauptet, das sei ihr neuer Lieblingsplatz.",
+      "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mir auf die Zehen getreten.",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
