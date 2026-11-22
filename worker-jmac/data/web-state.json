@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:11:03.483Z",
-      "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, damit er endlich die Wohnung bekommt – und jetzt klopft er täglich an, weil er das Möbelstück vermisst.",
-      "qwen": "Ich habe dem Nachbarn die Bohrnadel abgenommen. Er wohnt nun in einem dreistufigen Alkomaten.",
-      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
-    },
-    {
       "timestamp": "2026-11-21T21:16:05.708Z",
       "gpt": "In der Bibliothek fragt er nach dem Film „Stille“, die Bibliothekarin reicht ihm ein Buch; im Kino bestellt er Popcorn, bekommt ein Ausstellungsführer.",
       "qwen": "Im Museum schwieg das Bild. Im Kino schrie der Film. In der Bibliothek flüsterte der Mann, der nur zum Wasserholen kam.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – er meinte, es sei schon im Urlaub, weil ich es nicht abgeholt habe.",
       "qwen": "Man muss den Absender angeben. Der Paketbote hat sich schon beschwert.",
       "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
+    },
+    {
+      "timestamp": "2026-11-22T01:16:06.087Z",
+      "gpt": "Mama fragt: „Warum hast du die Waschmaschine wieder aufgemacht?“ – „Ich wollte sehen, ob das Wasser noch weint, wenn ich sie ausschalte.“",
+      "qwen": "Ich frag die Oma, ob es reicht, wenn ich das Geschirr nur spüle. Sie schnipst mit dem Finger: „Du spülst, ich räume ab. Das ist Arbeitsteilung.“",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
