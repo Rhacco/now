@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:35:58.113Z",
-      "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen; sie meinte, sie wolle ihn nur kurz testen. Jetzt steht er im Wohnzimmer und frisst meine Zimmerpflanzen.",
-      "qwen": "Der Nachbar trommelt die Nacht durch. Ich klopfe an und rufe: „Haben Sie ein Mikro? Das tut so weh.\"",
-      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
-    },
-    {
       "timestamp": "2026-11-22T08:40:58.703Z",
       "gpt": "Im Zug sitzt ein Mann und liest, plötzlich ruft die Durchsage: „Nächster Halt: Parkplatz.“ Der Zug hält – weil er im Stau steht.",
       "qwen": "Ich dränge mich in die volle U-Bahn, um pünktlich zu sein.\nMein Kaffeebecher explodiert und ich stehe nun in einem braunen Meer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich ziehe den Sicherheitsgurt an, weil ich im Taxi sitze.",
       "qwen": "Ich nehme das Taxi, um vor dem Bus nicht durch eine Ampel zu stehen.",
       "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
+    },
+    {
+      "timestamp": "2026-11-22T12:41:04.994Z",
+      "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Ich: „Ich nicht, die Katze hat es geklaut – sie hat ja schließlich einen eigenen Napf.“",
+      "qwen": "Ich fahre mit der Familie in einen Streikwagen.\nDa brüllt der Opa: „Halt! Hier wohnt meine Ex!\"",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
