@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:46:08.016Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gefundene Portemonnaie war schon mit meinem Namen beschriftet – das war wohl mein eigenes.",
-      "qwen": "Ich gab den verlorenen Regenschirm beim Fundbüro ab. Sie gaben mir ein Formular für den Verlust des Regenschirms.",
-      "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
-    },
-    {
       "timestamp": "2026-11-22T08:50:58.456Z",
       "gpt": "Im Zug zum Strand frage ich den Schaffner, ob wir bald ankommen. Er lächelt: „Nur, wenn Sie das Wasser nicht vergessen haben.“",
       "qwen": "Ich wollte im Urlaub nur relaxen, aber die Sonne hat mich gezwungen, den ganzen Tag zu arbeiten.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt: „Wir sind fast fertig.“ – Der Praktikant zeigt die leere PowerPoint und sagt: „Hier ist unser Konzept.“",
       "qwen": "Der Chef fragt im Meeting nach meiner Meinung, und ich sage nein. Alle starren mich an, weil ich die Frage überhört habe.",
       "archive": "Die neue Zeiterfassung meldet, ich hätte zu lange Pause gemacht. Ich war die ganze Zeit damit beschäftigt, die Zeiterfassung einzurichten."
+    },
+    {
+      "timestamp": "2026-11-22T12:50:56.268Z",
+      "gpt": "Ich frage beim Wochenmarkt nach dem besten Preis für Äpfel – die Verkäuferin sagt: „Im Supermarkt, dort gibt’s Sonderangebot.“ Ich kaufe dort.",
+      "qwen": "Ich fragte die Oma: „Kostet mehr?“ Sie lachte: „Nein, hier ist alles zweimal so teuer.“",
+      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
     }
   ]
 }
