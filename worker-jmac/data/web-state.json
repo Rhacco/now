@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:50:58.197Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum – ich habe gerade erst die Weiterbildung gebucht.“",
-      "qwen": "Ich wollte mich für den Chefposten bewerben, doch der Personaler fragte nur: „Machen Sie noch Weiterbildung?“\n„Nein“, sagte ich, „ich bin schon Chef.“",
-      "archive": "Mein Lebenslauf soll lückenlos sein. Bei den drei Monaten Auszeit schreibe ich jetzt: „Erfolgreich nicht erreichbar gewesen.“"
-    },
-    {
       "timestamp": "2026-11-21T22:55:58.356Z",
       "gpt": "Ich bestelle im Café einen Cappuccino, der Kellner fragt: „Möchten Sie Zucker?“ – Ich antworte: „Nein, ich bin hier zum Aufwachen, nicht zum Süßen.“",
       "qwen": "Wir bestellen im Café einen Cappuccino. Die Kellnerin fragt: „Mit Schuss?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel: „Der nächste Halt ist das Büro, ich habe doch den Urlaub zu Hause vergessen.“",
       "qwen": "Auf dem Gipfel brüllte der Mann: „Hier kann man die ganze Welt sehen!“ Seine Frau zitierte prompt den Kellner: „Und hier gibt’s nur Wurst.“",
       "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
+    },
+    {
+      "timestamp": "2026-11-22T02:56:04.718Z",
+      "gpt": "Im Café bestellt ich einen Espresso, der Kellner schenkt mir ein Kochbuch. „Für den perfekten Aufguss“, sagt er, „braucht man nur ein bisschen Hitze.“",
+      "qwen": "Ich fragte im Café: „Haben Sie auch vegetarisch?“\nDie Bedienung meinte: „Nur wenn der Fisch tot ist.“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
