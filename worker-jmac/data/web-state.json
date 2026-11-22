@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:36:05.055Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ Ich antworte: „Nein, ich habe sie gerade erst gefunden.“",
-      "qwen": "Ich habe den Fundbericht für meine Brille ausgefüllt. Jetzt muss der Finder nur noch meine Augen beschreiben.",
-      "archive": "Im Fundbüro wurde mein verlorener Kalender gefunden. Den Abholtermin sollte ich mir notieren, aber genau dafür brauche ich ihn."
-    },
-    {
       "timestamp": "2026-11-22T09:41:05.212Z",
       "gpt": "Ich bestelle im Café einen Kaffee, der Kellner fragt: „Möchten Sie Milch dazu?“ – Ich sag: „Nein, ich will nur das Geräusch von „Kaffee, fertig!“ hören.",
       "qwen": "Im Restaurant fragte ich: „Ist das Steak durch?“\nDer Kellner antwortete: „Ja, es ist sogar gebraten.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nicht eingelöst ist.“",
       "qwen": "Im Wartezimmer flüstert die Frau neben mir: „Der Doktor ist heute brutal streng.“\nIch antworte erleichtert: „Gut, denn ich habe eine Rechnung mitgebracht.“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-22T13:46:05.127Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen?“, und die Praktikantin meldet sich: „Ich, ich habe die Kaffeemaschine gezählt – 0,5 l pro Stunde.“",
+      "qwen": "Die Besprechung dauerte drei Stunden, weil der Chef nur ja und nein sagte. Am Ende hatten wir zwei neue Projekte beschlossen.",
+      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
     }
   ]
 }
