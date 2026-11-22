@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:25:57.461Z",
-      "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie meldet nur: „Bitte bewegen Sie sich – das Handy liegt schon auf dem Sofa.“",
-      "qwen": "Ich suchte die App fürs Wetter.\nSie hat mir die Sonne abgeschaltet.",
-      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
-    },
-    {
       "timestamp": "2026-11-22T07:31:05.767Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund hat mich die Katze geküsst – jetzt bin ich entspannt und gleichzeitig allergisch.",
       "qwen": "Ich schnüre die Laufschuhe für die morgendliche Joggingrunde. Mein Hund bellt fröhlich, aber ich bleibe sitzen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach Bio‑Äpfeln, die Verkäuferin meint, sie kämen vom Wochenmarkt. Ich antworte: „Dann bitte gleich die Kasse, ich zahl bar.“",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis für die Tomaten. Die Bäuerin zückt die Waage und fragt: „Sollen wir die halbe Ernte wiegen?“",
       "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
+    },
+    {
+      "timestamp": "2026-11-22T11:30:58.831Z",
+      "gpt": "Mutter fragt: „Warum hast du die Waschmaschine angerufen?“  \nIch: „Sie hat mich gefragt, ob sie noch einen Freund braucht.“",
+      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen gegessen?“\nIch: „Die Katze.“\nSie: „Wo ist sie?“\nIch: „Im Gefrierfach.“",
+      "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
     }
   ]
 }
