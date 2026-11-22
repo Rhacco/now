@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:51:04.477Z",
-      "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wie fühlt sich die Balance an?“ – „Wie mein Kontostand nach dem Black‑Friday‑Sale.“",
-      "qwen": "Ich wollte nur kurz Dehnen, aber jetzt liege ich da und starre auf die Decke.",
-      "archive": "Beim Wandern sagt die Gruppenleiterin: „Wir gehen gemütlich.“ Drei Minuten später sind alle damit beschäftigt, sie wiederzufinden."
-    },
-    {
       "timestamp": "2026-11-22T01:56:06.498Z",
       "gpt": "Beim Ausmisten findet er die Fernbedienung im Kühlschrank. Jetzt hat er endlich Kontrolle über die Temperatur.",
       "qwen": "Ich fragte die Spedition: „Habt ihr Platz für mein Aquarium?“ Der Chef nickte. „Ja, aber der Fisch zahlt die Lieferspa`",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Sitzreihe mit Meerblick?“ Der Schaffner lächelt: „Nein, das ist die Reihe mit WLAN.“",
       "qwen": "Ich buche ein Zelt für den Campingurlaub. Der Verkäufer fragt: „Brauchen Sie auch Stöcke?“",
       "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
+    },
+    {
+      "timestamp": "2026-11-22T06:06:03.498Z",
+      "gpt": "Im Museum fragt der Besucher: „Wo ist das Buch über Filmgeschichte?“ Die Bibliothekarin zeigt auf die Kinoleinwand.",
+      "qwen": "Ich bin auf der Suche nach Stille in der Bibliothek, im Kino und im Museum. Doch nur hier weiß ich, was ich suche.",
+      "archive": "In der Ausstellung steht vor einem Bild „Bitte Abstand halten“. Mein Freund geht so weit zurück, dass er schon vor dem nächsten steht."
     }
   ]
 }
