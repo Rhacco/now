@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:41:03.932Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich in der Apotheke schon vergessen habe.“",
-      "qwen": "Der Arzt sagt: „Nehmen Sie dreimal täglich eine Pille.“ Ich gehe zur Apotheke, der Apotheker nickt: „Alles klar, für die Praxis gleich mitbringen?“",
-      "archive": "Die Sprechstundenhilfe fragt, ob ich einen Termin habe. Ich sage ja, und sie antwortet: „Schön, dann sind wir uns schon mal einig.“"
-    },
-    {
       "timestamp": "2026-11-22T03:46:01.867Z",
       "gpt": "Ich frage die Verkäuferin nach einem passenden Anzug, sie misst mich und sagt: „Für Sie passt nur unser Sonderangebot – ein Spiegel.“",
       "qwen": "In der Filiale fragt der Kunde: „Haben Sie auch Beratung?“ „Ja, aber nur für die, die nicht kaufen müssen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, er empfiehlt mir ein Licht‑Thermostat – ich will doch nur lesen, nicht das Haus heizen.",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen bei der Wahl der Farbe helfen?“ Ich zeige auf mein kaltes Bier: „Nur wenn’s auch in Blau gibt.“",
       "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
+    },
+    {
+      "timestamp": "2026-11-22T07:56:03.995Z",
+      "gpt": "Ich stehe am Supermarkt-Eingang, warte auf den Kundenservice‑Schalter und höre: „Entschuldigung, hier gibt’s nur Selbstbedienung.“",
+      "qwen": "Ich frage den Verkäufer: „Ist der Fisch frisch?“ Er sagt: „Ja, der war gestern noch am Leben.“",
+      "archive": "An der Probiertheke fragt die Verkäuferin, wie mir der Käse schmeckt. „Für ein Urteil bräuchte ich noch ein Beweisstück.“"
     }
   ]
 }
