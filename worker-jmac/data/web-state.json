@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:00:59.651Z",
-      "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die PowerPoint‑Folien – sie zeigen nur „Bitte warten…“, weil das Projekt noch im Ladenladen ist.",
-      "qwen": "Der Chef fragt: „Haben Sie die Zahlen geprüft?“\nIch: „Ja, es sind noch drei Stück.“",
-      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
-    },
-    {
       "timestamp": "2026-11-22T11:06:05.572Z",
       "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Ich antworte: „Nein, ich sitze im Bus.“",
       "qwen": "Ich winkte dem Taxi winkend und fuhr ihm direkt vor die Radstange.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Hund neben mir bellt begeistert und legt sich hin.",
       "qwen": "Ich streckte mich beim Yoga so intensiv, dass mir der Puls wegging. Der Trainer lobte meine unübertroffene Tiefenentspannung.",
       "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
+    },
+    {
+      "timestamp": "2026-11-22T15:11:05.194Z",
+      "gpt": "Ich wollte im Museum ein Buch ausleihen, aber der Bibliothekar meinte, das sei ein Film, und das Kino schickte mich zurück.",
+      "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin zeigte streng auf die Wand: „Hier nur staunen, nicht gehen.“",
+      "archive": "Im Kino klingelt hinter mir ein Handy. Sein Besitzer zischt „Ruhe“ hinein, und plötzlich gilt die Beschwerde im ganzen Saal ihm."
     }
   ]
 }
