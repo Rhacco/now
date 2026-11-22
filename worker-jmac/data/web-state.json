@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:01:04.604Z",
-      "gpt": "Im Supermarkt kaufe ich Bio‑Äpfel, dann gehe ich zum Wochenmarkt und frage: „Haben Sie die gleichen Preise wie online?“ Verkäufer: „Nur, wenn Sie den Lieferservice nutzen.“",
-      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Stand der Bio-Erdbeeren hat mich das ganze Geld kosten lassen.",
-      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
-    },
-    {
       "timestamp": "2026-11-22T05:06:04.527Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie das Rezept, das ich gleich in der Apotheke abhole.“",
       "qwen": "Ich fragte den Apotheker: „Können Sie mir ein Rezept verschreiben?“ Er sagte: „Nein, das macht mein Kollege im Wartezimmer.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Abendessen fragt Mama: „Wer hat den Keks geklaut?“ Papa grinst und sagt: „Ich, weil er im Kühlschrank war.“",
       "qwen": "Mama fragt: „Hast du das Haus sauber gemacht?“\nIch: „Ja, es ist jetzt komplett leer.“",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-22T09:05:57.610Z",
+      "gpt": "Ich öffne die Wetter‑App, sehe Regen und nehme den Regenschirm. Beim nächsten Mal frage ich die App, ob sie das Wetter auch für meine Laune vorhersagen kann.",
+      "qwen": "Ich suche nach einer App, die mir beim Abschalten hilft. Die einzige, die das kann, heißt „Handy aus“.",
+      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
     }
   ]
 }
