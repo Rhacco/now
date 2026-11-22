@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:05:58.276Z",
-      "gpt": "Ich steige in den Bus, der Fahrer sagt: „Wir fahren gerade durch die Stadt.“ Ich schau nach rechts – wir sind im Kreisverkehr.",
-      "qwen": "Ich sage dem Taxifahrer: „Fahren Sie wie ein Wahnsinniger!“\nEr bremst abrupt: „Angst?",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-21T23:10:58.280Z",
       "gpt": "Im Zug vergaß ich mein Ticket, doch die Kontrolleure gaben mir ein Upgrade – ans Fenster, weil ich dort am besten \"aussteigen\" kann.",
       "qwen": "Auf dem Campingplatz lern ich den Nachbarn kennen. Er fragt, ob ich auch im Urlaub noch arbeite.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, damit ich die Frage endlich richtig beantworten kann.“",
       "qwen": "„In der Weiterbildung lernte ich, wie man souverän auftritt. Beim Vorstellungsgespräch fragte ich den Chef: ‚Sind Sie das?‘“",
       "archive": "Im Seminar über aktives Zuhören fragt die Dozentin nach einem Freiwilligen. Alle schauen demonstrativ interessiert auf ihre Unterlagen."
+    },
+    {
+      "timestamp": "2026-11-22T03:10:57.313Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie die Suppe warm oder kalt?“ Der Kunde meint: „Warm, bitte – ich habe gerade erst das Eis gegessen.“",
+      "qwen": "Im Café bestellte ich einen Kaffee. Der Kellner fragte: „Zu trinken oder zum Kochen?“",
+      "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
     }
   ]
 }
