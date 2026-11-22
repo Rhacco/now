@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:06:10.351Z",
-      "gpt": "Ich öffne die Wetter-App, sehe Regen und gehe trotzdem joggen – mein Fitness‑Tracker meldet: „Gut gemacht, du hast den Regen überlistet.“",
-      "qwen": "Ich gebe meine PIN ein.\nMein Handy antwortet: „Falsch. Haben Sie zu viel Weizen gegessen?“",
-      "archive": "Die To-do-App erinnert mich ans Aufräumen. Ich schiebe die Erinnerung in den Ordner „Erledigt“ und fühle mich sofort produktiver."
-    },
-    {
       "timestamp": "2026-11-22T10:10:58.693Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie abgeholt wird.“",
       "qwen": "Ich frage den Arzt nach der Überweisung, er gibt mir nur einen Zettel. „Das ist kein Rezept“, lache ich, „dafür muss ich in die Apotheke.“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich, weil ich jetzt schon beim Aufräumen die Diät starte.“",
       "qwen": "Ich sagte zu meiner Frau: „Ich liebe es, wenn wir Zeit für uns zwei haben.“\nSie schlug vor: „Wie wäre es mit dem nächsten Kindergartenfest?“",
       "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
+    },
+    {
+      "timestamp": "2026-11-22T14:15:57.068Z",
+      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Das Kino ruft: „Nur, wenn du Popcorn mitbringst.“",
+      "qwen": "Ich hab im Museum den Führer gefragt, ob das Gemälde echt ist. Der winkte ab und sagte: „Das ist nur das Kino.“",
+      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
     }
   ]
 }
