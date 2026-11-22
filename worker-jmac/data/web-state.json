@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:06:04.033Z",
-      "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie zeigte nur „Bitte legen Sie das Handy weg – Sie sind bereits in Bewegung.“",
-      "qwen": "Ich habe versehentlich den Wecker um 3 Uhr an.\n\nMein Handy wollte mich nicht wach, sondern mein Facebook-Feed.",
-      "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
-    },
-    {
       "timestamp": "2026-11-21T21:11:03.483Z",
       "gpt": "Ich habe meinem Nachbarn beim Umzug geholfen, damit er endlich die Wohnung bekommt – und jetzt klopft er täglich an, weil er das Möbelstück vermisst.",
       "qwen": "Ich habe dem Nachbarn die Bohrnadel abgenommen. Er wohnt nun in einem dreistufigen Alkomaten.",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil mein Paket nie ankam – sie sagten, es sei bereits im nächsten Leben zugestellt worden.",
       "qwen": "„Ihr Paket wurde zugestellt!“ rief der Botenfahrer. „Von Ihnen auf sich selbst.“",
       "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
+    },
+    {
+      "timestamp": "2026-11-22T01:11:07.313Z",
+      "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – er meinte, es sei schon im Urlaub, weil ich es nicht abgeholt habe.",
+      "qwen": "Man muss den Absender angeben. Der Paketbote hat sich schon beschwert.",
+      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
     }
   ]
 }
