@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:41:05.329Z",
-      "gpt": "Im Supermarkt fragt ich die Verkäuferin nach veganem Aufschnitt, sie reicht mir eine Packung Tofu und meint: „Da ist schon alles, was Sie nicht essen können.“",
-      "qwen": "Ich frag im Supermarkt: „Gibt’s Beratung zur Bäckerei?“ Der Mann schaut verwirrt: „Da hinten, links.“",
-      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
-    },
-    {
       "timestamp": "2026-11-22T01:43:19.343Z",
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Kästchen „Unterschrift“ war bereits mit meinem Namen vorgedruckt – das war das verlorene Dokument.",
       "qwen": "Ich frage das Fundbüro, ob mein Schlüssel dort ist. „Nein, er liegt hier“, sagt der Beamte und zeigt auf einen leeren Tisch.",
@@ -300,6 +294,12 @@
       "gpt": "Ich stand im Fundbüro, füllte das Formular aus und fragte: „Wo ist das Feld für das verlorene Gedächtnis?“ – Die Angestellte schrieb: „Sie haben es schon eingereicht.“",
       "qwen": "Im Fundbüro fragt man mich nach der Farbe des verlorensen Schirmes. Ich sage, er war rosarot. Der Beamte stempelt das Formular ab und sagt, das gilt als nicht beantragt.",
       "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
+    },
+    {
+      "timestamp": "2026-11-22T05:51:03.600Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, doch als ich die Katze in die „herabschauende Hund“-Position ziehe, schnurrt sie nur und schläft ein.",
+      "qwen": "Der Physiotherapeut drückt mir den Fuß.\n„Gut so“, sagt er, „jetzt entspannen Sie sich.“",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
