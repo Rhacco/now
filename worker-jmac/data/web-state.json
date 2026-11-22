@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:16:02.054Z",
-      "gpt": "Im Café bestelle ich einen Cappuccino, doch die Kellnerin fragt: „Möchten Sie ihn lieber mit Milch oder mit Espresso?“ Ich sag: „Beides, ich bin verwirrt.“",
-      "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte, ob ich ihn auch kochen soll.",
-      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
-    },
-    {
       "timestamp": "2026-11-22T00:21:03.706Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die leere PowerPoint – das ist mein Beitrag zur „Klarheit“.",
       "qwen": "Chef fragt: „Und wie geht’s der Frau Müller?“ Ich antworte: „Sie ist seit gestern im Urlaub.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ Sohn: „Er will endlich mal etwas Kühles denken.“",
       "qwen": "Mama fragt: „Und wo ist Papa?“\nIch: „Im Keller.“\nMama: „Schließlich ist er ein Mausefalle.“",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-22T04:20:56.965Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Karton. Kundendienst ruft: „Herzlichen Glückwunsch, Sie haben ein Upgrade auf Luftpost erhalten!“",
+      "qwen": "Die Zustellerin fragt lächelnd: „Und wie geht es Ihnen heute?“\nIch schweige, während sie das Paket langsam zerdrückt.",
+      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
     }
   ]
 }
