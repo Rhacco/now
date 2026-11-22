@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:50:57.632Z",
-      "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular zum Verlust von Schlüsseln?“ Ich: „Nein, ich habe den Schlüssel verloren.“",
-      "qwen": "Ich habe mein verlorenes Portemonnaie beim Fundbüro abgegeben. Jetzt muss ich dort das Formblatt F-386 ausfüllen, um es zurückzuholen.",
-      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
-    },
-    {
       "timestamp": "2026-11-22T04:55:58.083Z",
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie ein Rezept – noch nicht eingelöst.“",
       "qwen": "Ich fragte den Arzt, wie lange ich noch warten muss. Er sagte: „Oh, die Apotheke ist zu, nehmen Sie doch kurz den Pflasterstreifen.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Ich antworte: „Einen, der mir das Essen bezahlt.“",
       "qwen": "Die Karte verspricht „Hausmannskost“, doch der Löffel verliert gegen die Wand des Teller-Bodens.",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-22T08:56:02.362Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt – ich zeige die leere PowerPoint und sage: „Hier ist das Ergebnis meiner kreativen Denkpause.“",
+      "qwen": "Im Meeting fragte der Chef nach Rückfragen, und ich nickte stumm. Er lächelte zufrieden und sagte: „Dann sind wir also einverstanden.“",
+      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
     }
   ]
 }
