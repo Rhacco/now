@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:25:57.698Z",
-      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht.“",
-      "qwen": "Ich stellte das Auto ab, stieg in den Bus, dann in die Bahn und ins Taxi. Der Taxifahrer fragte: „Zu Hause vergessen?“",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-22T04:31:03.631Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und finde ein leeres Päckchen – der Kundendienst hat es bereits als „nicht zustellbar“ zurückgesendet.",
       "qwen": "Ihr Paket wurde heute zugestellt, teilt der Kurier. „Genau auf Ihren Kopf“, fügt er lächelnd hinzu.",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin den Rasenmäher geliehen; sie meinte, sie wolle ihn nur kurz testen. Jetzt steht er im Wohnzimmer und frisst meine Zimmerpflanzen.",
       "qwen": "Der Nachbar trommelt die Nacht durch. Ich klopfe an und rufe: „Haben Sie ein Mikro? Das tut so weh.\"",
       "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
+    },
+    {
+      "timestamp": "2026-11-22T08:40:58.703Z",
+      "gpt": "Im Zug sitzt ein Mann und liest, plötzlich ruft die Durchsage: „Nächster Halt: Parkplatz.“ Der Zug hält – weil er im Stau steht.",
+      "qwen": "Ich dränge mich in die volle U-Bahn, um pünktlich zu sein.\nMein Kaffeebecher explodiert und ich stehe nun in einem braunen Meer.",
+      "archive": "Der Fahrlehrer sagt: „Jetzt bitte ganz entspannt einparken.“ Hinter mir bildet sich eine Schlange, die offenbar dieselbe Übung macht."
     }
   ]
 }
