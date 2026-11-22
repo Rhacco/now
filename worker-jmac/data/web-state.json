@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:00:58.226Z",
-      "gpt": "Ich packe das halbe Haus in Kisten, dann frage ich den Umzugswagen: „Wie viel kostet das, wenn ich nur noch Luft verschicke?“",
-      "qwen": "Wir haben beim Ausmisten eine Kiste mit Briefen aus 1985 gefunden. Darin wünschte ich mir sehnlichst, dass mein Umzug endlich vorbei ist.",
-      "archive": "Beim Aufräumen finde ich lauter Sachen wieder, die ich lange gesucht habe. Das Problem ist, dass ich nicht mehr weiß, wozu."
-    },
-    {
       "timestamp": "2026-11-21T21:06:04.033Z",
       "gpt": "Ich wollte meine neue Fitness‑App starten, doch sie zeigte nur „Bitte legen Sie das Handy weg – Sie sind bereits in Bewegung.“",
       "qwen": "Ich habe versehentlich den Wecker um 3 Uhr an.\n\nMein Handy wollte mich nicht wach, sondern mein Facebook-Feed.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich erst noch den Kurs „Selbstmarketing für Anfänger“ belegen muss.“",
       "qwen": "Im Vorstellungsgespräch fragte der Chef: „Was erwartet Sie von der Weiterbildung?“\nIch: „Dass Sie mir endlich sagen, was ich hier eigentlich machen soll.“",
       "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
+    },
+    {
+      "timestamp": "2026-11-22T01:06:03.333Z",
+      "gpt": "Ich rief den Kundendienst, weil mein Paket nie ankam – sie sagten, es sei bereits im nächsten Leben zugestellt worden.",
+      "qwen": "„Ihr Paket wurde zugestellt!“ rief der Botenfahrer. „Von Ihnen auf sich selbst.“",
+      "archive": "Die Paket-App zeigt „Fahrer hat noch einen Stopp“. Seit einer Stunde hoffe ich, dass er kein Möbelhaus beliefert."
     }
   ]
 }
