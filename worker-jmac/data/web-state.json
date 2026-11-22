@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:16:03.138Z",
-      "gpt": "Im Zug sitzt er neben einem Pendler, im Bus neben einer Rentnerin, im Taxi neben einem Touristen – im Auto fährt er endlich allein, weil er den Führerschein vergessen hat.",
-      "qwen": "Ich tanke voll und fahre los. Der Tankwart ruft: „Nur drei Euro, bitte!“",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-21T20:21:06.552Z",
       "gpt": "Ich räume den Keller aus und finde einen alten Toaster. Beim Testen brennt er – er will wohl noch ein bisschen „aufwärmen“.",
       "qwen": "Ich habe die Kellerboxen gepackt. Die Katze saß besorgt drin.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestelle ich einen Cappuccino, doch die Kellnerin fragt: „Möchten Sie ihn lieber mit Milch oder mit Espresso?“ Ich sag: „Beides, ich bin verwirrt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte, ob ich ihn auch kochen soll.",
       "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
+    },
+    {
+      "timestamp": "2026-11-22T00:21:03.706Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die leere PowerPoint – das ist mein Beitrag zur „Klarheit“.",
+      "qwen": "Chef fragt: „Und wie geht’s der Frau Müller?“ Ich antworte: „Sie ist seit gestern im Urlaub.“",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
