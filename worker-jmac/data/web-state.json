@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:50:56.268Z",
-      "gpt": "Ich frage beim Wochenmarkt nach dem besten Preis für Äpfel – die Verkäuferin sagt: „Im Supermarkt, dort gibt’s Sonderangebot.“ Ich kaufe dort.",
-      "qwen": "Ich fragte die Oma: „Kostet mehr?“ Sie lachte: „Nein, hier ist alles zweimal so teuer.“",
-      "archive": "Am Obststand frage ich, ob die Erdbeeren süß sind. Die Verkäuferin probiert eine und sagt: „Die hier nicht.“"
-    },
-    {
       "timestamp": "2026-11-22T12:56:06.322Z",
       "gpt": "Im Zug steht die Durchsage: „Bitte nicht aus dem Fenster springen.“ Im Bus hört man das gleiche: „Bitte nicht aus dem Taxi aussteigen.“",
       "qwen": "Ich warte eine Stunde auf die Bahn. Dann schreibe ich den Busfahrer an. „Da geht doch kein Taxi durch“, sagt der Fahrer und hält an.",
@@ -300,6 +294,12 @@
       "gpt": "Im Museum fragt ein Besucher nach dem Filmprogramm, die Bibliothekarin überreicht ihm leise ein Buch: „Hier steht, was im Kino läuft.“",
       "qwen": "Im Museum fragte ich nach dem Ausgang. Die Wächterin deutete auf die Tür und sagte: „Der kostet extra.“",
       "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
+    },
+    {
+      "timestamp": "2026-11-22T16:47:39.966Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ Da steht ein Bodybuilder und sagt: „Nur, wenn ich vorher noch ein Aufwärmen mache.“",
+      "qwen": "Ich wollte beim Yoga entspannen, aber die Pose hat mein Knie so sehr gebeugt, dass ich jetzt noch immer kreische.",
+      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
     }
   ]
 }
