@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:26:05.666Z",
-      "gpt": "Ich mache Yoga, um Stress abzubauen, aber jedes Mal, wenn ich die „Baum‑Pose“ halte, fällt mein Nachbar mit seinem Rasenmäher an mir vorbei.",
-      "qwen": "Ich laufe zügig, um den Puls zu pumpen, doch der Jogger neben mir fragt, ob ich mein Auto noch am Bahnsteig geparkt habe.",
-      "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
-    },
-    {
       "timestamp": "2026-11-22T08:30:59.188Z",
       "gpt": "Der Lieferant klopft, ich frage nach dem Paket, er zeigt auf den leeren Karton – „Ihr Paket ist schon da, nur leider schon auspackt.“",
       "qwen": "Der Bote fragt: „Ist jemand da?“ Ich rufe: „Ja, aber nur der Hund!“ Er: „Der hat kein Paket.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte halten Sie sich fest – wir fahren jetzt durch den Tunnel.“ Der Zug fährt rückwärts.",
       "qwen": "Der Taxifahrer fragt: „Fahren wir direkt hin?“ Ich sage: „Nein, ich nehme erst die U-Bahn.“",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-22T12:30:57.262Z",
+      "gpt": "Ich sitze im Vorstellungsgespräch, der Chef fragt: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich jetzt endlich den Kurs „Durchhaltevermögen“ belege.“",
+      "qwen": "Nach dem Vorstellungsgespräch frage ich: „Haben Sie noch Fragen?“ Der Chef nickt: „Ja, warum bewerben Sie sich noch, wenn Sie doch schon hier arbeiten?“",
+      "archive": "Im Onlinekurs soll jeder sagen, was er sich erhofft. Ich sage: „Dass wir vor dem Ende noch zum Inhalt kommen.“"
     }
   ]
 }
