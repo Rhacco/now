@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:21:04.234Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher nickt: „Nur, wenn du das Popcorn nicht knisterst.“",
-      "qwen": "Im Museum warte ich auf den Aufzug. Die Museumsführerin lacht: „Der ist längst in der Ruhezeit.“",
-      "archive": "Im Kino bittet man darum, Handys auszuschalten. Der Mann vor mir ruft noch schnell seine Frau an, um ihr zu sagen, dass sie ihn nicht anrufen soll."
-    },
-    {
       "timestamp": "2026-11-22T03:26:03.408Z",
       "gpt": "Ich habe meiner Nachbarin angeboten, ihr beim Umzug zu helfen – sie meinte, sie braucht nur einen Kasten Bier. Ich kam mit Kartons.",
       "qwen": "Ich hab den Nachbarn gefragt, ob mein Mofa sein ist. Er sagt: „Nein, aber mein Fahrrad sieht genauso aus.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund hat mich die Katze geküsst – jetzt bin ich entspannt und gleichzeitig allergisch.",
       "qwen": "Ich schnüre die Laufschuhe für die morgendliche Joggingrunde. Mein Hund bellt fröhlich, aber ich bleibe sitzen.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-22T07:36:06.524Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Zucker?“ – Der Koch nickt und sagt: „Nur, wenn er noch nicht im Restaurant war.“",
+      "qwen": "Ich fragte im Café: „Gibt es hier auch einen Tisch?“\nDie Kellnerin seufzte: „Nein, hier gibt es nur Kaffee und Kuchen.“",
+      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
     }
   ]
 }
