@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:11:06.983Z",
-      "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie lieber die schnellste Route?“ Ich nicke, er fährt sofort in die nächste Haltestelle.",
-      "qwen": "Der Taxifahrer fragte: „Steigen Sie gleich ein?“ Ich nickte und blieb stehen.",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-22T00:16:02.054Z",
       "gpt": "Im Café bestelle ich einen Cappuccino, doch die Kellnerin fragt: „Möchten Sie ihn lieber mit Milch oder mit Espresso?“ Ich sag: „Beides, ich bin verwirrt.“",
       "qwen": "Ich bestellte im Café einen Kaffee. Der Kellner fragte, ob ich ihn auch kochen soll.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga im Park, als plötzlich ein Hund meine Matte klaut – jetzt strecke ich mich nach vorne, um ihn zu fangen.",
       "qwen": "Beim Yoga fragte ich den Trainer, ob ich die Pose länger halte. „Nein“, sagte er, „sonst klappt die Hantel ab.“",
       "archive": "Im Yogakurs soll ich mir einen Ort vorstellen, an dem ich vollkommen ruhig bin. Ich denke an mein Sofa, und jetzt will ich nach Hause."
+    },
+    {
+      "timestamp": "2026-11-22T04:16:04.778Z",
+      "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ Sohn: „Er will endlich mal etwas Kühles denken.“",
+      "qwen": "Mama fragt: „Und wo ist Papa?“\nIch: „Im Keller.“\nMama: „Schließlich ist er ein Mausefalle.“",
+      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
     }
   ]
 }
