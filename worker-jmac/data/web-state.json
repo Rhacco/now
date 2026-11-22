@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:40:58.402Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
-      "qwen": "Doktor: „Nehmen Sie das dreimal täglich vor dem Essen.“\nPatient: „Dann esse ich einfach nie wieder.“",
-      "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
-    },
-    {
       "timestamp": "2026-11-21T22:46:03.864Z",
       "gpt": "Beim Abendessen fragt die Mutter: „Wer hat den Salat gegessen?“ Der Hund bellt: „Ich! Ich wollte nur die Tomaten‑Deko probieren.“",
       "qwen": "Der Vater erklärt dem Sohn die Herkunft von „Nesthocker“. Der Sohn fragt, ob er das mit dem Umzug in die WG machen muss.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage die Verkäuferin nach einer passenden Größe, sie misst mich und sagt: „Entschuldigung, wir verkaufen hier nur Kleidung, keine Lineale.“",
       "qwen": "Ich fragte den Verkäufer nach der Haltbarkeit der Batterie. „Garantie auf die Batterie? Nein, nur auf das Gerät.“",
       "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
+    },
+    {
+      "timestamp": "2026-11-22T02:45:57.840Z",
+      "gpt": "Ich klopfe an die Nachbarin, weil mein Wasserhahn leckt, und sie sagt: „Kein Problem, ich habe schon immer ein Bad im Flur geplant.“",
+      "qwen": "Ich fragte den Nachbarn, ob mein Rasenmäher zu laut wäre.\nEr sagte, es sei egal, er habe das Haus längst versteigert.",
+      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
     }
   ]
 }
