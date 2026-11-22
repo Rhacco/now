@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:00:58.749Z",
-      "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Hund mich plötzlich angeknabbert – er wollte wohl auch mitmachen.",
-      "qwen": "Im Kurs „Entspannung durch Yoga“ flüstert die Trainerin: „Und jetzt strecke die Arme ganz fest in die Luft.“\nAlle starren verblüfft, bis sie ergänzt: „…so wie ein Hamster, der gerade in die Falle getappt ist.“",
-      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
-    },
-    {
       "timestamp": "2026-11-22T02:06:04.742Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular zum Verlust Ihres Geldbeutels ausgefüllt?“ Ich: „Nein, ich habe das Geld noch nicht verloren.“",
       "qwen": "Ich gab den gefundenen Regenschirm im Fundbüro ab. Der Beamte fragte mich nur, ob ich den erwischt habe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug steht ein Tourist und fragt: „Welcher Wagen fährt zum Flughafen?“ Der Schaffner lächelt: „Der, in dem Sie gerade sitzen – wir haben nur ein Ziel.“",
       "qwen": "Ich fahre Bahn, Bus, Taxi und Auto gleichzeitig.\nNämlich in einem Kinderbuch.",
       "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
+    },
+    {
+      "timestamp": "2026-11-22T06:15:57.505Z",
+      "gpt": "Ich frage die Verkäuferin nach einem passenden Schal, sie reicht mir ein Handtuch – „für den Fall, dass Ihnen beim Anprobieren warm wird.“",
+      "qwen": "Ich fragte im Supermarkt nach dem Kassenbon. Die Kassiererin gab mir den gesuchten Kugelschreiber.",
+      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
     }
   ]
 }
