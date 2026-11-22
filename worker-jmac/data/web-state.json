@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:36:05.302Z",
-      "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin lächelt und reicht mir Plastikeier – auf dem Wochenmarkt gibt’s nur frische Eier, aber keinen Scanner.",
-      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, aber der Bauer schob mir noch ein halbes Huhn in den Wagen.",
-      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
-    },
-    {
       "timestamp": "2026-11-22T01:41:05.329Z",
       "gpt": "Im Supermarkt fragt ich die Verkäuferin nach veganem Aufschnitt, sie reicht mir eine Packung Tofu und meint: „Da ist schon alles, was Sie nicht essen können.“",
       "qwen": "Ich frag im Supermarkt: „Gibt’s Beratung zur Bäckerei?“ Der Mann schaut verwirrt: „Da hinten, links.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das ich erst noch abholen muss.“",
       "qwen": "Ich warte seit drei Stunden in der Wartezimmer-Ecke, um mein Rezept abzuholen. Das Rezept liegt aber in der Apotheke, die erst mit der Praxis schließt.",
       "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
+    },
+    {
+      "timestamp": "2026-11-22T05:46:01.324Z",
+      "gpt": "Ich stand im Fundbüro, füllte das Formular aus und fragte: „Wo ist das Feld für das verlorene Gedächtnis?“ – Die Angestellte schrieb: „Sie haben es schon eingereicht.“",
+      "qwen": "Im Fundbüro fragt man mich nach der Farbe des verlorensen Schirmes. Ich sage, er war rosarot. Der Beamte stempelt das Formular ab und sagt, das gilt als nicht beantragt.",
+      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
     }
   ]
 }
