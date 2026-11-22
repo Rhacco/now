@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:46:01.324Z",
-      "gpt": "Ich stand im Fundbüro, füllte das Formular aus und fragte: „Wo ist das Feld für das verlorene Gedächtnis?“ – Die Angestellte schrieb: „Sie haben es schon eingereicht.“",
-      "qwen": "Im Fundbüro fragt man mich nach der Farbe des verlorensen Schirmes. Ich sage, er war rosarot. Der Beamte stempelt das Formular ab und sagt, das gilt als nicht beantragt.",
-      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
-    },
-    {
       "timestamp": "2026-11-22T05:51:03.600Z",
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch als ich die Katze in die „herabschauende Hund“-Position ziehe, schnurrt sie nur und schläft ein.",
       "qwen": "Der Physiotherapeut drückt mir den Fuß.\n„Gut so“, sagt er, „jetzt entspannen Sie sich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug verpasste ich den Anschluss, stieg in den Bus, verpasste die Haltestelle und fuhr weiter – mein Navi sagte: „Sie sind jetzt im Taxi.“",
       "qwen": "Ich tanke voll, weil das Auto leert. Der Tankwart fragt: „Benzin oder Diesel?“",
       "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
+    },
+    {
+      "timestamp": "2026-11-22T09:51:07.714Z",
+      "gpt": "Im Zug drückte ich den Notruf, weil ich den Anschluss verpasst habe – die Stimme sagte: „Bitte bleiben Sie sitzen, wir fahren jetzt weiter.“",
+      "qwen": "Der Taxifahrer brüllte: „Haben Sie ein Kurzschusstück?“\nIch zückte meine S-Bahn-Karte und lächelte.",
+      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
     }
   ]
 }
