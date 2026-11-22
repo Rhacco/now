@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:36:06.524Z",
-      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Zucker?“ – Der Koch nickt und sagt: „Nur, wenn er noch nicht im Restaurant war.“",
-      "qwen": "Ich fragte im Café: „Gibt es hier auch einen Tisch?“\nDie Kellnerin seufzte: „Nein, hier gibt es nur Kaffee und Kuchen.“",
-      "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
-    },
-    {
       "timestamp": "2026-11-22T07:40:58.743Z",
       "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil ich meine Fahrkarte vergessen hatte – die Anzeige zeigte sofort „Ticket gefunden“.",
       "qwen": "Ich sage „Bus“, er fährt aber.",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wer kann die Katze nachahmen?“ Der Hund legt sich zufrieden hin und schnurrt.",
       "qwen": "Ich wollte beim Joggen entspannen. Jetzt bin ich nur noch echt fertig.",
       "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
+    },
+    {
+      "timestamp": "2026-11-22T11:41:02.329Z",
+      "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den Keks geklaut?“ Der Hund bellt: „Ich wollte nur das Rezept teilen.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Klar, du zahlst ja die Miete.“",
+      "archive": "Mein Vater ruft an, weil er eine Sprachnachricht verschicken will. Danach bedankt er sich mit einer zwölfminütigen Sprachnachricht."
     }
   ]
 }
