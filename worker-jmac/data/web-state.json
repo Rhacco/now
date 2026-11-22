@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:20:57.111Z",
-      "gpt": "Ich packte die leere Kiste ein, weil ich dachte, sie sei voll – beim Ausmisten stellte sich heraus, dass ich sie schon seit drei Monaten nicht mehr geöffnet hatte.",
-      "qwen": "Ich habe alles ausgemistet, was ich nicht brauche. Jetzt fehlt mir der Schlüssel zum Koffer.",
-      "archive": "Beim Ausmisten halte ich eine leere Schachtel hoch und frage, wofür wir sie behalten. „Für den Fall, dass wir mal eine Schachtel brauchen.“"
-    },
-    {
       "timestamp": "2026-11-22T02:26:04.197Z",
       "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – und bekomme eine Benachrichtigung, dass mein Akku in 5 % stirbt.",
       "qwen": "Ich wollte per App den Herd einschalten, doch die app hat gerade ein Update.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann schüttelt den Kopf: „Nein, ich habe nur den Geldschein gefunden.“",
       "qwen": "Beim Fundbüro: „Dürfte das Formular bitte ausfüllen?“ Ich zücke den Stift. „Nein, das Formular ist das Fundstück.“",
       "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
+    },
+    {
+      "timestamp": "2026-11-22T06:36:06.416Z",
+      "gpt": "Ich öffne die Wetter-App, weil ich den Regen vermeiden will, und sehe sofort: „Achtung, starker Regen – bitte nimm deinen Regenschirm mit.“ Ich schalte das Handy aus – das war mein Regenschirm.",
+      "qwen": "Ich wollte nur die Uhrzeit prüfen, aber mein Handy hat zwanzig neue Benachrichtigungen. Es bestand auf einem Update, bevor es mich wieder gehen ließ.",
+      "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
     }
   ]
 }
