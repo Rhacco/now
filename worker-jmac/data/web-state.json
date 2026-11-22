@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:46:04.615Z",
-      "gpt": "Im Zug verpasste ich den Anschluss, stieg in den Bus, verpasste die Haltestelle und fuhr weiter – mein Navi sagte: „Sie sind jetzt im Taxi.“",
-      "qwen": "Ich tanke voll, weil das Auto leert. Der Tankwart fragt: „Benzin oder Diesel?“",
-      "archive": "Beim Tanken fragt mich der Mann an der Kasse, ob ich noch etwas brauche. Ich schaue auf den Preis und sage: „Einen Moment für mich.“"
-    },
-    {
       "timestamp": "2026-11-22T09:51:07.714Z",
       "gpt": "Im Zug drückte ich den Notruf, weil ich den Anschluss verpasst habe – die Stimme sagte: „Bitte bleiben Sie sitzen, wir fahren jetzt weiter.“",
       "qwen": "Der Taxifahrer brüllte: „Haben Sie ein Kurzschusstück?“\nIch zückte meine S-Bahn-Karte und lächelte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an die Nachbarstür, um mich zu entschuldigen, weil ich die Heizung zu hoch gestellt habe – er öffnet und sagt: „Kein Problem, ich habe das Thermometer geklaut.“",
       "qwen": "Ich fragte den Nachbarn, ob ich sein Auto parken darf. Er nickte und sagte: „Klar, der Schlüssel liegt im Zigarettenetui auf dem Armaturenbrett.“",
       "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
+    },
+    {
+      "timestamp": "2026-11-22T13:55:58.064Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vorbereitet?“ – Die Kaffeemaschine meldet sich und sagt: „Ich hab nur den Kaffee aufgebrüht.“",
+      "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nIch hob die Hand und sagte: „Ich, aber ich habe es vorher gespeichert.“",
+      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
     }
   ]
 }
