@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:10:57.281Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo ich meinen verlorenen Stift abgeben soll – er liegt schon im Antragsfach.",
-      "qwen": "Ich fragte im Fundbüro nach der verlegten Brille.\nDie Dame schob mir ein 42-seitiges Formular zur Antragstellung zu.",
-      "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
-    },
-    {
       "timestamp": "2026-11-22T12:16:04.102Z",
       "gpt": "Im Zug zum Strand fragt ich den Schaffner nach einer Sitzplatzreservierung – er lächelt und gibt mir einen Sonnenhut.",
       "qwen": "Am Strand sagt die Frau zum Mann: „Schnapp dir die Handtücher.“ Er seufzt: „Ich bin hier Urlaub, nicht Kellner.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine ausgeräumt?“ – Ich wollte endlich mal sehen, ob sie auch ohne meine Socken läuft.",
       "qwen": "Mama fragt: „Wer hat das Erdbeerbrot gegessen?“ Die Stille im Haus ist gnadenlos.",
       "archive": "Mein Partner wollte eine Überraschung zum Geburtstag. Jetzt ist er überrascht, wie viel Hilfe ich bei der Vorbereitung von ihm brauche."
+    },
+    {
+      "timestamp": "2026-11-22T16:21:06.217Z",
+      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Personal fragte: „Wie lautet Ihre Lieblingsfarbe?“ – Ich sagte Blau, und sie gaben mir mein verlorenes Handy zurück.",
+      "qwen": "Ich habe die Fundanzeige ausgefüllt, aber das Formular verlangt eine Beschreibung des Fundes.\nIch habe es verloren.",
+      "archive": "Für meinen neuen Ausweis soll ich unterschreiben wie auf dem alten. Ich sage: „Damals hatte ich noch Hoffnung auf eine schöne Unterschrift.“"
     }
   ]
 }
