@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T19:55:57.654Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ Ich antworte: „Wie ein Rezept, das nie abgeholt wird.“",
-      "qwen": "Im Wartezimmer fragt mich der Arzt: „Haben Sie Schmerzen?“ Ich sage: „Ja, hier.“",
-      "archive": "Beim Arzt frage ich, warum ich so lange warten musste. Er sagt: „Ich möchte mir für jeden Patienten Zeit nehmen“, und schaut auf die Uhr."
-    },
-    {
       "timestamp": "2026-11-21T20:01:06.100Z",
       "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier – „Für die Diät, nicht für das Essen.“",
       "qwen": "Ich fragte im Baumarkt, wo die Dübel sind. Der Verkäufer wies auf die Wand.",
@@ -300,6 +294,12 @@
       "gpt": "Mutter ruft: „Wer hat den Kuchen gegessen?“ Der Hund bellt: „Ich habe nur den Staubsauger gefressen.“",
       "qwen": "Ich fragte meine Mutter, ob ich den Müll rausbringen soll. Sie nickte und sagte: „Klar, und denk dran, die Tür zuzumachen.“",
       "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
+    },
+    {
+      "timestamp": "2026-11-22T00:00:58.604Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das das Ersatzteil für mein defektes Telefon?“ Er lächelt: „Nein, das ist meine Gehaltserhöhung.“",
+      "qwen": "Der Kurier winkt ab: „Paket fehlt.“ Ich erwidere: „Dann liefern Sie das Fehlen bitte persönlich aus.“",
+      "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
     }
   ]
 }
