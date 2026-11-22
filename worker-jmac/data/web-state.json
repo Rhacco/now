@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:11:06.165Z",
-      "gpt": "Ich klingelte beim Nachbarn, um die laute Party zu melden – er öffnete und bot mir ein Stück Kuchen an.",
-      "qwen": "Der Nachbar klopft: „Können Sie leiser sein?“ Ich sage: „Nein, ich bin nur in den ersten Stock gezogen.“",
-      "archive": "Beim Einzug fragt mein Nachbar nach meiner Einweihungsparty. Als ich Samstag sage, notiert er sich „Woanders schlafen“."
-    },
-    {
       "timestamp": "2026-11-22T08:16:05.773Z",
       "gpt": "Ich packe meine Klamotten aus, finde ein altes T-Shirt und frage mich, warum ich es noch nie getragen habe – dann sehe ich das Preisschild: „Nur noch 0 €.“",
       "qwen": "Ich habe beim Ausmisten nicht nur die alten Socken weggeschmissen, sondern auch die Begeisterung für Räumaktionen.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus und fragte, wo ich meinen verlorenen Stift abgeben soll – er liegt schon im Antragsfach.",
       "qwen": "Ich fragte im Fundbüro nach der verlegten Brille.\nDie Dame schob mir ein 42-seitiges Formular zur Antragstellung zu.",
       "archive": "Im Rathaus steht „Terminvereinbarung online“. Der Mann am Empfang zeigt mir den Computer, an dem man dazu erst eine Wartemarke ziehen muss."
+    },
+    {
+      "timestamp": "2026-11-22T12:16:04.102Z",
+      "gpt": "Im Zug zum Strand fragt ich den Schaffner nach einer Sitzplatzreservierung – er lächelt und gibt mir einen Sonnenhut.",
+      "qwen": "Am Strand sagt die Frau zum Mann: „Schnapp dir die Handtücher.“ Er seufzt: „Ich bin hier Urlaub, nicht Kellner.“",
+      "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
     }
   ]
 }
