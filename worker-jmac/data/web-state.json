@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:30:56.000Z",
-      "gpt": "Ich rufe beim Kundenservice: „Mein Paket ist verloren.“ Der Mitarbeiter fragt: „Haben Sie schon nachgeschaut, ob es nicht im Kühlschrank liegt?“",
-      "qwen": "Der Kurier rief an: „Ihr Paket ist beschädigt.“\nIch fragte: „Wie denn?“\nEr: „Mit Stempel und Klebeband.“",
-      "archive": "Der Lieferdienst wollte wissen, wie er mein Haus erkennt. „An dem Menschen, der seit drei Stunden am Fenster steht.“"
-    },
-    {
       "timestamp": "2026-11-21T21:36:02.349Z",
       "gpt": "Ich frage die Verkäuferin nach einer Größe, sie reicht mir ein Lineal – „Damit Sie wenigstens wissen, wie klein Ihre Erwartungen sind.“",
       "qwen": "Ich wollte nur schnell ein Hemd kaufen. Der Verkäufer hat mir vier Stunden lang über Stoffdichte referiert, bis ich aus Zeitmangel die Rechnung übernahm.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug die alten Kissenbezüge aus, finde einen Geldschein und frage mich, warum ich das ganze Haus ausmistet, nicht das Portemonnaie.",
       "qwen": "Ich habe den alten Toaster ausgemistet.\nMeine Frau fand ihn heute früh auf dem Müllberg.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-22T01:36:05.302Z",
+      "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin lächelt und reicht mir Plastikeier – auf dem Wochenmarkt gibt’s nur frische Eier, aber keinen Scanner.",
+      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, aber der Bauer schob mir noch ein halbes Huhn in den Wagen.",
+      "archive": "Vor dem Kühlregal sucht ein Mann die Butter. Ich zeige sie ihm, und er sagt: „Danke, jetzt kann ich meiner Frau wieder widersprechen.“"
     }
   ]
 }
