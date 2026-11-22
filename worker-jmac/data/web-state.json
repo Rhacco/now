@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:43:19.343Z",
-      "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Kästchen „Unterschrift“ war bereits mit meinem Namen vorgedruckt – das war das verlorene Dokument.",
-      "qwen": "Ich frage das Fundbüro, ob mein Schlüssel dort ist. „Nein, er liegt hier“, sagt der Beamte und zeigt auf einen leeren Tisch.",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-22T01:46:05.003Z",
       "gpt": "Im Zug frage ich den Schaffner nach dem nächsten Halt – er meint, er fährt nur im Traum. Ich steige aus, weil ich zu Fuß schneller bin.",
       "qwen": "Ich stieg aus dem Taxi, weil es schneller war. Der Taxifahrer hat mich für einen Fahrgast gehalten.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um mich zu entspannen, doch als ich die Katze in die „herabschauende Hund“-Position ziehe, schnurrt sie nur und schläft ein.",
       "qwen": "Der Physiotherapeut drückt mir den Fuß.\n„Gut so“, sagt er, „jetzt entspannen Sie sich.“",
       "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
+    },
+    {
+      "timestamp": "2026-11-22T05:56:04.247Z",
+      "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also nehme ich den Regenschirm – und stolpere über den Stromschlag‑Alarm, weil ich vergessen habe, das Handy zu laden.",
+      "qwen": "Ich sprach laut „Hey Siri\", um die Heizung zu starten.\nDie App öffnete stattdessen den Online-Shop für Winterreifen.",
+      "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
     }
   ]
 }
