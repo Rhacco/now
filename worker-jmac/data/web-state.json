@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:11:07.313Z",
-      "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – er meinte, es sei schon im Urlaub, weil ich es nicht abgeholt habe.",
-      "qwen": "Man muss den Absender angeben. Der Paketbote hat sich schon beschwert.",
-      "archive": "Der Kundendienst sagt: „Es tut uns leid, dass Sie unzufrieden sind.“ Ich sage: „Mir wäre lieber, Sie wären überrascht.“"
-    },
-    {
       "timestamp": "2026-11-22T01:16:06.087Z",
       "gpt": "Mama fragt: „Warum hast du die Waschmaschine wieder aufgemacht?“ – „Ich wollte sehen, ob das Wasser noch weint, wenn ich sie ausschalte.“",
       "qwen": "Ich frag die Oma, ob es reicht, wenn ich das Geschirr nur spüle. Sie schnipst mit dem Finger: „Du spülst, ich räume ab. Das ist Arbeitsteilung.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann zeigt ihr sein Handy: „Ich habe das Formular per App verloren.“",
       "qwen": "Beim Fundbüro angekommen, gab ich die Brieftasche zurück. Ich musste erst das Formular „Ich habe das meiste davon verloren“ abhaken.",
       "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
+    },
+    {
+      "timestamp": "2026-11-22T05:21:03.342Z",
+      "gpt": "Ich sortiere beim Umzug alte Socken aus und finde ein Geldschein – dann merke ich, dass ich die Socken eigentlich nur für das Geld wasche.",
+      "qwen": "Der Umzugskarton ist voll, aber die Katze passt nicht mehr rein. Also bleibt sie jetzt für immer an der Stelle.",
+      "archive": "Beim Putzen finde ich hinter dem Schrank einen Ohrring. Er gehört mir nicht, und plötzlich ist Staub mein kleinstes Problem."
     }
   ]
 }
