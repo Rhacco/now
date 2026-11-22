@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:16:06.970Z",
-      "gpt": "In der Bibliothek flüstert ein Besucher: „Leise, ich will das Buch nicht stören.“ Im Kino lacht er, weil das Buch Popcorn knuspert.",
-      "qwen": "Im Museum stand: „Bitte nicht berühren“. Ich dachte, das gilt für die Bilder.",
-      "archive": "In der Bücherei steht ein Buch über Ordnung am falschen Platz. Ich lasse es stehen, damit die Theorie eine faire Chance bekommt."
-    },
-    {
       "timestamp": "2026-11-22T02:20:57.111Z",
       "gpt": "Ich packte die leere Kiste ein, weil ich dachte, sie sei voll – beim Ausmisten stellte sich heraus, dass ich sie schon seit drei Monaten nicht mehr geöffnet hatte.",
       "qwen": "Ich habe alles ausgemistet, was ich nicht brauche. Jetzt fehlt mir der Schlüssel zum Koffer.",
@@ -300,6 +294,12 @@
       "gpt": "Im Taxi ruft der Fahrer: „Wir haben Verspätung, die Straße ist gesperrt.“ Der Fahrgast: „Kein Problem, ich sitze im Zug.“",
       "qwen": "Ich lehne mich um und sage: „Taxi, halten Sie bitte.“\nDer Busfahrer seufzt: „Wir haben hier keine Taxis.“",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-22T06:30:58.247Z",
+      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Der Mann schüttelt den Kopf: „Nein, ich habe nur den Geldschein gefunden.“",
+      "qwen": "Beim Fundbüro: „Dürfte das Formular bitte ausfüllen?“ Ich zücke den Stift. „Nein, das Formular ist das Fundstück.“",
+      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
     }
   ]
 }
