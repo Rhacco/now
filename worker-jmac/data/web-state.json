@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:56:06.117Z",
-      "gpt": "Ich rufe beim Kundendienst: „Mein Paket ist im Aufzug stecken geblieben.“ Der Mitarbeiter: „Dann drücken Sie einfach den Knopf für die 2‑kg‑Tür.“",
-      "qwen": "Die Paketfrau fragt: „Ist jemand da?“\nIch: „Ja, ich bin’s.“",
-      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
-    },
-    {
       "timestamp": "2026-11-21T22:00:58.364Z",
       "gpt": "Mama fragt: „Warum hast du das letzte Stück Kuchen genommen?“ Sohn: „Weil ich beim Aufräumen immer die Krümel finde.“",
       "qwen": "Die Gäste lobten das Essen. Die Schwiegermutter sagte: „Na, endlich mal jemand, der nicht nur schweigt!“",
@@ -300,6 +294,12 @@
       "gpt": "Beim Ausmisten findet er die Fernbedienung im Kühlschrank. Jetzt hat er endlich Kontrolle über die Temperatur.",
       "qwen": "Ich fragte die Spedition: „Habt ihr Platz für mein Aquarium?“ Der Chef nickte. „Ja, aber der Fisch zahlt die Lieferspa`",
       "archive": "Beim Schrankaufbau steht „Montage durch zwei Personen“. Mein Nachbar kommt rüber, und jetzt verstehen wir die Anleitung zu zweit nicht."
+    },
+    {
+      "timestamp": "2026-11-22T02:00:58.749Z",
+      "gpt": "Ich mache Yoga, um mich zu entspannen, doch beim herabschauenden Hund hat mein Hund mich plötzlich angeknabbert – er wollte wohl auch mitmachen.",
+      "qwen": "Im Kurs „Entspannung durch Yoga“ flüstert die Trainerin: „Und jetzt strecke die Arme ganz fest in die Luft.“\nAlle starren verblüfft, bis sie ergänzt: „…so wie ein Hamster, der gerade in die Falle getappt ist.“",
+      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
     }
   ]
 }
