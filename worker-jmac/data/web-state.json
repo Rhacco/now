@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:50:58.452Z",
-      "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel: „Der nächste Halt ist das Büro, ich habe doch den Urlaub zu Hause vergessen.“",
-      "qwen": "Auf dem Gipfel brüllte der Mann: „Hier kann man die ganze Welt sehen!“ Seine Frau zitierte prompt den Kellner: „Und hier gibt’s nur Wurst.“",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-22T02:56:04.718Z",
       "gpt": "Im Café bestellt ich einen Espresso, der Kellner schenkt mir ein Kochbuch. „Für den perfekten Aufguss“, sagt er, „braucht man nur ein bisschen Hitze.“",
       "qwen": "Ich fragte im Café: „Haben Sie auch vegetarisch?“\nDie Bedienung meinte: „Nur wenn der Fisch tot ist.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die PowerPoint – sie besteht nur aus leeren Folien. Fortschritt ist, dass wir jetzt nichts mehr sehen.",
       "qwen": "Der Chef fragt: „Haben Sie die Präsentation fertig?“\n„Ja, Herr Schmidt, ich bin fertig mit der Arbeit.“",
       "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
+    },
+    {
+      "timestamp": "2026-11-22T07:06:01.870Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Anprobieren nicht nass werden.“",
+      "qwen": "Ich fragte nach einer Beratung für den Wäschetrockner. Der Verkäufer streifte sich einen Handwagen über und fragte: „Soll ich Ihnen die Wäsche auch gleich aufhängen?“",
+      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
     }
   ]
 }
