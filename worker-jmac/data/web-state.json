@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:36:02.886Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldbeutel gefunden.“",
-      "qwen": "Für den verlorenen Pass brauchte ich Formular 7b in dreifacher Ausfertigung.\nDas Fundbüro schloss um 12 Uhr, weil die Mittagspause durch ein Formular geregelt wird.",
-      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
-    },
-    {
       "timestamp": "2026-11-21T22:40:58.402Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Doktor: „Nehmen Sie das dreimal täglich vor dem Essen.“\nPatient: „Dann esse ich einfach nie wieder.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe den Kühlschrank aus, finde ein altes Liebesbriefchen und frage mich, warum ich nie mehr „kühl“ bleiben wollte.",
       "qwen": "Ich habe den alten Schrank verpackt und die Schrauben an den Dachbalken geklebt.\nEr fragt: „Und wo ist der Haken?“",
       "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
+    },
+    {
+      "timestamp": "2026-11-22T02:40:58.202Z",
+      "gpt": "Ich frage die Verkäuferin nach einer passenden Größe, sie misst mich und sagt: „Entschuldigung, wir verkaufen hier nur Kleidung, keine Lineale.“",
+      "qwen": "Ich fragte den Verkäufer nach der Haltbarkeit der Batterie. „Garantie auf die Batterie? Nein, nur auf das Gerät.“",
+      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
     }
   ]
 }
