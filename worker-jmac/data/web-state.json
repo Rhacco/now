@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:11:03.600Z",
-      "gpt": "Ich mache Yoga im Park, um zu entspannen – plötzlich ruft ein Hund: „Endlich jemand, der meine Dehnübungen nachmacht!“",
-      "qwen": "Beim Yoga sage ich: „Einatmen, ausatmen, loslassen.“\nMein Knie knallt laut gegen den Boden.",
-      "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
-    },
-    {
       "timestamp": "2026-11-22T07:15:58.915Z",
       "gpt": "Im Café bestelle ich einen Cappuccino, der Barista fragt: „Möchten Sie ihn mit Milch oder Espresso?“ Ich antworte: „Beides, ich will ein Doppel‑Ich.“",
       "qwen": "Ich bestellte im Restaurant: „Zwei Schnitzel, bitte.“ Der Kellner fragte: „Zu zweit?“ Ich nickte.",
@@ -300,6 +294,12 @@
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, und der Verkäufer meint: „Klar, wir haben jetzt LED‑Glühbirnen – die leuchten, aber kosten nichts.“",
       "qwen": "Ich frage im Supermarkt nach dem Brot, doch der Verkäufer erklärt mir stundenlang die Philosophie des Getreides.",
       "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
+    },
+    {
+      "timestamp": "2026-11-22T11:15:58.397Z",
+      "gpt": "Ich rief beim Kundenservice an, weil mein Paket immer wieder „auf dem Weg zum Mond“ stand – dann stellte sich heraus, ich hatte die Raumfahrt‑Abteilung gewählt.",
+      "qwen": "Der Kurier fragt: „Haben Sie das Paket erhalten?“ Ich: „Ja, aber der Kunde fehlt noch.“",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
