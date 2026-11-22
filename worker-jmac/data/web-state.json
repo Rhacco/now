@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:21:05.633Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Kaffeemaschine piept: „Ich habe ihn gerade ausgedruckt.“",
-      "qwen": "In der Besprechung fragte der Chef nach Meinungen. Niemand rührte sich.",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-22T12:26:04.202Z",
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte halten Sie sich fest – wir fahren jetzt durch den Tunnel.“ Der Zug fährt rückwärts.",
       "qwen": "Der Taxifahrer fragt: „Fahren wir direkt hin?“ Ich sage: „Nein, ich nehme erst die U-Bahn.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich packe die Kiste mit alten Socken und finde darin ein Sparschwein – das war das einzige Geld, das ich beim Ausmisten noch hatte.",
       "qwen": "Die alte Schublade war voll mit kaputten Kabeln. Beim Ausmisten fiel mir das erste funktionierende Handy seit 1998 in die Hand.",
       "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
+    },
+    {
+      "timestamp": "2026-11-22T16:31:07.229Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee mit Zucker?“ Ich antworte: „Nein, ich will ihn nur kurz aufwärmen.“",
+      "qwen": "Kellner: „Mitnehmen oder hier essen?“\nIch: „Ich hatte es schon mit genommen beim Hereinkommen.“",
+      "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
     }
   ]
 }
