@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:51:07.714Z",
-      "gpt": "Im Zug drückte ich den Notruf, weil ich den Anschluss verpasst habe – die Stimme sagte: „Bitte bleiben Sie sitzen, wir fahren jetzt weiter.“",
-      "qwen": "Der Taxifahrer brüllte: „Haben Sie ein Kurzschusstück?“\nIch zückte meine S-Bahn-Karte und lächelte.",
-      "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
-    },
-    {
       "timestamp": "2026-11-22T09:55:56.935Z",
       "gpt": "Ich sortiere beim Umzug die Kisten und finde ein altes Handy – es zeigt 1999 an, obwohl ich erst 2024 eingezogen bin.",
       "qwen": "„Das ist doch nur ein altes Fotoalbum“, sagte ich. „Doch, das ist mein ganzer Hausrat.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vorbereitet?“ – Die Kaffeemaschine meldet sich und sagt: „Ich hab nur den Kaffee aufgebrüht.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nIch hob die Hand und sagte: „Ich, aber ich habe es vorher gespeichert.“",
       "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
+    },
+    {
+      "timestamp": "2026-11-22T14:00:58.173Z",
+      "gpt": "Ich frage die Verkäuferin nach dem günstigsten Staubsauger, sie zeigt mir einen Besen – „der ist kostenlos, wenn Sie ihn selbst saugen.“",
+      "qwen": "Der Verkäufer fragt: „Haben Sie schon bezahlt?“\nIch antworte: „Noch nicht, ich bin erst am Ausprobieren.“",
+      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
     }
   ]
 }
