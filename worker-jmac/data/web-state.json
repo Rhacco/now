@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:46:04.049Z",
-      "gpt": "Ich klopfe bei meinem Nachbarn, weil er ständig laute Partys feiert, und er öffnet: „Willkommen im Fitnessstudio, hier trainieren wir nur deine Geduld.“",
-      "qwen": "Mein Nachbar stört tagsüber mit lauter Musik. Ich schlag ihm auf die Faust, er wird leiser.",
-      "archive": "Die Vermieterin nannte den Balkon „gemütlich“. Jetzt weiß ich, dass sie meinte: Wenn zwei Leute draufstehen, müssen sie sich mögen."
-    },
-    {
       "timestamp": "2026-11-21T21:50:41.805Z",
       "gpt": "Ich wollte beim Wochenmarkt Bio‑Äpfel kaufen, aber der Stand verkaufte nur „Super‑Markt‑Preise“. Da meinte die Verkäuferin: „Hier gibt’s nur Frische, nicht Rabatt.“",
       "qwen": "Ich kaufte auf dem Wochenmarkt Tomaten, weil sie so frisch schmeckten. Im Supermarkt roch sie dann auch so, nur leider nach Plastik.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das Kästchen „Unterschrift“ war bereits mit meinem Namen vorgedruckt – das war das verlorene Dokument.",
       "qwen": "Ich frage das Fundbüro, ob mein Schlüssel dort ist. „Nein, er liegt hier“, sagt der Beamte und zeigt auf einen leeren Tisch.",
       "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
+    },
+    {
+      "timestamp": "2026-11-22T01:46:05.003Z",
+      "gpt": "Im Zug frage ich den Schaffner nach dem nächsten Halt – er meint, er fährt nur im Traum. Ich steige aus, weil ich zu Fuß schneller bin.",
+      "qwen": "Ich stieg aus dem Taxi, weil es schneller war. Der Taxifahrer hat mich für einen Fahrgast gehalten.",
+      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
     }
   ]
 }
