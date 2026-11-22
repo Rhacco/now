@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:06:04.527Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie das Rezept, das ich gleich in der Apotheke abhole.“",
-      "qwen": "Ich fragte den Apotheker: „Können Sie mir ein Rezept verschreiben?“ Er sagte: „Nein, das macht mein Kollege im Wartezimmer.“",
-      "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
-    },
-    {
       "timestamp": "2026-11-22T05:11:06.482Z",
       "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst, wenn ich nicht zu Hause bin?“ Der Zusteller: „Ich wollte Ihnen nur zeigen, wie schnell Sie es selbst holen können.“",
       "qwen": "Der Paketbote fragt, ob ich ein Ersatzteil benötige. Ich verneine, woraufhin er kurz nickt und die Tür zu seiner Kiste zusperrt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter‑App, sehe Regen und nehme den Regenschirm. Beim nächsten Mal frage ich die App, ob sie das Wetter auch für meine Laune vorhersagen kann.",
       "qwen": "Ich suche nach einer App, die mir beim Abschalten hilft. Die einzige, die das kann, heißt „Handy aus“.",
       "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
+    },
+    {
+      "timestamp": "2026-11-22T09:10:59.368Z",
+      "gpt": "Ich wollte beim Joggen meine Schrittzahl prüfen, aber die Fitness‑App meldete: „Kein Signal – bitte gehen Sie zurück ins Wohnzimmer.“",
+      "qwen": "Ich habe die App „Schlafmodus“ installiert. Jetzt weckt mich mein Handy um sechs, um mir vorzuschlagen, noch schärfer einzuschlafen.",
+      "archive": "Die App fragt, ob sie mir Benachrichtigungen schicken darf. Ich tippe „Nein“, und fünf Minuten später fragt sie noch einmal."
     }
   ]
 }
