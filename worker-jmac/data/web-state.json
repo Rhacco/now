@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:46:02.645Z",
-      "gpt": "Im Zug vergaß ich mein Ticket, beim Bus vergaß ich den Fahrschein, im Taxi vergaß ich das Geld – im Auto vergaß ich, dass ich keinen Fahrschein brauche.",
-      "qwen": "Ich dränge mich im überfüllten Bus nach vorn.\n„Entschuldigung, hier ist noch Platz“, sage ich zum Mann, der neben mir steht.",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-22T07:51:00.376Z",
       "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, er empfiehlt mir ein Licht‑Thermostat – ich will doch nur lesen, nicht das Haus heizen.",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen bei der Wahl der Farbe helfen?“ Ich zeige auf mein kaltes Bier: „Nur wenn’s auch in Blau gibt.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen für das letzte Quartal?“ – Die Praktikantin meldet: „Ich habe das Quartal, Chef, aber keine Zahlen.“",
       "qwen": "„Dann sind wir uns einig?“, fragte der Chef. Ich nickte, um endlich rauszukommen.",
       "archive": "Wir hatten eine Besprechung über unnötige Besprechungen. Am Ende gab es einen Folgetermin, weil die Zeit nicht gereicht hat."
+    },
+    {
+      "timestamp": "2026-11-22T11:50:57.180Z",
+      "gpt": "Ich steig in den Bus, setze mich, die Durchsage: „Nächster Halt: Parkplatz.“ Ich dachte, das sei die Haltestelle.",
+      "qwen": "Der Taxifahrer fragt: „Soll ich die Tür für Sie halten?“ Ich sage: „Nein, ich fahre selbst.“",
+      "archive": "Der Taxifahrer fragt, ob ich einen bestimmten Weg wünsche. Ich sage: „Gern einen, bei dem wir beide am Ziel noch gute Laune haben.“"
     }
   ]
 }
