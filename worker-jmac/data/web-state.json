@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:00:59.062Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich erst noch den Kurs „Selbstmarketing für Anfänger“ belegen muss.“",
-      "qwen": "Im Vorstellungsgespräch fragte der Chef: „Was erwartet Sie von der Weiterbildung?“\nIch: „Dass Sie mir endlich sagen, was ich hier eigentlich machen soll.“",
-      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
-    },
-    {
       "timestamp": "2026-11-22T01:06:03.333Z",
       "gpt": "Ich rief den Kundendienst, weil mein Paket nie ankam – sie sagten, es sei bereits im nächsten Leben zugestellt worden.",
       "qwen": "„Ihr Paket wurde zugestellt!“ rief der Botenfahrer. „Von Ihnen auf sich selbst.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – Ich antworte: „Wie das Rezept, das ich gleich in der Apotheke abhole.“",
       "qwen": "Ich fragte den Apotheker: „Können Sie mir ein Rezept verschreiben?“ Er sagte: „Nein, das macht mein Kollege im Wartezimmer.“",
       "archive": "Die Apothekerin erklärt, ich solle die Tropfen regelmäßig einnehmen. Ich frage nach einer Erinnerung, und sie hält mir die Rechnung hin."
+    },
+    {
+      "timestamp": "2026-11-22T05:11:06.482Z",
+      "gpt": "Der Kunde fragt: „Warum kommt mein Paket immer erst, wenn ich nicht zu Hause bin?“ Der Zusteller: „Ich wollte Ihnen nur zeigen, wie schnell Sie es selbst holen können.“",
+      "qwen": "Der Paketbote fragt, ob ich ein Ersatzteil benötige. Ich verneine, woraufhin er kurz nickt und die Tür zu seiner Kiste zusperrt.",
+      "archive": "Der Paketdienst bietet mir eine Abstellgenehmigung an. Nett, dass ich nachträglich noch zustimmen darf."
     }
   ]
 }
