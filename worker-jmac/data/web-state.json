@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T12:26:04.202Z",
-      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte halten Sie sich fest – wir fahren jetzt durch den Tunnel.“ Der Zug fährt rückwärts.",
-      "qwen": "Der Taxifahrer fragt: „Fahren wir direkt hin?“ Ich sage: „Nein, ich nehme erst die U-Bahn.“",
-      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
-    },
-    {
       "timestamp": "2026-11-22T12:30:57.262Z",
       "gpt": "Ich sitze im Vorstellungsgespräch, der Chef fragt: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich jetzt endlich den Kurs „Durchhaltevermögen“ belege.“",
       "qwen": "Nach dem Vorstellungsgespräch frage ich: „Haben Sie noch Fragen?“ Der Chef nickt: „Ja, warum bewerben Sie sich noch, wenn Sie doch schon hier arbeiten?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee mit Zucker?“ Ich antworte: „Nein, ich will ihn nur kurz aufwärmen.“",
       "qwen": "Kellner: „Mitnehmen oder hier essen?“\nIch: „Ich hatte es schon mit genommen beim Hereinkommen.“",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-22T16:36:04.884Z",
+      "gpt": "Im Zug fragt die Touristin nach dem besten Ausflugsziel, die Durchsage antwortet: „Bitte halten Sie sich ans Gurtzeug, wir landen gleich.“",
+      "qwen": "Auf dem Campingplatz fragte ich: „Haben Sie WLAN?“\nNein, aber die Stille ist kostenlos und unendlich.",
+      "archive": "Beim Camping sagt mein Freund, wir wollten zurück zur Natur. Als Erstes packt er eine Mehrfachsteckdose aus."
     }
   ]
 }
