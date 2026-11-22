@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:36:03.489Z",
-      "gpt": "Ich packe den Kühlschrank aus, finde ein altes Liebesbriefchen und frage mich, warum ich nie mehr „kühl“ bleiben wollte.",
-      "qwen": "Ich habe den alten Schrank verpackt und die Schrauben an den Dachbalken geklebt.\nEr fragt: „Und wo ist der Haken?“",
-      "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
-    },
-    {
       "timestamp": "2026-11-22T02:40:58.202Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Größe, sie misst mich und sagt: „Entschuldigung, wir verkaufen hier nur Kleidung, keine Lineale.“",
       "qwen": "Ich fragte den Verkäufer nach der Haltbarkeit der Batterie. „Garantie auf die Batterie? Nein, nur auf das Gerät.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Kaffeemaschine piept: „Ich habe das Ergebnis schon seit Montag.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nNur der Praktikant hob zitternd die Hand, denn er dachte, es sei die Pause.",
       "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
+    },
+    {
+      "timestamp": "2026-11-22T06:51:06.435Z",
+      "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wer kann mir das Wort ‘Entspannung’ buchstabieren?“ – Der Anfänger flüstert: „A‑T‑M‑O‑S‑FÄ‑R‑E.“",
+      "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mich gekratzt.",
+      "archive": "Beim Fitnesskurs sollen wir in unserem eigenen Tempo trainieren. Jetzt steht die Trainerin neben mir und fragt, ob ich überhaupt angefangen habe."
     }
   ]
 }
