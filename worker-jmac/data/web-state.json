@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:56:04.532Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Praktikantin meldet sich und sagt: „Ich habe das Wort ‚abgeschlossen‘ gerade erst im Wörterbuch gefunden.“",
-      "qwen": "Ich habe die Besprechung gestrichen, weil keiner eine Ahnung hatte. So sparen wir alle Zeit und Nerven.",
-      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
-    },
-    {
       "timestamp": "2026-11-21T21:00:58.226Z",
       "gpt": "Ich packe das halbe Haus in Kisten, dann frage ich den Umzugswagen: „Wie viel kostet das, wenn ich nur noch Luft verschicke?“",
       "qwen": "Wir haben beim Ausmisten eine Kiste mit Briefen aus 1985 gefunden. Darin wünschte ich mir sehnlichst, dass mein Umzug endlich vorbei ist.",
@@ -300,6 +294,12 @@
       "gpt": "Ich klopfe an den Nachbarn, weil die Heizung im Flur ausfällt, und er gibt mir ein Handtuch – er dachte, ich will das Wasser abtrocknen.",
       "qwen": "Der Nachbohrer hämmert seit drei Stunden an meinem Regal. Ich schreie „Hilfe“, er antwortet: „Muss noch schnell vor der Arbeit fertig sein.“",
       "archive": "Unsere Hausgemeinschaft hat beschlossen, weniger Zettel aufzuhängen. Jemand hat den Beschluss an jede Wohnungstür geklebt."
+    },
+    {
+      "timestamp": "2026-11-22T01:00:59.062Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Seminarraum, weil ich erst noch den Kurs „Selbstmarketing für Anfänger“ belegen muss.“",
+      "qwen": "Im Vorstellungsgespräch fragte der Chef: „Was erwartet Sie von der Weiterbildung?“\nIch: „Dass Sie mir endlich sagen, was ich hier eigentlich machen soll.“",
+      "archive": "Im Vorstellungsgespräch fragt man, ob ich gut mit Kritik umgehen kann. „Grundsätzlich ja“, sage ich, „solange wir vorher über die Formulierung sprechen.“"
     }
   ]
 }
