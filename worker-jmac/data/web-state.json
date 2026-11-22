@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:15:57.886Z",
-      "gpt": "Im Zug zum Strand frage ich den Platzhirsch, ob wir bald ankommen. Er zeigt auf die Karte – wir fahren im Kreis.",
-      "qwen": "Auf der Alm fragt der Wirt: „Haben Sie schon Hunger?“\n„Noch nicht, aber ich bin bereit, ihn zu fressen.“",
-      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
-    },
-    {
       "timestamp": "2026-11-22T03:21:04.234Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher nickt: „Nur, wenn du das Popcorn nicht knisterst.“",
       "qwen": "Im Museum warte ich auf den Aufzug. Die Museumsführerin lacht: „Der ist längst in der Ruhezeit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie meldet nur: „Bitte bewegen Sie sich – das Handy liegt schon auf dem Sofa.“",
       "qwen": "Ich suchte die App fürs Wetter.\nSie hat mir die Sonne abgeschaltet.",
       "archive": "Mein Handy zeigt die Bildschirmzeit von gestern an. Ich halte die Zahl für falsch und überprüfe sie zwanzig Minuten lang."
+    },
+    {
+      "timestamp": "2026-11-22T07:31:05.767Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen, doch beim herabschauenden Hund hat mich die Katze geküsst – jetzt bin ich entspannt und gleichzeitig allergisch.",
+      "qwen": "Ich schnüre die Laufschuhe für die morgendliche Joggingrunde. Mein Hund bellt fröhlich, aber ich bleibe sitzen.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
