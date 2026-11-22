@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:20:57.497Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich hier leise lesen?“ Der Kinobesucher antwortet: „Nur, wenn du das Popcorn nicht knisterst.“",
-      "qwen": "In der Bibliothek blieb ich stehen, weil jemand laut lachte. Es war der Mann, der gerade den Film „Schweigen ist Gold“ sah.",
-      "archive": "Im Kino fragt mein Freund nach der Hälfte, ob ich die Handlung verstanden habe. Als ich nicke, verlangt er sofort eine Zusammenfassung."
-    },
-    {
       "timestamp": "2026-11-22T06:26:03.932Z",
       "gpt": "Im Taxi ruft der Fahrer: „Wir haben Verspätung, die Straße ist gesperrt.“ Der Fahrgast: „Kein Problem, ich sitze im Zug.“",
       "qwen": "Ich lehne mich um und sage: „Taxi, halten Sie bitte.“\nDer Busfahrer seufzt: „Wir haben hier keine Taxis.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wie stehen wir zum Projekt?“ – Ich: „Wie bei meinem Schreibtisch: Chaos, aber immerhin liegt alles da.“",
       "qwen": "Ich fragte im Meeting, ob man aufhören kann. Alle nicken, nur der Chef schüttelt den Kopf.",
       "archive": "Meine Kollegin beschriftet die Kaffeemaschine mit „Defekt“. Plötzlich sind alle im Büro bereit, für eine Reparatur Überstunden zu machen."
+    },
+    {
+      "timestamp": "2026-11-22T10:26:06.473Z",
+      "gpt": "Ich füllte das verlorene Formular im Fundbüro aus – am Ende war das nur mein Antrag auf Rückgabe meiner eigenen Unterlagen.",
+      "qwen": "Das Fundbüro verlangt für die Abholung der verlorenen Brille ein Formular. Am Ende bestimme ich die Fundbüro-Brille selbst.",
+      "archive": "Am Amt steht auf dem Formular „Bitte deutlich schreiben“. Die Sachbearbeiterin liest meinen Namen und sagt: „Sie können es auch noch deutlicher.“"
     }
   ]
 }
