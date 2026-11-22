@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:21:04.539Z",
-      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze dehnen?“ – Der Kater legt sich zufrieden hin und schnurrt: „Ich schon.“",
-      "qwen": "Nach zwei Stunden Yoga ruft die Frau erleichtert: „Endlich mal Zeit, den Rasen zu mähen!“",
-      "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
-    },
-    {
       "timestamp": "2026-11-22T08:26:05.666Z",
       "gpt": "Ich mache Yoga, um Stress abzubauen, aber jedes Mal, wenn ich die „Baum‑Pose“ halte, fällt mein Nachbar mit seinem Rasenmäher an mir vorbei.",
       "qwen": "Ich laufe zügig, um den Puls zu pumpen, doch der Jogger neben mir fragt, ob ich mein Auto noch am Bahnsteig geparkt habe.",
@@ -300,6 +294,12 @@
       "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Kaffeemaschine piept: „Ich habe ihn gerade ausgedruckt.“",
       "qwen": "In der Besprechung fragte der Chef nach Meinungen. Niemand rührte sich.",
       "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
+    },
+    {
+      "timestamp": "2026-11-22T12:26:04.202Z",
+      "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt, die Durchsage: „Bitte halten Sie sich fest – wir fahren jetzt durch den Tunnel.“ Der Zug fährt rückwärts.",
+      "qwen": "Der Taxifahrer fragt: „Fahren wir direkt hin?“ Ich sage: „Nein, ich nehme erst die U-Bahn.“",
+      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
     }
   ]
 }
