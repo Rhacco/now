@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:01:06.100Z",
-      "gpt": "Im Supermarkt fragt die Kundin nach glutenfreiem Brot, und die Verkäuferin reicht ihr ein Blatt Papier – „Für die Diät, nicht für das Essen.“",
-      "qwen": "Ich fragte im Baumarkt, wo die Dübel sind. Der Verkäufer wies auf die Wand.",
-      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
-    },
-    {
       "timestamp": "2026-11-21T20:06:06.046Z",
       "gpt": "Im Supermarkt fragt ich die Kassiererin, ob das Brot glutenfrei sei – sie lächelt und sagt: „Nur, wenn Sie es nicht essen.“",
       "qwen": "„Gibt’s das auch in Blau?“\n„Nein, aber ich kann Ihnen das Blaue aus dem Auge nehmen.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das das Ersatzteil für mein defektes Telefon?“ Er lächelt: „Nein, das ist meine Gehaltserhöhung.“",
       "qwen": "Der Kurier winkt ab: „Paket fehlt.“ Ich erwidere: „Dann liefern Sie das Fehlen bitte persönlich aus.“",
       "archive": "Für die Reklamation soll ich den defekten Toaster filmen. Auf dem Video wird aus meinem Frühstück langsam ein Mittagessen."
+    },
+    {
+      "timestamp": "2026-11-22T00:05:58.724Z",
+      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Medikament, das noch nicht abgegeben wurde.“",
+      "qwen": "Ich frage die Ärztin: „Wird sich das von selbst geben?“ Sie nickt. Ich warte zwei Wochen, dann geht es von selbst.",
+      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
     }
   ]
 }
