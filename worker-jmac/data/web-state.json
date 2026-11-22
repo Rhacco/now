@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:41:05.533Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nie eingelöst wurde.“",
-      "qwen": "Ich sage dem Apotheker: „Ich brauche den Zettel vom Arzt“.\nEr gibt mir ein Glas Wasser und sagt: „Das ist der Zettel vom Arzt“.",
-      "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
-    },
-    {
       "timestamp": "2026-11-22T04:50:57.632Z",
       "gpt": "Im Fundbüro fragt die Beamtin: „Haben Sie das Formular zum Verlust von Schlüsseln?“ Ich: „Nein, ich habe den Schlüssel verloren.“",
       "qwen": "Ich habe mein verlorenes Portemonnaie beim Fundbüro abgegeben. Jetzt muss ich dort das Formblatt F-386 ausfüllen, um es zurückzuholen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand frage ich den Schaffner, ob wir bald ankommen. Er lächelt: „Nur, wenn Sie das Wasser nicht vergessen haben.“",
       "qwen": "Ich wollte im Urlaub nur relaxen, aber die Sonne hat mich gezwungen, den ganzen Tag zu arbeiten.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-22T08:53:12.068Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Cappuccino?“ Ich antworte: „Einen, der mir das Essen bezahlt.“",
+      "qwen": "Die Karte verspricht „Hausmannskost“, doch der Löffel verliert gegen die Wand des Teller-Bodens.",
+      "archive": "Im Restaurant frage ich, ob die Tagesempfehlung noch zu haben ist. Der Kellner sagt: „Leider nein, aber empfehlen kann ich sie trotzdem.“"
     }
   ]
 }
