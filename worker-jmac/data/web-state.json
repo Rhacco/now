@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:26:03.408Z",
-      "gpt": "Ich habe meiner Nachbarin angeboten, ihr beim Umzug zu helfen – sie meinte, sie braucht nur einen Kasten Bier. Ich kam mit Kartons.",
-      "qwen": "Ich hab den Nachbarn gefragt, ob mein Mofa sein ist. Er sagt: „Nein, aber mein Fahrrad sieht genauso aus.“",
-      "archive": "Bei unserem Hausfest sollte jeder etwas mitbringen. Der Nachbar aus dem Erdgeschoss brachte eine Liste der Leute, die nichts mitgebracht hatten."
-    },
-    {
       "timestamp": "2026-11-22T03:31:03.183Z",
       "gpt": "Ich packe die Kiste mit alten Zeitschriften, doch beim Schließen fällt ein Geldschein heraus – mein Geldbeutel war seit Jahren im Kühlschrank.",
       "qwen": "Die alte Vase wanderte in die Schublade.\nDrauf stand: „Nicht öffnen, bis zum 1. Januar 1999.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Zucker?“ – Der Koch nickt und sagt: „Nur, wenn er noch nicht im Restaurant war.“",
       "qwen": "Ich fragte im Café: „Gibt es hier auch einen Tisch?“\nDie Kellnerin seufzte: „Nein, hier gibt es nur Kaffee und Kuchen.“",
       "archive": "Im Café frage ich nach Kuchen ohne Sahne. Die Bedienung bringt ihn mit Sahne daneben, damit ich selbst entscheiden kann."
+    },
+    {
+      "timestamp": "2026-11-22T07:40:58.743Z",
+      "gpt": "Im Zug drückte ich den Notbremse‑Knopf, weil ich meine Fahrkarte vergessen hatte – die Anzeige zeigte sofort „Ticket gefunden“.",
+      "qwen": "Ich sage „Bus“, er fährt aber.",
+      "archive": "Im Parkhaus fotografiere ich die Nummer meines Stellplatzes. Beim Suchen merke ich, dass ich die Nummer des Parkhauses fotografiert habe."
     }
   ]
 }
