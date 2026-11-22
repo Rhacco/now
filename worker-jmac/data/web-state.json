@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:25:58.407Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Ich: „Nein, ich habe schon genug Probleme, die ich nicht tragen kann.“",
-      "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
-      "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
-    },
-    {
       "timestamp": "2026-11-22T00:30:58.903Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Paket – der Kundendienst ruft: „Wir haben es Ihnen per Luftpost geschickt.“",
       "qwen": "„Ihr Paket ist unterwegs“, sagten sie. Ich fragte nach, wo. „In der Hölle, aber der Driver kommt gleich.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrgast nach dem nächsten Halt – die Durchsage: „Bitte bleiben Sie sitzen, wir fahren nicht.“",
       "qwen": "Ich stellte das Auto ab, stieg in den Bus, dann in die Bahn und ins Taxi. Der Taxifahrer fragte: „Zu Hause vergessen?“",
       "archive": "Beim Einsteigen fragt der Busfahrer nach meinem Ticket. Er sagt: „Der ist für morgen“, und ich bin beeindruckt von meiner Pünktlichkeit."
+    },
+    {
+      "timestamp": "2026-11-22T04:31:03.631Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und finde ein leeres Päckchen – der Kundendienst hat es bereits als „nicht zustellbar“ zurückgesendet.",
+      "qwen": "Ihr Paket wurde heute zugestellt, teilt der Kurier. „Genau auf Ihren Kopf“, fügt er lächelnd hinzu.",
+      "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
     }
   ]
 }
