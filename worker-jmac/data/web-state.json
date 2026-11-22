@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:40:57.875Z",
-      "gpt": "Im Zug zur Ostsee fragt der Tourist: „Gibt’s hier WLAN?“ – Der Schaffner lächelt: „Nur, wenn Sie das Fenster öffnen.“",
-      "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnenbrille vom Kopf gerissen. Jetzt schauen wir nur noch traurig auf die See.",
-      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
-    },
-    {
       "timestamp": "2026-11-22T10:45:59.274Z",
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Sohn grinst: „Ich, ich wollte nur den Tisch sauber halten.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen aufgegessen?“\nIch: „Ich.“ Papa: „Dann bist du jetzt das letzte Stück.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund meine Matte klaut und plötzlich bin ich der, der sich streckt.",
       "qwen": "Ich habe Yoga zur Stressbewältigung probiert. Jetzt bin ich entspannt, aber nicht mehr aufrecht.",
       "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
+    },
+    {
+      "timestamp": "2026-11-22T14:51:07.924Z",
+      "gpt": "Im Meeting fragt der Chef: „Wie steht es mit den Deadlines?“ – Der Praktikant zeigt auf den Kalender: „Hier steht ‚Deadline‘, aber das ist nur das Wort für das Mittagessen.“",
+      "qwen": "Der Chef fragte, warum ich heute schon gehe. Ich erklärte, dass ich um acht Uhr Besprechung habe.",
+      "archive": "Im Büro steht seit Montag „Bitte Geschirr selbst spülen“. Heute hängt darunter: „Gilt das auch für die Tasse vom Chef?“"
     }
   ]
 }
