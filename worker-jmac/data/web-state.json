@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:16:04.778Z",
-      "gpt": "Mama fragt: „Warum liegt dein Vater immer mit dem Kopf im Kühlschrank?“ Sohn: „Er will endlich mal etwas Kühles denken.“",
-      "qwen": "Mama fragt: „Und wo ist Papa?“\nIch: „Im Keller.“\nMama: „Schließlich ist er ein Mausefalle.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-22T04:20:56.965Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Karton. Kundendienst ruft: „Herzlichen Glückwunsch, Sie haben ein Upgrade auf Luftpost erhalten!“",
       "qwen": "Die Zustellerin fragt lächelnd: „Und wie geht es Ihnen heute?“\nIch schweige, während sie das Paket langsam zerdrückt.",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga, um Stress abzubauen, aber jedes Mal, wenn ich die „Baum‑Pose“ halte, fällt mein Nachbar mit seinem Rasenmäher an mir vorbei.",
       "qwen": "Ich laufe zügig, um den Puls zu pumpen, doch der Jogger neben mir fragt, ob ich mein Auto noch am Bahnsteig geparkt habe.",
       "archive": "Im Tanzkurs sagt die Lehrerin: „Nur einer führt.“ Mein Partner schaut mich an, und wir melden uns beide freiwillig."
+    },
+    {
+      "timestamp": "2026-11-22T08:30:59.188Z",
+      "gpt": "Der Lieferant klopft, ich frage nach dem Paket, er zeigt auf den leeren Karton – „Ihr Paket ist schon da, nur leider schon auspackt.“",
+      "qwen": "Der Bote fragt: „Ist jemand da?“ Ich rufe: „Ja, aber nur der Hund!“ Er: „Der hat kein Paket.“",
+      "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
     }
   ]
 }
