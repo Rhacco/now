@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:56:05.883Z",
-      "gpt": "Ich bestelle im Café einen Espresso, der Kellner fragt: „Möchten Sie dazu Zucker?“ – Ich antworte: „Nein, ich will nur die Rechnung süß sehen.“",
-      "qwen": "Ich wollte nur einen Kaffee, aber der Kellner fragte nach der Weinliste.",
-      "archive": "In der Pizzeria sagt mein Freund, er sei satt. Als der Kellner die Reste einpacken will, zieht mein Freund den Karton wortlos zu sich."
-    },
-    {
       "timestamp": "2026-11-22T07:00:57.585Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt, ich zeige die PowerPoint – sie besteht nur aus leeren Folien. Fortschritt ist, dass wir jetzt nichts mehr sehen.",
       "qwen": "Der Chef fragt: „Haben Sie die Präsentation fertig?“\n„Ja, Herr Schmidt, ich bin fertig mit der Arbeit.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe beim Ausmisten den Toaster in die Kisten geworfen – jetzt ist er wirklich nur noch ein „Brot‑Löser“.",
       "qwen": "Ich habe die alte Matratze aus dem Keller geholt. Sie ist jetzt das bequemste Möbelstück in unserem neuen Zuhause.",
       "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
+    },
+    {
+      "timestamp": "2026-11-22T11:00:59.651Z",
+      "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die PowerPoint‑Folien – sie zeigen nur „Bitte warten…“, weil das Projekt noch im Ladenladen ist.",
+      "qwen": "Der Chef fragt: „Haben Sie die Zahlen geprüft?“\nIch: „Ja, es sind noch drei Stück.“",
+      "archive": "Für das Teamfoto sollten alle natürlich wirken. Niemand wusste, wie man das macht, solange der Chef zusieht."
     }
   ]
 }
