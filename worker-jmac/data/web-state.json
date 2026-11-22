@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:30:59.153Z",
-      "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam: „Bitte nicht schreien, wir sind schon im Tunnel.“",
-      "qwen": "Ich bin mit Bahn, Bus, Taxi und Auto unterwegs. Die Strecke dauert genau eine Minute.",
-      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
-    },
-    {
       "timestamp": "2026-11-22T10:36:06.938Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Ich: „Nein, ich habe nur den Geldschein gefunden.“",
       "qwen": "Verlorenes Handy gefunden, Anmeldeformular ausgefüllt.\nDas Formular war schwerer als das Handy.",
@@ -300,6 +294,12 @@
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ Ich antworte: „Im Kursraum, weil ich endlich den Kurs „Wie überlebe ich Bewerbungen“ belege.“",
       "qwen": "„Sprich mich du an, wir sind hier ganz locker!“ Sagte der Chef und wurde entlassen.",
       "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
+    },
+    {
+      "timestamp": "2026-11-22T14:40:57.832Z",
+      "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt, der Reiseführer lächelt und sagt: „Nur noch fünf Minuten bis zum Ausgang.“",
+      "qwen": "Wir wollten auf dem Campingplatz wild und frei schlafen. Der Nachbarnachbar meinte, das WC habe nur samstags Strom.",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
