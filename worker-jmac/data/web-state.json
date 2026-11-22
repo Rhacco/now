@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T22:30:58.184Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann nickt: „Ja, gleich nach dem Kaffeebecher, den ich gerade gefunden habe.“",
-      "qwen": "Ich habe den Fund-Briefkasten im Rathaus drei Wochen lang ignoriert. Heute hole ich ihn ab, er ist voll.",
-      "archive": "Bei der Ummeldung fragt die Mitarbeiterin, seit wann ich dort wohne. „Seit gestern“, sage ich, und sie wirkt enttäuscht: „Dann sind Sie ja früh.“"
-    },
-    {
       "timestamp": "2026-11-21T22:36:02.886Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann antwortet: „Nein, ich habe nur den Geldbeutel gefunden.“",
       "qwen": "Für den verlorenen Pass brauchte ich Formular 7b in dreifacher Ausfertigung.\nDas Fundbüro schloss um 12 Uhr, weil die Mittagspause durch ein Formular geregelt wird.",
@@ -300,6 +294,12 @@
       "gpt": "Der Kunde fragt beim Paketdienst: „Warum ist mein Liefertermin immer erst morgen?“ Der Fahrer lächelt: „Weil wir erst nach dem Wochenende auspacken.“",
       "qwen": "Das Paket ist da, der Karton aber leer. Der Kurier meint nur: „Die Ware ist auf dem Weg.“",
       "archive": "Im Paketshop muss ich meinen Namen buchstabieren. Bei meinem dritten Versuch fragt der Mitarbeiter, ob ich vielleicht lieber ein anderes Paket möchte."
+    },
+    {
+      "timestamp": "2026-11-22T02:36:03.489Z",
+      "gpt": "Ich packe den Kühlschrank aus, finde ein altes Liebesbriefchen und frage mich, warum ich nie mehr „kühl“ bleiben wollte.",
+      "qwen": "Ich habe den alten Schrank verpackt und die Schrauben an den Dachbalken geklebt.\nEr fragt: „Und wo ist der Haken?“",
+      "archive": "Beim Umzug beschrifte ich jede Kiste ordentlich. Das Klebeband liegt in der Kiste mit der Aufschrift „Klebeband“."
     }
   ]
 }
