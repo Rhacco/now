@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:46:05.003Z",
-      "gpt": "Im Zug frage ich den Schaffner nach dem nächsten Halt – er meint, er fährt nur im Traum. Ich steige aus, weil ich zu Fuß schneller bin.",
-      "qwen": "Ich stieg aus dem Taxi, weil es schneller war. Der Taxifahrer hat mich für einen Fahrgast gehalten.",
-      "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
-    },
-    {
       "timestamp": "2026-11-22T01:51:04.477Z",
       "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wie fühlt sich die Balance an?“ – „Wie mein Kontostand nach dem Black‑Friday‑Sale.“",
       "qwen": "Ich wollte nur kurz Dehnen, aber jetzt liege ich da und starre auf die Decke.",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, sie zeigt Regen, also nehme ich den Regenschirm – und stolpere über den Stromschlag‑Alarm, weil ich vergessen habe, das Handy zu laden.",
       "qwen": "Ich sprach laut „Hey Siri\", um die Heizung zu starten.\nDie App öffnete stattdessen den Online-Shop für Winterreifen.",
       "archive": "Meine Banking-App fragt, ob ich meine Ausgaben analysieren möchte. Ich tippe „Später“; wenigstens eine Entscheidung kostet mich nichts."
+    },
+    {
+      "timestamp": "2026-11-22T06:01:06.556Z",
+      "gpt": "Im Zug zum Strand fragt die Frau: „Ist das hier die Sitzreihe mit Meerblick?“ Der Schaffner lächelt: „Nein, das ist die Reihe mit WLAN.“",
+      "qwen": "Ich buche ein Zelt für den Campingurlaub. Der Verkäufer fragt: „Brauchen Sie auch Stöcke?“",
+      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
     }
   ]
 }
