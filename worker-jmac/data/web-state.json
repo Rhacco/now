@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:56:04.673Z",
-      "gpt": "Ich habe beim Ausmisten den Toaster in die Kisten geworfen – jetzt ist er wirklich nur noch ein „Brot‑Löser“.",
-      "qwen": "Ich habe die alte Matratze aus dem Keller geholt. Sie ist jetzt das bequemste Möbelstück in unserem neuen Zuhause.",
-      "archive": "Ich wollte nur das Bad putzen. Drei Stunden später sortiere ich Garantiebelege, weil ich im Schrank einen Schwamm gesucht habe."
-    },
-    {
       "timestamp": "2026-11-22T11:00:59.651Z",
       "gpt": "Im Meeting fragt der Chef nach Fortschritt. Ich zeige die PowerPoint‑Folien – sie zeigen nur „Bitte warten…“, weil das Projekt noch im Ladenladen ist.",
       "qwen": "Der Chef fragt: „Haben Sie die Zahlen geprüft?“\nIch: „Ja, es sind noch drei Stück.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt ich nach Bio‑Eiern, die Verkäuferin lächelt und reicht mir ein Glas Eier. Auf dem Wochenmarkt kaufe ich ein Ei, das noch pfeift.",
       "qwen": "Der Supermarkt sagt: „Alles auf Vorrat.“\nDer Wochenmarkt: „Heute frisch, morgen weg.“",
       "archive": "Im Supermarkt wird eine zweite Kasse geöffnet. Der Mann hinter mir sprintet hin und fragt dort, wer als Nächstes dran ist."
+    },
+    {
+      "timestamp": "2026-11-22T15:06:06.209Z",
+      "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wer kann die Katze strecken?“ – Der Hund neben mir bellt begeistert und legt sich hin.",
+      "qwen": "Ich streckte mich beim Yoga so intensiv, dass mir der Puls wegging. Der Trainer lobte meine unübertroffene Tiefenentspannung.",
+      "archive": "Beim Schwimmen überholt mich eine Frau dreimal. Als ich mich entschuldige, sagt sie: „Macht nichts, Sie sind meine Pausenmarkierung.“"
     }
   ]
 }
