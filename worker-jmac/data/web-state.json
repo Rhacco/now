@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T08:16:05.773Z",
-      "gpt": "Ich packe meine Klamotten aus, finde ein altes T-Shirt und frage mich, warum ich es noch nie getragen habe – dann sehe ich das Preisschild: „Nur noch 0 €.“",
-      "qwen": "Ich habe beim Ausmisten nicht nur die alten Socken weggeschmissen, sondern auch die Begeisterung für Räumaktionen.",
-      "archive": "Vor dem Umzug frage ich, wie viele Kartons wir brauchen. Mein Partner sagt: „Kommt darauf an, ob du deine Hobbys mitnehmen willst.“"
-    },
-    {
       "timestamp": "2026-11-22T08:21:04.539Z",
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann die Katze dehnen?“ – Der Kater legt sich zufrieden hin und schnurrt: „Ich schon.“",
       "qwen": "Nach zwei Stunden Yoga ruft die Frau erleichtert: „Endlich mal Zeit, den Rasen zu mähen!“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zum Strand fragt ich den Schaffner nach einer Sitzplatzreservierung – er lächelt und gibt mir einen Sonnenhut.",
       "qwen": "Am Strand sagt die Frau zum Mann: „Schnapp dir die Handtücher.“ Er seufzt: „Ich bin hier Urlaub, nicht Kellner.“",
       "archive": "Im Urlaub steht im Plan „Freier Nachmittag“. Meine Freundin hat ihn ausgedruckt und in drei Zeitfenster eingeteilt."
+    },
+    {
+      "timestamp": "2026-11-22T12:21:05.633Z",
+      "gpt": "Im Meeting fragt der Chef: „Wer hat den Bericht fertig?“ – Die Kaffeemaschine piept: „Ich habe ihn gerade ausgedruckt.“",
+      "qwen": "In der Besprechung fragte der Chef nach Meinungen. Niemand rührte sich.",
+      "archive": "Unser Team soll mutiger Entscheidungen treffen. Die erste Entscheidung war, dafür eine Arbeitsgruppe zu gründen."
     }
   ]
 }
