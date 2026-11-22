@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T11:36:04.642Z",
-      "gpt": "Im Yoga-Kurs fragt die Lehrerin: „Wer kann die Katze nachahmen?“ Der Hund legt sich zufrieden hin und schnurrt.",
-      "qwen": "Ich wollte beim Joggen entspannen. Jetzt bin ich nur noch echt fertig.",
-      "archive": "Nach der Wanderung zeigt meine Uhr 20.000 Schritte. Mein Freund zeigt auf die Gondel und sagt: „Runter fahren wir natürlich.“"
-    },
-    {
       "timestamp": "2026-11-22T11:41:02.329Z",
       "gpt": "Beim Familienessen fragt die Mutter: „Wer hat den Keks geklaut?“ Der Hund bellt: „Ich wollte nur das Rezept teilen.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Klar, du zahlst ja die Miete.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt die Kundin: „Nur, wenn Sie das Gemüse einpacken.“",
       "qwen": "Ich fragte: „Warum sind die Pommes hier so teuer?“\nDie Verkäuferin seufzte: „Weil der Bauer sie selbst gegessen hat.“",
       "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
+    },
+    {
+      "timestamp": "2026-11-22T15:45:57.581Z",
+      "gpt": "Ich frage den Verkäufer nach einem passenden Hut, er reicht mir eine Packung Zahnpasta – „Damit Ihr Kopf immer frisch bleibt.“",
+      "qwen": "Ich fragte im Schuhladen nach der Beratung für meine frisch bestellten Sneaker. Der Verkäufer zeigte auf den Spiegel: „Da sehen Sie sie.“",
+      "archive": "Im Möbelhaus fragt der Verkäufer, ob ich etwas Bestimmtes suche. „Ja, den Ausgang“, sage ich, und er nickt verständnisvoll."
     }
   ]
 }
