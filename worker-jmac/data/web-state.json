@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:20:59.800Z",
-      "gpt": "Ich füllte das Fundbüro-Formular aus, doch am Ende stand dort „Verloren: meine Geduld“.",
-      "qwen": "Ich finde meine Brille im Fundbüro. Sie tragen sie schon seit drei Wochen.",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-22T07:25:57.461Z",
       "gpt": "Ich habe die neue Fitness‑App gestartet, aber sie meldet nur: „Bitte bewegen Sie sich – das Handy liegt schon auf dem Sofa.“",
       "qwen": "Ich suchte die App fürs Wetter.\nSie hat mir die Sonne abgeschaltet.",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt der Trainer: „Wie fühlen Sie sich nach dem Yoga?“ – „Wie ein Smartphone mit 100 % Akku, das gerade ein Nickerchen macht.“",
       "qwen": "Ich wollte beim Yoga entspannen, aber die Stille war so laut, dass mein eigenes Herzschlag mich fast erschreckt hat.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-22T11:26:04.712Z",
+      "gpt": "Im Supermarkt fragt ich nach Bio‑Äpfeln, die Verkäuferin meint, sie kämen vom Wochenmarkt. Ich antworte: „Dann bitte gleich die Kasse, ich zahl bar.“",
+      "qwen": "Beim Wochenmarkt frage ich nach dem Preis für die Tomaten. Die Bäuerin zückt die Waage und fragt: „Sollen wir die halbe Ernte wiegen?“",
+      "archive": "An der Gemüsetheke frage ich nach einer reifen Avocado. Der Verkäufer sagt: „Für heute oder für einen bestimmten Dienstag?“"
     }
   ]
 }
