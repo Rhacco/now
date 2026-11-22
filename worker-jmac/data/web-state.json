@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T01:25:58.379Z",
-      "gpt": "Beim Familienabend fragt die Mutter: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich nur, weil ich die Diät meiner Schwester verteidige.“",
-      "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt. Sie meinte: „Ich hab dich nur geheiratet, weil du der Einzige warst, der nicht vor mir weggerannt ist.“",
-      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
-    },
-    {
       "timestamp": "2026-11-22T01:31:00.305Z",
       "gpt": "Ich sortiere beim Umzug die alten Kissenbezüge aus, finde einen Geldschein und frage mich, warum ich das ganze Haus ausmistet, nicht das Portemonnaie.",
       "qwen": "Ich habe den alten Toaster ausgemistet.\nMeine Frau fand ihn heute früh auf dem Müllberg.",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Wer hat das letzte Stück Kuchen genommen?“ Papa antwortet: „Ich, weil du immer sagst, ich soll mir nichts wegnehmen.“",
       "qwen": "Ich frage meine Frau, ob sie mich liebt. Sie schaut mich an und sagt: „Ja, aber du bist nicht mein Favorit.“",
       "archive": "Mein Bruder sagt, er sei der unkomplizierteste Mensch der Familie. Er hat dafür eigens ein Familientreffen einberufen."
+    },
+    {
+      "timestamp": "2026-11-22T05:36:01.065Z",
+      "gpt": "Im Zug neben mir schläft ein Tourist laut schnarchend – ich wecke ihn, weil er mein Ticket gestohlen hat. Er sagt: „Ich dachte, das wäre ein Souvenir.“",
+      "qwen": "Ich will im Urlaub nur ausruhen. Die Katze hat den Reiseführer gefressen.",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
