@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:45:57.050Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Kaffeemaschine piept: „Ich habe das Ergebnis schon seit Montag.“",
-      "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nNur der Praktikant hob zitternd die Hand, denn er dachte, es sei die Pause.",
-      "archive": "In der Besprechung fragt jemand, ob es noch Fragen gibt. Alle schweigen, bis der Chef sagt: „Dann verteile ich jetzt die Aufgaben.“"
-    },
-    {
       "timestamp": "2026-11-22T06:51:06.435Z",
       "gpt": "Beim Yoga-Workshop fragt die Lehrerin: „Wer kann mir das Wort ‘Entspannung’ buchstabieren?“ – Der Anfänger flüstert: „A‑T‑M‑O‑S‑FÄ‑R‑E.“",
       "qwen": "Ich wollte beim Yoga entspannen, aber die Katze hat mich gekratzt.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Sohn grinst: „Ich, ich wollte nur den Tisch sauber halten.“",
       "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen aufgegessen?“\nIch: „Ich.“ Papa: „Dann bist du jetzt das letzte Stück.“",
       "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
+    },
+    {
+      "timestamp": "2026-11-22T10:51:02.158Z",
+      "gpt": "Im Café fragt die Kellnerin: „Möchten Sie lieber einen Espresso oder einen Kuchen?“ Der Gast antwortet: „Beides, ich will einfach nur einen Grund, nicht zu kochen.“",
+      "qwen": "Der Kellner bringt den Salat.\nIch bitte: „Noch mehr Dressing, bitte.“",
+      "archive": "Im Restaurant fragt der Kellner, ob wir einen Anlass feiern. „Ja, wir haben endlich eine Reservierung bekommen.“"
     }
   ]
 }
