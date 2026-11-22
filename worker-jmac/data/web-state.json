@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T10:36:06.938Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular 42‑B ausgefüllt?“ Ich: „Nein, ich habe nur den Geldschein gefunden.“",
-      "qwen": "Verlorenes Handy gefunden, Anmeldeformular ausgefüllt.\nDas Formular war schwerer als das Handy.",
-      "archive": "Für die Anmeldung verlangt das Amt eine Bestätigung des Vermieters. Er schreibt: „Ja, sie wohnt hier, und die Heizung ist immer noch kaputt.“"
-    },
-    {
       "timestamp": "2026-11-22T10:40:57.875Z",
       "gpt": "Im Zug zur Ostsee fragt der Tourist: „Gibt’s hier WLAN?“ – Der Schaffner lächelt: „Nur, wenn Sie das Fenster öffnen.“",
       "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnenbrille vom Kopf gerissen. Jetzt schauen wir nur noch traurig auf die See.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Touristin nach dem nächsten Halt, der Reiseführer lächelt und sagt: „Nur noch fünf Minuten bis zum Ausgang.“",
       "qwen": "Wir wollten auf dem Campingplatz wild und frei schlafen. Der Nachbarnachbar meinte, das WC habe nur samstags Strom.",
       "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
+    },
+    {
+      "timestamp": "2026-11-22T14:46:04.800Z",
+      "gpt": "Ich mache Yoga, um Stress abzubauen – bis mein Hund meine Matte klaut und plötzlich bin ich der, der sich streckt.",
+      "qwen": "Ich habe Yoga zur Stressbewältigung probiert. Jetzt bin ich entspannt, aber nicht mehr aufrecht.",
+      "archive": "Mein Trainer sagt beim Dehnen, ich solle meine Grenzen respektieren. Das tue ich schon seit Jahren ausgesprochen gewissenhaft."
     }
   ]
 }
