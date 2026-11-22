@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:55:56.954Z",
-      "gpt": "Mutter ruft: „Wer hat den Kuchen gegessen?“ Der Hund bellt: „Ich habe nur den Staubsauger gefressen.“",
-      "qwen": "Ich fragte meine Mutter, ob ich den Müll rausbringen soll. Sie nickte und sagte: „Klar, und denk dran, die Tür zuzumachen.“",
-      "archive": "Zu Hause teilen wir uns die Hausarbeit gerecht. Ich mache die Liste, mein Partner erklärt, warum sie ungerecht ist."
-    },
-    {
       "timestamp": "2026-11-22T00:00:58.604Z",
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und frage: „Ist das das Ersatzteil für mein defektes Telefon?“ Er lächelt: „Nein, das ist meine Gehaltserhöhung.“",
       "qwen": "Der Kurier winkt ab: „Paket fehlt.“ Ich erwidere: „Dann liefern Sie das Fehlen bitte persönlich aus.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie Ihren Kaffee stark oder mild?“ Der Gast antwortet: „Stark, ich will ihn gleich mit dem Kochlöffel rühren.“",
       "qwen": "Ich fragte im Café: „Gibt es vegetarisch?“ „Nein, aber der Kellner ist es.“",
       "archive": "Am Herd heißt es im Rezept „Nach Gefühl würzen“. Mein Gefühl ist gerade ziemlich angespannt; die Suppe leider auch."
+    },
+    {
+      "timestamp": "2026-11-22T04:00:58.074Z",
+      "gpt": "Ich kaufe beim Supermarkt ein Pfund Äpfel, doch am Wochenmarkt kostet das Gleiche nur ein Stück. Der Kassierer sagt: „Wir verkaufen jetzt nur noch Luft.“",
+      "qwen": "Ich fragte den Wochenhändler: „Gibt es hier auch Parfüm?“\nEr nickte: „Ja, die Tomaten riechen auch gut.“",
+      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
     }
   ]
 }
