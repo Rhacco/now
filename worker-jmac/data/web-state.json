@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:26:07.636Z",
-      "gpt": "Ich betrete die Bibliothek, finde Popcorn und ein rotes Vorhang‑Schild. Das Museum hat das Kino übernommen und ich habe das falsche Ticket.",
-      "qwen": "Bibliothek, Kino und Museum sind voll.\nIch war nur im Wartezimmer.",
-      "archive": "Im Museum erklärt mein Freund begeistert eine moderne Skulptur. Erst als ich die Beschriftung lese, merken wir, dass es der Feuerlöscherkasten ist."
-    },
-    {
       "timestamp": "2026-11-21T20:31:04.192Z",
       "gpt": "Im Zug zur Bergewanderung fragt der Tourist: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur wenn du den Gipfel erreichst.“",
       "qwen": "Er wollte im Urlaub Ruhe finden, aber die Wellen haben ihn geweckt.",
@@ -300,6 +294,12 @@
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ – Ich: „Nein, ich habe schon genug Probleme, die ich nicht tragen kann.“",
       "qwen": "Der Verkäufer fragt: „Können wir Ihnen helfen?“ Ich antworte: „Ja, nehmen Sie mich einfach mit.“",
       "archive": "Im Baumarkt will ich eine Schraube kaufen. Der Verkäufer fragt nach Länge, Gewinde und Material; auf mein letztes Bewerbungsgespräch war ich schlechter vorbereitet."
+    },
+    {
+      "timestamp": "2026-11-22T00:30:58.903Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Paket – der Kundendienst ruft: „Wir haben es Ihnen per Luftpost geschickt.“",
+      "qwen": "„Ihr Paket ist unterwegs“, sagten sie. Ich fragte nach, wo. „In der Hölle, aber der Driver kommt gleich.“",
+      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
     }
   ]
 }
