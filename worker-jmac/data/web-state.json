@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T23:10:58.280Z",
-      "gpt": "Im Zug vergaß ich mein Ticket, doch die Kontrolleure gaben mir ein Upgrade – ans Fenster, weil ich dort am besten \"aussteigen\" kann.",
-      "qwen": "Auf dem Campingplatz lern ich den Nachbarn kennen. Er fragt, ob ich auch im Urlaub noch arbeite.",
-      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
-    },
-    {
       "timestamp": "2026-11-21T23:16:02.888Z",
       "gpt": "Ich habe beim Ausmisten den alten Toaster gefunden und ihn gleich mit in den Umzugswagen geladen – er war schließlich das einzige Gerät, das noch „aufheizt“.",
       "qwen": "Wir haben beim Ausmisten die letzte Matratze gefunden.\nSie war unter dem Sofa klebend festgewachsen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café fragt die Kellnerin: „Möchten Sie die Suppe warm oder kalt?“ Der Kunde meint: „Warm, bitte – ich habe gerade erst das Eis gegessen.“",
       "qwen": "Im Café bestellte ich einen Kaffee. Der Kellner fragte: „Zu trinken oder zum Kochen?“",
       "archive": "Im Café bestelle ich den kleinsten Kaffee. Der Barista stellt drei Becher hin und zeigt auf den mittleren."
+    },
+    {
+      "timestamp": "2026-11-22T03:15:57.886Z",
+      "gpt": "Im Zug zum Strand frage ich den Platzhirsch, ob wir bald ankommen. Er zeigt auf die Karte – wir fahren im Kreis.",
+      "qwen": "Auf der Alm fragt der Wirt: „Haben Sie schon Hunger?“\n„Noch nicht, aber ich bin bereit, ihn zu fressen.“",
+      "archive": "Bei der Stadtführung läuft mein Freund begeistert voraus. Nach einer Weile bittet ihn der Stadtführer, uns doch bitte nicht zu verlieren."
     }
   ]
 }
