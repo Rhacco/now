@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T07:06:01.870Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Anprobieren nicht nass werden.“",
-      "qwen": "Ich fragte nach einer Beratung für den Wäschetrockner. Der Verkäufer streifte sich einen Handwagen über und fragte: „Soll ich Ihnen die Wäsche auch gleich aufhängen?“",
-      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
-    },
-    {
       "timestamp": "2026-11-22T07:11:03.600Z",
       "gpt": "Ich mache Yoga im Park, um zu entspannen – plötzlich ruft ein Hund: „Endlich jemand, der meine Dehnübungen nachmacht!“",
       "qwen": "Beim Yoga sage ich: „Einatmen, ausatmen, loslassen.“\nMein Knie knallt laut gegen den Boden.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt der Fahrkartenkontrolleur: „Haben Sie ein Ticket?“ Ich antworte: „Nein, ich sitze im Bus.“",
       "qwen": "Ich winkte dem Taxi winkend und fuhr ihm direkt vor die Radstange.",
       "archive": "An der Haltestelle sagt die Anzeige „Bus in zwei Minuten“. Nach zehn Minuten denke ich, das ist wohl die Zeit, die der Bus selbst noch hat."
+    },
+    {
+      "timestamp": "2026-11-22T11:11:02.152Z",
+      "gpt": "Ich frage im Elektrofachmarkt nach einer energiesparenden Lampe, und der Verkäufer meint: „Klar, wir haben jetzt LED‑Glühbirnen – die leuchten, aber kosten nichts.“",
+      "qwen": "Ich frage im Supermarkt nach dem Brot, doch der Verkäufer erklärt mir stundenlang die Philosophie des Getreides.",
+      "archive": "Die Schuhverkäuferin sagt, das Leder werde noch weiter. Ich frage, ob es noch heute damit anfangen könnte."
     }
   ]
 }
