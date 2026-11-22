@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T09:25:58.178Z",
-      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Seminarraum, weil ich jetzt endlich meine Weiterbildung bewerbe.“",
-      "qwen": "Ich habe die Weiterbildung abgeschlossen und im Vorstellungsgespräch gefragt: „Haben Sie jetzt mehr Zeit für mich?“",
-      "archive": "Die Personalchefin fragt nach meinen Schwächen. Ich sage: „Ich nehme Fragen manchmal zu wörtlich“, und bitte sie um ein Beispiel."
-    },
-    {
       "timestamp": "2026-11-22T09:30:57.115Z",
       "gpt": "Nach dem Yoga‑Kurs fragt er: „Wie lange dauert die Entspannung?“ – „Nur bis die nächste Sirene zum Sprinten ruft.“",
       "qwen": "Ich bin seit einer Woche im Yoga. Mein Körper ist entspannt, mein Ego ist noch nicht.",
@@ -300,6 +294,12 @@
       "gpt": "Ich sortiere beim Umzug aus und finde meine alte Steuererklärung. Sie ist jetzt offiziell ein Sammlerstück.",
       "qwen": "Ich wollte die alten Kisten ausmisten, aber die Nierensack-Geschichte von 1984 hat mich zum Heulen gebracht.",
       "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
+    },
+    {
+      "timestamp": "2026-11-22T13:36:03.306Z",
+      "gpt": "Im Zug zum Strand fragt die Mutter: „Warum hast du das Handtuch eingepackt?“ – Ich: „Damit ich das Essen nicht vom Sonnenbrand ablenken muss.“",
+      "qwen": "Wir wollten am Strand entspannen. Dann hat mich die Sonne gebrannt und ich musste ins Wasser.",
+      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
     }
   ]
 }
