@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T20:06:06.046Z",
-      "gpt": "Im Supermarkt fragt ich die Kassiererin, ob das Brot glutenfrei sei – sie lächelt und sagt: „Nur, wenn Sie es nicht essen.“",
-      "qwen": "„Gibt’s das auch in Blau?“\n„Nein, aber ich kann Ihnen das Blaue aus dem Auge nehmen.“",
-      "archive": "Der Uhrmacher fragt, seit wann meine Uhr stehen geblieben ist. Ich sage: „Genau das wollte ich von Ihnen wissen.“"
-    },
-    {
       "timestamp": "2026-11-21T20:11:03.580Z",
       "gpt": "Der Chef fragt nach einem Update, ich zeige ihm den leeren Screenshot – “Hier ist das Ergebnis unserer produktiven Brainstorming‑Session.“",
       "qwen": "Im Meeting fragte der Chef: „Wer hat die Zahlen geprüft?“ Alle schwiegen, bis mir der Stift fiel.",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ – „Wie ein Medikament, das noch nicht abgegeben wurde.“",
       "qwen": "Ich frage die Ärztin: „Wird sich das von selbst geben?“ Sie nickt. Ich warte zwei Wochen, dann geht es von selbst.",
       "archive": "Beim Hörtest soll ich mich melden, sobald ich etwas höre. Draußen hupt ein Auto, und die Ärztin notiert ganz zufrieden mit."
+    },
+    {
+      "timestamp": "2026-11-22T00:11:06.983Z",
+      "gpt": "Im Taxi fragt der Fahrer: „Möchten Sie lieber die schnellste Route?“ Ich nicke, er fährt sofort in die nächste Haltestelle.",
+      "qwen": "Der Taxifahrer fragte: „Steigen Sie gleich ein?“ Ich nickte und blieb stehen.",
+      "archive": "Im Bus fragt der Fahrer, ob noch jemand aussteigen will. Alle schweigen, und an der nächsten Haltestelle beschweren sich drei Leute."
     }
   ]
 }
