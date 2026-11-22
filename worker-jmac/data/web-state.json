@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:30:58.903Z",
-      "gpt": "Der Paketbote klingelt, ich öffne die Tür und sehe ein leeres Paket – der Kundendienst ruft: „Wir haben es Ihnen per Luftpost geschickt.“",
-      "qwen": "„Ihr Paket ist unterwegs“, sagten sie. Ich fragte nach, wo. „In der Hölle, aber der Driver kommt gleich.“",
-      "archive": "Der Monteur wollte ein Foto vom beschädigten Tisch. Auf dem Bild liegt die Aufbauanleitung daneben, damit man sieht, wer angefangen hat."
-    },
-    {
       "timestamp": "2026-11-22T00:36:05.433Z",
       "gpt": "Im Supermarkt fragt ich nach regionalen Äpfeln – die Verkäuferin zeigt auf den Bio‑Bereich. Auf dem Wochenmarkt kostet derselbe Apfel doppelt, weil er „frisch“ ist.",
       "qwen": "Beim Wochenmarkt frage ich nach dem Preis, beim Supermarkt gleich nach dem Rabatt.",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür und finde ein leeres Päckchen – der Kundendienst hat es bereits als „nicht zustellbar“ zurückgesendet.",
       "qwen": "Ihr Paket wurde heute zugestellt, teilt der Kurier. „Genau auf Ihren Kopf“, fügt er lächelnd hinzu.",
       "archive": "Die Hotline sagt: „Sie sind der Nächste.“ Ich traue mich inzwischen nicht mehr zu fragen, in welchem Monat."
+    },
+    {
+      "timestamp": "2026-11-22T04:35:57.344Z",
+      "gpt": "Beim Sonntagsbrunch fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich – ich wollte nur den Krümel‑Zähler testen.“",
+      "qwen": "Der Papa fragt: „Wie war die Schule?“\nDie Tochter antwortet: „Gut, ich habe den Lehrer geküsst.“",
+      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
     }
   ]
 }
