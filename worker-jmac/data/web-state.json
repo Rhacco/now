@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T06:41:01.556Z",
-      "gpt": "Im Fundbüro fragt die Dame: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, das war das, was ich gesucht habe.“",
-      "qwen": "Im Fundbüro fragt man, ob ein Schlüssel verloren ging. Die Antwort: Nein, er ist nur neu registriert.",
-      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
-    },
-    {
       "timestamp": "2026-11-22T06:45:57.050Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat das Projekt abgeschlossen?“ – Die Kaffeemaschine piept: „Ich habe das Ergebnis schon seit Montag.“",
       "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nNur der Praktikant hob zitternd die Hand, denn er dachte, es sei die Pause.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Ostsee fragt der Tourist: „Gibt’s hier WLAN?“ – Der Schaffner lächelt: „Nur, wenn Sie das Fenster öffnen.“",
       "qwen": "Wir wollten am Strand entspannen, doch der Wind hat uns die Sonnenbrille vom Kopf gerissen. Jetzt schauen wir nur noch traurig auf die See.",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-22T10:45:59.274Z",
+      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat die Milch verschüttet?“ Der kleine Sohn grinst: „Ich, ich wollte nur den Tisch sauber halten.“",
+      "qwen": "Mama fragt: „Wer hat das letzte Stück Kuchen aufgegessen?“\nIch: „Ich.“ Papa: „Dann bist du jetzt das letzte Stück.“",
+      "archive": "Beim Frühstück frage ich, wer die letzte Marmelade aufgebraucht hat. Alle wissen erstaunlich viel darüber, wer es nicht war."
     }
   ]
 }
