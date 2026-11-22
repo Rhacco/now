@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T00:50:58.388Z",
-      "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient: „Wie ein Rezept – noch nicht eingelöst.“",
-      "qwen": "Ich warte in der Praxis und frage die Apothekerin, wo der Arzt sei. Sie sagt: „Der ist gerade im Wartezimmer.“",
-      "archive": "Im Wartezimmer liest ein Mann „Die Kunst der Geduld“. Als er aufgerufen wird, sagt er: „Endlich!“"
-    },
-    {
       "timestamp": "2026-11-22T00:56:04.261Z",
       "gpt": "Ich klopfe an den Nachbarn, weil die Heizung im Flur ausfällt, und er gibt mir ein Handtuch – er dachte, ich will das Wasser abtrocknen.",
       "qwen": "Der Nachbohrer hämmert seit drei Stunden an meinem Regal. Ich schreie „Hilfe“, er antwortet: „Muss noch schnell vor der Arbeit fertig sein.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Ärztin: „Wie fühlen Sie sich?“ Der Patient meint: „Wie ein Rezept – noch nicht eingelöst.“",
       "qwen": "Ich fragte den Arzt, wie lange ich noch warten muss. Er sagte: „Oh, die Apotheke ist zu, nehmen Sie doch kurz den Pflasterstreifen.“",
       "archive": "Beim Augenarzt soll ich die Buchstaben an der Wand vorlesen. Ich sage: „Die auf dem Schild mit dem Notausgang?“"
+    },
+    {
+      "timestamp": "2026-11-22T05:01:04.604Z",
+      "gpt": "Im Supermarkt kaufe ich Bio‑Äpfel, dann gehe ich zum Wochenmarkt und frage: „Haben Sie die gleichen Preise wie online?“ Verkäufer: „Nur, wenn Sie den Lieferservice nutzen.“",
+      "qwen": "Ich wollte auf dem Wochenmarkt sparsam einkaufen, doch der Stand der Bio-Erdbeeren hat mich das ganze Geld kosten lassen.",
+      "archive": "An der Kasse winkt mich eine Frau vor, weil ich nur zwei Artikel habe. Als ich einen dritten finde, sieht sie mich an wie einen Betrüger."
     }
   ]
 }
