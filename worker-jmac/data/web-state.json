@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T03:01:05.184Z",
-      "gpt": "Ich packe meine Socken in Kisten, weil ich beim Ausmisten endlich mal etwas Ordnung in meinem Leben haben will – dann finde ich die Fernbedienung.",
-      "qwen": "Die alte Stehlampe geht zu Bruch. „Glück gehabt, die war eh kaputt“, nickt meine Frau.",
-      "archive": "Der Wäschekorb ist endlich leer. Leider piept in genau diesem Moment die Waschmaschine."
-    },
-    {
       "timestamp": "2026-11-22T03:06:04.168Z",
       "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im nächsten Seminar, damit ich die Frage endlich richtig beantworten kann.“",
       "qwen": "„In der Weiterbildung lernte ich, wie man souverän auftritt. Beim Vorstellungsgespräch fragte ich den Chef: ‚Sind Sie das?‘“",
@@ -300,6 +294,12 @@
       "gpt": "Ich mache Yoga im Park, um zu entspannen – plötzlich ruft ein Hund: „Endlich jemand, der meine Dehnübungen nachmacht!“",
       "qwen": "Beim Yoga sage ich: „Einatmen, ausatmen, loslassen.“\nMein Knie knallt laut gegen den Boden.",
       "archive": "Im Fitnessstudio steht „Geräte bitte abwischen“. Der Mann neben mir wischt sein Handy ab und geht."
+    },
+    {
+      "timestamp": "2026-11-22T07:15:58.915Z",
+      "gpt": "Im Café bestelle ich einen Cappuccino, der Barista fragt: „Möchten Sie ihn mit Milch oder Espresso?“ Ich antworte: „Beides, ich will ein Doppel‑Ich.“",
+      "qwen": "Ich bestellte im Restaurant: „Zwei Schnitzel, bitte.“ Der Kellner fragte: „Zu zweit?“ Ich nickte.",
+      "archive": "Die Kellnerin fragt, ob ich noch einen Kaffee möchte. Ich sage nein, dann kommt die Rechnung und plötzlich brauche ich doch einen."
     }
   ]
 }
