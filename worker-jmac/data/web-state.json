@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T04:35:57.344Z",
-      "gpt": "Beim Sonntagsbrunch fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich – ich wollte nur den Krümel‑Zähler testen.“",
-      "qwen": "Der Papa fragt: „Wie war die Schule?“\nDie Tochter antwortet: „Gut, ich habe den Lehrer geküsst.“",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-22T04:41:05.533Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – Ich antworte: „Wie ein Rezept, das noch nie eingelöst wurde.“",
       "qwen": "Ich sage dem Apotheker: „Ich brauche den Zettel vom Arzt“.\nEr gibt mir ein Glas Wasser und sagt: „Das ist der Zettel vom Arzt“.",
@@ -300,6 +294,12 @@
       "gpt": "Ich füllte das Formular im Fundbüro aus, doch das gefundene Portemonnaie war schon mit meinem Namen beschriftet – das war wohl mein eigenes.",
       "qwen": "Ich gab den verlorenen Regenschirm beim Fundbüro ab. Sie gaben mir ein Formular für den Verlust des Regenschirms.",
       "archive": "Am Schalter heißt es: „Das geht nur mit Termin.“ Ich frage nach einem Termin, und die Mitarbeiterin sagt: „Dafür sind Sie hier falsch.“"
+    },
+    {
+      "timestamp": "2026-11-22T08:50:58.456Z",
+      "gpt": "Im Zug zum Strand frage ich den Schaffner, ob wir bald ankommen. Er lächelt: „Nur, wenn Sie das Wasser nicht vergessen haben.“",
+      "qwen": "Ich wollte im Urlaub nur relaxen, aber die Sonne hat mich gezwungen, den ganzen Tag zu arbeiten.",
+      "archive": "An der Hotelrezeption fragt man, ob wir Meerblick möchten. Mein Partner sagt: „Nein danke, das Meer haben wir gestern schon gesehen.“"
     }
   ]
 }
