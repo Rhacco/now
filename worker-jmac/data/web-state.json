@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T02:26:04.197Z",
-      "gpt": "Ich öffne die Wetter-App, um zu prüfen, ob ich Regenschirm brauche – und bekomme eine Benachrichtigung, dass mein Akku in 5 % stirbt.",
-      "qwen": "Ich wollte per App den Herd einschalten, doch die app hat gerade ein Update.",
-      "archive": "Die Wetter-App zeigt strahlende Sonne, während Regen ans Fenster schlägt. Offenbar wohnt sie in einer besseren Gegend."
-    },
-    {
       "timestamp": "2026-11-22T02:31:07.109Z",
       "gpt": "Der Kunde fragt beim Paketdienst: „Warum ist mein Liefertermin immer erst morgen?“ Der Fahrer lächelt: „Weil wir erst nach dem Wochenende auspacken.“",
       "qwen": "Das Paket ist da, der Karton aber leer. Der Kurier meint nur: „Die Ware ist auf dem Weg.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich öffne die Wetter-App, weil ich den Regen vermeiden will, und sehe sofort: „Achtung, starker Regen – bitte nimm deinen Regenschirm mit.“ Ich schalte das Handy aus – das war mein Regenschirm.",
       "qwen": "Ich wollte nur die Uhrzeit prüfen, aber mein Handy hat zwanzig neue Benachrichtigungen. Es bestand auf einem Update, bevor es mich wieder gehen ließ.",
       "archive": "Mein Handy schlägt vor, die Bildschirmzeit zu reduzieren. Dafür muss ich mich durch sechs Einstellungsmenüs arbeiten."
+    },
+    {
+      "timestamp": "2026-11-22T06:41:01.556Z",
+      "gpt": "Im Fundbüro fragt die Dame: „Haben Sie das Formular für verlorene Schlüssel ausgefüllt?“ – Ich antworte: „Nein, das war das, was ich gesucht habe.“",
+      "qwen": "Im Fundbüro fragt man, ob ein Schlüssel verloren ging. Die Antwort: Nein, er ist nur neu registriert.",
+      "archive": "Auf dem Formular soll ich „Sonstiges“ ankreuzen und erklären. Ich schreibe: „Das müsste eigentlich Ihre Kategorie sein.“"
     }
   ]
 }
