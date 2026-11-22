@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-21T21:21:04.274Z",
-      "gpt": "Ich fülle beim Fundbüro das Formular aus, das ich gerade im Fundbüro gefunden habe.",
-      "qwen": "Im Fundbüro fragte ich nach meinem gestohlenen Fahrrad. Die Dame meinte höflich: „Dafür brauchen Sie dieses Formular zu unterschreiben.“",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-21T21:26:04.105Z",
       "gpt": "Im Zug drückte ich den Notruf, weil mein Handy keinen Empfang hatte – die Durchsage kam sofort: „Bitte halten Sie das Handy vom Fahrplan fern.“",
       "qwen": "Der Taxifahrer fragt: „Zahlen Sie bar oder mit Karte?“ Ich antworte: „Mit Karte, aber bitte nicht auf die harte Tour.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Fitnessstudio fragt die Trainerin: „Wie viele Wiederholungen wollen Sie heute?“ Ich antworte: „Nur eine, ich entspanne mich gleich danach.“",
       "qwen": "Ich mache entspanntes Dehnen. Der Physiotherapeut bricht mir die Hand.",
       "archive": "Beim Radfahren fragt mein Freund, ob ich einen Helm brauche. Ich sehe auf die Strecke, die er ausgesucht hat, und frage nach einem zweiten."
+    },
+    {
+      "timestamp": "2026-11-22T01:25:58.379Z",
+      "gpt": "Beim Familienabend fragt die Mutter: „Wer hat das letzte Stück Kuchen genommen?“ Der Hund bellt: „Ich nur, weil ich die Diät meiner Schwester verteidige.“",
+      "qwen": "Ich habe meine Frau gefragt, ob sie mich noch liebt. Sie meinte: „Ich hab dich nur geheiratet, weil du der Einzige warst, der nicht vor mir weggerannt ist.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
