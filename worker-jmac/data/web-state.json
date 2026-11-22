@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T05:16:05.597Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ Der Mann zeigt ihr sein Handy: „Ich habe das Formular per App verloren.“",
-      "qwen": "Beim Fundbüro angekommen, gab ich die Brieftasche zurück. Ich musste erst das Formular „Ich habe das meiste davon verloren“ abhaken.",
-      "archive": "Im Bürgerbüro ziehe ich eine Nummer und frage, wie lange es dauert. Die Frau zeigt auf die Nummer: „Das ist Ihre erste Antwort.“"
-    },
-    {
       "timestamp": "2026-11-22T05:21:03.342Z",
       "gpt": "Ich sortiere beim Umzug alte Socken aus und finde ein Geldschein – dann merke ich, dass ich die Socken eigentlich nur für das Geld wasche.",
       "qwen": "Der Umzugskarton ist voll, aber die Katze passt nicht mehr rein. Also bleibt sie jetzt für immer an der Stelle.",
@@ -300,6 +294,12 @@
       "gpt": "Im Café bestellt er „ein Stück Kuchen zum Mitnehmen“ – die Kellnerin reicht ihm ein Tablett mit dem gesamten Kuchen und sagt: „Bitte, Ihr Paket.“",
       "qwen": "Im Restaurant fragte ich nach dem Geheimnis des Gerichts. Der Koch grinste: „Das Salz, das ich weggelassen habe.“",
       "archive": "Beim Familienessen frage ich, ob das Rezept neu ist. Alle fragen gleichzeitig: „Warum?“"
+    },
+    {
+      "timestamp": "2026-11-22T09:21:05.632Z",
+      "gpt": "Im Vorstellungsgespräch fragt der Chef: „Wo sehen Sie sich in fünf Jahren?“ – Ich: „Im Kurs, weil ich gerade erst die Bewerbungs‑PowerPoint erstelle.“",
+      "qwen": "Nach dem Vorstellungsgespräch schickte ich den fiktiven Lebenslauf. Der Recruiter antwortete: „Wir laden Sie ein, um die KI-Lücke persönlich zu schließen.“",
+      "archive": "Die Stellenanzeige verspricht flache Hierarchien. Beim Gespräch sitzen trotzdem alle auf höheren Stühlen als ich."
     }
   ]
 }
