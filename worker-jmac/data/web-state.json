@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:16:06.623Z",
-      "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie misst mich, sagt: „Für Sie passt nur die Umkleide.“",
-      "qwen": "Der Verkäufer riet, das Hemd vorher zu waschen. Ich fragte: „Ist das schon im Preis enthalten?“",
-      "archive": "Bei der Reinigung fragt die Frau, ob der Fleck frisch ist. „Das Hemd auch“, sage ich, „die beiden kennen sich seit gestern.“"
-    },
-    {
       "timestamp": "2026-11-22T13:20:58.984Z",
       "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Verkäufer: „Nur, wenn Sie das Gemüse selbst einpacken.“",
       "qwen": "Ich frage den Wochenhändler nach dem Preis für Tomaten. Er schmeckt eine an und sagt: „Zwei Euro, wenn Sie sie jetzt essen.“",
@@ -300,6 +294,12 @@
       "gpt": "Ich rief den Kundendienst, weil das Paket nie ankam – sie sagten, es sei schon im Urlaub, weil es „zu schwer für den Versand“ war.",
       "qwen": "Der Paketbote klingelt, ich rufe „Hier!“. Er spricht: „Nein, ich bin von der Post.“",
       "archive": "Das Ersatzteil kommt laut Kundendienst morgen. Seit vier E-Mails ist es immer noch derselbe morgige Tag."
+    },
+    {
+      "timestamp": "2026-11-23T22:47:00.085Z",
+      "gpt": "Mama ruft: „Kinder, ich habe das neue Rezept ausprobiert – das Essen ist jetzt komplett glutenfrei.“ Die Kinder starren: „Dann essen wir doch einfach Brot.“",
+      "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nur leise, wenn du sprichst.“",
+      "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
     }
   ]
 }
