@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:20:58.984Z",
-      "gpt": "Im Supermarkt fragt die Kassiererin: „Möchten Sie eine Tüte?“ Auf dem Wochenmarkt sagt der Verkäufer: „Nur, wenn Sie das Gemüse selbst einpacken.“",
-      "qwen": "Ich frage den Wochenhändler nach dem Preis für Tomaten. Er schmeckt eine an und sagt: „Zwei Euro, wenn Sie sie jetzt essen.“",
-      "archive": "An der Expresskasse steht „Maximal zehn Artikel“. Der Mann vor mir zählt seine zwölf identischen Joghurts als einen."
-    },
-    {
       "timestamp": "2026-11-22T13:25:58.813Z",
       "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
       "qwen": "„Ich habe den Fundantrag korrekt ausgefüllt.“\n„Dann ist er falsch, denn das Formular verlangt einen Fehler.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama ruft: „Kinder, ich habe das neue Rezept ausprobiert – das Essen ist jetzt komplett glutenfrei.“ Die Kinder starren: „Dann essen wir doch einfach Brot.“",
       "qwen": "Ich fragte meine Frau, ob sie mich liebt. Sie sagte: „Ja, aber nur leise, wenn du sprichst.“",
       "archive": "Meine Tante sagt, das Geschenk sei nur eine Kleinigkeit. Dann bittet sie mich, zwei Leute zum Tragen zu holen."
+    },
+    {
+      "timestamp": "2026-11-24T06:30:31.743Z",
+      "gpt": "Beim Abendessen fragt die Tochter: „Papa, warum hast du die Tomaten weggeschnitten?“ – „Damit du endlich lernst, Gemüse zu schälen.“",
+      "qwen": "Ich habe meiner Frau versprochen, den Geschirrspüler nie wieder zu vollzuladen. Sie hat die Tassen nur in den Herd geschoben.",
+      "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
     }
   ]
 }
