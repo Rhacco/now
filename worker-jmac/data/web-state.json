@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:25:58.813Z",
-      "gpt": "Im Fundbüro fragt die Angestellte: „Haben Sie das Formular ausgefüllt?“ – Der Fundgegenstand: ein leeres Formular.",
-      "qwen": "„Ich habe den Fundantrag korrekt ausgefüllt.“\n„Dann ist er falsch, denn das Formular verlangt einen Fehler.“",
-      "archive": "Im Fundbüro frage ich nach meinem Schlüsselbund. Als besonderes Merkmal nenne ich den Anhänger mit der Aufschrift „Nicht verlieren“."
-    },
-    {
       "timestamp": "2026-11-22T13:31:05.471Z",
       "gpt": "Ich sortiere beim Umzug aus und finde meine alte Steuererklärung. Sie ist jetzt offiziell ein Sammlerstück.",
       "qwen": "Ich wollte die alten Kisten ausmisten, aber die Nierensack-Geschichte von 1984 hat mich zum Heulen gebracht.",
@@ -300,6 +294,12 @@
       "gpt": "Beim Abendessen fragt die Tochter: „Papa, warum hast du die Tomaten weggeschnitten?“ – „Damit du endlich lernst, Gemüse zu schälen.“",
       "qwen": "Ich habe meiner Frau versprochen, den Geschirrspüler nie wieder zu vollzuladen. Sie hat die Tassen nur in den Herd geschoben.",
       "archive": "Meine Mutter sagt, ich könne immer ehrlich sein. Als ich ihr Essen vorsichtig nachsalze, frage ich mich, ob das auch für stille Gesten gilt."
+    },
+    {
+      "timestamp": "2026-11-24T18:12:17.698Z",
+      "gpt": "Im Bus fragt der Fahrer: „Wer hat das Ticket vergessen?“ – Der Fahrer selbst, weil er gerade im Fahrplan blättert.",
+      "qwen": "Ich dränge mich im vollen Bus gerade an den Fahrer vorbei. Er schimpft: „Hau ab, du bist im Taxi!“",
+      "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
     }
   ]
 }
