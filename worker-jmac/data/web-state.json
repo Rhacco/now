@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:31:05.471Z",
-      "gpt": "Ich sortiere beim Umzug aus und finde meine alte Steuererklärung. Sie ist jetzt offiziell ein Sammlerstück.",
-      "qwen": "Ich wollte die alten Kisten ausmisten, aber die Nierensack-Geschichte von 1984 hat mich zum Heulen gebracht.",
-      "archive": "Ich habe mein Regal nach Farben sortiert. Jetzt sieht alles wunderbar aus, solange ich nichts finden muss."
-    },
-    {
       "timestamp": "2026-11-22T13:36:03.306Z",
       "gpt": "Im Zug zum Strand fragt die Mutter: „Warum hast du das Handtuch eingepackt?“ – Ich: „Damit ich das Essen nicht vom Sonnenbrand ablenken muss.“",
       "qwen": "Wir wollten am Strand entspannen. Dann hat mich die Sonne gebrannt und ich musste ins Wasser.",
@@ -300,6 +294,12 @@
       "gpt": "Im Bus fragt der Fahrer: „Wer hat das Ticket vergessen?“ – Der Fahrer selbst, weil er gerade im Fahrplan blättert.",
       "qwen": "Ich dränge mich im vollen Bus gerade an den Fahrer vorbei. Er schimpft: „Hau ab, du bist im Taxi!“",
       "archive": "Das Navi sagt: „Sie haben Ihr Ziel erreicht.“ Ich stehe vor einer Baustelle und bewundere seine niedrigen Erwartungen."
+    },
+    {
+      "timestamp": "2026-11-25T02:31:53.435Z",
+      "gpt": "Im Zug zur Bergewanderung fragt mein Freund, ob wir ein Lagerfeuer machen dürfen – ich zeige ihm den Notausgang.",
+      "qwen": "Ich frage nach dem Weg zur Strandpromenade. Der Einheimische zeigt in die andere Richtung und sagt: „Die gibt’s nicht, hier ist nur die Müllabfuhr.“",
+      "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
     }
   ]
 }
