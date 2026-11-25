@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:36:03.306Z",
-      "gpt": "Im Zug zum Strand fragt die Mutter: „Warum hast du das Handtuch eingepackt?“ – Ich: „Damit ich das Essen nicht vom Sonnenbrand ablenken muss.“",
-      "qwen": "Wir wollten am Strand entspannen. Dann hat mich die Sonne gebrannt und ich musste ins Wasser.",
-      "archive": "Auf der Wanderkarte steht „Leichte Tour“. Direkt daneben liegt ein Flyer der Bergrettung; ich nehme sicherheitshalber beides mit."
-    },
-    {
       "timestamp": "2026-11-22T13:41:03.351Z",
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nicht eingelöst ist.“",
       "qwen": "Im Wartezimmer flüstert die Frau neben mir: „Der Doktor ist heute brutal streng.“\nIch antworte erleichtert: „Gut, denn ich habe eine Rechnung mitgebracht.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Bergewanderung fragt mein Freund, ob wir ein Lagerfeuer machen dürfen – ich zeige ihm den Notausgang.",
       "qwen": "Ich frage nach dem Weg zur Strandpromenade. Der Einheimische zeigt in die andere Richtung und sagt: „Die gibt’s nicht, hier ist nur die Müllabfuhr.“",
       "archive": "Im Hotel frage ich nach dem späten Check-out. „Zwölf Uhr“, sagt der Rezeptionist; mein Urlaubswecker findet das Wort „spät“ ziemlich gewagt."
+    },
+    {
+      "timestamp": "2026-11-25T11:40:00.360Z",
+      "gpt": "Im Zug zur Bergewanderung fragt die Frau: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur wenn du den Gipfel erreichst.“",
+      "qwen": "Ich wollte meinen Urlaub am Strand genießen, doch die Wellen haben mich ins Deep gekippt. Nun bin ich so weit draußen, dass ich eigentlich schon in der Arbeit bin.",
+      "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
     }
   ]
 }
