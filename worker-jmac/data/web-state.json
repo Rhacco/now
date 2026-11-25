@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:41:03.351Z",
-      "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das noch nicht eingelöst ist.“",
-      "qwen": "Im Wartezimmer flüstert die Frau neben mir: „Der Doktor ist heute brutal streng.“\nIch antworte erleichtert: „Gut, denn ich habe eine Rechnung mitgebracht.“",
-      "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
-    },
-    {
       "timestamp": "2026-11-22T13:46:05.127Z",
       "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen?“, und die Praktikantin meldet sich: „Ich, ich habe die Kaffeemaschine gezählt – 0,5 l pro Stunde.“",
       "qwen": "Die Besprechung dauerte drei Stunden, weil der Chef nur ja und nein sagte. Am Ende hatten wir zwei neue Projekte beschlossen.",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug zur Bergewanderung fragt die Frau: „Gibt's hier WLAN?“ Der Schaffner lächelt: „Nur wenn du den Gipfel erreichst.“",
       "qwen": "Ich wollte meinen Urlaub am Strand genießen, doch die Wellen haben mich ins Deep gekippt. Nun bin ich so weit draußen, dass ich eigentlich schon in der Arbeit bin.",
       "archive": "Am Strand sagt mein Freund: „Hier ist es wunderbar ruhig.“ Dann schaltet er seine Bluetooth-Box an, damit es gemütlich wird."
+    },
+    {
+      "timestamp": "2026-11-25T20:40:08.059Z",
+      "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Gehaltserhöhung?“",
+      "qwen": "Der Bot fragt: „Kann ich das Paket an die Wohnungstür stellen?“\nIch: „Nein, an die Katze. Sie ist die einzige, die zu Hause ist.“",
+      "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
     }
   ]
 }
