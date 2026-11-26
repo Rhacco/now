@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:46:05.127Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die Zahlen?“, und die Praktikantin meldet sich: „Ich, ich habe die Kaffeemaschine gezählt – 0,5 l pro Stunde.“",
-      "qwen": "Die Besprechung dauerte drei Stunden, weil der Chef nur ja und nein sagte. Am Ende hatten wir zwei neue Projekte beschlossen.",
-      "archive": "Im Büro soll ich meine Aufgaben nach Dringlichkeit sortieren. Jetzt liegt ganz oben die Aufgabe, meine Aufgaben zu sortieren."
-    },
-    {
       "timestamp": "2026-11-22T13:51:03.672Z",
       "gpt": "Ich klopfe an die Nachbarstür, um mich zu entschuldigen, weil ich die Heizung zu hoch gestellt habe – er öffnet und sagt: „Kein Problem, ich habe das Thermometer geklaut.“",
       "qwen": "Ich fragte den Nachbarn, ob ich sein Auto parken darf. Er nickte und sagte: „Klar, der Schlüssel liegt im Zigarettenetui auf dem Armaturenbrett.“",
@@ -300,6 +294,12 @@
       "gpt": "Der Paketbote klingelt, ich öffne die Tür, und er fragt: „Haben Sie das Rücksendeetikett für meine Gehaltserhöhung?“",
       "qwen": "Der Bot fragt: „Kann ich das Paket an die Wohnungstür stellen?“\nIch: „Nein, an die Katze. Sie ist die einzige, die zu Hause ist.“",
       "archive": "Die Zustell-App meldet: „Paket an einem sicheren Ort abgelegt.“ Nach drei Tagen vermute ich, dass der Ort auch vor mir sicher sein soll."
+    },
+    {
+      "timestamp": "2026-11-26T03:08:34.797Z",
+      "gpt": "Der Nachbar klopft, weil sein Rasenmäher wieder laut ist – ich sag: „Kein Problem, ich habe ihn gerade zum Yoga angemeldet.“",
+      "qwen": "Die Mieterhöhung traf mich härter als der Lärm der neuen Nachbarn.",
+      "archive": "Unser Haus hat jetzt eine Ruhezeit ab 22 Uhr. Die Versammlung, auf der wir das beschlossen haben, endete um halb eins."
     }
   ]
 }
