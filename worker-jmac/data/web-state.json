@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T13:55:58.064Z",
-      "gpt": "Im Meeting fragt der Chef: „Wer hat die Präsentation vorbereitet?“ – Die Kaffeemaschine meldet sich und sagt: „Ich hab nur den Kaffee aufgebrüht.“",
-      "qwen": "In der Besprechung fragte der Chef: „Wer hat das Dokument gelöscht?“\nIch hob die Hand und sagte: „Ich, aber ich habe es vorher gespeichert.“",
-      "archive": "Mein Kollege sagt, er arbeite am besten mit klaren Prioritäten. Als ich ihm eine nenne, fragt er, ob ich sie schriftlich bestätigen kann."
-    },
-    {
       "timestamp": "2026-11-22T14:00:58.173Z",
       "gpt": "Ich frage die Verkäuferin nach dem günstigsten Staubsauger, sie zeigt mir einen Besen – „der ist kostenlos, wenn Sie ihn selbst saugen.“",
       "qwen": "Der Verkäufer fragt: „Haben Sie schon bezahlt?“\nIch antworte: „Noch nicht, ich bin erst am Ausprobieren.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Wartezimmer fragt die Krankenschwester: „Wie fühlen Sie sich?“ – „Wie ein Rezept, das nie eingelöst wird.“",
       "qwen": "Der Arzt sagt: „Zwei Tabletten täglich.“ In der Apotheke fragt er: „Ist das auch mit dem Alkohol?“",
       "archive": "Beim Zahnarzt soll ich melden, wenn mir etwas unangenehm ist. Als er mir die neue Terminserie zeigt, hebe ich vorsichtig die Hand."
+    },
+    {
+      "timestamp": "2026-11-26T21:50:08.290Z",
+      "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schaue verwirrt, weil ich gerade erst eingestiegen bin – und das Taxi wartet draußen.",
+      "qwen": "Ich rufe ein Taxi, der Fahrer fährt los.\nIch sage: „Ah, die Bahn ist doch schneller.“",
+      "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
     }
   ]
 }
