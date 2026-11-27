@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T14:00:58.173Z",
-      "gpt": "Ich frage die Verkäuferin nach dem günstigsten Staubsauger, sie zeigt mir einen Besen – „der ist kostenlos, wenn Sie ihn selbst saugen.“",
-      "qwen": "Der Verkäufer fragt: „Haben Sie schon bezahlt?“\nIch antworte: „Noch nicht, ich bin erst am Ausprobieren.“",
-      "archive": "Im Möbelgeschäft steht „Einfache Selbstmontage“. Als die Kassiererin den Aufbauservice anbietet, bin ich plötzlich sehr offen für Weiterbildung."
-    },
-    {
       "timestamp": "2026-11-22T14:06:05.904Z",
       "gpt": "Im Zug zur Berge-Exkursion fragt die Durchsage: „Bitte halten Sie Ihre Koffer fest.“ – Ich halte meinen Rucksack, weil ich keinen Koffer habe.",
       "qwen": "In der Hängematte fragt die Frau: „Soll ich dir einen Tee machen?“\n„Nein“, sagt der Mann, „hier bin ich ja gerade im Urlaub.“",
@@ -300,6 +294,12 @@
       "gpt": "Im Zug fragt die Durchsage: „Bitte anschnallen.“ Ich schaue verwirrt, weil ich gerade erst eingestiegen bin – und das Taxi wartet draußen.",
       "qwen": "Ich rufe ein Taxi, der Fahrer fährt los.\nIch sage: „Ah, die Bahn ist doch schneller.“",
       "archive": "Im Zug sitzt ein Mann auf meinem reservierten Platz. Er zeigt auf das Schild „Reserviert“ und sagt: „Ja, ich weiß, ich hab mich beeilt.“"
+    },
+    {
+      "timestamp": "2026-11-27T03:49:51.245Z",
+      "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann mir die Entspannung zeigen?“ – Der Anfänger legt die Matte weg und bestellt sich ein Bier.",
+      "qwen": "Der Personal Trainer schrie: „Noch eine Wiederholung!“\nDer Kunde zählte: „Zehn, elf, zwölf.“",
+      "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
     }
   ]
 }
