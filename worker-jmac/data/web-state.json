@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T14:11:04.675Z",
-      "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich, weil ich jetzt schon beim Aufräumen die Diät starte.“",
-      "qwen": "Ich sagte zu meiner Frau: „Ich liebe es, wenn wir Zeit für uns zwei haben.“\nSie schlug vor: „Wie wäre es mit dem nächsten Kindergartenfest?“",
-      "archive": "Mein Partner fragt, ob ich den Müll rausgebracht habe. „Ja“, sage ich, „er steht jetzt vor der Wohnungstür und überlegt, wie es weitergeht.“"
-    },
-    {
       "timestamp": "2026-11-22T14:15:57.068Z",
       "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Das Kino ruft: „Nur, wenn du Popcorn mitbringst.“",
       "qwen": "Ich hab im Museum den Führer gefragt, ob das Gemälde echt ist. Der winkte ab und sagte: „Das ist nur das Kino.“",
@@ -300,6 +294,12 @@
       "gpt": "Mama fragt: „Warum liegt dein Teller immer im Kühlschrank?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
       "qwen": "Mama fragt: „Wer hat das letzte Brot aufgegessen?“\nAlle ansehen mich, bis ich draufkomme: Ich habe es nur gegessen, nicht aufgegessen.",
       "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
+    },
+    {
+      "timestamp": "2026-11-27T22:01:43.146Z",
+      "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie laut schrie, dass ihr Kühlschrank leer ist – sie meinte, das sei ein „Keks‑Notfall“.",
+      "qwen": "Nachbar meckert über meine laute Party. Ich frage: „Soll ich leiser werden?“ Er nickt eilig und haut die Tür zu.",
+      "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
     }
   ]
 }
