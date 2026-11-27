@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T14:06:05.904Z",
-      "gpt": "Im Zug zur Berge-Exkursion fragt die Durchsage: „Bitte halten Sie Ihre Koffer fest.“ – Ich halte meinen Rucksack, weil ich keinen Koffer habe.",
-      "qwen": "In der Hängematte fragt die Frau: „Soll ich dir einen Tee machen?“\n„Nein“, sagt der Mann, „hier bin ich ja gerade im Urlaub.“",
-      "archive": "An der Kasse fürs Freibad frage ich nach einer Tageskarte. Die Frau schaut auf die Gewitterwolken und fragt: „Sind Sie sicher?“"
-    },
-    {
       "timestamp": "2026-11-22T14:11:04.675Z",
       "gpt": "Beim Familienfrühstück fragt die Mutter: „Wer hat den letzten Keks genommen?“ Der Vater grinst: „Ich, weil ich jetzt schon beim Aufräumen die Diät starte.“",
       "qwen": "Ich sagte zu meiner Frau: „Ich liebe es, wenn wir Zeit für uns zwei haben.“\nSie schlug vor: „Wie wäre es mit dem nächsten Kindergartenfest?“",
@@ -300,6 +294,12 @@
       "gpt": "Im Yoga‑Kurs fragt die Lehrerin: „Wer kann mir die Entspannung zeigen?“ – Der Anfänger legt die Matte weg und bestellt sich ein Bier.",
       "qwen": "Der Personal Trainer schrie: „Noch eine Wiederholung!“\nDer Kunde zählte: „Zehn, elf, zwölf.“",
       "archive": "Im Atemkurs heißt es, wir sollen ganz entspannt bleiben. Dann holt die Lehrerin eine Stoppuhr heraus."
+    },
+    {
+      "timestamp": "2026-11-27T13:13:13.903Z",
+      "gpt": "Mama fragt: „Warum liegt dein Teller immer im Kühlschrank?“  \nTim: „Weil ich das Essen nicht mehr finden kann.“",
+      "qwen": "Mama fragt: „Wer hat das letzte Brot aufgegessen?“\nAlle ansehen mich, bis ich draufkomme: Ich habe es nur gegessen, nicht aufgegessen.",
+      "archive": "Beim Familienessen sagt mein Onkel, er wolle diesmal keine Politik diskutieren. Alle warten, bis er selbst damit anfängt."
     }
   ]
 }
