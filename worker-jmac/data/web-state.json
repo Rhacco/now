@@ -2,12 +2,6 @@
   "version": 2,
   "rows": [
     {
-      "timestamp": "2026-11-22T14:15:57.068Z",
-      "gpt": "Im Museum fragt die Bibliothekarin: „Darf ich das Gemälde ausleihen?“ Das Kino ruft: „Nur, wenn du Popcorn mitbringst.“",
-      "qwen": "Ich hab im Museum den Führer gefragt, ob das Gemälde echt ist. Der winkte ab und sagte: „Das ist nur das Kino.“",
-      "archive": "Im Museum deute ich eine leere Vitrine als Kritik am Konsum. Der Aufseher sagt: „Wir bauen gerade um.“"
-    },
-    {
       "timestamp": "2026-11-22T14:21:03.645Z",
       "gpt": "Ich frage die Verkäuferin nach einer passenden Jacke, sie reicht mir ein Regenschirm – „Damit Sie beim Ausprobieren nicht nass werden.“",
       "qwen": "Der Verkäufer drückt mir das Handy in die Hand: „Hier, testen Sie ruhig, hiermit fliegt’s!“",
@@ -300,6 +294,12 @@
       "gpt": "Ich habe meiner Nachbarin einen Kuchen gebracht, weil sie laut schrie, dass ihr Kühlschrank leer ist – sie meinte, das sei ein „Keks‑Notfall“.",
       "qwen": "Nachbar meckert über meine laute Party. Ich frage: „Soll ich leiser werden?“ Er nickt eilig und haut die Tür zu.",
       "archive": "Im Hausflur hängt ein Zettel: „Wer hat meinen Besen?“ Darunter steht: „Kann ich dir sagen, sobald ich fertig bin.“"
+    },
+    {
+      "timestamp": "2026-11-28T03:50:31.778Z",
+      "gpt": "Ich klopfe beim Nachbarn an, weil die Heizung im Flur zu laut ist – er öffnet die Tür, schaltet den Thermostat aus und sagt: „Stille!“",
+      "qwen": "Ich frage den Nachbarn, ob er die Party hört. Er schaltet den Fernseher auf lauter.",
+      "archive": "Beim Hausmeister beschwere ich mich über die quietschende Haustür. Er sagt: „Dann weiß wenigstens jeder, wer zu spät kommt.“"
     }
   ]
 }
